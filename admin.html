@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollaword Leaderboard Database Admin</title>
+    <!-- Linked directly to your shared style assets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Structural utility styles for admin panel spacing and tables */
+        .admin-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: var(--font-family, sans-serif);
+        }
+        .form-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .form-group input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .admin-btn {
+            padding: 9px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-primary { background-color: #0066cc; color: white; }
+        .btn-success { background-color: #28a745; color: white; }
+        .btn-cancel { background-color: #6c757d; color: white; }
+        
+        /* Grid Table Layout matching your monospaced look */
+        .crud-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .crud-table th, .crud-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+            font-family: monospace;
+        }
+        .crud-table th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        .action-links a {
+            margin-right: 12px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #0066cc;
+        }
+        .action-links a.delete-link {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="admin-container">
+        <h1>Rollaword Leaderboard Management Console</h1>
+        
+        <!-- SECTION 1: CREATE / UPDATE FORM INTERFACE -->
+        <div class="form-section">
+            <h3 id="form-title">Create New Score Record</h3>
+            <form id="crud-form">
+                <!-- Hidden input to hold Firestore Document ID during an edit session -->
+                <input type="hidden" id="entry-id">
+                
+                <div class="form-group">
+                    <label for="entry-name">Player Name</label>
+                    <input type="text" id="entry-name" required placeholder="e.g. G596">
+                </div>
+                
+                <div class="form-group">
+                    <label for="entry-score">Score (Points)</label>
+                    <input type="number" id="entry-score" required placeholder="e.g. 597">
+                </div>
+                
+                <div class="form-group">
+                    <label for="entry-date">Date Key (YYYYMMDD)</label>
+                    <input type="text" id="entry-date" required maxlength="8" placeholder="e.g. 20261019">
+                </div>
+                
+                <button type="submit" id="submit-btn" class="admin-btn btn-primary">Save Record</button>
+                <button type="button" id="cancel-btn" class="admin-btn btn-cancel" style="display: none;">Cancel</button>
+            </form>
+        </div>
+
+        <!-- SECTION 2: READ / DISPLAY DATABASE GRID -->
+        <h2>Live Database Grid (All Records)</h2>
+        <table class="crud-table">
+            <thead>
+                <tr>
+                    <th>Document ID</th>
+                    <th>Date Key</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                    <th>Management Actions</th>
+                </tr>
+            </thead>
+            <tbody id="database-grid-body">
+                <tr>
+                    <td colspan="5" style="text-align: center;">Synchronizing cloud variables...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Linked External JavaScript Controller Layer -->
+    <script type="module" src="js/rollawordadmin.js"></script>
+</body>
+</html>
