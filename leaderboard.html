@@ -93,7 +93,7 @@
     <main class="leaderboard-container">
         <div id="leaderboard-table-wrapper" class="table-striped" style="border: 1px solid var(--light); border-radius: var(--border-radius); overflow: hidden;">
             <div id="leaderboard-loading" style="text-align: center; padding: calc(var(--baseline) * 10); color: var(--gray); font-style: italic;">
-                Reading Firestore payloads...
+                Loading the scores...
             </div>
         </div>
     </main>
@@ -164,6 +164,36 @@
             };
         }
 
+        // Anonymous player ID: a random value made once per browser and kept in localStorage.
+        // The game saves it with each score so two players with the same name can be told apart.
+        // It contains no personal information. Returns null if the browser blocks storage.
+        function getPlayerId() {
+            try {
+                let id = localStorage.getItem("rollaword.playerId");
+                if (!id) {
+                    id = (window.crypto && crypto.randomUUID)
+                        ? crypto.randomUUID()
+                        : Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+                    localStorage.setItem("rollaword.playerId", id);
+                }
+                return id;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // Makes player-typed text safe to place inside HTML (a name must never run as code).
+        function escapeHtml(text) {
+            return String(text).replace(/[&<>"']/g, ch => (
+                { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]
+            ));
+        }
+
+        // Short tag from an ID, shown only when two different players share a name.
+        function shortTag(id) {
+            return String(id).replace(/[^a-z0-9]/gi, "").toUpperCase().slice(-4);
+        }
+
         async function renderLeaderboardView() {
             const dateData = formatQueryDate(activeNavDate);
             const todayData = formatQueryDate(new Date());
@@ -206,16 +236,36 @@
                 // Keep historical navigation accessible as long as records load
                 if (prevBtn) prevBtn.disabled = false;
 
+                // Older entries have no playerId, so their document id stands in for it.
+                const entries = querySnapshot.docs.map(d => {
+                    const e = d.data();
+                    return { name: String(e.name == null ? "" : e.name), score: e.score, id: e.playerId || ("doc-" + d.id) };
+                });
+
+                // A name needs a tag only when different players on this list share it.
+                const idsByName = new Map();
+                entries.forEach(e => {
+                    const key = e.name.trim().toLowerCase();
+                    if (!idsByName.has(key)) idsByName.set(key, new Set());
+                    idsByName.get(key).add(e.id);
+                });
+
+                const myId = getPlayerId();
                 let tableHtml = `<div style="display: flex; flex-direction: column; width: 100%;">`;
                 let rank = 1;
 
-                querySnapshot.forEach((doc) => {
-                    const entry = doc.data();
+                entries.forEach((entry) => {
+                    const isMe = !!myId && entry.id === myId;
+                    const shared = idsByName.get(entry.name.trim().toLowerCase()).size > 1;
+                    const tag = shared
+                        ? ` <span style="opacity:.6;font-size:.8em;">&middot;${escapeHtml(shortTag(entry.id))}</span>`
+                        : "";
+                    const you = isMe ? ` <span style="font-weight:700;">(you)</span>` : "";
                     tableHtml += `
-                        <div class="leaderboard-row">
+                        <div class="leaderboard-row"${isMe ? ' style="background-color: var(--lighter, #eef5fb); font-weight: 700;"' : ""}>
                             <span class="rank-badge">#${rank}</span>
-                            <span class="player-name">${entry.name}</span>
-                            <span class="player-score">${entry.score} pts</span>
+                            <span class="player-name">${escapeHtml(entry.name)}${tag}${you}</span>
+                            <span class="player-score">${escapeHtml(entry.score)} pts</span>
                         </div>
                     `;
                     rank++;
