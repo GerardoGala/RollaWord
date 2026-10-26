@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RollaWord - How to Play & Score</title>
+  <link rel="stylesheet" href="assets/css/rollaword.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .info-container {
+      width: 100%;
+      max-width: min(90vw, 42rem);
+      margin: calc(var(--baseline) * 6) auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .back-nav {
+      margin-top: calc(var(--baseline) * 6);
+      text-align: center;
+    }
+
+    /* Collapsible Wrapper Layout */
+    .collapsible-section {
+      background-color: var(--lighter);
+      border: 1px solid var(--light);
+      border-radius: calc(var(--border-radius) * 3);
+      margin-bottom: calc(var(--baseline) * 4);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .collapsible-section:focus-within {
+      border-color: var(--color);
+    }
+
+    /* Toggle Header Button */
+    .collapsible-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--headings-color);
+      font-family: var(--heading-font);
+      font-size: 1.25rem;
+      font-weight: var(--font-weight-bold);
+      text-align: left;
+      padding: calc(var(--baseline) * 5) calc(var(--baseline) * 6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .collapsible-trigger::after {
+      content: '＋';
+      font-size: 1.1rem;
+      color: var(--color);
+      transition: transform 0.25s ease;
+    }
+
+    /* Active expanded indicator states */
+    .collapsible-section.active .collapsible-trigger::after {
+      content: '－';
+    }
+
+    /* Hidden/Collapsing Content Block */
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+      background-color: var(--page-bg);
+    }
+
+    .collapsible-body {
+      padding: calc(var(--baseline) * 5) calc(var(--baseline) * 6);
+      font-family: var(--body-font);
+      line-height: var(--line-height);
+      color: var(--text-color);
+    }
+
+    .collapsible-body ul {
+      margin-top: calc(var(--baseline) * 2);
+      padding-left: 2ch;
+    }
+
+    .collapsible-body li {
+      list-style-type: disc;
+      margin-bottom: calc(var(--baseline) * 2);
+    }
+
+    .rule-highlight {
+      font-weight: var(--font-weight-bold);
+      color: var(--color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-container">
+    <header style="margin-bottom: calc(var(--baseline) * 8); text-align: center;">
+      <h1 class="h1" style="margin: 0; text-transform: uppercase;">Game Guide</h1>
+    </header>
+
+    <!-- 🧩 Section 1: How to Play -->
+    <div class="collapsible-section">
+      <button class="collapsible-trigger" aria-expanded="false">
+        How to Play
+      </button>
+      <div class="collapsible-content">
+        <div class="collapsible-body">
+          <p>Welcome to <span class="rule-highlight">RollaWord</span>! Your objective is to form intersecting words on the matrix using your mixed tray of letters before the countdown timer hits zero.</p>
+          <ul>
+            <li>Select <span class="rule-highlight">FREE PLAY</span> to roll a randomized hand, or choose <span class="rule-highlight">DAILY CHALLENGE</span> to play a globally synchronized daily board.</li>
+            <li>Drag and drop your character tiles directly from the bottom row tray up onto the 6x8 grid board cells.</li>
+            <li>Rearrange your letters at any point during active countdown play.</li>
+            <li>When you have linked all your paths successfully together, hit the <span class="rule-highlight">Done</span> button to freeze the layout and submit your entries for engine calculation.</li>
+            <li><span class="rule-highlight">🧒 RollaKid Mode:</span> In the kids version, there is no countdown timer on the screen or game clock constraints! Children can play completely at their own pace to discover words under a pressure-free environment.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📊 Section 2: How to Score -->
+    <div class="collapsible-section">
+      <button class="collapsible-trigger" aria-expanded="false">
+        How to Score
+      </button>
+      <div class="collapsible-content">
+        <div class="collapsible-body">
+          <p>Points are computed based on standard Scrabble metrics, along with strict layout validation rules:</p>
+          <ul>
+            <li>Each single letter has an integrated point value shown on the lower-right corner of the tile face. Blank tiles (<span class="rule-highlight">*</span>) carry zero base points but automatically optimize into any target letter that yields the highest cumulative scoring hand.</li>
+            <li><span class="rule-highlight">Color Multipliers:</span> Form a complete valid word using tiles entirely of one matching color to trigger a bonus score overlay! Blue lines apply a <span class="rule-highlight">x2 multiplier</span>, while Red lines apply a <span class="rule-highlight">x3 multiplier</span>. These multipliers are clearly added to the individual word calculations.</li>
+            <li><span class="rule-highlight">The Moat Rule:</span> All tiles placed onto the playing matrix must form a single, interconnected island block. Separate standalone letter groups are invalid. <span class="rule-highlight">(Note: This rule does not apply to children in RollaKid mode).</span></li>
+            <li><span class="rule-highlight">Invalid Contamination Cascading:</span> Ensure every single word on the board is a real dictionary term! If an invalid word is discovered, a black line is drawn across it and it scores 0 points. Furthermore, any valid word that intersects or shares a letter tile with that invalid word becomes contaminated and is instantly disqualified.</li>
+            <li><span class="rule-highlight">Subtotal Output:</span> The engine instantly sums up the points scored across all valid, non-contaminated words to display a raw <span class="rule-highlight">SUBTOTAL</span> value before computing final jackpot bonuses.</li>
+            <li><span class="rule-highlight">8-Dice Jackpot Bonus:</span> Get all 8 tray dice onto the board inside completely valid, non-contaminated structures to trigger the ultimate scoring bonus:
+              <ul>
+                <li><strong>Adult Mode:</strong> If the remaining seconds left to play is greater than 1, your subtotal score gets multiplied by the <strong>exact number of remaining seconds</strong> left on the clock!</li>
+                <li><strong>RollaKid Mode:</strong> Bypasses countdown stress completely to award a happy, flat <strong>x2 multiplier</strong> bonus directly to their grand total.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 🧭 Bottom Navigation Anchor Row -->
+    <nav class="back-nav">
+      <a href="rollaWord.html" class="btn" style="margin-right: 8px;">&larr; RollaWord</a>
+      <a href="rollaKid.html" class="btn">RollaKid &rarr;</a>
+    </nav>
+  </div>
+
+  <!-- ⚙️ Smooth Accordion Mechanics Controller -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".collapsible-section");
+
+      sections.forEach(section => {
+        const trigger = section.querySelector(".collapsible-trigger");
+        const content = section.querySelector(".collapsible-content");
+
+        trigger.addEventListener("click", () => {
+          const isOpen = section.classList.contains("active");
+
+          // Close all sections first (Accordion style behavior)
+          sections.forEach(s => {
+            s.classList.remove("active");
+            s.querySelector(".collapsible-content").style.maxHeight = null;
+            s.querySelector(".collapsible-trigger").setAttribute("aria-expanded", "false");
+          });
+
+          // If it wasn't open, open it now
+          if (!isOpen) {
+            section.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+            trigger.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
