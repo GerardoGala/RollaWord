@@ -36,6 +36,39 @@ function getFormattedDateMetadata(targetDate) {
 }
 
 /**
+ * Anonymous player ID: a random value made once per browser and kept in localStorage.
+ * It identifies "this browser" so the leaderboard can tell two players with the
+ * same name apart, and mark your own row. It contains no personal information.
+ * Returns null if the browser blocks storage (the score is then saved without an ID).
+ */
+function getPlayerId() {
+    try {
+        let id = localStorage.getItem("rollaword.playerId");
+        if (!id) {
+            id = (window.crypto && crypto.randomUUID)
+                ? crypto.randomUUID()
+                : Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+            localStorage.setItem("rollaword.playerId", id);
+        }
+        return id;
+    } catch (e) {
+        return null;
+    }
+}
+
+/** Makes player-typed text safe to place inside HTML (a name must never run as code). */
+function escapeHtml(text) {
+    return String(text).replace(/[&<>"']/g, ch => (
+        { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]
+    ));
+}
+
+/** Short tag from an ID, shown only when two different players share a name. */
+function shortTag(id) {
+    return String(id).replace(/[^a-z0-9]/gi, "").toUpperCase().slice(-4);
+}
+
+/**
  * 🚀 CHIEF EVALUATION PIPELINE
  * Evaluates if a score deserves entry, prompts only if it qualifies, then updates the UI.
  * @param {number|string} finalScore - The verified score integer from your game engine loop.
@@ -98,10 +131,12 @@ async function processChallengeEndgame(finalScore) {
             const playerName = prompt(`Incredible! Your score of ${numericScore} qualifies for today's Top 10! Enter your name:`);
             
             if (playerName && playerName.trim() !== "") {
+                const playerId = getPlayerId();
                 await addDoc(collection(db, "rollaword_leaderboard"), {
                     name: playerName.trim(),
                     date: todayMetadata.key,
-                    score: numericScore
+                    score: numericScore,
+                    ...(playerId ? { playerId: playerId } : {})
                 });
                 
                 console.log("✈️ Navigating to beautiful leaderboard template...");
@@ -166,23 +201,43 @@ async function renderLeaderboardView() {
 
         if (prevBtn) prevBtn.disabled = false;
 
+        // Collect each entry; older entries have no playerId, so their document id stands in.
+        const entries = querySnapshot.docs.map(d => {
+            const e = d.data();
+            return { name: String(e.name == null ? "" : e.name), score: e.score, id: e.playerId || ("doc-" + d.id) };
+        });
+
+        // A name needs a tag only when different players on this list share it.
+        const idsByName = new Map();
+        entries.forEach(e => {
+            const key = e.name.trim().toLowerCase();
+            if (!idsByName.has(key)) idsByName.set(key, new Set());
+            idsByName.get(key).add(e.id);
+        });
+
+        const myId = getPlayerId();
         let tableHtml = `<div style="display: flex; flex-direction: column; width: 100%;">`;
         let rank = 1;
 
-        querySnapshot.forEach((doc) => {
-            const entry = doc.data();
+        entries.forEach((entry) => {
+            const isMe = !!myId && entry.id === myId;
+            const shared = idsByName.get(entry.name.trim().toLowerCase()).size > 1;
+            const tag = shared
+                ? ` <span style="opacity:.6;font-size:.8em;">&middot;${escapeHtml(shortTag(entry.id))}</span>`
+                : "";
+            const you = isMe ? ` <span style="font-weight:700;">(you)</span>` : "";
             tableHtml += `
-                <div class="leaderboard-row">
+                <div class="leaderboard-row"${isMe ? ' style="background:#eef5fb;font-weight:700;"' : ""}>
                     <span class="rank-badge">#${rank}</span>
-                    <span class="player-name">${entry.name}</span>
-                    <span class="player-score">${entry.score} pts</span>
+                    <span class="player-name">${escapeHtml(entry.name)}${tag}${you}</span>
+                    <span class="player-score">${escapeHtml(entry.score)} pts</span>
                 </div>
             `;
             rank++;
         });
 
         tableHtml += `</div>`;
-// ggala renderTarget.innerHTML = tableHtml;
+        renderTarget.innerHTML = tableHtml;
 
     } catch (error) {
         console.error("Error reading leaderboard:", error);
