@@ -237,7 +237,7 @@ async function renderLeaderboardView() {
         });
 
         tableHtml += `</div>`;
-        renderTarget.innerHTML = tableHtml;
+// ggala don't show leadorboard here  renderTarget.innerHTML = tableHtml;
 
     } catch (error) {
         console.error("Error reading leaderboard:", error);
