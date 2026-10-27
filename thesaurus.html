@@ -11,24 +11,32 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
+      font-family: Arial, sans-serif;
     }
 
-    /* Full-screen container that centers the text box both ways.
-       dvh follows the visible area as the mobile browser toolbar shows/hides. */
-    #canvas-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* 3-column grid. Row 1 holds the text box (center column);
+       the synonyms fill the cells in the rows below it. */
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: min-content;
+      gap: 12px;
+      box-sizing: border-box;
       width: 100%;
       height: 100vh;   /* fallback for older browsers */
-      height: 100dvh;
+      height: 100dvh;  /* follows the visible area as the mobile toolbar shows/hides */
+      padding: 16px;
+      align-content: start;
     }
 
     #word-input {
+      grid-column: 2;   /* center column */
+      grid-row: 1;      /* top row */
       box-sizing: border-box;
-      width: 180px;
-      padding: 12px 24px;
-      font-size: 18px;
+      width: 100%;
+      min-width: 0;
+      padding: 12px 6px;
+      font-size: 16px;  /* 16px+ stops iOS from zooming in on focus */
       font-weight: 600;
       border: 2px solid #0056b3;
       background-color: #ffffff;
@@ -38,13 +46,27 @@
       outline: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
+    .syn {
+      min-width: 0;
+      padding: 10px 4px;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      border: none;
+      background-color: #0056b3;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow-wrap: anywhere;  /* safety net for very long words in a narrow column */
+    }
   </style>
 </head>
 <body>
 
-<!-- The Center Layout Container -->
-<div id="canvas-container">
-  <input type="text" id="word-input" placeholder="Type a word..." autocomplete="off">
+<div id="grid">
+  <input type="text" id="word-input" placeholder="Word..." autocomplete="off">
 </div>
 
 <!-- The Logic & Animation Engine (must load after the elements above) -->
