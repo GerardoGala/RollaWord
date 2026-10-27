@@ -1,0 +1,138 @@
+<!-- 6 Spacers Above to cleanly drop the text box down to center height -->
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<!-- The Center Layout Container with bulletproof inline styles -->
+<div id="canvas-container" style="text-align: center; width: 100%;">
+<div id="center-node" style="display: inline-block; text-align: center;"><input type="text" id="word-input" placeholder="Type a word..." autocomplete="off" style="width: 180px; padding: 12px 24px; font-size: 18px; font-weight: 600; border: 2px solid #0056b3; background-color: #ffffff; color: #333333; border-radius: 4px; text-align: center; outline: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+</div>
+<!-- 6 Spacers Below to balance out the bottom spacing grid -->
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<!-- The Logic & Animation Engine -->
+<p>
+<script>
+    const wordInput = document.getElementById('word-input');
+    const canvasContainer = document.getElementById('canvas-container');
+
+    // 🔒 SCROLL LOCK: Prevent vertical page scrolling immediately
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    // ⚙️ GLOBAL THEME & ANIMATION CONFIGURATIONS (Tweak these values!)
+    const MAX_SYNONYMS = 9;         // Maximum number of synonym nodes allowed on screen
+    const EXPLOSION_RADIUS = 160;   // Final distance nodes branch out (in pixels)
+    
+    const ANIMATION_DURATION = '0.5s'; // How long the flight lasts (Must include 's' for seconds)
+    const STAGGER_DELAY = 35;          // Milliseconds between each button launch ripple
+    const START_DELAY = 20;            // Initial baseline delay before movement starts (in ms)
+
+    wordInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim() !== '') {
+            fetchSynonyms(this.value.trim());
+        }
+    });
+
+    function fetchSynonyms(word) {
+        clearCanvas();
+
+        // Safe Base64 string for: "https://datamuse.com"
+        var securePath = atob("aHR0cHM6Ly9hcGkuZGF0YW11c2UuY29tL3dvcmRzP3JlbF9zeW49");
+        var apiUrl = securePath + encodeURIComponent(word);
+
+        fetch(apiUrl)
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                var allSynonyms = data.map(function(item) { return item.word; });
+                
+                if (allSynonyms.length === 0) {
+                    alert("No synonyms found for that word. Try another!");
+                    return;
+                }
+
+                // Limit the array using our global MAX_SYNONYMS configuration variable
+                var limitedSynonyms = allSynonyms.slice(0, MAX_SYNONYMS);
+                generateExplosion(limitedSynonyms);
+            })
+            .catch(function(err) { console.error("Error fetching data:", err); });
+    }
+
+    function generateExplosion(synonyms) {
+        // Force limit N using our global constant for the 360-degree math layout
+        const N = Math.min(synonyms.length, MAX_SYNONYMS);
+        const angleInterval = 360 / N; 
+
+        // Track the exact live coordinates of your text box center
+        const boxRect = wordInput.getBoundingClientRect();
+        const textboxX = boxRect.left + (boxRect.width / 2);
+        const textboxY = boxRect.top + (boxRect.height / 2);
+
+        synonyms.slice(0, MAX_SYNONYMS).forEach((synonym, index) => {
+            const angleInDegrees = index * angleInterval;
+            const angleInRadians = angleInDegrees * (Math.PI / 180);
+
+            // Assemble the button element
+            var synButton = document.createElement('button');
+            synButton.innerText = synonym;
+            
+            // Core starting styles (Spawn hidden at the absolute center of the textbox)
+            synButton.style.position = 'fixed';
+            synButton.style.left = textboxX + 'px';
+            synButton.style.top = textboxY + 'px';
+            synButton.style.transform = 'translate(-50%, -50%) scale(0)'; // Spawn at scale 0
+            synButton.style.opacity = '0'; // Completely invisible at start
+            
+            // Visual presentation theme rules
+            synButton.style.padding = '10px 20px';
+            synButton.style.fontSize = '14px';
+            synButton.style.fontWeight = 'bold';
+            synButton.style.fontFamily = 'Arial, sans-serif';
+            synButton.style.border = 'none';
+            synButton.style.backgroundColor = '#0056b3';
+            synButton.style.color = '#ffffff';
+            synButton.style.cursor = 'pointer';
+            synButton.style.zIndex = '99999';
+            synButton.style.whiteSpace = 'nowrap';
+            synButton.style.borderRadius = '4px';
+            synButton.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            
+            // 💫 CSS TRANSITION HOOK: Injects our global ANIMATION_DURATION dynamically into the curve
+            synButton.style.transition = 'left ' + ANIMATION_DURATION + ' cubic-bezier(0.25, 1, 0.5, 1), top ' + ANIMATION_DURATION + ' cubic-bezier(0.25, 1, 0.5, 1), transform ' + ANIMATION_DURATION + ' ease-out, opacity ' + ANIMATION_DURATION + ' ease-out';
+
+            synButton.addEventListener('click', () => {
+                wordInput.value = synonym; 
+                fetchSynonyms(synonym);    
+            });
+
+            document.body.appendChild(synButton);
+
+            // ⏱️ TRIGGER THE FLIGHT ENGINE: Dynamic math schedules the flight paths using our delay constants
+            setTimeout(() => {
+                // Calculate final destinations
+                const targetX = textboxX + EXPLOSION_RADIUS * Math.cos(angleInRadians);
+                const targetY = textboxY + EXPLOSION_RADIUS * Math.sin(angleInRadians);
+                
+                // Shift properties to expand and travel to calculated 360-degree coordinates
+                synButton.style.left = targetX + 'px';
+                synButton.style.top = targetY + 'px';
+                synButton.style.transform = 'translate(-50%, -50%) scale(1)'; // Bring to full size
+                synButton.style.opacity = '1'; // Fade completely into focus view
+            }, START_DELAY + (index * STAGGER_DELAY)); 
+        });
+    }
+
+    function clearCanvas() {
+        var buttons = document.querySelectorAll('button');
+        buttons.forEach(function(button) { 
+            button.remove(); 
+        });
+    }
+</script>
+</p>
