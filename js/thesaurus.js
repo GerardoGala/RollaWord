@@ -1,13 +1,14 @@
 const wordInput = document.getElementById('word-input');
 const canvasContainer = document.getElementById('canvas-container');
 
-// 🔒 SCROLL LOCK: Prevent vertical page scrolling immediately
+// 🔒 SCROLL LOCK: Prevent page scrolling
 document.documentElement.style.overflow = 'hidden';
 document.body.style.overflow = 'hidden';
 
 // ⚙️ GLOBAL THEME & ANIMATION CONFIGURATIONS (Tweak these values!)
 const MAX_SYNONYMS = 9;         // Maximum number of synonym nodes allowed on screen
-const EXPLOSION_RADIUS = 160;   // Final distance nodes branch out (in pixels)
+const EXPLOSION_RADIUS = 160;   // Maximum distance nodes branch out (in pixels); shrinks automatically on small screens
+const SCREEN_MARGIN = 10;       // Minimum gap kept between any button and the screen edge (in pixels)
 
 const ANIMATION_DURATION = '0.5s'; // How long the flight lasts (Must include 's' for seconds)
 const STAGGER_DELAY = 35;          // Milliseconds between each button launch ripple
@@ -29,7 +30,10 @@ function fetchSynonyms(word) {
     fetch(apiUrl)
         .then(function (response) { return response.json(); })
         .then(function (data) {
-            var allSynonyms = data.map(function (item) { return item.word; });
+            // Keep only single-word synonyms (skip anything containing a space)
+            var allSynonyms = data
+                .map(function (item) { return item.word; })
+                .filter(function (w) { return w.indexOf(' ') === -1; });
 
             if (allSynonyms.length === 0) {
                 alert("No synonyms found for that word. Try another!");
@@ -44,8 +48,8 @@ function fetchSynonyms(word) {
 }
 
 function generateExplosion(synonyms) {
-    // Force limit N using our global constant for the 360-degree math layout
-    const N = Math.min(synonyms.length, MAX_SYNONYMS);
+    const list = synonyms.slice(0, MAX_SYNONYMS);
+    const N = list.length;
     const angleInterval = 360 / N;
 
     // Track the exact live coordinates of your text box center
@@ -53,11 +57,8 @@ function generateExplosion(synonyms) {
     const textboxX = boxRect.left + (boxRect.width / 2);
     const textboxY = boxRect.top + (boxRect.height / 2);
 
-    synonyms.slice(0, MAX_SYNONYMS).forEach((synonym, index) => {
-        const angleInDegrees = index * angleInterval;
-        const angleInRadians = angleInDegrees * (Math.PI / 180);
-
-        // Assemble the button element
+    // PASS 1: build the buttons (hidden at the center) so we can measure them
+    const buttons = list.map(function (synonym) {
         var synButton = document.createElement('button');
         synButton.innerText = synonym;
 
@@ -82,23 +83,49 @@ function generateExplosion(synonyms) {
         synButton.style.borderRadius = '4px';
         synButton.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
 
-        // 💫 CSS TRANSITION HOOK: Injects our global ANIMATION_DURATION dynamically into the curve
+        // 💫 CSS TRANSITION HOOK
         synButton.style.transition = 'left ' + ANIMATION_DURATION + ' cubic-bezier(0.25, 1, 0.5, 1), top ' + ANIMATION_DURATION + ' cubic-bezier(0.25, 1, 0.5, 1), transform ' + ANIMATION_DURATION + ' ease-out, opacity ' + ANIMATION_DURATION + ' ease-out';
 
-        synButton.addEventListener('click', () => {
+        synButton.addEventListener('click', function () {
             wordInput.value = synonym;
             fetchSynonyms(synonym);
         });
 
         document.body.appendChild(synButton);
+        return synButton;
+    });
 
-        // ⏱️ TRIGGER THE FLIGHT ENGINE: Dynamic math schedules the flight paths using our delay constants
-        setTimeout(() => {
-            // Calculate final destinations
-            const targetX = textboxX + EXPLOSION_RADIUS * Math.cos(angleInRadians);
-            const targetY = textboxY + EXPLOSION_RADIUS * Math.sin(angleInRadians);
+    // 📱 FIT TO SCREEN: size the ring so the biggest button never leaves the viewport
+    var maxHalfW = 0;
+    var maxHalfH = 0;
+    buttons.forEach(function (b) {
+        maxHalfW = Math.max(maxHalfW, b.offsetWidth / 2);
+        maxHalfH = Math.max(maxHalfH, b.offsetHeight / 2);
+    });
 
-            // Shift properties to expand and travel to calculated 360-degree coordinates
+    const viewW = window.innerWidth;
+    const viewH = window.innerHeight;
+
+    // Horizontal and vertical radii are fitted separately (the ring becomes an oval on tall phones)
+    const radiusX = Math.max(0, Math.min(
+        EXPLOSION_RADIUS,
+        textboxX - maxHalfW - SCREEN_MARGIN,
+        viewW - textboxX - maxHalfW - SCREEN_MARGIN
+    ));
+    const radiusY = Math.max(0, Math.min(
+        EXPLOSION_RADIUS,
+        textboxY - maxHalfH - SCREEN_MARGIN,
+        viewH - textboxY - maxHalfH - SCREEN_MARGIN
+    ));
+
+    // PASS 2: launch each button to its fitted position
+    buttons.forEach(function (synButton, index) {
+        const angleInRadians = (index * angleInterval) * (Math.PI / 180);
+
+        setTimeout(function () {
+            const targetX = textboxX + radiusX * Math.cos(angleInRadians);
+            const targetY = textboxY + radiusY * Math.sin(angleInRadians);
+
             synButton.style.left = targetX + 'px';
             synButton.style.top = targetY + 'px';
             synButton.style.transform = 'translate(-50%, -50%) scale(1)'; // Bring to full size

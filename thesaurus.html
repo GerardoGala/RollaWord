@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile-first: render at the device's real width instead of a zoomed-out desktop width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Thesaurus</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Full-screen container that centers the text box both ways.
+       dvh follows the visible area as the mobile browser toolbar shows/hides. */
+    #canvas-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;   /* fallback for older browsers */
+      height: 100dvh;
+    }
+
+    #word-input {
+      box-sizing: border-box;
+      width: 180px;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border: 2px solid #0056b3;
+      background-color: #ffffff;
+      color: #333333;
+      border-radius: 4px;
+      text-align: center;
+      outline: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- The Center Layout Container -->
+<div id="canvas-container">
+  <input type="text" id="word-input" placeholder="Type a word..." autocomplete="off">
+</div>
+
+<!-- The Logic & Animation Engine (must load after the elements above) -->
+<script src="js/thesaurus.js"></script>
+</body>
+</html>
