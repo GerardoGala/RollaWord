@@ -1,5 +1,7 @@
 const wordInput = document.getElementById('word-input');
 const grid = document.getElementById('grid');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
 // ⚙️ GLOBAL THEME & ANIMATION CONFIGURATIONS (Tweak these values!)
 const MAX_SYNONYMS = 9;            // 9 = a full 3 x 3 block under the text box
@@ -7,14 +9,61 @@ const ANIMATION_DURATION = '0.5s'; // How long the flight lasts (Must include 's
 const STAGGER_DELAY = 35;          // Milliseconds between each button launch ripple
 const START_DELAY = 20;            // Initial baseline delay before movement starts (in ms)
 
+// 🧭 HISTORY: every word you search or tap, in order, with a pointer to where you are now
+let history = [];
+let historyIndex = -1;
+let requestId = 0; // lets us ignore slow replies that arrive after a newer search
+
 wordInput.addEventListener('keypress', function (e) {
     if (e.key === 'Enter' && this.value.trim() !== '') {
         fetchSynonyms(this.value.trim());
     }
 });
 
-function fetchSynonyms(word) {
+prevBtn.addEventListener('click', function () {
+    if (historyIndex > 0) {
+        historyIndex--;
+        showHistoryWord();
+    }
+});
+
+nextBtn.addEventListener('click', function () {
+    if (historyIndex < history.length - 1) {
+        historyIndex++;
+        showHistoryWord();
+    }
+});
+
+// Show the word at the current history position (does not add a new history entry)
+function showHistoryWord() {
+    var word = history[historyIndex];
+    wordInput.value = word;
+    updateNavButtons();
+    fetchSynonyms(word, false);
+}
+
+function updateNavButtons() {
+    prevBtn.disabled = historyIndex <= 0;
+    nextBtn.disabled = historyIndex >= history.length - 1;
+}
+
+function addToHistory(word) {
+    // A new word always goes to the end (bottom) of the stack and nothing is thrown away,
+    // unless it is the same word that is already last
+    if (history[history.length - 1] !== word) {
+        history.push(word);
+    }
+    historyIndex = history.length - 1;
+    updateNavButtons();
+}
+
+function fetchSynonyms(word, record) {
+    if (record !== false) {
+        addToHistory(word);
+    }
+
     clearCanvas();
+    var thisRequest = ++requestId;
 
     // Safe Base64 string for: "https://api.datamuse.com/words?rel_syn="
     var securePath = atob("aHR0cHM6Ly9hcGkuZGF0YW11c2UuY29tL3dvcmRzP3JlbF9zeW49");
@@ -23,6 +72,10 @@ function fetchSynonyms(word) {
     fetch(apiUrl)
         .then(function (response) { return response.json(); })
         .then(function (data) {
+            if (thisRequest !== requestId) {
+                return; // a newer search has started; drop this result
+            }
+
             // Keep only single-word synonyms (skip anything containing a space)
             var allSynonyms = data
                 .map(function (item) { return item.word; })

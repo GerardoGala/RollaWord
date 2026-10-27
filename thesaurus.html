@@ -14,19 +14,28 @@
       font-family: Arial, sans-serif;
     }
 
-    /* 3-column grid. Row 1 holds the text box (center column);
-       the synonyms fill the cells in the rows below it. */
-    #grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-auto-rows: min-content;
-      gap: 12px;
+    /* Page = grid area on top (takes all spare height), then <hr>, then the Prev/Next bar */
+    #app {
+      display: flex;
+      flex-direction: column;
       box-sizing: border-box;
       width: 100%;
       height: 100vh;   /* fallback for older browsers */
       height: 100dvh;  /* follows the visible area as the mobile toolbar shows/hides */
       padding: 16px;
+    }
+
+    /* 3-column grid. Row 1 holds the text box (center column);
+       the synonyms fill the cells in the rows below it. */
+    #grid {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-rows: min-content;
+      gap: 12px;
       align-content: start;
+      overflow: hidden; /* keep the grid inside its area, above the line and buttons */
     }
 
     #word-input {
@@ -61,12 +70,53 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       overflow-wrap: anywhere;  /* safety net for very long words in a narrow column */
     }
+
+    #app > hr {
+      flex-shrink: 0;
+      width: 100%;
+      margin: 12px 0;
+      border: none;
+      border-top: 1px solid #c8d4e3;
+    }
+
+    #nav {
+      flex-shrink: 0;   /* never let the grid squeeze the buttons off the screen */
+      display: flex;
+      gap: 12px;
+    }
+
+    .nav-btn {
+      flex: 1;
+      padding: 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      border: 2px solid #0056b3;
+      background-color: #ffffff;
+      color: #0056b3;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
   </style>
 </head>
 <body>
 
-<div id="grid">
-  <input type="text" id="word-input" placeholder="Word..." autocomplete="off">
+<div id="app">
+  <div id="grid">
+    <input type="text" id="word-input" placeholder="Word..." autocomplete="off">
+  </div>
+
+  <hr>
+
+  <div id="nav">
+    <button id="prev-btn" class="nav-btn" disabled>Prev</button>
+    <button id="next-btn" class="nav-btn" disabled>Next</button>
+  </div>
 </div>
 
 <!-- The Logic & Animation Engine (must load after the elements above) -->
