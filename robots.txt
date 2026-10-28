@@ -5,5 +5,4 @@ Allow: /
 User-agent: Mediapartners-Google
 Allow: /
 
-# Uncomment once you have a sitemap.xml in the site root:
-# Sitemap: https://www.rollaword.com/sitemap.xml
+Sitemap: https://www.rollaword.com/sitemap.xml
