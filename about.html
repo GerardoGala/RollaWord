@@ -3,25 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About RollaWord</title>
-<meta name="description" content="RollaWord is a free daily word game: roll eight lettered tiles and build the best words before the timer runs out.">
+<title>About RollaWord &amp; Thesaurus</title>
+<meta name="description" content="RollaWord is a free daily word game: roll eight lettered tiles and build the best words before the timer runs out. Thesaurus is a free tap-to-explore synonym game.">
 <style>
   body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#222;max-width:760px;margin:0 auto;padding:16px}
   nav{display:flex;flex-wrap:wrap;gap:16px;padding:12px 0;border-bottom:1px solid #ddd;margin-bottom:24px}
   nav a{color:#1a56a0;text-decoration:none;font-weight:600}
   h1{margin-top:0} h2{margin-top:28px}
   .cta{display:inline-block;margin:8px 0;padding:10px 18px;background:#1a56a0;color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+  .game-section{margin-top:40px;padding-top:24px;border-top:1px solid #ddd}
   footer{margin:40px 0 16px;color:#666;font-size:.9rem}
 </style>
 </head>
 <body>
 <nav>
   <a href="/">Play RollaWord</a>
+  <a href="/thesaurus.html">Play Thesaurus</a>
   <a href="/about.html">About</a>
   <a href="/privacy.html">Privacy Policy</a>
   <a href="/contact.html">Contact</a>
 </nav>
 
+<section id="rollaword">
 <h1>About RollaWord</h1>
 <p>RollaWord is a free, Scrabble-style word game you can play in your browser, on your phone or on your computer. No download and no sign-up.</p>
 <a class="cta" href="/">Play now</a>
@@ -40,10 +43,33 @@
 
 <h2>Word list</h2>
 <p>The game uses a built-in list of common English words so that every player is judged by the same dictionary. If you think a valid word is missing, let us know on the <a href="/contact.html">Contact page</a>.</p>
+</section>
 
-<h2>Get in touch</h2>
-<p>Found a bug or have an idea for a new feature? We would like to hear from you. See our <a href="/contact.html">Contact page</a>, and read how we handle data in our <a href="/privacy.html">Privacy Policy</a>.</p>
+<section id="thesaurus" class="game-section">
+<h1>About Thesaurus</h1>
+<p>Thesaurus is a free, tap-to-explore word game that lives alongside RollaWord. Type a word and watch its synonyms appear around it, then keep tapping to wander from word to word. No download and no sign-up.</p>
+<a class="cta" href="/thesaurus.html">Play now</a>
+
+<h2>How it works</h2>
+<p>Type any word into the box at the top and press Enter. Up to nine one-word synonyms pop out of the box and settle into a grid underneath it. Tap any of them and it becomes the new center word, with a fresh set of synonyms of its own. See how far you can travel from where you started.</p>
+<ul>
+  <li><strong>Tap to explore:</strong> every synonym is a button, so each tap takes you one step further along the trail.</li>
+  <li><strong>Prev and Next:</strong> every word you visit is remembered in order. Use Prev to step back along your trail, and Next to move forward again.</li>
+  <li><strong>One-word answers:</strong> multi-word phrases are left out, so what you see is always a single word.</li>
+</ul>
+
+<h2>Why we made it</h2>
+<p>Thesaurus began as a companion to RollaWord, a relaxed way to play with words and pick up a few new ones when you want a break from the timer. Like RollaWord, it is designed for phones first and is made by the same independent developer.</p>
+
+<h2>Where the words come from</h2>
+<p>Synonyms are looked up through the free <a href="https://www.datamuse.com/api/">Datamuse</a> word-finding service. When you search, the word you type is sent to Datamuse to fetch its synonyms. If a word you expect is missing, or something looks wrong, let us know on the <a href="/contact.html">Contact page</a>.</p>
+</section>
+
+<section class="game-section">
+<h2 style="margin-top:0">Get in touch</h2>
+<p>Found a bug or have an idea for a new feature, in either game? We would like to hear from you. See our <a href="/contact.html">Contact page</a>, and read how we handle data in our <a href="/privacy.html">Privacy Policy</a>.</p>
 <p>Written by the same author of <a href="https://sail.rollaword.com">San Juan Sail &amp; Paddle</a>.</p>
+</section>
 <footer>&copy; 2026 RollaWord. All rights reserved.</footer>
 </body>
 </html>
