@@ -2,6 +2,8 @@ const wordInput = document.getElementById('word-input');
 const grid = document.getElementById('grid');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
+const defineBtn = document.getElementById('define-btn');
+const definitionEl = document.getElementById('definition');
 
 // ⚙️ GLOBAL THEME & ANIMATION CONFIGURATIONS (Tweak these values!)
 const MAX_SYNONYMS = 9;            // 9 = a full 3 x 3 block under the text box
@@ -63,6 +65,7 @@ function fetchSynonyms(word, record) {
     }
 
     clearCanvas();
+    definitionEl.hidden = true; // the old definition belongs to the previous word
     var thisRequest = ++requestId;
 
     // Safe Base64 string for: "https://api.datamuse.com/words?rel_syn="
@@ -92,6 +95,7 @@ function fetchSynonyms(word, record) {
 }
 
 function generateGrid(synonyms) {
+    defineBtn.disabled = false; // there is now a center word with synonyms, so it can be defined
     // PASS 1: drop the buttons into the grid so the browser lays them out in their cells
     const buttons = synonyms.map(function (synonym) {
         var synButton = document.createElement('button');
@@ -140,4 +144,110 @@ function clearCanvas() {
     document.querySelectorAll('.syn').forEach(function (button) {
         button.remove();
     });
+}
+
+// -----------------------------------------------------------------------
+// Tap "Define" to learn what the center word means (freedictionaryapi.com,
+// which serves English Wiktionary data). One word at a time, only when the
+// player asks. The game itself never depends on it.
+// -----------------------------------------------------------------------
+const DEFINITION_URL = "https://freedictionaryapi.com/api/v1/entries/en/";
+const definitionCache = new Map();
+let latestDefinitionRequest = 0;
+
+defineBtn.addEventListener('click', function () {
+    // Define whatever is in the text box right now (the center word)
+    lookUpWord(wordInput.value.trim());
+});
+
+function showDefinition(word, lines, isProblem, sourceUrl) {
+    definitionEl.innerHTML = "";
+    const title = document.createElement("strong");
+    title.textContent = word;
+    definitionEl.appendChild(title);
+    lines.forEach(function (text) {
+        const p = document.createElement("p");
+        p.textContent = text;
+        definitionEl.appendChild(p);
+    });
+    if (sourceUrl && /^https:\/\//.test(sourceUrl)) {      // credit Wiktionary (CC BY-SA 4.0)
+        const p = document.createElement("p");
+        p.className = "source";
+        const a = document.createElement("a");
+        a.href = sourceUrl;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = "Wiktionary";
+        p.append("Source: ", a, " (CC BY-SA 4.0)");
+        definitionEl.appendChild(p);
+    }
+    definitionEl.classList.toggle("problem", !!isProblem);
+    definitionEl.hidden = false;
+}
+
+// Turns the API reply into a few short readable lines.
+function summarize(data) {
+    const lines = [];
+    const entries = (data && data.entries) || [];
+    entries.forEach(function (entry) {
+        if (lines.length >= 4) return;
+        const pron = (entry.pronunciations || []).find(p => p && p.text);
+        const senses = (entry.senses || []).filter(s => s && s.definition).slice(0, 2);
+        senses.forEach(function (sense, i) {
+            if (lines.length >= 4) return;
+            const label = entry.partOfSpeech ? entry.partOfSpeech + ": " : "";
+            const prefix = i === 0 && pron ? pron.text + "  " : "";
+            lines.push(prefix + label + sense.definition);
+        });
+    });
+    return lines;
+}
+
+// Returns { lines, sourceUrl } when found, or { notFound: true } / { status } / { failed: true }.
+async function fetchDefinition(word) {
+    try {
+        const response = await fetch(DEFINITION_URL + encodeURIComponent(word.toLowerCase()));
+        if (response.status === 404) return { notFound: true };
+        if (!response.ok) return { status: response.status };
+        const data = await response.json();
+        const lines = summarize(data);
+        if (!lines.length) return { notFound: true };
+        return { lines: lines, sourceUrl: data.source && data.source.url };
+    } catch (e) {
+        console.warn("Dictionary lookup failed for " + word + ":", e);
+        return { failed: true };
+    }
+}
+
+async function lookUpWord(word) {
+    if (!word) {
+        showDefinition("", ["Type a word first, then tap Define."], true);
+        return;
+    }
+
+    const key = word.toLowerCase();
+    if (definitionCache.has(key)) {
+        const c = definitionCache.get(key);
+        showDefinition(word, c.lines, c.problem, c.sourceUrl);
+        return;
+    }
+
+    const requestNumber = ++latestDefinitionRequest;
+    showDefinition(word, ["Looking up the meaning..."], false);
+
+    const result = await fetchDefinition(word);
+    let lines, problem = true, sourceUrl = null;
+
+    if (result.lines) {
+        lines = result.lines; problem = false; sourceUrl = result.sourceUrl;
+        definitionCache.set(key, { lines: lines, problem: false, sourceUrl: sourceUrl });
+    } else if (result.notFound) {
+        lines = ["No definition found for this word. It may be too rare or too specialized for a general dictionary."];
+        definitionCache.set(key, { lines: lines, problem: true, sourceUrl: null });
+    } else if (result.status === 429) {
+        lines = ["The dictionary is busy right now. Please wait a little and tap Define again."];
+    } else {
+        lines = ["Couldn't reach the dictionary right now. Check your connection and tap Define again."];
+    }
+    if (requestNumber === latestDefinitionRequest) showDefinition(word, lines, problem, sourceUrl); // ignore stale replies
 }

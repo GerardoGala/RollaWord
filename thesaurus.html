@@ -103,6 +103,28 @@
       opacity: 0.35;
       cursor: default;
     }
+
+    .nav-btn.define {
+      flex: 1.4;
+      background-color: #0056b3;
+      color: #ffffff;
+    }
+
+    /* Definition panel: appears under the Prev/Define/Next bar when you tap Define */
+    #definition {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border: 1px solid #c8d4e3;
+      border-radius: 6px;
+      background: #f5f8fc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    #definition[hidden] { display: none; }
+    #definition p { margin: 6px 0 0; }
+    #definition.problem { background: #fff6e5; border-color: #e6c27a; }
+    #definition .source { font-size: 0.8rem; color: #6b7280; }
+    #definition .source a { color: #0056b3; }
   </style>
 </head>
 <body>
@@ -116,8 +138,11 @@
 
   <div id="nav">
     <button id="prev-btn" class="nav-btn" disabled>Prev</button>
+    <button id="define-btn" class="nav-btn define" disabled>Define</button>
     <button id="next-btn" class="nav-btn" disabled>Next</button>
   </div>
+
+  <div id="definition" aria-live="polite" hidden></div>
 </div>
 
 <footer style="
