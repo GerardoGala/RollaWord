@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RollaWord Leaderboard Admin</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 20px auto; padding: 0 12px; }
+  .bar { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+  form { background:#f6f6f6; padding:14px; border-radius:6px; margin-bottom:16px; }
+  form input { padding:6px; margin:4px 6px 4px 0; }
+  .admin-btn { padding:7px 14px; border:0; border-radius:4px; color:#fff; cursor:pointer; }
+  .btn-primary { background:#0d6efd; }
+  .btn-success { background:#198754; }
+  .btn-grey { background:#6c757d; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { border-bottom:1px solid #ddd; padding:6px 8px; text-align:left; }
+  .action-links a { cursor:pointer; color:#0d6efd; margin-right:10px; }
+  .action-links .delete-link { color:#dc3545; }
+  #admin-tools { display:none; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <h2>RollaWord Leaderboard</h2>
+    <div>
+      <span id="user-label"></span>
+      <button id="auth-btn" class="admin-btn btn-primary">Sign in with Google</button>
+    </div>
+  </div>
+
+  <div id="admin-tools">
+    <form id="crud-form">
+      <h3 id="form-title">Create New Score Record</h3>
+      <input type="hidden" id="entry-id">
+      <input id="entry-name" placeholder="Name (max 20)" maxlength="20" required>
+      <input id="entry-score" type="number" placeholder="Score" min="0" max="1000000" required>
+      <input id="entry-date" placeholder="Date YYYYMMDD" pattern="[0-9]{8}" maxlength="8" required>
+      <button id="submit-btn" type="submit" class="admin-btn btn-primary">Save Record</button>
+      <button id="cancel-btn" type="button" class="admin-btn btn-grey" style="display:none">Cancel</button>
+    </form>
+  </div>
+
+  <table class="crud-table">
+    <thead><tr><th>ID</th><th>Date</th><th>Name</th><th>Score</th><th>Actions</th></tr></thead>
+    <tbody id="database-grid-body"></tbody>
+  </table>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
