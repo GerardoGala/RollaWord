@@ -129,8 +129,21 @@ Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
 <script src="js/rollaworddictionary.js"></script>
 <script src="js/rollawordadult.js"></script> <!-- Swapped in -->
 <script src="js/rollaword.js"></script>
-<!-- 🏆 New Firestore Leaderboard Module Layer -->
+<!-- 🏆 New Firestore Leaderboard Module Layer 
 <script type="module" src="js/rollawordleaderboard.js"></script>
+-->
+<script>
+  // Load the leaderboard (Firebase) after the page has finished loading,
+  // so it doesn't compete with the first paint.
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      var s = document.createElement("script");
+      s.type = "module";
+      s.src = "js/rollawordleaderboard.js";
+      document.body.appendChild(s);
+    }, 0);
+  });
+</script>
 
 
 </body>
