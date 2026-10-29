@@ -164,6 +164,7 @@ function tileCenter(d, e) {
 
 function beginDieDrag(e) {
   if (activeDrag) return;                                        // one tile at a time
+  if (gameEnded) return;                                         // no dragging after Done or when time is up
   if (e.pointerType === "mouse" && e.button !== 0) return;       // left button only
   const die = e.currentTarget;
   const rect = die.getBoundingClientRect();
@@ -219,7 +220,7 @@ function endDieDrag(e) {
   try { if (die.hasPointerCapture(d.pointerId)) die.releasePointerCapture(d.pointerId); } catch (err) { /* ignore */ }
 
   let target = null;
-  if (d.moving && e.type === "pointerup") {
+  if (d.moving && e.type === "pointerup" && !gameEnded) {       // if the game ended mid-drag, the tile goes back
     const center = tileCenter(d, e);
     const cell = cellUnderPoint(center.x, center.y);
     if (cell && !cell.hasChildNodes()) target = cell;
