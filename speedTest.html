@@ -9,9 +9,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747" crossorigin="anonymous"></script>
 
+    <script defer src="js/paintscreen.js"></script>
+
 </head>
 <body>
 
+  <!-- 1) Top Count-Down Timer -->
   <!-- 1) Top Count-Down Timer (Unified Flex Row Layout) -->
   <header style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: calc(var(--cell-size) * 8 + 2px); margin: calc(var(--baseline) * 4) auto 0 auto; box-sizing: border-box;">
     <h1 id="game-title" class="h1" style="margin: 0; text-align: left; text-transform: uppercase;">ROLLAWORD</h1>
@@ -121,8 +124,9 @@ Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
 </footer>
 
 
-    <script src="js/boot.js"></script>
-    <script src="js/rollaword.js"></script>
+    <!-- 🏆 LEADERBOARD MODULE: Kept at the absolute bottom -->
+    <script type="module" src="js/rollawordleaderboard.js"></script>
+
 
 </body>
 </html>
