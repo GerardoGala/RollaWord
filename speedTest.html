@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RollaWord - Free Word Game</title>
+  <link rel="stylesheet" href="css/rollaword.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<!-- Script Block for Sharing -->
+<script>
+function shareToMessenger() {
+  const shareUrl = encodeURIComponent(window.location.href);
+  
+  if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = `fb-messenger://share?link=${shareUrl}`;
+  } else {
+    const appId = 'YOUR_APP_ID'; 
+    window.open(`https://facebook.com{appId}&link=${shareUrl}&redirect_uri=${shareUrl}`, '_blank');
+  }
+}
+</script>
+ 
+<!-- 4) Bottom Plain Text Formula Scoring Output Box -->
+<div id="score-output-area">
+Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
+</div>
+<footer style="
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 8) auto calc(var(--baseline) * 6);
+  padding-top: calc(var(--baseline) * 4);
+  border-top: 1px solid var(--light);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+">
+  <nav style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
+    <a href="/toc.html" style="color: var(--color); text-decoration: none; font-weight: 500;">TOC</a>
+    <a href="/about.html" style="color: var(--color); text-decoration: none; font-weight: 500;">About</a>
+    <a href="/privacy.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Privacy</a>
+    <a href="/contact.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Contact</a>
+  </nav>
+  <div>© 2026 RollaWord</div>
+</footer>
+
+
+
+<script src="js/rollawordbonus.js"></script>
+<script src="js/rollawordisland.js"></script>
+<script src="js/rollaworddisplay.js"></script>
+<script src="js/rollawordscoring.js"></script>
+<script src="js/rollaworddictionary.js"></script>
+<script src="js/rollawordadult.js"></script> <!-- Swapped in -->
+<script src="js/rollaword.js"></script>
+<!-- 🏆 New Firestore Leaderboard Module Layer 
+<script type="module" src="js/rollawordleaderboard.js"></script>
+-->
+<script>
+  // Load the leaderboard (Firebase) after the page has finished loading,
+  // so it doesn't compete with the first paint.
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      var s = document.createElement("script");
+      s.type = "module";
+      s.src = "js/rollawordleaderboard.js";
+      document.body.appendChild(s);
+    }, 0);
+  });
+</script>
+
+
+</body>
+</html>
