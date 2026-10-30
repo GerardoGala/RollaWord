@@ -347,7 +347,8 @@ function startChallengeEngine() {
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
-  const todayKey = `${year}${month}${day}`;
+  // RollaSail repeats every year, so its puzzles are keyed by month and day only (MMDD, e.g. "1030").
+  const todayKey = IS_SAIL ? `${month}${day}` : `${year}${month}${day}`;
 
   fetch(IS_SAIL ? 'js/sailchallenge.json' : 'js/dailychallenge.json')
     .then(response => {
