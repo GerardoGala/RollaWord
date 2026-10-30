@@ -1,0 +1,10760 @@
+{
+ "20261101": {
+  "term": "STERNWAY",
+  "words": [
+   {
+    "word": "STERNWAY",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "STERNWAY",
+   "........"
+  ]
+ },
+ "20261102": {
+  "term": "PIER",
+  "words": [
+   {
+    "word": "PIER",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".PIER...",
+   "..N.....",
+   "..T.....",
+   "..ON....",
+   "........"
+  ]
+ },
+ "20261103": {
+  "term": "FENDER",
+  "words": [
+   {
+    "word": "FENDER",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..O.O...",
+   "..FENDER",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261104": {
+  "term": "HEADING",
+  "words": [
+   {
+    "word": "HEADING",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".....O..",
+   "HEADING.",
+   "........"
+  ]
+ },
+ "20261105": {
+  "term": "GANGWAY",
+  "words": [
+   {
+    "word": "GANGWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "GANGWAY.",
+   ".T......",
+   "........"
+  ]
+ },
+ "20261106": {
+  "term": "HEADS",
+  "words": [
+   {
+    "word": "HEADS",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AMID",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".HEADS..",
+   "...M....",
+   "...I....",
+   "...D....",
+   "........"
+  ]
+ },
+ "20261107": {
+  "term": "MIDSHIP",
+  "words": [
+   {
+    "word": "MIDSHIP",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".MIDSHIP",
+   "....O...",
+   "........",
+   "........"
+  ]
+ },
+ "20261108": {
+  "term": "JIBING",
+  "words": [
+   {
+    "word": "JIBING",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....A...",
+   "JIBING..",
+   ".N......"
+  ]
+ },
+ "20261109": {
+  "term": "BRIDGE",
+  "words": [
+   {
+    "word": "BRIDGE",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....Y..",
+   "BRIDGE..",
+   ".....T..",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261110": {
+  "term": "CURRENT",
+  "words": [
+   {
+    "word": "CURRENT",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....O..",
+   "CURRENT.",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261111": {
+  "term": "AFT",
+  "words": [
+   {
+    "word": "AFT",
+    "dir": "H",
+    "row": 5,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "GENOA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....G...",
+   "....E...",
+   "....N...",
+   "....O.A.",
+   "....AFT."
+  ]
+ },
+ "20261112": {
+  "term": "TRIM",
+  "words": [
+   {
+    "word": "OF",
+    "dir": "H",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   },
+   {
+    "word": "TRIM",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "FROM",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......OF",
+   ".......R",
+   ".......O",
+   "....TRIM",
+   "........",
+   "........"
+  ]
+ },
+ "20261113": {
+  "term": "FOREPEAK",
+  "words": [
+   {
+    "word": "FOREPEAK",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "FOREPEAK",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261114": {
+  "term": "TOPSIDES",
+  "words": [
+   {
+    "word": "TOPSIDES",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "TOPSIDES",
+   "........"
+  ]
+ },
+ "20261115": {
+  "term": "REGATTA",
+  "words": [
+   {
+    "word": "REGATTA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 4,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".REGATTA",
+   ".......S"
+  ]
+ },
+ "20261116": {
+  "term": "PILOTAGE",
+  "words": [
+   {
+    "word": "PILOTAGE",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "PILOTAGE",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261117": {
+  "term": "AHEAD",
+  "words": [
+   {
+    "word": "AHEAD",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......A",
+   ".......N",
+   "...AHEAD",
+   "......N."
+  ]
+ },
+ "20261118": {
+  "term": "CHART",
+  "words": [
+   {
+    "word": "CHART",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "NOR",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...N....",
+   "...O....",
+   "CHART...",
+   "....O...",
+   "........"
+  ]
+ },
+ "20261119": {
+  "term": "BOW",
+  "words": [
+   {
+    "word": "BUT",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "BUOY",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...BUT..",
+   "...U....",
+   "..BOW...",
+   "...Y....",
+   "........"
+  ]
+ },
+ "20261120": {
+  "term": "WAKE",
+  "words": [
+   {
+    "word": "WAKE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "PAST",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..P.....",
+   ".WAKE...",
+   "..S.....",
+   ".AT.....",
+   "........"
+  ]
+ },
+ "20261121": {
+  "term": "FORWARD",
+  "words": [
+   {
+    "word": "FORWARD",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".T......",
+   "FORWARD."
+  ]
+ },
+ "20261122": {
+  "term": "WINDWARD",
+  "words": [
+   {
+    "word": "WINDWARD",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "WINDWARD",
+   "........"
+  ]
+ },
+ "20261123": {
+  "term": "COURSE",
+  "words": [
+   {
+    "word": "COURSE",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "PER",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......P",
+   "..COURSE",
+   ".......R",
+   "........"
+  ]
+ },
+ "20261124": {
+  "term": "OUTBOARD",
+  "words": [
+   {
+    "word": "OUTBOARD",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "OUTBOARD",
+   "........",
+   "........"
+  ]
+ },
+ "20261125": {
+  "term": "JETTY",
+  "words": [
+   {
+    "word": "JETTY",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "WITH",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "......W.",
+   "......I.",
+   "...JETTY",
+   "......H.",
+   "........"
+  ]
+ },
+ "20261126": {
+  "term": "STERN",
+  "words": [
+   {
+    "word": "STERN",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LEST",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..L.....",
+   "..E.....",
+   "..STERN.",
+   "..T....."
+  ]
+ },
+ "20261127": {
+  "term": "RUDDER",
+  "words": [
+   {
+    "word": "RUDDER",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".B......",
+   "RUDDER..",
+   ".T......"
+  ]
+ },
+ "20261128": {
+  "term": "HEADWAY",
+  "words": [
+   {
+    "word": "HEADWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......B.",
+   "HEADWAY.",
+   "........",
+   "........"
+  ]
+ },
+ "20261129": {
+  "term": "COCKPIT",
+  "words": [
+   {
+    "word": "COCKPIT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".COCKPIT",
+   "..R.....",
+   "........"
+  ]
+ },
+ "20261130": {
+  "term": "TILLER",
+  "words": [
+   {
+    "word": "TILLER",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LOG",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..TILLER",
+   ".....O..",
+   ".....G.."
+  ]
+ },
+ "20261201": {
+  "term": "HELM",
+  "words": [
+   {
+    "word": "HELM",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..HELM..",
+   "....I...",
+   "...AN...",
+   "....E...",
+   "........",
+   "........"
+  ]
+ },
+ "20261202": {
+  "term": "SOUNDING",
+  "words": [
+   {
+    "word": "SOUNDING",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "SOUNDING",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261203": {
+  "term": "HULL",
+  "words": [
+   {
+    "word": "HULL",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AHEAD",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "A.......",
+   "HULL....",
+   "E.......",
+   "A.......",
+   "D......."
+  ]
+ },
+ "20261204": {
+  "term": "BULKHEAD",
+  "words": [
+   {
+    "word": "BULKHEAD",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "BULKHEAD",
+   "........"
+  ]
+ },
+ "20261205": {
+  "term": "LEEWAY",
+  "words": [
+   {
+    "word": "LEEWAY",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BOW",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....B...",
+   "....O...",
+   ".LEEWAY.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261206": {
+  "term": "CHOCK",
+  "words": [
+   {
+    "word": "CHOCK",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "HOW",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...S....",
+   ".CHOCK..",
+   "..O.....",
+   "..W.....",
+   "........",
+   "........"
+  ]
+ },
+ "20261207": {
+  "term": "STOW",
+  "words": [
+   {
+    "word": "STOW",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "TO",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "PORT",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..P.....",
+   "STOW....",
+   "..R.....",
+   "..TO....",
+   "........",
+   "........"
+  ]
+ },
+ "20261208": {
+  "term": "BOWLINE",
+  "words": [
+   {
+    "word": "BOWLINE",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "BOWLINE.",
+   ".F......",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261209": {
+  "term": "ABOARD",
+  "words": [
+   {
+    "word": "ABOARD",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "NOR",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".....N..",
+   ".....O..",
+   ".ABOARD."
+  ]
+ },
+ "20261210": {
+  "term": "BELOW",
+  "words": [
+   {
+    "word": "BELOW",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 3,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "OFF",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "BELOW...",
+   "Y..F....",
+   "...F...."
+  ]
+ },
+ "20261211": {
+  "term": "PORT",
+  "words": [
+   {
+    "word": "PORT",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "TILL",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "PORT....",
+   "...IN...",
+   "...L....",
+   "...L....",
+   "........",
+   "........"
+  ]
+ },
+ "20261212": {
+  "term": "BOOM",
+  "words": [
+   {
+    "word": "BOOM",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ALOFT",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...A....",
+   "...L....",
+   ".BOOM...",
+   "...F....",
+   "...T...."
+  ]
+ },
+ "20261213": {
+  "term": "DINGHY",
+  "words": [
+   {
+    "word": "DINGHY",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...V....",
+   "..DINGHY",
+   "...A....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261214": {
+  "term": "KNOT",
+  "words": [
+   {
+    "word": "UP",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "KNOT",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "OUT",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....O...",
+   "..A.UP..",
+   ".KNOT...",
+   "........"
+  ]
+ },
+ "20261215": {
+  "term": "WAY",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "WAY",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "JETTY",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....J..",
+   ".....E..",
+   "....AT..",
+   ".....T..",
+   "...WAY..",
+   "........"
+  ]
+ },
+ "20261216": {
+  "term": "GYBING",
+  "words": [
+   {
+    "word": "GYBING",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".B..I...",
+   "GYBING.."
+  ]
+ },
+ "20261217": {
+  "term": "MAINSAIL",
+  "words": [
+   {
+    "word": "MAINSAIL",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "MAINSAIL",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261218": {
+  "term": "LEEWARD",
+  "words": [
+   {
+    "word": "LEEWARD",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "......O.",
+   ".LEEWARD"
+  ]
+ },
+ "20261219": {
+  "term": "STEM",
+  "words": [
+   {
+    "word": "STEM",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "TRIM",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "STEM....",
+   ".R......",
+   ".IF.....",
+   ".M......",
+   "........",
+   "........"
+  ]
+ },
+ "20261220": {
+  "term": "CLEAT",
+  "words": [
+   {
+    "word": "CLEAT",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "LIKE",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..L.....",
+   "..I.....",
+   "..K.....",
+   "CLEAT..."
+  ]
+ },
+ "20261221": {
+  "term": "BILGE",
+  "words": [
+   {
+    "word": "BILGE",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......S.",
+   "..BILGE.",
+   "..Y...T."
+  ]
+ },
+ "20261222": {
+  "term": "JENNY",
+  "words": [
+   {
+    "word": "JENNY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..I.....",
+   "JENNY...",
+   "..T.....",
+   "..O....."
+  ]
+ },
+ "20261223": {
+  "term": "KEEL",
+  "words": [
+   {
+    "word": "KEEL",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "UNTIL",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...U....",
+   "...N....",
+   "...T....",
+   "...I....",
+   "KEEL...."
+  ]
+ },
+ "20261224": {
+  "term": "SET",
+  "words": [
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "LEEWAY",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....L...",
+   "...SET..",
+   "....E...",
+   "....W...",
+   "....A...",
+   "....Y..."
+  ]
+ },
+ "20261225": {
+  "term": "TACKING",
+  "words": [
+   {
+    "word": "TACKING",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "TACKING.",
+   ".S......",
+   "........",
+   "........"
+  ]
+ },
+ "20261226": {
+  "term": "MOORING",
+  "words": [
+   {
+    "word": "MOORING",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "MOORING.",
+   "....N...",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261227": {
+  "term": "COIL",
+  "words": [
+   {
+    "word": "COIL",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "SINCE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   "....I...",
+   "....N...",
+   "....COIL",
+   "....E..."
+  ]
+ },
+ "20261228": {
+  "term": "DRAUGHT",
+  "words": [
+   {
+    "word": "DRAUGHT",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "DRAUGHT.",
+   "..N.....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20261229": {
+  "term": "AGROUND",
+  "words": [
+   {
+    "word": "AGROUND",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "...T....",
+   "AGROUND."
+  ]
+ },
+ "20261230": {
+  "term": "SLACK",
+  "words": [
+   {
+    "word": "SLACK",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "HULL",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...H....",
+   "...U....",
+   "...L....",
+   "..SLACK."
+  ]
+ },
+ "20261231": {
+  "term": "LINE",
+  "words": [
+   {
+    "word": "LINE",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "HULL",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "....H...",
+   "....U.A.",
+   "....LINE",
+   "....L...",
+   "........",
+   "........"
+  ]
+ },
+ "20270101": {
+  "term": "ABREAST",
+  "words": [
+   {
+    "word": "ABREAST",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".ABREAST",
+   ".N......",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270102": {
+  "term": "FOULED",
+  "words": [
+   {
+    "word": "FOULED",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OFF",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..FOULED",
+   "...F....",
+   "...F....",
+   "........"
+  ]
+ },
+ "20270103": {
+  "term": "SQUALL",
+  "words": [
+   {
+    "word": "SQUALL",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".SQUALL.",
+   "......E.",
+   "......E.",
+   "........"
+  ]
+ },
+ "20270104": {
+  "term": "BEARING",
+  "words": [
+   {
+    "word": "BEARING",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "......I.",
+   ".BEARING"
+  ]
+ },
+ "20270105": {
+  "term": "WATCH",
+  "words": [
+   {
+    "word": "WATCH",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "H",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "HOW",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".WATCH..",
+   ".....ON.",
+   ".....W..",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270106": {
+  "term": "SCUPPERS",
+  "words": [
+   {
+    "word": "SCUPPERS",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "SCUPPERS",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270107": {
+  "term": "CABIN",
+  "words": [
+   {
+    "word": "CABIN",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...V....",
+   "...I..I.",
+   "..CABIN."
+  ]
+ },
+ "20270108": {
+  "term": "BEAM",
+  "words": [
+   {
+    "word": "BEAM",
+    "dir": "H",
+    "row": 5,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "GENOA",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "......G.",
+   "......E.",
+   "......N.",
+   "......O.",
+   "....BEAM"
+  ]
+ },
+ "20270109": {
+  "term": "GENOA",
+  "words": [
+   {
+    "word": "GENOA",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....T..",
+   ".....H..",
+   ".GENOA..",
+   ".....T..",
+   "........"
+  ]
+ },
+ "20270110": {
+  "term": "FATHOM",
+  "words": [
+   {
+    "word": "FATHOM",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".I...T..",
+   ".FATHOM."
+  ]
+ },
+ "20270111": {
+  "term": "GEAR",
+  "words": [
+   {
+    "word": "GEAR",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AMONG",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...A....",
+   "...M....",
+   "...O....",
+   "...N....",
+   "...GEAR."
+  ]
+ },
+ "20270112": {
+  "term": "GALLEY",
+  "words": [
+   {
+    "word": "GALLEY",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "LOG",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "GALLEY..",
+   "..O.....",
+   "..G.....",
+   "........",
+   "........"
+  ]
+ },
+ "20270113": {
+  "term": "TRANSOM",
+  "words": [
+   {
+    "word": "TRANSOM",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "....I...",
+   ".TRANSOM"
+  ]
+ },
+ "20270114": {
+  "term": "LATITUDE",
+  "words": [
+   {
+    "word": "LATITUDE",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "LATITUDE",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270115": {
+  "term": "ALOFT",
+  "words": [
+   {
+    "word": "ALOFT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...I....",
+   "...N....",
+   "...T....",
+   ".ALOFT.."
+  ]
+ },
+ "20270116": {
+  "term": "ADRIFT",
+  "words": [
+   {
+    "word": "ADRIFT",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....Y..",
+   ".....E..",
+   "ADRIFT..",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270117": {
+  "term": "BUOY",
+  "words": [
+   {
+    "word": "BUOY",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "BELOW",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...BUOY.",
+   "...E....",
+   "...L....",
+   "...O....",
+   "...W...."
+  ]
+ },
+ "20270118": {
+  "term": "DOCK",
+  "words": [
+   {
+    "word": "DOCK",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "OVER",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....DOCK",
+   ".....V..",
+   ".....E..",
+   "....OR..",
+   "........"
+  ]
+ },
+ "20270119": {
+  "term": "UNDERWAY",
+  "words": [
+   {
+    "word": "UNDERWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "UNDERWAY",
+   "........",
+   "........"
+  ]
+ },
+ "20270120": {
+  "term": "ASTERN",
+  "words": [
+   {
+    "word": "ASTERN",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "ASTERN..",
+   "N.......",
+   "D.......",
+   "........"
+  ]
+ },
+ "20270121": {
+  "term": "GUNWALE",
+  "words": [
+   {
+    "word": "GUNWALE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".GUNWALE",
+   ".....T..",
+   "........",
+   "........"
+  ]
+ },
+ "20270122": {
+  "term": "REACHING",
+  "words": [
+   {
+    "word": "REACHING",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "REACHING",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270123": {
+  "term": "SECURE",
+  "words": [
+   {
+    "word": "SECURE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "......L.",
+   ".SECURE.",
+   "......E.",
+   "........",
+   "........"
+  ]
+ },
+ "20270124": {
+  "term": "DRAFT",
+  "words": [
+   {
+    "word": "DRAFT",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....V..",
+   ".....I..",
+   "...DRAFT",
+   ".......O",
+   "........",
+   "........"
+  ]
+ },
+ "20270125": {
+  "term": "INBOARD",
+  "words": [
+   {
+    "word": "INBOARD",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   ".INBOARD",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270126": {
+  "term": "LOG",
+  "words": [
+   {
+    "word": "LOG",
+    "dir": "H",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "H",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "OVER",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....LOG",
+   "......V.",
+   ".....YET",
+   "......R.",
+   "........",
+   "........"
+  ]
+ },
+ "20270127": {
+  "term": "HATCH",
+  "words": [
+   {
+    "word": "HATCH",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "PORT",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..P.....",
+   "..O.....",
+   "..R.....",
+   "HATCH..."
+  ]
+ },
+ "20270128": {
+  "term": "DECK",
+  "words": [
+   {
+    "word": "DECK",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ABOVE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....A...",
+   "....B...",
+   "....O...",
+   "....V...",
+   "...DECK."
+  ]
+ },
+ "20270129": {
+  "term": "FLOOD",
+  "words": [
+   {
+    "word": "FLOOD",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "ONCE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "FLOOD...",
+   "...N....",
+   "...C....",
+   "...E....",
+   "........",
+   "........"
+  ]
+ },
+ "20270130": {
+  "term": "LEE",
+  "words": [
+   {
+    "word": "LEE",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "LEST",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..L.....",
+   ".LEE....",
+   "..S.....",
+   "BUT....."
+  ]
+ },
+ "20270131": {
+  "term": "RIGGING",
+  "words": [
+   {
+    "word": "RIGGING",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".RIGGING",
+   ".....N..",
+   "........",
+   "........"
+  ]
+ },
+ "20270201": {
+  "term": "HELM",
+  "words": [
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "HELM",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "TILL",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....T...",
+   "....IF..",
+   "....L...",
+   "..HELM.."
+  ]
+ },
+ "20270202": {
+  "term": "LINE",
+  "words": [
+   {
+    "word": "LINE",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".LINE...",
+   "..N.....",
+   ".AT.....",
+   "..O.....",
+   "........",
+   "........"
+  ]
+ },
+ "20270203": {
+  "term": "HEADING",
+  "words": [
+   {
+    "word": "HEADING",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".HEADING",
+   ".....N.."
+  ]
+ },
+ "20270204": {
+  "term": "LEEWAY",
+  "words": [
+   {
+    "word": "LEEWAY",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..LEEWAY",
+   "......N.",
+   "......D.",
+   "........",
+   "........"
+  ]
+ },
+ "20270205": {
+  "term": "DRAUGHT",
+  "words": [
+   {
+    "word": "DRAUGHT",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".DRAUGHT",
+   "...S...."
+  ]
+ },
+ "20270206": {
+  "term": "CURRENT",
+  "words": [
+   {
+    "word": "CURRENT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......A.",
+   ".CURRENT",
+   "........",
+   "........"
+  ]
+ },
+ "20270207": {
+  "term": "STEM",
+  "words": [
+   {
+    "word": "IN",
+    "dir": "H",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "STEM",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....L..",
+   ".....IN.",
+   ".....N..",
+   "...STEM."
+  ]
+ },
+ "20270208": {
+  "term": "GYBING",
+  "words": [
+   {
+    "word": "GYBING",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".....A..",
+   ".GYBING.",
+   ".....D.."
+  ]
+ },
+ "20270209": {
+  "term": "FATHOM",
+  "words": [
+   {
+    "word": "FATHOM",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...S....",
+   "...E....",
+   ".FATHOM."
+  ]
+ },
+ "20270210": {
+  "term": "BEAM",
+  "words": [
+   {
+    "word": "BEAM",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "BOW",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......V.",
+   "......I.",
+   "....BEAM",
+   "....O...",
+   "....W...",
+   "........"
+  ]
+ },
+ "20270211": {
+  "term": "JENNY",
+  "words": [
+   {
+    "word": "JENNY",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...T....",
+   "...H..B.",
+   "..JENNY.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270212": {
+  "term": "REGATTA",
+  "words": [
+   {
+    "word": "REGATTA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".REGATTA",
+   ".....O.."
+  ]
+ },
+ "20270213": {
+  "term": "RUDDER",
+  "words": [
+   {
+    "word": "RUDDER",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......L.",
+   "......E.",
+   "..RUDDER"
+  ]
+ },
+ "20270214": {
+  "term": "COURSE",
+  "words": [
+   {
+    "word": "COURSE",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....Y..",
+   "COURSE..",
+   ".....T..",
+   "........"
+  ]
+ },
+ "20270215": {
+  "term": "INBOARD",
+  "words": [
+   {
+    "word": "INBOARD",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".INBOARD",
+   "...Y....",
+   "........"
+  ]
+ },
+ "20270216": {
+  "term": "PORT",
+  "words": [
+   {
+    "word": "PORT",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "JETTY",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...J....",
+   "...E....",
+   "...T....",
+   "PORT....",
+   "...Y....",
+   "........"
+  ]
+ },
+ "20270217": {
+  "term": "TRIM",
+  "words": [
+   {
+    "word": "UP",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "TRIM",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "PIER",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..UP....",
+   "...I....",
+   "...E....",
+   "..TRIM.."
+  ]
+ },
+ "20270218": {
+  "term": "STOW",
+  "words": [
+   {
+    "word": "STOW",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "ONTO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...STOW.",
+   "...O.N..",
+   ".....T..",
+   ".....O..",
+   "........",
+   "........"
+  ]
+ },
+ "20270219": {
+  "term": "FLOOD",
+  "words": [
+   {
+    "word": "FLOOD",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "FOR",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..O.F...",
+   "..FLOOD.",
+   "....R...",
+   "........"
+  ]
+ },
+ "20270220": {
+  "term": "AHEAD",
+  "words": [
+   {
+    "word": "AHEAD",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "LIKE",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....L..",
+   ".....I..",
+   ".....K..",
+   "...AHEAD"
+  ]
+ },
+ "20270221": {
+  "term": "HULL",
+  "words": [
+   {
+    "word": "HULL",
+    "dir": "H",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "HEADS",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....HULL",
+   "....E...",
+   "....A...",
+   "....D...",
+   "....S...",
+   "........"
+  ]
+ },
+ "20270222": {
+  "term": "BOW",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "ON",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "STOW",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....S...",
+   "...AT...",
+   "....ON..",
+   "..BOW..."
+  ]
+ },
+ "20270223": {
+  "term": "ASTERN",
+  "words": [
+   {
+    "word": "ASTERN",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "NOR",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..ASTERN",
+   ".......O",
+   ".......R",
+   "........",
+   "........"
+  ]
+ },
+ "20270224": {
+  "term": "STERN",
+  "words": [
+   {
+    "word": "STERN",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "UPON",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......U.",
+   "......P.",
+   "......O.",
+   "..STERN.",
+   "........",
+   "........"
+  ]
+ },
+ "20270225": {
+  "term": "BRIDGE",
+  "words": [
+   {
+    "word": "BRIDGE",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..O.....",
+   ".BRIDGE.",
+   "...F....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270226": {
+  "term": "LEEWARD",
+  "words": [
+   {
+    "word": "LEEWARD",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "LEEWARD.",
+   "....N...",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270227": {
+  "term": "ABREAST",
+  "words": [
+   {
+    "word": "ABREAST",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......A.",
+   "ABREAST.",
+   "........"
+  ]
+ },
+ "20270228": {
+  "term": "KNOT",
+  "words": [
+   {
+    "word": "KNOT",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "SINCE",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "....S...",
+   "....I...",
+   "...KNOT.",
+   "....C...",
+   "....E...",
+   "........"
+  ]
+ },
+ "20270301": {
+  "term": "JETTY",
+  "words": [
+   {
+    "word": "BY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "JETTY",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..BY....",
+   "..U.....",
+   "JETTY..."
+  ]
+ },
+ "20270302": {
+  "term": "DOCK",
+  "words": [
+   {
+    "word": "DOCK",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "FLOOD",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".F......",
+   ".L......",
+   ".O......",
+   ".O......",
+   ".DOCK..."
+  ]
+ },
+ "20270303": {
+  "term": "AFT",
+  "words": [
+   {
+    "word": "IN",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "AFT",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "ONTO",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..O.....",
+   ".IN.....",
+   "AFT.....",
+   "N.O....."
+  ]
+ },
+ "20270304": {
+  "term": "SLACK",
+  "words": [
+   {
+    "word": "SLACK",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....D...",
+   "....E...",
+   "....C...",
+   "SLACK..."
+  ]
+ },
+ "20270305": {
+  "term": "HEADS",
+  "words": [
+   {
+    "word": "HEADS",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "PAST",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......P",
+   ".......A",
+   "...HEADS",
+   ".......T"
+  ]
+ },
+ "20270306": {
+  "term": "RIGGING",
+  "words": [
+   {
+    "word": "RIGGING",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......I.",
+   ".RIGGING",
+   "........",
+   "........"
+  ]
+ },
+ "20270307": {
+  "term": "GANGWAY",
+  "words": [
+   {
+    "word": "GANGWAY",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "...O....",
+   ".GANGWAY"
+  ]
+ },
+ "20270308": {
+  "term": "TRANSOM",
+  "words": [
+   {
+    "word": "TRANSOM",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".TRANSOM",
+   "......N.",
+   "........",
+   "........"
+  ]
+ },
+ "20270309": {
+  "term": "GALLEY",
+  "words": [
+   {
+    "word": "GALLEY",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "PER",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....P..",
+   ".GALLEY.",
+   ".....R..",
+   "........",
+   "........"
+  ]
+ },
+ "20270310": {
+  "term": "MIDSHIP",
+  "words": [
+   {
+    "word": "MIDSHIP",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 4,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".......U",
+   ".MIDSHIP"
+  ]
+ },
+ "20270311": {
+  "term": "SQUALL",
+  "words": [
+   {
+    "word": "SQUALL",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...B....",
+   ".SQUALL.",
+   "...T....",
+   "........",
+   "........"
+  ]
+ },
+ "20270312": {
+  "term": "COIL",
+  "words": [
+   {
+    "word": "COIL",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "H",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...COIL.",
+   ".....N..",
+   ".....T..",
+   ".....ON.",
+   "........",
+   "........"
+  ]
+ },
+ "20270313": {
+  "term": "CHOCK",
+  "words": [
+   {
+    "word": "CHOCK",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "HELM",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "CHOCK...",
+   ".E......",
+   ".L......",
+   ".M......"
+  ]
+ },
+ "20270314": {
+  "term": "FOULED",
+  "words": [
+   {
+    "word": "FOULED",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "HOW",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..H.....",
+   ".FOULED.",
+   "..W.....",
+   "........",
+   "........"
+  ]
+ },
+ "20270315": {
+  "term": "ADRIFT",
+  "words": [
+   {
+    "word": "ADRIFT",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".ADRIFT.",
+   ".S....O.",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270316": {
+  "term": "BUOY",
+  "words": [
+   {
+    "word": "BUOY",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "BILGE",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..BUOY..",
+   "..I.....",
+   "..L.....",
+   "..G.....",
+   "..E.....",
+   "........"
+  ]
+ },
+ "20270317": {
+  "term": "WATCH",
+  "words": [
+   {
+    "word": "WATCH",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "STEM",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....S..",
+   "...WATCH",
+   ".....E..",
+   ".....M..",
+   "........",
+   "........"
+  ]
+ },
+ "20270318": {
+  "term": "AGROUND",
+  "words": [
+   {
+    "word": "AGROUND",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "....S...",
+   ".AGROUND"
+  ]
+ },
+ "20270319": {
+  "term": "DRAFT",
+  "words": [
+   {
+    "word": "DRAFT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "NEAR",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..N.....",
+   "..E.....",
+   "..A.....",
+   ".DRAFT..",
+   "........",
+   "........"
+  ]
+ },
+ "20270320": {
+  "term": "FORWARD",
+  "words": [
+   {
+    "word": "FORWARD",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..S.....",
+   ".FORWARD",
+   "........"
+  ]
+ },
+ "20270321": {
+  "term": "JIBING",
+  "words": [
+   {
+    "word": "JIBING",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....A...",
+   "JIBING..",
+   "..Y....."
+  ]
+ },
+ "20270322": {
+  "term": "LEE",
+  "words": [
+   {
+    "word": "LEE",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "EXCEPT",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...LEE..",
+   "....X...",
+   "....C...",
+   "....E...",
+   "....P...",
+   "....T..."
+  ]
+ },
+ "20270323": {
+  "term": "PIER",
+  "words": [
+   {
+    "word": "PIER",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "NEAR",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "....N...",
+   "..PIER..",
+   "....A...",
+   "...OR...",
+   "........",
+   "........"
+  ]
+ },
+ "20270324": {
+  "term": "HATCH",
+  "words": [
+   {
+    "word": "HATCH",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...T....",
+   "...H....",
+   "...A....",
+   ".HATCH.."
+  ]
+ },
+ "20270325": {
+  "term": "CLEAT",
+  "words": [
+   {
+    "word": "UP",
+    "dir": "H",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "CLEAT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".....B..",
+   ".....UP.",
+   ".CLEAT.."
+  ]
+ },
+ "20270326": {
+  "term": "GUNWALE",
+  "words": [
+   {
+    "word": "GUNWALE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...O....",
+   ".GUNWALE",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270327": {
+  "term": "WAY",
+  "words": [
+   {
+    "word": "WAY",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "WHERE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...WAY..",
+   "...H....",
+   "...E....",
+   "..OR....",
+   "...E....",
+   "........"
+  ]
+ },
+ "20270328": {
+  "term": "CABIN",
+  "words": [
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "CABIN",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....IF.",
+   ".CABIN..",
+   "...Y....",
+   "........"
+  ]
+ },
+ "20270329": {
+  "term": "SET",
+  "words": [
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....IF..",
+   "..A.N...",
+   "..SET...",
+   "....O..."
+  ]
+ },
+ "20270330": {
+  "term": "BOWLINE",
+  "words": [
+   {
+    "word": "BOWLINE",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".BOWLINE",
+   ".....N..",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270331": {
+  "term": "SECURE",
+  "words": [
+   {
+    "word": "SECURE",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 3,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".......T",
+   ".......H",
+   "..SECURE"
+  ]
+ },
+ "20270401": {
+  "term": "TILLER",
+  "words": [
+   {
+    "word": "TILLER",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..S.....",
+   "..E.....",
+   "..TILLER"
+  ]
+ },
+ "20270402": {
+  "term": "COCKPIT",
+  "words": [
+   {
+    "word": "COCKPIT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......A",
+   ".COCKPIT",
+   "........",
+   "........"
+  ]
+ },
+ "20270403": {
+  "term": "LOG",
+  "words": [
+   {
+    "word": "LOG",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "LEEWAY",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...LOG..",
+   "...E....",
+   "...E....",
+   "...W....",
+   "...A....",
+   "...Y...."
+  ]
+ },
+ "20270404": {
+  "term": "KEEL",
+  "words": [
+   {
+    "word": "KEEL",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "WHERE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...W....",
+   "...H....",
+   ".KEEL...",
+   "...R....",
+   "...E....",
+   "........"
+  ]
+ },
+ "20270405": {
+  "term": "GENOA",
+  "words": [
+   {
+    "word": "GENOA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "FROM",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....F...",
+   "....R...",
+   ".GENOA..",
+   "....M..."
+  ]
+ },
+ "20270406": {
+  "term": "ABOARD",
+  "words": [
+   {
+    "word": "ABOARD",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "ABOARD..",
+   "S.N.....",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270407": {
+  "term": "DINGHY",
+  "words": [
+   {
+    "word": "DINGHY",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".DINGHY.",
+   "......E.",
+   "......T."
+  ]
+ },
+ "20270408": {
+  "term": "BOOM",
+  "words": [
+   {
+    "word": "BOOM",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "BILGE",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..BOOM..",
+   "..I.....",
+   "..L.....",
+   "..G.....",
+   "..E.....",
+   "........"
+  ]
+ },
+ "20270409": {
+  "term": "TACKING",
+  "words": [
+   {
+    "word": "TACKING",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "A.......",
+   "TACKING.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270410": {
+  "term": "WAKE",
+  "words": [
+   {
+    "word": "WAKE",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......T.",
+   "....W.H.",
+   "...WAKE.",
+   "....Y..."
+  ]
+ },
+ "20270411": {
+  "term": "GEAR",
+  "words": [
+   {
+    "word": "GEAR",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "LOG",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...L.V..",
+   "...O.I..",
+   "...GEAR.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270412": {
+  "term": "MOORING",
+  "words": [
+   {
+    "word": "MOORING",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "MOORING.",
+   ".F......"
+  ]
+ },
+ "20270413": {
+  "term": "DECK",
+  "words": [
+   {
+    "word": "DECK",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "UNDER",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..U.....",
+   "..N.....",
+   "..D.....",
+   ".DECK...",
+   "..R....."
+  ]
+ },
+ "20270414": {
+  "term": "BEARING",
+  "words": [
+   {
+    "word": "BEARING",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".BEARING",
+   "...S....",
+   "........"
+  ]
+ },
+ "20270415": {
+  "term": "FENDER",
+  "words": [
+   {
+    "word": "FENDER",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "FOR",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......F.",
+   "......O.",
+   ".FENDER."
+  ]
+ },
+ "20270416": {
+  "term": "BELOW",
+  "words": [
+   {
+    "word": "BELOW",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "BELOW...",
+   "....A...",
+   "...BY..."
+  ]
+ },
+ "20270417": {
+  "term": "BILGE",
+  "words": [
+   {
+    "word": "BILGE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "BOW",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".BILGE..",
+   ".OF.....",
+   ".W......",
+   "........"
+  ]
+ },
+ "20270418": {
+  "term": "ALOFT",
+  "words": [
+   {
+    "word": "ALOFT",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ONTO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...ALOFT",
+   ".....N..",
+   ".....T..",
+   ".....O..",
+   "........",
+   "........"
+  ]
+ },
+ "20270419": {
+  "term": "CHART",
+  "words": [
+   {
+    "word": "CHART",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....V...",
+   "....I.A.",
+   "..CHART.",
+   "........"
+  ]
+ },
+ "20270420": {
+  "term": "GYBING",
+  "words": [
+   {
+    "word": "GYBING",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "NOR",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..GYBING",
+   "......O.",
+   "......R.",
+   "........"
+  ]
+ },
+ "20270421": {
+  "term": "BOWLINE",
+  "words": [
+   {
+    "word": "BOWLINE",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".S......",
+   "BOWLINE."
+  ]
+ },
+ "20270422": {
+  "term": "AHEAD",
+  "words": [
+   {
+    "word": "AHEAD",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "KEEL",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...K....",
+   "...E....",
+   ".AHEAD..",
+   "...L....",
+   "........",
+   "........"
+  ]
+ },
+ "20270423": {
+  "term": "HULL",
+  "words": [
+   {
+    "word": "HULL",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "T.......",
+   "HULL....",
+   "E.E.....",
+   "..E....."
+  ]
+ },
+ "20270424": {
+  "term": "TRANSOM",
+  "words": [
+   {
+    "word": "TRANSOM",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "....A...",
+   ".TRANSOM",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270425": {
+  "term": "BILGE",
+  "words": [
+   {
+    "word": "BILGE",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ONCE",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....O..",
+   ".....N..",
+   ".....C..",
+   ".BILGE.."
+  ]
+ },
+ "20270426": {
+  "term": "FOULED",
+  "words": [
+   {
+    "word": "FOULED",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LOG",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".FOULED.",
+   "....O...",
+   "....G...",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270427": {
+  "term": "MOORING",
+  "words": [
+   {
+    "word": "MOORING",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "....O...",
+   ".MOORING"
+  ]
+ },
+ "20270428": {
+  "term": "GALLEY",
+  "words": [
+   {
+    "word": "GALLEY",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..GALLEY",
+   "...N....",
+   "...D....",
+   "........",
+   "........"
+  ]
+ },
+ "20270429": {
+  "term": "LEEWARD",
+  "words": [
+   {
+    "word": "LEEWARD",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".LEEWARD",
+   ".....S..",
+   "........"
+  ]
+ },
+ "20270430": {
+  "term": "FATHOM",
+  "words": [
+   {
+    "word": "FATHOM",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "....A.T.",
+   "..FATHOM"
+  ]
+ },
+ "20270501": {
+  "term": "HEADING",
+  "words": [
+   {
+    "word": "HEADING",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "......I.",
+   ".HEADING"
+  ]
+ },
+ "20270502": {
+  "term": "GENOA",
+  "words": [
+   {
+    "word": "GENOA",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...D....",
+   "..GENOA.",
+   "...C....",
+   "...K...."
+  ]
+ },
+ "20270503": {
+  "term": "CURRENT",
+  "words": [
+   {
+    "word": "CURRENT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "......I.",
+   ".CURRENT"
+  ]
+ },
+ "20270504": {
+  "term": "LEEWAY",
+  "words": [
+   {
+    "word": "LEEWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AFT",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "LEEWAY..",
+   "....F...",
+   "....T..."
+  ]
+ },
+ "20270505": {
+  "term": "LOG",
+  "words": [
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "LOG",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "FLOOD",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "..IF....",
+   "...L....",
+   "...O....",
+   "..LOG...",
+   "...D...."
+  ]
+ },
+ "20270506": {
+  "term": "SQUALL",
+  "words": [
+   {
+    "word": "SQUALL",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...V....",
+   "...I....",
+   "SQUALL.."
+  ]
+ },
+ "20270507": {
+  "term": "ADRIFT",
+  "words": [
+   {
+    "word": "ADRIFT",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".ADRIFT.",
+   ".N......",
+   ".D......",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270508": {
+  "term": "CHART",
+  "words": [
+   {
+    "word": "BY",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "CHART",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....BY..",
+   "....U...",
+   "CHART..."
+  ]
+ },
+ "20270509": {
+  "term": "TRIM",
+  "words": [
+   {
+    "word": "TRIM",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LEST",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".L......",
+   ".E......",
+   ".S......",
+   ".TRIM...",
+   "...F...."
+  ]
+ },
+ "20270510": {
+  "term": "BOW",
+  "words": [
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "ATOP",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....BOW.",
+   "....U...",
+   "...ATOP."
+  ]
+ },
+ "20270511": {
+  "term": "GUNWALE",
+  "words": [
+   {
+    "word": "GUNWALE",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "...I....",
+   ".GUNWALE"
+  ]
+ },
+ "20270512": {
+  "term": "HELM",
+  "words": [
+   {
+    "word": "TO",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "HELM",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BOOM",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...B....",
+   "..TO....",
+   "...O....",
+   "HELM....",
+   "........",
+   "........"
+  ]
+ },
+ "20270513": {
+  "term": "REGATTA",
+  "words": [
+   {
+    "word": "REGATTA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "REGATTA.",
+   "...N...."
+  ]
+ },
+ "20270514": {
+  "term": "DRAUGHT",
+  "words": [
+   {
+    "word": "DRAUGHT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "..O.....",
+   ".DRAUGHT"
+  ]
+ },
+ "20270515": {
+  "term": "INBOARD",
+  "words": [
+   {
+    "word": "INBOARD",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "INBOARD.",
+   "F.......",
+   "........",
+   "........"
+  ]
+ },
+ "20270516": {
+  "term": "GANGWAY",
+  "words": [
+   {
+    "word": "GANGWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "GANGWAY.",
+   ".N......",
+   "........"
+  ]
+ },
+ "20270517": {
+  "term": "ASTERN",
+  "words": [
+   {
+    "word": "ASTERN",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....A.O.",
+   "..ASTERN",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270518": {
+  "term": "BEARING",
+  "words": [
+   {
+    "word": "BEARING",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......O.",
+   ".BEARING",
+   "........",
+   "........"
+  ]
+ },
+ "20270519": {
+  "term": "WAKE",
+  "words": [
+   {
+    "word": "WAKE",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...E....",
+   "WAKE....",
+   "A.......",
+   "Y......."
+  ]
+ },
+ "20270520": {
+  "term": "JIBING",
+  "words": [
+   {
+    "word": "JIBING",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "JIBING..",
+   "..U.....",
+   "..T....."
+  ]
+ },
+ "20270521": {
+  "term": "HEADWAY",
+  "words": [
+   {
+    "word": "HEADWAY",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".HEADWAY",
+   "......N.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270522": {
+  "term": "COURSE",
+  "words": [
+   {
+    "word": "COURSE",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".COURSE.",
+   "..R..O..",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270523": {
+  "term": "AFT",
+  "words": [
+   {
+    "word": "AFT",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "JETTY",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "......J.",
+   "......E.",
+   "......T.",
+   "....AFT.",
+   "....T.Y."
+  ]
+ },
+ "20270524": {
+  "term": "COIL",
+  "words": [
+   {
+    "word": "OF",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "COIL",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ONCE",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".OF.....",
+   ".N......",
+   ".COIL...",
+   ".E......"
+  ]
+ },
+ "20270525": {
+  "term": "FORWARD",
+  "words": [
+   {
+    "word": "FORWARD",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".O......",
+   ".FORWARD",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270526": {
+  "term": "HEADS",
+  "words": [
+   {
+    "word": "HEADS",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "KEEL",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".K......",
+   "HEADS...",
+   ".E......",
+   ".L......"
+  ]
+ },
+ "20270527": {
+  "term": "JENNY",
+  "words": [
+   {
+    "word": "JENNY",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "KNOT",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..K.....",
+   "JENNY...",
+   "..O.....",
+   "..T.....",
+   "........",
+   "........"
+  ]
+ },
+ "20270528": {
+  "term": "JETTY",
+  "words": [
+   {
+    "word": "JETTY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...Y.A..",
+   "..JETTY.",
+   "...T....",
+   "........"
+  ]
+ },
+ "20270529": {
+  "term": "KEEL",
+  "words": [
+   {
+    "word": "KEEL",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "BILGE",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "......B.",
+   "......I.",
+   "......L.",
+   "......G.",
+   "....KEEL",
+   "........"
+  ]
+ },
+ "20270530": {
+  "term": "CLEAT",
+  "words": [
+   {
+    "word": "CLEAT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "HULL",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..H.....",
+   "..U.....",
+   "..L.....",
+   ".CLEAT..",
+   "........",
+   "........"
+  ]
+ },
+ "20270531": {
+  "term": "HATCH",
+  "words": [
+   {
+    "word": "HATCH",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....T...",
+   "....H...",
+   "...HATCH",
+   "....T..."
+  ]
+ },
+ "20270601": {
+  "term": "WAY",
+  "words": [
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....T..",
+   "....BOW.",
+   "..WAY...",
+   "...S....",
+   "........"
+  ]
+ },
+ "20270602": {
+  "term": "LEE",
+  "words": [
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 1,
+    "col": 5,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "STEM",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".....SET",
+   ".....T..",
+   "....LEE.",
+   ".....M..",
+   "........"
+  ]
+ },
+ "20270603": {
+  "term": "BOOM",
+  "words": [
+   {
+    "word": "OF",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "BOOM",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "FROM",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..OF....",
+   "...R....",
+   ".BOOM...",
+   "...M....",
+   "........",
+   "........"
+  ]
+ },
+ "20270604": {
+  "term": "DOCK",
+  "words": [
+   {
+    "word": "DOCK",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "CABIN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..DOCK..",
+   "....A...",
+   "....B...",
+   "....I...",
+   "....N...",
+   "........"
+  ]
+ },
+ "20270605": {
+  "term": "COCKPIT",
+  "words": [
+   {
+    "word": "COCKPIT",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "COCKPIT.",
+   ".N......",
+   "........"
+  ]
+ },
+ "20270606": {
+  "term": "BEAM",
+  "words": [
+   {
+    "word": "BEAM",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "ALOFT",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..BEAM..",
+   "....L...",
+   "....O...",
+   "....F...",
+   "....T...",
+   "........"
+  ]
+ },
+ "20270607": {
+  "term": "SLACK",
+  "words": [
+   {
+    "word": "SLACK",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "STOW",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "SLACK...",
+   "T.......",
+   "O.......",
+   "W.......",
+   "........",
+   "........"
+  ]
+ },
+ "20270608": {
+  "term": "MIDSHIP",
+  "words": [
+   {
+    "word": "MIDSHIP",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....A...",
+   ".MIDSHIP",
+   "........"
+  ]
+ },
+ "20270609": {
+  "term": "KNOT",
+  "words": [
+   {
+    "word": "KNOT",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".KNOT...",
+   "....H...",
+   "....AN..",
+   "....T...",
+   "........",
+   "........"
+  ]
+ },
+ "20270610": {
+  "term": "AGROUND",
+  "words": [
+   {
+    "word": "AGROUND",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "AGROUND.",
+   "...R....",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270611": {
+  "term": "RUDDER",
+  "words": [
+   {
+    "word": "RUDDER",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "FOR",
+    "dir": "V",
+    "row": 3,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".......F",
+   ".......O",
+   "..RUDDER"
+  ]
+ },
+ "20270612": {
+  "term": "RIGGING",
+  "words": [
+   {
+    "word": "RIGGING",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".O......",
+   ".RIGGING",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270613": {
+  "term": "GEAR",
+  "words": [
+   {
+    "word": "AN",
+    "dir": "H",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   },
+   {
+    "word": "GEAR",
+    "dir": "H",
+    "row": 5,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "NEAR",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......AN",
+   ".......E",
+   ".......A",
+   "....GEAR"
+  ]
+ },
+ "20270614": {
+  "term": "ABREAST",
+  "words": [
+   {
+    "word": "ABREAST",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "ABREAST.",
+   "S.......",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270615": {
+  "term": "TACKING",
+  "words": [
+   {
+    "word": "TACKING",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".....O..",
+   "TACKING.",
+   "........"
+  ]
+ },
+ "20270616": {
+  "term": "FENDER",
+  "words": [
+   {
+    "word": "SO",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "FENDER",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".SO.....",
+   "..FENDER",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270617": {
+  "term": "BELOW",
+  "words": [
+   {
+    "word": "BELOW",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "KEEL",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".K......",
+   "BELOW...",
+   ".E......",
+   ".L......",
+   "........"
+  ]
+ },
+ "20270618": {
+  "term": "PORT",
+  "words": [
+   {
+    "word": "PORT",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "ALOFT",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....A..",
+   ".....L..",
+   ".....O..",
+   ".....F..",
+   "..PORT..",
+   "........"
+  ]
+ },
+ "20270619": {
+  "term": "STEM",
+  "words": [
+   {
+    "word": "STEM",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "SLACK",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "STEM....",
+   "L.......",
+   "A.......",
+   "C.......",
+   "K......."
+  ]
+ },
+ "20270620": {
+  "term": "ABOARD",
+  "words": [
+   {
+    "word": "ABOARD",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..S.....",
+   "ABOARD..",
+   "S.......",
+   "........",
+   "........"
+  ]
+ },
+ "20270621": {
+  "term": "DECK",
+  "words": [
+   {
+    "word": "DECK",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AFTER",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".A......",
+   ".F......",
+   ".T......",
+   "DECK....",
+   ".R......",
+   "........"
+  ]
+ },
+ "20270622": {
+  "term": "LINE",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "LINE",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "TRIM",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...AT...",
+   "....R...",
+   "...LINE.",
+   "....M..."
+  ]
+ },
+ "20270623": {
+  "term": "CHOCK",
+  "words": [
+   {
+    "word": "CHOCK",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "DOCK",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....D...",
+   "....O...",
+   "....C...",
+   "CHOCK..."
+  ]
+ },
+ "20270624": {
+  "term": "BRIDGE",
+  "words": [
+   {
+    "word": "BRIDGE",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "VIA",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..V.....",
+   "BRIDGE..",
+   "..A....."
+  ]
+ },
+ "20270625": {
+  "term": "FLOOD",
+  "words": [
+   {
+    "word": "FLOOD",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "INTO",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..I.....",
+   "..N.....",
+   "..T.....",
+   "FLOOD...",
+   "........",
+   "........"
+  ]
+ },
+ "20270626": {
+  "term": "PIER",
+  "words": [
+   {
+    "word": "PIER",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LIKE",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..L.O...",
+   ".PIER...",
+   "..K.....",
+   "..E.....",
+   "........"
+  ]
+ },
+ "20270627": {
+  "term": "STERN",
+  "words": [
+   {
+    "word": "STERN",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..T.....",
+   "..H.A...",
+   "STERN...",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270628": {
+  "term": "ALOFT",
+  "words": [
+   {
+    "word": "ALOFT",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "TILL",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "....T...",
+   "....I...",
+   "...ALOFT",
+   "....L...",
+   "........",
+   "........"
+  ]
+ },
+ "20270629": {
+  "term": "SECURE",
+  "words": [
+   {
+    "word": "SECURE",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "FOR",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....F..",
+   ".....O..",
+   ".SECURE.",
+   "........"
+  ]
+ },
+ "20270630": {
+  "term": "SET",
+  "words": [
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "LOG",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "KEEL",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..K.....",
+   "..E.....",
+   ".SET....",
+   "..LOG..."
+  ]
+ },
+ "20270701": {
+  "term": "CABIN",
+  "words": [
+   {
+    "word": "CABIN",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "NEAR",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".CABIN..",
+   ".....E..",
+   ".....A..",
+   ".....R.."
+  ]
+ },
+ "20270702": {
+  "term": "TILLER",
+  "words": [
+   {
+    "word": "TILLER",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "LEE",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "TILLER..",
+   "..E.....",
+   "..E.....",
+   "........"
+  ]
+ },
+ "20270703": {
+  "term": "STOW",
+  "words": [
+   {
+    "word": "STOW",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "H",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....STOW",
+   ".....H..",
+   ".....AS.",
+   ".....T.."
+  ]
+ },
+ "20270704": {
+  "term": "BUOY",
+  "words": [
+   {
+    "word": "BUOY",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BEAM",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "BUOY....",
+   "E.F.....",
+   "A.......",
+   "M......."
+  ]
+ },
+ "20270705": {
+  "term": "DINGHY",
+  "words": [
+   {
+    "word": "DINGHY",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "..A..B..",
+   "DINGHY.."
+  ]
+ },
+ "20270706": {
+  "term": "WATCH",
+  "words": [
+   {
+    "word": "WATCH",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "DOWN",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...D....",
+   "...O....",
+   "...WATCH",
+   "...N...."
+  ]
+ },
+ "20270707": {
+  "term": "DRAFT",
+  "words": [
+   {
+    "word": "DRAFT",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..O.O...",
+   ".DRAFT..",
+   "...T...."
+  ]
+ },
+ "20270708": {
+  "term": "GENOA",
+  "words": [
+   {
+    "word": "GENOA",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "KNOT",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....K..",
+   "...GENOA",
+   ".....O..",
+   ".....T..",
+   "........",
+   "........"
+  ]
+ },
+ "20270709": {
+  "term": "DRAUGHT",
+  "words": [
+   {
+    "word": "DRAUGHT",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "DRAUGHT.",
+   "..T.....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270710": {
+  "term": "BUOY",
+  "words": [
+   {
+    "word": "BUOY",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "JETTY",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "......J.",
+   "......E.",
+   "......T.",
+   "......T.",
+   "...BUOY."
+  ]
+ },
+ "20270711": {
+  "term": "LEE",
+  "words": [
+   {
+    "word": "LEE",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "ASTERN",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....A..",
+   ".....S..",
+   ".....T..",
+   "....LEE.",
+   ".....R..",
+   ".....N.."
+  ]
+ },
+ "20270712": {
+  "term": "BEAM",
+  "words": [
+   {
+    "word": "BEAM",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...I....",
+   "...N....",
+   "..BEAM..",
+   "....S..."
+  ]
+ },
+ "20270713": {
+  "term": "WAKE",
+  "words": [
+   {
+    "word": "WAKE",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "..D.....",
+   "..E.....",
+   "..C.....",
+   "WAKE....",
+   ".N......"
+  ]
+ },
+ "20270714": {
+  "term": "CLEAT",
+  "words": [
+   {
+    "word": "CLEAT",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LEST",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......L.",
+   "......E.",
+   "......S.",
+   "..CLEAT."
+  ]
+ },
+ "20270715": {
+  "term": "TACKING",
+  "words": [
+   {
+    "word": "TACKING",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".TACKING",
+   "..T....."
+  ]
+ },
+ "20270716": {
+  "term": "BILGE",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   },
+   {
+    "word": "BILGE",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 3,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......AT",
+   ".......H",
+   "...BILGE"
+  ]
+ },
+ "20270717": {
+  "term": "REGATTA",
+  "words": [
+   {
+    "word": "REGATTA",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".....A..",
+   ".REGATTA"
+  ]
+ },
+ "20270718": {
+  "term": "SQUALL",
+  "words": [
+   {
+    "word": "SQUALL",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..A.....",
+   "..SQUALL",
+   ".....T.."
+  ]
+ },
+ "20270719": {
+  "term": "GYBING",
+  "words": [
+   {
+    "word": "GYBING",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..W.....",
+   "..A.....",
+   ".GYBING."
+  ]
+ },
+ "20270720": {
+  "term": "CHART",
+  "words": [
+   {
+    "word": "CHART",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....W.A",
+   "...CHART",
+   ".....Y..",
+   "........"
+  ]
+ },
+ "20270721": {
+  "term": "WAY",
+  "words": [
+   {
+    "word": "WAY",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AMID",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...WAY..",
+   "....N...",
+   ".AMID...",
+   "........",
+   "........"
+  ]
+ },
+ "20270722": {
+  "term": "DECK",
+  "words": [
+   {
+    "word": "OF",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "DECK",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "ONCE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....OF..",
+   "....N...",
+   "..DECK..",
+   "....E...",
+   "........"
+  ]
+ },
+ "20270723": {
+  "term": "TRIM",
+  "words": [
+   {
+    "word": "TRIM",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...TRIM.",
+   "...H....",
+   "...AN...",
+   "...T....",
+   "........",
+   "........"
+  ]
+ },
+ "20270724": {
+  "term": "JIBING",
+  "words": [
+   {
+    "word": "JIBING",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......A.",
+   "..JIBING",
+   "......D.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270725": {
+  "term": "ADRIFT",
+  "words": [
+   {
+    "word": "ADRIFT",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "FOR",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....F...",
+   "....O...",
+   "..ADRIFT"
+  ]
+ },
+ "20270726": {
+  "term": "HULL",
+  "words": [
+   {
+    "word": "HULL",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "WHILE",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".......W",
+   ".......H",
+   ".......I",
+   "....HULL",
+   ".......E"
+  ]
+ },
+ "20270727": {
+  "term": "AFT",
+  "words": [
+   {
+    "word": "THE",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "AFT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...THE..",
+   "...H....",
+   "...A....",
+   ".AFT...."
+  ]
+ },
+ "20270728": {
+  "term": "HELM",
+  "words": [
+   {
+    "word": "HELM",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "WATCH",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "W.......",
+   "A.......",
+   "T.......",
+   "C.......",
+   "HELM....",
+   "........"
+  ]
+ },
+ "20270729": {
+  "term": "HATCH",
+  "words": [
+   {
+    "word": "SO",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "HATCH",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..SO....",
+   "..E.....",
+   "HATCH..."
+  ]
+ },
+ "20270730": {
+  "term": "ASTERN",
+  "words": [
+   {
+    "word": "ASTERN",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "ASTERN..",
+   "N.O.....",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270731": {
+  "term": "STOW",
+  "words": [
+   {
+    "word": "STOW",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "OUT",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "OFF",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....O...",
+   "....U...",
+   "...STOW.",
+   ".....F..",
+   ".....F.."
+  ]
+ },
+ "20270801": {
+  "term": "BELOW",
+  "words": [
+   {
+    "word": "BELOW",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "STOW",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".......S",
+   ".......T",
+   ".......O",
+   "...BELOW",
+   "........",
+   "........"
+  ]
+ },
+ "20270802": {
+  "term": "RIGGING",
+  "words": [
+   {
+    "word": "RIGGING",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".RIGGING",
+   "..F.....",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270803": {
+  "term": "BOWLINE",
+  "words": [
+   {
+    "word": "BOWLINE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ON",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "......O.",
+   ".BOWLINE",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270804": {
+  "term": "KEEL",
+  "words": [
+   {
+    "word": "KEEL",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".KEEL...",
+   "....IF..",
+   "....N...",
+   "....E...",
+   "........"
+  ]
+ },
+ "20270805": {
+  "term": "GUNWALE",
+  "words": [
+   {
+    "word": "GUNWALE",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".GUNWALE",
+   ".....S..",
+   "........"
+  ]
+ },
+ "20270806": {
+  "term": "TRANSOM",
+  "words": [
+   {
+    "word": "TRANSOM",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "TRANSOM.",
+   "..S....."
+  ]
+ },
+ "20270807": {
+  "term": "GEAR",
+  "words": [
+   {
+    "word": "GEAR",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "GENOA",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".G......",
+   "GEAR....",
+   ".N......",
+   ".O......",
+   ".A......",
+   "........"
+  ]
+ },
+ "20270808": {
+  "term": "STEM",
+  "words": [
+   {
+    "word": "TO",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "STEM",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".TO.....",
+   ".H......",
+   ".A......",
+   "STEM...."
+  ]
+ },
+ "20270809": {
+  "term": "CHOCK",
+  "words": [
+   {
+    "word": "CHOCK",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "DOCK",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".....D..",
+   "...CHOCK",
+   ".....C..",
+   ".....K..",
+   "........",
+   "........"
+  ]
+ },
+ "20270810": {
+  "term": "CURRENT",
+  "words": [
+   {
+    "word": "CURRENT",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "CURRENT.",
+   ".P......",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270811": {
+  "term": "JETTY",
+  "words": [
+   {
+    "word": "JETTY",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "..D.....",
+   ".JETTY..",
+   "..C.....",
+   "..K.....",
+   "........"
+  ]
+ },
+ "20270812": {
+  "term": "HEADWAY",
+  "words": [
+   {
+    "word": "HEADWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".HEADWAY",
+   "......T.",
+   "........"
+  ]
+ },
+ "20270813": {
+  "term": "CABIN",
+  "words": [
+   {
+    "word": "CABIN",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BOOM",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".CABIN..",
+   "...O....",
+   "...O....",
+   "...M...."
+  ]
+ },
+ "20270814": {
+  "term": "HEADS",
+  "words": [
+   {
+    "word": "HEADS",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "THAN",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".T......",
+   ".HEADS..",
+   ".A......",
+   ".N......",
+   "........"
+  ]
+ },
+ "20270815": {
+  "term": "STERN",
+  "words": [
+   {
+    "word": "STERN",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "STOW",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...STERN",
+   "...T....",
+   "...O....",
+   "...W....",
+   "........",
+   "........"
+  ]
+ },
+ "20270816": {
+  "term": "INBOARD",
+  "words": [
+   {
+    "word": "INBOARD",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "INBOARD.",
+   "....T...",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270817": {
+  "term": "BOOM",
+  "words": [
+   {
+    "word": "BOOM",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "BELOW",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "......B.",
+   "......E.",
+   "......L.",
+   "....BOOM",
+   "......W.",
+   "........"
+  ]
+ },
+ "20270818": {
+  "term": "BRIDGE",
+  "words": [
+   {
+    "word": "BRIDGE",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 3,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "BRIDGE..",
+   "Y.F.....",
+   "........"
+  ]
+ },
+ "20270819": {
+  "term": "DOCK",
+  "words": [
+   {
+    "word": "DOCK",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "CHART",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".DOCK...",
+   "...H....",
+   "...A....",
+   "...R....",
+   "...T....",
+   "........"
+  ]
+ },
+ "20270820": {
+  "term": "KNOT",
+  "words": [
+   {
+    "word": "KNOT",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 3,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...D....",
+   "...E....",
+   "...C....",
+   "...KNOT.",
+   ".....F..",
+   "........"
+  ]
+ },
+ "20270821": {
+  "term": "BEARING",
+  "words": [
+   {
+    "word": "BEARING",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "......A.",
+   ".BEARING"
+  ]
+ },
+ "20270822": {
+  "term": "FENDER",
+  "words": [
+   {
+    "word": "FENDER",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......T.",
+   "......H.",
+   "..FENDER",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270823": {
+  "term": "SLACK",
+  "words": [
+   {
+    "word": "SLACK",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 2,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "SLACK...",
+   "O.N.....",
+   "..D.....",
+   "........"
+  ]
+ },
+ "20270824": {
+  "term": "LINE",
+  "words": [
+   {
+    "word": "AS",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "LINE",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...AS...",
+   ".LINE...",
+   "..F.T..."
+  ]
+ },
+ "20270825": {
+  "term": "RUDDER",
+  "words": [
+   {
+    "word": "RUDDER",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "PER",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....P..",
+   ".RUDDER.",
+   ".....R..",
+   "........",
+   "........"
+  ]
+ },
+ "20270826": {
+  "term": "ABREAST",
+  "words": [
+   {
+    "word": "ABREAST",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "..O.....",
+   "ABREAST.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270827": {
+  "term": "COCKPIT",
+  "words": [
+   {
+    "word": "COCKPIT",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....U..",
+   ".COCKPIT",
+   "........",
+   "........"
+  ]
+ },
+ "20270828": {
+  "term": "SET",
+  "words": [
+   {
+    "word": "AS",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "HEADS",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....H...",
+   "....E...",
+   "....AS..",
+   "....D...",
+   "....SET.",
+   "........"
+  ]
+ },
+ "20270829": {
+  "term": "MIDSHIP",
+  "words": [
+   {
+    "word": "MIDSHIP",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".MIDSHIP",
+   "......N."
+  ]
+ },
+ "20270830": {
+  "term": "SECURE",
+  "words": [
+   {
+    "word": "SECURE",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "SET",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...S....",
+   "..SECURE",
+   "...T....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270831": {
+  "term": "AHEAD",
+  "words": [
+   {
+    "word": "AHEAD",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...AHEAD",
+   "...N..N.",
+   "...D....",
+   "........",
+   "........"
+  ]
+ },
+ "20270901": {
+  "term": "AGROUND",
+  "words": [
+   {
+    "word": "AGROUND",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".AGROUND",
+   ".N......",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270902": {
+  "term": "GALLEY",
+  "words": [
+   {
+    "word": "GALLEY",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".W......",
+   "GALLEY..",
+   ".Y......",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270903": {
+  "term": "JENNY",
+  "words": [
+   {
+    "word": "JENNY",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "NOR",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...JENNY",
+   ".....O..",
+   "....OR..",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270904": {
+  "term": "LEEWAY",
+  "words": [
+   {
+    "word": "LEEWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......B",
+   "..LEEWAY",
+   "......S.",
+   "........"
+  ]
+ },
+ "20270905": {
+  "term": "COURSE",
+  "words": [
+   {
+    "word": "COURSE",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BOW",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..B.....",
+   ".COURSE.",
+   "..W.....",
+   "........"
+  ]
+ },
+ "20270906": {
+  "term": "ALOFT",
+  "words": [
+   {
+    "word": "ALOFT",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "OFF",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".ALOFT..",
+   ".S.F....",
+   "...F....",
+   "........",
+   "........"
+  ]
+ },
+ "20270907": {
+  "term": "FATHOM",
+  "words": [
+   {
+    "word": "FATHOM",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "YET",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....Y...",
+   "....E...",
+   "..FATHOM",
+   "........",
+   "........"
+  ]
+ },
+ "20270908": {
+  "term": "COIL",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "COIL",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "AMID",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....AT.",
+   ".....M..",
+   "...COIL.",
+   ".....D.."
+  ]
+ },
+ "20270909": {
+  "term": "HEADING",
+  "words": [
+   {
+    "word": "HEADING",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".....A..",
+   "HEADING."
+  ]
+ },
+ "20270910": {
+  "term": "FOULED",
+  "words": [
+   {
+    "word": "TO",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "FOULED",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".TO.....",
+   "..FOULED"
+  ]
+ },
+ "20270911": {
+  "term": "BOW",
+  "words": [
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": true
+   },
+   {
+    "word": "BEFORE",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".....B..",
+   ".....E..",
+   ".....F..",
+   "....BOW.",
+   ".....R..",
+   ".....E.."
+  ]
+ },
+ "20270912": {
+  "term": "PIER",
+  "words": [
+   {
+    "word": "PIER",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "GEAR",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".U.G....",
+   ".PIER...",
+   "...A....",
+   "...R....",
+   "........"
+  ]
+ },
+ "20270913": {
+  "term": "DRAFT",
+  "words": [
+   {
+    "word": "DRAFT",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".DRAFT..",
+   "...N.H..",
+   ".....E..",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270914": {
+  "term": "DINGHY",
+  "words": [
+   {
+    "word": "DINGHY",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......B.",
+   ".DINGHY.",
+   "..N.....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270915": {
+  "term": "WATCH",
+  "words": [
+   {
+    "word": "WATCH",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ATOP",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...WATCH",
+   "....T...",
+   "....O...",
+   "....P...",
+   "........",
+   "........"
+  ]
+ },
+ "20270916": {
+  "term": "FORWARD",
+  "words": [
+   {
+    "word": "FORWARD",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".FORWARD",
+   "..F.....",
+   "........",
+   "........"
+  ]
+ },
+ "20270917": {
+  "term": "FLOOD",
+  "words": [
+   {
+    "word": "SO",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "FLOOD",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "TO",
+    "dir": "V",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".SO..T..",
+   "..FLOOD."
+  ]
+ },
+ "20270918": {
+  "term": "ABOARD",
+  "words": [
+   {
+    "word": "ABOARD",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".ABOARD.",
+   ".S..T...",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270919": {
+  "term": "MOORING",
+  "words": [
+   {
+    "word": "MOORING",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....A..",
+   "MOORING.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270920": {
+  "term": "TILLER",
+  "words": [
+   {
+    "word": "TILLER",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AFT",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".A......",
+   ".F......",
+   ".TILLER.",
+   "........",
+   "........"
+  ]
+ },
+ "20270921": {
+  "term": "PORT",
+  "words": [
+   {
+    "word": "PORT",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "KNOT",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...K....",
+   "...N....",
+   ".S.O....",
+   "PORT....",
+   "........"
+  ]
+ },
+ "20270922": {
+  "term": "GANGWAY",
+  "words": [
+   {
+    "word": "GANGWAY",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".GANGWAY",
+   "......S.",
+   "........"
+  ]
+ },
+ "20270923": {
+  "term": "LOG",
+  "words": [
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "LOG",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ALONG",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".....AT.",
+   ".....L..",
+   ".....O..",
+   ".....N..",
+   "...LOG.."
+  ]
+ },
+ "20270924": {
+  "term": "GUNWALE",
+  "words": [
+   {
+    "word": "GUNWALE",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   ".GUNWALE",
+   "..P....."
+  ]
+ },
+ "20270925": {
+  "term": "HELM",
+  "words": [
+   {
+    "word": "ON",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "HELM",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OVER",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "...ON...",
+   "...V....",
+   "..HELM..",
+   "...R....",
+   "........"
+  ]
+ },
+ "20270926": {
+  "term": "BELOW",
+  "words": [
+   {
+    "word": "BELOW",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 4,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "LOG",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...L....",
+   "BELOW...",
+   "Y..G...."
+  ]
+ },
+ "20270927": {
+  "term": "FOULED",
+  "words": [
+   {
+    "word": "FOULED",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..B.....",
+   "FOULED..",
+   "..T.....",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20270928": {
+  "term": "JETTY",
+  "words": [
+   {
+    "word": "JETTY",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "PIER",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "...P....",
+   "...I....",
+   "..JETTY.",
+   "...R....",
+   "........",
+   "........"
+  ]
+ },
+ "20270929": {
+  "term": "BRIDGE",
+  "words": [
+   {
+    "word": "BRIDGE",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "V",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 4,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "...O....",
+   "..BRIDGE",
+   "....N..."
+  ]
+ },
+ "20270930": {
+  "term": "MOORING",
+  "words": [
+   {
+    "word": "MOORING",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 3,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "......I.",
+   ".MOORING",
+   "........"
+  ]
+ },
+ "20271001": {
+  "term": "ASTERN",
+  "words": [
+   {
+    "word": "ASTERN",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 3,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..A.....",
+   "ASTERN..",
+   "N.......",
+   "........"
+  ]
+ },
+ "20271002": {
+  "term": "KEEL",
+  "words": [
+   {
+    "word": "KEEL",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "GEAR",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....G...",
+   "..KEEL..",
+   "....A...",
+   "...OR...",
+   "........",
+   "........"
+  ]
+ },
+ "20271003": {
+  "term": "RUDDER",
+  "words": [
+   {
+    "word": "RUDDER",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AND",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....A...",
+   "....N...",
+   "..RUDDER",
+   "........",
+   "........"
+  ]
+ },
+ "20271004": {
+  "term": "FLOOD",
+  "words": [
+   {
+    "word": "FLOOD",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "ONTO",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "......O.",
+   "......N.",
+   "......T.",
+   "...FLOOD",
+   "........",
+   "........"
+  ]
+ },
+ "20271005": {
+  "term": "LINE",
+  "words": [
+   {
+    "word": "LINE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SINCE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...S....",
+   "...I....",
+   ".LINE...",
+   "...C....",
+   "...E....",
+   "........"
+  ]
+ },
+ "20271006": {
+  "term": "CHOCK",
+  "words": [
+   {
+    "word": "CHOCK",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "THAN",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "..T.....",
+   ".CHOCK..",
+   "..A.....",
+   "..N.....",
+   "........",
+   "........"
+  ]
+ },
+ "20271007": {
+  "term": "STERN",
+  "words": [
+   {
+    "word": "STERN",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....L...",
+   "....I...",
+   "STERN...",
+   "....E..."
+  ]
+ },
+ "20271008": {
+  "term": "TILLER",
+  "words": [
+   {
+    "word": "TILLER",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".B......",
+   ".U......",
+   ".TILLER."
+  ]
+ },
+ "20271009": {
+  "term": "WAKE",
+  "words": [
+   {
+    "word": "WAKE",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "AMID",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "WAKE....",
+   ".M......",
+   ".IF.....",
+   ".D......",
+   "........",
+   "........"
+  ]
+ },
+ "20271010": {
+  "term": "HEADS",
+  "words": [
+   {
+    "word": "HEADS",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "HELM",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "..H.....",
+   ".HEADS..",
+   "..L.....",
+   "..M.....",
+   "........",
+   "........"
+  ]
+ },
+ "20271011": {
+  "term": "DOCK",
+  "words": [
+   {
+    "word": "DOCK",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 4,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....D...",
+   "....E...",
+   "..S.C...",
+   ".DOCK..."
+  ]
+ },
+ "20271012": {
+  "term": "KNOT",
+  "words": [
+   {
+    "word": "KNOT",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AS",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "sailing": false
+   },
+   {
+    "word": "THAT",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "KNOT....",
+   "...H....",
+   "...AS...",
+   "...T...."
+  ]
+ },
+ "20271013": {
+  "term": "BUOY",
+  "words": [
+   {
+    "word": "BUOY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   },
+   {
+    "word": "OF",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "..BUOY..",
+   "..U.F...",
+   ".AT....."
+  ]
+ },
+ "20271014": {
+  "term": "GEAR",
+  "words": [
+   {
+    "word": "GEAR",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "WHILE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "....W...",
+   "....H...",
+   "....I...",
+   "....L...",
+   "...GEAR."
+  ]
+ },
+ "20271015": {
+  "term": "PORT",
+  "words": [
+   {
+    "word": "PORT",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "UP",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "sailing": false
+   },
+   {
+    "word": "FROM",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "U.F.....",
+   "PORT....",
+   "..O.....",
+   "..M.....",
+   "........",
+   "........"
+  ]
+ },
+ "20271016": {
+  "term": "STEM",
+  "words": [
+   {
+    "word": "STEM",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "SO",
+    "dir": "V",
+    "row": 4,
+    "col": 1,
+    "sailing": false
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...I....",
+   "...N....",
+   ".STEM...",
+   ".O......"
+  ]
+ },
+ "20271017": {
+  "term": "CLEAT",
+  "words": [
+   {
+    "word": "CLEAT",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "STOW",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   ".......S",
+   "...CLEAT",
+   ".......O",
+   ".......W",
+   "........",
+   "........"
+  ]
+ },
+ "20271018": {
+  "term": "BOW",
+  "words": [
+   {
+    "word": "OR",
+    "dir": "H",
+    "row": 4,
+    "col": 5,
+    "sailing": false
+   },
+   {
+    "word": "BOW",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "BELOW",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   ".....B..",
+   ".....E..",
+   ".....L..",
+   ".....OR.",
+   "...BOW.."
+  ]
+ },
+ "20271019": {
+  "term": "BEAM",
+  "words": [
+   {
+    "word": "BEAM",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "HEADS",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....H...",
+   "...BEAM.",
+   "....A...",
+   "....D...",
+   "....S...",
+   "........"
+  ]
+ },
+ "20271020": {
+  "term": "GANGWAY",
+  "words": [
+   {
+    "word": "GANGWAY",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "BY",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "......B.",
+   "GANGWAY.",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20271021": {
+  "term": "WATCH",
+  "words": [
+   {
+    "word": "BY",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   },
+   {
+    "word": "WATCH",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "BUT",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "....BY..",
+   "....U...",
+   "..WATCH."
+  ]
+ },
+ "20271022": {
+  "term": "SET",
+  "words": [
+   {
+    "word": "SET",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "LINE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "sailing": true
+   },
+   {
+    "word": "THE",
+    "dir": "V",
+    "row": 3,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "...L....",
+   "...I....",
+   "...N....",
+   "..SET...",
+   "....H...",
+   "....E..."
+  ]
+ },
+ "20271023": {
+  "term": "DRAFT",
+  "words": [
+   {
+    "word": "DRAFT",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "ATOP",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".DRAFT..",
+   "...T....",
+   "...O....",
+   "...P....",
+   "........"
+  ]
+ },
+ "20271024": {
+  "term": "HEADING",
+  "words": [
+   {
+    "word": "HEADING",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "AT",
+    "dir": "V",
+    "row": 3,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "HEADING.",
+   "..T.....",
+   "........"
+  ]
+ },
+ "20271025": {
+  "term": "TACKING",
+  "words": [
+   {
+    "word": "TACKING",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "AN",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   ".TACKING",
+   "..N.....",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20271026": {
+  "term": "SQUALL",
+  "words": [
+   {
+    "word": "SQUALL",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "WAY",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....W...",
+   ".SQUALL.",
+   "....Y...",
+   "........"
+  ]
+ },
+ "20271027": {
+  "term": "BEARING",
+  "words": [
+   {
+    "word": "BEARING",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "BEARING.",
+   "....N...",
+   "........",
+   "........"
+  ]
+ },
+ "20271028": {
+  "term": "FORWARD",
+  "words": [
+   {
+    "word": "FORWARD",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   },
+   {
+    "word": "IF",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   ".I......",
+   ".FORWARD",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "20271029": {
+  "term": "JENNY",
+  "words": [
+   {
+    "word": "JENNY",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "DECK",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".D......",
+   "JENNY...",
+   ".C......",
+   ".K......"
+  ]
+ },
+ "20271030": {
+  "term": "INBOARD",
+  "words": [
+   {
+    "word": "INBOARD",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "sailing": true
+   },
+   {
+    "word": "IN",
+    "dir": "V",
+    "row": 3,
+    "col": 1,
+    "sailing": false
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   ".I......",
+   "INBOARD.",
+   "........"
+  ]
+ },
+ "20271031": {
+  "term": "WAY",
+  "words": [
+   {
+    "word": "WAY",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "sailing": true
+   },
+   {
+    "word": "DINGHY",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "sailing": true
+   }
+  ],
+  "rows": [
+   "....D...",
+   "....I...",
+   "....N...",
+   "....G...",
+   "....H...",
+   "..WAY..."
+  ]
+ }
+}

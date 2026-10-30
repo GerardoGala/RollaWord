@@ -9,6 +9,9 @@ const INITIAL_TIME_SECONDS = 180;
 
 const isKidsMode = window.location.pathname.includes('id');
 
+// RollaSail: the same engine runs on sail.html. Everything that differs hangs off this one flag.
+const IS_SAIL = window.location.pathname.toLowerCase().includes('sail');
+
 const gameTitleElement = document.getElementById("game-title");
 // =========================================================================
 // PHASE 1 & 2: INSTANT GRID INITIALIZATION
@@ -323,7 +326,7 @@ function startGameEngine() {
   gameEnded = false;
   timeRemaining = INITIAL_TIME_SECONDS;
   
-  const verifiedRollResult = window.generateLetterPayload();
+  const verifiedRollResult = IS_SAIL ? window.generateSailPayload() : window.generateLetterPayload();
   renderDicePayload(verifiedRollResult);
   startCountdownTimer();
 }
@@ -346,7 +349,7 @@ function startChallengeEngine() {
   const day = String(now.getDate()).padStart(2, '0');
   const todayKey = `${year}${month}${day}`;
 
-  fetch('js/dailychallenge.json')
+  fetch(IS_SAIL ? 'js/sailchallenge.json' : 'js/dailychallenge.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load challenge file: ${response.status}`);

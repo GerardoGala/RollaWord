@@ -31,9 +31,15 @@ function scoreAssignment(rawWords, assignments) {
 
     const activeMultipliers = window.COLOR_MULTIPLIERS || { "BLUE": 2, "RED": 3 };
 
-    const multiplier = sameColor
+    const colorMultiplier = sameColor
       ? (activeMultipliers[firstColor] || 1)
       : 1;
+
+    // RollaSail: a sailing term scores x5 whatever its colors; a one-color sailing
+    // term earns its color bonus as well (multiplied together).
+    // window.SAIL_TERMS only exists on sail.html, so RollaWord is unaffected.
+    const isSailingTerm = !!(window.SAIL_TERMS && window.SAIL_TERMS.has(text));
+    const multiplier = colorMultiplier * (isSailingTerm ? (window.SAIL_TERM_MULTIPLIER || 5) : 1);
 
     return {
       ...wordObj,
@@ -42,6 +48,9 @@ function scoreAssignment(rawWords, assignments) {
       isDisqualified: false,
       baseScore,
       multiplier,
+      colorMultiplier,
+      sailMultiplier: isSailingTerm ? (window.SAIL_TERM_MULTIPLIER || 5) : 1,
+      isSailingTerm,
       score: 0
     };
   });

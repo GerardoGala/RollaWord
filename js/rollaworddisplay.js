@@ -83,8 +83,18 @@ function displayWordScores(words, scoreArea) {
 
     const lineDiv = document.createElement("div");
     if (wordObj.multiplier > 1) {
-      lineDiv.textContent =
-        `${wordObj.text} = ${wordObj.baseScore} x ${wordObj.multiplier} = ${wordObj.score}`;
+      // Show each multiplier on its own (e.g. "8 x 3 x 5 = 120": color x3, sailing term x5).
+      // If the two parts don't add up to the total, fall back to the single combined number.
+      const colorM = wordObj.colorMultiplier || 1;
+      const sailM = wordObj.sailMultiplier || 1;
+      const parts = [wordObj.baseScore];
+      if (colorM * sailM === wordObj.multiplier) {
+        if (colorM > 1) parts.push(colorM);
+        if (sailM > 1) parts.push(sailM);
+      } else {
+        parts.push(wordObj.multiplier);
+      }
+      lineDiv.textContent = `${wordObj.text} = ${parts.join(" x ")} = ${wordObj.score}`;
     } else {
       lineDiv.textContent = `${wordObj.text} = ${wordObj.baseScore}`;
     }

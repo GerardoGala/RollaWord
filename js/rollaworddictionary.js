@@ -22,13 +22,15 @@ let dictionaryError = null;
 
 async function loadLocalDictionary() {
   try {
+    // RollaSail (sail.html) uses its own, much smaller word list.
+    const isSailPage = window.location.pathname.toLowerCase().includes("sail");
     const response = await fetch(
-      "js/dictionary.txt"
+      isSailPage ? "js/sailing-dictionary.txt" : "js/small.txt"
     );
 
     if (!response.ok) {
       throw new Error(
-        `HTTP ${response.status}: Could not load dictionary.txt`
+        `HTTP ${response.status}: Could not load the word list`
       );
     }
 
