@@ -10,7 +10,21 @@
     <link rel="canonical" href="https://www.rollaword.com/leaderboard.html">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Embedded architectural overrides to mirror your game grid bounds exactly */
+        :root {
+            --baseline: 8px;
+            --gray: #666;
+            --primary: #0066cc;
+            --background: #ffffff;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --warning-color: #cc0000;
+        }
+        body {
+            font-family: var(--font-stack);
+            margin: 0;
+            padding: calc(var(--baseline) * 3);
+            background-color: var(--background);
+            color: #333;
+        }
         .leaderboard-container {
             width: 100%;
             max-width: calc(var(--cell-size, 45px) * 8 + 2px);
@@ -129,7 +143,6 @@
     <div>© 2026 RollaWord</div>
     </footer>
 
-    <!-- Database Processing Core Layer -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { 
@@ -168,34 +181,18 @@
             };
         }
 
-        // Anonymous player ID: a random value made once per browser and kept in localStorage.
-        // The game saves it with each score so two players with the same name can be told apart.
-        // It contains no personal information. Returns null if the browser blocks storage.
         function getPlayerId() {
             try {
-                let id = localStorage.getItem("rollaword.playerId");
-                if (!id) {
-                    id = (window.crypto && crypto.randomUUID)
-                        ? crypto.randomUUID()
-                        : Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
-                    localStorage.setItem("rollaword.playerId", id);
-                }
-                return id;
+                return localStorage.getItem("rollaword.playerId");
             } catch (e) {
                 return null;
             }
         }
 
-        // Makes player-typed text safe to place inside HTML (a name must never run as code).
         function escapeHtml(text) {
             return String(text).replace(/[&<>"']/g, ch => (
                 { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]
             ));
-        }
-
-        // Short tag from an ID, shown only when two different players share a name.
-        function shortTag(id) {
-            return String(id).replace(/[^a-z0-9]/gi, "").toUpperCase().slice(-4);
         }
 
         async function renderLeaderboardView() {
@@ -223,7 +220,6 @@
                     orderBy("score", "desc"), 
                     limit(10)
                 );
-                
                 const querySnapshot = await getDocs(q);
 
                 if (querySnapshot.empty) {
@@ -246,29 +242,17 @@
                     return { name: String(e.name == null ? "" : e.name), score: e.score, id: e.playerId || ("doc-" + d.id) };
                 });
 
-                // A name needs a tag only when different players on this list share it.
-                const idsByName = new Map();
-                entries.forEach(e => {
-                    const key = e.name.trim().toLowerCase();
-                    if (!idsByName.has(key)) idsByName.set(key, new Set());
-                    idsByName.get(key).add(e.id);
-                });
-
                 const myId = getPlayerId();
                 let tableHtml = `<div style="display: flex; flex-direction: column; width: 100%;">`;
                 let rank = 1;
 
                 entries.forEach((entry) => {
                     const isMe = !!myId && entry.id === myId;
-                    const shared = idsByName.get(entry.name.trim().toLowerCase()).size > 1;
-                    const tag = shared
-                        ? ` <span style="opacity:.6;font-size:.8em;">&middot;${escapeHtml(shortTag(entry.id))}</span>`
-                        : "";
                     const you = isMe ? ` <span style="font-weight:700;">(you)</span>` : "";
                     tableHtml += `
-                        <div class="leaderboard-row"${isMe ? ' style="background-color: var(--lighter, #eef5fb); font-weight: 700;"' : ""}>
+                        <div class="leaderboard-row"${isMe ? ' style="background:#eef5fb;font-weight:700;"' : ""}>
                             <span class="rank-badge">#${rank}</span>
-                            <span class="player-name">${escapeHtml(entry.name)}${tag}${you}</span>
+                            <span class="player-name">${escapeHtml(entry.name)}${you}</span>
                             <span class="player-score">${escapeHtml(entry.score)} pts</span>
                         </div>
                     `;

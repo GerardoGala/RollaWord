@@ -128,7 +128,9 @@ async function processChallengeEndgame(finalScore) {
         // 4. CONDITIONAL POSTING PIPELINE
         if (makesTop10) {
             console.log("finalScore at prompt of Name for Leaderboard:", numericScore);
-            const playerName = prompt(`Incredible! Your score of ${numericScore} qualifies for today's Top 10! Enter your name:`);
+            
+            // Open enterName.html and wait for the name to be returned via a Promise
+            const playerName = await promptNameWithPopup(numericScore);
             
             if (playerName && playerName.trim() !== "") {
                 const playerId = getPlayerId();
@@ -155,6 +157,84 @@ async function processChallengeEndgame(finalScore) {
         }
     }
 }
+
+/**
+ * Helper function to launch enterName.html as a popup and wait for the result
+ */
+// Replace your old window.addEventListener("message", receiveMessage) inside promptNameWithPopup with this:
+
+function promptNameWithPopup(score) {
+    return new Promise((resolve) => {
+        const popupWidth = 400;
+        const popupHeight = 300;
+        const left = (window.screen.width / 2) - (popupWidth / 2);
+        const top = (window.screen.height / 2) - (popupHeight / 2);
+
+        sessionStorage.setItem("currentScore", score);
+
+        const popup = window.open(
+            "enterName.html", 
+            "EnterYourName", 
+            `width=${popupWidth},height=${popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes`
+        );
+
+        // Keep track of names we have already warned the user about during this session
+        let confirmedNames = new Set();
+
+        async function receiveMessage(event) {
+            if (event.data && event.data.type === "LEADERBOARD_NAME_SUBMITTED") {
+                const chosenName = event.data.name;
+
+                // If they already clicked submit a second time for this name, let it pass
+                if (confirmedNames.has(chosenName)) {
+                    window.removeEventListener("message", receiveMessage);
+                    clearInterval(checkClosedInterval);
+                    popup.close();
+                    resolve(chosenName);
+                    return;
+                }
+
+                try {
+                    // Check Firestore if this name already exists in the system
+                    const leaderboardRef = collection(db, "rollaword_leaderboard");
+                    const nameCheckQuery = query(leaderboardRef, where("name", "==", chosenName), limit(1));
+                    const nameCheckSnapshot = await getDocs(nameCheckQuery);
+
+                    if (!nameCheckSnapshot.empty) {
+                        // Name exists! Track it as warned, then tell the popup to alert the user
+                        confirmedNames.add(chosenName);
+                        popup.postMessage({ type: "NAME_ALREADY_EXISTS" }, "*");
+                    } else {
+                        // Clean exit: Name is unique
+                        window.removeEventListener("message", receiveMessage);
+                        clearInterval(checkClosedInterval);
+                        popup.close();
+                        resolve(chosenName);
+                    }
+                } catch (err) {
+                    console.error("Error checking name uniqueness:", err);
+                    // Fallback on error: allow submission
+                    window.removeEventListener("message", receiveMessage);
+                    clearInterval(checkClosedInterval);
+                    popup.close();
+                    resolve(chosenName);
+                }
+            }
+        }
+
+        window.addEventListener("message", receiveMessage);
+
+        const checkClosedInterval = setInterval(() => {
+            if (!popup || popup.closed) {
+                clearInterval(checkClosedInterval);
+                window.removeEventListener("message", receiveMessage);
+                resolve(null);
+            }
+        }, 500);
+    });
+}
+
+
 
 /**
  * 📅 FETCH & DISPLAY RANKINGS WORKFLOW (TIMELINE LINKED)
