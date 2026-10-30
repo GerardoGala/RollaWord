@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RollaSail - Sailing Dictionary</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/rollaword.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .info-container {
+      width: 100%;
+      max-width: min(90vw, 42rem);
+      margin: calc(var(--baseline) * 6) auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .back-nav {
+      margin-top: calc(var(--baseline) * 6);
+      text-align: center;
+    }
+    .dict-intro {
+      font-family: var(--body-font);
+      line-height: var(--line-height);
+      color: var(--text-color);
+      margin-bottom: calc(var(--baseline) * 4);
+    }
+    .rule-highlight {
+      font-weight: var(--font-weight-bold);
+      color: var(--color);
+    }
+    .dict-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: calc(var(--baseline) * 3);
+    }
+    .dict-controls input,
+    .dict-controls select {
+      font: inherit;
+      padding: 10px 12px;
+      border: 1px solid var(--light, #ccc);
+      border-radius: calc(var(--border-radius, 4px) * 2);
+      background: var(--page-bg, #fff);
+      color: var(--text-color, #17181E);
+      box-sizing: border-box;
+    }
+    .dict-controls input { flex: 1 1 12rem; min-width: 0; }
+    .dict-count {
+      font-size: 0.85rem;
+      color: var(--gray, #666);
+      margin-bottom: calc(var(--baseline) * 3);
+    }
+    .dict-letter {
+      font-family: var(--heading-font);
+      font-weight: var(--font-weight-bold);
+      color: var(--color);
+      margin: calc(var(--baseline) * 5) 0 calc(var(--baseline) * 1);
+      border-bottom: 1px solid var(--light, #ccc);
+    }
+    .dict-entry {
+      font-family: var(--body-font);
+      line-height: var(--line-height);
+      color: var(--text-color);
+      padding: calc(var(--baseline) * 1.5) 0;
+    }
+    .dict-entry .word {
+      font-weight: var(--font-weight-bold);
+      color: var(--headings-color);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-right: 0.5ch;
+    }
+    .dict-none { color: var(--gray, #666); padding: 12px 0; }
+    .connectors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: calc(var(--baseline) * 2);
+    }
+    .connectors span {
+      background: var(--lighter, #f1f1f1);
+      border: 1px solid var(--light, #ccc);
+      border-radius: calc(var(--border-radius, 4px) * 2);
+      padding: 3px 10px;
+      font-family: var(--body-font);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.9rem;
+      color: var(--text-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-container">
+    <header style="margin-bottom: calc(var(--baseline) * 6); text-align: center;">
+      <h1 class="h1" style="margin: 0; text-transform: uppercase;">Sailing Dictionary</h1>
+    </header>
+
+    <p class="dict-intro">
+      Every word below is a <span class="rule-highlight">sailing term</span> in RollaSail, and scores a <span class="rule-highlight">x5 multiplier</span>.
+      Every tray hides at least one of them, so a little studying goes a long way.
+    </p>
+
+    <div class="dict-controls">
+      <input id="dict-search" type="search" placeholder="Search a word or a meaning" aria-label="Search the sailing dictionary" autocomplete="off">
+      <select id="dict-length" aria-label="Filter by number of letters">
+        <option value="">Any length</option>
+      </select>
+    </div>
+    <div id="dict-count" class="dict-count" aria-live="polite"></div>
+    <div id="dict-list"></div>
+
+    <h2 class="dict-letter" style="margin-top: calc(var(--baseline) * 8);">Connecting words</h2>
+    <p class="dict-intro" style="margin-bottom: 0;">
+      These everyday words are also allowed. They score normally (no x5), but they let you link your sailing terms together.
+    </p>
+    <div id="connectors" class="connectors"></div>
+
+    <nav class="back-nav">
+      <a href="sail.html" class="btn" style="margin-right: 8px;">&larr; RollaSail</a>
+      <a href="howToSail.html" class="btn">How To Play</a>
+    </nav>
+  </div>
+
+<footer style="
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 8) auto calc(var(--baseline) * 6);
+  padding-top: calc(var(--baseline) * 4);
+  border-top: 1px solid var(--light);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+">
+  <nav style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
+    <a href="/about.html" style="color: var(--color); text-decoration: none; font-weight: 500;">About</a>
+    <a href="/privacy.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Privacy</a>
+    <a href="/contact.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Contact</a>
+  </nav>
+  <div>© 2026 RollaSail</div>
+</footer>
+
+  <script>
+    // Terms and meanings used by RollaSail (same list the game scores x5), and the allowed connecting words.
+    const TERMS = [{"word": "aboard", "definition": "On or onto a boat."}, {"word": "abreast", "definition": "Side by side with another vessel."}, {"word": "adrift", "definition": "Floating loose, no longer secured or under tow."}, {"word": "aft", "definition": "Toward the back of the boat."}, {"word": "aground", "definition": "Stuck on the bottom because the water is too shallow."}, {"word": "ahead", "definition": "In front of the boat."}, {"word": "aloft", "definition": "Up in the rigging, above the deck."}, {"word": "astern", "definition": "Behind the boat."}, {"word": "beam", "definition": "The widest part of the boat; also the side direction, at right angles to the bow."}, {"word": "bearing", "definition": "The compass direction toward an object."}, {"word": "beat", "definition": "To sail upwind in a zigzag course."}, {"word": "beating", "definition": "Sailing upwind in a zigzag course."}, {"word": "below", "definition": "Under the deck, inside the boat."}, {"word": "bilge", "definition": "The lowest part inside the hull, where water collects."}, {"word": "block", "definition": "A pulley that makes pulling a rope easier."}, {"word": "boat", "definition": "A vessel for travelling on water."}, {"word": "boom", "definition": "The horizontal pole that holds the bottom edge of the mainsail."}, {"word": "bow", "definition": "The front of the boat."}, {"word": "bowline", "definition": "A knot that makes a fixed loop at the end of a rope."}, {"word": "bridge", "definition": "The control area of a larger vessel, where it is steered from."}, {"word": "bulkhead", "definition": "An upright wall inside the hull that divides compartments and adds strength."}, {"word": "buoy", "definition": "A floating marker or mooring anchored to the bottom."}, {"word": "cabin", "definition": "An enclosed room on a boat, often for sleeping."}, {"word": "capsize", "definition": "When a boat tips over."}, {"word": "chart", "definition": "A nautical map."}, {"word": "chock", "definition": "A smooth fitting that guides a rope over the side without chafing."}, {"word": "cleat", "definition": "A two-horned fitting for tying off a rope."}, {"word": "clew", "definition": "The lower back corner of the sail, where the outhaul attaches."}, {"word": "cockpit", "definition": "The sunken area of the deck where the boat is steered."}, {"word": "coil", "definition": "To lay a rope down in neat loops."}, {"word": "course", "definition": "The direction a boat is steering or the route it follows."}, {"word": "crew", "definition": "The people who sail the boat with you."}, {"word": "current", "definition": "The horizontal flow of water, usually from tide or wind."}, {"word": "deck", "definition": "The floor-like surface covering the top of the hull."}, {"word": "dinghy", "definition": "A small open boat, also used as a tender to get ashore."}, {"word": "dock", "definition": "A sheltered place to tie up a vessel."}, {"word": "dolly", "definition": "A small trolley used to move a dinghy across the beach."}, {"word": "downhaul", "definition": "A line that tightens the front edge of the sail by pulling it down."}, {"word": "downwind", "definition": "In the direction the wind is blowing toward."}, {"word": "draft", "definition": "How deep a boat sits in the water; also the curve of a sail."}, {"word": "draught", "definition": "British spelling of draft."}, {"word": "fathom", "definition": "A depth unit of six feet."}, {"word": "fender", "definition": "A cushion hung over the side to protect the hull from docks and other boats."}, {"word": "flood", "definition": "A rising, incoming tide."}, {"word": "foil", "definition": "An underwater blade on a boat, such as the rudder or the daggerboard."}, {"word": "forepeak", "definition": "The small compartment at the very front of the hull."}, {"word": "forward", "definition": "Toward the bow."}, {"word": "fouled", "definition": "Jammed, tangled or dirty."}, {"word": "galley", "definition": "The kitchen on a boat."}, {"word": "gangway", "definition": "The place or plank used to step on and off the vessel."}, {"word": "gear", "definition": "General term for a boat's ropes, blocks and equipment."}, {"word": "genoa", "definition": "A large headsail that overlaps the mainsail."}, {"word": "gunwale", "definition": "The upper edge of the boat's side."}, {"word": "gust", "definition": "A sudden, short increase in wind strength."}, {"word": "gybe", "definition": "To turn the stern through the wind so the boom swings across the boat, changing direction while sailing downwind."}, {"word": "gybing", "definition": "Turning so the stern passes through the wind and the sail swings across."}, {"word": "hatch", "definition": "A covered opening in the deck."}, {"word": "heading", "definition": "The direction the bow is pointing."}, {"word": "heads", "definition": "The toilet on a boat."}, {"word": "headway", "definition": "Forward movement through the water."}, {"word": "heel", "definition": "The sideways tilt of a boat caused by the wind."}, {"word": "helm", "definition": "The steering wheel or tiller."}, {"word": "hike", "definition": "To lean your body out over the side of the boat to keep it upright."}, {"word": "hiking", "definition": "Leaning your body outboard to balance the force of the wind on the sail."}, {"word": "hull", "definition": "The body of the boat."}, {"word": "inboard", "definition": "Inside the edges of the boat."}, {"word": "jenny", "definition": "Nickname for the genoa."}, {"word": "jetty", "definition": "A structure built out to shelter a harbour or direct a channel."}, {"word": "jibe", "definition": "Another spelling of gybe."}, {"word": "jibing", "definition": "Same as gybing."}, {"word": "keel", "definition": "The fin or beam along the bottom of the hull that steadies the boat."}, {"word": "knot", "definition": "A fastening made in a rope; also a speed of one nautical mile per hour."}, {"word": "landing", "definition": "Bringing the boat back to shore at the end of a sail."}, {"word": "latitude", "definition": "Distance north or south of the equator, in degrees."}, {"word": "launch", "definition": "To put a boat into the water."}, {"word": "lee", "definition": "The sheltered side away from the wind."}, {"word": "leech", "definition": "The back edge of the sail."}, {"word": "leeward", "definition": "The direction away from the wind."}, {"word": "leeway", "definition": "Sideways drift caused by wind and waves."}, {"word": "line", "definition": "A rope that has a job on a boat."}, {"word": "log", "definition": "A record of the voyage; also an instrument that measures speed."}, {"word": "luff", "definition": "The front edge of the sail; also what the sail does when it flaps because it is pointed too close to the wind."}, {"word": "luffing", "definition": "When the sail flaps because it is eased too far or the boat points too close to the wind."}, {"word": "lull", "definition": "A short drop in wind strength."}, {"word": "mainsail", "definition": "The principal sail set behind the mast."}, {"word": "mast", "definition": "The tall vertical pole that holds up the sail."}, {"word": "midship", "definition": "The middle of the vessel."}, {"word": "mooring", "definition": "A fixed buoy or anchor point a boat is tied to; the act of tying up."}, {"word": "outboard", "definition": "Beyond the sides of the boat."}, {"word": "outhaul", "definition": "A line that tightens the bottom edge of the sail along the boom, making it flatter or fuller."}, {"word": "pearling", "definition": "When the bow digs into the wave in front of the boat and it nosedives."}, {"word": "pier", "definition": "A platform on posts reaching out from shore."}, {"word": "pilotage", "definition": "Navigating by sight using landmarks and markers."}, {"word": "planing", "definition": "Skimming over the top of the water at high speed."}, {"word": "port", "definition": "The left side of the boat when facing forward; also a harbour."}, {"word": "reach", "definition": "Sailing with the wind coming from the side of the boat."}, {"word": "reaching", "definition": "Sailing with the wind coming from the side."}, {"word": "regatta", "definition": "An organised series of boat races."}, {"word": "rigging", "definition": "The wires and ropes that support the masts and control the sails."}, {"word": "rudder", "definition": "The blade at the stern that steers the boat."}, {"word": "sail", "definition": "The fabric that catches the wind and moves the boat; also, to travel by wind power."}, {"word": "sailboat", "definition": "A boat that is moved by sails instead of an engine."}, {"word": "sailing", "definition": "Using the wind to move a boat across the water."}, {"word": "sailor", "definition": "A person who sails."}, {"word": "scuppers", "definition": "Openings that let water drain off the deck."}, {"word": "secure", "definition": "Tied down safely."}, {"word": "set", "definition": "The direction a current is flowing."}, {"word": "sheet", "definition": "The rope that pulls the sail in or lets it out."}, {"word": "slack", "definition": "Loose, not pulled tight."}, {"word": "sounding", "definition": "A measurement of water depth."}, {"word": "spar", "definition": "A pole that holds up or spreads a sail, such as the mast or the boom."}, {"word": "squall", "definition": "A sudden strong burst of wind, often with rain."}, {"word": "stem", "definition": "The very front edge of the bow."}, {"word": "stern", "definition": "The back of the boat."}, {"word": "sternway", "definition": "Backward movement through the water."}, {"word": "stow", "definition": "To put gear away in its proper place."}, {"word": "tack", "definition": "To turn the bow through the wind to change direction; also the side of the boat the wind is coming over."}, {"word": "tacking", "definition": "Turning the bow through the wind so it crosses to the other side."}, {"word": "telltale", "definition": "A small piece of yarn on the sail that shows how smoothly the air is flowing."}, {"word": "tiller", "definition": "A lever attached to the rudder for steering."}, {"word": "topsides", "definition": "The part of the hull between the waterline and the deck."}, {"word": "transom", "definition": "The flat wall across the stern."}, {"word": "traveler", "definition": "A track or line that guides the mainsheet across the boat."}, {"word": "trim", "definition": "How the hull sits in the water; also adjusting the sails."}, {"word": "trimming", "definition": "Pulling the sail in to the right angle for the wind."}, {"word": "turtle", "definition": "A capsize where the mast points straight down and the hull is upside down."}, {"word": "underway", "definition": "Moving; not moored, anchored or aground."}, {"word": "upwind", "definition": "Toward the direction the wind is coming from."}, {"word": "vang", "definition": "A control that pulls the boom down to shape the sail and limit twist."}, {"word": "wake", "definition": "The trail of disturbed water behind a moving boat."}, {"word": "watch", "definition": "A crew shift on duty; also a group of crew taking that shift."}, {"word": "way", "definition": "Movement through the water."}, {"word": "wind", "definition": "Moving air; the power that moves a sailboat."}, {"word": "windward", "definition": "The direction toward the wind."}];
+    const CONNECTORS = ["a", "about", "above", "across", "after", "against", "along", "although", "amid", "amidst", "among", "an", "and", "around", "as", "at", "atop", "balance", "beach", "bear", "because", "before", "behind", "belly", "beneath", "beside", "between", "beyond", "board", "breeze", "but", "by", "down", "drag", "during", "ease", "except", "for", "force", "from", "how", "if", "in", "inside", "into", "lest", "lift", "like", "mark", "near", "nor", "of", "off", "on", "once", "onto", "or", "out", "outside", "over", "past", "per", "recovery", "safety", "shift", "shore", "since", "so", "speed", "steer", "steering", "than", "that", "the", "though", "through", "till", "to", "toward", "towards", "twist", "under", "unless", "until", "up", "upon", "via", "water", "wave", "when", "whenever", "where", "whereas", "wherever", "whether", "while", "with", "within", "without", "yet"];
+
+    const listEl = document.getElementById("dict-list");
+    const countEl = document.getElementById("dict-count");
+    const searchEl = document.getElementById("dict-search");
+    const lengthEl = document.getElementById("dict-length");
+
+    // length filter choices come from the data
+    [...new Set(TERMS.map(t => t.word.length))].sort((a, b) => a - b).forEach(n => {
+      const opt = document.createElement("option");
+      opt.value = String(n);
+      opt.textContent = n + " letters";
+      lengthEl.appendChild(opt);
+    });
+
+    function render() {
+      const q = searchEl.value.trim().toLowerCase();
+      const len = lengthEl.value;
+      const shown = TERMS.filter(t =>
+        (!len || t.word.length === Number(len)) &&
+        (!q || t.word.includes(q) || t.definition.toLowerCase().includes(q))
+      );
+
+      listEl.textContent = "";
+      let currentLetter = "";
+      shown.forEach(t => {
+        const letter = t.word[0].toUpperCase();
+        if (letter !== currentLetter) {
+          currentLetter = letter;
+          const h = document.createElement("h2");
+          h.className = "dict-letter";
+          h.textContent = letter;
+          listEl.appendChild(h);
+        }
+        const row = document.createElement("div");
+        row.className = "dict-entry";
+        const w = document.createElement("span");
+        w.className = "word";
+        w.textContent = t.word;
+        row.appendChild(w);
+        row.appendChild(document.createTextNode(t.definition));
+        listEl.appendChild(row);
+      });
+
+      if (!shown.length) {
+        const none = document.createElement("div");
+        none.className = "dict-none";
+        none.textContent = "No sailing term matches that search.";
+        listEl.appendChild(none);
+      }
+      countEl.textContent = shown.length === TERMS.length
+        ? TERMS.length + " sailing terms"
+        : shown.length + " of " + TERMS.length + " sailing terms";
+    }
+
+    searchEl.addEventListener("input", render);
+    lengthEl.addEventListener("change", render);
+    render();
+
+    const connEl = document.getElementById("connectors");
+    CONNECTORS.forEach(w => {
+      const chip = document.createElement("span");
+      chip.textContent = w;
+      connEl.appendChild(chip);
+    });
+  </script>
+</body>
+</html>
