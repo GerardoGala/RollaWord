@@ -75,6 +75,22 @@
       overflow-wrap: anywhere;  /* safety net for very long words in a narrow column */
     }
 
+    /* Hint under the text box: "Type a word to find its synonyms".
+       Absolutely positioned, so it takes no space and moves nothing when it disappears. */
+    #grid-wrap { position: relative; }
+    #hint {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 60px;                 /* just below the text box (about 46px tall + gap) */
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      pointer-events: none;
+      transition: opacity .2s;
+    }
+    #hint.hidden { opacity: 0; }
+
     #app > hr {
       width: 100%;
       margin: 12px 0;
@@ -131,8 +147,14 @@
 <body>
 
 <div id="app">
-  <div id="grid">
-    <input type="text" id="word-input" placeholder="Word..." autocomplete="off">
+    <header style="margin-bottom: calc(var(--baseline) * 6); text-align: center;">
+      <h1 class="h1" style="margin: 0; text-transform: uppercase; color: #006abc;">THESAURUS</h1>
+    </header>
+  <div id="grid-wrap">
+    <div id="grid">
+      <input type="text" id="word-input" placeholder="Word..." autocomplete="off">
+    </div>
+    <div id="hint">Type a word to find its synonyms</div>
   </div>
 
   <hr>
@@ -163,6 +185,21 @@
   </nav>
   <div>© 2026 RollaWord</div>
 </footer>
+
+<!-- Hint: fades out and is removed as soon as the text box gets focus -->
+<script>
+  (function () {
+    var hint = document.getElementById('hint');
+    var input = document.getElementById('word-input');
+    if (!hint || !input) return;
+    function hideHint() {
+      hint.classList.add('hidden');
+      setTimeout(function () { hint.remove(); }, 200);
+    }
+    if (document.activeElement === input) { hideHint(); return; }   // already focused when the page loads
+    input.addEventListener('focus', hideHint, { once: true });
+  })();
+</script>
 
 <!-- The Logic & Animation Engine (must load after the elements above) -->
 <script src="js/thesaurus.js"></script>
