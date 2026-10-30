@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // RollaSail daily challenge generator
 //
-// Usage:  node generateSailChallenge.js [startDate=2026-11-01] [days=365] [seed=20261030]
+// Usage:  node generateSailChallenge.js [seed=2]      (always writes 366 puzzles keyed MMDD, so they repeat every year)
 //
 // Reads (from the same folder as this script):
 //   sailing-dictionary.txt   every valid word, one per line (sailing words + prepositions, articles, conjunctions)
@@ -24,9 +24,10 @@ const path = require('path');
 const ROWS = 6, COLS = 8, TILES = 8;
 const COLORS = ['red', 'blue'];
 
-const startArg = process.argv[2] || '2026-11-01';
-const days = parseInt(process.argv[3] || '365', 10);
-const seed = parseInt(process.argv[4] || '20261030', 10);
+// The Daily Challenge repeats every year, so puzzles are keyed by month and day only ("MMDD", e.g. "1030").
+// 366 days (the days of a leap year) so February 29 has a puzzle too.
+const days = 366;
+const seed = parseInt(process.argv[2] || '2', 10);
 
 // ---------- seeded random numbers (same seed = same puzzles) ----------
 function mulberry32(a) {
@@ -151,9 +152,8 @@ function buildBoard(term) {
 
 // ---------- generate all days ----------
 function dateKey(i) {
-  const [y, m, d] = startArg.split('-').map(Number);
-  const dt = new Date(Date.UTC(y, m - 1, d + i));
-  return `${dt.getUTCFullYear()}${String(dt.getUTCMonth() + 1).padStart(2, '0')}${String(dt.getUTCDate()).padStart(2, '0')}`;
+  const dt = new Date(Date.UTC(2028, 0, 1 + i));   // 2028 is a leap year: Jan 1 ... Dec 31, including Feb 29
+  return `${String(dt.getUTCMonth() + 1).padStart(2, '0')}${String(dt.getUTCDate()).padStart(2, '0')}`;
 }
 
 let bag = [];
@@ -195,5 +195,5 @@ for (let i = 0; i < days; i++) {
 
 fs.writeFileSync(path.join(dir, 'sailchallenge.json'), JSON.stringify(challenge, null, 1));
 fs.writeFileSync(path.join(dir, 'sailsolutions.json'), JSON.stringify(solutions, null, 1));
-console.log(`Wrote ${days} days starting ${startArg}: sailchallenge.json and sailsolutions.json`);
+console.log(`Wrote ${days} days (0101 to 1231): sailchallenge.json and sailsolutions.json`);
 console.log(`Sailing terms: ${sailingTerms.length}, fill words: ${fillWords.length}`);
