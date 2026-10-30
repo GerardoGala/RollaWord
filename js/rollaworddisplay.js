@@ -4,15 +4,14 @@
 // =========================================================================
 
 /**
- * Applies the Invalid Contamination Cascading rules to all discovered words.
- * If a word is invalid, all its tiles are contaminated, causing any crossing
- * or intersecting words to also become invalid.
+ * Applies the Invalid Contamination rules to all discovered words.
+ * If a word is invalid, its tiles are contaminated, causing directly 
+ * crossing or intersecting words to also become invalid (no cascading).
  */
 function applyInvalidContaminationCascading(words) {
   const contaminatedTileIds = new Set();
-  let contaminationExpanded = true;
 
-  // --- STEP 1: Seed contamination from initial dictionary-invalid words ---
+  // --- STEP 1: Seed contamination only from initial dictionary-invalid words ---
   words.forEach(wordObj => {
     if (!wordObj.isValid) {
       wordObj.tiles.forEach(tile => {
@@ -21,34 +20,26 @@ function applyInvalidContaminationCascading(words) {
     }
   });
 
-  // --- STEP 2: Run cascading contamination loop until state stabilizes ---
-  while (contaminationExpanded) {
-    contaminationExpanded = false;
-
-    words.forEach(wordObj => {
-      // If a word is currently marked valid but uses a contaminated tile...
-      if (wordObj.isValid) {
-        const hasContaminatedTile = wordObj.tiles.some(tile => contaminatedTileIds.has(tile.id));
-
-        if (hasContaminatedTile) {
-          // Trigger Invalid Contamination Cascading on this word
-          wordObj.isValid = false;
-          wordObj.score = 0;
-          wordObj.baseScore = 0;
-          wordObj.multiplier = 1;
-
-          // Contaminate all other letters in this newly broken word
-          wordObj.tiles.forEach(tile => {
-            if (!contaminatedTileIds.has(tile.id)) {
-              contaminatedTileIds.add(tile.id);
-              contaminationExpanded = true; // Loop again to catch new intersections
-            }
-          });
-        }
+  // --- STEP 2: Invalidate directly intersecting words (Chain reaction removed) ---
+  words.forEach(wordObj => {
+    // If a word is currently marked valid but uses a contaminated tile...
+    if (wordObj.isValid) {
+      const hasContaminatedTile = wordObj.tiles.some(tile => contaminatedTileIds.has(tile.id));
+      
+      if (hasContaminatedTile) {
+        // Invalidate this word and wipe its score
+        wordObj.isValid = false;
+        wordObj.score = 0;
+        wordObj.baseScore = 0;
+        wordObj.multiplier = 1;
+        
+        // CRITICAL CHANGE: We no longer add this word's other tiles 
+        // to contaminatedTileIds, preventing any further chain reactions.
       }
-    });
-  }
+    }
+  });
 }
+
 
 /**
  * Displays valid and invalid word scores in the sidebar panel
