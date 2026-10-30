@@ -246,18 +246,18 @@
                 let tableHtml = `<div style="display: flex; flex-direction: column; width: 100%;">`;
                 let rank = 1;
 
-                entries.forEach((entry) => {
-                    const isMe = !!myId && entry.id === myId;
-                    const you = isMe ? ` <span style="font-weight:700;">(you)</span>` : "";
-                    tableHtml += `
-                        <div class="leaderboard-row"${isMe ? ' style="background:#eef5fb;font-weight:700;"' : ""}>
-                            <span class="rank-badge">#${rank}</span>
-                            <span class="player-name">${escapeHtml(entry.name)}${you}</span>
-                            <span class="player-score">${escapeHtml(entry.score)} pts</span>
-                        </div>
-                    `;
-                    rank++;
-                });
+entries.forEach((entry) => {
+  tableHtml += `
+    <div class="leaderboard-row">
+      <span class="rank-badge">#${rank}</span>
+      <span class="player-name">${escapeHtml(entry.name)}</span>
+      <span class="player-score">${escapeHtml(entry.score)} pts</span>
+    </div>
+  `;
+  rank++;
+});
+
+
 
                 tableHtml += `</div>`;
                 wrapper.innerHTML = tableHtml;
