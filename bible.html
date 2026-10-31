@@ -11,8 +11,10 @@
     --muted: #666;
     --pane: #fffdf8;
     --sel: #111;
+    --line: #bdb5a2;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   html, body { height: 100%; margin: 0; }
   body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -67,6 +69,17 @@
     gap: 6px;
   }
 
+  /* ---------- sections for people who are not traced to Adam and Eve ---------- */
+  .banner { padding: 14px 12px 11px; background: #2b2b2b; color: #f4f1ea; }
+  .banner h2 { margin: 0 0 4px; font-size: .95rem; }
+  .banner p { margin: 0; font-size: .78rem; color: #d8d2c3; line-height: 1.35; }
+  .famhead {
+    margin: 0; padding: 8px 10px 6px;
+    font-size: .86rem; font-weight: 650;
+    background: #e6e0d1; color: #2b2b2b;
+    border-top: 3px solid var(--line);
+  }
+
   /* ---------- one person ---------- */
   .tile {
     display: flex;
@@ -108,7 +121,7 @@
   #who h1 small { font-weight: 400; color: var(--muted); font-size: .8rem; }
   .step {
     flex: none; width: 38px; height: 34px;
-    border: 1px solid #bdb5a2; border-radius: 8px;
+    border: 1px solid var(--line); border-radius: 8px;
     background: #fff; font-size: 1rem; cursor: pointer;
   }
   .step:disabled { opacity: .35; cursor: default; }
@@ -123,7 +136,7 @@
   .chips .lbl { font-size: .74rem; color: var(--muted); margin-right: 2px; flex: none; }
   .chip {
     flex: none; white-space: nowrap;
-    border: 1px solid #bdb5a2; background: #fff; color: var(--ink);
+    border: 1px solid var(--line); background: #fff; color: var(--ink);
     border-radius: 999px; padding: 2px 9px; font: inherit; font-size: .76rem; cursor: pointer;
   }
   .chip[aria-current="true"] { background: #222; color: #fff; border-color: #222; }
@@ -141,8 +154,79 @@
   #text p.v sup { font-family: system-ui, sans-serif; font-size: .62em; color: var(--muted); margin-right: 3px; }
   #text p.v.hit { background: #ffe9a8; }
   #text .note { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
-  #credit { flex: none; padding: 5px 14px; font-size: .68rem; color: var(--muted); border-top: 1px solid #e3dccb; }
+
+  /* ---------- the credit line, and the bar that covers it after the first tap in the reader ---------- */
+  #credit {
+    flex: none; position: relative;
+    display: flex; align-items: center;
+    min-height: 46px; padding: 5px 14px;
+    font-size: .68rem; color: var(--muted);
+    border-top: 1px solid #e3dccb;
+  }
   #credit a { color: inherit; }
+  #bar {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; gap: 6px;
+    padding: 5px 8px;
+    background: var(--pane);
+    border-top: 1px solid #e3dccb;
+    animation: barIn .18s ease-out;
+  }
+  @keyframes barIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { #bar { animation: none; } }
+
+  .switch {
+    display: flex; align-items: center; gap: 6px; flex: none;
+    height: 36px; padding: 0 10px 0 6px;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: #fff; color: var(--ink);
+    font: inherit; font-size: .8rem; cursor: pointer;
+  }
+  .switch .track { position: relative; width: 34px; height: 20px; border-radius: 999px; background: #8f8977; flex: none; transition: background .15s; }
+  .switch .track::after {
+    content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+    border-radius: 50%; background: #fff; transition: transform .15s;
+  }
+  .switch[aria-checked="true"] .track { background: #2f7d4f; }
+  .switch[aria-checked="true"] .track::after { transform: translateX(14px); }
+  .switch .state { font-size: .72rem; color: var(--muted); min-width: 1.7em; }
+  #search {
+    flex: 1; min-width: 0; height: 36px;
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 0 12px; font: inherit; font-size: 16px;   /* 16px stops phones from zooming in on focus */
+    background: #fff; color: var(--ink);
+  }
+  .creditsBtn {
+    flex: none; height: 36px; padding: 0 11px;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: #fff; color: var(--ink); font: inherit; font-size: .8rem; cursor: pointer;
+  }
+  .creditsBtn[aria-expanded="true"] { background: #222; color: #fff; border-color: #222; }
+  @media (max-width: 760px) {
+    .switch .state, .creditsBtn .txt { display: none; }
+    .creditsBtn { padding: 0 10px; }
+  }
+  .switch:focus-visible, #search:focus-visible, .creditsBtn:focus-visible, .res:focus-visible { outline: 3px solid #0a58ca; outline-offset: 1px; }
+
+  #results, #creditPanel {
+    position: absolute; left: 8px; right: 8px; bottom: calc(100% + 4px); z-index: 6;
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .22);
+  }
+  #results { max-height: 230px; max-height: min(55dvh, 230px); overflow-y: auto; }
+  .res {
+    display: block; width: 100%; text-align: left;
+    border: 0; border-bottom: 1px solid #eee7d6; background: none;
+    padding: 7px 10px; font: inherit; color: var(--ink); cursor: pointer;
+  }
+  .res:last-child { border-bottom: 0; }
+  .res:hover { background: #f4efe2; }
+  .res .rn { font-weight: 650; font-size: .9rem; }
+  .res .rd { display: block; font-size: .74rem; color: var(--muted); }
+  .res .tag { margin-left: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; font-size: .66rem; font-weight: 400; color: var(--muted); }
+  #results .empty { padding: 10px 12px; font-size: .82rem; color: var(--muted); }
+  #creditPanel { padding: 10px 12px; font-size: .78rem; line-height: 1.45; color: var(--ink); }
+  #creditPanel a { color: #0a58ca; }
 
   /* ---------- phone held upright: ask for landscape ---------- */
   #rotate {
@@ -167,21 +251,37 @@
     <div id="sentinel"></div>
   </main>
 
-  <section id="reader" aria-live="polite">
-    <div id="who">
+  <section id="reader">
+    <div id="who" aria-live="polite">
       <div class="top">
         <button class="step" id="prev" aria-label="Previous person" disabled>&#9664;</button>
         <h1 id="whoName">Tap a person</h1>
         <button class="step" id="next" aria-label="Next person" disabled>&#9654;</button>
       </div>
       <div class="meta" id="whoMeta"></div>
+      <div class="meta" id="whoAbout" hidden></div>
       <div class="chips" id="family"></div>
       <div class="chips" id="verses"></div>
     </div>
     <div id="text"><p class="note">Tap any person on the left to read where the Bible mentions them.</p></div>
+
     <div id="credit">
-      King James Version (public domain). Family links: Theographic Bible Metadata, CC BY-SA 4.0,
-      <a href="https://github.com/robertrouse/theographic-bible-metadata" target="_blank" rel="noopener">github.com/robertrouse/theographic-bible-metadata</a>.
+      <span id="creditText">King James Version (public domain). Family links: Theographic Bible Metadata, CC BY-SA 4.0,
+      <a href="https://github.com/robertrouse/theographic-bible-metadata" target="_blank" rel="noopener">github.com/robertrouse/theographic-bible-metadata</a>.</span>
+
+      <div id="bar" hidden>
+        <button type="button" class="switch" id="trace" role="switch" aria-checked="true"
+                title="On: only people who can be traced back to Adam and Eve. Off: everyone, including families that cannot be traced.">
+          <span class="track" aria-hidden="true"></span><span class="lab">Traceable</span><span class="state" id="traceState">On</span>
+        </button>
+        <input id="search" type="search" placeholder="Find a person" aria-label="Find a person by name"
+               autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        <button type="button" class="creditsBtn" id="creditsBtn" aria-expanded="false" aria-controls="creditPanel" aria-label="Credits">
+          <span aria-hidden="true">&#9432;</span><span class="txt"> Credits</span>
+        </button>
+      </div>
+      <div id="results" role="list" hidden></div>
+      <div id="creditPanel" hidden></div>
     </div>
   </section>
 </div>
@@ -198,15 +298,57 @@ const TREE_FILE = 'family_tree.json';
 const TEXT_FILE = 'kjv_chapters.json';
 const FOLDERS = ['', 'bible/', '/bible/'];   // places to look for the two files above
 const HUE_STEP = 47;                          // how far the colour moves from one generation to the next
-const LOAD_AHEAD = 400;                       // load the next generation when it is this many pixels from view
+const LOAD_AHEAD = 400;                       // load the next section when it is this many pixels from view
+const MAX_RESULTS = 15;                       // search results shown at once
+const STORAGE_KEY = 'bibletree.traceable';    // remembers the Traceable switch on this phone
 
 // <pure>
-// Turns the people list into generations: bands -> groups of children -> people.
-function buildBands(data) {
+const ALONE_CHUNK = 45;                       // people per section in the "no family recorded" list
+
+// Turns a start list into generations: bands -> groups of children -> people.
+// placeOf(id) says under which parent a person sits (or null); skip(id) leaves someone out.
+function buildLevels(P, start, placeOf, startTitle, skip) {
+  const bands = [{ gen: 0, groups: [{ parent: null, title: startTitle, members: start.slice() }] }];
+  const flat = start.slice();
+  const placed = {};
+  start.forEach(function (id) { placed[id] = true; });
+  for (let g = 0; ; g++) {
+    const groups = [];
+    bands[g].groups.forEach(function (grp) {
+      grp.members.forEach(function (pid) {
+        const kids = P[pid].children.filter(function (c) {
+          return P[c] && !placed[c] && placeOf(c) === pid && !(skip && skip(c));
+        });
+        if (!kids.length) return;
+        const mothers = [];
+        kids.forEach(function (c) {
+          placed[c] = true;
+          const m = P[c].mother;
+          if (m && mothers.indexOf(m) === -1) mothers.push(m);
+        });
+        let title = 'Children of ' + P[pid].name;
+        if (mothers.length === 1 && P[mothers[0]] && P[pid].father !== mothers[0] && mothers[0] !== pid) {
+          title += ' & ' + P[mothers[0]].name;
+        }
+        groups.push({ parent: pid, title: title, members: kids, showMothers: mothers.length > 1 });
+        kids.forEach(function (c) { flat.push(c); });
+      });
+    });
+    if (!groups.length) break;
+    bands.push({ gen: g + 1, groups: groups });
+  }
+  return { bands: bands, flat: flat };
+}
+
+// Builds every section of the left pane, in order:
+//   1. one section per generation of the tree that starts with Adam and Eve (the traced tree)
+//   2. one section per family that the data cannot link to Adam and Eve
+//   3. the people with no relatives recorded, in alphabetical chunks
+function buildModel(data) {
   const P = data.people;
   const start = data.start;
-  // A person sits one generation below their father. If the father is not in the tree
-  // (he is only a husband we know of), they sit one generation below their mother.
+
+  // who descends from the start people, and under which parent each of them sits
   const depthMemo = {};
   const keyMemo = {};
   function depth(id) {
@@ -228,39 +370,62 @@ function buildBands(data) {
     keyMemo[id] = key;
     return d;
   }
-  const parentKey = function (id) { depth(id); return keyMemo[id] || null; };
+  const inTraced = function (id) { return depth(id) !== null; };
+  const tracedKey = function (id) { depth(id); return keyMemo[id] || null; };
+  const looseKey = function (id) {
+    const p = P[id];
+    if (p.father && P[p.father]) return p.father;
+    if (p.mother && P[p.mother]) return p.mother;
+    return null;
+  };
 
-  const bands = [];
-  const flat = [];
-  bands.push({ gen: 0, groups: [{ parent: null, title: 'The first couple', members: start.slice() }] });
-  start.forEach(function (id) { flat.push(id); });
-
-  for (let g = 0; ; g++) {
-    const prev = bands[g];
-    const groups = [];
-    prev.groups.forEach(function (grp) {
-      grp.members.forEach(function (pid) {
-        const kids = P[pid].children.filter(function (c) {
-          return P[c] && parentKey(c) === pid && depth(c) === g + 1;
-        });
-        if (!kids.length) return;
-        const mothers = [];
-        kids.forEach(function (c) {
-          const m = P[c].mother;
-          if (m && mothers.indexOf(m) === -1) mothers.push(m);
-        });
-        let title = 'Children of ' + P[pid].name;
-        if (mothers.length === 1 && P[mothers[0]] && P[pid].father !== mothers[0] && mothers[0] !== pid) {
-          title += ' & ' + P[mothers[0]].name;
-        }
-        groups.push({ parent: pid, title: title, members: kids, showMothers: mothers.length > 1 });
-        kids.forEach(function (c) { flat.push(c); });
+  const m = { sections: [], sectionOf: {}, genOf: {}, famOf: {}, flat: [], dupNames: {} };
+  function mark(band, sectionIndex, genIndex, root) {
+    band.groups.forEach(function (g) {
+      g.members.forEach(function (id) {
+        m.sectionOf[id] = sectionIndex;
+        m.genOf[id] = genIndex;
+        if (root) m.famOf[id] = root;
       });
     });
-    if (!groups.length) break;
-    bands.push({ gen: g + 1, groups: groups });
   }
-  return { bands: bands, flat: flat, depth: depth };
+
+  const traced = buildLevels(P, start, tracedKey, 'The first couple', null);
+  traced.bands.forEach(function (band, i) {
+    m.sections.push({ kind: 'band', band: band, hue: i, label: 'Generation ' + (i + 1) });
+    mark(band, m.sections.length - 1, i, null);
+  });
+  traced.flat.forEach(function (id) { m.flat.push(id); });
+  m.tracedSections = m.sections.length;
+  m.tracedFlat = m.flat.length;
+
+  (data.families || []).forEach(function (root) {
+    if (!P[root] || inTraced(root)) return;
+    const f = buildLevels(P, [root], looseKey, 'Head of this family', inTraced);
+    const s = { kind: 'family', root: root, bands: f.bands, count: f.flat.length };
+    if (!m.sections.some(function (x) { return x.kind === 'family'; })) s.banner = 'families';
+    m.sections.push(s);
+    f.bands.forEach(function (band, i) { mark(band, m.sections.length - 1, i, root); });
+    f.flat.forEach(function (id) { m.flat.push(id); });
+  });
+
+  const alone = (data.alone || []).filter(function (id) { return P[id] && m.sectionOf[id] === undefined; });
+  for (let i = 0; i < alone.length; i += ALONE_CHUNK) {
+    const members = alone.slice(i, i + ALONE_CHUNK);
+    const s = {
+      kind: 'alone', members: members, hue: 3,
+      title: P[members[0]].name + ' – ' + P[members[members.length - 1]].name
+    };
+    if (i === 0) s.banner = 'alone';
+    m.sections.push(s);
+    members.forEach(function (id) { m.sectionOf[id] = m.sections.length - 1; m.flat.push(id); });
+  }
+
+  m.flat.forEach(function (id) {
+    const n = P[id].name;
+    m.dupNames[n] = (m.dupNames[n] || 0) + 1;
+  });
+  return m;
 }
 
 // "Gen.5.3" -> { book: 'Gen', chapter: '5', verse: '3' }
@@ -298,12 +463,21 @@ const sentinel = document.getElementById('sentinel');
 const textEl = document.getElementById('text');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
+const readerEl = document.getElementById('reader');
+const barEl = document.getElementById('bar');
+const traceBtn = document.getElementById('trace');
+const traceState = document.getElementById('traceState');
+const searchEl = document.getElementById('search');
+const resultsEl = document.getElementById('results');
+const creditsBtn = document.getElementById('creditsBtn');
+const creditPanel = document.getElementById('creditPanel');
 
 let data = null, model = null, chapters = null;
-let nextBand = 0;
+let nextSection = 0;
 let current = null;           // id of the selected person
 let activeRef = null;         // verse shown in the text pane
 let flatIndex = {};
+let scopeOn = true;           // the Traceable switch
 const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let workingFolder = null;
@@ -324,10 +498,21 @@ async function fetchJson(name) {
   throw lastError;
 }
 
+function sectionLimit() { return scopeOn ? model.tracedSections : model.sections.length; }
+function flatLimit() { return scopeOn ? model.tracedFlat : model.flat.length; }
+function isShown(id) { return typeof model.sectionOf[id] === 'number' && model.sectionOf[id] < sectionLimit(); }
+
+function relation(id) {
+  const p = data.people[id];
+  const parent = p.father && data.people[p.father] ? p.father : (p.mother && data.people[p.mother] ? p.mother : null);
+  if (!parent) return '';
+  return (p.sex === 'F' ? 'daughter of ' : 'son of ') + data.people[parent].name;
+}
+
 // ------------------------------------------------------------------
-// The left pane: bands that load as you scroll
+// The left pane: sections that load as you scroll
 // ------------------------------------------------------------------
-function makeTile(id, band, group) {
+function makeTile(id, group, genNumber, inFamily) {
   const p = data.people[id];
   const tile = document.createElement('button');
   tile.type = 'button';
@@ -335,7 +520,7 @@ function makeTile(id, band, group) {
   tile.dataset.id = id;
   tile.setAttribute('aria-pressed', 'false');
   tile.setAttribute('aria-label', p.name + (p.kind === 'nation' ? ', a nation' : p.sex === 'F' ? ', woman' : ', man') +
-    ', generation ' + (band.gen + 1) + (p.mainLine ? ', main line' : ''));
+    (genNumber ? ', generation ' + genNumber + (inFamily ? ' of this family' : '') : '') + (p.mainLine ? ', main line' : ''));
   tile.innerHTML = (p.kind === 'nation' ? ICON_N : p.sex === 'F' ? ICON_F : ICON_M);
 
   const name = document.createElement('span');
@@ -345,8 +530,8 @@ function makeTile(id, band, group) {
 
   let sub = '';
   if (p.kind === 'nation') sub = 'nation';
-  else if (group.showMothers && p.mother && data.people[p.mother]) sub = data.people[p.mother].name;
-  else if (model.dupNames[p.name] > 1 && p.note) sub = p.note;
+  else if (group && group.showMothers && p.mother && data.people[p.mother]) sub = data.people[p.mother].name;
+  else if (model.dupNames[p.name] > 1) sub = p.note || relation(id) || (p.verses.length ? niceRef(p.verses[0]) : '');
   if (sub) {
     const s = document.createElement('span');
     s.className = 'sub';
@@ -357,46 +542,88 @@ function makeTile(id, band, group) {
   return tile;
 }
 
-function renderBand(index) {
-  const band = model.bands[index];
+function bandEl(band, hueIndex, label, inFamily) {
   const section = document.createElement('section');
   section.className = 'band';
-  section.style.setProperty('--h', String((index * HUE_STEP) % 360));
+  section.style.setProperty('--h', String((hueIndex * HUE_STEP) % 360));
   const h2 = document.createElement('h2');
-  h2.textContent = 'Generation ' + (index + 1);
+  h2.textContent = label;
   section.appendChild(h2);
   band.groups.forEach(function (group) {
     const wrap = document.createElement('div');
     wrap.className = 'group';
-    const h3 = document.createElement('h3');
-    h3.textContent = group.title + (group.members.length > 1 ? ' (' + group.members.length + ')' : '');
-    wrap.appendChild(h3);
+    if (group.title) {
+      const h3 = document.createElement('h3');
+      h3.textContent = group.title + (group.members.length > 1 ? ' (' + group.members.length + ')' : '');
+      wrap.appendChild(h3);
+    }
     const grid = document.createElement('div');
     grid.className = 'grid';
-    group.members.forEach(function (id) { grid.appendChild(makeTile(id, band, group)); });
+    group.members.forEach(function (id) { grid.appendChild(makeTile(id, group, hueIndex + 1, inFamily)); });
     wrap.appendChild(grid);
     section.appendChild(wrap);
   });
-  treeEl.insertBefore(section, sentinel);
+  return section;
+}
+
+function bannerEl(kind) {
+  const b = document.createElement('div');
+  b.className = 'banner';
+  const h = document.createElement('h2');
+  const p = document.createElement('p');
+  if (kind === 'families') {
+    h.textContent = 'Families not traced to Adam and Eve';
+    p.textContent = 'The Bible names these people and their families, but the lists this tree uses do not connect them to Adam and Eve. Each family stands on its own, in Bible order.';
+  } else {
+    h.textContent = 'No family recorded';
+    p.textContent = 'These people are named in the Bible, but no parents or children are recorded for them here. In alphabetical order.';
+  }
+  b.appendChild(h);
+  b.appendChild(p);
+  return b;
+}
+
+function renderSection(index) {
+  const s = model.sections[index];
+  const wrap = document.createElement('div');
+  wrap.dataset.section = String(index);
+  if (s.banner) wrap.appendChild(bannerEl(s.banner));
+  if (s.kind === 'band') {
+    wrap.appendChild(bandEl(s.band, s.hue, s.label, false));
+  } else if (s.kind === 'family') {
+    const h = document.createElement('h2');
+    h.className = 'famhead';
+    h.textContent = 'Family of ' + data.people[s.root].name + ' · ' + s.count + (s.count === 1 ? ' person' : ' people');
+    wrap.appendChild(h);
+    s.bands.forEach(function (band, i) {
+      wrap.appendChild(bandEl(band, i, 'Generation ' + (i + 1) + ' of this family', true));
+    });
+  } else {
+    const band = { groups: [{ parent: null, title: s.title, members: s.members }] };
+    wrap.appendChild(bandEl(band, s.hue, 'No family recorded', true));
+  }
+  treeEl.insertBefore(wrap, sentinel);
 }
 
 function renderUpTo(index) {
-  while (nextBand <= index && nextBand < model.bands.length) renderBand(nextBand++);
+  while (nextSection <= index && nextSection < sectionLimit()) renderSection(nextSection++);
   updateStatus();
 }
 
 function fillScreen() {
-  // keep adding generations while the end of the list is close to the bottom of the screen
-  while (nextBand < model.bands.length &&
+  // keep adding sections while the end of the list is close to the bottom of the screen
+  while (nextSection < sectionLimit() &&
          sentinel.getBoundingClientRect().top < treeEl.getBoundingClientRect().bottom + LOAD_AHEAD) {
-    renderBand(nextBand++);
+    renderSection(nextSection++);
   }
   updateStatus();
 }
 
 function updateStatus() {
-  if (nextBand >= model.bands.length) {
-    statusEl.textContent = 'That is the end of this tree so far (' + model.flat.length + ' people).';
+  if (nextSection >= sectionLimit()) {
+    statusEl.textContent = scopeOn
+      ? 'That is the end of the traced tree (' + model.tracedFlat + ' people). Tap the Bible text on the right to bring up the Traceable switch, then turn it off to add the families that cannot be traced to Adam and Eve.'
+      : 'That is everyone in the list (' + model.flat.length + ' people).';
     treeEl.appendChild(statusEl);
   } else {
     statusEl.textContent = '';
@@ -409,12 +636,12 @@ function updateStatus() {
 // ------------------------------------------------------------------
 function yearText(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
 
-function chip(label, onClick, current) {
+function chip(label, onClick, isCurrent) {
   const b = document.createElement('button');
   b.type = 'button';
   b.className = 'chip';
   b.textContent = label;
-  if (current) b.setAttribute('aria-current', 'true');
+  if (isCurrent) b.setAttribute('aria-current', 'true');
   b.addEventListener('click', onClick);
   return b;
 }
@@ -433,10 +660,19 @@ function showWho(id) {
   else bits.push(p.sex === 'F' ? 'woman' : 'man');
   if (typeof p.birthYear === 'number') bits.push('born about ' + yearText(p.birthYear));
   if (typeof p.deathYear === 'number') bits.push('died about ' + yearText(p.deathYear));
-  const depth = model.depth(id);
-  if (depth !== null) bits.push('generation ' + (depth + 1));
-  if (!p.mainLine) bits.push('link not yet checked');
+  const g = model.genOf[id];
+  if (typeof g === 'number') {
+    const fam = model.famOf[id];
+    bits.push(fam ? 'generation ' + (g + 1) + ' of the family of ' + data.people[fam].name : 'generation ' + (g + 1));
+  }
+  if (p.untraced) bits.push('not traced to Adam and Eve');
+  else if (!p.mainLine) bits.push('link not yet checked');
+  if (typeof model.sectionOf[id] === 'number' && !isShown(id)) bits.push('hidden in the tree while Traceable is on');
   document.getElementById('whoMeta').textContent = bits.join(' · ');
+
+  const about = document.getElementById('whoAbout');
+  about.textContent = p.about || '';
+  about.hidden = !p.about;
 
   const fam = document.getElementById('family');
   fam.textContent = '';
@@ -464,9 +700,14 @@ function showWho(id) {
       vs.appendChild(chip(niceRef(ref), function () { showVerse(ref); }, ref === activeRef));
     });
   }
+  updateStepButtons(id);
+}
+
+function updateStepButtons(id) {
   const i = flatIndex[id];
-  prevBtn.disabled = !(i > 0);
-  nextBtn.disabled = !(typeof i === 'number' && i < model.flat.length - 1);
+  const known = typeof i === 'number' && i < flatLimit();
+  prevBtn.disabled = !(known && i > 0);
+  nextBtn.disabled = !(known && i < flatLimit() - 1);
 }
 
 async function showVerse(ref) {
@@ -512,8 +753,7 @@ async function showVerse(ref) {
 function selectPerson(id) {
   if (!data.people[id]) return;
   current = id;
-  const depth = model.depth(id);
-  if (depth !== null) renderUpTo(depth);
+  if (isShown(id)) renderUpTo(model.sectionOf[id]);
   document.querySelectorAll('.tile[aria-pressed="true"]').forEach(function (t) { t.setAttribute('aria-pressed', 'false'); });
   const tile = treeEl.querySelector('.tile[data-id="' + id + '"]');
   if (tile) {
@@ -531,10 +771,165 @@ function step(delta) {
   const i = flatIndex[current];
   if (typeof i !== 'number') return;
   const j = i + delta;
-  if (j >= 0 && j < model.flat.length) selectPerson(model.flat[j]);
+  if (j >= 0 && j < flatLimit()) selectPerson(model.flat[j]);
 }
 prevBtn.addEventListener('click', function () { step(-1); });
 nextBtn.addEventListener('click', function () { step(1); });
+
+// ------------------------------------------------------------------
+// The bar: appears over the credit line after the first tap in the reader
+// ------------------------------------------------------------------
+let barShown = false;
+function showBar() {
+  if (barShown) return;
+  barShown = true;
+  barEl.hidden = false;
+}
+readerEl.addEventListener('click', showBar);
+readerEl.addEventListener('focusin', showBar);
+
+function setScope(on) {
+  scopeOn = on;
+  try { localStorage.setItem(STORAGE_KEY, on ? 'on' : 'off'); } catch (e) { /* the switch still works without it */ }
+  traceBtn.setAttribute('aria-checked', on ? 'true' : 'false');
+  traceState.textContent = on ? 'On' : 'Off';
+  if (on) {
+    // take away the sections that are not part of the traced tree
+    treeEl.querySelectorAll('[data-section]').forEach(function (el) {
+      if (Number(el.dataset.section) >= model.tracedSections) el.remove();
+    });
+    nextSection = Math.min(nextSection, model.tracedSections);
+  }
+  fillScreen();
+  if (current) {
+    const tile = treeEl.querySelector('.tile[data-id="' + current + '"]');
+    if (tile) tile.setAttribute('aria-pressed', 'true');
+    showWho(current);
+  }
+  renderResults();
+}
+traceBtn.addEventListener('click', function () { setScope(!scopeOn); });
+
+// ----- search -----
+function describe(id) {
+  const p = data.people[id];
+  const bits = [];
+  const note = p.note || relation(id);
+  if (note) bits.push(note);
+  if (p.verses.length) bits.push(niceRef(p.verses[0]));
+  return bits.join(' · ');
+}
+
+function searchPeople(query) {
+  const q = query.toLowerCase();
+  const hits = [];
+  Object.keys(data.people).forEach(function (id) {
+    const p = data.people[id];
+    if (scopeOn && p.untraced) return;
+    const name = p.name.toLowerCase();
+    let score = -1;
+    if (name === q) score = 0;
+    else if (name.indexOf(q) === 0) score = 1;
+    else if (name.indexOf(q) > 0) score = 2;
+    else if (p.note && p.note.toLowerCase().indexOf(q) !== -1) score = 3;
+    if (score < 0) return;
+    hits.push({ id: id, score: score, main: p.mainLine ? 0 : 1, order: typeof flatIndex[id] === 'number' ? flatIndex[id] : 1e9 });
+  });
+  hits.sort(function (a, b) { return a.score - b.score || a.main - b.main || a.order - b.order; });
+  return hits;
+}
+
+function closePanels() {
+  resultsEl.hidden = true;
+  creditPanel.hidden = true;
+  creditsBtn.setAttribute('aria-expanded', 'false');
+}
+
+function renderResults() {
+  const q = searchEl.value.trim();
+  resultsEl.textContent = '';
+  if (!q || !data) { resultsEl.hidden = true; return; }
+  creditPanel.hidden = true;
+  creditsBtn.setAttribute('aria-expanded', 'false');
+  const hits = searchPeople(q);
+  resultsEl.hidden = false;
+  if (!hits.length) {
+    const e = document.createElement('div');
+    e.className = 'empty';
+    e.textContent = scopeOn ? 'No one found. Turn Traceable off to search everyone.' : 'No one found.';
+    resultsEl.appendChild(e);
+    return;
+  }
+  hits.slice(0, MAX_RESULTS).forEach(function (h) {
+    const p = data.people[h.id];
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'res';
+    b.dataset.id = h.id;
+    const rn = document.createElement('span');
+    rn.className = 'rn';
+    rn.textContent = p.name;
+    if (p.untraced) {
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.textContent = 'not traced';
+      rn.appendChild(tag);
+    }
+    const rd = document.createElement('span');
+    rd.className = 'rd';
+    rd.textContent = describe(h.id);
+    b.appendChild(rn);
+    b.appendChild(rd);
+    b.addEventListener('click', function () { chooseResult(h.id); });
+    resultsEl.appendChild(b);
+  });
+  if (hits.length > MAX_RESULTS) {
+    const more = document.createElement('div');
+    more.className = 'empty';
+    more.textContent = (hits.length - MAX_RESULTS) + ' more. Type more letters to narrow it down.';
+    resultsEl.appendChild(more);
+  }
+}
+
+function chooseResult(id) {
+  searchEl.value = '';
+  closePanels();
+  searchEl.blur();
+  selectPerson(id);
+}
+
+searchEl.addEventListener('input', renderResults);
+searchEl.addEventListener('keydown', function (e) {
+  const buttons = resultsEl.querySelectorAll('.res');
+  if (e.key === 'Enter' && buttons.length) { e.preventDefault(); chooseResult(buttons[0].dataset.id); }
+  else if (e.key === 'ArrowDown' && buttons.length) { e.preventDefault(); buttons[0].focus(); }
+  else if (e.key === 'Escape') { searchEl.value = ''; closePanels(); }
+});
+resultsEl.addEventListener('keydown', function (e) {
+  const buttons = Array.prototype.slice.call(resultsEl.querySelectorAll('.res'));
+  const i = buttons.indexOf(document.activeElement);
+  if (e.key === 'ArrowDown' && i < buttons.length - 1) { e.preventDefault(); buttons[i + 1].focus(); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); (i > 0 ? buttons[i - 1] : searchEl).focus(); }
+  else if (e.key === 'Escape') { e.preventDefault(); searchEl.focus(); closePanels(); }
+});
+
+// ----- credits -----
+creditsBtn.addEventListener('click', function () {
+  const open = creditPanel.hidden;
+  closePanels();
+  if (open) {
+    creditPanel.innerHTML = document.getElementById('creditText').innerHTML +
+      '<br>Family relationships come from the dataset, with corrections where the verses disagree. Only the line from Adam to Jesus has been checked verse by verse. Shared under the same licence (CC BY-SA 4.0).';
+    creditPanel.hidden = false;
+    creditsBtn.setAttribute('aria-expanded', 'true');
+  }
+});
+document.addEventListener('pointerdown', function (e) {
+  if (!document.getElementById('credit').contains(e.target)) closePanels();
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closePanels();
+});
 
 // ------------------------------------------------------------------
 // Start
@@ -550,17 +945,16 @@ let chaptersPromise = null;
   chaptersPromise = fetchJson(TEXT_FILE);
   chaptersPromise.catch(function () {});               // an error is reported when a verse is shown
 
-  model = buildBands(data);
-  model.dupNames = {};
-  model.flat.forEach(function (id, i) {
-    flatIndex[id] = i;
-    const n = data.people[id].name;
-    model.dupNames[n] = (model.dupNames[n] || 0) + 1;
-  });
+  model = buildModel(data);
+  model.flat.forEach(function (id, i) { flatIndex[id] = i; });
+
+  try { if (localStorage.getItem(STORAGE_KEY) === 'off') scopeOn = false; } catch (e) { /* use the default */ }
+  traceBtn.setAttribute('aria-checked', scopeOn ? 'true' : 'false');
+  traceState.textContent = scopeOn ? 'On' : 'Off';
 
   treeEl.addEventListener('scroll', fillScreen, { passive: true });
   window.addEventListener('resize', fillScreen);
-  renderBand(nextBand++);
+  renderSection(nextSection++);
   fillScreen();
   selectPerson(data.start[0]);
 })();
