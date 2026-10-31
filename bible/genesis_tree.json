@@ -1,1022 +1,60 @@
 {
- "source": "Family links from Theographic Bible Metadata (CC BY-SA 4.0), corrected against the King James text. Genesis line: Luke 3:36 extra Cainan left out. Verse references are KJV.",
+ "source": "Family links from Theographic Bible Metadata (CC BY-SA 4.0), corrected against the King James text. Genesis line: Luke 3:36 extra Cainan left out. Kings line as in Kings and Chronicles, Zerubbabel as son of Shealtiel (Matthew 1:12). Verse references are KJV.",
  "start": [
   "adam_78",
   "eve_1231"
  ],
  "people": {
-  "lamech_1808": {
-   "name": "Lamech",
-   "sex": "M",
-   "father": "methusael_2041",
+  "haggith_1353": {
+   "name": "Haggith",
+   "sex": "F",
+   "father": null,
    "mother": null,
    "children": [
-    "jabal_673",
-    "naamah_2118",
-    "tubal-cain_2884",
-    "jubal_1748"
+    "adonijah_97"
    ],
    "verses": [
-    "Gen.4.18",
-    "Gen.4.19",
-    "Gen.4.23",
-    "Gen.4.24"
-   ],
-   "note": "descendant of Cain"
-  },
-  "mehujael_1983": {
-   "name": "Mehujael",
-   "sex": "M",
-   "father": "irad_611",
-   "mother": null,
-   "children": [
-    "methusael_2041"
-   ],
-   "verses": [
-    "Gen.4.18"
+    "2Sam.3.4",
+    "1Kgs.1.5",
+    "1Kgs.1.11",
+    "1Kgs.2.13",
+    "1Chr.3.2"
    ]
   },
-  "gatam_1281": {
-   "name": "Gatam",
-   "sex": "M",
-   "father": "eliphaz_1144",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.36.11",
-    "Gen.36.16",
-    "1Chr.1.36"
-   ]
-  },
-  "zerah_2984": {
-   "name": "Zerah",
-   "sex": "M",
-   "father": "judah_1751",
-   "mother": "tamar_2821",
-   "children": [],
-   "verses": [
-    "Gen.38.30",
-    "Gen.46.12",
-    "Num.26.20",
-    "Josh.7.1",
-    "Josh.7.18",
-    "Josh.7.24",
-    "Josh.22.20",
-    "1Chr.2.4"
-   ]
-  },
-  "jetur_911": {
-   "name": "Jetur",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.15",
-    "1Chr.1.31"
-   ]
-  },
-  "adbeel_79": {
-   "name": "Adbeel",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.13",
-    "1Chr.1.29"
-   ]
-  },
-  "simeon_2741": {
-   "name": "Simeon",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "leah_1813",
-   "children": [
-    "jamin_720",
-    "zerah_3102",
-    "ohad_2239",
-    "jemuel_838",
-    "jachin_679",
-    "shaul_2562"
-   ],
-   "verses": [
-    "Gen.29.33",
-    "Gen.34.25",
-    "Gen.34.30",
-    "Gen.35.23",
-    "Gen.42.24",
-    "Gen.42.36",
-    "Gen.43.23",
-    "Gen.46.10"
-   ],
-   "birthYear": -1756
-  },
-  "kedar_1769": {
-   "name": "Kedar",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.13",
-    "1Chr.1.29",
-    "Song.1.5",
-    "Isa.21.16",
-    "Isa.21.17",
-    "Isa.42.11",
-    "Isa.60.7",
-    "Jer.2.10"
-   ]
-  },
-  "shaul_2562": {
-   "name": "Shaul",
-   "sex": "M",
-   "father": "simeon_2741",
-   "mother": "canaanitish_woman_915",
-   "children": [],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15",
-    "Num.26.13",
-    "1Chr.4.24"
-   ]
-  },
-  "jebusite_748": {
-   "name": "Jebusite",
+  "amorite_237": {
+   "name": "Amorite",
    "sex": "M",
    "father": "canaan_914",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.10.16",
-    "1Chr.1.14"
+    "1Chr.1.14",
+    "Amos.2.9",
+    "Amos.2.10"
    ],
    "kind": "nation"
   },
-  "zerah_3043": {
-   "name": "Zerah",
+  "jashub_1638": {
+   "name": "Jashub",
    "sex": "M",
-   "father": "reuel_2430",
+   "father": "issachar_645",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.36.13",
-    "Gen.36.17",
-    "1Chr.1.37"
-   ]
-  },
-  "rapha_2447": {
-   "name": "Rapha",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21",
-    "1Chr.8.2"
-   ]
-  },
-  "zerah_3102": {
-   "name": "Zerah",
-   "sex": "M",
-   "father": "simeon_2741",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15",
-    "Num.26.13",
-    "1Chr.4.24"
-   ]
-  },
-  "pallu_2325": {
-   "name": "Pallu",
-   "sex": "M",
-   "father": "reuben_2429",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.9",
-    "Exod.6.14",
-    "Num.26.5",
-    "Num.26.8",
-    "1Chr.5.3"
-   ]
-  },
-  "arvadite_316": {
-   "name": "Arvadite",
-   "sex": "M",
-   "father": "canaan_914",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.18",
-    "1Chr.1.16"
-   ],
-   "kind": "nation"
-  },
-  "arod_311": {
-   "name": "Arod",
-   "sex": "M",
-   "father": "gad_1262",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.16",
-    "Num.26.17"
-   ]
-  },
-  "naamah_2118": {
-   "name": "Naamah",
-   "sex": "F",
-   "father": "lamech_1808",
-   "mother": "zillah_3080",
-   "children": [],
-   "verses": [
-    "Gen.4.22"
-   ],
-   "note": "line of Cain"
-  },
-  "isuah_640": {
-   "name": "Isuah",
-   "sex": "M",
-   "father": "asher_337",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.17",
-    "1Chr.7.30"
-   ]
-  },
-  "asenath_335": {
-   "name": "Asenath",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "manasseh_1928",
-    "ephraim_1206"
-   ],
-   "verses": [
-    "Gen.41.45",
-    "Gen.41.50",
-    "Gen.46.20"
-   ]
-  },
-  "jahleel_704": {
-   "name": "Jahleel",
-   "sex": "M",
-   "father": "zebulun_3002",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.14",
-    "Num.26.26"
-   ]
-  },
-  "ehi_1038": {
-   "name": "Ehi",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21",
-    "1Chr.8.1"
-   ]
-  },
-  "canaanitish_woman_915": {
-   "name": "Canaanitish woman",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "shaul_2562"
-   ],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15"
-   ]
-  },
-  "cain_533": {
-   "name": "Cain",
-   "sex": "M",
-   "father": "adam_78",
-   "mother": "eve_1231",
-   "children": [
-    "enoch_1191"
-   ],
-   "verses": [
-    "Gen.4.1",
-    "Gen.4.2",
-    "Gen.4.3",
-    "Gen.4.5",
-    "Gen.4.6",
-    "Gen.4.8",
-    "Gen.4.9",
-    "Gen.4.13"
-   ],
-   "birthYear": -4002
-  },
-  "epher_1201": {
-   "name": "Epher",
-   "sex": "M",
-   "father": "midian_2075",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.4",
-    "1Chr.1.33"
-   ]
-  },
-  "huz_1582": {
-   "name": "Huz",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [],
-   "verses": [
-    "Gen.22.21"
-   ]
-  },
-  "dedan_998": {
-   "name": "Dedan",
-   "sex": "M",
-   "father": "raamah_2380",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ],
-   "note": "son of Raamah"
-  },
-  "ishbak_620": {
-   "name": "Ishbak",
-   "sex": "M",
-   "father": "abraham_58",
-   "mother": "keturah_1782",
-   "children": [],
-   "verses": [
-    "Gen.25.2",
-    "1Chr.1.32"
-   ]
-  },
-  "jaalam_662": {
-   "name": "Jaalam",
-   "sex": "M",
-   "father": "esau_1216",
-   "mother": "aholibamah_1761",
-   "children": [],
-   "verses": [
-    "Gen.36.5",
-    "Gen.36.14",
-    "Gen.36.18",
-    "1Chr.1.35"
-   ]
-  },
-  "gomer_1328": {
-   "name": "Gomer",
-   "sex": "M",
-   "father": "japheth_726",
-   "mother": null,
-   "children": [
-    "riphath_2443",
-    "togarmah_2875",
-    "ashkenaz_338"
-   ],
-   "verses": [
-    "Gen.10.2",
-    "Gen.10.3",
-    "1Chr.1.5",
-    "1Chr.1.6",
-    "Ezek.38.6"
-   ],
-   "note": "son of Japheth"
-  },
-  "daughter_of_lot_younger_984": {
-   "name": "Daughter of Lot - Younger",
-   "sex": "F",
-   "father": "lot_1830",
-   "mother": null,
-   "children": [
-    "ben-ammi_451"
-   ],
-   "verses": [
-    "Gen.19.8",
-    "Gen.19.12",
-    "Gen.19.14",
-    "Gen.19.15",
-    "Gen.19.16",
-    "Gen.19.30",
-    "Gen.19.36"
-   ]
-  },
-  "issachar_645": {
-   "name": "Issachar",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "leah_1813",
-   "children": [
-    "shimron_2706",
-    "tola_2878",
-    "jashub_1638",
-    "puah_2355"
-   ],
-   "verses": [
-    "Gen.30.18",
-    "Gen.35.23",
     "Gen.46.13",
-    "Gen.49.14",
-    "Exod.1.3",
-    "Num.1.8",
-    "Num.1.28",
-    "Num.1.29"
-   ],
-   "birthYear": -1751
+    "Num.26.24",
+    "1Chr.7.1"
+   ]
   },
-  "thahash_2845": {
-   "name": "Thahash",
+  "jeush_1603": {
+   "name": "Jeush",
    "sex": "M",
-   "father": "nahor_2143",
-   "mother": "reumah_2433",
+   "father": "rehoboam_2412",
+   "mother": "abihail_31",
    "children": [],
    "verses": [
-    "Gen.22.24"
-   ]
-  },
-  "ben-ammi_451": {
-   "name": "Ben-ammi",
-   "sex": "M",
-   "father": "lot_1830",
-   "mother": "daughter_of_lot_younger_984",
-   "children": [],
-   "verses": [
-    "Gen.19.38",
-    "Ps.83.7"
-   ]
-  },
-  "bilhah_502": {
-   "name": "Bilhah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "dan_973",
-    "naphtali_2149"
-   ],
-   "verses": [
-    "Gen.29.29",
-    "Gen.30.3",
-    "Gen.30.4",
-    "Gen.30.5",
-    "Gen.30.7",
-    "Gen.35.22",
-    "Gen.35.25",
-    "Gen.37.2"
-   ]
-  },
-  "dumah_1025": {
-   "name": "Dumah",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.14",
-    "1Chr.1.30"
-   ]
-  },
-  "daughter_of_lot_older_985": {
-   "name": "Daughter of Lot - Older",
-   "sex": "F",
-   "father": "lot_1830",
-   "mother": null,
-   "children": [
-    "moab_2103"
-   ],
-   "verses": [
-    "Gen.19.31",
-    "Gen.19.33",
-    "Gen.19.34",
-    "Gen.19.37"
-   ]
-  },
-  "sabtecha_2452": {
-   "name": "Sabtecha",
-   "sex": "M",
-   "father": "cush_962",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ]
-  },
-  "hamathite_1361": {
-   "name": "Hamathite",
-   "sex": "M",
-   "father": "canaan_914",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.18",
-    "1Chr.1.16"
-   ],
-   "kind": "nation"
-  },
-  "heth_1510": {
-   "name": "Heth",
-   "sex": "M",
-   "father": "canaan_914",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.15",
-    "Gen.23.3",
-    "Gen.23.5",
-    "Gen.23.7",
-    "Gen.23.10",
-    "Gen.23.16",
-    "Gen.23.18",
-    "Gen.23.20"
-   ]
-  },
-  "leah_1813": {
-   "name": "Leah",
-   "sex": "F",
-   "father": "laban_1803",
-   "mother": null,
-   "children": [
-    "reuben_2429",
-    "simeon_2741",
-    "levi_1820",
-    "judah_1751",
-    "issachar_645",
-    "zebulun_3002",
-    "dinah_1012"
-   ],
-   "verses": [
-    "Gen.29.16",
-    "Gen.29.17",
-    "Gen.29.23",
-    "Gen.29.24",
-    "Gen.29.25",
-    "Gen.29.30",
-    "Gen.29.31",
-    "Gen.29.32"
-   ]
-  },
-  "casluhim_923": {
-   "name": "Casluhim",
-   "sex": "M",
-   "father": "mizraim_2100",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.14",
-    "1Chr.1.12"
-   ],
-   "kind": "nation"
-  },
-  "kittim_1789": {
-   "name": "Kittim",
-   "sex": "M",
-   "father": "javan_744",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.4",
-    "1Chr.1.7"
-   ]
-  },
-  "leummim_1819": {
-   "name": "Leummim",
-   "sex": "M",
-   "father": "dedan_999",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.3"
-   ]
-  },
-  "dan_973": {
-   "name": "Dan",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "bilhah_502",
-   "children": [
-    "hushim_1579"
-   ],
-   "verses": [
-    "Gen.30.6",
-    "Gen.35.25",
-    "Gen.46.23",
-    "Gen.49.16",
-    "Gen.49.17",
-    "Exod.1.4",
-    "Exod.31.6",
-    "Exod.35.34"
-   ],
-   "birthYear": -1754
-  },
-  "tebah_2832": {
-   "name": "Tebah",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "reumah_2433",
-   "children": [],
-   "verses": [
-    "Gen.22.24"
-   ]
-  },
-  "ahiram_158": {
-   "name": "Ahiram",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Num.26.38"
-   ]
-  },
-  "aram_285": {
-   "name": "Aram",
-   "sex": "M",
-   "father": "shem_2613",
-   "mother": null,
-   "children": [
-    "mash_1944",
-    "hul_1566",
-    "uz_2908",
-    "gether_1308"
-   ],
-   "verses": [
-    "Gen.10.22",
-    "Gen.10.23",
-    "1Chr.1.17"
-   ],
-   "note": "son of Shem"
-  },
-  "iscah_618": {
-   "name": "Iscah",
-   "sex": "M",
-   "father": "haran_1407",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.11.29"
-   ]
-  },
-  "tiras_2864": {
-   "name": "Tiras",
-   "sex": "M",
-   "father": "japheth_726",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.2",
-    "1Chr.1.5"
-   ]
-  },
-  "mishma_2094": {
-   "name": "Mishma",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.14",
-    "1Chr.1.30"
-   ]
-  },
-  "aram_286": {
-   "name": "Aram",
-   "sex": "M",
-   "father": "kemuel_1773",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.22.21"
-   ],
-   "note": "son of Kemuel"
-  },
-  "ephah_1197": {
-   "name": "Ephah",
-   "sex": "F",
-   "father": "midian_2075",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.4",
-    "1Chr.1.33",
-    "Isa.60.6"
-   ]
-  },
-  "rebekah_2401": {
-   "name": "Rebekah",
-   "sex": "F",
-   "father": "bethuel_487",
-   "mother": null,
-   "children": [
-    "israel_682",
-    "esau_1216"
-   ],
-   "verses": [
-    "Gen.22.23",
-    "Gen.24.15",
-    "Gen.24.29",
-    "Gen.24.30",
-    "Gen.24.45",
-    "Gen.24.51",
-    "Gen.24.53",
-    "Gen.24.58"
-   ],
-   "birthYear": -1874
-  },
-  "joktan_1686": {
-   "name": "Joktan",
-   "sex": "M",
-   "father": "eber_1030",
-   "mother": null,
-   "children": [
-    "almodad_191",
-    "sheba_2568",
-    "havilah_1462",
-    "jobab_1640",
-    "ebal_2227",
-    "jerah_842",
-    "ophir_2253",
-    "uzal_2911",
-    "hadoram_1345",
-    "abimael_39",
-    "hazarmaveth_1465",
-    "diklah_1011",
-    "sheleph_2602"
-   ],
-   "verses": [
-    "Gen.10.25",
-    "Gen.10.26",
-    "Gen.10.29",
-    "1Chr.1.19",
-    "1Chr.1.20",
-    "1Chr.1.23"
-   ]
-  },
-  "eber_1030": {
-   "name": "Eber",
-   "sex": "M",
-   "father": "salah_2455",
-   "mother": null,
-   "children": [
-    "peleg_2308",
-    "joktan_1686"
-   ],
-   "verses": [
-    "Gen.10.21",
-    "Gen.10.24",
-    "Gen.10.25",
-    "Gen.11.14",
-    "Gen.11.15",
-    "Gen.11.16",
-    "Gen.11.17",
-    "Num.24.24"
-   ],
-   "note": "Heber",
-   "mainLine": true,
-   "birthYear": -2280,
-   "deathYear": -1816
-  },
-  "lamech_1809": {
-   "name": "Lamech",
-   "sex": "M",
-   "father": "methuselah_2042",
-   "mother": null,
-   "children": [
-    "noah_2210"
-   ],
-   "verses": [
-    "Gen.5.25",
-    "Gen.5.26",
-    "Gen.5.28",
-    "Gen.5.30",
-    "Gen.5.31",
-    "1Chr.1.3",
-    "Luke.3.36"
-   ],
-   "note": "father of Noah",
-   "mainLine": true,
-   "birthYear": -3129,
-   "deathYear": -2352
-  },
-  "reumah_2433": {
-   "name": "Reumah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "gaham_1267",
-    "thahash_2845",
-    "maachah_1840",
-    "tebah_2832"
-   ],
-   "verses": [
-    "Gen.22.24"
-   ]
-  },
-  "seba_2481": {
-   "name": "Seba",
-   "sex": "M",
-   "father": "cush_962",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ]
-  },
-  "areli_296": {
-   "name": "Areli",
-   "sex": "M",
-   "father": "gad_1262",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.16",
-    "Num.26.17"
-   ]
-  },
-  "peleg_2308": {
-   "name": "Peleg",
-   "sex": "M",
-   "father": "eber_1030",
-   "mother": null,
-   "children": [
-    "reu_2428"
-   ],
-   "verses": [
-    "Gen.10.25",
-    "Gen.11.16",
-    "Gen.11.17",
-    "Gen.11.18",
-    "Gen.11.19",
-    "1Chr.1.19",
-    "1Chr.1.25",
-    "Luke.3.35"
-   ],
-   "mainLine": true,
-   "birthYear": -2246,
-   "deathYear": -2007
-  },
-  "mizraim_2100": {
-   "name": "Mizraim",
-   "sex": "M",
-   "father": "ham_1359",
-   "mother": null,
-   "children": [
-    "ludim_1835",
-    "caphthorim_917",
-    "lehabim_1816",
-    "naphtuhim_2150",
-    "casluhim_923",
-    "anamim_253",
-    "pathrusim_2288"
-   ],
-   "verses": [
-    "Gen.10.6",
-    "Gen.10.13",
-    "1Chr.1.8",
-    "1Chr.1.11"
-   ]
-  },
-  "shillem_2677": {
-   "name": "Shillem",
-   "sex": "M",
-   "father": "naphtali_2149",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.24",
-    "Num.26.49",
-    "1Chr.7.13"
-   ]
-  },
-  "tarshish_2828": {
-   "name": "Tarshish",
-   "sex": "M",
-   "father": "javan_744",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.4",
-    "1Chr.1.7"
-   ],
-   "note": "son of Javan"
-  },
-  "jachin_679": {
-   "name": "Jachin",
-   "sex": "M",
-   "father": "simeon_2741",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15",
-    "Num.26.12",
-    "1Chr.4.24"
-   ]
-  },
-  "haggi_1351": {
-   "name": "Haggi",
-   "sex": "M",
-   "father": "gad_1262",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.16",
-    "Num.26.15"
-   ]
-  },
-  "hanoch_1403": {
-   "name": "Hanoch",
-   "sex": "M",
-   "father": "reuben_2429",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.9",
-    "Exod.6.14",
-    "Num.26.5",
-    "1Chr.5.3"
-   ]
-  },
-  "seth_2504": {
-   "name": "Seth",
-   "sex": "M",
-   "father": "adam_78",
-   "mother": "eve_1231",
-   "children": [
-    "enos_1193"
-   ],
-   "verses": [
-    "Gen.4.25",
-    "Gen.4.26",
-    "Gen.5.3",
-    "Gen.5.4",
-    "Gen.5.6",
-    "Gen.5.7",
-    "Gen.5.8",
-    "Num.24.17"
-   ],
-   "mainLine": true,
-   "birthYear": -3873,
-   "deathYear": -2961
-  },
-  "japheth_726": {
-   "name": "Japheth",
-   "sex": "M",
-   "father": "noah_2210",
-   "mother": null,
-   "children": [
-    "magog_1882",
-    "tubal_2883",
-    "tiras_2864",
-    "madai_1880",
-    "meshech_2012",
-    "gomer_1328",
-    "javan_744"
-   ],
-   "verses": [
-    "Gen.5.32",
-    "Gen.6.10",
-    "Gen.7.13",
-    "Gen.9.18",
-    "Gen.9.23",
-    "Gen.9.27",
-    "Gen.10.1",
-    "Gen.10.2"
-   ],
-   "birthYear": -2447
-  },
-  "laban_1803": {
-   "name": "Laban",
-   "sex": "M",
-   "father": "bethuel_487",
-   "mother": null,
-   "children": [
-    "leah_1813",
-    "rachel_2386"
-   ],
-   "verses": [
-    "Gen.24.29",
-    "Gen.24.50",
-    "Gen.25.20",
-    "Gen.27.43",
-    "Gen.28.2",
-    "Gen.28.5",
-    "Gen.29.5",
-    "Gen.29.10"
+    "2Chr.11.19"
    ]
   },
   "cainan_534": {
@@ -1041,189 +79,292 @@
    "birthYear": -3678,
    "deathYear": -2768
   },
-  "henoch_1402": {
-   "name": "Henoch",
+  "enos_1193": {
+   "name": "Enos",
    "sex": "M",
-   "father": "midian_2075",
+   "father": "seth_2504",
    "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.4",
-    "1Chr.1.33"
-   ]
-  },
-  "moab_2103": {
-   "name": "Moab",
-   "sex": "M",
-   "father": "lot_1830",
-   "mother": "daughter_of_lot_older_985",
-   "children": [],
-   "verses": [
-    "Gen.19.37",
-    "Gen.36.35",
-    "Exod.15.15",
-    "Num.21.11",
-    "Num.21.13",
-    "Num.21.15",
-    "Num.21.20",
-    "Num.21.26"
-   ]
-  },
-  "havilah_1462": {
-   "name": "Havilah",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.29",
-    "1Chr.1.23"
+   "children": [
+    "cainan_534"
    ],
-   "note": "son of Joktan"
+   "verses": [
+    "Gen.4.26",
+    "Gen.5.6",
+    "Gen.5.7",
+    "Gen.5.9",
+    "Gen.5.10",
+    "Gen.5.11",
+    "1Chr.1.1",
+    "Luke.3.38"
+   ],
+   "mainLine": true,
+   "birthYear": -3768,
+   "deathYear": -2863
   },
-  "korah_1793": {
-   "name": "Korah",
+  "zedekiah_3030": {
+   "name": "Zedekiah",
+   "sex": "M",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.16"
+   ]
+  },
+  "jemuel_838": {
+   "name": "Jemuel",
+   "sex": "M",
+   "father": "simeon_2741",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15",
+    "Num.26.12",
+    "1Chr.4.24"
+   ]
+  },
+  "nohah_2120": {
+   "name": "Nohah",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "1Chr.8.2"
+   ]
+  },
+  "kittim_1789": {
+   "name": "Kittim",
+   "sex": "M",
+   "father": "javan_744",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.4",
+    "1Chr.1.7"
+   ]
+  },
+  "jehoram_803": {
+   "name": "Jehoram",
+   "sex": "M",
+   "father": "jehoshaphat_808",
+   "mother": null,
+   "children": [
+    "ahaziah_121",
+    "jehoshabeath_811"
+   ],
+   "verses": [
+    "1Kgs.22.50",
+    "2Kgs.8.21",
+    "2Kgs.8.23",
+    "2Kgs.8.24",
+    "2Kgs.11.2",
+    "2Kgs.12.18",
+    "1Chr.3.11",
+    "2Chr.21.1"
+   ],
+   "mainLine": true,
+   "birthYear": -924,
+   "deathYear": -885
+  },
+  "levi_1820": {
+   "name": "Levi",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [
+    "gershon_1305",
+    "kohath_1790",
+    "merari_2004",
+    "jochebed_1645"
+   ],
+   "verses": [
+    "Gen.29.34",
+    "Gen.34.25",
+    "Gen.34.30",
+    "Gen.35.23",
+    "Gen.46.11",
+    "Gen.49.5",
+    "Exod.1.2",
+    "Exod.2.1"
+   ],
+   "note": "patriarch",
+   "birthYear": -1755
+  },
+  "eliud_1164": {
+   "name": "Eliud",
+   "sex": "M",
+   "father": "achim_65",
+   "mother": null,
+   "children": [
+    "eleazar_1069"
+   ],
+   "verses": [
+    "Matt.1.14",
+    "Matt.1.15"
+   ],
+   "mainLine": true
+  },
+  "jezebel_1605": {
+   "name": "Jezebel",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "athaliah_359"
+   ],
+   "verses": [
+    "1Kgs.16.31",
+    "1Kgs.18.4",
+    "1Kgs.18.13",
+    "1Kgs.18.19",
+    "1Kgs.19.1",
+    "1Kgs.19.2",
+    "1Kgs.21.5",
+    "1Kgs.21.7"
+   ]
+  },
+  "haran_1407": {
+   "name": "Haran",
+   "sex": "M",
+   "father": "terah_2841",
+   "mother": null,
+   "children": [
+    "milcah_2082",
+    "iscah_618",
+    "lot_1830"
+   ],
+   "verses": [
+    "Gen.11.26",
+    "Gen.11.27",
+    "Gen.11.28",
+    "Gen.11.29",
+    "Gen.11.31"
+   ],
+   "note": "brother of Abraham"
+  },
+  "dodanim_1018": {
+   "name": "Dodanim",
+   "sex": "M",
+   "father": "javan_744",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.4",
+    "1Chr.1.7"
+   ]
+  },
+  "caleb_538": {
+   "name": "Caleb",
+   "sex": "M",
+   "father": "hezron_1520",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.2.9",
+    "1Chr.2.18",
+    "1Chr.2.19",
+    "1Chr.2.42",
+    "1Chr.2.49",
+    "1Chr.2.50",
+    "1Chr.4.1"
+   ]
+  },
+  "jerushah_882": {
+   "name": "Jerushah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "jotham_1735"
+   ],
+   "verses": [
+    "2Kgs.15.33",
+    "2Chr.27.1"
+   ]
+  },
+  "athaliah_359": {
+   "name": "Athaliah",
+   "sex": "F",
+   "father": null,
+   "mother": "jezebel_1605",
+   "children": [
+    "ahaziah_121",
+    "jehoshabeath_811"
+   ],
+   "verses": [
+    "2Kgs.8.26",
+    "2Kgs.11.1",
+    "2Kgs.11.2",
+    "2Kgs.11.3",
+    "2Kgs.11.13",
+    "2Kgs.11.14",
+    "2Kgs.11.20",
+    "2Chr.22.2"
+   ],
+   "deathYear": -878
+  },
+  "maacah_1839": {
+   "name": "Maacah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "absalom_59"
+   ],
+   "verses": [
+    "2Sam.3.3",
+    "1Chr.3.2"
+   ]
+  },
+  "eliphaz_1144": {
+   "name": "Eliphaz",
    "sex": "M",
    "father": "esau_1216",
-   "mother": "aholibamah_1761",
-   "children": [],
+   "mother": "adah_414",
+   "children": [
+    "teman_2838",
+    "korah_1794",
+    "omar_2242",
+    "amalek_197",
+    "gatam_1281",
+    "kenaz_1776",
+    "zepho_3042"
+   ],
    "verses": [
-    "Gen.36.5",
-    "Gen.36.14",
-    "Gen.36.18",
-    "1Chr.1.35"
+    "Gen.36.4",
+    "Gen.36.10",
+    "Gen.36.11",
+    "Gen.36.12",
+    "Gen.36.15",
+    "Gen.36.16",
+    "1Chr.1.35",
+    "1Chr.1.36"
    ]
   },
-  "methuselah_2042": {
-   "name": "Methuselah",
+  "shammah_2538": {
+   "name": "Shammah",
    "sex": "M",
-   "father": "enoch_1192",
-   "mother": null,
-   "children": [
-    "lamech_1809"
-   ],
-   "verses": [
-    "Gen.5.21",
-    "Gen.5.22",
-    "Gen.5.25",
-    "Gen.5.26",
-    "Gen.5.27",
-    "1Chr.1.3",
-    "Luke.3.37"
-   ],
-   "mainLine": true,
-   "birthYear": -3316,
-   "deathYear": -2347
-  },
-  "puah_2355": {
-   "name": "Puah",
-   "sex": "M",
-   "father": "issachar_645",
+   "father": "reuel_2430",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.13",
-    "Num.26.23",
-    "1Chr.7.1"
+    "Gen.36.13",
+    "Gen.36.17",
+    "1Chr.1.37"
    ]
   },
-  "eve_1231": {
-   "name": "Eve",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "cain_533",
-    "abel_13",
-    "seth_2504"
-   ],
-   "verses": [
-    "Gen.3.20",
-    "Gen.4.1",
-    "2Cor.11.3",
-    "1Tim.2.13"
-   ],
-   "birthYear": -4003
-  },
-  "timna_2860": {
-   "name": "Timna",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "amalek_197"
-   ],
-   "verses": [
-    "1Chr.1.39",
-    "1Chr.1.36",
-    "Gen.36.12"
-   ]
-  },
-  "midian_2075": {
-   "name": "Midian",
+  "berechiah_471": {
+   "name": "Berechiah",
    "sex": "M",
-   "father": "abraham_58",
-   "mother": "keturah_1782",
-   "children": [
-    "eldaah_1057",
-    "abida_21",
-    "henoch_1402",
-    "epher_1201",
-    "ephah_1197"
-   ],
-   "verses": [
-    "Gen.25.2",
-    "Gen.25.4",
-    "Gen.36.35",
-    "Exod.2.15",
-    "Exod.2.16",
-    "Exod.3.1",
-    "Exod.4.19",
-    "Exod.18.1"
-   ]
-  },
-  "eri_1214": {
-   "name": "Eri",
-   "sex": "M",
-   "father": "gad_1262",
+   "father": "zerubbabel_3054",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.16",
-    "Num.26.16"
+    "1Chr.3.20"
    ]
-  },
-  "serug_2503": {
-   "name": "Serug",
-   "sex": "M",
-   "father": "reu_2428",
-   "mother": null,
-   "children": [
-    "nahor_2142"
-   ],
-   "verses": [
-    "Gen.11.20",
-    "Gen.11.21",
-    "Gen.11.22",
-    "Gen.11.23",
-    "1Chr.1.26",
-    "Luke.3.35"
-   ],
-   "mainLine": true,
-   "birthYear": -2184,
-   "deathYear": -1954
-  },
-  "uz_2908": {
-   "name": "Uz",
-   "sex": "M",
-   "father": "aram_285",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.23",
-    "1Chr.1.17"
-   ],
-   "note": "son of Aram"
   },
   "irad_611": {
    "name": "Irad",
@@ -1237,86 +378,117 @@
     "Gen.4.18"
    ]
   },
-  "reu_2428": {
-   "name": "Reu",
+  "magog_1882": {
+   "name": "Magog",
    "sex": "M",
-   "father": "peleg_2308",
+   "father": "japheth_726",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.2",
+    "1Chr.1.5",
+    "Ezek.38.2",
+    "Ezek.39.6",
+    "Rev.20.8"
+   ]
+  },
+  "kohath_1790": {
+   "name": "Kohath",
+   "sex": "M",
+   "father": "levi_1820",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.11",
+    "Exod.6.16",
+    "Exod.6.18",
+    "Num.3.17",
+    "Num.3.19",
+    "Num.3.27",
+    "Num.3.29",
+    "Num.4.2"
+   ]
+  },
+  "lot_1830": {
+   "name": "Lot",
+   "sex": "M",
+   "father": "haran_1407",
    "mother": null,
    "children": [
-    "serug_2503"
+    "ben-ammi_451",
+    "daughter_of_lot_younger_984",
+    "daughter_of_lot_older_985",
+    "moab_2103"
    ],
    "verses": [
-    "Gen.11.18",
-    "Gen.11.19",
-    "Gen.11.20",
-    "Gen.11.21",
-    "1Chr.1.25",
-    "Luke.3.35"
+    "Gen.11.27",
+    "Gen.11.31",
+    "Gen.12.4",
+    "Gen.12.5",
+    "Gen.13.1",
+    "Gen.13.5",
+    "Gen.13.7",
+    "Gen.13.8"
+   ]
+  },
+  "mahalaleel_1885": {
+   "name": "Mahalaleel",
+   "sex": "M",
+   "father": "cainan_534",
+   "mother": null,
+   "children": [
+    "jared_730"
    ],
+   "verses": [
+    "Gen.5.12",
+    "Gen.5.13",
+    "Gen.5.15",
+    "Gen.5.16",
+    "Gen.5.17",
+    "1Chr.1.2",
+    "Luke.3.37"
+   ],
+   "note": "line of Seth",
    "mainLine": true,
-   "birthYear": -2216,
-   "deathYear": -1977
+   "birthYear": -3608,
+   "deathYear": -2713
   },
-  "hadar_1341": {
-   "name": "Hadar",
+  "raamah_2380": {
+   "name": "Raamah",
    "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.15",
-    "1Chr.1.30"
-   ]
-  },
-  "ludim_1835": {
-   "name": "Ludim",
-   "sex": "M",
-   "father": "mizraim_2100",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.13",
-    "1Chr.1.11"
-   ],
-   "kind": "nation"
-  },
-  "elon_1183": {
-   "name": "Elon",
-   "sex": "M",
-   "father": "zebulun_3002",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.14",
-    "Num.26.26"
-   ]
-  },
-  "medan_1978": {
-   "name": "Medan",
-   "sex": "M",
-   "father": "abraham_58",
-   "mother": "keturah_1782",
-   "children": [],
-   "verses": [
-    "Gen.25.2",
-    "1Chr.1.32"
-   ]
-  },
-  "dedan_999": {
-   "name": "Dedan",
-   "sex": "M",
-   "father": "jokshan_1685",
+   "father": "cush_962",
    "mother": null,
    "children": [
-    "asshurim_350",
-    "letushim_1818",
-    "leummim_1819"
+    "dedan_998",
+    "sheba_2567"
    ],
    "verses": [
-    "Gen.25.3",
-    "1Chr.1.32"
+    "Gen.10.7",
+    "1Chr.1.9"
+   ]
+  },
+  "elpalet_1148": {
+   "name": "Elpalet",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.6",
+    "1Chr.14.5"
+   ]
+  },
+  "jedidah_761": {
+   "name": "Jedidah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "josiah_1730"
    ],
-   "note": "son of Jokshan"
+   "verses": [
+    "2Kgs.22.1"
+   ]
   },
   "judah_1751": {
    "name": "Judah",
@@ -1344,19 +516,118 @@
    "mainLine": true,
    "birthYear": -1754
   },
-  "er_1209": {
-   "name": "Er",
+  "mash_1944": {
+   "name": "Mash",
    "sex": "M",
-   "father": "judah_1751",
-   "mother": "daughter_of_shuah_993",
+   "father": "aram_285",
+   "mother": null,
    "children": [],
    "verses": [
-    "Gen.38.3",
-    "Gen.38.6",
-    "Gen.38.7",
-    "Gen.46.12",
-    "Num.26.19",
-    "1Chr.2.3"
+    "Gen.10.23",
+    "1Chr.1.17"
+   ]
+  },
+  "jaalam_662": {
+   "name": "Jaalam",
+   "sex": "M",
+   "father": "esau_1216",
+   "mother": "aholibamah_1761",
+   "children": [],
+   "verses": [
+    "Gen.36.5",
+    "Gen.36.14",
+    "Gen.36.18",
+    "1Chr.1.35"
+   ]
+  },
+  "jehoiakim_1085": {
+   "name": "Jehoiakim",
+   "sex": "M",
+   "father": "josiah_1730",
+   "mother": "zebudah_3000",
+   "children": [
+    "jehoiachin_791"
+   ],
+   "verses": [
+    "2Kgs.23.34",
+    "2Kgs.23.35",
+    "2Kgs.23.36",
+    "2Kgs.24.1",
+    "2Kgs.24.5",
+    "2Kgs.24.6",
+    "2Kgs.24.19",
+    "1Chr.3.15"
+   ],
+   "mainLine": true,
+   "birthYear": -633,
+   "deathYear": -597
+  },
+  "pildash_2357": {
+   "name": "Pildash",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [],
+   "verses": [
+    "Gen.22.22"
+   ]
+  },
+  "ashur_342": {
+   "name": "Ashur",
+   "sex": "M",
+   "father": "hezron_1520",
+   "mother": "abiah_16",
+   "children": [],
+   "verses": [
+    "1Chr.2.24",
+    "1Chr.4.5"
+   ]
+  },
+  "jachin_679": {
+   "name": "Jachin",
+   "sex": "M",
+   "father": "simeon_2741",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15",
+    "Num.26.12",
+    "1Chr.4.24"
+   ]
+  },
+  "meshullemeth_2040": {
+   "name": "Meshullemeth",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "amon_236"
+   ],
+   "verses": [
+    "2Kgs.21.19"
+   ]
+  },
+  "kedemah_1770": {
+   "name": "Kedemah",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.15",
+    "1Chr.1.31"
+   ]
+  },
+  "almodad_191": {
+   "name": "Almodad",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.26",
+    "1Chr.1.20"
    ]
   },
   "adah_69": {
@@ -1375,23 +646,457 @@
    ],
    "note": "wife of Lamech"
   },
-  "dinah_1012": {
-   "name": "Dinah",
-   "sex": "F",
-   "father": "israel_682",
-   "mother": "leah_1813",
+  "jeush_913": {
+   "name": "Jeush",
+   "sex": "M",
+   "father": "esau_1216",
+   "mother": "aholibamah_1761",
    "children": [],
    "verses": [
-    "Gen.30.21",
-    "Gen.34.1",
-    "Gen.34.3",
-    "Gen.34.5",
-    "Gen.34.13",
-    "Gen.34.25",
-    "Gen.34.26",
-    "Gen.46.15"
+    "Gen.36.5",
+    "Gen.36.14",
+    "Gen.36.18",
+    "1Chr.1.35"
+   ]
+  },
+  "methusael_2041": {
+   "name": "Methusael",
+   "sex": "M",
+   "father": "mehujael_1983",
+   "mother": null,
+   "children": [
+    "lamech_1808"
    ],
-   "birthYear": -1749
+   "verses": [
+    "Gen.4.18"
+   ]
+  },
+  "tola_2878": {
+   "name": "Tola",
+   "sex": "M",
+   "father": "issachar_645",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.13",
+    "Num.26.23",
+    "1Chr.7.1",
+    "1Chr.7.2"
+   ]
+  },
+  "elishah_1154": {
+   "name": "Elishah",
+   "sex": "M",
+   "father": "javan_744",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.4",
+    "1Chr.1.7"
+   ]
+  },
+  "rebekah_2401": {
+   "name": "Rebekah",
+   "sex": "F",
+   "father": "bethuel_487",
+   "mother": null,
+   "children": [
+    "israel_682",
+    "esau_1216"
+   ],
+   "verses": [
+    "Gen.22.23",
+    "Gen.24.15",
+    "Gen.24.29",
+    "Gen.24.30",
+    "Gen.24.45",
+    "Gen.24.51",
+    "Gen.24.53",
+    "Gen.24.58"
+   ],
+   "birthYear": -1874
+  },
+  "tiras_2864": {
+   "name": "Tiras",
+   "sex": "M",
+   "father": "japheth_726",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.2",
+    "1Chr.1.5"
+   ]
+  },
+  "serug_2503": {
+   "name": "Serug",
+   "sex": "M",
+   "father": "reu_2428",
+   "mother": null,
+   "children": [
+    "nahor_2142"
+   ],
+   "verses": [
+    "Gen.11.20",
+    "Gen.11.21",
+    "Gen.11.22",
+    "Gen.11.23",
+    "1Chr.1.26",
+    "Luke.3.35"
+   ],
+   "mainLine": true,
+   "birthYear": -2184,
+   "deathYear": -1954
+  },
+  "jesse_903": {
+   "name": "Jesse",
+   "sex": "M",
+   "father": "obed_2228",
+   "mother": null,
+   "children": [
+    "david_994",
+    "abinadab_44",
+    "shammah_2700",
+    "ozem_2260",
+    "eliab_1075",
+    "raddai_2387",
+    "elihu_1129",
+    "nethaneel_2189"
+   ],
+   "verses": [
+    "Ruth.4.17",
+    "Ruth.4.22",
+    "1Sam.16.1",
+    "1Sam.16.3",
+    "1Sam.16.5",
+    "1Sam.16.8",
+    "1Sam.16.9",
+    "1Sam.16.10"
+   ],
+   "mainLine": true
+  },
+  "hephzi-bah_1499": {
+   "name": "Hephzi-bah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "manasseh_1930"
+   ],
+   "verses": [
+    "2Kgs.21.1",
+    "Isa.62.4"
+   ]
+  },
+  "boaz_519": {
+   "name": "Boaz",
+   "sex": "M",
+   "father": "salmon_2463",
+   "mother": "rachab_2385",
+   "children": [
+    "obed_2228"
+   ],
+   "verses": [
+    "Ruth.2.1",
+    "Ruth.2.3",
+    "Ruth.2.4",
+    "Ruth.2.5",
+    "Ruth.2.8",
+    "Ruth.2.11",
+    "Ruth.2.14",
+    "Ruth.2.15"
+   ],
+   "mainLine": true
+  },
+  "ziza_3098": {
+   "name": "Ziza",
+   "sex": "M",
+   "father": "rehoboam_2412",
+   "mother": "maachah_1841",
+   "children": [],
+   "verses": [
+    "2Chr.11.20"
+   ]
+  },
+  "gaham_1267": {
+   "name": "Gaham",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "reumah_2433",
+   "children": [],
+   "verses": [
+    "Gen.22.24"
+   ]
+  },
+  "guni_1330": {
+   "name": "Guni",
+   "sex": "M",
+   "father": "naphtali_2149",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.24",
+    "Num.26.48",
+    "1Chr.7.13"
+   ]
+  },
+  "abihail_31": {
+   "name": "Abihail",
+   "sex": "F",
+   "father": "eliab_1075",
+   "mother": null,
+   "children": [
+    "shamariah_2531",
+    "jeush_1603",
+    "zaham_2980"
+   ],
+   "verses": [
+    "2Chr.11.18"
+   ]
+  },
+  "anah_247": {
+   "name": "Anah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "aholibamah_1761"
+   ],
+   "verses": [
+    "Gen.36.2",
+    "Gen.36.14",
+    "Gen.36.18"
+   ]
+  },
+  "hanoch_1403": {
+   "name": "Hanoch",
+   "sex": "M",
+   "father": "reuben_2429",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.9",
+    "Exod.6.14",
+    "Num.26.5",
+    "1Chr.5.3"
+   ]
+  },
+  "shephatiah_2660": {
+   "name": "Shephatiah",
+   "sex": "M",
+   "father": "jehoshaphat_808",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.21.2"
+   ],
+   "deathYear": -888
+  },
+  "nimrod_2206": {
+   "name": "Nimrod",
+   "sex": "M",
+   "father": "cush_962",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.8",
+    "Gen.10.9",
+    "1Chr.1.10",
+    "Mic.5.6"
+   ]
+  },
+  "timna_2860": {
+   "name": "Timna",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "amalek_197"
+   ],
+   "verses": [
+    "1Chr.1.39",
+    "1Chr.1.36",
+    "Gen.36.12"
+   ]
+  },
+  "eliphalet_1143": {
+   "name": "Eliphalet",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.16",
+    "1Chr.3.8",
+    "1Chr.14.7"
+   ]
+  },
+  "azor_559": {
+   "name": "Azor",
+   "sex": "M",
+   "father": "eliakim_1087",
+   "mother": null,
+   "children": [
+    "sadoc_2454"
+   ],
+   "verses": [
+    "Matt.1.13",
+    "Matt.1.14"
+   ],
+   "mainLine": true
+  },
+  "elon_1183": {
+   "name": "Elon",
+   "sex": "M",
+   "father": "zebulun_3002",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.14",
+    "Num.26.26"
+   ]
+  },
+  "jobab_1640": {
+   "name": "Jobab",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.29",
+    "1Chr.1.23"
+   ],
+   "note": "son of Joktan"
+  },
+  "joseph_1710": {
+   "name": "Joseph",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "rachel_2386",
+   "children": [
+    "manasseh_1928",
+    "ephraim_1206"
+   ],
+   "verses": [
+    "Gen.30.24",
+    "Gen.30.25",
+    "Gen.33.2",
+    "Gen.33.7",
+    "Gen.35.24",
+    "Gen.37.2",
+    "Gen.37.3",
+    "Gen.37.5"
+   ],
+   "note": "son of Jacob",
+   "birthYear": -1744,
+   "deathYear": -1634
+  },
+  "hivite_1534": {
+   "name": "Hivite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.17",
+    "Gen.34.2",
+    "Gen.36.2",
+    "Exod.23.28",
+    "Exod.33.2",
+    "Exod.34.11",
+    "Josh.9.1",
+    "Josh.11.3"
+   ],
+   "kind": "nation"
+  },
+  "azubah_567": {
+   "name": "Azubah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "jehoshaphat_808"
+   ],
+   "verses": [
+    "1Kgs.22.42",
+    "2Chr.20.31"
+   ]
+  },
+  "arphaxad_312": {
+   "name": "Arphaxad",
+   "sex": "M",
+   "father": "shem_2613",
+   "mother": null,
+   "children": [
+    "salah_2455"
+   ],
+   "verses": [
+    "Gen.10.22",
+    "Gen.10.24",
+    "Gen.11.10",
+    "Gen.11.11",
+    "Gen.11.12",
+    "Gen.11.13",
+    "1Chr.1.17",
+    "1Chr.1.18"
+   ],
+   "mainLine": true,
+   "birthYear": -2345,
+   "deathYear": -1907
+  },
+  "asa_318": {
+   "name": "Asa",
+   "sex": "M",
+   "father": "abijah_38",
+   "mother": null,
+   "children": [
+    "jehoshaphat_808"
+   ],
+   "verses": [
+    "1Kgs.15.8",
+    "1Kgs.15.9",
+    "1Kgs.15.11",
+    "1Kgs.15.13",
+    "1Kgs.15.14",
+    "1Kgs.15.16",
+    "1Kgs.15.17",
+    "1Kgs.15.18"
+   ],
+   "mainLine": true,
+   "deathYear": -913
+  },
+  "nepheg_2179": {
+   "name": "Nepheg",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.15",
+    "1Chr.3.7",
+    "1Chr.14.6"
+   ]
+  },
+  "nahor_2142": {
+   "name": "Nahor",
+   "sex": "M",
+   "father": "serug_2503",
+   "mother": null,
+   "children": [
+    "terah_2841"
+   ],
+   "verses": [
+    "Gen.11.22",
+    "Gen.11.23",
+    "Gen.11.24",
+    "Gen.11.25",
+    "Josh.24.2",
+    "1Chr.1.26",
+    "Luke.3.34"
+   ],
+   "note": "father of Terah",
+   "mainLine": true,
+   "birthYear": -2154,
+   "deathYear": -2006
   },
   "merari_2004": {
    "name": "Merari",
@@ -1410,199 +1115,179 @@
     "Num.3.36"
    ]
   },
-  "buz_529": {
-   "name": "Buz",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [],
-   "verses": [
-    "Gen.22.21"
-   ]
-  },
-  "beriah_478": {
-   "name": "Beriah",
-   "sex": "M",
-   "father": "asher_337",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.17",
-    "Num.26.44",
-    "Num.26.45",
-    "1Chr.7.30",
-    "1Chr.7.31"
-   ]
-  },
-  "hazarmaveth_1465": {
-   "name": "Hazarmaveth",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.26",
-    "1Chr.1.20"
-   ]
-  },
-  "sheba_2569": {
-   "name": "Sheba",
-   "sex": "M",
-   "father": "jokshan_1685",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.3",
-    "1Chr.1.32"
-   ]
-  },
-  "zebulun_3002": {
-   "name": "Zebulun",
+  "gad_1262": {
+   "name": "Gad",
    "sex": "M",
    "father": "israel_682",
-   "mother": "leah_1813",
+   "mother": "zilpah_3081",
    "children": [
-    "jahleel_704",
-    "sered_2501",
-    "elon_1183"
+    "ozni_1235",
+    "zephon_3093",
+    "eri_1214",
+    "shuni_2731",
+    "areli_296",
+    "arod_311",
+    "haggi_1351"
    ],
    "verses": [
-    "Gen.30.20",
-    "Gen.35.23",
-    "Gen.46.14",
-    "Gen.49.13",
-    "Exod.1.3",
-    "Num.1.9",
-    "Num.1.30",
-    "Num.1.31"
+    "Gen.30.11",
+    "Gen.35.26",
+    "Gen.46.16",
+    "Gen.49.19",
+    "Exod.1.4",
+    "Num.1.14",
+    "Num.1.24",
+    "Num.1.25"
    ],
-   "birthYear": -1750
+   "birthYear": -1752
   },
-  "jahzeel_706": {
-   "name": "Jahzeel",
+  "korah_1793": {
+   "name": "Korah",
    "sex": "M",
-   "father": "naphtali_2149",
-   "mother": null,
+   "father": "esau_1216",
+   "mother": "aholibamah_1761",
    "children": [],
    "verses": [
-    "Gen.46.24",
-    "Num.26.48",
-    "1Chr.7.13"
+    "Gen.36.5",
+    "Gen.36.14",
+    "Gen.36.18",
+    "1Chr.1.35"
    ]
   },
-  "madai_1880": {
-   "name": "Madai",
+  "leummim_1819": {
+   "name": "Leummim",
    "sex": "M",
-   "father": "japheth_726",
+   "father": "dedan_999",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.2",
-    "1Chr.1.5"
+    "Gen.25.3"
    ]
   },
-  "lehabim_1816": {
-   "name": "Lehabim",
-   "sex": "M",
-   "father": "mizraim_2100",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.13",
-    "1Chr.1.11"
-   ],
-   "kind": "nation"
-  },
-  "jediael_757": {
-   "name": "Jediael",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "1Chr.7.6",
-    "1Chr.7.10",
-    "1Chr.7.11"
-   ]
-  },
-  "ashbel_336": {
-   "name": "Ashbel",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21",
-    "Num.26.38",
-    "1Chr.8.1"
-   ]
-  },
-  "ophir_2253": {
-   "name": "Ophir",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.29",
-    "1Chr.1.23"
-   ]
-  },
-  "shimron_2706": {
-   "name": "Shimron",
-   "sex": "M",
-   "father": "issachar_645",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.13",
-    "Num.26.24",
-    "1Chr.7.1"
-   ]
-  },
-  "gera_1298": {
-   "name": "Gera",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21",
-    "Judg.3.15",
-    "1Chr.8.5"
-   ]
-  },
-  "salah_2455": {
-   "name": "Salah",
-   "sex": "M",
-   "father": "arphaxad_312",
-   "mother": null,
-   "children": [
-    "eber_1030"
-   ],
-   "verses": [
-    "Gen.10.24",
-    "Gen.11.12",
-    "Gen.11.13",
-    "Gen.11.14",
-    "Gen.11.15",
-    "1Chr.1.18",
-    "1Chr.1.24",
-    "Luke.3.35"
-   ],
-   "mainLine": true,
-   "birthYear": -2310,
-   "deathYear": -1877
-  },
-  "ozni_1235": {
-   "name": "Ozni",
+  "shuni_2731": {
+   "name": "Shuni",
    "sex": "M",
    "father": "gad_1262",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.46.16",
-    "Num.26.16"
+    "Num.26.15"
+   ]
+  },
+  "adonijah_97": {
+   "name": "Adonijah",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "haggith_1353",
+   "children": [],
+   "verses": [
+    "2Sam.3.4",
+    "1Kgs.1.5",
+    "1Kgs.1.7",
+    "1Kgs.1.8",
+    "1Kgs.1.9",
+    "1Kgs.1.11",
+    "1Kgs.1.13",
+    "1Kgs.1.18"
+   ]
+  },
+  "cain_533": {
+   "name": "Cain",
+   "sex": "M",
+   "father": "adam_78",
+   "mother": "eve_1231",
+   "children": [
+    "enoch_1191"
+   ],
+   "verses": [
+    "Gen.4.1",
+    "Gen.4.2",
+    "Gen.4.3",
+    "Gen.4.5",
+    "Gen.4.6",
+    "Gen.4.8",
+    "Gen.4.9",
+    "Gen.4.13"
+   ],
+   "birthYear": -4002
+  },
+  "reuel_2430": {
+   "name": "Reuel",
+   "sex": "M",
+   "father": "esau_1216",
+   "mother": "bashemath_1887",
+   "children": [
+    "zerah_3043",
+    "shammah_2538",
+    "mizzah_2101",
+    "nahath_2146"
+   ],
+   "verses": [
+    "Gen.36.4",
+    "Gen.36.10",
+    "Gen.36.13",
+    "Gen.36.17",
+    "1Chr.1.35",
+    "1Chr.1.37"
+   ]
+  },
+  "jezer_1606": {
+   "name": "Jezer",
+   "sex": "M",
+   "father": "naphtali_2149",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.24",
+    "Num.26.49",
+    "1Chr.7.13"
+   ]
+  },
+  "tebah_2832": {
+   "name": "Tebah",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "reumah_2433",
+   "children": [],
+   "verses": [
+    "Gen.22.24"
+   ]
+  },
+  "achim_65": {
+   "name": "Achim",
+   "sex": "M",
+   "father": "sadoc_2454",
+   "mother": null,
+   "children": [
+    "eliud_1164"
+   ],
+   "verses": [
+    "Matt.1.14"
+   ],
+   "mainLine": true
+  },
+  "sabtah_2451": {
+   "name": "Sabtah",
+   "sex": "M",
+   "father": "cush_962",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.7",
+    "1Chr.1.9"
+   ]
+  },
+  "omar_2242": {
+   "name": "Omar",
+   "sex": "M",
+   "father": "eliphaz_1144",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.36.11",
+    "Gen.36.15",
+    "1Chr.1.36"
    ]
   },
   "shem_2613": {
@@ -1631,198 +1316,272 @@
    "birthYear": -2445,
    "deathYear": -1845
   },
-  "nahath_2146": {
-   "name": "Nahath",
-   "sex": "M",
-   "father": "reuel_2430",
-   "mother": null,
+  "jehoshabeath_811": {
+   "name": "Jehoshabeath",
+   "sex": "F",
+   "father": "jehoram_803",
+   "mother": "athaliah_359",
    "children": [],
    "verses": [
-    "Gen.36.13",
-    "Gen.36.17",
-    "1Chr.1.37"
+    "2Kgs.11.2",
+    "2Chr.22.11"
    ]
   },
-  "riphath_2443": {
-   "name": "Riphath",
+  "manasseh_1930": {
+   "name": "Manasseh",
    "sex": "M",
-   "father": "gomer_1328",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.3",
-    "1Chr.1.6"
-   ]
-  },
-  "ard_293": {
-   "name": "Ard",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21"
-   ]
-  },
-  "shammah_2538": {
-   "name": "Shammah",
-   "sex": "M",
-   "father": "reuel_2430",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.36.13",
-    "Gen.36.17",
-    "1Chr.1.37"
-   ]
-  },
-  "abraham_58": {
-   "name": "Abraham",
-   "sex": "M",
-   "father": "terah_2841",
-   "mother": null,
+   "father": "hezekiah_1512",
+   "mother": "hephzi-bah_1499",
    "children": [
-    "ishmael_630",
-    "isaac_616",
-    "medan_1978",
-    "midian_2075",
-    "zimran_3086",
-    "shuah_2727",
-    "jokshan_1685",
-    "ishbak_620"
+    "amon_236"
    ],
    "verses": [
-    "Gen.11.26",
-    "Gen.11.27",
-    "Gen.11.29",
-    "Gen.11.31",
-    "Gen.12.1",
-    "Gen.12.4",
-    "Gen.12.5",
-    "Gen.12.6"
+    "2Kgs.20.21",
+    "2Kgs.21.1",
+    "2Kgs.21.9",
+    "2Kgs.21.11",
+    "2Kgs.21.16",
+    "2Kgs.21.17",
+    "2Kgs.21.18",
+    "2Kgs.21.20"
+   ],
+   "note": "son of Hezekiah",
+   "mainLine": true,
+   "birthYear": -708,
+   "deathYear": -641
+  },
+  "anamim_253": {
+   "name": "Anamim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.13",
+    "1Chr.1.11"
+   ],
+   "kind": "nation"
+  },
+  "pallu_2325": {
+   "name": "Pallu",
+   "sex": "M",
+   "father": "reuben_2429",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.9",
+    "Exod.6.14",
+    "Num.26.5",
+    "Num.26.8",
+    "1Chr.5.3"
+   ]
+  },
+  "david_994": {
+   "name": "David",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [
+    "solomon_2762",
+    "eliphalet_1143",
+    "elpalet_1148",
+    "elishua_1163",
+    "ithream_655",
+    "nathan_2152",
+    "tamar_2822",
+    "shobab_2715",
+    "eliada_1078",
+    "absalom_59",
+    "shephatiah_2657",
+    "adonijah_97",
+    "ibhar_1584",
+    "amnon_232",
+    "jerimoth_869",
+    "japhia_728",
+    "elishama_1156",
+    "nepheg_2179",
+    "shammua_2547",
+    "daniel_939",
+    "nogah_2213"
+   ],
+   "verses": [
+    "Ruth.4.17",
+    "Ruth.4.22",
+    "1Sam.16.13",
+    "1Sam.16.19",
+    "1Sam.16.20",
+    "1Sam.16.21",
+    "1Sam.16.22",
+    "1Sam.16.23"
    ],
    "mainLine": true,
-   "birthYear": -1995,
-   "deathYear": -1820
+   "birthYear": -1084,
+   "deathYear": -1014
   },
-  "nahor_2143": {
-   "name": "Nahor",
+  "abijah_38": {
+   "name": "Abijah",
    "sex": "M",
-   "father": "terah_2841",
+   "father": "rehoboam_2412",
+   "mother": "maachah_1841",
+   "children": [
+    "asa_318"
+   ],
+   "verses": [
+    "1Kgs.14.31",
+    "1Kgs.15.1",
+    "1Kgs.15.7",
+    "1Kgs.15.8",
+    "1Chr.3.10",
+    "2Chr.11.20",
+    "2Chr.11.22",
+    "2Chr.12.16"
+   ],
+   "mainLine": true,
+   "deathYear": -955
+  },
+  "isuah_640": {
+   "name": "Isuah",
+   "sex": "M",
+   "father": "asher_337",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.17",
+    "1Chr.7.30"
+   ]
+  },
+  "jerah_842": {
+   "name": "Jerah",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.26",
+    "1Chr.1.20"
+   ]
+  },
+  "ebal_2227": {
+   "name": "Ebal",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.28",
+    "1Chr.1.22"
+   ],
+   "note": "son of Joktan"
+  },
+  "eleazar_1069": {
+   "name": "Eleazar",
+   "sex": "M",
+   "father": "eliud_1164",
    "mother": null,
    "children": [
-    "thahash_2845",
-    "chesed_938",
-    "bethuel_487",
-    "maachah_1840",
-    "huz_1582",
-    "hazo_1468",
-    "jidlaph_1615",
-    "tebah_2832",
-    "pildash_2357",
-    "kemuel_1773",
-    "buz_529",
-    "gaham_1267"
+    "matthan_1968"
    ],
    "verses": [
-    "Gen.11.26",
-    "Gen.11.27",
-    "Gen.11.29",
-    "Gen.22.20",
-    "Gen.22.23",
-    "Gen.24.15",
-    "Gen.24.24",
-    "Gen.24.47"
+    "Matt.1.15"
    ],
-   "note": "brother of Abraham"
+   "mainLine": true
   },
-  "bethuel_487": {
-   "name": "Bethuel",
+  "hazarmaveth_1465": {
+   "name": "Hazarmaveth",
    "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [
-    "rebekah_2401",
-    "laban_1803"
-   ],
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
    "verses": [
-    "Gen.22.22",
-    "Gen.22.23",
-    "Gen.24.15",
-    "Gen.24.24",
-    "Gen.24.47",
-    "Gen.24.50",
-    "Gen.25.20",
-    "Gen.28.2"
+    "Gen.10.26",
+    "1Chr.1.20"
    ]
   },
-  "reuel_2430": {
-   "name": "Reuel",
+  "onan_2250": {
+   "name": "Onan",
    "sex": "M",
-   "father": "esau_1216",
-   "mother": "bashemath_1887",
-   "children": [
-    "zerah_3043",
-    "shammah_2538",
-    "mizzah_2101",
-    "nahath_2146"
-   ],
+   "father": "judah_1751",
+   "mother": "daughter_of_shuah_993",
+   "children": [],
    "verses": [
-    "Gen.36.4",
-    "Gen.36.10",
-    "Gen.36.13",
-    "Gen.36.17",
-    "1Chr.1.35",
-    "1Chr.1.37"
+    "Gen.38.4",
+    "Gen.38.8",
+    "Gen.38.9",
+    "Gen.46.12",
+    "Num.26.19",
+    "1Chr.2.3"
    ]
   },
-  "anah_247": {
-   "name": "Anah",
+  "tamar_2821": {
+   "name": "Tamar",
    "sex": "F",
    "father": null,
    "mother": null,
    "children": [
-    "aholibamah_1761"
+    "pharez_2338",
+    "zerah_2984"
    ],
    "verses": [
-    "Gen.36.2",
-    "Gen.36.14",
-    "Gen.36.18"
+    "Gen.38.6",
+    "Gen.38.11",
+    "Gen.38.13",
+    "Gen.38.24",
+    "Ruth.4.12",
+    "1Chr.2.4",
+    "Matt.1.3"
    ]
   },
-  "joseph_1710": {
-   "name": "Joseph",
+  "jamin_720": {
+   "name": "Jamin",
    "sex": "M",
-   "father": "israel_682",
-   "mother": "rachel_2386",
-   "children": [
-    "manasseh_1928",
-    "ephraim_1206"
-   ],
-   "verses": [
-    "Gen.30.24",
-    "Gen.30.25",
-    "Gen.33.2",
-    "Gen.33.7",
-    "Gen.35.24",
-    "Gen.37.2",
-    "Gen.37.3",
-    "Gen.37.5"
-   ],
-   "note": "son of Jacob",
-   "birthYear": -1744,
-   "deathYear": -1634
-  },
-  "mizzah_2101": {
-   "name": "Mizzah",
-   "sex": "M",
-   "father": "reuel_2430",
+   "father": "simeon_2741",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.36.13",
-    "Gen.36.17",
-    "1Chr.1.37"
+    "Gen.46.10",
+    "Exod.6.15",
+    "Num.26.12",
+    "1Chr.4.24"
+   ]
+  },
+  "jehoiachin_791": {
+   "name": "Jehoiachin",
+   "sex": "M",
+   "father": "jehoiakim_1085",
+   "mother": "nehushta_2174",
+   "children": [
+    "shealtiel_2456",
+    "shenazar_2655",
+    "nedabiah_2170",
+    "jecamiah_749",
+    "hoshama_1558",
+    "pedaiah_2293",
+    "zedekiah_3030",
+    "malchiram_1915"
+   ],
+   "verses": [
+    "2Kgs.24.6",
+    "2Kgs.24.8",
+    "2Kgs.24.12",
+    "2Kgs.24.15",
+    "2Kgs.25.27",
+    "1Chr.3.16",
+    "1Chr.3.17",
+    "2Chr.36.8"
+   ],
+   "mainLine": true,
+   "birthYear": -615
+  },
+  "hamul_1367": {
+   "name": "Hamul",
+   "sex": "M",
+   "father": "pharez_2338",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.12",
+    "Num.26.21",
+    "1Chr.2.5"
    ]
   },
   "sheba_2567": {
@@ -1837,90 +1596,336 @@
    ],
    "note": "son of Raamah"
   },
-  "raamah_2380": {
-   "name": "Raamah",
+  "solomon_2762": {
+   "name": "Solomon",
    "sex": "M",
-   "father": "cush_962",
-   "mother": null,
+   "father": "david_994",
+   "mother": "bathsheba_416",
    "children": [
-    "dedan_998",
-    "sheba_2567"
+    "rehoboam_2412",
+    "basmath_415",
+    "taphath_2825"
    ],
    "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ]
-  },
-  "havilah_1461": {
-   "name": "Havilah",
-   "sex": "M",
-   "father": "cush_962",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ],
-   "note": "son of Cush"
-  },
-  "noah_2210": {
-   "name": "Noah",
-   "sex": "M",
-   "father": "lamech_1809",
-   "mother": null,
-   "children": [
-    "japheth_726",
-    "shem_2613",
-    "ham_1359"
-   ],
-   "verses": [
-    "Gen.5.29",
-    "Gen.5.30",
-    "Gen.5.32",
-    "Gen.6.8",
-    "Gen.6.9",
-    "Gen.6.10",
-    "Gen.6.13",
-    "Gen.6.22"
+    "2Sam.5.14",
+    "2Sam.12.24",
+    "2Sam.12.25",
+    "1Kgs.1.10",
+    "1Kgs.1.11",
+    "1Kgs.1.12",
+    "1Kgs.1.13",
+    "1Kgs.1.17"
    ],
    "mainLine": true,
-   "birthYear": -2947,
-   "deathYear": -1997
+   "birthYear": -1035,
+   "deathYear": -974
   },
-  "ham_1359": {
-   "name": "Ham",
+  "reu_2428": {
+   "name": "Reu",
    "sex": "M",
-   "father": "noah_2210",
+   "father": "peleg_2308",
    "mother": null,
    "children": [
-    "mizraim_2100",
-    "cush_962",
-    "phut_2354",
-    "canaan_914"
+    "serug_2503"
    ],
    "verses": [
-    "Gen.5.32",
-    "Gen.6.10",
-    "Gen.7.13",
-    "Gen.9.18",
-    "Gen.9.22",
-    "Gen.10.1",
-    "Gen.10.6",
-    "Gen.10.20"
+    "Gen.11.18",
+    "Gen.11.19",
+    "Gen.11.20",
+    "Gen.11.21",
+    "1Chr.1.25",
+    "Luke.3.35"
+   ],
+   "mainLine": true,
+   "birthYear": -2216,
+   "deathYear": -1977
+  },
+  "shelomith_2610": {
+   "name": "Shelomith",
+   "sex": "F",
+   "father": "rehoboam_2412",
+   "mother": "maachah_1841",
+   "children": [],
+   "verses": [
+    "2Chr.11.20"
    ]
   },
-  "nimrod_2206": {
-   "name": "Nimrod",
+  "puah_2355": {
+   "name": "Puah",
    "sex": "M",
-   "father": "cush_962",
+   "father": "issachar_645",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.8",
-    "Gen.10.9",
-    "1Chr.1.10",
-    "Mic.5.6"
+    "Gen.46.13",
+    "Num.26.23",
+    "1Chr.7.1"
    ]
+  },
+  "abiud_56": {
+   "name": "Abiud",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [
+    "eliakim_1087"
+   ],
+   "verses": [
+    "Matt.1.13"
+   ],
+   "mainLine": true
+  },
+  "jushab-hesed_1765": {
+   "name": "Jushab-hesed",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.20"
+   ]
+  },
+  "ahiram_158": {
+   "name": "Ahiram",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Num.26.38"
+   ]
+  },
+  "attai_365": {
+   "name": "Attai",
+   "sex": "M",
+   "father": "rehoboam_2412",
+   "mother": "maachah_1841",
+   "children": [],
+   "verses": [
+    "2Chr.11.20"
+   ]
+  },
+  "elam_1049": {
+   "name": "Elam",
+   "sex": "M",
+   "father": "shem_2613",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.22",
+    "1Chr.1.17"
+   ],
+   "note": "son of Shem"
+  },
+  "ohad_2239": {
+   "name": "Ohad",
+   "sex": "M",
+   "father": "simeon_2741",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15"
+   ]
+  },
+  "shillem_2677": {
+   "name": "Shillem",
+   "sex": "M",
+   "father": "naphtali_2149",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.24",
+    "Num.26.49",
+    "1Chr.7.13"
+   ]
+  },
+  "zillah_3080": {
+   "name": "Zillah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "naamah_2118",
+    "tubal-cain_2884"
+   ],
+   "verses": [
+    "Gen.4.19",
+    "Gen.4.22",
+    "Gen.4.23"
+   ]
+  },
+  "daughter_of_lot_younger_984": {
+   "name": "Daughter of Lot - Younger",
+   "sex": "F",
+   "father": "lot_1830",
+   "mother": null,
+   "children": [
+    "ben-ammi_451"
+   ],
+   "verses": [
+    "Gen.19.8",
+    "Gen.19.12",
+    "Gen.19.14",
+    "Gen.19.15",
+    "Gen.19.16",
+    "Gen.19.30",
+    "Gen.19.36"
+   ]
+  },
+  "zerah_3102": {
+   "name": "Zerah",
+   "sex": "M",
+   "father": "simeon_2741",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15",
+    "Num.26.13",
+    "1Chr.4.24"
+   ]
+  },
+  "nahath_2146": {
+   "name": "Nahath",
+   "sex": "M",
+   "father": "reuel_2430",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.36.13",
+    "Gen.36.17",
+    "1Chr.1.37"
+   ]
+  },
+  "abiah_16": {
+   "name": "Abiah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "ashur_342"
+   ],
+   "verses": [
+    "1Chr.2.24"
+   ]
+  },
+  "jochebed_1645": {
+   "name": "Jochebed",
+   "sex": "F",
+   "father": "levi_1820",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Exod.6.20",
+    "Num.26.59"
+   ]
+  },
+  "haggi_1351": {
+   "name": "Haggi",
+   "sex": "M",
+   "father": "gad_1262",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.16",
+    "Num.26.15"
+   ]
+  },
+  "zaham_2980": {
+   "name": "Zaham",
+   "sex": "M",
+   "father": "rehoboam_2412",
+   "mother": "abihail_31",
+   "children": [],
+   "verses": [
+    "2Chr.11.19"
+   ]
+  },
+  "naphtali_2149": {
+   "name": "Naphtali",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "bilhah_502",
+   "children": [
+    "shillem_2677",
+    "guni_1330",
+    "jezer_1606",
+    "jahzeel_706"
+   ],
+   "verses": [
+    "Gen.30.8",
+    "Gen.35.25",
+    "Gen.46.24",
+    "Gen.49.21",
+    "Exod.1.4",
+    "Num.1.15",
+    "Num.1.42",
+    "Num.1.43"
+   ],
+   "birthYear": -1753
+  },
+  "hadar_1341": {
+   "name": "Hadar",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.15",
+    "1Chr.1.30"
+   ]
+  },
+  "dedan_999": {
+   "name": "Dedan",
+   "sex": "M",
+   "father": "jokshan_1685",
+   "mother": null,
+   "children": [
+    "asshurim_350",
+    "letushim_1818",
+    "leummim_1819"
+   ],
+   "verses": [
+    "Gen.25.3",
+    "1Chr.1.32"
+   ],
+   "note": "son of Jokshan"
+  },
+  "mishma_2094": {
+   "name": "Mishma",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.14",
+    "1Chr.1.30"
+   ]
+  },
+  "gatam_1281": {
+   "name": "Gatam",
+   "sex": "M",
+   "father": "eliphaz_1144",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.36.11",
+    "Gen.36.16",
+    "1Chr.1.36"
+   ]
+  },
+  "hamathite_1361": {
+   "name": "Hamathite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.18",
+    "1Chr.1.16"
+   ],
+   "kind": "nation"
   },
   "benjamin_463": {
    "name": "Benjamin",
@@ -1954,268 +1959,72 @@
    "note": "patriarch",
    "birthYear": -1738
   },
-  "jabal_673": {
-   "name": "Jabal",
+  "isui_648": {
+   "name": "Isui",
    "sex": "M",
-   "father": "lamech_1808",
-   "mother": "adah_69",
-   "children": [],
-   "verses": [
-    "Gen.4.20"
-   ]
-  },
-  "gad_1262": {
-   "name": "Gad",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "zilpah_3081",
-   "children": [
-    "ozni_1235",
-    "zephon_3093",
-    "eri_1214",
-    "shuni_2731",
-    "areli_296",
-    "arod_311",
-    "haggi_1351"
-   ],
-   "verses": [
-    "Gen.30.11",
-    "Gen.35.26",
-    "Gen.46.16",
-    "Gen.49.19",
-    "Exod.1.4",
-    "Num.1.14",
-    "Num.1.24",
-    "Num.1.25"
-   ],
-   "birthYear": -1752
-  },
-  "korah_1794": {
-   "name": "Korah",
-   "sex": "M",
-   "father": "eliphaz_1144",
+   "father": "asher_337",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.36.16"
-   ]
-  },
-  "sabtah_2451": {
-   "name": "Sabtah",
-   "sex": "M",
-   "father": "cush_962",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.7",
-    "1Chr.1.9"
-   ]
-  },
-  "milcah_2082": {
-   "name": "Milcah",
-   "sex": "F",
-   "father": "haran_1407",
-   "mother": null,
-   "children": [
-    "jidlaph_1615",
-    "pildash_2357",
-    "kemuel_1773",
-    "buz_529",
-    "chesed_938",
-    "bethuel_487",
-    "huz_1582",
-    "hazo_1468"
-   ],
-   "verses": [
-    "Gen.11.29",
-    "Gen.22.20",
-    "Gen.22.23",
-    "Gen.24.15",
-    "Gen.24.24",
-    "Gen.24.47"
-   ],
-   "note": "wife of Nahor"
-  },
-  "jared_730": {
-   "name": "Jared",
-   "sex": "M",
-   "father": "mahalaleel_1885",
-   "mother": null,
-   "children": [
-    "enoch_1192"
-   ],
-   "verses": [
-    "Gen.5.15",
-    "Gen.5.16",
-    "Gen.5.18",
-    "Gen.5.19",
-    "Gen.5.20",
-    "1Chr.1.2",
-    "Luke.3.37"
-   ],
-   "mainLine": true,
-   "birthYear": -3543,
-   "deathYear": -2581
-  },
-  "elam_1049": {
-   "name": "Elam",
-   "sex": "M",
-   "father": "shem_2613",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.22",
-    "1Chr.1.17"
-   ],
-   "note": "son of Shem"
-  },
-  "esau_1216": {
-   "name": "Esau",
-   "sex": "M",
-   "father": "isaac_616",
-   "mother": "rebekah_2401",
-   "children": [
-    "jaalam_662",
-    "eliphaz_1144",
-    "korah_1793",
-    "reuel_2430",
-    "jeush_913"
-   ],
-   "verses": [
-    "Gen.25.25",
-    "Gen.25.26",
-    "Gen.25.27",
-    "Gen.25.28",
-    "Gen.25.29",
-    "Gen.25.30",
-    "Gen.25.32",
-    "Gen.25.34"
-   ],
-   "note": "Edom",
-   "birthYear": -1835
-  },
-  "mibsam_2046": {
-   "name": "Mibsam",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.13",
-    "1Chr.1.29"
-   ]
-  },
-  "enoch_1192": {
-   "name": "Enoch",
-   "sex": "M",
-   "father": "jared_730",
-   "mother": null,
-   "children": [
-    "methuselah_2042"
-   ],
-   "verses": [
-    "Gen.5.18",
-    "Gen.5.19",
-    "Gen.5.21",
-    "Gen.5.22",
-    "Gen.5.23",
-    "Gen.5.24",
-    "1Chr.1.3",
-    "Luke.3.37"
-   ],
-   "note": "father of Methuselah",
-   "mainLine": true,
-   "birthYear": -3381,
-   "deathYear": -3016
-  },
-  "adah_414": {
-   "name": "Adah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "eliphaz_1144"
-   ],
-   "verses": [
-    "Gen.26.34",
-    "Gen.36.2",
-    "Gen.36.4",
-    "Gen.36.10",
-    "Gen.36.12",
-    "Gen.36.16"
-   ]
-  },
-  "asher_337": {
-   "name": "Asher",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "zilpah_3081",
-   "children": [
-    "serah_2492",
-    "isui_648",
-    "beriah_478",
-    "isuah_640",
-    "imnah_1616"
-   ],
-   "verses": [
-    "Gen.30.13",
-    "Gen.35.26",
     "Gen.46.17",
-    "Gen.49.20",
-    "Exod.1.4",
-    "Num.1.13",
-    "Num.1.40",
-    "Num.1.41"
-   ],
-   "birthYear": -1751
-  },
-  "jeush_913": {
-   "name": "Jeush",
-   "sex": "M",
-   "father": "esau_1216",
-   "mother": "aholibamah_1761",
-   "children": [],
-   "verses": [
-    "Gen.36.5",
-    "Gen.36.14",
-    "Gen.36.18",
-    "1Chr.1.35"
+    "Num.26.44",
+    "1Chr.7.30"
    ]
   },
-  "pildash_2357": {
-   "name": "Pildash",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [],
-   "verses": [
-    "Gen.22.22"
-   ]
-  },
-  "nohah_2120": {
-   "name": "Nohah",
+  "shupham_2115": {
+   "name": "Shupham",
    "sex": "M",
    "father": "benjamin_463",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.46.21",
-    "1Chr.8.2"
+    "Num.26.39",
+    "1Chr.8.5"
    ]
   },
-  "sheleph_2602": {
-   "name": "Sheleph",
+  "segub_2484": {
+   "name": "Segub",
    "sex": "M",
-   "father": "joktan_1686",
+   "father": "hezron_1520",
+   "mother": "daughter_of_machir_986",
+   "children": [],
+   "verses": [
+    "1Chr.2.21",
+    "1Chr.2.22"
+   ]
+  },
+  "gershon_1305": {
+   "name": "Gershon",
+   "sex": "M",
+   "father": "levi_1820",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.26",
-    "1Chr.1.20"
+    "Gen.46.11",
+    "Exod.6.16",
+    "Exod.6.17",
+    "Num.3.17",
+    "Num.3.18",
+    "Num.3.21",
+    "Num.3.25",
+    "Num.4.22"
    ]
   },
-  "zimran_3086": {
-   "name": "Zimran",
+  "girgasite_1322": {
+   "name": "Girgasite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.16",
+    "1Chr.1.14"
+   ],
+   "kind": "nation"
+  },
+  "medan_1978": {
+   "name": "Medan",
    "sex": "M",
    "father": "abraham_58",
    "mother": "keturah_1782",
@@ -2225,202 +2034,123 @@
     "1Chr.1.32"
    ]
   },
-  "letushim_1818": {
-   "name": "Letushim",
+  "ahaziah_121": {
+   "name": "Ahaziah",
    "sex": "M",
-   "father": "dedan_999",
+   "father": "jehoram_803",
+   "mother": "athaliah_359",
+   "children": [
+    "joash_1632"
+   ],
+   "verses": [
+    "2Kgs.8.24",
+    "2Kgs.8.25",
+    "2Kgs.8.26",
+    "2Kgs.8.29",
+    "2Kgs.9.16",
+    "2Kgs.9.21",
+    "2Kgs.9.23",
+    "2Kgs.9.27"
+   ],
+   "mainLine": true,
+   "birthYear": -907,
+   "deathYear": -885
+  },
+  "sabtecha_2452": {
+   "name": "Sabtecha",
+   "sex": "M",
+   "father": "cush_962",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.25.3"
+    "Gen.10.7",
+    "1Chr.1.9"
    ]
   },
-  "amorite_237": {
-   "name": "Amorite",
+  "zedekiah_1950": {
+   "name": "Zedekiah",
    "sex": "M",
-   "father": "canaan_914",
+   "father": "josiah_1730",
+   "mother": "hamutal_1368",
+   "children": [],
+   "verses": [
+    "2Kgs.24.17",
+    "2Kgs.24.18",
+    "2Kgs.24.20",
+    "2Kgs.25.2",
+    "2Kgs.25.7",
+    "1Chr.3.15",
+    "2Chr.36.10",
+    "2Chr.36.11"
+   ],
+   "birthYear": -617
+  },
+  "ehi_1038": {
+   "name": "Ehi",
+   "sex": "M",
+   "father": "benjamin_463",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.16",
-    "1Chr.1.14",
-    "Amos.2.9",
-    "Amos.2.10"
+    "Gen.46.21",
+    "1Chr.8.1"
+   ]
+  },
+  "uz_2908": {
+   "name": "Uz",
+   "sex": "M",
+   "father": "aram_285",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.23",
+    "1Chr.1.17"
+   ],
+   "note": "son of Aram"
+  },
+  "tamar_2823": {
+   "name": "Tamar",
+   "sex": "F",
+   "father": "absalom_59",
+   "mother": null,
+   "children": [
+    "maachah_1841"
+   ],
+   "verses": [
+    "2Sam.14.27"
+   ]
+  },
+  "aram_286": {
+   "name": "Aram",
+   "sex": "M",
+   "father": "kemuel_1773",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.22.21"
+   ],
+   "note": "son of Kemuel"
+  },
+  "lehabim_1816": {
+   "name": "Lehabim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.13",
+    "1Chr.1.11"
    ],
    "kind": "nation"
   },
-  "hadoram_1345": {
-   "name": "Hadoram",
+  "jabal_673": {
+   "name": "Jabal",
    "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
+   "father": "lamech_1808",
+   "mother": "adah_69",
    "children": [],
    "verses": [
-    "Gen.10.27",
-    "1Chr.1.21"
-   ]
-  },
-  "serah_2492": {
-   "name": "Serah",
-   "sex": "F",
-   "father": "asher_337",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.17",
-    "Num.26.46",
-    "1Chr.7.30"
-   ]
-  },
-  "keturah_1782": {
-   "name": "Keturah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "midian_2075",
-    "ishbak_620",
-    "jokshan_1685",
-    "medan_1978",
-    "zimran_3086",
-    "shuah_2727"
-   ],
-   "verses": [
-    "Gen.25.1",
-    "Gen.25.4",
-    "1Chr.1.32",
-    "1Chr.1.33"
-   ]
-  },
-  "togarmah_2875": {
-   "name": "Togarmah",
-   "sex": "M",
-   "father": "gomer_1328",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.3",
-    "1Chr.1.6",
-    "Ezek.27.14",
-    "Ezek.38.6"
-   ]
-  },
-  "onan_2250": {
-   "name": "Onan",
-   "sex": "M",
-   "father": "judah_1751",
-   "mother": "daughter_of_shuah_993",
-   "children": [],
-   "verses": [
-    "Gen.38.4",
-    "Gen.38.8",
-    "Gen.38.9",
-    "Gen.46.12",
-    "Num.26.19",
-    "1Chr.2.3"
-   ]
-  },
-  "naphtali_2149": {
-   "name": "Naphtali",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "bilhah_502",
-   "children": [
-    "shillem_2677",
-    "guni_1330",
-    "jezer_1606",
-    "jahzeel_706"
-   ],
-   "verses": [
-    "Gen.30.8",
-    "Gen.35.25",
-    "Gen.46.24",
-    "Gen.49.21",
-    "Exod.1.4",
-    "Num.1.15",
-    "Num.1.42",
-    "Num.1.43"
-   ],
-   "birthYear": -1753
-  },
-  "daughter_of_shuah_993": {
-   "name": "Daughter of Shuah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "er_1209",
-    "shelah_2593",
-    "onan_2250"
-   ],
-   "verses": [
-    "Gen.38.2",
-    "1Chr.2.3"
-   ]
-  },
-  "ashkenaz_338": {
-   "name": "Ashkenaz",
-   "sex": "M",
-   "father": "gomer_1328",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.3",
-    "1Chr.1.6",
-    "Jer.51.27"
-   ]
-  },
-  "uzal_2911": {
-   "name": "Uzal",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.27",
-    "1Chr.1.21"
-   ]
-  },
-  "reuben_2429": {
-   "name": "Reuben",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "leah_1813",
-   "children": [
-    "pallu_2325",
-    "carmi_920",
-    "hezron_1519",
-    "hanoch_1403"
-   ],
-   "verses": [
-    "Gen.29.32",
-    "Gen.30.14",
-    "Gen.35.22",
-    "Gen.35.23",
-    "Gen.37.21",
-    "Gen.37.22",
-    "Gen.37.29",
-    "Gen.42.22"
-   ],
-   "birthYear": -1757
-  },
-  "zilpah_3081": {
-   "name": "Zilpah",
-   "sex": "F",
-   "father": null,
-   "mother": null,
-   "children": [
-    "gad_1262",
-    "asher_337"
-   ],
-   "verses": [
-    "Gen.29.24",
-    "Gen.30.9",
-    "Gen.30.10",
-    "Gen.30.12",
-    "Gen.35.26",
-    "Gen.37.2",
-    "Gen.46.18"
+    "Gen.4.20"
    ]
   },
   "canaan_914": {
@@ -2452,17 +2182,155 @@
     "Gen.11.31"
    ]
   },
-  "caphthorim_917": {
-   "name": "Caphthorim",
+  "hazo_1468": {
+   "name": "Hazo",
    "sex": "M",
-   "father": "mizraim_2100",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [],
+   "verses": [
+    "Gen.22.22"
+   ]
+  },
+  "hamutal_1368": {
+   "name": "Hamutal",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "zedekiah_1950",
+    "jehoahaz_2516"
+   ],
+   "verses": [
+    "2Kgs.23.31",
+    "2Kgs.24.18",
+    "Jer.52.1"
+   ]
+  },
+  "jehoahaz_2516": {
+   "name": "Jehoahaz",
+   "sex": "M",
+   "father": "josiah_1730",
+   "mother": "hamutal_1368",
+   "children": [],
+   "verses": [
+    "2Kgs.23.30",
+    "2Kgs.23.31",
+    "2Kgs.23.34",
+    "1Chr.3.15",
+    "2Chr.36.1",
+    "2Chr.36.2",
+    "2Chr.36.4",
+    "Jer.22.11"
+   ]
+  },
+  "methuselah_2042": {
+   "name": "Methuselah",
+   "sex": "M",
+   "father": "enoch_1192",
+   "mother": null,
+   "children": [
+    "lamech_1809"
+   ],
+   "verses": [
+    "Gen.5.21",
+    "Gen.5.22",
+    "Gen.5.25",
+    "Gen.5.26",
+    "Gen.5.27",
+    "1Chr.1.3",
+    "Luke.3.37"
+   ],
+   "mainLine": true,
+   "birthYear": -3316,
+   "deathYear": -2347
+  },
+  "ram_2391": {
+   "name": "Ram",
+   "sex": "M",
+   "father": "hezron_1520",
+   "mother": null,
+   "children": [
+    "amminadab_228"
+   ],
+   "verses": [
+    "Ruth.4.19",
+    "1Chr.2.9",
+    "1Chr.2.10",
+    "Matt.1.3",
+    "Matt.1.4",
+    "Luke.3.33"
+   ],
+   "mainLine": true
+  },
+  "epher_1201": {
+   "name": "Epher",
+   "sex": "M",
+   "father": "midian_2075",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.14",
-    "1Chr.1.12"
+    "Gen.25.4",
+    "1Chr.1.33"
+   ]
+  },
+  "nogah_2213": {
+   "name": "Nogah",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.7",
+    "1Chr.14.6"
+   ]
+  },
+  "sheba_2568": {
+   "name": "Sheba",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.28",
+    "1Chr.1.22"
    ],
-   "kind": "nation"
+   "note": "son of Joktan"
+  },
+  "jotham_1735": {
+   "name": "Jotham",
+   "sex": "M",
+   "father": "uzziah_375",
+   "mother": "jerushah_882",
+   "children": [
+    "ahaz_118"
+   ],
+   "verses": [
+    "2Kgs.15.5",
+    "2Kgs.15.7",
+    "2Kgs.15.30",
+    "2Kgs.15.32",
+    "2Kgs.15.36",
+    "2Kgs.15.38",
+    "2Kgs.16.1",
+    "1Chr.3.12"
+   ],
+   "mainLine": true,
+   "birthYear": -783,
+   "deathYear": -741
+  },
+  "shaul_2562": {
+   "name": "Shaul",
+   "sex": "M",
+   "father": "simeon_2741",
+   "mother": "canaanitish_woman_915",
+   "children": [],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15",
+    "Num.26.13",
+    "1Chr.4.24"
+   ]
   },
   "meshech_2012": {
    "name": "Meshech",
@@ -2480,92 +2348,706 @@
     "Ezek.39.1"
    ]
   },
-  "bashemath_1887": {
-   "name": "Bashemath",
-   "sex": "F",
-   "father": "ishmael_630",
+  "seba_2481": {
+   "name": "Seba",
+   "sex": "M",
+   "father": "cush_962",
    "mother": null,
-   "children": [
-    "reuel_2430"
-   ],
+   "children": [],
    "verses": [
-    "Gen.28.9",
-    "Gen.36.3",
-    "Gen.36.4",
-    "Gen.36.10",
-    "Gen.36.13",
-    "Gen.36.17"
+    "Gen.10.7",
+    "1Chr.1.9"
    ]
   },
-  "magog_1882": {
-   "name": "Magog",
+  "zilpah_3081": {
+   "name": "Zilpah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "gad_1262",
+    "asher_337"
+   ],
+   "verses": [
+    "Gen.29.24",
+    "Gen.30.9",
+    "Gen.30.10",
+    "Gen.30.12",
+    "Gen.35.26",
+    "Gen.37.2",
+    "Gen.46.18"
+   ]
+  },
+  "huram_1569": {
+   "name": "Huram",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "Num.26.39",
+    "1Chr.8.5"
+   ]
+  },
+  "zemarite_3036": {
+   "name": "Zemarite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.18",
+    "1Chr.1.16"
+   ],
+   "kind": "nation"
+  },
+  "ben-ammi_451": {
+   "name": "Ben-ammi",
+   "sex": "M",
+   "father": "lot_1830",
+   "mother": "daughter_of_lot_younger_984",
+   "children": [],
+   "verses": [
+    "Gen.19.38",
+    "Ps.83.7"
+   ]
+  },
+  "abimael_39": {
+   "name": "Abimael",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.28",
+    "1Chr.1.22"
+   ]
+  },
+  "jubal_1748": {
+   "name": "Jubal",
+   "sex": "M",
+   "father": "lamech_1808",
+   "mother": "adah_69",
+   "children": [],
+   "verses": [
+    "Gen.4.21"
+   ]
+  },
+  "rachel_2386": {
+   "name": "Rachel",
+   "sex": "F",
+   "father": "laban_1803",
+   "mother": null,
+   "children": [
+    "joseph_1710",
+    "benjamin_463"
+   ],
+   "verses": [
+    "Gen.29.6",
+    "Gen.29.9",
+    "Gen.29.10",
+    "Gen.29.11",
+    "Gen.29.12",
+    "Gen.29.16",
+    "Gen.29.17",
+    "Gen.29.18"
+   ],
+   "deathYear": -1738
+  },
+  "bathsheba_416": {
+   "name": "Bathsheba",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "solomon_2762",
+    "nathan_2152",
+    "shobab_2715",
+    "shammua_2547"
+   ],
+   "verses": [
+    "2Sam.11.3",
+    "2Sam.12.24",
+    "1Kgs.1.11",
+    "1Kgs.1.15",
+    "1Kgs.1.16",
+    "1Kgs.1.28",
+    "1Kgs.1.31",
+    "1Kgs.2.13"
+   ]
+  },
+  "sered_2501": {
+   "name": "Sered",
+   "sex": "M",
+   "father": "zebulun_3002",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.14",
+    "Num.26.26"
+   ]
+  },
+  "carmi_920": {
+   "name": "Carmi",
+   "sex": "M",
+   "father": "reuben_2429",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.9",
+    "Exod.6.14",
+    "Num.26.6",
+    "1Chr.5.3"
+   ]
+  },
+  "madai_1880": {
+   "name": "Madai",
    "sex": "M",
    "father": "japheth_726",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.10.2",
-    "1Chr.1.5",
-    "Ezek.38.2",
-    "Ezek.39.6",
-    "Rev.20.8"
+    "1Chr.1.5"
    ]
   },
-  "elishah_1154": {
-   "name": "Elishah",
+  "ophir_2253": {
+   "name": "Ophir",
    "sex": "M",
-   "father": "javan_744",
+   "father": "joktan_1686",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.4",
-    "1Chr.1.7"
+    "Gen.10.29",
+    "1Chr.1.23"
    ]
   },
-  "enoch_1191": {
-   "name": "Enoch",
+  "buz_529": {
+   "name": "Buz",
    "sex": "M",
-   "father": "cain_533",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [],
+   "verses": [
+    "Gen.22.21"
+   ]
+  },
+  "eliakim_1087": {
+   "name": "Eliakim",
+   "sex": "M",
+   "father": "abiud_56",
    "mother": null,
    "children": [
-    "irad_611"
+    "azor_559"
    ],
    "verses": [
-    "Gen.4.17",
-    "Gen.4.18"
+    "Matt.1.13"
    ],
-   "note": "son of Cain"
+   "mainLine": true
   },
-  "asshur_349": {
-   "name": "Asshur",
+  "mibsam_2046": {
+   "name": "Mibsam",
    "sex": "M",
-   "father": "shem_2613",
+   "father": "ishmael_630",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.11",
-    "Gen.10.22",
-    "Num.24.22",
-    "Num.24.24",
-    "1Chr.1.17"
+    "Gen.25.13",
+    "1Chr.1.29"
    ]
   },
-  "gershon_1305": {
-   "name": "Gershon",
+  "naamah_2119": {
+   "name": "Naamah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "rehoboam_2412"
+   ],
+   "verses": [
+    "1Kgs.14.21",
+    "1Kgs.14.31",
+    "2Chr.12.13"
+   ]
+  },
+  "reumah_2433": {
+   "name": "Reumah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "gaham_1267",
+    "thahash_2845",
+    "maachah_1840",
+    "tebah_2832"
+   ],
+   "verses": [
+    "Gen.22.24"
+   ]
+  },
+  "shealtiel_2456": {
+   "name": "Shealtiel",
    "sex": "M",
-   "father": "levi_1820",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [
+    "zerubbabel_3054"
+   ],
+   "verses": [
+    "Matt.1.12",
+    "1Chr.3.17",
+    "Ezra.3.2",
+    "Ezra.3.8",
+    "Ezra.5.2",
+    "Neh.12.1",
+    "Hag.1.1",
+    "Hag.1.12"
+   ],
+   "note": "Salathiel in Matthew 1:12",
+   "mainLine": true
+  },
+  "arod_311": {
+   "name": "Arod",
+   "sex": "M",
+   "father": "gad_1262",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.11",
-    "Exod.6.16",
-    "Exod.6.17",
-    "Num.3.17",
-    "Num.3.18",
-    "Num.3.21",
-    "Num.3.25",
-    "Num.4.22"
+    "Gen.46.16",
+    "Num.26.17"
    ]
+  },
+  "ashbel_336": {
+   "name": "Ashbel",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "Num.26.38",
+    "1Chr.8.1"
+   ]
+  },
+  "joseph_1715": {
+   "name": "Joseph",
+   "sex": "M",
+   "father": "jacob_683",
+   "mother": null,
+   "children": [
+    "jesus_905"
+   ],
+   "verses": [
+    "Matt.1.16",
+    "Matt.1.18",
+    "Matt.1.19",
+    "Matt.1.20",
+    "Matt.1.24",
+    "Matt.2.13",
+    "Matt.2.19",
+    "Luke.1.27"
+   ],
+   "note": "husband of Mary",
+   "mainLine": true
+  },
+  "hezron_1519": {
+   "name": "Hezron",
+   "sex": "M",
+   "father": "reuben_2429",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.9",
+    "Exod.6.14",
+    "Num.26.6",
+    "1Chr.2.24",
+    "1Chr.5.3"
+   ]
+  },
+  "amnon_232": {
+   "name": "Amnon",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "ahinoam_153",
+   "children": [],
+   "verses": [
+    "2Sam.3.2",
+    "2Sam.13.1",
+    "2Sam.13.2",
+    "2Sam.13.3",
+    "2Sam.13.4",
+    "2Sam.13.6",
+    "2Sam.13.7",
+    "2Sam.13.8"
+   ]
+  },
+  "tubal-cain_2884": {
+   "name": "Tubal-cain",
+   "sex": "M",
+   "father": "lamech_1808",
+   "mother": "zillah_3080",
+   "children": [],
+   "verses": [
+    "Gen.4.22"
+   ]
+  },
+  "sheba_2569": {
+   "name": "Sheba",
+   "sex": "M",
+   "father": "jokshan_1685",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.3",
+    "1Chr.1.32"
+   ]
+  },
+  "jesus_905": {
+   "name": "Jesus",
+   "sex": "M",
+   "father": "joseph_1715",
+   "mother": "mary_1938",
+   "children": [],
+   "verses": [
+    "Matt.1.1",
+    "Matt.1.16",
+    "Matt.1.18",
+    "Luke.2.7",
+    "1Chr.17.13",
+    "1Cor.1.1",
+    "1Cor.1.10",
+    "1Cor.1.12"
+   ],
+   "note": "Christ",
+   "mainLine": true,
+   "birthYear": -3,
+   "deathYear": 30
+  },
+  "salah_2455": {
+   "name": "Salah",
+   "sex": "M",
+   "father": "arphaxad_312",
+   "mother": null,
+   "children": [
+    "eber_1030"
+   ],
+   "verses": [
+    "Gen.10.24",
+    "Gen.11.12",
+    "Gen.11.13",
+    "Gen.11.14",
+    "Gen.11.15",
+    "1Chr.1.18",
+    "1Chr.1.24",
+    "Luke.3.35"
+   ],
+   "mainLine": true,
+   "birthYear": -2310,
+   "deathYear": -1877
+  },
+  "shamariah_2531": {
+   "name": "Shamariah",
+   "sex": "M",
+   "father": "rehoboam_2412",
+   "mother": "abihail_31",
+   "children": [],
+   "verses": [
+    "2Chr.11.19"
+   ]
+  },
+  "tema_2837": {
+   "name": "Tema",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.15",
+    "1Chr.1.30"
+   ]
+  },
+  "naamah_2118": {
+   "name": "Naamah",
+   "sex": "F",
+   "father": "lamech_1808",
+   "mother": "zillah_3080",
+   "children": [],
+   "verses": [
+    "Gen.4.22"
+   ],
+   "note": "line of Cain"
+  },
+  "dumah_1025": {
+   "name": "Dumah",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.14",
+    "1Chr.1.30"
+   ]
+  },
+  "jetur_911": {
+   "name": "Jetur",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.15",
+    "1Chr.1.31"
+   ]
+  },
+  "hushim_1579": {
+   "name": "Hushim",
+   "sex": "M",
+   "father": "dan_973",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.23",
+    "Num.26.42"
+   ]
+  },
+  "gera_1298": {
+   "name": "Gera",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "Judg.3.15",
+    "1Chr.8.5"
+   ]
+  },
+  "shephatiah_2657": {
+   "name": "Shephatiah",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "abital_54",
+   "children": [],
+   "verses": [
+    "2Sam.3.4",
+    "1Chr.3.3"
+   ]
+  },
+  "javan_744": {
+   "name": "Javan",
+   "sex": "M",
+   "father": "japheth_726",
+   "mother": null,
+   "children": [
+    "kittim_1789",
+    "tarshish_2828",
+    "dodanim_1018",
+    "elishah_1154"
+   ],
+   "verses": [
+    "Gen.10.2",
+    "Gen.10.4",
+    "1Chr.1.5",
+    "1Chr.1.7",
+    "Isa.66.19",
+    "Ezek.27.13",
+    "Ezek.27.19"
+   ]
+  },
+  "lamech_1808": {
+   "name": "Lamech",
+   "sex": "M",
+   "father": "methusael_2041",
+   "mother": null,
+   "children": [
+    "jabal_673",
+    "naamah_2118",
+    "tubal-cain_2884",
+    "jubal_1748"
+   ],
+   "verses": [
+    "Gen.4.18",
+    "Gen.4.19",
+    "Gen.4.23",
+    "Gen.4.24"
+   ],
+   "note": "descendant of Cain"
+  },
+  "ham_1359": {
+   "name": "Ham",
+   "sex": "M",
+   "father": "noah_2210",
+   "mother": null,
+   "children": [
+    "mizraim_2100",
+    "cush_962",
+    "phut_2354",
+    "canaan_914"
+   ],
+   "verses": [
+    "Gen.5.32",
+    "Gen.6.10",
+    "Gen.7.13",
+    "Gen.9.18",
+    "Gen.9.22",
+    "Gen.10.1",
+    "Gen.10.6",
+    "Gen.10.20"
+   ]
+  },
+  "jecoliah_750": {
+   "name": "Jecoliah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "uzziah_375"
+   ],
+   "verses": [
+    "2Kgs.15.2",
+    "2Chr.26.3"
+   ]
+  },
+  "caphthorim_917": {
+   "name": "Caphthorim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.14",
+    "1Chr.1.12"
+   ],
+   "kind": "nation"
+  },
+  "absalom_59": {
+   "name": "Absalom",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "maacah_1839",
+   "children": [
+    "tamar_2823"
+   ],
+   "verses": [
+    "2Sam.3.3",
+    "2Sam.13.1",
+    "2Sam.13.4",
+    "2Sam.13.20",
+    "2Sam.13.22",
+    "2Sam.13.23",
+    "2Sam.13.24",
+    "2Sam.13.25"
+   ]
+  },
+  "michael_2066": {
+   "name": "Michael",
+   "sex": "M",
+   "father": "jehoshaphat_808",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.21.2"
+   ],
+   "deathYear": -888
+  },
+  "eliab_1075": {
+   "name": "Eliab",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [
+    "abihail_31"
+   ],
+   "verses": [
+    "1Sam.16.6",
+    "1Sam.17.13",
+    "1Sam.17.28",
+    "1Chr.2.13",
+    "2Chr.11.18"
+   ]
+  },
+  "maachah_1841": {
+   "name": "Maachah",
+   "sex": "F",
+   "father": null,
+   "mother": "tamar_2823",
+   "children": [
+    "abijah_38",
+    "attai_365",
+    "shelomith_2610",
+    "ziza_3098"
+   ],
+   "verses": [
+    "1Kgs.15.2",
+    "1Kgs.15.10",
+    "1Kgs.15.13",
+    "2Chr.11.20",
+    "2Chr.11.21",
+    "2Chr.11.22",
+    "2Chr.13.2",
+    "2Chr.15.16"
+   ]
+  },
+  "rachab_2385": {
+   "name": "Rachab",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "boaz_519"
+   ],
+   "verses": [
+    "Matt.1.5"
+   ]
+  },
+  "zerah_2984": {
+   "name": "Zerah",
+   "sex": "M",
+   "father": "judah_1751",
+   "mother": "tamar_2821",
+   "children": [],
+   "verses": [
+    "Gen.38.30",
+    "Gen.46.12",
+    "Num.26.20",
+    "Josh.7.1",
+    "Josh.7.18",
+    "Josh.7.24",
+    "Josh.22.20",
+    "1Chr.2.4"
+   ]
+  },
+  "hagar_1348": {
+   "name": "Hagar",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "ishmael_630"
+   ],
+   "verses": [
+    "Gen.16.1",
+    "Gen.16.3",
+    "Gen.16.4",
+    "Gen.16.8",
+    "Gen.16.15",
+    "Gen.16.16",
+    "Gen.21.9",
+    "Gen.21.14"
+   ]
+  },
+  "dedan_998": {
+   "name": "Dedan",
+   "sex": "M",
+   "father": "raamah_2380",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.7",
+    "1Chr.1.9"
+   ],
+   "note": "son of Raamah"
   },
   "naphtuhim_2150": {
    "name": "Naphtuhim",
@@ -2579,16 +3061,257 @@
    ],
    "kind": "nation"
   },
-  "methusael_2041": {
-   "name": "Methusael",
-   "sex": "M",
-   "father": "mehujael_1983",
+  "daughter_of_shuah_993": {
+   "name": "Daughter of Shuah",
+   "sex": "F",
+   "father": null,
    "mother": null,
    "children": [
-    "lamech_1808"
+    "er_1209",
+    "shelah_2593",
+    "onan_2250"
    ],
    "verses": [
-    "Gen.4.18"
+    "Gen.38.2",
+    "1Chr.2.3"
+   ]
+  },
+  "jahleel_704": {
+   "name": "Jahleel",
+   "sex": "M",
+   "father": "zebulun_3002",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.14",
+    "Num.26.26"
+   ]
+  },
+  "mary_1938": {
+   "name": "Mary",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "jesus_905"
+   ],
+   "verses": [
+    "Matt.1.16",
+    "Matt.1.18",
+    "Matt.1.20",
+    "Matt.2.11",
+    "Matt.13.55",
+    "Mark.3.31",
+    "Mark.6.3",
+    "Luke.1.27"
+   ],
+   "note": "Mother of Jesus"
+  },
+  "shimron_2706": {
+   "name": "Shimron",
+   "sex": "M",
+   "father": "issachar_645",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.13",
+    "Num.26.24",
+    "1Chr.7.1"
+   ]
+  },
+  "malchiram_1915": {
+   "name": "Malchiram",
+   "sex": "M",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.18"
+   ]
+  },
+  "isaac_616": {
+   "name": "Isaac",
+   "sex": "M",
+   "father": "abraham_58",
+   "mother": "sarah_2473",
+   "children": [
+    "esau_1216",
+    "israel_682"
+   ],
+   "verses": [
+    "Gen.17.19",
+    "Gen.17.21",
+    "Gen.21.3",
+    "Gen.21.4",
+    "Gen.21.5",
+    "Gen.21.8",
+    "Gen.21.10",
+    "Gen.21.12"
+   ],
+   "mainLine": true,
+   "birthYear": -1895,
+   "deathYear": -1715
+  },
+  "nethaneel_2189": {
+   "name": "Nethaneel",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.2.14"
+   ]
+  },
+  "jehoshaphat_808": {
+   "name": "Jehoshaphat",
+   "sex": "M",
+   "father": "asa_318",
+   "mother": "azubah_567",
+   "children": [
+    "jehoram_803",
+    "azariah_382",
+    "michael_2066",
+    "jehiel_773",
+    "shephatiah_2660",
+    "azariah_381",
+    "zechariah_3010"
+   ],
+   "verses": [
+    "1Kgs.15.24",
+    "1Kgs.22.2",
+    "1Kgs.22.4",
+    "1Kgs.22.5",
+    "1Kgs.22.7",
+    "1Kgs.22.8",
+    "1Kgs.22.10",
+    "1Kgs.22.18"
+   ],
+   "mainLine": true,
+   "birthYear": -949,
+   "deathYear": -888
+  },
+  "enoch_1192": {
+   "name": "Enoch",
+   "sex": "M",
+   "father": "jared_730",
+   "mother": null,
+   "children": [
+    "methuselah_2042"
+   ],
+   "verses": [
+    "Gen.5.18",
+    "Gen.5.19",
+    "Gen.5.21",
+    "Gen.5.22",
+    "Gen.5.23",
+    "Gen.5.24",
+    "1Chr.1.3",
+    "Luke.3.37"
+   ],
+   "note": "father of Methuselah",
+   "mainLine": true,
+   "birthYear": -3381,
+   "deathYear": -3016
+  },
+  "jebusite_748": {
+   "name": "Jebusite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.16",
+    "1Chr.1.14"
+   ],
+   "kind": "nation"
+  },
+  "reuben_2429": {
+   "name": "Reuben",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [
+    "pallu_2325",
+    "carmi_920",
+    "hezron_1519",
+    "hanoch_1403"
+   ],
+   "verses": [
+    "Gen.29.32",
+    "Gen.30.14",
+    "Gen.35.22",
+    "Gen.35.23",
+    "Gen.37.21",
+    "Gen.37.22",
+    "Gen.37.29",
+    "Gen.42.22"
+   ],
+   "birthYear": -1757
+  },
+  "maaseiah_1852": {
+   "name": "Maaseiah",
+   "sex": "M",
+   "father": "ahaz_118",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.28.7"
+   ]
+  },
+  "hezron_1520": {
+   "name": "Hezron",
+   "sex": "M",
+   "father": "pharez_2338",
+   "mother": null,
+   "children": [
+    "caleb_538",
+    "segub_2484",
+    "jerahmeel_843",
+    "ram_2391",
+    "ashur_342"
+   ],
+   "verses": [
+    "Gen.46.12",
+    "Num.26.21",
+    "Ruth.4.18",
+    "Ruth.4.19",
+    "1Chr.2.5",
+    "1Chr.2.9",
+    "1Chr.2.18",
+    "1Chr.2.21"
+   ],
+   "mainLine": true
+  },
+  "arvadite_316": {
+   "name": "Arvadite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.18",
+    "1Chr.1.16"
+   ],
+   "kind": "nation"
+  },
+  "shelomith_2606": {
+   "name": "Shelomith",
+   "sex": "F",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.19"
+   ]
+  },
+  "jerimoth_869": {
+   "name": "Jerimoth",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.11.18"
    ]
   },
   "ishmael_630": {
@@ -2625,134 +3348,184 @@
    "birthYear": -1909,
    "deathYear": -1772
   },
-  "kenaz_1776": {
-   "name": "Kenaz",
+  "noah_2210": {
+   "name": "Noah",
    "sex": "M",
-   "father": "eliphaz_1144",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.36.11",
-    "Gen.36.15",
-    "1Chr.1.36"
-   ]
-  },
-  "levi_1820": {
-   "name": "Levi",
-   "sex": "M",
-   "father": "israel_682",
-   "mother": "leah_1813",
-   "children": [
-    "gershon_1305",
-    "kohath_1790",
-    "merari_2004",
-    "jochebed_1645"
-   ],
-   "verses": [
-    "Gen.29.34",
-    "Gen.34.25",
-    "Gen.34.30",
-    "Gen.35.23",
-    "Gen.46.11",
-    "Gen.49.5",
-    "Exod.1.2",
-    "Exod.2.1"
-   ],
-   "note": "patriarch",
-   "birthYear": -1755
-  },
-  "jobab_1640": {
-   "name": "Jobab",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.29",
-    "1Chr.1.23"
-   ],
-   "note": "son of Joktan"
-  },
-  "kemuel_1773": {
-   "name": "Kemuel",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [
-    "aram_286"
-   ],
-   "verses": [
-    "Gen.22.21"
-   ]
-  },
-  "arphaxad_312": {
-   "name": "Arphaxad",
-   "sex": "M",
-   "father": "shem_2613",
+   "father": "lamech_1809",
    "mother": null,
    "children": [
-    "salah_2455"
+    "japheth_726",
+    "shem_2613",
+    "ham_1359"
    ],
    "verses": [
-    "Gen.10.22",
-    "Gen.10.24",
-    "Gen.11.10",
-    "Gen.11.11",
-    "Gen.11.12",
-    "Gen.11.13",
-    "1Chr.1.17",
-    "1Chr.1.18"
+    "Gen.5.29",
+    "Gen.5.30",
+    "Gen.5.32",
+    "Gen.6.8",
+    "Gen.6.9",
+    "Gen.6.10",
+    "Gen.6.13",
+    "Gen.6.22"
    ],
    "mainLine": true,
-   "birthYear": -2345,
-   "deathYear": -1907
+   "birthYear": -2947,
+   "deathYear": -1997
   },
-  "imnah_1616": {
-   "name": "Imnah",
+  "iscah_618": {
+   "name": "Iscah",
    "sex": "M",
-   "father": "asher_337",
+   "father": "haran_1407",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.17",
-    "Num.26.44",
-    "1Chr.7.30"
+    "Gen.11.29"
    ]
   },
-  "jokshan_1685": {
-   "name": "Jokshan",
+  "jared_730": {
+   "name": "Jared",
    "sex": "M",
-   "father": "abraham_58",
-   "mother": "keturah_1782",
+   "father": "mahalaleel_1885",
+   "mother": null,
    "children": [
-    "dedan_999",
-    "sheba_2569"
+    "enoch_1192"
    ],
    "verses": [
-    "Gen.25.2",
-    "Gen.25.3",
-    "1Chr.1.32"
-   ]
+    "Gen.5.15",
+    "Gen.5.16",
+    "Gen.5.18",
+    "Gen.5.19",
+    "Gen.5.20",
+    "1Chr.1.2",
+    "Luke.3.37"
+   ],
+   "mainLine": true,
+   "birthYear": -3543,
+   "deathYear": -2581
   },
-  "lud_1834": {
-   "name": "Lud",
+  "zerah_3043": {
+   "name": "Zerah",
    "sex": "M",
-   "father": "shem_2613",
+   "father": "reuel_2430",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.22",
-    "1Chr.1.17"
+    "Gen.36.13",
+    "Gen.36.17",
+    "1Chr.1.37"
    ]
   },
-  "manasseh_1928": {
-   "name": "Manasseh",
+  "adbeel_79": {
+   "name": "Adbeel",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.13",
+    "1Chr.1.29"
+   ]
+  },
+  "mizraim_2100": {
+   "name": "Mizraim",
+   "sex": "M",
+   "father": "ham_1359",
+   "mother": null,
+   "children": [
+    "ludim_1835",
+    "caphthorim_917",
+    "lehabim_1816",
+    "naphtuhim_2150",
+    "casluhim_923",
+    "anamim_253",
+    "pathrusim_2288"
+   ],
+   "verses": [
+    "Gen.10.6",
+    "Gen.10.13",
+    "1Chr.1.8",
+    "1Chr.1.11"
+   ]
+  },
+  "elishua_1163": {
+   "name": "Elishua",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.15",
+    "1Chr.3.6",
+    "1Chr.14.5"
+   ]
+  },
+  "abida_21": {
+   "name": "Abida",
+   "sex": "M",
+   "father": "midian_2075",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.4",
+    "1Chr.1.33"
+   ]
+  },
+  "abel_13": {
+   "name": "Abel",
+   "sex": "M",
+   "father": "adam_78",
+   "mother": "eve_1231",
+   "children": [],
+   "verses": [
+    "Gen.4.2",
+    "Gen.4.4",
+    "Gen.4.8",
+    "Gen.4.9",
+    "Gen.4.25",
+    "Matt.23.35",
+    "Luke.11.51",
+    "Heb.11.4"
+   ],
+   "birthYear": -3937,
+   "deathYear": -3874
+  },
+  "asshurim_350": {
+   "name": "Asshurim",
+   "sex": "M",
+   "father": "dedan_999",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.3"
+   ]
+  },
+  "gomer_1328": {
+   "name": "Gomer",
+   "sex": "M",
+   "father": "japheth_726",
+   "mother": null,
+   "children": [
+    "riphath_2443",
+    "togarmah_2875",
+    "ashkenaz_338"
+   ],
+   "verses": [
+    "Gen.10.2",
+    "Gen.10.3",
+    "1Chr.1.5",
+    "1Chr.1.6",
+    "Ezek.38.6"
+   ],
+   "note": "son of Japheth"
+  },
+  "ephraim_1206": {
+   "name": "Ephraim",
    "sex": "M",
    "father": "joseph_1710",
    "mother": "asenath_335",
    "children": [],
    "verses": [
-    "Gen.41.51",
+    "Gen.41.52",
     "Gen.46.20",
     "Gen.48.1",
     "Gen.48.5",
@@ -2761,42 +3534,134 @@
     "Gen.48.17",
     "Gen.48.20"
    ],
-   "note": "son of Joseph",
-   "birthYear": -1708
+   "birthYear": -1707
   },
-  "mash_1944": {
-   "name": "Mash",
+  "jehiel_773": {
+   "name": "Jehiel",
    "sex": "M",
-   "father": "aram_285",
+   "father": "jehoshaphat_808",
    "mother": null,
    "children": [],
    "verses": [
+    "2Chr.21.2"
+   ],
+   "deathYear": -888
+  },
+  "aram_285": {
+   "name": "Aram",
+   "sex": "M",
+   "father": "shem_2613",
+   "mother": null,
+   "children": [
+    "mash_1944",
+    "hul_1566",
+    "uz_2908",
+    "gether_1308"
+   ],
+   "verses": [
+    "Gen.10.22",
     "Gen.10.23",
+    "1Chr.1.17"
+   ],
+   "note": "son of Shem"
+  },
+  "asshur_349": {
+   "name": "Asshur",
+   "sex": "M",
+   "father": "shem_2613",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.11",
+    "Gen.10.22",
+    "Num.24.22",
+    "Num.24.24",
     "1Chr.1.17"
    ]
   },
-  "isaac_616": {
-   "name": "Isaac",
+  "naphish_2148": {
+   "name": "Naphish",
    "sex": "M",
-   "father": "abraham_58",
-   "mother": "sarah_2473",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.15",
+    "1Chr.1.31"
+   ]
+  },
+  "henoch_1402": {
+   "name": "Henoch",
+   "sex": "M",
+   "father": "midian_2075",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.4",
+    "1Chr.1.33"
+   ]
+  },
+  "tarshish_2828": {
+   "name": "Tarshish",
+   "sex": "M",
+   "father": "javan_744",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.4",
+    "1Chr.1.7"
+   ],
+   "note": "son of Javan"
+  },
+  "zerubbabel_3054": {
+   "name": "Zerubbabel",
+   "sex": "M",
+   "father": "shealtiel_2456",
+   "mother": null,
    "children": [
-    "esau_1216",
-    "israel_682"
+    "jushab-hesed_1765",
+    "abiud_56",
+    "meshullam_2021",
+    "hasadiah_1426",
+    "shelomith_2606",
+    "hashubah_1445",
+    "berechiah_471",
+    "hananiah_1384",
+    "ohel_2240"
    ],
    "verses": [
-    "Gen.17.19",
-    "Gen.17.21",
-    "Gen.21.3",
-    "Gen.21.4",
-    "Gen.21.5",
-    "Gen.21.8",
-    "Gen.21.10",
-    "Gen.21.12"
+    "1Chr.3.19",
+    "Ezra.1.8",
+    "Ezra.1.11",
+    "Ezra.2.2",
+    "Ezra.3.2",
+    "Ezra.3.8",
+    "Ezra.4.2",
+    "Ezra.4.3"
+   ],
+   "note": "son of Shealtiel; 1 Chronicles 3:19 names Pedaiah",
+   "mainLine": true
+  },
+  "amon_236": {
+   "name": "Amon",
+   "sex": "M",
+   "father": "manasseh_1930",
+   "mother": "meshullemeth_2040",
+   "children": [
+    "josiah_1730"
+   ],
+   "verses": [
+    "2Kgs.21.18",
+    "2Kgs.21.19",
+    "2Kgs.21.23",
+    "2Kgs.21.24",
+    "2Kgs.21.25",
+    "1Chr.3.14",
+    "2Chr.33.20",
+    "2Chr.33.21"
    ],
    "mainLine": true,
-   "birthYear": -1895,
-   "deathYear": -1715
+   "deathYear": -639
   },
   "phut_2354": {
    "name": "Phut",
@@ -2810,180 +3675,535 @@
     "Ezek.27.10"
    ]
   },
-  "ebal_2227": {
-   "name": "Ebal",
+  "leah_1813": {
+   "name": "Leah",
+   "sex": "F",
+   "father": "laban_1803",
+   "mother": null,
+   "children": [
+    "reuben_2429",
+    "simeon_2741",
+    "levi_1820",
+    "judah_1751",
+    "issachar_645",
+    "zebulun_3002",
+    "dinah_1012"
+   ],
+   "verses": [
+    "Gen.29.16",
+    "Gen.29.17",
+    "Gen.29.23",
+    "Gen.29.24",
+    "Gen.29.25",
+    "Gen.29.30",
+    "Gen.29.31",
+    "Gen.29.32"
+   ]
+  },
+  "amalek_197": {
+   "name": "Amalek",
+   "sex": "M",
+   "father": "eliphaz_1144",
+   "mother": "timna_2860",
+   "children": [],
+   "verses": [
+    "Gen.36.12",
+    "Gen.36.16",
+    "Exod.17.8",
+    "Exod.17.9",
+    "Exod.17.10",
+    "Exod.17.11",
+    "Exod.17.13",
+    "Exod.17.14"
+   ]
+  },
+  "nedabiah_2170": {
+   "name": "Nedabiah",
+   "sex": "M",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.18"
+   ]
+  },
+  "bethuel_487": {
+   "name": "Bethuel",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [
+    "rebekah_2401",
+    "laban_1803"
+   ],
+   "verses": [
+    "Gen.22.22",
+    "Gen.22.23",
+    "Gen.24.15",
+    "Gen.24.24",
+    "Gen.24.47",
+    "Gen.24.50",
+    "Gen.25.20",
+    "Gen.28.2"
+   ]
+  },
+  "imnah_1616": {
+   "name": "Imnah",
+   "sex": "M",
+   "father": "asher_337",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.17",
+    "Num.26.44",
+    "1Chr.7.30"
+   ]
+  },
+  "azariah_381": {
+   "name": "Azariah",
+   "sex": "M",
+   "father": "jehoshaphat_808",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.21.2"
+   ],
+   "deathYear": -888
+  },
+  "pedaiah_2293": {
+   "name": "Pedaiah",
+   "sex": "M",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.18",
+    "1Chr.3.19"
+   ]
+  },
+  "amminadab_228": {
+   "name": "Amminadab",
+   "sex": "M",
+   "father": "ram_2391",
+   "mother": null,
+   "children": [
+    "nahshon_2144",
+    "elisheba_1162"
+   ],
+   "verses": [
+    "Exod.6.23",
+    "Num.1.7",
+    "Num.2.3",
+    "Num.7.12",
+    "Num.7.17",
+    "Num.10.14",
+    "Ruth.4.19",
+    "Ruth.4.20"
+   ],
+   "mainLine": true
+  },
+  "zebudah_3000": {
+   "name": "Zebudah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "jehoiakim_1085",
+    "johanan_1667"
+   ],
+   "verses": [
+    "2Kgs.23.36"
+   ]
+  },
+  "simeon_2741": {
+   "name": "Simeon",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [
+    "jamin_720",
+    "zerah_3102",
+    "ohad_2239",
+    "jemuel_838",
+    "jachin_679",
+    "shaul_2562"
+   ],
+   "verses": [
+    "Gen.29.33",
+    "Gen.34.25",
+    "Gen.34.30",
+    "Gen.35.23",
+    "Gen.42.24",
+    "Gen.42.36",
+    "Gen.43.23",
+    "Gen.46.10"
+   ],
+   "birthYear": -1756
+  },
+  "uzal_2911": {
+   "name": "Uzal",
    "sex": "M",
    "father": "joktan_1686",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.28",
-    "1Chr.1.22"
-   ],
-   "note": "son of Joktan"
+    "Gen.10.27",
+    "1Chr.1.21"
+   ]
   },
-  "maachah_1840": {
-   "name": "Maachah",
-   "sex": "F",
-   "father": "nahor_2143",
-   "mother": "reumah_2433",
-   "children": [],
-   "verses": [
-    "Gen.22.24"
-   ],
-   "note": "Daughter of Nahor"
-  },
-  "hagar_1348": {
-   "name": "Hagar",
+  "nehushta_2174": {
+   "name": "Nehushta",
    "sex": "F",
    "father": null,
    "mother": null,
    "children": [
-    "ishmael_630"
+    "jehoiachin_791"
    ],
    "verses": [
-    "Gen.16.1",
-    "Gen.16.3",
-    "Gen.16.4",
-    "Gen.16.8",
-    "Gen.16.15",
-    "Gen.16.16",
-    "Gen.21.9",
-    "Gen.21.14"
+    "2Kgs.24.8"
    ]
   },
-  "abimael_39": {
-   "name": "Abimael",
+  "pathrusim_2288": {
+   "name": "Pathrusim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.14",
+    "1Chr.1.12"
+   ],
+   "kind": "nation"
+  },
+  "dinah_1012": {
+   "name": "Dinah",
+   "sex": "F",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [],
+   "verses": [
+    "Gen.30.21",
+    "Gen.34.1",
+    "Gen.34.3",
+    "Gen.34.5",
+    "Gen.34.13",
+    "Gen.34.25",
+    "Gen.34.26",
+    "Gen.46.15"
+   ],
+   "birthYear": -1749
+  },
+  "kedar_1769": {
+   "name": "Kedar",
+   "sex": "M",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.13",
+    "1Chr.1.29",
+    "Song.1.5",
+    "Isa.21.16",
+    "Isa.21.17",
+    "Isa.42.11",
+    "Isa.60.7",
+    "Jer.2.10"
+   ]
+  },
+  "esau_1216": {
+   "name": "Esau",
+   "sex": "M",
+   "father": "isaac_616",
+   "mother": "rebekah_2401",
+   "children": [
+    "jaalam_662",
+    "eliphaz_1144",
+    "korah_1793",
+    "reuel_2430",
+    "jeush_913"
+   ],
+   "verses": [
+    "Gen.25.25",
+    "Gen.25.26",
+    "Gen.25.27",
+    "Gen.25.28",
+    "Gen.25.29",
+    "Gen.25.30",
+    "Gen.25.32",
+    "Gen.25.34"
+   ],
+   "note": "Edom",
+   "birthYear": -1835
+  },
+  "azariah_382": {
+   "name": "Azariah",
+   "sex": "M",
+   "father": "jehoshaphat_808",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Chr.21.2"
+   ]
+  },
+  "daniel_939": {
+   "name": "Daniel",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "abigail_26",
+   "children": [],
+   "verses": [
+    "2Sam.3.3",
+    "1Chr.3.1"
+   ]
+  },
+  "ozem_2260": {
+   "name": "Ozem",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.2.15"
+   ]
+  },
+  "diklah_1011": {
+   "name": "Diklah",
    "sex": "M",
    "father": "joktan_1686",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.28",
-    "1Chr.1.22"
+    "Gen.10.27",
+    "1Chr.1.21"
    ]
   },
-  "adam_78": {
-   "name": "Adam",
-   "sex": "M",
+  "zibiah_3064": {
+   "name": "Zibiah",
+   "sex": "F",
    "father": null,
    "mother": null,
    "children": [
-    "cain_533",
-    "abel_13",
-    "seth_2504"
+    "joash_1632"
    ],
    "verses": [
-    "Gen.2.19",
-    "Gen.2.20",
-    "Gen.2.21",
-    "Gen.2.23",
-    "Gen.3.8",
-    "Gen.3.9",
-    "Gen.3.17",
-    "Gen.3.20"
-   ],
-   "mainLine": true,
-   "birthYear": -4003,
-   "deathYear": -3073
+    "2Kgs.12.1",
+    "2Chr.24.1"
+   ]
   },
-  "abida_21": {
-   "name": "Abida",
+  "milcah_2082": {
+   "name": "Milcah",
+   "sex": "F",
+   "father": "haran_1407",
+   "mother": null,
+   "children": [
+    "jidlaph_1615",
+    "pildash_2357",
+    "kemuel_1773",
+    "buz_529",
+    "chesed_938",
+    "bethuel_487",
+    "huz_1582",
+    "hazo_1468"
+   ],
+   "verses": [
+    "Gen.11.29",
+    "Gen.22.20",
+    "Gen.22.23",
+    "Gen.24.15",
+    "Gen.24.24",
+    "Gen.24.47"
+   ],
+   "note": "wife of Nahor"
+  },
+  "ibhar_1584": {
+   "name": "Ibhar",
    "sex": "M",
-   "father": "midian_2075",
+   "father": "david_994",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.25.4",
-    "1Chr.1.33"
+    "2Sam.5.15",
+    "1Chr.3.6",
+    "1Chr.14.5"
    ]
   },
-  "gaham_1267": {
-   "name": "Gaham",
+  "shammua_2547": {
+   "name": "Shammua",
    "sex": "M",
-   "father": "nahor_2143",
-   "mother": "reumah_2433",
+   "father": "david_994",
+   "mother": "bathsheba_416",
    "children": [],
    "verses": [
-    "Gen.22.24"
+    "2Sam.5.14",
+    "1Chr.3.5",
+    "1Chr.14.4"
    ]
   },
-  "zidon_2738": {
-   "name": "Zidon",
+  "shenazar_2655": {
+   "name": "Shenazar",
    "sex": "M",
-   "father": "canaan_914",
+   "father": "jehoiachin_791",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.15",
-    "1Chr.1.13"
+    "1Chr.3.18"
    ]
   },
-  "zephon_3093": {
-   "name": "Zephon",
+  "ozni_1235": {
+   "name": "Ozni",
    "sex": "M",
    "father": "gad_1262",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.46.16",
-    "Num.26.15"
+    "Num.26.16"
    ]
   },
-  "enos_1193": {
-   "name": "Enos",
+  "nebajoth_2164": {
+   "name": "Nebajoth",
+   "sex": "F",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.13",
+    "Gen.28.9",
+    "Gen.36.3",
+    "1Chr.1.29",
+    "Isa.60.7"
+   ]
+  },
+  "heth_1510": {
+   "name": "Heth",
    "sex": "M",
-   "father": "seth_2504",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.15",
+    "Gen.23.3",
+    "Gen.23.5",
+    "Gen.23.7",
+    "Gen.23.10",
+    "Gen.23.16",
+    "Gen.23.18",
+    "Gen.23.20"
+   ]
+  },
+  "zebulun_3002": {
+   "name": "Zebulun",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [
+    "jahleel_704",
+    "sered_2501",
+    "elon_1183"
+   ],
+   "verses": [
+    "Gen.30.20",
+    "Gen.35.23",
+    "Gen.46.14",
+    "Gen.49.13",
+    "Exod.1.3",
+    "Num.1.9",
+    "Num.1.30",
+    "Num.1.31"
+   ],
+   "birthYear": -1750
+  },
+  "jediael_757": {
+   "name": "Jediael",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.7.6",
+    "1Chr.7.10",
+    "1Chr.7.11"
+   ]
+  },
+  "obed_2228": {
+   "name": "Obed",
+   "sex": "M",
+   "father": "boaz_519",
+   "mother": "ruth_2450",
+   "children": [
+    "jesse_903"
+   ],
+   "verses": [
+    "Ruth.4.17",
+    "Ruth.4.21",
+    "Ruth.4.22",
+    "1Chr.2.12",
+    "Matt.1.5",
+    "Luke.3.32"
+   ],
+   "mainLine": true
+  },
+  "kemuel_1773": {
+   "name": "Kemuel",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [
+    "aram_286"
+   ],
+   "verses": [
+    "Gen.22.21"
+   ]
+  },
+  "bela_436": {
+   "name": "Bela",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "Num.26.38",
+    "Num.26.40",
+    "1Chr.7.6",
+    "1Chr.7.7",
+    "1Chr.8.1",
+    "1Chr.8.3"
+   ]
+  },
+  "lamech_1809": {
+   "name": "Lamech",
+   "sex": "M",
+   "father": "methuselah_2042",
    "mother": null,
    "children": [
-    "cainan_534"
+    "noah_2210"
    ],
    "verses": [
-    "Gen.4.26",
-    "Gen.5.6",
-    "Gen.5.7",
-    "Gen.5.9",
-    "Gen.5.10",
-    "Gen.5.11",
-    "1Chr.1.1",
-    "Luke.3.38"
+    "Gen.5.25",
+    "Gen.5.26",
+    "Gen.5.28",
+    "Gen.5.30",
+    "Gen.5.31",
+    "1Chr.1.3",
+    "Luke.3.36"
    ],
+   "note": "father of Noah",
    "mainLine": true,
-   "birthYear": -3768,
-   "deathYear": -2863
+   "birthYear": -3129,
+   "deathYear": -2352
   },
-  "sered_2501": {
-   "name": "Sered",
-   "sex": "M",
-   "father": "zebulun_3002",
+  "jehoaddan_783": {
+   "name": "Jehoaddan",
+   "sex": "F",
+   "father": null,
    "mother": null,
-   "children": [],
+   "children": [
+    "amaziah_214"
+   ],
    "verses": [
-    "Gen.46.14",
-    "Num.26.26"
-   ]
-  },
-  "eldaah_1057": {
-   "name": "Eldaah",
-   "sex": "M",
-   "father": "midian_2075",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.4",
-    "1Chr.1.33"
-   ]
-  },
-  "zepho_3042": {
-   "name": "Zepho",
-   "sex": "M",
-   "father": "eliphaz_1144",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.36.11",
-    "Gen.36.15",
-    "1Chr.1.36"
+    "2Kgs.14.2",
+    "2Chr.25.1"
    ]
   },
   "cush_962": {
@@ -3009,118 +4229,309 @@
    ],
    "note": "son of Ham"
   },
-  "asshurim_350": {
-   "name": "Asshurim",
+  "gether_1308": {
+   "name": "Gether",
    "sex": "M",
-   "father": "dedan_999",
+   "father": "aram_285",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.25.3"
+    "Gen.10.23",
+    "1Chr.1.17"
    ]
   },
-  "javan_744": {
-   "name": "Javan",
+  "eliada_1078": {
+   "name": "Eliada",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.16",
+    "1Chr.3.8",
+    "1Chr.14.7"
+   ]
+  },
+  "tubal_2883": {
+   "name": "Tubal",
    "sex": "M",
    "father": "japheth_726",
    "mother": null,
-   "children": [
-    "kittim_1789",
-    "tarshish_2828",
-    "dodanim_1018",
-    "elishah_1154"
-   ],
+   "children": [],
    "verses": [
     "Gen.10.2",
-    "Gen.10.4",
     "1Chr.1.5",
-    "1Chr.1.7",
     "Isa.66.19",
     "Ezek.27.13",
-    "Ezek.27.19"
+    "Ezek.32.26",
+    "Ezek.38.2",
+    "Ezek.38.3",
+    "Ezek.39.1"
    ]
   },
-  "nebajoth_2164": {
-   "name": "Nebajoth",
-   "sex": "F",
+  "massa_1945": {
+   "name": "Massa",
+   "sex": "M",
    "father": "ishmael_630",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.25.13",
-    "Gen.28.9",
-    "Gen.36.3",
-    "1Chr.1.29",
-    "Isa.60.7"
+    "Gen.25.14",
+    "1Chr.1.30"
    ]
   },
-  "tamar_2821": {
-   "name": "Tamar",
-   "sex": "F",
-   "father": null,
-   "mother": null,
+  "uzziah_375": {
+   "name": "Uzziah",
+   "sex": "M",
+   "father": "amaziah_214",
+   "mother": "jecoliah_750",
    "children": [
-    "pharez_2338",
-    "zerah_2984"
+    "jotham_1735"
    ],
    "verses": [
+    "2Kgs.14.21",
+    "2Kgs.15.1",
+    "2Kgs.15.6",
+    "2Kgs.15.7",
+    "2Kgs.15.8",
+    "2Kgs.15.13",
+    "2Kgs.15.17",
+    "2Kgs.15.23"
+   ],
+   "mainLine": true,
+   "birthYear": -826,
+   "deathYear": -757
+  },
+  "moab_2103": {
+   "name": "Moab",
+   "sex": "M",
+   "father": "lot_1830",
+   "mother": "daughter_of_lot_older_985",
+   "children": [],
+   "verses": [
+    "Gen.19.37",
+    "Gen.36.35",
+    "Exod.15.15",
+    "Num.21.11",
+    "Num.21.13",
+    "Num.21.15",
+    "Num.21.20",
+    "Num.21.26"
+   ]
+  },
+  "elishama_1156": {
+   "name": "Elishama",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.16",
+    "1Chr.14.7"
+   ]
+  },
+  "eber_1030": {
+   "name": "Eber",
+   "sex": "M",
+   "father": "salah_2455",
+   "mother": null,
+   "children": [
+    "peleg_2308",
+    "joktan_1686"
+   ],
+   "verses": [
+    "Gen.10.21",
+    "Gen.10.24",
+    "Gen.10.25",
+    "Gen.11.14",
+    "Gen.11.15",
+    "Gen.11.16",
+    "Gen.11.17",
+    "Num.24.24"
+   ],
+   "note": "Heber",
+   "mainLine": true,
+   "birthYear": -2280,
+   "deathYear": -1816
+  },
+  "joash_1632": {
+   "name": "Joash",
+   "sex": "M",
+   "father": "ahaziah_121",
+   "mother": "zibiah_3064",
+   "children": [
+    "amaziah_214"
+   ],
+   "verses": [
+    "2Kgs.11.2",
+    "2Kgs.11.21",
+    "2Kgs.12.1",
+    "2Kgs.12.2",
+    "2Kgs.12.4",
+    "2Kgs.12.6",
+    "2Kgs.12.7",
+    "2Kgs.12.18"
+   ],
+   "mainLine": true,
+   "deathYear": -838
+  },
+  "abinadab_44": {
+   "name": "Abinadab",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Sam.16.8",
+    "1Sam.17.13",
+    "1Chr.2.13"
+   ]
+  },
+  "riphath_2443": {
+   "name": "Riphath",
+   "sex": "M",
+   "father": "gomer_1328",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.3",
+    "1Chr.1.6"
+   ]
+  },
+  "jerahmeel_843": {
+   "name": "Jerahmeel",
+   "sex": "M",
+   "father": "hezron_1520",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.2.9",
+    "1Chr.2.25",
+    "1Chr.2.26",
+    "1Chr.2.27",
+    "1Chr.2.33",
+    "1Chr.2.42"
+   ]
+  },
+  "dan_973": {
+   "name": "Dan",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "bilhah_502",
+   "children": [
+    "hushim_1579"
+   ],
+   "verses": [
+    "Gen.30.6",
+    "Gen.35.25",
+    "Gen.46.23",
+    "Gen.49.16",
+    "Gen.49.17",
+    "Exod.1.4",
+    "Exod.31.6",
+    "Exod.35.34"
+   ],
+   "birthYear": -1754
+  },
+  "rapha_2447": {
+   "name": "Rapha",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.21",
+    "1Chr.8.2"
+   ]
+  },
+  "hasadiah_1426": {
+   "name": "Hasadiah",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.20"
+   ]
+  },
+  "er_1209": {
+   "name": "Er",
+   "sex": "M",
+   "father": "judah_1751",
+   "mother": "daughter_of_shuah_993",
+   "children": [],
+   "verses": [
+    "Gen.38.3",
     "Gen.38.6",
-    "Gen.38.11",
-    "Gen.38.13",
-    "Gen.38.24",
-    "Ruth.4.12",
-    "1Chr.2.4",
-    "Matt.1.3"
+    "Gen.38.7",
+    "Gen.46.12",
+    "Num.26.19",
+    "1Chr.2.3"
    ]
   },
-  "jamin_720": {
-   "name": "Jamin",
+  "japheth_726": {
+   "name": "Japheth",
    "sex": "M",
-   "father": "simeon_2741",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15",
-    "Num.26.12",
-    "1Chr.4.24"
-   ]
-  },
-  "rachel_2386": {
-   "name": "Rachel",
-   "sex": "F",
-   "father": "laban_1803",
+   "father": "noah_2210",
    "mother": null,
    "children": [
-    "joseph_1710",
-    "benjamin_463"
+    "magog_1882",
+    "tubal_2883",
+    "tiras_2864",
+    "madai_1880",
+    "meshech_2012",
+    "gomer_1328",
+    "javan_744"
    ],
    "verses": [
-    "Gen.29.6",
-    "Gen.29.9",
-    "Gen.29.10",
-    "Gen.29.11",
-    "Gen.29.12",
-    "Gen.29.16",
-    "Gen.29.17",
-    "Gen.29.18"
+    "Gen.5.32",
+    "Gen.6.10",
+    "Gen.7.13",
+    "Gen.9.18",
+    "Gen.9.23",
+    "Gen.9.27",
+    "Gen.10.1",
+    "Gen.10.2"
    ],
-   "deathYear": -1738
+   "birthYear": -2447
   },
-  "isui_648": {
-   "name": "Isui",
+  "asher_337": {
+   "name": "Asher",
    "sex": "M",
-   "father": "asher_337",
+   "father": "israel_682",
+   "mother": "zilpah_3081",
+   "children": [
+    "serah_2492",
+    "isui_648",
+    "beriah_478",
+    "isuah_640",
+    "imnah_1616"
+   ],
+   "verses": [
+    "Gen.30.13",
+    "Gen.35.26",
+    "Gen.46.17",
+    "Gen.49.20",
+    "Exod.1.4",
+    "Num.1.13",
+    "Num.1.40",
+    "Num.1.41"
+   ],
+   "birthYear": -1751
+  },
+  "hul_1566": {
+   "name": "Hul",
+   "sex": "M",
+   "father": "aram_285",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.17",
-    "Num.26.44",
-    "1Chr.7.30"
+    "Gen.10.23",
+    "1Chr.1.17"
    ]
   },
-  "omar_2242": {
-   "name": "Omar",
+  "kenaz_1776": {
+   "name": "Kenaz",
    "sex": "M",
    "father": "eliphaz_1144",
    "mother": null,
@@ -3131,228 +4542,97 @@
     "1Chr.1.36"
    ]
   },
-  "abel_13": {
-   "name": "Abel",
-   "sex": "M",
-   "father": "adam_78",
-   "mother": "eve_1231",
-   "children": [],
-   "verses": [
-    "Gen.4.2",
-    "Gen.4.4",
-    "Gen.4.8",
-    "Gen.4.9",
-    "Gen.4.25",
-    "Matt.23.35",
-    "Luke.11.51",
-    "Heb.11.4"
-   ],
-   "birthYear": -3937,
-   "deathYear": -3874
-  },
-  "bela_436": {
-   "name": "Bela",
+  "becher_423": {
+   "name": "Becher",
    "sex": "M",
    "father": "benjamin_463",
    "mother": null,
    "children": [],
    "verses": [
     "Gen.46.21",
-    "Num.26.38",
-    "Num.26.40",
     "1Chr.7.6",
-    "1Chr.7.7",
-    "1Chr.8.1",
-    "1Chr.8.3"
+    "1Chr.7.8"
    ]
   },
-  "jerah_842": {
-   "name": "Jerah",
-   "sex": "M",
-   "father": "joktan_1686",
+  "taphath_2825": {
+   "name": "Taphath",
+   "sex": "F",
+   "father": "solomon_2762",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.26",
-    "1Chr.1.20"
+    "1Kgs.4.11"
    ]
   },
-  "arkite_308": {
-   "name": "Arkite",
+  "peleg_2308": {
+   "name": "Peleg",
    "sex": "M",
-   "father": "canaan_914",
+   "father": "eber_1030",
    "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.17",
-    "1Chr.1.15"
+   "children": [
+    "reu_2428"
    ],
-   "kind": "nation"
-  },
-  "pathrusim_2288": {
-   "name": "Pathrusim",
-   "sex": "M",
-   "father": "mizraim_2100",
-   "mother": null,
-   "children": [],
    "verses": [
-    "Gen.10.14",
-    "1Chr.1.12"
+    "Gen.10.25",
+    "Gen.11.16",
+    "Gen.11.17",
+    "Gen.11.18",
+    "Gen.11.19",
+    "1Chr.1.19",
+    "1Chr.1.25",
+    "Luke.3.35"
    ],
-   "kind": "nation"
+   "mainLine": true,
+   "birthYear": -2246,
+   "deathYear": -2007
   },
-  "ephraim_1206": {
-   "name": "Ephraim",
-   "sex": "M",
-   "father": "joseph_1710",
-   "mother": "asenath_335",
-   "children": [],
-   "verses": [
-    "Gen.41.52",
-    "Gen.46.20",
-    "Gen.48.1",
-    "Gen.48.5",
-    "Gen.48.13",
-    "Gen.48.14",
-    "Gen.48.17",
-    "Gen.48.20"
-   ],
-   "birthYear": -1707
-  },
-  "zillah_3080": {
-   "name": "Zillah",
+  "ruth_2450": {
+   "name": "Ruth",
    "sex": "F",
    "father": null,
    "mother": null,
    "children": [
-    "naamah_2118",
-    "tubal-cain_2884"
+    "obed_2228"
    ],
    "verses": [
-    "Gen.4.19",
-    "Gen.4.22",
-    "Gen.4.23"
-   ]
-  },
-  "sinite_2755": {
-   "name": "Sinite",
-   "sex": "M",
-   "father": "canaan_914",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.17",
-    "1Chr.1.15"
+    "Ruth.1.4",
+    "Ruth.1.14",
+    "Ruth.1.16",
+    "Ruth.1.22",
+    "Ruth.2.2",
+    "Ruth.2.8",
+    "Ruth.2.21",
+    "Ruth.2.22"
    ],
-   "kind": "nation"
+   "birthYear": -1114
   },
-  "carmi_920": {
-   "name": "Carmi",
+  "joktan_1686": {
+   "name": "Joktan",
    "sex": "M",
-   "father": "reuben_2429",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.9",
-    "Exod.6.14",
-    "Num.26.6",
-    "1Chr.5.3"
-   ]
-  },
-  "shelah_2593": {
-   "name": "Shelah",
-   "sex": "M",
-   "father": "judah_1751",
-   "mother": "daughter_of_shuah_993",
-   "children": [],
-   "verses": [
-    "Gen.38.5",
-    "Gen.38.11",
-    "Gen.38.14",
-    "Gen.38.26",
-    "Gen.46.12",
-    "Num.26.20",
-    "1Chr.2.3",
-    "1Chr.4.21"
-   ]
-  },
-  "anamim_253": {
-   "name": "Anamim",
-   "sex": "M",
-   "father": "mizraim_2100",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.13",
-    "1Chr.1.11"
-   ],
-   "kind": "nation"
-  },
-  "jezer_1606": {
-   "name": "Jezer",
-   "sex": "M",
-   "father": "naphtali_2149",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.24",
-    "Num.26.49",
-    "1Chr.7.13"
-   ]
-  },
-  "dodanim_1018": {
-   "name": "Dodanim",
-   "sex": "M",
-   "father": "javan_744",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.4",
-    "1Chr.1.7"
-   ]
-  },
-  "mahalaleel_1885": {
-   "name": "Mahalaleel",
-   "sex": "M",
-   "father": "cainan_534",
+   "father": "eber_1030",
    "mother": null,
    "children": [
-    "jared_730"
+    "almodad_191",
+    "sheba_2568",
+    "havilah_1462",
+    "jobab_1640",
+    "ebal_2227",
+    "jerah_842",
+    "ophir_2253",
+    "uzal_2911",
+    "hadoram_1345",
+    "abimael_39",
+    "hazarmaveth_1465",
+    "diklah_1011",
+    "sheleph_2602"
    ],
    "verses": [
-    "Gen.5.12",
-    "Gen.5.13",
-    "Gen.5.15",
-    "Gen.5.16",
-    "Gen.5.17",
-    "1Chr.1.2",
-    "Luke.3.37"
-   ],
-   "note": "line of Seth",
-   "mainLine": true,
-   "birthYear": -3608,
-   "deathYear": -2713
-  },
-  "ohad_2239": {
-   "name": "Ohad",
-   "sex": "M",
-   "father": "simeon_2741",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.10",
-    "Exod.6.15"
-   ]
-  },
-  "tema_2837": {
-   "name": "Tema",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.15",
-    "1Chr.1.30"
+    "Gen.10.25",
+    "Gen.10.26",
+    "Gen.10.29",
+    "1Chr.1.19",
+    "1Chr.1.20",
+    "1Chr.1.23"
    ]
   },
   "terah_2841": {
@@ -3380,52 +4660,220 @@
    "birthYear": -2125,
    "deathYear": -1920
   },
-  "haran_1407": {
-   "name": "Haran",
+  "josiah_1730": {
+   "name": "Josiah",
    "sex": "M",
-   "father": "terah_2841",
-   "mother": null,
+   "father": "amon_236",
+   "mother": "jedidah_761",
    "children": [
-    "milcah_2082",
-    "iscah_618",
-    "lot_1830"
+    "jehoiakim_1085",
+    "zedekiah_1950",
+    "johanan_1667",
+    "jehoahaz_2516"
    ],
    "verses": [
-    "Gen.11.26",
-    "Gen.11.27",
-    "Gen.11.28",
-    "Gen.11.29",
-    "Gen.11.31"
+    "1Kgs.13.2",
+    "2Kgs.21.24",
+    "2Kgs.21.26",
+    "2Kgs.22.1",
+    "2Kgs.22.3",
+    "2Kgs.23.16",
+    "2Kgs.23.19",
+    "2Kgs.23.23"
    ],
-   "note": "brother of Abraham"
+   "mainLine": true,
+   "birthYear": -648,
+   "deathYear": -608
   },
-  "shupham_2115": {
-   "name": "Shupham",
+  "havilah_1462": {
+   "name": "Havilah",
    "sex": "M",
-   "father": "benjamin_463",
+   "father": "joktan_1686",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.21",
-    "Num.26.39",
-    "1Chr.8.5"
+    "Gen.10.29",
+    "1Chr.1.23"
+   ],
+   "note": "son of Joktan"
+  },
+  "zimran_3086": {
+   "name": "Zimran",
+   "sex": "M",
+   "father": "abraham_58",
+   "mother": "keturah_1782",
+   "children": [],
+   "verses": [
+    "Gen.25.2",
+    "1Chr.1.32"
    ]
   },
-  "amalek_197": {
-   "name": "Amalek",
-   "sex": "M",
-   "father": "eliphaz_1144",
-   "mother": "timna_2860",
+  "maachah_1840": {
+   "name": "Maachah",
+   "sex": "F",
+   "father": "nahor_2143",
+   "mother": "reumah_2433",
    "children": [],
    "verses": [
+    "Gen.22.24"
+   ],
+   "note": "Daughter of Nahor"
+  },
+  "eri_1214": {
+   "name": "Eri",
+   "sex": "M",
+   "father": "gad_1262",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.16",
+    "Num.26.16"
+   ]
+  },
+  "hezekiah_1512": {
+   "name": "Hezekiah",
+   "sex": "M",
+   "father": "ahaz_118",
+   "mother": "abijah_14",
+   "children": [
+    "manasseh_1930"
+   ],
+   "verses": [
+    "2Kgs.16.20",
+    "2Kgs.18.1",
+    "2Kgs.18.9",
+    "2Kgs.18.10",
+    "2Kgs.18.13",
+    "2Kgs.18.14",
+    "2Kgs.18.15",
+    "2Kgs.18.16"
+   ],
+   "mainLine": true,
+   "birthYear": -751,
+   "deathYear": -696
+  },
+  "arkite_308": {
+   "name": "Arkite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.17",
+    "1Chr.1.15"
+   ],
+   "kind": "nation"
+  },
+  "lud_1834": {
+   "name": "Lud",
+   "sex": "M",
+   "father": "shem_2613",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.22",
+    "1Chr.1.17"
+   ]
+  },
+  "shuah_2727": {
+   "name": "Shuah",
+   "sex": "M",
+   "father": "abraham_58",
+   "mother": "keturah_1782",
+   "children": [],
+   "verses": [
+    "Gen.25.2",
+    "1Chr.1.32"
+   ]
+  },
+  "adah_414": {
+   "name": "Adah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "eliphaz_1144"
+   ],
+   "verses": [
+    "Gen.26.34",
+    "Gen.36.2",
+    "Gen.36.4",
+    "Gen.36.10",
     "Gen.36.12",
-    "Gen.36.16",
-    "Exod.17.8",
-    "Exod.17.9",
-    "Exod.17.10",
-    "Exod.17.11",
-    "Exod.17.13",
-    "Exod.17.14"
+    "Gen.36.16"
+   ]
+  },
+  "korah_1794": {
+   "name": "Korah",
+   "sex": "M",
+   "father": "eliphaz_1144",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.36.16"
+   ]
+  },
+  "manasseh_1928": {
+   "name": "Manasseh",
+   "sex": "M",
+   "father": "joseph_1710",
+   "mother": "asenath_335",
+   "children": [],
+   "verses": [
+    "Gen.41.51",
+    "Gen.46.20",
+    "Gen.48.1",
+    "Gen.48.5",
+    "Gen.48.13",
+    "Gen.48.14",
+    "Gen.48.17",
+    "Gen.48.20"
+   ],
+   "note": "son of Joseph",
+   "birthYear": -1708
+  },
+  "issachar_645": {
+   "name": "Issachar",
+   "sex": "M",
+   "father": "israel_682",
+   "mother": "leah_1813",
+   "children": [
+    "shimron_2706",
+    "tola_2878",
+    "jashub_1638",
+    "puah_2355"
+   ],
+   "verses": [
+    "Gen.30.18",
+    "Gen.35.23",
+    "Gen.46.13",
+    "Gen.49.14",
+    "Exod.1.3",
+    "Num.1.8",
+    "Num.1.28",
+    "Num.1.29"
+   ],
+   "birthYear": -1751
+  },
+  "sheleph_2602": {
+   "name": "Sheleph",
+   "sex": "M",
+   "father": "joktan_1686",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.26",
+    "1Chr.1.20"
+   ]
+  },
+  "jidlaph_1615": {
+   "name": "Jidlaph",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [],
+   "verses": [
+    "Gen.22.22"
    ]
   },
   "pharez_2338": {
@@ -3433,7 +4881,10 @@
    "sex": "M",
    "father": "judah_1751",
    "mother": "tamar_2821",
-   "children": [],
+   "children": [
+    "hezron_1520",
+    "hamul_1367"
+   ],
    "verses": [
     "Gen.38.29",
     "Gen.46.12",
@@ -3444,72 +4895,140 @@
     "1Chr.2.4",
     "1Chr.2.5"
    ],
+   "mainLine": true,
    "birthYear": -1720
   },
-  "huram_1569": {
-   "name": "Huram",
+  "hananiah_1384": {
+   "name": "Hananiah",
    "sex": "M",
-   "father": "benjamin_463",
+   "father": "zerubbabel_3054",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.21",
-    "Num.26.39",
-    "1Chr.8.5"
+    "1Chr.3.19",
+    "1Chr.3.21"
    ]
   },
-  "lot_1830": {
-   "name": "Lot",
+  "ithream_655": {
+   "name": "Ithream",
    "sex": "M",
-   "father": "haran_1407",
+   "father": "david_994",
+   "mother": "eglah_1036",
+   "children": [],
+   "verses": [
+    "2Sam.3.5",
+    "1Chr.3.3"
+   ]
+  },
+  "shobab_2715": {
+   "name": "Shobab",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "bathsheba_416",
+   "children": [],
+   "verses": [
+    "2Sam.5.14",
+    "1Chr.3.5",
+    "1Chr.14.4"
+   ]
+  },
+  "keturah_1782": {
+   "name": "Keturah",
+   "sex": "F",
+   "father": null,
    "mother": null,
    "children": [
-    "ben-ammi_451",
-    "daughter_of_lot_younger_984",
-    "daughter_of_lot_older_985",
-    "moab_2103"
+    "midian_2075",
+    "ishbak_620",
+    "jokshan_1685",
+    "medan_1978",
+    "zimran_3086",
+    "shuah_2727"
    ],
    "verses": [
-    "Gen.11.27",
-    "Gen.11.31",
-    "Gen.12.4",
-    "Gen.12.5",
-    "Gen.13.1",
-    "Gen.13.5",
-    "Gen.13.7",
-    "Gen.13.8"
+    "Gen.25.1",
+    "Gen.25.4",
+    "1Chr.1.32",
+    "1Chr.1.33"
    ]
   },
-  "chesed_938": {
-   "name": "Chesed",
+  "ishbak_620": {
+   "name": "Ishbak",
    "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
+   "father": "abraham_58",
+   "mother": "keturah_1782",
    "children": [],
    "verses": [
-    "Gen.22.22"
+    "Gen.25.2",
+    "1Chr.1.32"
    ]
   },
-  "jochebed_1645": {
-   "name": "Jochebed",
-   "sex": "F",
-   "father": "levi_1820",
+  "nathan_2152": {
+   "name": "Nathan",
+   "sex": "M",
+   "father": "david_994",
+   "mother": "bathsheba_416",
+   "children": [],
+   "verses": [
+    "2Sam.5.14",
+    "1Chr.3.5",
+    "1Chr.14.4",
+    "Zech.12.12",
+    "Luke.3.31"
+   ]
+  },
+  "rehoboam_2412": {
+   "name": "Rehoboam",
+   "sex": "M",
+   "father": "solomon_2762",
+   "mother": "naamah_2119",
+   "children": [
+    "jeush_1603",
+    "zaham_2980",
+    "ziza_3098",
+    "abijah_38",
+    "attai_365",
+    "shelomith_2610",
+    "shamariah_2531"
+   ],
+   "verses": [
+    "1Kgs.11.43",
+    "1Kgs.12.1",
+    "1Kgs.12.3",
+    "1Kgs.12.6",
+    "1Kgs.12.12",
+    "1Kgs.12.17",
+    "1Kgs.12.18",
+    "1Kgs.12.21"
+   ],
+   "mainLine": true,
+   "birthYear": -1015,
+   "deathYear": -957
+  },
+  "zechariah_3010": {
+   "name": "Zechariah",
+   "sex": "M",
+   "father": "jehoshaphat_808",
    "mother": null,
    "children": [],
    "verses": [
-    "Exod.6.20",
-    "Num.26.59"
-   ]
+    "2Chr.21.2"
+   ],
+   "deathYear": -888
   },
-  "kedemah_1770": {
-   "name": "Kedemah",
+  "jokshan_1685": {
+   "name": "Jokshan",
    "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
+   "father": "abraham_58",
+   "mother": "keturah_1782",
+   "children": [
+    "dedan_999",
+    "sheba_2569"
+   ],
    "verses": [
-    "Gen.25.15",
-    "1Chr.1.31"
+    "Gen.25.2",
+    "Gen.25.3",
+    "1Chr.1.32"
    ]
   },
   "israel_682": {
@@ -3547,108 +5066,201 @@
    "birthYear": -1835,
    "deathYear": -1688
   },
-  "diklah_1011": {
-   "name": "Diklah",
+  "matthan_1968": {
+   "name": "Matthan",
    "sex": "M",
-   "father": "joktan_1686",
+   "father": "eleazar_1069",
    "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.27",
-    "1Chr.1.21"
-   ]
-  },
-  "shuah_2727": {
-   "name": "Shuah",
-   "sex": "M",
-   "father": "abraham_58",
-   "mother": "keturah_1782",
-   "children": [],
-   "verses": [
-    "Gen.25.2",
-    "1Chr.1.32"
-   ]
-  },
-  "naphish_2148": {
-   "name": "Naphish",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.15",
-    "1Chr.1.31"
-   ]
-  },
-  "tubal-cain_2884": {
-   "name": "Tubal-cain",
-   "sex": "M",
-   "father": "lamech_1808",
-   "mother": "zillah_3080",
-   "children": [],
-   "verses": [
-    "Gen.4.22"
-   ]
-  },
-  "massa_1945": {
-   "name": "Massa",
-   "sex": "M",
-   "father": "ishmael_630",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.25.14",
-    "1Chr.1.30"
-   ]
-  },
-  "eliphaz_1144": {
-   "name": "Eliphaz",
-   "sex": "M",
-   "father": "esau_1216",
-   "mother": "adah_414",
    "children": [
-    "teman_2838",
-    "korah_1794",
-    "omar_2242",
-    "amalek_197",
-    "gatam_1281",
-    "kenaz_1776",
-    "zepho_3042"
+    "jacob_683"
    ],
    "verses": [
+    "Matt.1.15"
+   ],
+   "mainLine": true
+  },
+  "abijah_14": {
+   "name": "Abijah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "hezekiah_1512"
+   ],
+   "verses": [
+    "2Kgs.18.2",
+    "2Chr.29.1"
+   ]
+  },
+  "areli_296": {
+   "name": "Areli",
+   "sex": "M",
+   "father": "gad_1262",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.16",
+    "Num.26.17"
+   ]
+  },
+  "bashemath_1887": {
+   "name": "Bashemath",
+   "sex": "F",
+   "father": "ishmael_630",
+   "mother": null,
+   "children": [
+    "reuel_2430"
+   ],
+   "verses": [
+    "Gen.28.9",
+    "Gen.36.3",
     "Gen.36.4",
     "Gen.36.10",
+    "Gen.36.13",
+    "Gen.36.17"
+   ]
+  },
+  "canaanitish_woman_915": {
+   "name": "Canaanitish woman",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "shaul_2562"
+   ],
+   "verses": [
+    "Gen.46.10",
+    "Exod.6.15"
+   ]
+  },
+  "raddai_2387": {
+   "name": "Raddai",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.2.14"
+   ]
+  },
+  "ludim_1835": {
+   "name": "Ludim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.13",
+    "1Chr.1.11"
+   ],
+   "kind": "nation"
+  },
+  "huz_1582": {
+   "name": "Huz",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "milcah_2082",
+   "children": [],
+   "verses": [
+    "Gen.22.21"
+   ]
+  },
+  "zephon_3093": {
+   "name": "Zephon",
+   "sex": "M",
+   "father": "gad_1262",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.16",
+    "Num.26.15"
+   ]
+  },
+  "beriah_478": {
+   "name": "Beriah",
+   "sex": "M",
+   "father": "asher_337",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.17",
+    "Num.26.44",
+    "Num.26.45",
+    "1Chr.7.30",
+    "1Chr.7.31"
+   ]
+  },
+  "daughter_of_lot_older_985": {
+   "name": "Daughter of Lot - Older",
+   "sex": "F",
+   "father": "lot_1830",
+   "mother": null,
+   "children": [
+    "moab_2103"
+   ],
+   "verses": [
+    "Gen.19.31",
+    "Gen.19.33",
+    "Gen.19.34",
+    "Gen.19.37"
+   ]
+  },
+  "ahaz_118": {
+   "name": "Ahaz",
+   "sex": "M",
+   "father": "jotham_1735",
+   "mother": null,
+   "children": [
+    "hezekiah_1512",
+    "maaseiah_1852"
+   ],
+   "verses": [
+    "2Kgs.15.38",
+    "2Kgs.16.1",
+    "2Kgs.16.2",
+    "2Kgs.16.5",
+    "2Kgs.16.7",
+    "2Kgs.16.8",
+    "2Kgs.16.10",
+    "2Kgs.16.11"
+   ],
+   "mainLine": true,
+   "birthYear": -762,
+   "deathYear": -725
+  },
+  "eldaah_1057": {
+   "name": "Eldaah",
+   "sex": "M",
+   "father": "midian_2075",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.25.4",
+    "1Chr.1.33"
+   ]
+  },
+  "ashkenaz_338": {
+   "name": "Ashkenaz",
+   "sex": "M",
+   "father": "gomer_1328",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.3",
+    "1Chr.1.6",
+    "Jer.51.27"
+   ]
+  },
+  "teman_2838": {
+   "name": "Teman",
+   "sex": "M",
+   "father": "eliphaz_1144",
+   "mother": null,
+   "children": [],
+   "verses": [
     "Gen.36.11",
-    "Gen.36.12",
     "Gen.36.15",
-    "Gen.36.16",
-    "1Chr.1.35",
     "1Chr.1.36"
-   ]
-  },
-  "tola_2878": {
-   "name": "Tola",
-   "sex": "M",
-   "father": "issachar_645",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.13",
-    "Num.26.23",
-    "1Chr.7.1",
-    "1Chr.7.2"
-   ]
-  },
-  "becher_423": {
-   "name": "Becher",
-   "sex": "M",
-   "father": "benjamin_463",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.21",
-    "1Chr.7.6",
-    "1Chr.7.8"
    ]
   },
   "sarah_2473": {
@@ -3672,8 +5284,149 @@
    "birthYear": -1986,
    "deathYear": -1859
   },
-  "jidlaph_1615": {
-   "name": "Jidlaph",
+  "midian_2075": {
+   "name": "Midian",
+   "sex": "M",
+   "father": "abraham_58",
+   "mother": "keturah_1782",
+   "children": [
+    "eldaah_1057",
+    "abida_21",
+    "henoch_1402",
+    "epher_1201",
+    "ephah_1197"
+   ],
+   "verses": [
+    "Gen.25.2",
+    "Gen.25.4",
+    "Gen.36.35",
+    "Exod.2.15",
+    "Exod.2.16",
+    "Exod.3.1",
+    "Exod.4.19",
+    "Exod.18.1"
+   ]
+  },
+  "nahor_2143": {
+   "name": "Nahor",
+   "sex": "M",
+   "father": "terah_2841",
+   "mother": null,
+   "children": [
+    "thahash_2845",
+    "chesed_938",
+    "bethuel_487",
+    "maachah_1840",
+    "huz_1582",
+    "hazo_1468",
+    "jidlaph_1615",
+    "tebah_2832",
+    "pildash_2357",
+    "kemuel_1773",
+    "buz_529",
+    "gaham_1267"
+   ],
+   "verses": [
+    "Gen.11.26",
+    "Gen.11.27",
+    "Gen.11.29",
+    "Gen.22.20",
+    "Gen.22.23",
+    "Gen.24.15",
+    "Gen.24.24",
+    "Gen.24.47"
+   ],
+   "note": "brother of Abraham"
+  },
+  "johanan_1667": {
+   "name": "Johanan",
+   "sex": "M",
+   "father": "josiah_1730",
+   "mother": "zebudah_3000",
+   "children": [],
+   "verses": [
+    "1Chr.3.15"
+   ]
+  },
+  "shammah_2700": {
+   "name": "Shammah",
+   "sex": "M",
+   "father": "jesse_903",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Sam.16.9",
+    "1Sam.17.13",
+    "2Sam.13.3",
+    "2Sam.13.32",
+    "1Chr.2.13"
+   ]
+  },
+  "jahzeel_706": {
+   "name": "Jahzeel",
+   "sex": "M",
+   "father": "naphtali_2149",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.24",
+    "Num.26.48",
+    "1Chr.7.13"
+   ]
+  },
+  "japhia_728": {
+   "name": "Japhia",
+   "sex": "M",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.5.15",
+    "1Chr.3.7",
+    "1Chr.14.6"
+   ]
+  },
+  "abraham_58": {
+   "name": "Abraham",
+   "sex": "M",
+   "father": "terah_2841",
+   "mother": null,
+   "children": [
+    "ishmael_630",
+    "isaac_616",
+    "medan_1978",
+    "midian_2075",
+    "zimran_3086",
+    "shuah_2727",
+    "jokshan_1685",
+    "ishbak_620"
+   ],
+   "verses": [
+    "Gen.11.26",
+    "Gen.11.27",
+    "Gen.11.29",
+    "Gen.11.31",
+    "Gen.12.1",
+    "Gen.12.4",
+    "Gen.12.5",
+    "Gen.12.6"
+   ],
+   "mainLine": true,
+   "birthYear": -1995,
+   "deathYear": -1820
+  },
+  "hashubah_1445": {
+   "name": "Hashubah",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.20"
+   ]
+  },
+  "chesed_938": {
+   "name": "Chesed",
    "sex": "M",
    "father": "nahor_2143",
    "mother": "milcah_2082",
@@ -3682,72 +5435,29 @@
     "Gen.22.22"
    ]
   },
-  "hushim_1579": {
-   "name": "Hushim",
-   "sex": "M",
-   "father": "dan_973",
+  "ephah_1197": {
+   "name": "Ephah",
+   "sex": "F",
+   "father": "midian_2075",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.23",
-    "Num.26.42"
+    "Gen.25.4",
+    "1Chr.1.33",
+    "Isa.60.6"
    ]
   },
-  "sheba_2568": {
-   "name": "Sheba",
+  "havilah_1461": {
+   "name": "Havilah",
    "sex": "M",
-   "father": "joktan_1686",
+   "father": "cush_962",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.28",
-    "1Chr.1.22"
+    "Gen.10.7",
+    "1Chr.1.9"
    ],
-   "note": "son of Joktan"
-  },
-  "gether_1308": {
-   "name": "Gether",
-   "sex": "M",
-   "father": "aram_285",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.23",
-    "1Chr.1.17"
-   ]
-  },
-  "shuni_2731": {
-   "name": "Shuni",
-   "sex": "M",
-   "father": "gad_1262",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.46.16",
-    "Num.26.15"
-   ]
-  },
-  "hazo_1468": {
-   "name": "Hazo",
-   "sex": "M",
-   "father": "nahor_2143",
-   "mother": "milcah_2082",
-   "children": [],
-   "verses": [
-    "Gen.22.22"
-   ]
-  },
-  "zemarite_3036": {
-   "name": "Zemarite",
-   "sex": "M",
-   "father": "canaan_914",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.18",
-    "1Chr.1.16"
-   ],
-   "kind": "nation"
+   "note": "son of Cush"
   },
   "aholibamah_1761": {
    "name": "Aholibamah",
@@ -3767,99 +5477,157 @@
     "Gen.36.18"
    ]
   },
-  "almodad_191": {
-   "name": "Almodad",
-   "sex": "M",
-   "father": "joktan_1686",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.26",
-    "1Chr.1.20"
-   ]
-  },
-  "hul_1566": {
-   "name": "Hul",
-   "sex": "M",
-   "father": "aram_285",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.23",
-    "1Chr.1.17"
-   ]
-  },
-  "nahor_2142": {
-   "name": "Nahor",
-   "sex": "M",
-   "father": "serug_2503",
+  "eve_1231": {
+   "name": "Eve",
+   "sex": "F",
+   "father": null,
    "mother": null,
    "children": [
-    "terah_2841"
+    "cain_533",
+    "abel_13",
+    "seth_2504"
    ],
    "verses": [
-    "Gen.11.22",
-    "Gen.11.23",
-    "Gen.11.24",
-    "Gen.11.25",
-    "Josh.24.2",
-    "1Chr.1.26",
-    "Luke.3.34"
+    "Gen.3.20",
+    "Gen.4.1",
+    "2Cor.11.3",
+    "1Tim.2.13"
    ],
-   "note": "father of Terah",
-   "mainLine": true,
-   "birthYear": -2154,
-   "deathYear": -2006
+   "birthYear": -4003
   },
-  "hivite_1534": {
-   "name": "Hivite",
+  "letushim_1818": {
+   "name": "Letushim",
    "sex": "M",
-   "father": "canaan_914",
+   "father": "dedan_999",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.17",
-    "Gen.34.2",
-    "Gen.36.2",
-    "Exod.23.28",
-    "Exod.33.2",
-    "Exod.34.11",
-    "Josh.9.1",
-    "Josh.11.3"
-   ],
-   "kind": "nation"
-  },
-  "tubal_2883": {
-   "name": "Tubal",
-   "sex": "M",
-   "father": "japheth_726",
-   "mother": null,
-   "children": [],
-   "verses": [
-    "Gen.10.2",
-    "1Chr.1.5",
-    "Isa.66.19",
-    "Ezek.27.13",
-    "Ezek.32.26",
-    "Ezek.38.2",
-    "Ezek.38.3",
-    "Ezek.39.1"
+    "Gen.25.3"
    ]
   },
-  "girgasite_1322": {
-   "name": "Girgasite",
+  "asenath_335": {
+   "name": "Asenath",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "manasseh_1928",
+    "ephraim_1206"
+   ],
+   "verses": [
+    "Gen.41.45",
+    "Gen.41.50",
+    "Gen.46.20"
+   ]
+  },
+  "mehujael_1983": {
+   "name": "Mehujael",
    "sex": "M",
-   "father": "canaan_914",
+   "father": "irad_611",
+   "mother": null,
+   "children": [
+    "methusael_2041"
+   ],
+   "verses": [
+    "Gen.4.18"
+   ]
+  },
+  "salmon_2463": {
+   "name": "Salmon",
+   "sex": "M",
+   "father": "nahshon_2144",
+   "mother": null,
+   "children": [
+    "boaz_519"
+   ],
+   "verses": [
+    "Ruth.4.20",
+    "Ruth.4.21",
+    "1Chr.2.11",
+    "Matt.1.4",
+    "Matt.1.5",
+    "Luke.3.32"
+   ],
+   "mainLine": true
+  },
+  "basmath_415": {
+   "name": "Basmath",
+   "sex": "F",
+   "father": "solomon_2762",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.10.16",
-    "1Chr.1.14"
+    "1Kgs.4.15"
+   ]
+  },
+  "casluhim_923": {
+   "name": "Casluhim",
+   "sex": "M",
+   "father": "mizraim_2100",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.14",
+    "1Chr.1.12"
    ],
    "kind": "nation"
   },
-  "teman_2838": {
-   "name": "Teman",
+  "elisheba_1162": {
+   "name": "Elisheba",
+   "sex": "F",
+   "father": "amminadab_228",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Exod.6.23"
+   ]
+  },
+  "meshullam_2021": {
+   "name": "Meshullam",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.19"
+   ]
+  },
+  "tamar_2822": {
+   "name": "Tamar",
+   "sex": "F",
+   "father": "david_994",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "2Sam.13.1",
+    "2Sam.13.2",
+    "2Sam.13.4",
+    "2Sam.13.5",
+    "2Sam.13.6",
+    "2Sam.13.7",
+    "2Sam.13.8",
+    "2Sam.13.10"
+   ]
+  },
+  "shelah_2593": {
+   "name": "Shelah",
+   "sex": "M",
+   "father": "judah_1751",
+   "mother": "daughter_of_shuah_993",
+   "children": [],
+   "verses": [
+    "Gen.38.5",
+    "Gen.38.11",
+    "Gen.38.14",
+    "Gen.38.26",
+    "Gen.46.12",
+    "Num.26.20",
+    "1Chr.2.3",
+    "1Chr.4.21"
+   ]
+  },
+  "zepho_3042": {
+   "name": "Zepho",
    "sex": "M",
    "father": "eliphaz_1144",
    "mother": null,
@@ -3870,82 +5638,379 @@
     "1Chr.1.36"
    ]
   },
-  "jemuel_838": {
-   "name": "Jemuel",
+  "enoch_1191": {
+   "name": "Enoch",
    "sex": "M",
-   "father": "simeon_2741",
+   "father": "cain_533",
+   "mother": null,
+   "children": [
+    "irad_611"
+   ],
+   "verses": [
+    "Gen.4.17",
+    "Gen.4.18"
+   ],
+   "note": "son of Cain"
+  },
+  "eglah_1036": {
+   "name": "Eglah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "ithream_655"
+   ],
+   "verses": [
+    "2Sam.3.5",
+    "1Chr.3.3"
+   ]
+  },
+  "sadoc_2454": {
+   "name": "Sadoc",
+   "sex": "M",
+   "father": "azor_559",
+   "mother": null,
+   "children": [
+    "achim_65"
+   ],
+   "verses": [
+    "Matt.1.14"
+   ],
+   "mainLine": true
+  },
+  "bilhah_502": {
+   "name": "Bilhah",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "dan_973",
+    "naphtali_2149"
+   ],
+   "verses": [
+    "Gen.29.29",
+    "Gen.30.3",
+    "Gen.30.4",
+    "Gen.30.5",
+    "Gen.30.7",
+    "Gen.35.22",
+    "Gen.35.25",
+    "Gen.37.2"
+   ]
+  },
+  "mizzah_2101": {
+   "name": "Mizzah",
+   "sex": "M",
+   "father": "reuel_2430",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.10",
-    "Exod.6.15",
-    "Num.26.12",
-    "1Chr.4.24"
+    "Gen.36.13",
+    "Gen.36.17",
+    "1Chr.1.37"
    ]
   },
-  "kohath_1790": {
-   "name": "Kohath",
+  "togarmah_2875": {
+   "name": "Togarmah",
    "sex": "M",
-   "father": "levi_1820",
+   "father": "gomer_1328",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.11",
-    "Exod.6.16",
-    "Exod.6.18",
-    "Num.3.17",
-    "Num.3.19",
-    "Num.3.27",
-    "Num.3.29",
-    "Num.4.2"
+    "Gen.10.3",
+    "1Chr.1.6",
+    "Ezek.27.14",
+    "Ezek.38.6"
    ]
   },
-  "guni_1330": {
-   "name": "Guni",
+  "hadoram_1345": {
+   "name": "Hadoram",
    "sex": "M",
-   "father": "naphtali_2149",
+   "father": "joktan_1686",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.24",
-    "Num.26.48",
-    "1Chr.7.13"
+    "Gen.10.27",
+    "1Chr.1.21"
    ]
   },
-  "jashub_1638": {
-   "name": "Jashub",
+  "amaziah_214": {
+   "name": "Amaziah",
    "sex": "M",
-   "father": "issachar_645",
+   "father": "joash_1632",
+   "mother": "jehoaddan_783",
+   "children": [
+    "uzziah_375"
+   ],
+   "verses": [
+    "2Kgs.12.21",
+    "2Kgs.13.12",
+    "2Kgs.14.1",
+    "2Kgs.14.8",
+    "2Kgs.14.9",
+    "2Kgs.14.11",
+    "2Kgs.14.13",
+    "2Kgs.14.15"
+   ],
+   "mainLine": true,
+   "birthYear": -862,
+   "deathYear": -809
+  },
+  "jacob_683": {
+   "name": "Jacob",
+   "sex": "M",
+   "father": "matthan_1968",
+   "mother": null,
+   "children": [
+    "joseph_1715"
+   ],
+   "verses": [
+    "Matt.1.15",
+    "Matt.1.16"
+   ],
+   "note": "father of Joseph",
+   "mainLine": true
+  },
+  "adam_78": {
+   "name": "Adam",
+   "sex": "M",
+   "father": null,
+   "mother": null,
+   "children": [
+    "cain_533",
+    "abel_13",
+    "seth_2504"
+   ],
+   "verses": [
+    "Gen.2.19",
+    "Gen.2.20",
+    "Gen.2.21",
+    "Gen.2.23",
+    "Gen.3.8",
+    "Gen.3.9",
+    "Gen.3.17",
+    "Gen.3.20"
+   ],
+   "mainLine": true,
+   "birthYear": -4003,
+   "deathYear": -3073
+  },
+  "thahash_2845": {
+   "name": "Thahash",
+   "sex": "M",
+   "father": "nahor_2143",
+   "mother": "reumah_2433",
+   "children": [],
+   "verses": [
+    "Gen.22.24"
+   ]
+  },
+  "abigail_26": {
+   "name": "Abigail",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "daniel_939"
+   ],
+   "verses": [
+    "1Sam.25.3",
+    "1Sam.25.14",
+    "1Sam.25.18",
+    "1Sam.25.23",
+    "1Sam.25.32",
+    "1Sam.25.36",
+    "1Sam.25.39",
+    "1Sam.25.40"
+   ]
+  },
+  "jecamiah_749": {
+   "name": "Jecamiah",
+   "sex": "M",
+   "father": "jehoiachin_791",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.13",
-    "Num.26.24",
-    "1Chr.7.1"
+    "1Chr.3.18"
    ]
   },
-  "hezron_1519": {
-   "name": "Hezron",
+  "abital_54": {
+   "name": "Abital",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "shephatiah_2657"
+   ],
+   "verses": [
+    "2Sam.3.4",
+    "1Chr.3.3"
+   ]
+  },
+  "elihu_1129": {
+   "name": "Elihu",
    "sex": "M",
-   "father": "reuben_2429",
+   "father": "jesse_903",
    "mother": null,
    "children": [],
    "verses": [
-    "Gen.46.9",
-    "Exod.6.14",
-    "Num.26.6",
-    "1Chr.2.24",
-    "1Chr.5.3"
+    "1Chr.27.18"
    ]
   },
-  "jubal_1748": {
-   "name": "Jubal",
+  "nahshon_2144": {
+   "name": "Nahshon",
    "sex": "M",
-   "father": "lamech_1808",
-   "mother": "adah_69",
+   "father": "amminadab_228",
+   "mother": null,
+   "children": [
+    "salmon_2463"
+   ],
+   "verses": [
+    "Exod.6.23",
+    "Num.1.7",
+    "Num.2.3",
+    "Num.7.12",
+    "Num.7.17",
+    "Num.10.14",
+    "Ruth.4.20",
+    "1Chr.2.10"
+   ],
+   "mainLine": true
+  },
+  "ard_293": {
+   "name": "Ard",
+   "sex": "M",
+   "father": "benjamin_463",
+   "mother": null,
    "children": [],
    "verses": [
-    "Gen.4.21"
+    "Gen.46.21"
+   ]
+  },
+  "daughter_of_machir_986": {
+   "name": "Daughter of Machir",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "segub_2484"
+   ],
+   "verses": [
+    "1Chr.2.21"
+   ]
+  },
+  "ahinoam_153": {
+   "name": "Ahinoam",
+   "sex": "F",
+   "father": null,
+   "mother": null,
+   "children": [
+    "amnon_232"
+   ],
+   "verses": [
+    "1Sam.25.43",
+    "1Sam.27.3",
+    "1Sam.30.5",
+    "2Sam.2.2",
+    "2Sam.3.2",
+    "1Chr.3.1"
+   ]
+  },
+  "laban_1803": {
+   "name": "Laban",
+   "sex": "M",
+   "father": "bethuel_487",
+   "mother": null,
+   "children": [
+    "leah_1813",
+    "rachel_2386"
+   ],
+   "verses": [
+    "Gen.24.29",
+    "Gen.24.50",
+    "Gen.25.20",
+    "Gen.27.43",
+    "Gen.28.2",
+    "Gen.28.5",
+    "Gen.29.5",
+    "Gen.29.10"
+   ]
+  },
+  "sinite_2755": {
+   "name": "Sinite",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.17",
+    "1Chr.1.15"
+   ],
+   "kind": "nation"
+  },
+  "hoshama_1558": {
+   "name": "Hoshama",
+   "sex": "M",
+   "father": "jehoiachin_791",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.18"
+   ]
+  },
+  "zidon_2738": {
+   "name": "Zidon",
+   "sex": "M",
+   "father": "canaan_914",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.10.15",
+    "1Chr.1.13"
+   ]
+  },
+  "seth_2504": {
+   "name": "Seth",
+   "sex": "M",
+   "father": "adam_78",
+   "mother": "eve_1231",
+   "children": [
+    "enos_1193"
+   ],
+   "verses": [
+    "Gen.4.25",
+    "Gen.4.26",
+    "Gen.5.3",
+    "Gen.5.4",
+    "Gen.5.6",
+    "Gen.5.7",
+    "Gen.5.8",
+    "Num.24.17"
+   ],
+   "mainLine": true,
+   "birthYear": -3873,
+   "deathYear": -2961
+  },
+  "ohel_2240": {
+   "name": "Ohel",
+   "sex": "M",
+   "father": "zerubbabel_3054",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "1Chr.3.20"
+   ]
+  },
+  "serah_2492": {
+   "name": "Serah",
+   "sex": "F",
+   "father": "asher_337",
+   "mother": null,
+   "children": [],
+   "verses": [
+    "Gen.46.17",
+    "Num.26.46",
+    "1Chr.7.30"
    ]
   }
  }
