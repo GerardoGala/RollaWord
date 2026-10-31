@@ -194,7 +194,7 @@
 // ------------------------------------------------------------------
 // Settings you can change
 // ------------------------------------------------------------------
-const TREE_FILE = 'genesis_tree.json';
+const TREE_FILE = 'family_tree.json';
 const TEXT_FILE = 'kjv_chapters.json';
 const FOLDERS = ['', 'bible/', '/bible/'];   // places to look for the two files above
 const HUE_STEP = 47;                          // how far the colour moves from one generation to the next
@@ -205,28 +205,30 @@ const LOAD_AHEAD = 400;                       // load the next generation when i
 function buildBands(data) {
   const P = data.people;
   const start = data.start;
-  const parentKey = function (id) {
-    const p = P[id];
-    if (p.father && P[p.father]) return p.father;
-    if (p.mother && P[p.mother]) return p.mother;
-    return null;
-  };
+  // A person sits one generation below their father. If the father is not in the tree
+  // (he is only a husband we know of), they sit one generation below their mother.
   const depthMemo = {};
+  const keyMemo = {};
   function depth(id) {
     if (id in depthMemo) return depthMemo[id];
     depthMemo[id] = null;                       // guards against loops
-    let d = null;
+    let d = null, key = null;
     if (start.indexOf(id) !== -1) d = 0;
     else {
-      const k = parentKey(id);
-      if (k) {
-        const kd = depth(k);
-        if (kd !== null) d = kd + 1;
+      const parents = [P[id].father, P[id].mother];
+      for (let i = 0; i < parents.length; i++) {
+        const k = parents[i];
+        if (k && P[k]) {
+          const kd = depth(k);
+          if (kd !== null) { d = kd + 1; key = k; break; }
+        }
       }
     }
     depthMemo[id] = d;
+    keyMemo[id] = key;
     return d;
   }
+  const parentKey = function (id) { depth(id); return keyMemo[id] || null; };
 
   const bands = [];
   const flat = [];
@@ -433,6 +435,7 @@ function showWho(id) {
   if (typeof p.deathYear === 'number') bits.push('died about ' + yearText(p.deathYear));
   const depth = model.depth(id);
   if (depth !== null) bits.push('generation ' + (depth + 1));
+  if (!p.mainLine) bits.push('link not yet checked');
   document.getElementById('whoMeta').textContent = bits.join(' · ');
 
   const fam = document.getElementById('family');
