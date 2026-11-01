@@ -666,6 +666,7 @@ function showWho(id) {
     bits.push(fam ? 'generation ' + (g + 1) + ' of the family of ' + data.people[fam].name : 'generation ' + (g + 1));
   }
   if (p.untraced) bits.push('not traced to Adam and Eve');
+  else if (p.linkVerse) bits.push('parent link read from ' + niceRef(p.linkVerse));
   else if (!p.mainLine) bits.push('link not yet checked');
   if (typeof model.sectionOf[id] === 'number' && !isShown(id)) bits.push('hidden in the tree while Traceable is on');
   document.getElementById('whoMeta').textContent = bits.join(' · ');
