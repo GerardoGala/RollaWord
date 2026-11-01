@@ -1,11 +1,12 @@
 /* Bible Family Tree: styles for bible.html and About.html */
   :root {
     --bg: #f4f1ea;
-    --ink: #222;
-    --muted: #666;
+    --ink: #006abc;
+    --muted: #006abc;
     --pane: #fffdf8;
-    --sel: #111;
+    --sel: #006abc;
     --line: #bdb5a2;
+    --blue: #006abc;
   }
   * { box-sizing: border-box; }
   [hidden] { display: none !important; }
@@ -84,7 +85,7 @@
     min-height: 66px;
     padding: 6px 3px 5px;
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: 0;
     background: hsl(var(--h) 70% 97%);
     color: var(--ink);
     font: inherit;
@@ -103,7 +104,7 @@
   }
   .tile.nation { border-style: dashed; border-color: hsl(var(--h) 30% 55%); }
   .tile[aria-pressed="true"] { outline: 3px solid var(--sel); outline-offset: 1px; background: #fff; }
-  .tile:focus-visible { outline: 3px solid #0a58ca; outline-offset: 1px; }
+  .tile:focus-visible { outline: 3px solid var(--blue); outline-offset: 1px; }
 
   #sentinel { height: 1px; }
   #status { padding: 14px; font-size: .85rem; color: var(--muted); }
@@ -115,7 +116,7 @@
   #who h1 small { font-weight: 400; color: var(--muted); font-size: .8rem; }
   .step {
     flex: none; width: 38px; height: 34px;
-    border: 1px solid var(--line); border-radius: 8px;
+    border: 1px solid var(--line); border-radius: 0;
     background: #fff; font-size: 1rem; cursor: pointer;
   }
   .step:disabled { opacity: .35; cursor: default; }
@@ -131,9 +132,9 @@
   .chip {
     flex: none; white-space: nowrap;
     border: 1px solid var(--line); background: #fff; color: var(--ink);
-    border-radius: 999px; padding: 2px 9px; font: inherit; font-size: .76rem; cursor: pointer;
+    border-radius: 0; padding: 2px 9px; font: inherit; font-size: .76rem; cursor: pointer;
   }
-  .chip[aria-current="true"] { background: #222; color: #fff; border-color: #222; }
+  .chip[aria-current="true"] { background: var(--blue); color: #fff; border-color: var(--blue); }
 
   #text {
     flex: 1; min-height: 0;
@@ -144,7 +145,7 @@
     line-height: 1.55;
   }
   #text h2 { margin: 0 0 8px; font-size: 1rem; font-family: system-ui, sans-serif; color: var(--muted); }
-  #text p.v { margin: 0 0 6px; padding: 2px 6px; border-radius: 6px; }
+  #text p.v { margin: 0 0 6px; padding: 2px 6px; border-radius: 0; }
   #text p.v sup { font-family: system-ui, sans-serif; font-size: .62em; color: var(--muted); margin-right: 3px; }
   #text p.v.hit { background: #ffe9a8; }
   #text .note { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
@@ -172,27 +173,27 @@
   .switch {
     display: flex; align-items: center; gap: 6px; flex: none;
     height: 36px; padding: 0 10px 0 6px;
-    border: 1px solid var(--line); border-radius: 999px;
+    border: 1px solid var(--line); border-radius: 0;
     background: #fff; color: var(--ink);
     font: inherit; font-size: .8rem; cursor: pointer;
   }
-  .switch .track { position: relative; width: 34px; height: 20px; border-radius: 999px; background: #8f8977; flex: none; transition: background .15s; }
+  .switch .track { position: relative; width: 34px; height: 20px; border-radius: 0; background: #8f8977; flex: none; transition: background .15s; }
   .switch .track::after {
     content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
-    border-radius: 50%; background: #fff; transition: transform .15s;
+    border-radius: 0; background: #fff; transition: transform .15s;
   }
-  .switch[aria-checked="true"] .track { background: #2f7d4f; }
+  .switch[aria-checked="true"] .track { background: var(--blue); }
   .switch[aria-checked="true"] .track::after { transform: translateX(14px); }
   .switch .state { font-size: .72rem; color: var(--muted); min-width: 1.7em; }
   #search {
     flex: 1; min-width: 0; height: 36px;
-    border: 1px solid var(--line); border-radius: 999px;
+    border: 1px solid var(--line); border-radius: 0;
     padding: 0 12px; font: inherit; font-size: 16px;   /* 16px stops phones from zooming in on focus */
     background: #fff; color: var(--ink);
   }
   .creditsBtn {
     flex: none; height: 36px; padding: 0 11px;
-    border: 1px solid var(--line); border-radius: 999px;
+    border: 1px solid var(--line); border-radius: 0;
     background: #fff; color: var(--ink); font: inherit; font-size: .8rem; cursor: pointer;
     display: inline-flex; align-items: center; text-decoration: none;
   }
@@ -200,11 +201,11 @@
     .switch .state, .creditsBtn .txt { display: none; }
     .creditsBtn { padding: 0 10px; }
   }
-  .switch:focus-visible, #search:focus-visible, .creditsBtn:focus-visible, .res:focus-visible { outline: 3px solid #0a58ca; outline-offset: 1px; }
+  .switch:focus-visible, #search:focus-visible, .creditsBtn:focus-visible, .res:focus-visible { outline: 3px solid var(--blue); outline-offset: 1px; }
 
   #results {
     position: absolute; left: 8px; right: 8px; bottom: calc(100% + 4px); z-index: 6;
-    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    background: #fff; border: 1px solid var(--line); border-radius: 0;
     box-shadow: 0 4px 18px rgba(0, 0, 0, .22);
   }
   #results { max-height: 230px; max-height: min(55dvh, 230px); overflow-y: auto; }
@@ -217,7 +218,7 @@
   .res:hover { background: #f4efe2; }
   .res .rn { font-weight: 650; font-size: .9rem; }
   .res .rd { display: block; font-size: .74rem; color: var(--muted); }
-  .res .tag { margin-left: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; font-size: .66rem; font-weight: 400; color: var(--muted); }
+  .res .tag { margin-left: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 0; font-size: .66rem; font-weight: 400; color: var(--muted); }
   #results .empty { padding: 10px 12px; font-size: .82rem; color: var(--muted); }
 
   /* ---------- phone held upright: ask for landscape ---------- */
