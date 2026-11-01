@@ -200,15 +200,15 @@
     flex: none; height: 36px; padding: 0 11px;
     border: 1px solid var(--line); border-radius: 999px;
     background: #fff; color: var(--ink); font: inherit; font-size: .8rem; cursor: pointer;
+    display: inline-flex; align-items: center; text-decoration: none;
   }
-  .creditsBtn[aria-expanded="true"] { background: #222; color: #fff; border-color: #222; }
   @media (max-width: 760px) {
     .switch .state, .creditsBtn .txt { display: none; }
     .creditsBtn { padding: 0 10px; }
   }
   .switch:focus-visible, #search:focus-visible, .creditsBtn:focus-visible, .res:focus-visible { outline: 3px solid #0a58ca; outline-offset: 1px; }
 
-  #results, #creditPanel {
+  #results {
     position: absolute; left: 8px; right: 8px; bottom: calc(100% + 4px); z-index: 6;
     background: #fff; border: 1px solid var(--line); border-radius: 10px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, .22);
@@ -225,8 +225,6 @@
   .res .rd { display: block; font-size: .74rem; color: var(--muted); }
   .res .tag { margin-left: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; font-size: .66rem; font-weight: 400; color: var(--muted); }
   #results .empty { padding: 10px 12px; font-size: .82rem; color: var(--muted); }
-  #creditPanel { padding: 10px 12px; font-size: .78rem; line-height: 1.45; color: var(--ink); }
-  #creditPanel a { color: #0a58ca; }
 
   /* ---------- phone held upright: ask for landscape ---------- */
   #rotate {
@@ -266,8 +264,7 @@
     <div id="text"><p class="note">Tap any person on the left to read where the Bible mentions them.</p></div>
 
     <div id="credit">
-      <span id="creditText">King James Version (public domain). Family links: Theographic Bible Metadata, CC BY-SA 4.0,
-      <a href="https://github.com/robertrouse/theographic-bible-metadata" target="_blank" rel="noopener">github.com/robertrouse/theographic-bible-metadata</a>.</span>
+      <span id="creditText"><a href="/bible/About.html" target="_blank" rel="noopener">About this app, how to use it, and credits</a> &middot; KJV text and Theographic Bible Metadata (CC BY-SA 4.0)</span>
 
       <div id="bar" hidden>
         <button type="button" class="switch" id="trace" role="switch" aria-checked="true"
@@ -276,12 +273,11 @@
         </button>
         <input id="search" type="search" placeholder="Find a person" aria-label="Find a person by name"
                autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
-        <button type="button" class="creditsBtn" id="creditsBtn" aria-expanded="false" aria-controls="creditPanel" aria-label="Credits">
-          <span aria-hidden="true">&#9432;</span><span class="txt"> Credits</span>
-        </button>
+        <a class="creditsBtn" id="creditsBtn" href="/bible/About.html" target="_blank" rel="noopener" aria-label="About this app and credits">
+          <span aria-hidden="true">&#9432;</span><span class="txt"> About</span>
+        </a>
       </div>
       <div id="results" role="list" hidden></div>
-      <div id="creditPanel" hidden></div>
     </div>
   </section>
 </div>
@@ -470,7 +466,6 @@ const traceState = document.getElementById('traceState');
 const searchEl = document.getElementById('search');
 const resultsEl = document.getElementById('results');
 const creditsBtn = document.getElementById('creditsBtn');
-const creditPanel = document.getElementById('creditPanel');
 
 let data = null, model = null, chapters = null;
 let nextSection = 0;
@@ -842,16 +837,12 @@ function searchPeople(query) {
 
 function closePanels() {
   resultsEl.hidden = true;
-  creditPanel.hidden = true;
-  creditsBtn.setAttribute('aria-expanded', 'false');
 }
 
 function renderResults() {
   const q = searchEl.value.trim();
   resultsEl.textContent = '';
   if (!q || !data) { resultsEl.hidden = true; return; }
-  creditPanel.hidden = true;
-  creditsBtn.setAttribute('aria-expanded', 'false');
   const hits = searchPeople(q);
   resultsEl.hidden = false;
   if (!hits.length) {
@@ -914,17 +905,6 @@ resultsEl.addEventListener('keydown', function (e) {
   else if (e.key === 'Escape') { e.preventDefault(); searchEl.focus(); closePanels(); }
 });
 
-// ----- credits -----
-creditsBtn.addEventListener('click', function () {
-  const open = creditPanel.hidden;
-  closePanels();
-  if (open) {
-    creditPanel.innerHTML = document.getElementById('creditText').innerHTML +
-      '<br>Family relationships come from the dataset, with corrections where the verses disagree. Only the line from Adam to Jesus has been checked verse by verse. Shared under the same licence (CC BY-SA 4.0).';
-    creditPanel.hidden = false;
-    creditsBtn.setAttribute('aria-expanded', 'true');
-  }
-});
 document.addEventListener('pointerdown', function (e) {
   if (!document.getElementById('credit').contains(e.target)) closePanels();
 });
