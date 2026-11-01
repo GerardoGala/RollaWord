@@ -41,22 +41,24 @@
 
   /* ---------- generation bands (one colour per generation) ---------- */
   .band {
-    background: hsl(var(--h) 55% 90%);
-    border-bottom: 2px solid hsl(var(--h) 40% 72%);
+    --h: 205;
+    background: hsl(var(--h) 70% 94%);
+    border-bottom: 2px solid hsl(var(--h) 55% 70%);
     padding: 8px 10px 12px;
   }
+  .band[data-alt="1"] { background: hsl(var(--h) 65% 84%); border-bottom-color: hsl(var(--h) 55% 62%); }
   .band > h2 {
     margin: 0 0 4px;
     font-size: .74rem;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: hsl(var(--h) 50% 22%);
+    color: var(--blue);
   }
   .group > h3 {
     margin: 8px 0 4px;
     font-size: .82rem;
     font-weight: 600;
-    color: hsl(var(--h) 45% 20%);
+    color: var(--blue);
   }
   .grid {
     display: grid;
@@ -86,23 +88,23 @@
     padding: 6px 3px 5px;
     border: 2px solid transparent;
     border-radius: 0;
-    background: hsl(var(--h) 70% 97%);
+    background: #fff;
     color: var(--ink);
     font: inherit;
     cursor: pointer;
     position: relative;
     -webkit-tap-highlight-color: transparent;
   }
-  .tile svg { width: 30px; height: 30px; color: hsl(var(--h) 55% 33%); flex: none; }
+  .tile svg { width: 30px; height: 30px; color: var(--blue); flex: none; }
   .tile .name { font-size: .82rem; font-weight: 650; line-height: 1.1; text-align: center; overflow-wrap: anywhere; }
   .tile .sub { font-size: .68rem; color: var(--muted); line-height: 1.1; text-align: center; }
-  .tile.main { border-color: hsl(var(--h) 60% 38%); }
+  .tile.main { border-color: var(--blue); }
   .tile.main::after {
     content: "\2605";
     position: absolute; top: 2px; right: 5px;
-    font-size: .75rem; color: hsl(var(--h) 60% 35%);
+    font-size: .75rem; color: var(--blue);
   }
-  .tile.nation { border-style: dashed; border-color: hsl(var(--h) 30% 55%); }
+  .tile.nation { border-style: dashed; border-color: var(--blue); }
   .tile[aria-pressed="true"] { outline: 3px solid var(--sel); outline-offset: 1px; background: #fff; }
   .tile:focus-visible { outline: 3px solid var(--blue); outline-offset: 1px; }
 
@@ -117,8 +119,9 @@
   .step {
     flex: none; width: 38px; height: 34px;
     border: 1px solid var(--line); border-radius: 0;
-    background: #fff; font-size: 1rem; cursor: pointer;
+    background: #fff; color: var(--blue); font-size: 1rem; cursor: pointer;
   }
+  #search::placeholder { color: var(--blue); opacity: .7; }
   .step:disabled { opacity: .35; cursor: default; }
   .meta { margin-top: 4px; font-size: .78rem; color: var(--muted); }
   /* each row of chips is one line that you can swipe sideways, so the Bible text keeps most of the height */
