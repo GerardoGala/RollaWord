@@ -196,6 +196,11 @@
     background: #fff; color: var(--ink); font: inherit; font-size: .8rem; cursor: pointer;
     display: inline-flex; align-items: center; text-decoration: none;
   }
+  /* the About button throbs to catch the eye; it stops for people who ask for less motion, and while it is hovered or focused */
+  @keyframes throb { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.14); } }
+  .creditsBtn { animation: throb 1.5s ease-in-out infinite; transform-origin: center; }
+  .creditsBtn:hover, .creditsBtn:focus-visible { animation: none; }
+  @media (prefers-reduced-motion: reduce) { .creditsBtn { animation: none; } }
   @media (max-width: 760px) {
     .switch .state, .creditsBtn .txt { display: none; }
     .creditsBtn { padding: 0 10px; }
