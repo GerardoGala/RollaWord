@@ -29,9 +29,7 @@
     <div id="text"><p class="note">Tap any person on the left to read where the Bible mentions them.</p></div>
 
     <div id="credit">
-      <span id="creditText"><a href="/bible/about.html" target="_blank" rel="noopener">About this app, how to use it, and credits</a> &middot; KJV text and Theographic Bible Metadata (CC BY-SA 4.0)</span>
-
-      <div id="bar" hidden>
+      <div id="bar">
         <button type="button" class="switch" id="trace" role="switch" aria-checked="true"
                 title="On: only people who can be traced back to Adam and Eve. Off: everyone, including families that cannot be traced.">
           <span class="track" aria-hidden="true"></span><span class="lab">Traceable</span><span class="state" id="traceState">On</span>
@@ -536,18 +534,6 @@ function step(delta) {
 }
 prevBtn.addEventListener('click', function () { step(-1); });
 nextBtn.addEventListener('click', function () { step(1); });
-
-// ------------------------------------------------------------------
-// The bar: appears over the credit line after the first tap in the reader
-// ------------------------------------------------------------------
-let barShown = false;
-function showBar() {
-  if (barShown) return;
-  barShown = true;
-  barEl.hidden = false;
-}
-readerEl.addEventListener('click', showBar);
-readerEl.addEventListener('focusin', showBar);
 
 function setScope(on) {
   scopeOn = on;

@@ -153,25 +153,21 @@
   #text p.v.hit { background: #d6e8f7; border-left: 4px solid var(--blue); padding-left: 8px; }
   #text .note { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
 
-  /* ---------- the credit line, and the bar that covers it after the first tap in the reader ---------- */
+  /* ---------- the bar at the foot of the reader: Traceable, search, About ---------- */
   #credit {
     flex: none; position: relative;
     display: flex; align-items: center;
-    min-height: 46px; padding: 5px 14px;
+    min-height: 46px; padding: 0;
     font-size: .68rem; color: var(--muted);
     border-top: 1px solid #e3dccb;
   }
   #credit a { color: inherit; }
   #bar {
-    position: absolute; inset: 0;
+    width: 100%;
     display: flex; align-items: center; gap: 6px;
     padding: 5px 8px;
     background: var(--pane);
-    border-top: 1px solid #e3dccb;
-    animation: barIn .18s ease-out;
   }
-  @keyframes barIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) { #bar { animation: none; } }
 
   .switch {
     display: flex; align-items: center; gap: 6px; flex: none;
@@ -244,7 +240,7 @@ body.about { --line:#d8d1be; --blue:#006abc; --link:#006abc; --ink:#006abc; --mu
 html:has(body.about) { height:auto; }
   body.about main { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
   body.about header { margin-bottom: 8px; }
-  body.about h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  body.about h1 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 8px; }
   body.about .sub { color: var(--muted); margin: 0 0 14px; }
   body.about .open { display:inline-block; background:var(--blue); color:#fff; border:1px solid var(--blue); text-decoration:none; padding:9px 16px; border-radius:0; font-weight:600; transition:background .2s, color .2s; }
   body.about .open:hover, body.about .open:focus-visible { background:#fff; color:var(--blue); }
