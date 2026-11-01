@@ -416,6 +416,7 @@ function showWho(id) {
   const bits = [];
   if (p.kind === 'nation') bits.push('a nation, not one person');
   else bits.push(p.sex === 'F' ? 'woman' : 'man');
+  if (p.alt && p.alt.length) bits.push('also called ' + p.alt.join(', '));
   if (typeof p.birthYear === 'number') bits.push('born about ' + yearText(p.birthYear));
   if (typeof p.deathYear === 'number') bits.push('died about ' + yearText(p.deathYear));
   const g = model.genOf[id];
@@ -563,22 +564,35 @@ function describe(id) {
   const bits = [];
   const note = p.note || relation(id);
   if (note) bits.push(note);
+  const q = searchEl.value.trim().toLowerCase();
+  const a = q && p.name.toLowerCase().indexOf(q) === -1 ? altMatch(p, q) : null;
+  if (a) bits.push('also called ' + a);
   if (p.verses.length) bits.push(niceRef(p.verses[0]));
   return bits.join(' · ');
 }
 
-function searchPeople(query) {
+// the other names the dataset records for a person (Enosh for Enos, Timothy for Timotheus)
+function altMatch(p, q) {
+  if (!p.alt) return null;
+  for (let i = 0; i < p.alt.length; i++) {
+    if (p.alt[i].toLowerCase().indexOf(q) !== -1) return p.alt[i];
+  }
+  return null;
+}
+
+function searchPeople(query, ignoreScope) {
   const q = query.toLowerCase();
   const hits = [];
   Object.keys(data.people).forEach(function (id) {
     const p = data.people[id];
-    if (scopeOn && p.untraced) return;
+    if (scopeOn && !ignoreScope && p.untraced) return;
     const name = p.name.toLowerCase();
     let score = -1;
     if (name === q) score = 0;
     else if (name.indexOf(q) === 0) score = 1;
     else if (name.indexOf(q) > 0) score = 2;
     else if (p.note && p.note.toLowerCase().indexOf(q) !== -1) score = 3;
+    else if (altMatch(p, q)) score = 4;          // another spelling or name, such as Timothy for Timotheus
     if (score < 0) return;
     hits.push({ id: id, score: score, main: p.mainLine ? 0 : 1, order: typeof flatIndex[id] === 'number' ? flatIndex[id] : 1e9 });
   });
@@ -599,7 +613,10 @@ function renderResults() {
   if (!hits.length) {
     const e = document.createElement('div');
     e.className = 'empty';
-    e.textContent = scopeOn ? 'No one found. Turn Traceable off to search everyone.' : 'No one found.';
+    const hidden = scopeOn ? searchPeople(q, true).length : 0;
+    e.textContent = hidden
+      ? (hidden === 1 ? 'Found 1 person who is not traced to Adam and Eve.' : 'Found ' + hidden + ' people who are not traced to Adam and Eve.') + ' Turn Traceable off to see ' + 'them.'
+      : 'No one found.';
     resultsEl.appendChild(e);
     return;
   }
