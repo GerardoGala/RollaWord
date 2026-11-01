@@ -150,7 +150,7 @@
   #text h2 { margin: 0 0 8px; font-size: 1rem; font-family: system-ui, sans-serif; color: var(--muted); }
   #text p.v { margin: 0 0 6px; padding: 2px 6px; border-radius: 0; }
   #text p.v sup { font-family: system-ui, sans-serif; font-size: .62em; color: var(--muted); margin-right: 3px; }
-  #text p.v.hit { background: #ffe9a8; }
+  #text p.v.hit { background: #d6e8f7; border-left: 4px solid var(--blue); padding-left: 8px; }
   #text .note { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
 
   /* ---------- the credit line, and the bar that covers it after the first tap in the reader ---------- */
