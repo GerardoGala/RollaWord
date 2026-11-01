@@ -380,7 +380,7 @@ function fillScreen() {
 function updateStatus() {
   if (nextSection >= sectionLimit()) {
     statusEl.textContent = scopeOn
-      ? 'That is the end of the traced tree (' + model.tracedFlat + ' people). Tap the Bible text on the right to bring up the Traceable switch, then turn it off to add the families that cannot be traced to Adam and Eve.'
+      ? 'That is the end of the traced tree (' + model.tracedFlat + ' people). Turn the Traceable switch off to add the families that cannot be traced to Adam and Eve.'
       : 'That is everyone in the list (' + model.flat.length + ' people).';
     treeEl.appendChild(statusEl);
   } else {
