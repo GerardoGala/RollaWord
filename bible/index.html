@@ -1,10 +1,11 @@
 <!doctype html>
+<!-- Bible Family Tree, version listen4: Listen reads one verse. If you can find "toggleListen" in this file, it is the newest. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bible Family Tree</title>
-<link rel="stylesheet" href="/bible/bible.css">
+<link rel="stylesheet" href="/bible/bible.css?v=listen4">
 </head>
 <body>
 
@@ -458,7 +459,10 @@ function showWho(id) {
     l.textContent = 'Verses';
     vs.appendChild(l);
     p.verses.forEach(function (ref) {
-      vs.appendChild(chip(niceRef(ref), function () { showVerse(ref); }, ref === activeRef));
+      // the button for the verse on screen reads it aloud; any other button shows that verse
+      vs.appendChild(chip(niceRef(ref), function () {
+        if (ref === activeRef && listenCtx && canSpeak) toggleListen(); else showVerse(ref);
+      }, ref === activeRef));
     });
   }
   updateStepButtons(id);
@@ -472,6 +476,7 @@ function updateStepButtons(id) {
 }
 
 async function showVerse(ref) {
+  stopListening();
   activeRef = ref;
   document.querySelectorAll('#verses .chip').forEach(function (c) {
     c.removeAttribute('aria-current');
@@ -507,12 +512,64 @@ async function showVerse(ref) {
     if (String(n) === r.verse) { p.classList.add('hit'); target = p; }
     textEl.appendChild(p);
   });
+  listenCtx = target ? { text: chapter[r.verse] } : null;
+  if (target && canSpeak) {
+    const num = target.querySelector('sup');
+    num.className = 'listen';
+    num.setAttribute('role', 'button');
+    num.tabIndex = 0;
+    num.title = 'Listen to this verse';
+    num.addEventListener('click', toggleListen);
+    num.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleListen(); } });
+  }
   if (target) target.scrollIntoView({ block: 'center', behavior: reduceMotion ? 'auto' : 'smooth' });
   else textEl.scrollTop = 0;
 }
 
+// ------------------------------------------------------------------
+// Listen: tap the verse number, or the highlighted verse button at the top, and the phone's own voice
+// reads that one verse aloud
+// ------------------------------------------------------------------
+const canSpeak = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+let listenCtx = null;          // the verse on screen: { text }
+let listenRun = 0;             // changes whenever reading starts or stops, so an old reading cannot carry on
+let listenOn = false;
+
+function setListenIcon(on) {
+  listenOn = on;
+  document.documentElement.classList.toggle('listening', on);   // the CSS swaps the ▶ for a ■
+}
+
+function stopListening() {
+  listenRun++;
+  if (canSpeak) { try { speechSynthesis.cancel(); } catch (e) { /* nothing is playing */ } }
+  setListenIcon(false);
+}
+
+function pickVoice() {
+  const all = speechSynthesis.getVoices().filter(function (v) { return /^en/i.test(v.lang); });
+  return all.find(function (v) { return /en[-_]GB/i.test(v.lang); }) || all[0] || null;
+}
+
+function toggleListen() {
+  if (!canSpeak || !listenCtx) return;
+  if (listenOn) { stopListening(); return; }
+  const run = ++listenRun;
+  speechSynthesis.cancel();
+  setListenIcon(true);
+  const voice = pickVoice();
+  const u = new SpeechSynthesisUtterance(listenCtx.text);
+  u.lang = voice ? voice.lang : 'en-GB';
+  if (voice) u.voice = voice;
+  u.rate = 0.95;
+  u.onend = u.onerror = function () { if (run === listenRun) setListenIcon(false); };
+  speechSynthesis.speak(u);
+}
+window.addEventListener('pagehide', stopListening);
+
 function selectPerson(id) {
   if (!data.people[id]) return;
+  stopListening();
   current = id;
   if (isShown(id)) renderUpTo(model.sectionOf[id]);
   document.querySelectorAll('.tile[aria-pressed="true"]').forEach(function (t) { t.setAttribute('aria-pressed', 'false'); });

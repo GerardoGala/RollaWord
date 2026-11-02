@@ -1,4 +1,4 @@
-/* Bible Family Tree: styles for bible.html and About.html */
+/* Bible Family Tree: styles for bible.html and About.html (version listen4) */
   :root {
     --bg: #f4f1ea;
     --ink: #006abc;
@@ -150,6 +150,16 @@
   #text h2 { margin: 0 0 8px; font-size: 1rem; font-family: system-ui, sans-serif; color: var(--muted); }
   #text p.v { margin: 0 0 6px; padding: 2px 6px; border-radius: 0; }
   #text p.v sup { font-family: system-ui, sans-serif; font-size: .62em; color: var(--muted); margin-right: 3px; }
+  /* the verse number of the verse on screen is the Listen button; so is the highlighted verse button above */
+  #text p.v sup.listen {
+    cursor: pointer; background: var(--blue); color: #fff;
+    font-size: .72em; padding: 2px 6px 2px 4px; margin-right: 5px; vertical-align: .35em;
+  }
+  #text p.v sup.listen::before { content: "\25B6\00A0"; }
+  #text p.v sup.listen:hover { background: #fff; color: var(--blue); outline: 1px solid var(--blue); }
+  html.listening #text p.v sup.listen::before { content: "\25A0\00A0"; }
+  #verses .chip[aria-current="true"]::before { content: "\25B6\00A0"; }
+  html.listening #verses .chip[aria-current="true"]::before { content: "\25A0\00A0"; }
   #text p.v.hit { background: #d6e8f7; border-left: 4px solid var(--blue); padding-left: 8px; }
   #text .note { font-family: system-ui, sans-serif; font-size: .85rem; color: var(--muted); }
 
