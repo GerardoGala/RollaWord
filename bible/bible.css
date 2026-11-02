@@ -239,6 +239,15 @@
     #app { display: none; }
     #rotate { display: flex; }
   }
+  #rotate button {
+    margin-top: 8px; padding: 10px 16px; border: 1px solid var(--blue); background: var(--blue); color: #fff;
+    border-radius: 0; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+  }
+  #rotate button:hover { background: #fff; color: var(--blue); }
+  /* "Use it upright anyway": the tree on top, the Bible text underneath */
+  html.upright #rotate { display: none; }
+  html.upright #app { display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(0, 46%) minmax(0, 54%); }
+  html.upright #tree { border-right: 0; border-bottom: 2px solid var(--blue); }
 
 /* ================= About page (About.html) ================= */
 body.about { --line:#d8d1be; --blue:#006abc; --link:#006abc; --ink:#006abc; --muted:#006abc; height:auto; overflow:auto;

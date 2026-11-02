@@ -45,7 +45,8 @@
   </section>
 </div>
 
-<div id="rotate"><div class="big" aria-hidden="true">&#8635;</div><div>Please turn your phone sideways.<br>This page shows the family tree and the Bible text side by side.</div></div>
+<div id="rotate"><div class="big" aria-hidden="true">&#8635;</div><div>Please turn your phone sideways.<br>This page shows the family tree and the Bible text side by side.</div>
+  <button type="button" id="uprightBtn">Use it upright anyway</button></div>
 
 <noscript>This page needs JavaScript.</noscript>
 
@@ -678,6 +679,12 @@ document.addEventListener('pointerdown', function (e) {
 });
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closePanels();
+});
+
+// A phone with rotation locked cannot turn sideways, so it can stack the two panes instead.
+document.getElementById('uprightBtn').addEventListener('click', function () {
+  document.documentElement.classList.add('upright');
+  window.dispatchEvent(new Event('resize'));
 });
 
 // ------------------------------------------------------------------
