@@ -160,5 +160,4 @@
   // Scoring settings for RollaSail (read by rollawordbonus.js)
   window.SAIL_TERMS = sailingSet;                      // lowercase sailing terms; a word in this set scores x5
   window.SAIL_TERM_MULTIPLIER = 5;
-  window.COLOR_MULTIPLIERS = { RED: 2, BLUE: 3 };      // RollaSail: all-red word x2, all-blue word x3
 })();
