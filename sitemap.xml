@@ -7,13 +7,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.rollaword.com/thesaurus.html</loc>
+    <loc>https://www.rollaword.com/thesaurus</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://www.rollaword.com/thesaurus</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://www.rollaword.com/rollasail</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rollaword.com/leaderboard.html</loc>
+    <loc>https://www.rollaword.com/bible</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
