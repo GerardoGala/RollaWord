@@ -47,14 +47,6 @@ header {
   border: 1px solid var(--light); /* Outer border of the tray */
   background-color: var(--light);
 }
-#game-board {
-  grid-template-rows: repeat(6, var(--cell-size));
-}
-
-#dice-tray {
-  grid-template-rows: repeat(1, var(--cell-size));
-}
-
 /* --- Grid Cells (Grid Lines Fixed) --- */
 #game-board > div, #dice-tray > div {
   background: var(--page-bg); /* Matches your theme background */
