@@ -138,7 +138,14 @@ a:active {
 a:focus {
   outline: none;
 }
+/* Links are underlined so they stand out from the blue body text.
+   Button-style links (.btn, .cta, .google-review-btn) and the menu (#site-nav, in nav.js) stay plain. */
 a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+a.btn {
   text-decoration: none;
 }
 p,
