@@ -152,16 +152,52 @@
     return lines;
   }
 
+  // "plural of oxymel", "past tense of go", ... are no help to a learner on their own.
+  // Spot those and return the base word(s) so we can also show what THEY mean.
+  const FORM_OF = /^(?:(?:the\s+)?(?:plural|simple past(?: tense)?(?: and past participle)?|past tense|past participle|present participle|gerund|third[- ]person singular(?: simple present(?: indicative)?)?|comparative(?: form)?|superlative(?: form)?|alternative (?:form|spelling)|obsolete (?:form|spelling)|misspelling|eye dialect|(?:\w+ )?form) of)\s+([A-Za-z][A-Za-z'-]*)/i;
+
+  function baseWordsOf(data, word) {
+    const bases = [];
+    ((data && data.entries) || []).forEach(function (entry) {
+      (entry.senses || []).slice(0, 2).forEach(function (sense) {
+        const m = sense && sense.definition && FORM_OF.exec(sense.definition.trim());
+        if (!m) return;
+        const base = m[1].toLowerCase().replace(/[.,;:]+$/, "");
+        if (base !== word.toLowerCase() && !bases.includes(base)) bases.push(base);
+      });
+    });
+    return bases.slice(0, 2);
+  }
+
+  async function fetchRaw(word) {
+    const response = await fetch(DEFINITION_URL + encodeURIComponent(word.toLowerCase()));
+    if (response.status === 404) return { notFound: true };
+    if (!response.ok) return { status: response.status };
+    return { data: await response.json() };
+  }
+
   // Returns { lines, sourceUrl } when found, or { notFound: true } / { status } / { failed: true }.
+  // If the word is only a form of another word (plural, past tense...), the base word's
+  // meaning is looked up too and appended. If that second lookup fails, the first answer stands.
   async function fetchDefinition(word) {
     try {
-      const response = await fetch(DEFINITION_URL + encodeURIComponent(word.toLowerCase()));
-      if (response.status === 404) return { notFound: true };
-      if (!response.ok) return { status: response.status };
-      const data = await response.json();
-      const lines = summarize(data);
+      const raw = await fetchRaw(word);
+      if (!raw.data) return raw;
+      const lines = summarize(raw.data);
       if (!lines.length) return { notFound: true };
-      return { lines: lines, sourceUrl: data.source && data.source.url };
+
+      for (const base of baseWordsOf(raw.data, word)) {
+        try {
+          const baseRaw = await fetchRaw(base);
+          if (!baseRaw.data) continue;
+          // skip lines that are themselves just "plural of ..." and keep the real meanings
+          const baseLines = summarize(baseRaw.data).filter(l => !FORM_OF.test(l.replace(/^.*?:\s*/, ""))).slice(0, 2);
+          baseLines.forEach(l => lines.push(base + " \u2192 " + l));
+        } catch (e) {
+          console.warn("Base-word lookup failed for " + base + ":", e);
+        }
+      }
+      return { lines: lines, sourceUrl: raw.data.source && raw.data.source.url };
     } catch (e) {
       console.warn("Dictionary lookup failed for " + word + ":", e);
       return { failed: true };
