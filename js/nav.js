@@ -36,12 +36,18 @@
       'border-bottom:1px solid #ddd;margin-bottom:24px}' +
     '#site-nav .nav-list{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0;padding:0;list-style:none}' +
     '#site-nav .nav-list li{margin:0;padding:0}' +
-    '#site-nav a{color:#1a56a0;text-decoration:none;font-weight:600}' +
-    '#site-nav a[aria-current="page"]{color:#222;border-bottom:2px solid #1a56a0}' +
-    '#site-nav a:focus-visible,#site-nav .nav-toggle:focus-visible{outline:2px solid #1a56a0;outline-offset:2px}' +
-    '#site-nav .nav-toggle{display:none;align-items:center;gap:8px;background:none;border:1px solid #ddd;' +
-      'border-radius:6px;padding:8px 12px;font:inherit;font-weight:600;color:#1a56a0;cursor:pointer}' +
-    '#site-nav .nav-toggle svg{width:20px;height:20px;stroke:currentColor;stroke-width:2;stroke-linecap:round;fill:none}' +
+    '#site-nav a{color:#006abc;text-decoration:none;font-weight:600}' +
+    '#site-nav a[aria-current="page"]{color:#006abc;border-bottom:2px solid #006abc}' +
+    '#site-nav a:focus-visible,#site-nav .nav-toggle:focus-visible{outline:2px solid #006abc;outline-offset:2px}' +
+    // Burger button: blue fill, white icon + label, inverts on hover (same as the site's other buttons).
+    // The !important rules keep css/style.css (which colors every button, svg and span blue) from
+    // painting the icon and label the same blue as the background.
+    '#site-nav .nav-toggle{display:none;align-items:center;gap:8px;width:auto;' +
+      'background:#006abc!important;border:1px solid #006abc!important;color:#fff!important;' +
+      'border-radius:0;padding:8px 12px;font:inherit;font-weight:600;cursor:pointer}' +
+    '#site-nav .nav-toggle svg{width:20px;height:20px;stroke:currentColor!important;stroke-width:2;stroke-linecap:round;fill:none!important}' +
+    '#site-nav .nav-toggle span{color:inherit!important}' +
+    '#site-nav .nav-toggle:hover{background:#fff!important;color:#006abc!important}' +
     '#site-nav .nav-toggle .icon-close{display:none}' +
     '#site-nav.open .nav-toggle .icon-open{display:none}' +
     '#site-nav.open .nav-toggle .icon-close{display:block}' +
@@ -50,7 +56,7 @@
       '#site-nav .nav-list{display:none;flex-direction:column;flex-wrap:nowrap;gap:0;width:100%}' +
       '#site-nav.open .nav-list{display:flex}' +
       '#site-nav .nav-list a{display:block;padding:12px 4px;border-top:1px solid #eee}' +
-      '#site-nav a[aria-current="page"]{border-bottom:0;border-left:3px solid #1a56a0;padding-left:8px}' +
+      '#site-nav a[aria-current="page"]{border-bottom:0;border-left:3px solid #006abc;padding-left:8px}' +
     '}';
 
   if (!document.getElementById('site-nav-style')) {
