@@ -1,7 +1,7 @@
 // =========================================================================
-// ROLLASAIL - BROWSER-SIDE TRAY GENERATOR (used by FREE PLAY on sail.html)
+// ROLLASAIL - BROWSER-SIDE TRAY GENERATOR (used by FREE PLAY on RollaSail)
 //
-// Load this file BEFORE rollaword.js:   <script src="js/sailgen.js"></script>
+// Load this file BEFORE rollaword.js:   <script src="/rollasail/js/sailgen.js"></script>
 // It defines  window.generateSailPayload()  which returns 8 tiles in the same
 // format as dailychallenge.json:  [ { l: "K", c: "red" }, ... ]
 //
@@ -12,25 +12,113 @@
 // The tray is built from a real, valid 6x8 board, so all 8 tiles can always be played.
 // The board it was built from is kept in  window.lastSailSolution  (for a solution page).
 //
-// The word lists are embedded below, so nothing has to be fetched and the
-// generator can answer instantly (Free Play calls it synchronously).
+// -------------------------------------------------------------------------
+// THE WORD LISTS ARE PLAIN TEXT FILES. You never edit this script to add a word.
+//
+//   sailing-terms.txt        sailing terms; a word here scores x5
+//   sailing-dictionary.txt   every valid word (sailing terms + small words
+//                            like "the", "and", "aboard")
+//
+// Both files live in the SAME FOLDER AS THIS SCRIPT (sailgen.js), wherever that is.
+//
+// One word per line, letters a-z only. Capitals are fine. Blank lines are ignored,
+// and a line starting with # is a comment.
+//
+// To add a sailing term:  add it to sailing-terms.txt, and also to
+// sailing-dictionary.txt (that file is the list of words players may type).
+// To add an ordinary valid word:  add it to sailing-dictionary.txt only.
+// If you forget the dictionary, open the browser console: it lists the terms
+// that are missing from sailing-dictionary.txt.
+// -------------------------------------------------------------------------
+// Because the lists are downloaded, the generator is ready a moment after the
+// page loads. window.sailWordsReady is a promise that resolves when it is.
 // =========================================================================
 (function () {
   'use strict';
 
-  const ROWS = 6, COLS = 8, TILES = 8;
+  // ---- settings ----
+  // The text files are looked for next to this script, so they work from any folder or server.
+  // (document.currentScript is this script's own address while it loads.)
+  const BASE = (typeof document !== 'undefined' && document.currentScript && document.currentScript.src)
+    ? document.currentScript.src.replace(/[^\/]*$/, '')
+    : '/rollasail/js/';
+  const TERMS_URL = BASE + 'sailing-terms.txt';
+  const DICTIONARY_URL = BASE + 'sailing-dictionary.txt';
   const ALLOW_8_LETTER_TERMS = true;   // an 8-letter term makes the whole tray one word; set false to skip those
   const COLORS = ['red', 'blue'];
+  const ROWS = 6, COLS = 8, TILES = 8;
 
-  const WORDS = ["a", "aboard", "about", "above", "abreast", "across", "adrift", "aft", "after", "against", "aground", "ahead", "aloft", "along", "although", "amid", "amidst", "among", "an", "and", "around", "as", "astern", "at", "atop", "balance", "beach", "beam", "bear", "bearing", "beat", "beating", "because", "before", "behind", "belly", "below", "beneath", "beside", "between", "beyond", "bilge", "block", "board", "boat", "boom", "bow", "bowline", "breeze", "bridge", "bulkhead", "buoy", "but", "by", "cabin", "capsize", "chart", "chock", "cleat", "clew", "cockpit", "coil", "course", "crew", "current", "deck", "dinghy", "dock", "dolly", "down", "downhaul", "downwind", "draft", "drag", "draught", "during", "ease", "except", "fathom", "fender", "flood", "foil", "for", "force", "forepeak", "forward", "fouled", "from", "galley", "gangway", "gear", "genoa", "gunwale", "gust", "gybe", "gybing", "hatch", "heading", "heads", "headway", "heel", "helm", "hike", "hiking", "how", "hull", "if", "in", "inboard", "inside", "into", "jenny", "jetty", "jibe", "jibing", "keel", "knot", "landing", "latitude", "launch", "lee", "leech", "leeward", "leeway", "lest", "lift", "like", "line", "log", "luff", "luffing", "lull", "mainsail", "mark", "mast", "midship", "mooring", "near", "nor", "of", "off", "on", "once", "onto", "or", "out", "outboard", "outhaul", "outside", "over", "past", "pearling", "per", "pier", "pilotage", "planing", "port", "reach", "reaching", "recovery", "regatta", "rigging", "rudder", "safety", "sail", "sailboat", "sailing", "sailor", "scuppers", "secure", "set", "sheet", "shift", "shore", "since", "slack", "so", "sounding", "spar", "speed", "squall", "steer", "steering", "stem", "stern", "sternway", "stow", "tack", "tacking", "telltale", "than", "that", "the", "though", "through", "till", "tiller", "to", "topsides", "toward", "towards", "transom", "traveler", "trim", "trimming", "turtle", "twist", "under", "underway", "unless", "until", "up", "upon", "upwind", "vang", "via", "wake", "watch", "water", "wave", "way", "when", "whenever", "where", "whereas", "wherever", "whether", "while", "wind", "windward", "with", "within", "without", "yet"];   // every valid word (sailing terms + prepositions, articles, conjunctions)
-  const TERMS = ["aboard", "abreast", "adrift", "aft", "aground", "ahead", "aloft", "astern", "beam", "bearing", "beat", "beating", "below", "bilge", "block", "boat", "boom", "bow", "bowline", "bridge", "bulkhead", "buoy", "cabin", "capsize", "chart", "chock", "cleat", "clew", "cockpit", "coil", "course", "crew", "current", "deck", "dinghy", "dock", "dolly", "downhaul", "downwind", "draft", "draught", "fathom", "fender", "flood", "foil", "forepeak", "forward", "fouled", "galley", "gangway", "gear", "genoa", "gunwale", "gust", "gybe", "gybing", "hatch", "heading", "heads", "headway", "heel", "helm", "hike", "hiking", "hull", "inboard", "jenny", "jetty", "jibe", "jibing", "keel", "knot", "landing", "latitude", "launch", "lee", "leech", "leeward", "leeway", "line", "log", "luff", "luffing", "lull", "mainsail", "mast", "midship", "mooring", "outboard", "outhaul", "pearling", "pier", "pilotage", "planing", "port", "reach", "reaching", "regatta", "rigging", "rudder", "sail", "sailboat", "sailing", "sailor", "scuppers", "secure", "set", "sheet", "slack", "sounding", "spar", "squall", "stem", "stern", "sternway", "stow", "tack", "tacking", "telltale", "tiller", "topsides", "transom", "traveler", "trim", "trimming", "turtle", "underway", "upwind", "vang", "wake", "watch", "way", "wind", "windward"];   // the sailing terms
-
-  const dictionary = new Set(WORDS);
-  const sailingSet = new Set(TERMS);
-  const fillWords = WORDS.filter(w => w.length >= 2 && w.length <= TILES);
-  const startTerms = TERMS.filter(w => ALLOW_8_LETTER_TERMS || w.length < TILES);
+  // ---- word lists (filled in when the text files arrive) ----
+  const dictionary = new Set();   // every valid word (sailing terms + small words)
+  const sailingSet = new Set();   // the sailing terms (score x5)
+  const fillWords = [];           // words that can be placed on the board (2-8 letters)
+  const startTerms = [];          // sailing terms that can start a tray
+  let ready = false;
+  let loadError = null;
   let lastTerm = '';
 
+  // Scoring settings for RollaSail (read by rollawordbonus.js).
+  // The Set is created now and filled later, so scripts that grab it early still see the terms.
+  window.SAIL_TERMS = sailingSet;                      // lowercase sailing terms; a word in this set scores x5
+  window.SAIL_TERM_MULTIPLIER = 5;
+
+  // ---- reading the text files ----
+  function parseWordList(text, source) {
+    const words = [];
+    text.replace(/^﻿/, '').split(/\r?\n/).forEach(function (line, i) {
+      const raw = line.trim();
+      if (!raw || raw.charAt(0) === '#') return;           // blank line or comment
+      const w = raw.toLowerCase();
+      if (!/^[a-z]+$/.test(w)) {
+        console.warn('RollaSail: ' + source + ' line ' + (i + 1) + ' ignored (one word per line, letters a-z only): "' + raw + '"');
+        return;
+      }
+      words.push(w);
+    });
+    return words;
+  }
+
+  function loadList(url) {
+    return fetch(url, { cache: 'no-cache' })               // always check for a newer copy of the file
+      .then(function (res) {
+        if (!res.ok) throw new Error(url + ' (HTTP ' + res.status + ')');
+        return res.text();
+      })
+      .then(function (text) { return parseWordList(text, url); });
+  }
+
+  window.sailWordsReady = Promise.all([loadList(TERMS_URL), loadList(DICTIONARY_URL)])
+    .then(function (lists) {
+      const terms = lists[0], words = lists[1];
+      const inDictionaryFile = new Set(words);
+
+      terms.forEach(function (t) { sailingSet.add(t); dictionary.add(t); });   // a term is always a valid word
+      words.forEach(function (w) { dictionary.add(w); });
+
+      dictionary.forEach(function (w) {
+        if (w.length >= 2 && w.length <= TILES) fillWords.push(w);
+      });
+      sailingSet.forEach(function (t) {
+        if (t.length >= 2 && t.length <= TILES && (ALLOW_8_LETTER_TERMS || t.length < TILES)) startTerms.push(t);
+      });
+
+      const notInDictionary = terms.filter(function (t) { return !inDictionaryFile.has(t); });
+      if (notInDictionary.length) {
+        console.warn('RollaSail: these sailing terms are in sailing-terms.txt but not in sailing-dictionary.txt. ' +
+                     'Add them there too if players cannot type them: ' + notInDictionary.join(', '));
+      }
+      const tooLong = terms.filter(function (t) { return t.length > TILES; });
+      if (tooLong.length) {
+        console.warn('RollaSail: these terms are longer than ' + TILES + ' letters and can never fit the tray: ' + tooLong.join(', '));
+      }
+      ready = true;
+    })
+    .catch(function (err) {
+      loadError = err;
+      console.error('RollaSail: could not load the word lists: ' + err.message);
+    });
+
+  // ---- helpers ----
   const pick = arr => arr[Math.floor(Math.random() * arr.length)];
   function shuffle(arr) {
     const a = arr.slice();
@@ -129,6 +217,11 @@
   }
 
   function generateSailPayload() {
+    if (!ready) {
+      throw new Error(loadError
+        ? 'RollaSail: the word lists failed to load (' + loadError.message + ')'
+        : 'RollaSail: the word lists are still loading, please try again in a moment');
+    }
     for (let i = 0; i < 30; i++) {
       let term = pick(startTerms);
       if (term === lastTerm && startTerms.length > 1) term = pick(startTerms);   // avoid the same term twice in a row
@@ -156,8 +249,4 @@
   }
 
   window.generateSailPayload = generateSailPayload;
-
-  // Scoring settings for RollaSail (read by rollawordbonus.js)
-  window.SAIL_TERMS = sailingSet;                      // lowercase sailing terms; a word in this set scores x5
-  window.SAIL_TERM_MULTIPLIER = 5;
 })();
