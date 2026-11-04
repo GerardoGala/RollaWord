@@ -139,19 +139,33 @@ function applyScoreBonuses(
   timeBonus,
   scoreArea
 ) {
+  // 0. SCRABBLE BONUS: ONE VALID WORD USING ALL 8 TILES = FLAT +50
+  //    Added to the subtotal BEFORE the time multiplier. Not multiplied by color/sailing.
+  const SCRABBLE_BONUS = 50;
+  const usedAllTilesInOneWord =
+    totalDicePlaced === 8 &&
+    Array.isArray(bestResult && bestResult.words) &&
+    bestResult.words.some(w => w.isValid && !w.isDisqualified && w.score > 0 && w.tiles.length === 8);
+
+  let subtotal = grandBaseTotal;
+  if (usedAllTilesInOneWord) {
+    const bonusDiv = document.createElement("div");
+    bonusDiv.style.marginTop = "10px";
+    bonusDiv.textContent = `8-tile word bonus = +${SCRABBLE_BONUS}`;
+    scoreArea.appendChild(bonusDiv);
+    subtotal += SCRABBLE_BONUS;
+  }
+
   // 1. DISPLAY THE SUBTOTAL BLOCK WITH A TOP DASHED LINE
   const subtotalDiv = document.createElement("div");
   subtotalDiv.style.fontWeight = "800";
   subtotalDiv.style.marginTop = "10px";
   subtotalDiv.style.paddingTop = "6px";
   subtotalDiv.style.borderTop = "1px dashed var(--text-color, #17181E)";
-  subtotalDiv.textContent = `SUBTOTAL = ${grandBaseTotal}`;
+  subtotalDiv.textContent = `SUBTOTAL = ${subtotal}`;
   scoreArea.appendChild(subtotalDiv);
 
-  let finalScore = grandBaseTotal;
-
-  // 🛡️ LOCAL ARCHITECTURAL RESET: Evaluate game profile by reading current browser path context
-  const isKidsModeFile = window.location.pathname.includes("rollaKid.html");
+  let finalScore = subtotal;
 
   // JACKPOT CONDITIONAL: ALL EIGHT PLAYABLE DICE MUST SCORE
   const triggeredJackpot =
@@ -159,13 +173,8 @@ function applyScoreBonuses(
     validDiceIds.size === 8;
 
   if (triggeredJackpot) {
-    let jackpotMultiplier = 1;
-    
-    if (isKidsModeFile) {
-      jackpotMultiplier = 2; // Hardlocked flat reward for kids' environment
-    } else {
-      jackpotMultiplier = timeBonus > 1 ? timeBonus : 1; // Dynamic clock evaluation for adults
-    }
+    // Dynamic clock evaluation: remaining seconds on the timer
+    const jackpotMultiplier = timeBonus > 1 ? timeBonus : 1;
     
     finalScore *= jackpotMultiplier;
 

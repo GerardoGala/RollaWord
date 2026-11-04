@@ -134,10 +134,11 @@
             <li><span class="rule-highlight">The Word List:</span> Only words from the RollaSail word list count. It contains sailing terms plus the everyday connecting words (prepositions like ON and OVER, articles like THE, and conjunctions like AND and BUT) that let you link your sailing terms together.</li>
             <li><span class="rule-highlight">The Moat Rule:</span> All tiles placed onto the playing matrix must form a single, interconnected island block. Separate standalone letter groups are invalid.</li>
             <li><span class="rule-highlight">Invalid Contamination Cascading:</span> Ensure every single word on the board is on the word list! If an invalid word is discovered, a black line is drawn across it and it scores 0 points. Furthermore, any valid word that intersects or shares a letter tile with that invalid word becomes contaminated and is instantly disqualified.</li>
-            <li><span class="rule-highlight">Subtotal Output:</span> The engine instantly sums up the points scored across all valid, non-contaminated words to display a raw <span class="rule-highlight">SUBTOTAL</span> value before computing final jackpot bonuses.</li>
+            <li><span class="rule-highlight">8-Tile Word Bonus:</span> Just like the real Scrabble rule, if you use all 8 tiles in one single valid word, you earn a flat <span class="rule-highlight">+50 point bonus</span>. It is added to your subtotal before the time multiplier is applied, and it is not multiplied by color or sailing bonuses.</li>
+            <li><span class="rule-highlight">Subtotal Output:</span> The engine instantly sums up the points scored across all valid, non-contaminated words (plus the 8-tile word bonus, if you earned it) to display a raw <span class="rule-highlight">SUBTOTAL</span> value before computing final jackpot bonuses.</li>
             <li><span class="rule-highlight">8-Dice Jackpot Bonus:</span> Get all 8 tray dice onto the board inside completely valid, non-contaminated structures to trigger the ultimate scoring bonus:
               <ul>
-                <li>If the remaining seconds left to play is greater than 1, your subtotal score gets multiplied by the <strong>exact number of remaining seconds</strong> left on the clock!</li>
+                <li>If the remaining seconds left to play is greater than 1, your subtotal score gets multiplied by the <strong>exact number of remaining seconds</strong> left on the clock! This includes the 50-point bonus if you earned it.</li>
               </ul>
             </li>
           </ul>
