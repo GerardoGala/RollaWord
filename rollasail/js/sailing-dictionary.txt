@@ -34,6 +34,7 @@ beside
 between
 beyond
 bilge
+board
 boom
 bow
 bowline
@@ -119,6 +120,7 @@ pilotage
 port
 reaching
 regatta
+rig
 rigging
 rudder
 scuppers
@@ -133,6 +135,7 @@ stem
 stern
 sternway
 stow
+tack
 tacking
 than
 that
