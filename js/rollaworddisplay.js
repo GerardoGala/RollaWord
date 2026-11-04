@@ -29,6 +29,7 @@ function applyInvalidContaminationCascading(words) {
       if (hasContaminatedTile) {
         // Invalidate this word and wipe its score
         wordObj.isValid = false;
+        wordObj.isContaminated = true; // a real word, disqualified only because it shares a tile with an invalid word
         wordObj.score = 0;
         wordObj.baseScore = 0;
         wordObj.multiplier = 1;
@@ -57,7 +58,7 @@ function displayWordScores(words, scoreArea) {
       const invalidDiv = document.createElement("div");
       invalidDiv.style.color = "var(--text-muted, #a1a1aa)";
       invalidDiv.style.textDecoration = "line-through";
-      invalidDiv.textContent = `${wordObj.text} = 0 (invalid)`;
+      invalidDiv.textContent = `${wordObj.text} = 0 (${wordObj.isContaminated ? "contaminated" : "invalid"})`;
       scoreArea.appendChild(invalidDiv);
 
       // Draw a black visual line on the board across the invalid word
