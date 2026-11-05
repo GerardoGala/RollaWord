@@ -33,11 +33,11 @@
     <!-- 🚀 Startup Selection Row (Both buttons side-by-side) -->
     <div id="mode-selection-row" style="display: flex; gap: 8px; width: 100%; height: 45px;">
         <button id="start-btn" class="btn" style="flex: 1; height: 100%;" 
-                onclick="window.isDailyChallengeMode = false; document.getElementById('game-title').textContent = 'FREE PLAY'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; if(typeof startGameEngine === 'function') startGameEngine();">
+                onclick="window.isDailyChallengeMode = false; document.getElementById('game-title').textContent = 'FREE PLAY'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; loadGame().then(function(){ if(typeof startGameEngine === 'function') startGameEngine(); });">
             FREE PLAY
         </button>
         <button id="challenge-start-btn" class="btn" style="flex: 1; height: 100%;" 
-                onclick="window.isDailyChallengeMode = true; document.getElementById('game-title').textContent = 'DAILY CHALLENGE'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; if(typeof startChallengeEngine === 'function') startChallengeEngine();">
+                onclick="window.isDailyChallengeMode = true; document.getElementById('game-title').textContent = 'DAILY CHALLENGE'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; loadGame().then(function(){ if(typeof startChallengeEngine === 'function') startChallengeEngine(); });">
             CHALLENGE
         </button>
     </div>
@@ -116,15 +116,70 @@ Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
 </footer>
 
 
-<script defer src="js/rollawordbonus.js"></script>
-<script defer src="js/rollawordisland.js"></script>
-<script defer src="js/rollaworddisplay.js"></script>
-<script defer src="js/rollawordscoring.js"></script>
-<script defer src="js/rollaworddictionary.js"></script>
-<script defer src="js/rollawordadult.js"></script> <!-- Swapped in -->
-<script defer src="js/rollaword.js"></script>
-<!-- 🏆 New Firestore Leaderboard Module Layer -->
-<script type="module" src="js/rollawordleaderboard.js"></script>
+<!-- Game logic is loaded AFTER the page is painted (idle time), or immediately when the
+     player touches a button. FILES run in this exact order, same as before. -->
+<script>
+(function () {
+  var FILES = [
+    "js/rollawordbonus.js",
+    "js/rollawordisland.js",
+    "js/rollaworddisplay.js",
+    "js/rollawordscoring.js",
+    "js/rollaworddictionary.js",
+    "js/rollawordadult.js",
+    "js/rollaword.js"
+  ];
+  var MODULE = "js/rollawordleaderboard.js";   // Firestore leaderboard (ES module), loaded last
+  var promise = null;
+
+  window.loadGame = function () {
+    if (promise) return promise;
+
+    // The game files were written to run while the page loads. They may ask to be told when
+    // the page is ready ("DOMContentLoaded" / "load"). That moment has already passed, so
+    // while they load, call such handlers right away instead of never.
+    var realDocAdd = document.addEventListener;
+    var realWinAdd = window.addEventListener;
+    document.addEventListener = function (type, fn, opts) {
+      if (type === "DOMContentLoaded" && document.readyState !== "loading") {
+        setTimeout(function () { try { fn.call(document, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realDocAdd.call(document, type, fn, opts); }
+    };
+    window.addEventListener = function (type, fn, opts) {
+      if (type === "load" && document.readyState === "complete") {
+        setTimeout(function () { try { fn.call(window, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realWinAdd.call(window, type, fn, opts); }
+    };
+    function restore() { document.addEventListener = realDocAdd; window.addEventListener = realWinAdd; }
+
+    // Download all files at the same time, but run them in order (async = false).
+    var loads = FILES.map(function (src) {
+      return new Promise(function (resolve, reject) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.async = false;
+        s.onload = resolve;
+        s.onerror = function () { reject(new Error("Could not load " + src)); };
+        document.head.appendChild(s);
+      });
+    });
+
+    promise = Promise.all(loads)
+      .then(function () { return import(new URL(MODULE, document.baseURI).href); })
+      .then(restore, function (e) { restore(); promise = null; console.error("Game failed to load:", e); throw e; });
+    return promise;
+  };
+
+  // Warm up: once the page has finished loading, fetch the game when the browser is idle.
+  window.addEventListener("load", function () {
+    (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { loadGame().catch(function () {}); });
+  });
+  // Or as soon as the player touches the controls.
+  ["pointerdown", "touchstart", "mouseover", "focusin"].forEach(function (ev) {
+    document.addEventListener(ev, function () { loadGame().catch(function () {}); }, { once: true, passive: true });
+  });
+})();
+</script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747"
      crossorigin="anonymous"></script>
