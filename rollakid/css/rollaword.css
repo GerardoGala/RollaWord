@@ -1,0 +1,221 @@
+/* ==========================================================================
+   ROLLAWORD GAME STYLES (Publii CMS Integrated Version)
+   ========================================================================== */
+
+:root {
+  /* Dynamic mobile cell sizing based on your board layout (8 columns) */
+  --cell-size: min(11vw, 50px);
+}
+
+/* --- Layout & Structure --- */
+header {
+  text-align: center;
+  margin-top: calc(var(--baseline) * 4);
+}
+
+#game-title {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+#timer-container {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color); /* Uses theme primary/accent color */
+  margin: calc(var(--baseline) * 2) 0;
+}
+
+/* --- Layout & Structure (Grid Lines Fixed) --- */
+#game-board {
+  position: relative; /* Context anchor for absolute stroke overlays */
+  display: grid;
+  grid-template-columns: repeat(8, var(--cell-size));
+  grid-template-rows: repeat(6, var(--cell-size));
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid var(--light); /* Outer border of the board */
+  background-color: var(--light); /* Fallback track color */
+}
+
+#dice-tray {
+  display: grid;
+  grid-template-columns: repeat(8, var(--cell-size));
+  grid-template-rows: repeat(1, var(--cell-size));
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid var(--light); /* Outer border of the tray */
+  background-color: var(--light);
+}
+#game-board {
+  grid-template-rows: repeat(6, var(--cell-size));
+}
+
+#dice-tray {
+  grid-template-rows: repeat(1, var(--cell-size));
+}
+
+/* --- Grid Cells (Grid Lines Fixed) --- */
+#game-board > div, #dice-tray > div {
+  background: var(--page-bg); /* Matches your theme background */
+  color: var(--text-color);
+  outline: 1px solid var(--light); /* Explicit grid lines for every box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--heading-font);
+  font-size: calc(var(--cell-size) * 0.5);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+#board-separator {
+  height: calc(var(--baseline) * 4);
+  background: transparent;
+}
+
+/* =========================================================================
+   FIXED: INTERACTIVE DRAGGABLE DICE (Strict !important Cascade Enforcements)
+   ========================================================================= */
+.die {
+  position: relative !important; /* Context parent anchoring for absolute subscripts */
+  width: calc(var(--cell-size) - 2px) !important;
+  height: calc(var(--cell-size) - 2px) !important;
+  border-radius: var(--border-radius) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--heading-font) !important;
+  font-size: calc(var(--cell-size) * 0.5) !important;
+  font-weight: var(--font-weight-bold) !important;
+  cursor: grab !important;
+  user-select: none !important;
+  box-sizing: border-box !important;
+  color: #ffffff !important; /* Forces main letter text to be white */
+  z-index: 1;
+
+  /* Smooth transform transitions preventing pixelated jumps */
+  transition: transform 0.12s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.15s ease, filter 0.15s ease !important;
+  will-change: transform;
+}
+
+/* Target any interior spans, paragraphs, or raw text blocks to also force them to white */
+.die, .die *, .die span, .die p, .die div {
+  color: #ffffff !important;
+}
+
+/* Only two dice colors */
+.die.blue {
+  background-color: #2563eb !important;
+}
+
+.die.red {
+  background-color: #dc2626 !important;
+}
+
+/* 🚀 FIXED: Tile scale-up expansion on hover or drag/press states */
+.die:hover, .die:active, .die:focus {
+  filter: brightness(0.95) !important;
+  transform: scale(1.15) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  z-index: 50 !important;
+}
+
+/* Smaller Subscript Font, Positional Layout & White text for Numbers */
+.die-value {
+  position: absolute !important;
+  bottom: 2px !important;
+  right: 4px !important;
+  font-size: 0.55rem !important;
+  font-weight: 800 !important;
+  opacity: 0.85 !important;
+  line-height: 1 !important;
+  color: #ffffff !important; /* Forces subscript score number to be white */
+}
+
+/* ==========================================================================
+   Bottom Output UI
+   ========================================================================== */
+#score-output-area {
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 6) auto;
+  padding: calc(var(--baseline) * 4);
+  background-color: var(--lighter);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color);
+  text-align: center;
+  font-family: var(--body-font);
+}
+
+/* ==========================================================================
+   📣 Scrolling Notification Ticker
+   ========================================================================== */
+.ticker-wrapper {
+  width: 100%;
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 3) auto;
+  overflow: hidden;
+  background: var(--dark); /* Automatically dark in dark mode, light in light mode */
+  border-radius: var(--border-radius);
+  padding: calc(var(--baseline) * 2) 0;
+  box-sizing: border-box;
+}
+
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  color: var(--helper); /* High-contrast text color against var(--dark) */
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-bold);
+  animation: scroll-left 15s linear infinite;
+}
+
+/* Pause scroll when player hovers over a notification */
+.ticker-wrapper:hover .ticker-text {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* =========================================================================
+   RESTORED: VISUAL BONUS HIGHLIGHT LINES & TAGS (For drawVisualStrikethrough)
+   ========================================================================= */
+.word-strike-line {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  z-index: 10;
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+.word-strike-line.red {
+  background-color: rgba(220, 38, 38, 0.85);
+}
+
+.word-strike-line.blue {
+  background-color: rgba(37, 99, 235, 0.85);
+}
+
+.multiplier-tag {
+  position: absolute;
+  top: -20px;
+  background: transparent !important;
+  color: #ffffff !important; 
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.word-strike-line.black {
+  background-color: rgba(23, 24, 30, 0.9) !important;
+}
