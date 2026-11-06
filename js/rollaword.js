@@ -7,10 +7,11 @@ const GRID_ROWS = 6;
 const GRID_COLS = 8;
 const INITIAL_TIME_SECONDS = 180;
 
-const isKidsMode = window.location.pathname.includes('id');
-
 // RollaSail: the same engine runs on sail.html. Everything that differs hangs off this one flag.
 const IS_SAIL = window.location.pathname.toLowerCase().includes('sail');
+
+// RollaCity (countries and capitals): same engine again, again driven by one flag.
+const IS_CITY = window.location.pathname.toLowerCase().includes('city');
 
 const gameTitleElement = document.getElementById("game-title");
 // =========================================================================
@@ -301,18 +302,13 @@ function renderDicePayload(payload) {
  */
 function startCountdownTimer() {
   clearInterval(countdownTicker);
-  if (!isKidsMode) {
-    countdownTicker = setInterval(() => {
-      if (timeRemaining <= 0) { clearTimeoutEngine(); return; }
-      timeRemaining--;
-      const mins = Math.floor(timeRemaining / 60);
-      const secs = timeRemaining % 60;
-      if (timerDisplay) timerDisplay.textContent = `${mins}:${secs < 10 ? "0" : ""}${secs}`;
-    }, 1000);
-  } else {
-    const outputBox = document.getElementById("score-output-area");
-    if (outputBox) outputBox.innerHTML = "<div style='color: #16a34a;'>Find your hidden words! You can do it! ✨</div>";
-  }
+  countdownTicker = setInterval(() => {
+    if (timeRemaining <= 0) { clearTimeoutEngine(); return; }
+    timeRemaining--;
+    const mins = Math.floor(timeRemaining / 60);
+    const secs = timeRemaining % 60;
+    if (timerDisplay) timerDisplay.textContent = `${mins}:${secs < 10 ? "0" : ""}${secs}`;
+  }, 1000);
 }
 
 /**
@@ -326,6 +322,20 @@ function startGameEngine() {
   gameEnded = false;
   timeRemaining = INITIAL_TIME_SECONDS;
   
+  // RollaCity downloads its word list (city-data.csv) first, so wait for it before rolling the tray.
+  if (IS_CITY) {
+    Promise.resolve(window.cityWordsReady).then(function () {
+      if (gameEnded) return;                       // the player pressed Done while the list was loading
+      renderDicePayload(window.generateCityPayload());
+      startCountdownTimer();
+    }).catch(function (err) {
+      console.error("RollaCity could not start:", err);
+      const outputBox = document.getElementById("score-output-area");
+      if (outputBox) outputBox.textContent = "Could not load the word list. Please refresh the game and try again.";
+    });
+    return;
+  }
+
   const verifiedRollResult = IS_SAIL ? window.generateSailPayload() : window.generateLetterPayload();
   renderDicePayload(verifiedRollResult);
   startCountdownTimer();
@@ -347,10 +357,10 @@ function startChallengeEngine() {
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
-  // RollaSail repeats every year, so its puzzles are keyed by month and day only (MMDD, e.g. "1030").
-  const todayKey = IS_SAIL ? `${month}${day}` : `${year}${month}${day}`;
+  // RollaSail and RollaCity repeat every year, so their puzzles are keyed by month and day only (MMDD, e.g. "1030").
+  const todayKey = (IS_SAIL || IS_CITY) ? `${month}${day}` : `${year}${month}${day}`;
 
-  fetch(IS_SAIL ? '/js/sailchallenge.json' : '/js/dailychallenge.json')
+  fetch(IS_SAIL ? '/js/sailchallenge.json' : IS_CITY ? '/js/citychallenge.json' : '/js/dailychallenge.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load challenge file: ${response.status}`);
