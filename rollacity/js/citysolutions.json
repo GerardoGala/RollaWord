@@ -1,0 +1,9499 @@
+{
+ "1001": {
+  "term": "ANDORRAL",
+  "words": [
+   {
+    "word": "ANDORRAL",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "ANDORRAL",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "1002": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "INDIA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....N...",
+   "....D...",
+   "..APIA..",
+   "....A..."
+  ]
+ },
+ "1003": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SAMOA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...S....",
+   "...A....",
+   "...M....",
+   "...O....",
+   "SUVA...."
+  ]
+ },
+ "1004": {
+  "term": "KYIV",
+  "words": [
+   {
+    "word": "KYIV",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "QUITO",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..Q.....",
+   "..U.....",
+   "KYIV....",
+   "..T.....",
+   "..O....."
+  ]
+ },
+ "1005": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "YAREN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....Y...",
+   "...LAOS.",
+   "....R...",
+   "....E...",
+   "....N..."
+  ]
+ },
+ "1006": {
+  "term": "KABUL",
+  "words": [
+   {
+    "word": "KABUL",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...KABUL",
+   ".......A",
+   ".......O",
+   ".......S",
+   "........"
+  ]
+ },
+ "1007": {
+  "term": "BULGARIA",
+  "words": [
+   {
+    "word": "BULGARIA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "BULGARIA",
+   "........",
+   "........"
+  ]
+ },
+ "1008": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......I.",
+   "......R.",
+   "..DHAKA.",
+   "......N.",
+   "........"
+  ]
+ },
+ "1009": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "ROME",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...DAKAR",
+   ".......O",
+   ".......M",
+   ".......E",
+   "........"
+  ]
+ },
+ "1010": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SEOUL",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "SUVA....",
+   "E.......",
+   "O.......",
+   "U.......",
+   "L.......",
+   "........"
+  ]
+ },
+ "1011": {
+  "term": "KIEV",
+  "words": [
+   {
+    "word": "KIEV",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "alternate"
+   },
+   {
+    "word": "HAITI",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...H....",
+   "...A....",
+   "...I....",
+   "...T....",
+   "..KIEV.."
+  ]
+ },
+ "1012": {
+  "term": "KIEV",
+  "words": [
+   {
+    "word": "KIEV",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "alternate"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".C......",
+   ".A......",
+   "KIEV....",
+   ".R......",
+   ".O......",
+   "........"
+  ]
+ },
+ "1013": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "KABUL",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......K.",
+   "...RIGA.",
+   "......B.",
+   "......U.",
+   "......L.",
+   "........"
+  ]
+ },
+ "1014": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......K.",
+   "......I.",
+   "..SUCRE.",
+   "......V."
+  ]
+ },
+ "1015": {
+  "term": "BURMA",
+  "words": [
+   {
+    "word": "BURMA",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "alternate"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......R",
+   ".......I",
+   ".......G",
+   "...BURMA"
+  ]
+ },
+ "1016": {
+  "term": "TOGO",
+  "words": [
+   {
+    "word": "TOGO",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "TUNIS",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "TOGO....",
+   "U.......",
+   "N.......",
+   "I.......",
+   "S.......",
+   "........"
+  ]
+ },
+ "1017": {
+  "term": "HONDURAS",
+  "words": [
+   {
+    "word": "HONDURAS",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "HONDURAS"
+  ]
+ },
+ "1018": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...YAREN",
+   ".....I..",
+   ".....G..",
+   ".....A.."
+  ]
+ },
+ "1019": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "KABUL",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....K..",
+   "....MALE",
+   ".....B..",
+   ".....U..",
+   ".....L.."
+  ]
+ },
+ "1020": {
+  "term": "TANZANIA",
+  "words": [
+   {
+    "word": "TANZANIA",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "TANZANIA",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "1021": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "HANOI",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...H....",
+   "..LAOS..",
+   "...N....",
+   "...O....",
+   "...I....",
+   "........"
+  ]
+ },
+ "1022": {
+  "term": "SOFIA",
+  "words": [
+   {
+    "word": "SOFIA",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......R.",
+   "......I.",
+   "......G.",
+   "..SOFIA."
+  ]
+ },
+ "1023": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "PALAU",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....P..",
+   ".....A..",
+   ".....L..",
+   "..CUBA..",
+   ".....U.."
+  ]
+ },
+ "1024": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   "....U...",
+   "....V...",
+   ".NEPAL..",
+   "........"
+  ]
+ },
+ "1025": {
+  "term": "TONGA",
+  "words": [
+   {
+    "word": "TONGA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......B",
+   "...TONGA",
+   ".......K",
+   ".......U"
+  ]
+ },
+ "1026": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...HAITI",
+   ".......R",
+   ".......A",
+   ".......Q"
+  ]
+ },
+ "1027": {
+  "term": "BENIN",
+  "words": [
+   {
+    "word": "BENIN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......D.",
+   "......I.",
+   "......L.",
+   "...BENIN",
+   "........",
+   "........"
+  ]
+ },
+ "1028": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....R...",
+   "..PRAIA.",
+   "....Q...",
+   "........"
+  ]
+ },
+ "1029": {
+  "term": "LIECHTEN",
+  "words": [
+   {
+    "word": "LIECHTEN",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "LIECHTEN"
+  ]
+ },
+ "1030": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SOFIA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...S....",
+   "OSLO....",
+   "...F....",
+   "...I....",
+   "...A....",
+   "........"
+  ]
+ },
+ "1031": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "DOHA",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "D.......",
+   "O.......",
+   "HAITI...",
+   "A.......",
+   "........"
+  ]
+ },
+ "1101": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "CHILE",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "..C.....",
+   "..H.....",
+   "..I.....",
+   "..LOME..",
+   "..E.....",
+   "........"
+  ]
+ },
+ "1102": {
+  "term": "AUSTRALI",
+  "words": [
+   {
+    "word": "AUSTRALI",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "AUSTRALI",
+   "........",
+   "........"
+  ]
+ },
+ "1103": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "ACCRA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....A...",
+   "....C...",
+   "....C...",
+   "....R...",
+   "..OMAN.."
+  ]
+ },
+ "1104": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....C...",
+   "....H...",
+   "...HANOI",
+   "....D...",
+   "........"
+  ]
+ },
+ "1105": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...C....",
+   "...U....",
+   "...B....",
+   "..HAITI."
+  ]
+ },
+ "1106": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "......L.",
+   "......I.",
+   "......M.",
+   "..INDIA.",
+   "........"
+  ]
+ },
+ "1107": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..ROME..",
+   "....I...",
+   "....N...",
+   "....S...",
+   "....K..."
+  ]
+ },
+ "1108": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "QATAR",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...Q....",
+   "..BAKU..",
+   "...T....",
+   "...A....",
+   "...R...."
+  ]
+ },
+ "1109": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....R...",
+   "INDIA...",
+   "....N...",
+   "........"
+  ]
+ },
+ "1110": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 5,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "CHINA",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....C..",
+   ".....H..",
+   ".....I..",
+   ".....N..",
+   "....BAKU"
+  ]
+ },
+ "1111": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....O...",
+   "....M...",
+   "...CAIRO",
+   "....N..."
+  ]
+ },
+ "1112": {
+  "term": "LIBYA",
+  "words": [
+   {
+    "word": "LIBYA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...M....",
+   "...A....",
+   "...LIBYA",
+   "...I...."
+  ]
+ },
+ "1113": {
+  "term": "KENYA",
+  "words": [
+   {
+    "word": "KENYA",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "BERN",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...B....",
+   "...E....",
+   "...R....",
+   ".KENYA.."
+  ]
+ },
+ "1114": {
+  "term": "CHAD",
+  "words": [
+   {
+    "word": "CHAD",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "PRAIA",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......P.",
+   "......R.",
+   "....CHAD",
+   "......I.",
+   "......A.",
+   "........"
+  ]
+ },
+ "1115": {
+  "term": "CHAD",
+  "words": [
+   {
+    "word": "CHAD",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "PALAU",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...P....",
+   "...A....",
+   "...L....",
+   ".CHAD...",
+   "...U....",
+   "........"
+  ]
+ },
+ "1116": {
+  "term": "KABUL",
+  "words": [
+   {
+    "word": "KABUL",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "LOME",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "KABUL...",
+   "....O...",
+   "....M...",
+   "....E...",
+   "........"
+  ]
+ },
+ "1117": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "KENYA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".BAKU...",
+   "...E....",
+   "...N....",
+   "...Y....",
+   "...A....",
+   "........"
+  ]
+ },
+ "1118": {
+  "term": "VADUZ",
+  "words": [
+   {
+    "word": "VADUZ",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....B..",
+   ".....A..",
+   ".....K..",
+   "..VADUZ."
+  ]
+ },
+ "1119": {
+  "term": "VENEZUEL",
+  "words": [
+   {
+    "word": "VENEZUEL",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "VENEZUEL",
+   "........",
+   "........"
+  ]
+ },
+ "1120": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "QUITO",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".......Q",
+   ".......U",
+   "....MALI",
+   ".......T",
+   ".......O",
+   "........"
+  ]
+ },
+ "1121": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "QATAR",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......Q.",
+   "......A.",
+   "......T.",
+   "....OMAN",
+   "......R."
+  ]
+ },
+ "1122": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   ".K......",
+   ".ITALY..",
+   ".E......",
+   ".V......",
+   "........"
+  ]
+ },
+ "1123": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "RABAT",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....R..",
+   ".....A..",
+   ".....B..",
+   "..SUVA..",
+   ".....T.."
+  ]
+ },
+ "1124": {
+  "term": "COSTARIC",
+  "words": [
+   {
+    "word": "COSTARIC",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "COSTARIC",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "1125": {
+  "term": "CAPEVERD",
+  "words": [
+   {
+    "word": "CAPEVERD",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "CAPEVERD",
+   "........",
+   "........"
+  ]
+ },
+ "1126": {
+  "term": "GHANA",
+  "words": [
+   {
+    "word": "GHANA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......C",
+   ".......U",
+   ".......B",
+   "...GHANA",
+   "........"
+  ]
+ },
+ "1127": {
+  "term": "QUITO",
+  "words": [
+   {
+    "word": "QUITO",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...B....",
+   "...A....",
+   "...K....",
+   "..QUITO."
+  ]
+ },
+ "1128": {
+  "term": "CHILE",
+  "words": [
+   {
+    "word": "CHILE",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...O....",
+   "...S....",
+   "CHILE...",
+   "...O...."
+  ]
+ },
+ "1129": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "LIBYA",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......L.",
+   "......I.",
+   "......B.",
+   "......Y.",
+   "...APIA."
+  ]
+ },
+ "1130": {
+  "term": "FIJI",
+  "words": [
+   {
+    "word": "FIJI",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "BENIN",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "..B.....",
+   "..E.....",
+   "..N.....",
+   ".FIJI...",
+   "..N.....",
+   "........"
+  ]
+ },
+ "1201": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "SYRIA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...S....",
+   "...Y....",
+   "...R....",
+   "...I....",
+   "...APIA."
+  ]
+ },
+ "1202": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...C....",
+   "SUVA....",
+   "...I....",
+   "...R....",
+   "...O....",
+   "........"
+  ]
+ },
+ "1203": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....J...",
+   "....U...",
+   "....B...",
+   "...YAREN",
+   "........"
+  ]
+ },
+ "1204": {
+  "term": "NAYPYIDA",
+  "words": [
+   {
+    "word": "NAYPYIDA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "NAYPYIDA",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "1205": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "KENYA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....K...",
+   "....E...",
+   "....N...",
+   "....Y...",
+   "..OMAN..",
+   "........"
+  ]
+ },
+ "1206": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "PRAIA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....P...",
+   "....R...",
+   "...LAOS.",
+   "....I...",
+   "....A..."
+  ]
+ },
+ "1207": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....T...",
+   ".LIMA...",
+   "....L...",
+   "....Y..."
+  ]
+ },
+ "1208": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "TOKYO",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....T...",
+   "....O...",
+   "....K...",
+   "....Y...",
+   "...ROME."
+  ]
+ },
+ "1209": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "NAURU",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....N..",
+   "....LAOS",
+   ".....U..",
+   ".....R..",
+   ".....U..",
+   "........"
+  ]
+ },
+ "1210": {
+  "term": "SAMOA",
+  "words": [
+   {
+    "word": "SAMOA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....C...",
+   "....U...",
+   "....B...",
+   "SAMOA...",
+   "........"
+  ]
+ },
+ "1211": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......C.",
+   "......H.",
+   "...NEPAL",
+   "......D.",
+   "........"
+  ]
+ },
+ "1212": {
+  "term": "NAURU",
+  "words": [
+   {
+    "word": "NAURU",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "O.......",
+   "M.......",
+   "A.......",
+   "NAURU...",
+   "........",
+   "........"
+  ]
+ },
+ "1213": {
+  "term": "MALTA",
+  "words": [
+   {
+    "word": "MALTA",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....J...",
+   "....U...",
+   "....B...",
+   "MALTA..."
+  ]
+ },
+ "1214": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..I.....",
+   "..R.....",
+   "SPAIN...",
+   "..N....."
+  ]
+ },
+ "1215": {
+  "term": "CHAD",
+  "words": [
+   {
+    "word": "CHAD",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "INDIA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...I....",
+   "...N....",
+   "CHAD....",
+   "...I....",
+   "...A...."
+  ]
+ },
+ "1216": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....R...",
+   ".NEPAL..",
+   "....N...",
+   "........"
+  ]
+ },
+ "1217": {
+  "term": "DOHA",
+  "words": [
+   {
+    "word": "DOHA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "SEOUL",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   "....E...",
+   "...DOHA.",
+   "....U...",
+   "....L..."
+  ]
+ },
+ "1218": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "HANOI",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..H.....",
+   "..A.....",
+   "..N.....",
+   "LAOS....",
+   "..I....."
+  ]
+ },
+ "1219": {
+  "term": "YEMEN",
+  "words": [
+   {
+    "word": "YEMEN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....M...",
+   "....A...",
+   "....L...",
+   "...YEMEN",
+   "........",
+   "........"
+  ]
+ },
+ "1220": {
+  "term": "MINSK",
+  "words": [
+   {
+    "word": "MINSK",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".MINSK..",
+   ".A......",
+   ".L......",
+   ".I......",
+   "........"
+  ]
+ },
+ "1221": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "KYIV",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..DAKAR.",
+   "....Y...",
+   "....I...",
+   "....V..."
+  ]
+ },
+ "1222": {
+  "term": "MOZAMBIQ",
+  "words": [
+   {
+    "word": "MOZAMBIQ",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "MOZAMBIQ",
+   "........",
+   "........"
+  ]
+ },
+ "1223": {
+  "term": "SANAA",
+  "words": [
+   {
+    "word": "SANAA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "BERN",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...B....",
+   "...E....",
+   "...R....",
+   ".SANAA..",
+   "........"
+  ]
+ },
+ "1224": {
+  "term": "PORTMORE",
+  "words": [
+   {
+    "word": "PORTMORE",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "PORTMORE",
+   "........",
+   "........"
+  ]
+ },
+ "1225": {
+  "term": "SURINAME",
+  "words": [
+   {
+    "word": "SURINAME",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "SURINAME",
+   "........"
+  ]
+ },
+ "1226": {
+  "term": "AMMAN",
+  "words": [
+   {
+    "word": "AMMAN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "DOHA",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......D.",
+   "......O.",
+   "......H.",
+   "...AMMAN",
+   "........",
+   "........"
+  ]
+ },
+ "1227": {
+  "term": "CHISINAU",
+  "words": [
+   {
+    "word": "CHISINAU",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "CHISINAU",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "1228": {
+  "term": "DOHA",
+  "words": [
+   {
+    "word": "DOHA",
+    "dir": "H",
+    "row": 4,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......N",
+   ".......E",
+   ".......P",
+   "....DOHA",
+   ".......L"
+  ]
+ },
+ "1229": {
+  "term": "SYRIA",
+  "words": [
+   {
+    "word": "SYRIA",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".O......",
+   ".SYRIA..",
+   ".L......",
+   ".O......",
+   "........"
+  ]
+ },
+ "1230": {
+  "term": "CHILE",
+  "words": [
+   {
+    "word": "CHILE",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   ".......K",
+   ".......I",
+   "...CHILE",
+   ".......V",
+   "........",
+   "........"
+  ]
+ },
+ "1231": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "FIJI",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....F...",
+   "....I...",
+   "....J...",
+   ".SPAIN..",
+   "........",
+   "........"
+  ]
+ },
+ "0101": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....R...",
+   "....I...",
+   "....G...",
+   "..ITALY."
+  ]
+ },
+ "0102": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "EGYPT",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "LOME....",
+   "...G....",
+   "...Y....",
+   "...P....",
+   "...T...."
+  ]
+ },
+ "0103": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...I....",
+   "...M....",
+   "..YAREN.",
+   "........"
+  ]
+ },
+ "0104": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "..M.....",
+   "..IRAQ..",
+   "..N.....",
+   "..S.....",
+   "..K.....",
+   "........"
+  ]
+ },
+ "0105": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "LAPAZ",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....L..",
+   "...IRAN.",
+   ".....P..",
+   ".....A..",
+   ".....Z.."
+  ]
+ },
+ "0106": {
+  "term": "TIMORLES",
+  "words": [
+   {
+    "word": "TIMORLES",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "TIMORLES",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0107": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KABUL",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "..K.....",
+   "..A.....",
+   "..B.....",
+   "..U.....",
+   "MALE....",
+   "........"
+  ]
+ },
+ "0108": {
+  "term": "SUDAN",
+  "words": [
+   {
+    "word": "SUDAN",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...SUDAN",
+   ".....I..",
+   ".....L..",
+   ".....I..",
+   "........"
+  ]
+ },
+ "0109": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "QUITO",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "..Q.....",
+   ".CUBA...",
+   "..I.....",
+   "..T.....",
+   "..O.....",
+   "........"
+  ]
+ },
+ "0110": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "GABON",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...G....",
+   "SUVA....",
+   "...B....",
+   "...O....",
+   "...N....",
+   "........"
+  ]
+ },
+ "0111": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...N....",
+   "...E....",
+   "...P....",
+   "...A....",
+   ".OSLO...",
+   "........"
+  ]
+ },
+ "0112": {
+  "term": "LAOS",
+  "words": [
+   {
+    "word": "LAOS",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "ACCRA",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..A.....",
+   "..C.....",
+   "..C.....",
+   "..R.....",
+   ".LAOS..."
+  ]
+ },
+ "0113": {
+  "term": "MEXICOCI",
+  "words": [
+   {
+    "word": "MEXICOCI",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "MEXICOCI",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0114": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "RABAT",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....R..",
+   "..JUBA..",
+   ".....B..",
+   ".....A..",
+   ".....T.."
+  ]
+ },
+ "0115": {
+  "term": "YEMEN",
+  "words": [
+   {
+    "word": "YEMEN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".......O",
+   ".......M",
+   ".......A",
+   "...YEMEN",
+   "........",
+   "........"
+  ]
+ },
+ "0116": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "KYIV",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".DHAKA..",
+   "....Y...",
+   "....I...",
+   "....V...",
+   "........"
+  ]
+ },
+ "0117": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....C...",
+   "....U...",
+   "....B...",
+   "...DAKAR",
+   "........",
+   "........"
+  ]
+ },
+ "0118": {
+  "term": "TOKYO",
+  "words": [
+   {
+    "word": "TOKYO",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....T...",
+   "TOKYO...",
+   "....G...",
+   "....O...",
+   "........",
+   "........"
+  ]
+ },
+ "0119": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SANAA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...S....",
+   "...A....",
+   "...N....",
+   "...A....",
+   "JUBA....",
+   "........"
+  ]
+ },
+ "0120": {
+  "term": "TONGA",
+  "words": [
+   {
+    "word": "TONGA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "LOME",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".L......",
+   "TONGA...",
+   ".M......",
+   ".E......",
+   "........"
+  ]
+ },
+ "0121": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....C..",
+   ".....U..",
+   ".....B..",
+   "...SPAIN",
+   "........",
+   "........"
+  ]
+ },
+ "0122": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "SEOUL",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..S.....",
+   "..E.....",
+   "..OSLO..",
+   "..U.....",
+   "..L....."
+  ]
+ },
+ "0123": {
+  "term": "SLOVAKIA",
+  "words": [
+   {
+    "word": "SLOVAKIA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "SLOVAKIA",
+   "........"
+  ]
+ },
+ "0124": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "LOME",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "..ITALY.",
+   ".....O..",
+   ".....M..",
+   ".....E..",
+   "........",
+   "........"
+  ]
+ },
+ "0125": {
+  "term": "FIJI",
+  "words": [
+   {
+    "word": "FIJI",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....FIJI",
+   ".......T",
+   ".......A",
+   ".......L",
+   ".......Y"
+  ]
+ },
+ "0126": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....C...",
+   ".JUBA...",
+   "....I...",
+   "....R...",
+   "....O..."
+  ]
+ },
+ "0127": {
+  "term": "MONGOLIA",
+  "words": [
+   {
+    "word": "MONGOLIA",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "MONGOLIA"
+  ]
+ },
+ "0128": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "LIBYA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...I....",
+   "...BAKU.",
+   "...Y....",
+   "...A...."
+  ]
+ },
+ "0129": {
+  "term": "TUNIS",
+  "words": [
+   {
+    "word": "TUNIS",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".TUNIS..",
+   "....R...",
+   "....A...",
+   "....N...",
+   "........"
+  ]
+ },
+ "0130": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "NAURU",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".N......",
+   ".A......",
+   ".U......",
+   ".ROME...",
+   ".U......"
+  ]
+ },
+ "0131": {
+  "term": "SOFIA",
+  "words": [
+   {
+    "word": "SOFIA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "...K....",
+   "SOFIA...",
+   "...E....",
+   "...V....",
+   "........"
+  ]
+ },
+ "0201": {
+  "term": "SUVA",
+  "words": [
+   {
+    "word": "SUVA",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....T...",
+   ".SUVA...",
+   "....L...",
+   "....Y..."
+  ]
+ },
+ "0202": {
+  "term": "BENIN",
+  "words": [
+   {
+    "word": "BENIN",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...M....",
+   "...A....",
+   "...L....",
+   "..BENIN."
+  ]
+ },
+ "0203": {
+  "term": "BURMA",
+  "words": [
+   {
+    "word": "BURMA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "alternate"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".......C",
+   ".......U",
+   ".......B",
+   "...BURMA",
+   "........",
+   "........"
+  ]
+ },
+ "0204": {
+  "term": "CAMBODIA",
+  "words": [
+   {
+    "word": "CAMBODIA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "CAMBODIA",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0205": {
+  "term": "NAYPYITA",
+  "words": [
+   {
+    "word": "NAYPYITA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "NAYPYITA",
+   "........",
+   "........"
+  ]
+ },
+ "0206": {
+  "term": "RABAT",
+  "words": [
+   {
+    "word": "RABAT",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".O......",
+   ".M......",
+   "RABAT...",
+   ".N......",
+   "........",
+   "........"
+  ]
+ },
+ "0207": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "RABAT",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....R..",
+   "...IRAN.",
+   ".....B..",
+   ".....A..",
+   ".....T..",
+   "........"
+  ]
+ },
+ "0208": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "PARIS",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..P.....",
+   ".MALE...",
+   "..R.....",
+   "..I.....",
+   "..S....."
+  ]
+ },
+ "0209": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "..C.....",
+   "..H.....",
+   ".YAREN..",
+   "..D.....",
+   "........"
+  ]
+ },
+ "0210": {
+  "term": "AZERBAIJ",
+  "words": [
+   {
+    "word": "AZERBAIJ",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "AZERBAIJ",
+   "........"
+  ]
+ },
+ "0211": {
+  "term": "AMMAN",
+  "words": [
+   {
+    "word": "AMMAN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......C.",
+   "......H.",
+   "...AMMAN",
+   "......D.",
+   "........"
+  ]
+ },
+ "0212": {
+  "term": "NUKUALOF",
+  "words": [
+   {
+    "word": "NUKUALOF",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "NUKUALOF",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0213": {
+  "term": "TONGA",
+  "words": [
+   {
+    "word": "TONGA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....O...",
+   "....S...",
+   "....L...",
+   "...TONGA",
+   "........",
+   "........"
+  ]
+ },
+ "0214": {
+  "term": "KYIV",
+  "words": [
+   {
+    "word": "KYIV",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "PARIS",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...P....",
+   "...A....",
+   "...R....",
+   ".KYIV...",
+   "...S...."
+  ]
+ },
+ "0215": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "MALTA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....M...",
+   ".APIA...",
+   "....L...",
+   "....T...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0216": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....T...",
+   "....A...",
+   "..MALI..",
+   "....Y..."
+  ]
+ },
+ "0217": {
+  "term": "SAMOA",
+  "words": [
+   {
+    "word": "SAMOA",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....L..",
+   ".....A..",
+   "..SAMOA.",
+   ".....S..",
+   "........"
+  ]
+ },
+ "0218": {
+  "term": "FIJI",
+  "words": [
+   {
+    "word": "FIJI",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "LIBYA",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....L..",
+   "....FIJI",
+   ".....B..",
+   ".....Y..",
+   ".....A.."
+  ]
+ },
+ "0219": {
+  "term": "ASHGABAT",
+  "words": [
+   {
+    "word": "ASHGABAT",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "ASHGABAT",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0220": {
+  "term": "PERU",
+  "words": [
+   {
+    "word": "PERU",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "SYRIA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....S...",
+   "....Y...",
+   "..PERU..",
+   "....I...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0221": {
+  "term": "PARIS",
+  "words": [
+   {
+    "word": "PARIS",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...O....",
+   "...M....",
+   "..PARIS.",
+   "...N...."
+  ]
+ },
+ "0222": {
+  "term": "TUNIS",
+  "words": [
+   {
+    "word": "TUNIS",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....O..",
+   ".....M..",
+   ".....A..",
+   "...TUNIS",
+   "........",
+   "........"
+  ]
+ },
+ "0223": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "CONGO",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....C...",
+   "....O...",
+   ".IRAN...",
+   "....G...",
+   "....O...",
+   "........"
+  ]
+ },
+ "0224": {
+  "term": "SANAA",
+  "words": [
+   {
+    "word": "SANAA",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..SANAA.",
+   "..U.....",
+   "..V.....",
+   "..A.....",
+   "........"
+  ]
+ },
+ "0225": {
+  "term": "LAPAZ",
+  "words": [
+   {
+    "word": "LAPAZ",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....J...",
+   "....U...",
+   "....B...",
+   ".LAPAZ.."
+  ]
+ },
+ "0226": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....O..",
+   ".....S..",
+   "..ITALY.",
+   ".....O..",
+   "........"
+  ]
+ },
+ "0227": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......D.",
+   "...PRAIA",
+   "......L.",
+   "......I.",
+   "........",
+   "........"
+  ]
+ },
+ "0228": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "FIJI",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....F..",
+   "..INDIA.",
+   ".....J..",
+   ".....I..",
+   "........"
+  ]
+ },
+ "0229": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "CONGO",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...C....",
+   "...O....",
+   "BERN....",
+   "...G....",
+   "...O...."
+  ]
+ },
+ "0301": {
+  "term": "SRILANKA",
+  "words": [
+   {
+    "word": "SRILANKA",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "SRILANKA",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0302": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....B...",
+   "....A...",
+   "....K...",
+   "...SUCRE"
+  ]
+ },
+ "0303": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "CHILE",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...C....",
+   "...H....",
+   "...I....",
+   "...L....",
+   "LOME....",
+   "........"
+  ]
+ },
+ "0304": {
+  "term": "SOFIA",
+  "words": [
+   {
+    "word": "SOFIA",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "ROME",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...R....",
+   "..SOFIA.",
+   "...M....",
+   "...E....",
+   "........"
+  ]
+ },
+ "0305": {
+  "term": "CASTRIES",
+  "words": [
+   {
+    "word": "CASTRIES",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "CASTRIES",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0306": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....M..",
+   ".....I..",
+   ".....N..",
+   ".....S..",
+   "...BAKU."
+  ]
+ },
+ "0307": {
+  "term": "VADUZ",
+  "words": [
+   {
+    "word": "VADUZ",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".B......",
+   "VADUZ...",
+   ".K......",
+   ".U......",
+   "........",
+   "........"
+  ]
+ },
+ "0308": {
+  "term": "MINSK",
+  "words": [
+   {
+    "word": "MINSK",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...L....",
+   "...A....",
+   "...O....",
+   "MINSK...",
+   "........"
+  ]
+ },
+ "0309": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "DOHA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....D..",
+   ".....O..",
+   ".....H..",
+   ".DHAKA..",
+   "........",
+   "........"
+  ]
+ },
+ "0310": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....J...",
+   "....U...",
+   "....B...",
+   "...DAKAR",
+   "........"
+  ]
+ },
+ "0311": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "KENYA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....K...",
+   "....E...",
+   "....N...",
+   "....Y...",
+   ".RIGA...",
+   "........"
+  ]
+ },
+ "0312": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "PERU",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......P",
+   ".......E",
+   "...DAKAR",
+   ".......U",
+   "........"
+  ]
+ },
+ "0313": {
+  "term": "SINGAPOR",
+  "words": [
+   {
+    "word": "SINGAPOR",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "SINGAPOR",
+   "........"
+  ]
+ },
+ "0314": {
+  "term": "KYIV",
+  "words": [
+   {
+    "word": "KYIV",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KENYA",
+    "dir": "V",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "KYIV....",
+   "E.......",
+   "N.......",
+   "Y.......",
+   "A.......",
+   "........"
+  ]
+ },
+ "0315": {
+  "term": "KIEV",
+  "words": [
+   {
+    "word": "KIEV",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "alternate"
+   },
+   {
+    "word": "HANOI",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...H....",
+   "...A....",
+   "...N....",
+   "...O....",
+   "..KIEV..",
+   "........"
+  ]
+ },
+ "0316": {
+  "term": "DOHA",
+  "words": [
+   {
+    "word": "DOHA",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "RABAT",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......R.",
+   "...DOHA.",
+   "......B.",
+   "......A.",
+   "......T.",
+   "........"
+  ]
+ },
+ "0317": {
+  "term": "MAURITIU",
+  "words": [
+   {
+    "word": "MAURITIU",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "MAURITIU",
+   "........",
+   "........"
+  ]
+ },
+ "0318": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......S",
+   ".......U",
+   ".......V",
+   "...PRAIA"
+  ]
+ },
+ "0319": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "DOHA",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".D......",
+   ".O......",
+   ".H......",
+   "YAREN..."
+  ]
+ },
+ "0320": {
+  "term": "CHILE",
+  "words": [
+   {
+    "word": "CHILE",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".CHILE..",
+   ".U......",
+   ".B......",
+   ".A......",
+   "........"
+  ]
+ },
+ "0321": {
+  "term": "KENYA",
+  "words": [
+   {
+    "word": "KENYA",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....L..",
+   ".KENYA..",
+   ".....O..",
+   ".....S..",
+   "........"
+  ]
+ },
+ "0322": {
+  "term": "NAURU",
+  "words": [
+   {
+    "word": "NAURU",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....J...",
+   "....U...",
+   "....B...",
+   "...NAURU"
+  ]
+ },
+ "0323": {
+  "term": "PORTAUPR",
+  "words": [
+   {
+    "word": "PORTAUPR",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "PORTAUPR",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0324": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   ".SUCRE..",
+   "....A...",
+   "....Q...",
+   "........"
+  ]
+ },
+ "0325": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".M......",
+   ".IRAN...",
+   ".N......",
+   ".S......",
+   ".K......"
+  ]
+ },
+ "0326": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "AMMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......A.",
+   "......M.",
+   "......M.",
+   "......A.",
+   "...BERN.",
+   "........"
+  ]
+ },
+ "0327": {
+  "term": "VADUZ",
+  "words": [
+   {
+    "word": "VADUZ",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..M.....",
+   ".VADUZ..",
+   "..L.....",
+   "..I....."
+  ]
+ },
+ "0328": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "TOKYO",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".T......",
+   ".O......",
+   ".K......",
+   ".Y......",
+   "LOME....",
+   "........"
+  ]
+ },
+ "0329": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......T.",
+   "...HANOI",
+   "......G.",
+   "......O."
+  ]
+ },
+ "0330": {
+  "term": "NIGER",
+  "words": [
+   {
+    "word": "NIGER",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "....K...",
+   "....I...",
+   ".NIGER..",
+   "....V...",
+   "........",
+   "........"
+  ]
+ },
+ "0331": {
+  "term": "CHILE",
+  "words": [
+   {
+    "word": "CHILE",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".C......",
+   "CHILE...",
+   ".A......",
+   ".D......",
+   "........",
+   "........"
+  ]
+ },
+ "0401": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "SPAIN",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "..S.....",
+   "..P.....",
+   ".MALE...",
+   "..I.....",
+   "..N....."
+  ]
+ },
+ "0402": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "AMMAN",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....LIMA",
+   ".......M",
+   ".......M",
+   ".......A",
+   ".......N"
+  ]
+ },
+ "0403": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "..C.....",
+   "..H.....",
+   "..A.....",
+   "..DHAKA.",
+   "........"
+  ]
+ },
+ "0404": {
+  "term": "NDJAMENA",
+  "words": [
+   {
+    "word": "NDJAMENA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "NDJAMENA",
+   "........"
+  ]
+ },
+ "0405": {
+  "term": "KIEV",
+  "words": [
+   {
+    "word": "KIEV",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "alternate"
+   },
+   {
+    "word": "CHINA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...C....",
+   "...H....",
+   "..KIEV..",
+   "...N....",
+   "...A....",
+   "........"
+  ]
+ },
+ "0406": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "BURMA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "...B....",
+   "...U....",
+   "...ROME.",
+   "...M....",
+   "...A...."
+  ]
+ },
+ "0407": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".......C",
+   "....CUBA",
+   ".......I",
+   ".......R",
+   ".......O",
+   "........"
+  ]
+ },
+ "0408": {
+  "term": "PALAU",
+  "words": [
+   {
+    "word": "PALAU",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..R.....",
+   "..I.....",
+   "..G.....",
+   ".PALAU.."
+  ]
+ },
+ "0409": {
+  "term": "SYRIA",
+  "words": [
+   {
+    "word": "SYRIA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......L.",
+   "...SYRIA",
+   "......M.",
+   "......A."
+  ]
+ },
+ "0410": {
+  "term": "ABUJA",
+  "words": [
+   {
+    "word": "ABUJA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "M.......",
+   "ABUJA...",
+   "L.......",
+   "I.......",
+   "........"
+  ]
+ },
+ "0411": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "JAPAN",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".J......",
+   ".A......",
+   ".P......",
+   "MALI....",
+   ".N......"
+  ]
+ },
+ "0412": {
+  "term": "TEGUCIGA",
+  "words": [
+   {
+    "word": "TEGUCIGA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "TEGUCIGA",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0413": {
+  "term": "CAPETOWN",
+  "words": [
+   {
+    "word": "CAPETOWN",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "CAPETOWN"
+  ]
+ },
+ "0414": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....M..",
+   ".....I..",
+   "..BERN..",
+   ".....S..",
+   ".....K.."
+  ]
+ },
+ "0415": {
+  "term": "SUDAN",
+  "words": [
+   {
+    "word": "SUDAN",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....B...",
+   "....A...",
+   "....K...",
+   "...SUDAN"
+  ]
+ },
+ "0416": {
+  "term": "COPENHAG",
+  "words": [
+   {
+    "word": "COPENHAG",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "COPENHAG",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0417": {
+  "term": "GEORGETO",
+  "words": [
+   {
+    "word": "GEORGETO",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "GEORGETO",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0418": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...I....",
+   "...T....",
+   ".IRAQ...",
+   "...L....",
+   "...Y....",
+   "........"
+  ]
+ },
+ "0419": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "PRAIA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....P...",
+   "..BERN..",
+   "....A...",
+   "....I...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0420": {
+  "term": "NAURU",
+  "words": [
+   {
+    "word": "NAURU",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..I.....",
+   "..R.....",
+   ".NAURU..",
+   "..Q....."
+  ]
+ },
+ "0421": {
+  "term": "QATAR",
+  "words": [
+   {
+    "word": "QATAR",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "PERU",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....P...",
+   "....E...",
+   "QATAR...",
+   "....U...",
+   "........"
+  ]
+ },
+ "0422": {
+  "term": "DOHA",
+  "words": [
+   {
+    "word": "DOHA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KENYA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...K....",
+   "...E....",
+   "...N....",
+   "...Y....",
+   "DOHA....",
+   "........"
+  ]
+ },
+ "0423": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "MALTA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...M....",
+   "...A....",
+   ".OSLO...",
+   "...T....",
+   "...A...."
+  ]
+ },
+ "0424": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "PALAU",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....P...",
+   "....APIA",
+   "....L...",
+   "....A...",
+   "....U...",
+   "........"
+  ]
+ },
+ "0425": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "SANAA",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..S.....",
+   "IRAQ....",
+   "..N.....",
+   "..A.....",
+   "..A....."
+  ]
+ },
+ "0426": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "......N.",
+   "...ROME.",
+   "......P.",
+   "......A.",
+   "......L.",
+   "........"
+  ]
+ },
+ "0427": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "BURMA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   ".....B..",
+   ".....U..",
+   "....IRAN",
+   ".....M..",
+   ".....A..",
+   "........"
+  ]
+ },
+ "0428": {
+  "term": "VADUZ",
+  "words": [
+   {
+    "word": "VADUZ",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "RIGA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...R....",
+   "...I....",
+   "...G....",
+   "..VADUZ.",
+   "........",
+   "........"
+  ]
+ },
+ "0429": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......C",
+   ".......U",
+   ".......B",
+   "...INDIA",
+   "........"
+  ]
+ },
+ "0430": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "ACCRA",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "......A.",
+   "......C.",
+   "......C.",
+   "....BERN",
+   "......A.",
+   "........"
+  ]
+ },
+ "0501": {
+  "term": "SUDAN",
+  "words": [
+   {
+    "word": "SUDAN",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "PERU",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".P......",
+   ".E......",
+   ".R......",
+   "SUDAN..."
+  ]
+ },
+ "0502": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......C.",
+   "......H.",
+   "..DHAKA.",
+   "......D."
+  ]
+ },
+ "0503": {
+  "term": "IRAN",
+  "words": [
+   {
+    "word": "IRAN",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...IRAN.",
+   "......E.",
+   "......P.",
+   "......A.",
+   "......L."
+  ]
+ },
+ "0504": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "YEMEN",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".......Y",
+   ".......E",
+   ".......M",
+   "....LOME",
+   ".......N",
+   "........"
+  ]
+ },
+ "0505": {
+  "term": "TUNIS",
+  "words": [
+   {
+    "word": "TUNIS",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "FIJI",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....F..",
+   "..TUNIS.",
+   ".....J..",
+   ".....I.."
+  ]
+ },
+ "0506": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "SYRIA",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "..S.....",
+   "..Y.....",
+   "..R.....",
+   "..I.....",
+   "IRAQ...."
+  ]
+ },
+ "0507": {
+  "term": "VALLETTA",
+  "words": [
+   {
+    "word": "VALLETTA",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "VALLETTA"
+  ]
+ },
+ "0508": {
+  "term": "PERU",
+  "words": [
+   {
+    "word": "PERU",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....C..",
+   ".....A..",
+   ".....I..",
+   "...PERU.",
+   ".....O..",
+   "........"
+  ]
+ },
+ "0509": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KYIV",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....K...",
+   "....Y...",
+   "HANOI...",
+   "....V...",
+   "........"
+  ]
+ },
+ "0510": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".O......",
+   ".M......",
+   "HAITI...",
+   ".N......",
+   "........",
+   "........"
+  ]
+ },
+ "0511": {
+  "term": "KABUL",
+  "words": [
+   {
+    "word": "KABUL",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....I...",
+   "....R...",
+   "...KABUL",
+   "....Q...",
+   "........",
+   "........"
+  ]
+ },
+ "0512": {
+  "term": "PARIS",
+  "words": [
+   {
+    "word": "PARIS",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".M......",
+   "PARIS...",
+   ".L......",
+   ".I......",
+   "........",
+   "........"
+  ]
+ },
+ "0513": {
+  "term": "BENIN",
+  "words": [
+   {
+    "word": "BENIN",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "....K...",
+   ".BENIN..",
+   "....E...",
+   "....V...",
+   "........"
+  ]
+ },
+ "0514": {
+  "term": "BAKU",
+  "words": [
+   {
+    "word": "BAKU",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "KABUL",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...K....",
+   "...A....",
+   "...BAKU.",
+   "...U....",
+   "...L...."
+  ]
+ },
+ "0515": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".CAIRO..",
+   ".....M..",
+   ".....A..",
+   ".....N.."
+  ]
+ },
+ "0516": {
+  "term": "GABON",
+  "words": [
+   {
+    "word": "GABON",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....T..",
+   ".....O..",
+   ".....G..",
+   "..GABON.",
+   "........"
+  ]
+ },
+ "0517": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....K...",
+   ".PRAIA..",
+   "....E...",
+   "....V..."
+  ]
+ },
+ "0518": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "MINSK",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".OMAN...",
+   "..I.....",
+   "..N.....",
+   "..S.....",
+   "..K.....",
+   "........"
+  ]
+ },
+ "0519": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 3,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "PARIS",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".......P",
+   ".......A",
+   ".......R",
+   "....DILI",
+   ".......S",
+   "........"
+  ]
+ },
+ "0520": {
+  "term": "YAREN",
+  "words": [
+   {
+    "word": "YAREN",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".S......",
+   ".U......",
+   ".V......",
+   "YAREN...",
+   "........"
+  ]
+ },
+ "0521": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...S....",
+   "...U....",
+   "...V....",
+   "..HAITI."
+  ]
+ },
+ "0522": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "CONGO",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....C...",
+   ".OSLO...",
+   "....N...",
+   "....G...",
+   "....O..."
+  ]
+ },
+ "0523": {
+  "term": "PALAU",
+  "words": [
+   {
+    "word": "PALAU",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....L..",
+   ".....I..",
+   ".....M..",
+   "..PALAU.",
+   "........",
+   "........"
+  ]
+ },
+ "0524": {
+  "term": "PARIS",
+  "words": [
+   {
+    "word": "PARIS",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....C...",
+   "....H...",
+   "...PARIS",
+   "....D..."
+  ]
+ },
+ "0525": {
+  "term": "LIBYA",
+  "words": [
+   {
+    "word": "LIBYA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".D......",
+   "LIBYA...",
+   ".L......",
+   ".I......"
+  ]
+ },
+ "0526": {
+  "term": "BERN",
+  "words": [
+   {
+    "word": "BERN",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "GHANA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...G....",
+   "...H....",
+   "...A....",
+   "BERN....",
+   "...A....",
+   "........"
+  ]
+ },
+ "0527": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "AMMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...A....",
+   "...M....",
+   "...MALI.",
+   "...A....",
+   "...N....",
+   "........"
+  ]
+ },
+ "0528": {
+  "term": "SAMOA",
+  "words": [
+   {
+    "word": "SAMOA",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..SAMOA.",
+   "....A...",
+   "....L...",
+   "....E...",
+   "........"
+  ]
+ },
+ "0529": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....M...",
+   "...CAIRO",
+   "....L...",
+   "....E...",
+   "........",
+   "........"
+  ]
+ },
+ "0530": {
+  "term": "LIBYA",
+  "words": [
+   {
+    "word": "LIBYA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....I...",
+   "....R...",
+   "LIBYA...",
+   "....N...",
+   "........"
+  ]
+ },
+ "0531": {
+  "term": "RABAT",
+  "words": [
+   {
+    "word": "RABAT",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...C....",
+   "...H....",
+   "..RABAT.",
+   "...D....",
+   "........",
+   "........"
+  ]
+ },
+ "0601": {
+  "term": "KIEV",
+  "words": [
+   {
+    "word": "KIEV",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "alternate"
+   },
+   {
+    "word": "QUITO",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..Q.....",
+   "..U.....",
+   ".KIEV...",
+   "..T.....",
+   "..O....."
+  ]
+ },
+ "0602": {
+  "term": "ABUJA",
+  "words": [
+   {
+    "word": "ABUJA",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".L......",
+   ".ABUJA..",
+   ".O......",
+   ".S......",
+   "........",
+   "........"
+  ]
+ },
+ "0603": {
+  "term": "BENIN",
+  "words": [
+   {
+    "word": "BENIN",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...O....",
+   "...M....",
+   "...A....",
+   ".BENIN.."
+  ]
+ },
+ "0604": {
+  "term": "RABAT",
+  "words": [
+   {
+    "word": "RABAT",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "APIA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...RABAT",
+   "....P...",
+   "....I...",
+   "....A...",
+   "........",
+   "........"
+  ]
+ },
+ "0605": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "RIGA....",
+   ".T......",
+   ".A......",
+   ".L......",
+   ".Y......"
+  ]
+ },
+ "0606": {
+  "term": "LOME",
+  "words": [
+   {
+    "word": "LOME",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "LIBYA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...LOME.",
+   "...I....",
+   "...B....",
+   "...Y....",
+   "...A....",
+   "........"
+  ]
+ },
+ "0607": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "QATAR",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......Q",
+   "....JUBA",
+   ".......T",
+   ".......A",
+   ".......R"
+  ]
+ },
+ "0608": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 5,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....N..",
+   ".....E..",
+   ".....P..",
+   ".....A..",
+   "...MALI."
+  ]
+ },
+ "0609": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "LIBYA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....L..",
+   ".....I..",
+   ".....B..",
+   ".....Y..",
+   "...IRAQ.",
+   "........"
+  ]
+ },
+ "0610": {
+  "term": "SEOUL",
+  "words": [
+   {
+    "word": "SEOUL",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...T....",
+   "...O....",
+   "...G....",
+   ".SEOUL..",
+   "........",
+   "........"
+  ]
+ },
+ "0611": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "HANOI",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....H..",
+   ".....A..",
+   ".....N..",
+   ".....O..",
+   "..DILI..",
+   "........"
+  ]
+ },
+ "0612": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "SOFIA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....S..",
+   ".....O..",
+   ".....F..",
+   ".....I..",
+   "..CUBA..",
+   "........"
+  ]
+ },
+ "0613": {
+  "term": "DAKAR",
+  "words": [
+   {
+    "word": "DAKAR",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..B.....",
+   "..A.....",
+   "DAKAR...",
+   "..U.....",
+   "........"
+  ]
+ },
+ "0614": {
+  "term": "SLOVENIA",
+  "words": [
+   {
+    "word": "SLOVENIA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "SLOVENIA",
+   "........"
+  ]
+ },
+ "0615": {
+  "term": "MALI",
+  "words": [
+   {
+    "word": "MALI",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "TONGA",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "..T.....",
+   "..O.....",
+   "..N.....",
+   "..G.....",
+   ".MALI...",
+   "........"
+  ]
+ },
+ "0616": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".CAIRO..",
+   ".....S..",
+   ".....L..",
+   ".....O..",
+   "........"
+  ]
+ },
+ "0617": {
+  "term": "FIJI",
+  "words": [
+   {
+    "word": "FIJI",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "PRAIA",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".P......",
+   ".R......",
+   ".A......",
+   "FIJI....",
+   ".A......",
+   "........"
+  ]
+ },
+ "0618": {
+  "term": "PANAMACI",
+  "words": [
+   {
+    "word": "PANAMACI",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "PANAMACI",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0619": {
+  "term": "GABON",
+  "words": [
+   {
+    "word": "GABON",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".M......",
+   "GABON...",
+   ".L......",
+   ".I......",
+   "........",
+   "........"
+  ]
+ },
+ "0620": {
+  "term": "SAMOA",
+  "words": [
+   {
+    "word": "SAMOA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".J......",
+   ".U......",
+   ".B......",
+   "SAMOA...",
+   "........",
+   "........"
+  ]
+ },
+ "0621": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "NEPAL",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....N..",
+   ".....E..",
+   ".....P..",
+   "..JUBA..",
+   ".....L.."
+  ]
+ },
+ "0622": {
+  "term": "MONTENEG",
+  "words": [
+   {
+    "word": "MONTENEG",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "MONTENEG"
+  ]
+ },
+ "0623": {
+  "term": "DHAKA",
+  "words": [
+   {
+    "word": "DHAKA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..I.....",
+   "..R.....",
+   "DHAKA...",
+   "..Q....."
+  ]
+ },
+ "0624": {
+  "term": "KENYA",
+  "words": [
+   {
+    "word": "KENYA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "APIA",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".......A",
+   ".......P",
+   ".......I",
+   "...KENYA",
+   "........",
+   "........"
+  ]
+ },
+ "0625": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "LOME",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..L.....",
+   "..O.....",
+   "..M.....",
+   ".NEPAL.."
+  ]
+ },
+ "0626": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "KYIV",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "......K.",
+   "......Y.",
+   "...INDIA",
+   "......V.",
+   "........"
+  ]
+ },
+ "0627": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   },
+   {
+    "word": "DHAKA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....DILI",
+   "....H...",
+   "....A...",
+   "....K...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0628": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....L..",
+   "..SPAIN.",
+   ".....M..",
+   ".....A..",
+   "........"
+  ]
+ },
+ "0629": {
+  "term": "SUDAN",
+  "words": [
+   {
+    "word": "SUDAN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "......M.",
+   "...SUDAN",
+   "......L.",
+   "......E.",
+   "........"
+  ]
+ },
+ "0630": {
+  "term": "MADAGASC",
+  "words": [
+   {
+    "word": "MADAGASC",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "MADAGASC",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0701": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "O.......",
+   "M.......",
+   "A.......",
+   "NEPAL...",
+   "........"
+  ]
+ },
+ "0702": {
+  "term": "TUNIS",
+  "words": [
+   {
+    "word": "TUNIS",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...C....",
+   "..TUNIS.",
+   "...B....",
+   "...A....",
+   "........"
+  ]
+ },
+ "0703": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SYRIA",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...S....",
+   "...Y....",
+   "...R....",
+   "...I....",
+   "LIMA....",
+   "........"
+  ]
+ },
+ "0704": {
+  "term": "SOFIA",
+  "words": [
+   {
+    "word": "SOFIA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....C..",
+   ".....H..",
+   ".SOFIA..",
+   ".....D.."
+  ]
+ },
+ "0705": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "YEMEN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....Y...",
+   "....E...",
+   "...OMAN.",
+   "....E...",
+   "....N...",
+   "........"
+  ]
+ },
+ "0706": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....J...",
+   "....U...",
+   "....B...",
+   "PRAIA...",
+   "........",
+   "........"
+  ]
+ },
+ "0707": {
+  "term": "KENYA",
+  "words": [
+   {
+    "word": "KENYA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......C",
+   ".......U",
+   ".......B",
+   "...KENYA",
+   "........"
+  ]
+ },
+ "0708": {
+  "term": "AMMAN",
+  "words": [
+   {
+    "word": "AMMAN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "......I.",
+   "......R.",
+   "...AMMAN",
+   "......Q.",
+   "........"
+  ]
+ },
+ "0709": {
+  "term": "SEOUL",
+  "words": [
+   {
+    "word": "SEOUL",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "MALE",
+    "dir": "V",
+    "row": 2,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".......M",
+   ".......A",
+   "...SEOUL",
+   ".......E"
+  ]
+ },
+ "0710": {
+  "term": "PERU",
+  "words": [
+   {
+    "word": "PERU",
+    "dir": "H",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "BENIN",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....B..",
+   "....PERU",
+   ".....N..",
+   ".....I..",
+   ".....N..",
+   "........"
+  ]
+ },
+ "0711": {
+  "term": "INDIA",
+  "words": [
+   {
+    "word": "INDIA",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "..K.....",
+   "..INDIA.",
+   "..E.....",
+   "..V.....",
+   "........",
+   "........"
+  ]
+ },
+ "0712": {
+  "term": "JUBA",
+  "words": [
+   {
+    "word": "JUBA",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "SUDAN",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...S....",
+   "..JUBA..",
+   "...D....",
+   "...A....",
+   "...N...."
+  ]
+ },
+ "0713": {
+  "term": "SAINTGEO",
+  "words": [
+   {
+    "word": "SAINTGEO",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "SAINTGEO",
+   "........",
+   "........"
+  ]
+ },
+ "0714": {
+  "term": "APIA",
+  "words": [
+   {
+    "word": "APIA",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "ABUJA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".APIA...",
+   "....B...",
+   "....U...",
+   "....J...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0715": {
+  "term": "FIJI",
+  "words": [
+   {
+    "word": "FIJI",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "CAIRO",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "......C.",
+   "......A.",
+   "...FIJI.",
+   "......R.",
+   "......O."
+  ]
+ },
+ "0716": {
+  "term": "ROME",
+  "words": [
+   {
+    "word": "ROME",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "QUITO",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".Q......",
+   ".U......",
+   ".I......",
+   ".T......",
+   "ROME....",
+   "........"
+  ]
+ },
+ "0717": {
+  "term": "SANTIAGO",
+  "words": [
+   {
+    "word": "SANTIAGO",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "SANTIAGO",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0718": {
+  "term": "SAMOA",
+  "words": [
+   {
+    "word": "SAMOA",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....T..",
+   "..SAMOA.",
+   ".....G..",
+   ".....O.."
+  ]
+ },
+ "0719": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "INDIA",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "RIGA....",
+   ".N......",
+   ".D......",
+   ".I......",
+   ".A......"
+  ]
+ },
+ "0720": {
+  "term": "OMAN",
+  "words": [
+   {
+    "word": "OMAN",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "SAMOA",
+    "dir": "V",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "S.......",
+   "A.......",
+   "M.......",
+   "OMAN....",
+   "A......."
+  ]
+ },
+ "0721": {
+  "term": "OSLO",
+  "words": [
+   {
+    "word": "OSLO",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "TUNIS",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".T......",
+   ".U......",
+   ".N......",
+   ".I......",
+   "OSLO...."
+  ]
+ },
+ "0722": {
+  "term": "BURKINAF",
+  "words": [
+   {
+    "word": "BURKINAF",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "BURKINAF",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0723": {
+  "term": "MAURITAN",
+  "words": [
+   {
+    "word": "MAURITAN",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "MAURITAN",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0724": {
+  "term": "VADUZ",
+  "words": [
+   {
+    "word": "VADUZ",
+    "dir": "H",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".VADUZ..",
+   "...I....",
+   "...L....",
+   "...I....",
+   "........",
+   "........"
+  ]
+ },
+ "0725": {
+  "term": "AFGHANIS",
+  "words": [
+   {
+    "word": "AFGHANIS",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "AFGHANIS",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0726": {
+  "term": "LIBYA",
+  "words": [
+   {
+    "word": "LIBYA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "KYIV",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...K....",
+   "LIBYA...",
+   "...I....",
+   "...V....",
+   "........",
+   "........"
+  ]
+ },
+ "0727": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "SEOUL",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".S......",
+   ".E......",
+   ".O......",
+   ".U......",
+   ".LIMA...",
+   "........"
+  ]
+ },
+ "0728": {
+  "term": "PARIS",
+  "words": [
+   {
+    "word": "PARIS",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "BERN",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...B....",
+   "...E....",
+   ".PARIS..",
+   "...N...."
+  ]
+ },
+ "0729": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAQ",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".....I..",
+   "..CAIRO.",
+   ".....A..",
+   ".....Q.."
+  ]
+ },
+ "0730": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "PARIS",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....P...",
+   ".CUBA...",
+   "....R...",
+   "....I...",
+   "....S..."
+  ]
+ },
+ "0731": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "SEOUL",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....S..",
+   "..MALE..",
+   ".....O..",
+   ".....U..",
+   ".....L..",
+   "........"
+  ]
+ },
+ "0801": {
+  "term": "CAIRO",
+  "words": [
+   {
+    "word": "CAIRO",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....T..",
+   ".CAIRO..",
+   ".....G..",
+   ".....O..",
+   "........",
+   "........"
+  ]
+ },
+ "0802": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "CHILE",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "...C....",
+   "...H....",
+   "...I....",
+   ".DILI...",
+   "...E...."
+  ]
+ },
+ "0803": {
+  "term": "MALTA",
+  "words": [
+   {
+    "word": "MALTA",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....B...",
+   "MALTA...",
+   "....K...",
+   "....U..."
+  ]
+ },
+ "0804": {
+  "term": "SOLOMONI",
+  "words": [
+   {
+    "word": "SOLOMONI",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "SOLOMONI",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0805": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....I...",
+   ".SUCRE..",
+   "....A...",
+   "....N..."
+  ]
+ },
+ "0806": {
+  "term": "BENIN",
+  "words": [
+   {
+    "word": "BENIN",
+    "dir": "H",
+    "row": 0,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 0,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "..BENIN.",
+   "..A.....",
+   "..K.....",
+   "..U.....",
+   "........",
+   "........"
+  ]
+ },
+ "0807": {
+  "term": "ETHIOPIA",
+  "words": [
+   {
+    "word": "ETHIOPIA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "ETHIOPIA",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0808": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "BERN",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...B....",
+   "...E....",
+   "...R....",
+   ".HANOI..",
+   "........",
+   "........"
+  ]
+ },
+ "0809": {
+  "term": "BELMOPAN",
+  "words": [
+   {
+    "word": "BELMOPAN",
+    "dir": "H",
+    "row": 0,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "BELMOPAN",
+   "........",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0810": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....C...",
+   "....U...",
+   "....B...",
+   "..ITALY."
+  ]
+ },
+ "0811": {
+  "term": "MALE",
+  "words": [
+   {
+    "word": "MALE",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "ITALY",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....I...",
+   "....T...",
+   "....A...",
+   "..MALE..",
+   "....Y...",
+   "........"
+  ]
+ },
+ "0812": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   "....U...",
+   "....V...",
+   "...HANOI",
+   "........"
+  ]
+ },
+ "0813": {
+  "term": "HANOI",
+  "words": [
+   {
+    "word": "HANOI",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".B......",
+   "HANOI...",
+   ".K......",
+   ".U......",
+   "........"
+  ]
+ },
+ "0814": {
+  "term": "CHAD",
+  "words": [
+   {
+    "word": "CHAD",
+    "dir": "H",
+    "row": 3,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "VADUZ",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....V...",
+   "....A...",
+   ".CHAD...",
+   "....U...",
+   "....Z..."
+  ]
+ },
+ "0815": {
+  "term": "TONGA",
+  "words": [
+   {
+    "word": "TONGA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "DOHA",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......D",
+   ".......O",
+   ".......H",
+   "...TONGA",
+   "........"
+  ]
+ },
+ "0816": {
+  "term": "ITALY",
+  "words": [
+   {
+    "word": "ITALY",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "DILI",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   ".D......",
+   ".I......",
+   ".L......",
+   ".ITALY..",
+   "........"
+  ]
+ },
+ "0817": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "BERN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....B...",
+   "....E...",
+   ".SUCRE..",
+   "....N...",
+   "........",
+   "........"
+  ]
+ },
+ "0818": {
+  "term": "IRAQ",
+  "words": [
+   {
+    "word": "IRAQ",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "SOFIA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....S..",
+   ".....O..",
+   ".....F..",
+   ".....I..",
+   "...IRAQ.",
+   "........"
+  ]
+ },
+ "0819": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "HANOI",
+    "dir": "V",
+    "row": 0,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "...H....",
+   "LIMA....",
+   "...N....",
+   "...O....",
+   "...I....",
+   "........"
+  ]
+ },
+ "0820": {
+  "term": "SEOUL",
+  "words": [
+   {
+    "word": "SEOUL",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".K......",
+   ".I......",
+   "SEOUL...",
+   ".V......"
+  ]
+ },
+ "0821": {
+  "term": "JAPAN",
+  "words": [
+   {
+    "word": "JAPAN",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "APIA",
+    "dir": "V",
+    "row": 2,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..JAPAN.",
+   ".....P..",
+   ".....I..",
+   ".....A.."
+  ]
+ },
+ "0822": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "OMAN",
+    "dir": "V",
+    "row": 0,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".......O",
+   ".......M",
+   ".......A",
+   "...SPAIN",
+   "........",
+   "........"
+  ]
+ },
+ "0823": {
+  "term": "NEPAL",
+  "words": [
+   {
+    "word": "NEPAL",
+    "dir": "H",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "APIA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....A...",
+   "..NEPAL.",
+   "....I...",
+   "....A...",
+   "........"
+  ]
+ },
+ "0824": {
+  "term": "CHILE",
+  "words": [
+   {
+    "word": "CHILE",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....M...",
+   "....A...",
+   "....L...",
+   "..CHILE.",
+   "........"
+  ]
+ },
+ "0825": {
+  "term": "CHINA",
+  "words": [
+   {
+    "word": "CHINA",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "MALI",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..M.....",
+   "..A.....",
+   "..L.....",
+   "CHINA..."
+  ]
+ },
+ "0826": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 1,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "LAPAZ",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "..DILI..",
+   "....A...",
+   "....P...",
+   "....A...",
+   "....Z..."
+  ]
+ },
+ "0827": {
+  "term": "GABORONE",
+  "words": [
+   {
+    "word": "GABORONE",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "GABORONE",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0828": {
+  "term": "NAURU",
+  "words": [
+   {
+    "word": "NAURU",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".S......",
+   ".U......",
+   ".V......",
+   "NAURU...",
+   "........",
+   "........"
+  ]
+ },
+ "0829": {
+  "term": "QATAR",
+  "words": [
+   {
+    "word": "QATAR",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "LIMA",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....L...",
+   "....I...",
+   "....M...",
+   "...QATAR",
+   "........",
+   "........"
+  ]
+ },
+ "0830": {
+  "term": "PARIS",
+  "words": [
+   {
+    "word": "PARIS",
+    "dir": "H",
+    "row": 1,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".PARIS..",
+   "....R...",
+   "....A...",
+   "....N...",
+   "........"
+  ]
+ },
+ "0831": {
+  "term": "QATAR",
+  "words": [
+   {
+    "word": "QATAR",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "LAOS",
+    "dir": "V",
+    "row": 1,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".L......",
+   "QATAR...",
+   ".O......",
+   ".S......",
+   "........"
+  ]
+ },
+ "0901": {
+  "term": "SUCRE",
+  "words": [
+   {
+    "word": "SUCRE",
+    "dir": "H",
+    "row": 3,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 2,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "....S...",
+   "...SUCRE",
+   "....V...",
+   "....A..."
+  ]
+ },
+ "0902": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "PARIS",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "......P.",
+   "...RIGA.",
+   "......R.",
+   "......I.",
+   "......S."
+  ]
+ },
+ "0903": {
+  "term": "SWAZILAN",
+  "words": [
+   {
+    "word": "SWAZILAN",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "SWAZILAN",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0904": {
+  "term": "SOUTHSUD",
+  "words": [
+   {
+    "word": "SOUTHSUD",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "SOUTHSUD",
+   "........",
+   "........"
+  ]
+ },
+ "0905": {
+  "term": "PERU",
+  "words": [
+   {
+    "word": "PERU",
+    "dir": "H",
+    "row": 2,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "LAPAZ",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "....L...",
+   "....A...",
+   "....PERU",
+   "....A...",
+   "....Z...",
+   "........"
+  ]
+ },
+ "0906": {
+  "term": "CUBA",
+  "words": [
+   {
+    "word": "CUBA",
+    "dir": "H",
+    "row": 5,
+    "col": 4,
+    "kind": "country"
+   },
+   {
+    "word": "PALAU",
+    "dir": "V",
+    "row": 1,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".....P..",
+   ".....A..",
+   ".....L..",
+   ".....A..",
+   "....CUBA"
+  ]
+ },
+ "0907": {
+  "term": "EQUATORI",
+  "words": [
+   {
+    "word": "EQUATORI",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "EQUATORI",
+   "........"
+  ]
+ },
+ "0908": {
+  "term": "ABUJA",
+  "words": [
+   {
+    "word": "ABUJA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "SUVA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "....S...",
+   "....U...",
+   "....V...",
+   "ABUJA...",
+   "........"
+  ]
+ },
+ "0909": {
+  "term": "PERU",
+  "words": [
+   {
+    "word": "PERU",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "BURMA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "....B...",
+   ".PERU...",
+   "....R...",
+   "....M...",
+   "....A..."
+  ]
+ },
+ "0910": {
+  "term": "KABUL",
+  "words": [
+   {
+    "word": "KABUL",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "CHAD",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".C......",
+   ".H......",
+   "KABUL...",
+   ".D......"
+  ]
+ },
+ "0911": {
+  "term": "PALAU",
+  "words": [
+   {
+    "word": "PALAU",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "IRAN",
+    "dir": "V",
+    "row": 0,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "....I...",
+   "....R...",
+   ".PALAU..",
+   "....N...",
+   "........",
+   "........"
+  ]
+ },
+ "0912": {
+  "term": "PALAU",
+  "words": [
+   {
+    "word": "PALAU",
+    "dir": "H",
+    "row": 4,
+    "col": 1,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...O....",
+   "...S....",
+   ".PALAU..",
+   "...O...."
+  ]
+ },
+ "0913": {
+  "term": "ABUJA",
+  "words": [
+   {
+    "word": "ABUJA",
+    "dir": "H",
+    "row": 4,
+    "col": 3,
+    "kind": "capital"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 7,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   ".......C",
+   ".......U",
+   ".......B",
+   "...ABUJA",
+   "........"
+  ]
+ },
+ "0914": {
+  "term": "QATAR",
+  "words": [
+   {
+    "word": "QATAR",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   ".C......",
+   ".U......",
+   ".B......",
+   "QATAR..."
+  ]
+ },
+ "0915": {
+  "term": "SOFIA",
+  "words": [
+   {
+    "word": "SOFIA",
+    "dir": "H",
+    "row": 5,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "JUBA",
+    "dir": "V",
+    "row": 2,
+    "col": 6,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "......J.",
+   "......U.",
+   "......B.",
+   "..SOFIA."
+  ]
+ },
+ "0916": {
+  "term": "SPAIN",
+  "words": [
+   {
+    "word": "SPAIN",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "KIEV",
+    "dir": "V",
+    "row": 1,
+    "col": 6,
+    "kind": "alternate"
+   }
+  ],
+  "rows": [
+   "........",
+   "......K.",
+   "...SPAIN",
+   "......E.",
+   "......V.",
+   "........"
+  ]
+ },
+ "0917": {
+  "term": "YAMOUSSO",
+  "words": [
+   {
+    "word": "YAMOUSSO",
+    "dir": "H",
+    "row": 3,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "YAMOUSSO",
+   "........",
+   "........"
+  ]
+ },
+ "0918": {
+  "term": "ABUJA",
+  "words": [
+   {
+    "word": "ABUJA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "FIJI",
+    "dir": "V",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "...F....",
+   "...I....",
+   "ABUJA...",
+   "...I...."
+  ]
+ },
+ "0919": {
+  "term": "WASHINGT",
+  "words": [
+   {
+    "word": "WASHINGT",
+    "dir": "H",
+    "row": 1,
+    "col": 0,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "WASHINGT",
+   "........",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0920": {
+  "term": "TOGO",
+  "words": [
+   {
+    "word": "TOGO",
+    "dir": "H",
+    "row": 2,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "NIGER",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".....N..",
+   ".....I..",
+   "...TOGO.",
+   ".....E..",
+   ".....R..",
+   "........"
+  ]
+ },
+ "0921": {
+  "term": "HAITI",
+  "words": [
+   {
+    "word": "HAITI",
+    "dir": "H",
+    "row": 0,
+    "col": 3,
+    "kind": "country"
+   },
+   {
+    "word": "TOGO",
+    "dir": "V",
+    "row": 0,
+    "col": 6,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "...HAITI",
+   "......O.",
+   "......G.",
+   "......O.",
+   "........",
+   "........"
+  ]
+ },
+ "0922": {
+  "term": "PRAIA",
+  "words": [
+   {
+    "word": "PRAIA",
+    "dir": "H",
+    "row": 2,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "BAKU",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...B....",
+   ".PRAIA..",
+   "...K....",
+   "...U....",
+   "........"
+  ]
+ },
+ "0923": {
+  "term": "DILI",
+  "words": [
+   {
+    "word": "DILI",
+    "dir": "H",
+    "row": 5,
+    "col": 1,
+    "kind": "capital"
+   },
+   {
+    "word": "KABUL",
+    "dir": "V",
+    "row": 1,
+    "col": 3,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "...K....",
+   "...A....",
+   "...B....",
+   "...U....",
+   ".DILI..."
+  ]
+ },
+ "0924": {
+  "term": "SUDAN",
+  "words": [
+   {
+    "word": "SUDAN",
+    "dir": "H",
+    "row": 3,
+    "col": 2,
+    "kind": "country"
+   },
+   {
+    "word": "OSLO",
+    "dir": "V",
+    "row": 2,
+    "col": 2,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "..O.....",
+   "..SUDAN.",
+   "..L.....",
+   "..O....."
+  ]
+ },
+ "0925": {
+  "term": "BOTSWANA",
+  "words": [
+   {
+    "word": "BOTSWANA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "BOTSWANA",
+   "........",
+   "........",
+   "........"
+  ]
+ },
+ "0926": {
+  "term": "LIMA",
+  "words": [
+   {
+    "word": "LIMA",
+    "dir": "H",
+    "row": 4,
+    "col": 2,
+    "kind": "capital"
+   },
+   {
+    "word": "ACCRA",
+    "dir": "V",
+    "row": 0,
+    "col": 5,
+    "kind": "capital"
+   }
+  ],
+  "rows": [
+   ".....A..",
+   ".....C..",
+   ".....C..",
+   ".....R..",
+   "..LIMA..",
+   "........"
+  ]
+ },
+ "0927": {
+  "term": "SYRIA",
+  "words": [
+   {
+    "word": "SYRIA",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   },
+   {
+    "word": "CUBA",
+    "dir": "V",
+    "row": 1,
+    "col": 4,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "....C...",
+   "....U...",
+   "....B...",
+   "SYRIA...",
+   "........"
+  ]
+ },
+ "0928": {
+  "term": "PHILIPPI",
+  "words": [
+   {
+    "word": "PHILIPPI",
+    "dir": "H",
+    "row": 5,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "........",
+   "PHILIPPI"
+  ]
+ },
+ "0929": {
+  "term": "ZIMBABWE",
+  "words": [
+   {
+    "word": "ZIMBABWE",
+    "dir": "H",
+    "row": 4,
+    "col": 0,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   "........",
+   "........",
+   "........",
+   "........",
+   "ZIMBABWE",
+   "........"
+  ]
+ },
+ "0930": {
+  "term": "RIGA",
+  "words": [
+   {
+    "word": "RIGA",
+    "dir": "H",
+    "row": 2,
+    "col": 0,
+    "kind": "capital"
+   },
+   {
+    "word": "CHINA",
+    "dir": "V",
+    "row": 0,
+    "col": 1,
+    "kind": "country"
+   }
+  ],
+  "rows": [
+   ".C......",
+   ".H......",
+   "RIGA....",
+   ".N......",
+   ".A......",
+   "........"
+  ]
+ }
+}
