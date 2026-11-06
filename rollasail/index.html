@@ -85,14 +85,22 @@
 
 <!-- Script Block for Sharing -->
 <script>
-function shareToMessenger() {
-  const shareUrl = encodeURIComponent(window.location.href);
-  
-  if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = `fb-messenger://share?link=${shareUrl}`;
-  } else {
-    const appId = 'YOUR_APP_ID'; 
-    window.open(`https://facebook.com{appId}&link=${shareUrl}&redirect_uri=${shareUrl}`, '_blank');
+// Opens the phone/browser share sheet; falls back to copying the link.
+async function shareToMessenger() {
+  const url = window.location.href;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: 'RollaSail', text: 'Come play RollaSail!', url: url });
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;   // player closed the share sheet
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(url);
+    alert('Link copied. Paste it into a message to share.');
+  } catch (e) {
+    window.prompt('Copy this link to share:', url);
   }
 }
 </script>
