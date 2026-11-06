@@ -1,0 +1,194 @@
+Country,Capital(s),Type for country,Type for capital(s),Also accepted,Note,Latitude(s),Longitude(s)
+Afghanistan,Kabul,AFGHANIS,KABUL,,,34.53,69.17
+Albania,Tirana,ALBANIA,TIRANA,,,41.33,19.82
+Algeria,Algiers,ALGERIA,ALGIERS,,,36.75,3.04
+Andorra,Andorra la Vella,ANDORRA,ANDORRAL,,,42.51,1.52
+Angola,Luanda,ANGOLA,LUANDA,,,-8.84,13.23
+Antigua and Barbuda,Saint John's,ANTIGUAA,SAINTJOH,,,17.12,-61.85
+Argentina,Buenos Aires,ARGENTIN,BUENOSAI,,,-34.60,-58.38
+Armenia,Yerevan,ARMENIA,YEREVAN,,,40.18,44.51
+Australia,Canberra,AUSTRALI,CANBERRA,,,-35.28,149.13
+Austria,Vienna,AUSTRIA,VIENNA,,,48.21,16.37
+Azerbaijan,Baku,AZERBAIJ,BAKU,,,40.41,49.87
+Bahamas,Nassau,BAHAMAS,NASSAU,,,25.05,-77.35
+Bahrain,Manama,BAHRAIN,MANAMA,,,26.23,50.59
+Bangladesh,Dhaka,BANGLADE,DHAKA,,,23.81,90.41
+Barbados,Bridgetown,BARBADOS,BRIDGETO,,,13.10,-59.61
+Belarus,Minsk,BELARUS,MINSK,,,53.90,27.57
+Belgium,Brussels,BELGIUM,BRUSSELS,,,50.85,4.35
+Belize,Belmopan,BELIZE,BELMOPAN,,,17.25,-88.77
+Benin,Porto-Novo,BENIN,PORTONOV,,,6.50,2.63
+Bhutan,Thimphu,BHUTAN,THIMPHU,,,27.47,89.64
+Bolivia,Sucre; La Paz,BOLIVIA,SUCRE; LAPAZ,,Sucre is the constitutional capital; La Paz is the seat of government.,-19.03; -16.50,-65.26; -68.15
+Bosnia and Herzegovina,Sarajevo,BOSNIAAN,SARAJEVO,,,43.86,18.41
+Botswana,Gaborone,BOTSWANA,GABORONE,,,-24.65,25.91
+Brazil,Brasília,BRAZIL,BRASILIA,,,-15.79,-47.88
+Brunei,Bandar Seri Begawan,BRUNEI,BANDARSE,,,4.89,114.94
+Bulgaria,Sofia,BULGARIA,SOFIA,,,42.70,23.32
+Burkina Faso,Ouagadougou,BURKINAF,OUAGADOU,,,12.37,-1.52
+Burundi,Gitega; Bujumbura,BURUNDI,GITEGA; BUJUMBUR,,Gitega is the political capital; Bujumbura is the largest city.,-3.43; -3.38,29.93; 29.36
+Cabo Verde (Cape Verde),Praia,CABOVERD,PRAIA,CAPEVERD,,14.93,-23.51
+Cambodia,Phnom Penh,CAMBODIA,PHNOMPEN,,,11.56,104.93
+Cameroon,Yaoundé,CAMEROON,YAOUNDE,,,3.85,11.50
+Canada,Ottawa,CANADA,OTTAWA,,,45.42,-75.70
+Central African Republic,Bangui,CENTRALA,BANGUI,,,4.36,18.56
+Chad,N'Djamena,CHAD,NDJAMENA,,,12.13,15.05
+Chile,Santiago,CHILE,SANTIAGO,,,-33.45,-70.67
+China,Beijing,CHINA,BEIJING,,,39.90,116.41
+Colombia,Bogotá,COLOMBIA,BOGOTA,,,4.71,-74.07
+Comoros,Moroni,COMOROS,MORONI,,,-11.70,43.26
+Republic of the Congo,Brazzaville,CONGO,BRAZZAVI,,,-4.27,15.28
+Costa Rica,San José,COSTARIC,SANJOSE,,,9.93,-84.08
+Côte d'Ivoire,Yamoussoukro; Abidjan,COTEDIVO,YAMOUSSO; ABIDJAN,IVORYCOA,Yamoussoukro is the official capital; Abidjan is the economic centre.,6.82; 5.36,-5.28; -4.01
+Croatia,Zagreb,CROATIA,ZAGREB,,,45.81,15.98
+Cuba,Havana,CUBA,HAVANA,,,23.11,-82.37
+Cyprus,Nicosia,CYPRUS,NICOSIA,,,35.19,33.38
+Czechia,Prague,CZECHIA,PRAGUE,CZECHREP,,50.08,14.44
+North Korea,Pyongyang,NORTHKOR,PYONGYAN,,,39.04,125.76
+DR Congo (Democratic Republic of the Congo),Kinshasa,DRCONGO,KINSHASA,,,-4.44,15.27
+Denmark,Copenhagen,DENMARK,COPENHAG,,,55.68,12.57
+Djibouti,Djibouti,DJIBOUTI,DJIBOUTI,,,11.59,43.15
+Dominica,Roseau,DOMINICA,ROSEAU,,,15.30,-61.39
+Dominican Republic,Santo Domingo,DOMINICA,SANTODOM,,,18.49,-69.93
+Ecuador,Quito,ECUADOR,QUITO,,,-0.18,-78.47
+Egypt,Cairo,EGYPT,CAIRO,,,30.04,31.24
+El Salvador,San Salvador,ELSALVAD,SANSALVA,,,13.69,-89.19
+Equatorial Guinea,Malabo,EQUATORI,MALABO,,,3.75,8.78
+Eritrea,Asmara,ERITREA,ASMARA,,,15.32,38.93
+Estonia,Tallinn,ESTONIA,TALLINN,,,59.44,24.75
+Eswatini,Mbabane; Lobamba,ESWATINI,MBABANE; LOBAMBA,SWAZILAN,Mbabane is the administrative capital; Lobamba is the royal and legislative capital.,-26.31; -26.46,31.14; 31.20
+Ethiopia,Addis Ababa,ETHIOPIA,ADDISABA,,,9.03,38.74
+Fiji,Suva,FIJI,SUVA,,,-18.14,178.44
+Finland,Helsinki,FINLAND,HELSINKI,,,60.17,24.94
+France,Paris,FRANCE,PARIS,,,48.86,2.35
+Gabon,Libreville,GABON,LIBREVIL,,,0.39,9.45
+Gambia,Banjul,GAMBIA,BANJUL,,,13.45,-16.58
+Georgia,Tbilisi,GEORGIA,TBILISI,,,41.72,44.79
+Germany,Berlin,GERMANY,BERLIN,,,52.52,13.40
+Ghana,Accra,GHANA,ACCRA,,,5.60,-0.19
+Greece,Athens,GREECE,ATHENS,,,37.98,23.73
+Grenada,Saint George's,GRENADA,SAINTGEO,,,12.06,-61.75
+Guatemala,Guatemala City,GUATEMAL,GUATEMAL,,,14.63,-90.51
+Guinea,Conakry,GUINEA,CONAKRY,,,9.64,-13.58
+Guinea-Bissau,Bissau,GUINEABI,BISSAU,,,11.86,-15.60
+Guyana,Georgetown,GUYANA,GEORGETO,,,6.80,-58.16
+Haiti,Port-au-Prince,HAITI,PORTAUPR,,,18.54,-72.34
+Honduras,Tegucigalpa,HONDURAS,TEGUCIGA,,,14.07,-87.19
+Hungary,Budapest,HUNGARY,BUDAPEST,,,47.50,19.04
+Iceland,Reykjavík,ICELAND,REYKJAVI,,,64.15,-21.94
+India,New Delhi,INDIA,NEWDELHI,,,28.61,77.21
+Indonesia,Jakarta; Nusantara,INDONESI,JAKARTA; NUSANTAR,,Jakarta is the current capital; Nusantara is the planned new capital.,-6.21; -0.99,106.85; 116.70
+Iran,Tehran,IRAN,TEHRAN,,,35.69,51.39
+Iraq,Baghdad,IRAQ,BAGHDAD,,,33.31,44.37
+Ireland,Dublin,IRELAND,DUBLIN,,,53.35,-6.26
+Israel,Jerusalem,ISRAEL,JERUSALE,,Israel designates Jerusalem as its capital; the status of Jerusalem is disputed internationally.,31.77,35.21
+Italy,Rome,ITALY,ROME,,,41.90,12.50
+Jamaica,Kingston,JAMAICA,KINGSTON,,,18.00,-76.79
+Japan,Tokyo,JAPAN,TOKYO,,,35.68,139.69
+Jordan,Amman,JORDAN,AMMAN,,,31.95,35.93
+Kazakhstan,Astana,KAZAKHST,ASTANA,,,51.17,71.43
+Kenya,Nairobi,KENYA,NAIROBI,,,-1.29,36.82
+Kiribati,Tarawa,KIRIBATI,TARAWA,,,1.45,173.00
+Kuwait,Kuwait City,KUWAIT,KUWAITCI,,,29.38,47.99
+Kyrgyzstan,Bishkek,KYRGYZST,BISHKEK,,,42.87,74.59
+Laos,Vientiane,LAOS,VIENTIAN,,,17.97,102.63
+Latvia,Riga,LATVIA,RIGA,,,56.95,24.11
+Lebanon,Beirut,LEBANON,BEIRUT,,,33.89,35.50
+Lesotho,Maseru,LESOTHO,MASERU,,,-29.31,27.48
+Liberia,Monrovia,LIBERIA,MONROVIA,,,6.30,-10.80
+Libya,Tripoli,LIBYA,TRIPOLI,,,32.89,13.19
+Liechtenstein,Vaduz,LIECHTEN,VADUZ,,,47.14,9.52
+Lithuania,Vilnius,LITHUANI,VILNIUS,,,54.69,25.28
+Luxembourg,Luxembourg,LUXEMBOU,LUXEMBOU,,,49.61,6.13
+Madagascar,Antananarivo,MADAGASC,ANTANANA,,,-18.88,47.51
+Malawi,Lilongwe,MALAWI,LILONGWE,,,-13.96,33.77
+Malaysia,Kuala Lumpur; Putrajaya,MALAYSIA,KUALALUM; PUTRAJAY,,Kuala Lumpur is the national capital; Putrajaya is the administrative centre.,3.14; 2.93,101.69; 101.70
+Maldives,Malé,MALDIVES,MALE,,,4.18,73.51
+Mali,Bamako,MALI,BAMAKO,,,12.64,-8.00
+Malta,Valletta,MALTA,VALLETTA,,,35.90,14.51
+Marshall Islands,Majuro,MARSHALL,MAJURO,,,7.09,171.38
+Mauritania,Nouakchott,MAURITAN,NOUAKCHO,,,18.09,-15.98
+Mauritius,Port Louis,MAURITIU,PORTLOUI,,,-20.16,57.50
+Mexico,Mexico City,MEXICO,MEXICOCI,,,19.43,-99.13
+Micronesia,Palikir,MICRONES,PALIKIR,,,6.92,158.16
+Monaco,Monaco,MONACO,MONACO,,,43.74,7.42
+Mongolia,Ulaanbaatar,MONGOLIA,ULAANBAA,,,47.89,106.91
+Montenegro,Podgorica,MONTENEG,PODGORIC,,,42.44,19.26
+Morocco,Rabat,MOROCCO,RABAT,,,34.02,-6.84
+Mozambique,Maputo,MOZAMBIQ,MAPUTO,,,-25.97,32.57
+Myanmar,Naypyidaw,MYANMAR,NAYPYIDA,BURMA; NAYPYITA,,19.76,96.08
+Namibia,Windhoek,NAMIBIA,WINDHOEK,,,-22.56,17.08
+Nauru,Yaren,NAURU,YAREN,,Nauru has no official capital; Yaren is the seat of government.,-0.55,166.92
+Nepal,Kathmandu,NEPAL,KATHMAND,,,27.72,85.32
+Netherlands,Amsterdam,NETHERLA,AMSTERDA,,,52.37,4.90
+New Zealand,Wellington,NEWZEALA,WELLINGT,,,-41.29,174.78
+Nicaragua,Managua,NICARAGU,MANAGUA,,,12.11,-86.24
+Niger,Niamey,NIGER,NIAMEY,,,13.51,2.11
+Nigeria,Abuja,NIGERIA,ABUJA,,,9.08,7.40
+North Macedonia,Skopje,NORTHMAC,SKOPJE,,,42.00,21.43
+Norway,Oslo,NORWAY,OSLO,,,59.91,10.75
+Oman,Muscat,OMAN,MUSCAT,,,23.59,58.41
+Pakistan,Islamabad,PAKISTAN,ISLAMABA,,,33.68,73.05
+Palau,Ngerulmud,PALAU,NGERULMU,,,7.50,134.62
+Panama,Panama City,PANAMA,PANAMACI,,,8.98,-79.52
+Papua New Guinea,Port Moresby,PAPUANEW,PORTMORE,,,-9.44,147.18
+Paraguay,Asunción,PARAGUAY,ASUNCION,,,-25.26,-57.58
+Peru,Lima,PERU,LIMA,,,-12.05,-77.04
+Philippines,Manila,PHILIPPI,MANILA,,,14.60,120.98
+Poland,Warsaw,POLAND,WARSAW,,,52.23,21.01
+Portugal,Lisbon,PORTUGAL,LISBON,,,38.72,-9.14
+Qatar,Doha,QATAR,DOHA,,,25.29,51.53
+South Korea,Seoul,SOUTHKOR,SEOUL,,,37.57,126.98
+Moldova,Chișinău,MOLDOVA,CHISINAU,,,47.01,28.86
+Romania,Bucharest,ROMANIA,BUCHARES,,,44.43,26.10
+Russia,Moscow,RUSSIA,MOSCOW,,,55.76,37.62
+Rwanda,Kigali,RWANDA,KIGALI,,,-1.95,30.06
+Saint Kitts and Nevis,Basseterre,SAINTKIT,BASSETER,,,17.30,-62.72
+Saint Lucia,Castries,SAINTLUC,CASTRIES,,,14.01,-60.99
+Saint Vincent and the Grenadines,Kingstown,SAINTVIN,KINGSTOW,,,13.16,-61.23
+Samoa,Apia,SAMOA,APIA,,,-13.83,-171.76
+San Marino,San Marino,SANMARIN,SANMARIN,,,43.94,12.45
+São Tomé and Príncipe,São Tomé,SAOTOMEA,SAOTOME,,,0.34,6.73
+Saudi Arabia,Riyadh,SAUDIARA,RIYADH,,,24.71,46.68
+Senegal,Dakar,SENEGAL,DAKAR,,,14.72,-17.47
+Serbia,Belgrade,SERBIA,BELGRADE,,,44.79,20.45
+Seychelles,Victoria,SEYCHELL,VICTORIA,,,-4.62,55.45
+Sierra Leone,Freetown,SIERRALE,FREETOWN,,,8.48,-13.23
+Singapore,Singapore,SINGAPOR,SINGAPOR,,,1.35,103.82
+Slovakia,Bratislava,SLOVAKIA,BRATISLA,,,48.15,17.11
+Slovenia,Ljubljana,SLOVENIA,LJUBLJAN,,,46.06,14.51
+Solomon Islands,Honiara,SOLOMONI,HONIARA,,,-9.43,159.96
+Somalia,Mogadishu,SOMALIA,MOGADISH,,,2.05,45.32
+South Africa,Pretoria; Cape Town; Bloemfontein,SOUTHAFR,PRETORIA; CAPETOWN; BLOEMFON,,"Pretoria is the executive capital, Cape Town the legislative and Bloemfontein the judicial.",-25.75; -33.92; -29.12,28.19; 18.42; 26.21
+South Sudan,Juba,SOUTHSUD,JUBA,,,4.86,31.57
+Spain,Madrid,SPAIN,MADRID,,,40.42,-3.70
+Sri Lanka,Sri Jayawardenepura Kotte; Colombo,SRILANKA,SRIJAYAW; COLOMBO,,Sri Jayawardenepura Kotte is the legislative capital; Colombo is the commercial capital and largest city.,6.89; 6.93,79.93; 79.86
+Sudan,Khartoum,SUDAN,KHARTOUM,,,15.50,32.56
+Suriname,Paramaribo,SURINAME,PARAMARI,,,5.85,-55.20
+Sweden,Stockholm,SWEDEN,STOCKHOL,,,59.33,18.07
+Switzerland,Bern,SWITZERL,BERN,,,46.95,7.45
+Syria,Damascus,SYRIA,DAMASCUS,,,33.51,36.28
+Tajikistan,Dushanbe,TAJIKIST,DUSHANBE,,,38.56,68.77
+Thailand,Bangkok,THAILAND,BANGKOK,,,13.76,100.50
+Timor-Leste,Dili,TIMORLES,DILI,EASTTIMO,,-8.56,125.57
+Togo,Lomé,TOGO,LOME,,,6.13,1.22
+Tonga,Nuku'alofa,TONGA,NUKUALOF,,,-21.14,-175.20
+Trinidad and Tobago,Port of Spain,TRINIDAD,PORTOFSP,,,10.66,-61.51
+Tunisia,Tunis,TUNISIA,TUNIS,,,36.81,10.18
+Türkiye,Ankara,TURKIYE,ANKARA,TURKEY,,39.93,32.86
+Turkmenistan,Ashgabat,TURKMENI,ASHGABAT,,,37.96,58.38
+Tuvalu,Funafuti,TUVALU,FUNAFUTI,,,-8.52,179.20
+Uganda,Kampala,UGANDA,KAMPALA,,,0.35,32.58
+Ukraine,Kyiv,UKRAINE,KYIV,KIEV,,50.45,30.52
+United Arab Emirates,Abu Dhabi,UNITEDAR,ABUDHABI,,,24.45,54.38
+United Kingdom,London,UNITEDKI,LONDON,,,51.51,-0.13
+Tanzania,Dodoma,TANZANIA,DODOMA,,,-6.16,35.75
+United States,"Washington, D.C.",UNITEDST,WASHINGT,,,38.91,-77.04
+Uruguay,Montevideo,URUGUAY,MONTEVID,,,-34.90,-56.16
+Uzbekistan,Tashkent,UZBEKIST,TASHKENT,,,41.30,69.24
+Vanuatu,Port Vila,VANUATU,PORTVILA,,,-17.73,168.32
+Venezuela,Caracas,VENEZUEL,CARACAS,,,10.48,-66.90
+Vietnam,Hanoi,VIETNAM,HANOI,,,21.03,105.85
+Yemen,Sanaa,YEMEN,SANAA,,,15.37,44.19
+Zambia,Lusaka,ZAMBIA,LUSAKA,,,-15.39,28.32
+Zimbabwe,Harare,ZIMBABWE,HARARE,,,-17.83,31.05

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>RollaCity Clue</title>
+<link rel="stylesheet" href="js/leaflet/leaflet.css">
+<style>
+  :root { --blue: #006abc; --blue-dark: #004a85; --sea: #cfe3f2; --land: #efe9dc; --pin: #d62d20; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 12px; border-bottom: 1px solid #ccc; }
+  header h1 { font-size: 1.1rem; margin: 0; letter-spacing: .04em; }
+  button { font: inherit; font-weight: 600; color: #fff; background: var(--blue); border: 0; border-radius: 0; padding: 8px 16px; cursor: pointer; }
+  button:hover, button:focus-visible { background: var(--blue-dark); }
+  #stage { position: relative; flex: 1 1 auto; min-height: 220px; background: var(--sea); }
+  #map { position: absolute; inset: 0; background: var(--sea); }
+  #zones { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: 500; pointer-events: none; }
+  #zones span { position: absolute; transform: translateX(-50%); font-size: 11px; font-weight: 600; color: #345; background: rgba(255,255,255,.75); padding: 1px 5px; }
+  #msg { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; z-index: 600; background: var(--sea); padding: 16px; text-align: center; }
+  footer { padding: 8px 12px; font-size: .85rem; line-height: 1.35; border-top: 1px solid #ccc; }
+  footer .key { display: inline-block; width: 12px; height: 12px; vertical-align: -1px; margin-right: 4px; }
+  footer .k-country { background: var(--blue); opacity: .6; }
+  footer .k-pin { background: var(--pin); border-radius: 50%; }
+  footer small { display: block; color: #666; margin-top: 3px; }
+  .pin { position: relative; }
+  .pin .dot { position: absolute; left: 6px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--pin); border: 2px solid #fff; box-shadow: 0 0 3px rgba(0,0,0,.6); }
+  .pin .pulse { position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--pin); animation: pulse 1.6s ease-out infinite; }
+  @keyframes pulse { 0% { transform: scale(.5); opacity: 1; } 100% { transform: scale(2.2); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .pin .pulse { animation: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>ROLLACITY CLUE</h1>
+  <button id="close-btn" type="button">Close</button>
+</header>
+
+<div id="stage">
+  <div id="map" aria-label="Map showing where the answer is"></div>
+  <div id="zones"></div>
+  <div id="msg">Sorry, the map could not be loaded. Please close this window and try again.</div>
+</div>
+
+<footer>
+  <span id="caption"></span>
+  <small>Map: Natural Earth (public domain) · Leaflet. The strip marks 15° time-zone bands (UTC offsets).</small>
+</footer>
+
+<script src="js/leaflet/leaflet.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // The page is given only a position (?lat=..&lon=..), never a name, so the address cannot give the answer away.
+  // No (or invalid) position = Washington, D.C.
+  var DEF = { lat: 38.91, lon: -77.04 };
+  var ZONES = 4, ZONE_W = 15;               // the map shows 4 time zones = 60 degrees of longitude
+  var NO_HIGHLIGHT = [[43.74, 7.42]];       // Monaco sits on the French border: pin only, do not shade France
+
+  function fail() { document.getElementById("msg").style.display = "flex"; }
+
+  // Close: inside the game's modal -> tell the game page; opened on its own -> go back to the game.
+  document.getElementById("close-btn").addEventListener("click", function () {
+    if (window.parent !== window) window.parent.postMessage("rollacity-close-clue", "*");
+    else window.location.href = "index.html";
+  });
+
+  var qs = new URLSearchParams(window.location.search);
+  var lat = parseFloat(qs.get("lat")), lon = parseFloat(qs.get("lon"));
+  var usedDefault = !(isFinite(lat) && isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180);
+  if (usedDefault) { lat = DEF.lat; lon = DEF.lon; }
+
+  fetch("js/countries.json").then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(draw).catch(fail);
+
+  function inRing(x, y, ring) {
+    var c = false;
+    for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      var xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+      if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c;
+    }
+    return c;
+  }
+  function segDist(px, py, a, b) {
+    var dx = b[0] - a[0], dy = b[1] - a[1], L = dx * dx + dy * dy;
+    var t = L ? Math.max(0, Math.min(1, ((px - a[0]) * dx + (py - a[1]) * dy) / L)) : 0;
+    return Math.hypot(px - a[0] - t * dx, py - a[1] - t * dy);
+  }
+  // which country is the point in? (a capital on the coast may fall a hair outside the simplified outline: allow 0.3 degrees)
+  function countryAt(countries, x, y) {
+    if (NO_HIGHLIGHT.some(function (p) { return Math.abs(p[0] - y) < .1 && Math.abs(p[1] - x) < .1; })) return null;
+    var i, p, best = null, bd = 0.3;
+    for (i = 0; i < countries.length; i++)
+      for (p = 0; p < countries[i].p.length; p++) {
+        var poly = countries[i].p[p];
+        if (inRing(x, y, poly[0]) && !poly.slice(1).some(function (h) { return inRing(x, y, h); })) return i;
+      }
+    for (i = 0; i < countries.length; i++)
+      for (p = 0; p < countries[i].p.length; p++) {
+        var r = countries[i].p[p][0];
+        for (var k = 0; k < r.length - 1; k++) { var d = segDist(x, y, r[k], r[k + 1]); if (d < bd) { bd = d; best = i; } }
+      }
+    return best;
+  }
+
+  function draw(countries) {
+    var hi = countryAt(countries, lon, lat), highlighted = 0;
+
+    // ---- window: 4 whole time zones, the target's zone second or third from the left ----
+    var kz = Math.round(lon / ZONE_W);
+    var z0 = lon >= kz * ZONE_W ? kz - 1 : kz - 2;
+    var west = z0 * ZONE_W - ZONE_W / 2, east = west + ZONES * ZONE_W;
+
+    var map = L.map("map", {
+      zoomControl: false, attributionControl: false, dragging: false, touchZoom: false, scrollWheelZoom: false,
+      doubleClickZoom: false, boxZoom: false, keyboard: false, tap: false, zoomSnap: 0, preferCanvas: true
+    });
+    var bandLayer = L.layerGroup().addTo(map), landLayer = L.layerGroup().addTo(map), hiLayer = L.layerGroup().addTo(map);
+
+    for (var k = z0; k < z0 + ZONES; k++) {
+      if (k % 2 === 0) L.rectangle([[-85, k * ZONE_W - ZONE_W / 2], [85, k * ZONE_W + ZONE_W / 2]], { stroke: false, fill: true, fillColor: "#000", fillOpacity: .06, interactive: false }).addTo(bandLayer);
+    }
+
+    // countries are drawn 3 times, shifted by 360 degrees, so the Pacific wraps correctly
+    countries.forEach(function (c, ci) {
+      var isTarget = ci === hi;
+      c.p.forEach(function (poly) {
+        var xs = poly[0].map(function (p) { return p[0]; });
+        var mn = Math.min.apply(null, xs), mx = Math.max.apply(null, xs);
+        [-360, 0, 360].forEach(function (off) {
+          if (mx + off < west - 1 || mn + off > east + 1) return;       // not in view
+          var rings = poly.map(function (r) { return r.map(function (p) { return [p[1], p[0] + off]; }); });
+          if (isTarget) {
+            L.polygon(rings, { color: "#004a85", weight: 1.5, fillColor: "#006abc", fillOpacity: .6, interactive: false }).addTo(hiLayer);
+            highlighted++;
+          } else {
+            L.polygon(rings, { color: "#a89f88", weight: .7, fillColor: "#efe9dc", fillOpacity: 1, interactive: false }).addTo(landLayer);
+          }
+        });
+      });
+    });
+
+    L.marker([lat, lon], {
+      interactive: false, keyboard: false,
+      icon: L.divIcon({ className: "pin", html: '<span class="pulse"></span><span class="dot"></span>', iconSize: [26, 26], iconAnchor: [13, 13] })
+    }).addTo(map);
+
+    // ---- sizing: 60 degrees of longitude always fill the width; zoom and panning are locked ----
+    var zoneBox = document.getElementById("zones");
+    function fit() {
+      map.invalidateSize(false);
+      var w = document.getElementById("map").clientWidth || 360;
+      var z = Math.log2(w / 256 * 360 / (ZONES * ZONE_W));
+      map.setMinZoom(z); map.setMaxZoom(z);
+      map.setView([lat, west + (ZONES * ZONE_W) / 2], z, { animate: false });
+      zoneBox.innerHTML = "";
+      for (var k = z0; k < z0 + ZONES; k++) {
+        var x = map.latLngToContainerPoint([lat, k * ZONE_W]).x;
+        var s = document.createElement("span");
+        var off = ((k + 12) % 24 + 24) % 24 - 12; if (off === -12) off = 12;
+        s.textContent = "UTC" + (off > 0 ? "+" + off : off < 0 ? "−" + Math.abs(off) : "±0");
+        s.style.left = x + "px"; s.style.bottom = "2px";
+        zoneBox.appendChild(s);
+      }
+    }
+    fit();
+    window.addEventListener("resize", fit);
+
+    var span = function (cls) { return '<span class="key ' + cls + '"></span>'; };
+    document.getElementById("caption").innerHTML =
+      (highlighted ? span("k-country") + "Blue area: the country. " : "") + span("k-pin") + "Red pin: the capital city." +
+      (!highlighted ? " (A tiny country: look for the pin.)" : "") +
+      (usedDefault ? " Example clue (no position was given): Washington, D.C." : "");
+  }
+})();
+</script>
+</body>
+</html>
