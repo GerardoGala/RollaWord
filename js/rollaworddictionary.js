@@ -22,6 +22,19 @@ let dictionaryError = null;
 
 async function loadLocalDictionary() {
   try {
+    // RollaCity (countries and capitals): its words come from city-data.csv, which citygen.js
+    // reads. Wait for that, then use the same list for checking words.
+    if (window.location.pathname.toLowerCase().includes("city")) {
+      await window.cityWordsReady;
+      if (!window.CITY_WORDS || window.CITY_WORDS.size === 0) {
+        throw new Error("Could not load the RollaCity word list (city-data.csv)");
+      }
+      LOCAL_DICTIONARY = window.CITY_WORDS;
+      dictionaryReady = true;
+      console.log(`RollaCity dictionary loaded: ${LOCAL_DICTIONARY.size} words.`);
+      return;
+    }
+
     // RollaSail (sail.html) uses its own, much smaller word list.
     const isSailPage = window.location.pathname.toLowerCase().includes("sail");
     const response = await fetch(

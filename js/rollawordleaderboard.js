@@ -18,6 +18,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+// RollaCity keeps its scores in its own collection, so they never mix with RollaWord's.
+// The page decides: any page whose address contains "city" (the RollaCity folder, including
+// its own copy of leaderboard.html) uses the RollaCity collection.
+const IS_CITY = window.location.pathname.toLowerCase().includes("city");
+const LEADERBOARD_COLLECTION = IS_CITY ? "rollacity_leaderboard" : "rollaword_leaderboard";
+
 // Core State Engine: Keeps track of the date currently active on the viewport timeline
 let activeNavDate = new Date();
 
@@ -99,7 +105,7 @@ async function processChallengeEndgame(finalScore) {
     }
 
     try {
-        const leaderboardRef = collection(db, "rollaword_leaderboard");
+        const leaderboardRef = collection(db, LEADERBOARD_COLLECTION);
         const q = query(
             leaderboardRef, 
             where("date", "==", todayMetadata.key), 
@@ -134,7 +140,7 @@ async function processChallengeEndgame(finalScore) {
             
             if (playerName && playerName.trim() !== "") {
                 const playerId = getPlayerId();
-                await addDoc(collection(db, "rollaword_leaderboard"), {
+                await addDoc(collection(db, LEADERBOARD_COLLECTION), {
                     name: playerName.trim(),
                     date: todayMetadata.key,
                     score: numericScore,
@@ -196,7 +202,7 @@ function promptNameWithPopup(score) {
 
                 try {
                     // Check Firestore if this name already exists in the system
-                    const leaderboardRef = collection(db, "rollaword_leaderboard");
+                    const leaderboardRef = collection(db, LEADERBOARD_COLLECTION);
                     const nameCheckQuery = query(leaderboardRef, where("name", "==", chosenName), limit(1));
                     const nameCheckSnapshot = await getDocs(nameCheckQuery);
 
@@ -260,7 +266,7 @@ async function renderLeaderboardView() {
     }
 
     try {
-        const leaderboardRef = collection(db, "rollaword_leaderboard");
+        const leaderboardRef = collection(db, LEADERBOARD_COLLECTION);
         const q = query(
             leaderboardRef, 
             where("date", "==", dateData.key), 
