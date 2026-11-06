@@ -50,20 +50,8 @@
         </button>
     </div>
     <br>
-<!-- Style block to handle the color transition cleanly -->
-<style>
-  /* Default state: Icon is white */
-  #share-btn .material-icons {
-    color: #ffffff !important;
-  }
-  /* Hover state: Icon flips to blue to match your text flip */
-  #share-btn:hover .material-icons {
-    color: #0066cc !important; 
-  }
-</style>
-
 <!-- Main Row Container using traditional blocking -->
-<div id="mode-selection-row" style="width: 100%; height: 45px;">
+<div id="help-share-row" style="width: 100%; height: 45px;">
   
   <!-- Left Side: Allocates 49% width with a right margin for the gap -->
   <div style="width: calc(49% - 4px); float: left; height: 100%;">
@@ -126,17 +114,77 @@ Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
   </nav>
   <div>© 2026 RollaWord</div>
 </footer>
-
 <script src="/rollasail/js/sailgen.js"></script>
-<script src="/js/rollawordbonus.js"></script>
-<script src="/js/rollawordisland.js"></script>
-<script src="/js/rollaworddisplay.js"></script>
-<script src="/js/rollawordscoring.js"></script>
-<script src="/js/rollaworddictionary.js"></script>
-<script src="/js/rollawordadult.js"></script> <!-- Swapped in -->
-<script src="/js/rollaword.js"></script>
-<!-- 🏆 New Firestore Leaderboard Module Layer -->
-<script type="module" src="/js/rollawordleaderboard.js"></script>
+
+
+
+<!-- Game logic is loaded AFTER the page is painted (idle time), or immediately when the
+     player touches a button. FILES run in this exact order, same as before. -->
+<script>
+(function () {
+  var FILES = [
+    "/js/rollawordbonus.js",
+    "/js/rollawordisland.js",
+    "/js/rollaworddisplay.js",
+    "/js/rollawordscoring.js",
+    "/js/rollaworddictionary.js",
+    "/js/rollawordadult.js",
+    "/js/rollaword.js"
+  ];
+  var MODULE = "/js/rollawordleaderboard.js";   // Firestore leaderboard (ES module), loaded last
+  var promise = null;
+
+  window.loadGame = function () {
+    if (promise) return promise;
+
+    // The game files were written to run while the page loads. They may ask to be told when
+    // the page is ready ("DOMContentLoaded" / "load"). That moment has already passed, so
+    // while they load, call such handlers right away instead of never.
+    var realDocAdd = document.addEventListener;
+    var realWinAdd = window.addEventListener;
+    document.addEventListener = function (type, fn, opts) {
+      if (type === "DOMContentLoaded" && document.readyState !== "loading") {
+        setTimeout(function () { try { fn.call(document, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realDocAdd.call(document, type, fn, opts); }
+    };
+    window.addEventListener = function (type, fn, opts) {
+      if (type === "load" && document.readyState === "complete") {
+        setTimeout(function () { try { fn.call(window, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realWinAdd.call(window, type, fn, opts); }
+    };
+    function restore() { document.addEventListener = realDocAdd; window.addEventListener = realWinAdd; }
+
+    // Download all files at the same time, but run them in order (async = false).
+    var loads = FILES.map(function (src) {
+      return new Promise(function (resolve, reject) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.async = false;
+        s.onload = resolve;
+        s.onerror = function () { reject(new Error("Could not load " + src)); };
+        document.head.appendChild(s);
+      });
+    });
+
+    promise = Promise.all(loads)
+      // The leaderboard needs the Firebase servers. If they cannot be reached, the game must still play.
+      .then(function () {
+        return import(new URL(MODULE, document.baseURI).href).catch(function (e) { console.error("Leaderboard failed to load:", e); });
+      })
+      .then(restore, function (e) { restore(); promise = null; console.error("Game failed to load:", e); throw e; });
+    return promise;
+  };
+
+  // Warm up: once the page has finished loading, fetch the game when the browser is idle.
+  window.addEventListener("load", function () {
+    (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { loadGame().catch(function () {}); });
+  });
+  // Or as soon as the player touches the controls.
+  ["pointerdown", "touchstart", "mouseover", "focusin"].forEach(function (ev) {
+    document.addEventListener(ev, function () { loadGame().catch(function () {}); }, { once: true, passive: true });
+  });
+})();
+</script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747"
      crossorigin="anonymous"></script>

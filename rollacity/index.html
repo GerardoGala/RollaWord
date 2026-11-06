@@ -166,7 +166,10 @@ Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
     });
 
     promise = Promise.all(loads)
-      .then(function () { return import(new URL(MODULE, document.baseURI).href); })
+      // The leaderboard needs the Firebase servers. If they cannot be reached, the game must still play.
+      .then(function () {
+        return import(new URL(MODULE, document.baseURI).href).catch(function (e) { console.error("Leaderboard failed to load:", e); });
+      })
       .then(restore, function (e) { restore(); promise = null; console.error("Game failed to load:", e); throw e; });
     return promise;
   };
