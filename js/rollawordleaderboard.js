@@ -243,8 +243,10 @@ function promptNameWithPopup(score) {
 
 
 /**
+ * // ggala don't show leadorboard here  
+ * 
  * 📅 FETCH & DISPLAY RANKINGS WORKFLOW (TIMELINE LINKED)
- */
+ 
 async function renderLeaderboardView() {
     const dateData = getFormattedDateMetadata(activeNavDate);
     const todayData = getFormattedDateMetadata(new Date());
@@ -323,7 +325,8 @@ async function renderLeaderboardView() {
         });
 
         tableHtml += `</div>`;
-// ggala don't show leadorboard here  renderTarget.innerHTML = tableHtml;
+
+        renderTarget.innerHTML = tableHtml;
 
     } catch (error) {
         console.error("Error reading leaderboard:", error);
@@ -333,6 +336,7 @@ async function renderLeaderboardView() {
             </div>`;
     }
 }
+*/
 
 // Attach event triggers cleanly inside the native module initialization pass
 document.addEventListener("DOMContentLoaded", () => {
