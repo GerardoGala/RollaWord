@@ -243,10 +243,10 @@ function promptNameWithPopup(score) {
 
 
 /**
- * // ggala don't show leadorboard here  
+ * 
  * 
  * 📅 FETCH & DISPLAY RANKINGS WORKFLOW (TIMELINE LINKED)
- 
+ **/
 async function renderLeaderboardView() {
     const dateData = getFormattedDateMetadata(activeNavDate);
     const todayData = getFormattedDateMetadata(new Date());
@@ -336,7 +336,7 @@ async function renderLeaderboardView() {
             </div>`;
     }
 }
-*/
+
 
 // Attach event triggers cleanly inside the native module initialization pass
 document.addEventListener("DOMContentLoaded", () => {
@@ -364,4 +364,4 @@ window.displayDailyLeaderboard = renderLeaderboardView;
 window.renderLeaderboardView = renderLeaderboardView;
 
 // Run initial execution immediately upon load line evaluation
-renderLeaderboardView();
+// ggala renderLeaderboardView();
