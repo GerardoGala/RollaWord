@@ -10,6 +10,8 @@
 
 (function () {
   const STORAGE_KEY = "rollaword.solution";
+  // RollaCity (any page whose address contains "city"): tapping a name opens the labelled map instead of a dictionary entry.
+  const IS_CITY = /city/i.test(window.location.pathname);
 
   const gridEl = document.getElementById("solution-grid");
   const statusEl = document.getElementById("status");
@@ -96,7 +98,8 @@
       wordsEl.appendChild(li);
     });
     wordsBox.hidden = found.length === 0;
-    document.getElementById("credit").hidden = found.length === 0;   // data-source credit
+    document.getElementById("credit").hidden = IS_CITY || found.length === 0;   // dictionary credit: not used by RollaCity
+    if (IS_CITY) { const h = document.querySelector("#word-section .hint"); if (h) h.textContent = "Tap a name to see it on the map."; }
   }
 
   // -----------------------------------------------------------------------
@@ -204,7 +207,106 @@
     }
   }
 
+  // -----------------------------------------------------------------------
+  // RollaCity: the word list is js/city-data.csv (the same file the game and the
+  // How To Play page use). A tap shows what the name is and opens clue.html in
+  // "names" mode: a map with the country, its capital and its neighbours labelled.
+  // -----------------------------------------------------------------------
+  function parseCsv(text) {
+    const out = []; let row = [], cell = "", q = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (q) { if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += ch; }
+      else if (ch === '"') q = true;
+      else if (ch === ",") { row.push(cell); cell = ""; }
+      else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); cell = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = []; }
+      else cell += ch;
+    }
+    if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+    return out;
+  }
+  let cityRowsPromise = null;
+  function loadCityRows() {
+    if (!cityRowsPromise) {
+      cityRowsPromise = fetch("js/city-data.csv").then(function (r) { if (!r.ok) throw new Error("csv"); return r.text(); })
+        .then(function (t) { const rows = parseCsv(t), h = rows.shift(); return { rows: rows, ix: function (n) { return h.indexOf(n); } }; });
+    }
+    return cityRowsPromise;
+  }
+  function cityMatch(data, word) {
+    const iC = data.ix("Type for country"), iK = data.ix("Type for capital(s)"), iA = data.ix("Also accepted");
+    for (const r of data.rows) {
+      if (r[iC] === word) return { row: r, kind: "country" };
+      const n = (r[iK] || "").split("; ").indexOf(word);
+      if (n >= 0) return { row: r, kind: "capital", n: n };
+      if ((r[iA] || "").split("; ").indexOf(word) >= 0) return { row: r, kind: "alternate" };
+    }
+    return null;
+  }
+
+  function openCityMap(word, pos) {
+    let modal = document.getElementById("city-map-modal");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.id = "city-map-modal";
+      modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", "Map");
+      modal.style.cssText = "display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:10000;background:rgba(0,0,0,.55);align-items:center;justify-content:center;";
+      const f = document.createElement("iframe");
+      f.id = "city-map-frame"; f.title = "Map";
+      f.style.cssText = "border:0;background:#fff;width:100%;max-width:480px;height:100%;max-height:760px;";
+      modal.appendChild(f);
+      document.body.appendChild(modal);
+      modal.addEventListener("click", function (e) { if (e.target === modal) closeCityMap(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeCityMap(); });
+      window.addEventListener("message", function (e) { if (e.origin === window.location.origin && e.data === "rollacity-close-clue") closeCityMap(); });
+    }
+    // the position and names travel too, so the map is right even if the word cannot be looked up again over there
+    let q = "clue.html?names=1&w=" + encodeURIComponent(word);
+    if (pos) q += "&lat=" + encodeURIComponent(pos.lat) + "&lon=" + encodeURIComponent(pos.lon) +
+                  "&country=" + encodeURIComponent(pos.country) + "&capital=" + encodeURIComponent(pos.capital);
+    document.getElementById("city-map-frame").src = q + "&_=" + Date.now();      // fresh copy, never a cached one
+    modal.style.display = "flex";
+  }
+  function closeCityMap() {
+    const modal = document.getElementById("city-map-modal");
+    if (!modal) return;
+    modal.style.display = "none";
+    document.getElementById("city-map-frame").src = "about:blank";
+  }
+
+  async function lookUpCity(word, button) {
+    wordsEl.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+    button.classList.add("active");
+    let m = null;
+    try { m = cityMatch(await loadCityRows(), word); }
+    catch (e) { showDefinition(word, ["Couldn't load the word list. Check your connection and tap the name again."], true); return; }
+    if (!m) { showDefinition(word, ["This name is not in the RollaCity list."], true); return; }
+
+    const data = await loadCityRows();
+    const col = n => m.row[data.ix(n)] || "";
+    const country = col("Country"), caps = col("Capital(s)").split("; ");
+    const lines = [];
+    if (m.kind === "country") lines.push("Country. Its capital is " + caps.join(" and ") + ".");
+    else if (m.kind === "capital") lines.push("Capital of " + country + ".");
+    else lines.push("Another name for a country or capital: " + country + (caps.length ? ", capital " + caps.join(" and ") : "") + ".");
+    if (col("Note")) lines.push(col("Note"));
+    showDefinition(word, lines, false);
+
+    const n = m.kind === "capital" ? m.n : 0;
+    const pos = {
+      lat: (col("Latitude(s)").split("; ")[n] || "").trim(), lon: (col("Longitude(s)").split("; ")[n] || "").trim(),
+      country: country.replace(/\s*\(.*$/, ""), capital: caps[n] || caps[0] || ""
+    };
+    const again = document.createElement("button");
+    again.type = "button"; again.textContent = "Show on map";
+    again.style.cssText = "margin-top:10px;padding:8px 16px;font:inherit;font-weight:700;color:#fff;background:#006abc;border:0;cursor:pointer;";
+    again.addEventListener("click", function () { openCityMap(word, pos); });
+    definitionEl.appendChild(again);
+    openCityMap(word, pos);
+  }
+
   async function lookUpWord(word, button) {
+    if (IS_CITY) return lookUpCity(word, button);
     wordsEl.querySelectorAll("button").forEach(b => b.classList.remove("active"));
     button.classList.add("active");
 

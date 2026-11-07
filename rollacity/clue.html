@@ -17,6 +17,11 @@
   button:hover, button:focus-visible { background: var(--blue-dark); }
   #stage { position: relative; flex: 1 1 auto; min-height: 220px; background: var(--sea); }
   #map { position: absolute; inset: 0; background: var(--sea); }
+  #labels { position: absolute; inset: 0; z-index: 450; pointer-events: none; overflow: hidden; }
+  .lab { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; font-size: 10px; line-height: 1.1; color: #4a4538; text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #fff; }
+  .lab.t { font-weight: 700; font-size: 12px; color: #00315c; }
+  .lab.cap { transform: translate(0, -50%); font-weight: 700; font-size: 12px; color: #8a1a10; }
+  .lab.capl { transform: translate(-100%, -50%); font-weight: 700; font-size: 12px; color: #8a1a10; }
   #zones { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: 500; pointer-events: none; }
   #zones span { position: absolute; transform: translateX(-50%); font-size: 11px; font-weight: 600; color: #345; background: rgba(255,255,255,.75); padding: 1px 5px; }
   #msg { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; z-index: 600; background: var(--sea); padding: 16px; text-align: center; }
@@ -34,12 +39,13 @@
 </head>
 <body>
 <header>
-  <h1>ROLLACITY CLUE</h1>
+  <h1 id="title">ROLLACITY CLUE</h1>
   <button id="close-btn" type="button">Close</button>
 </header>
 
 <div id="stage">
   <div id="map" aria-label="Map showing where the answer is"></div>
+  <div id="labels"></div>
   <div id="zones"></div>
   <div id="msg">Sorry, the map could not be loaded. Please close this window and try again.</div>
 </div>
@@ -73,7 +79,50 @@
   var usedDefault = !(isFinite(lat) && isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180);
   if (usedDefault) { lat = DEF.lat; lon = DEF.lon; }
 
-  fetch("js/countries.json").then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(draw).catch(fail);
+  // names mode (from the solution page, after the game): ?names=1&w=WORD  -> the map is labelled so the player can learn
+  var NAMES = qs.get("names") === "1" || qs.get("labels") === "1";
+  var info = null;
+
+  function parseCSV(text) {
+    var out = [], row = [], cell = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var ch = text[i];
+      if (q) { if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += ch; }
+      else if (ch === '"') q = true;
+      else if (ch === ",") { row.push(cell); cell = ""; }
+      else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); cell = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = []; }
+      else cell += ch;
+    }
+    if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+    return out;
+  }
+  function lookup(csvText, word) {
+    var rows = parseCSV(csvText), h = rows.shift();
+    var iC = h.indexOf("Type for country"), iK = h.indexOf("Type for capital(s)"), iA = h.indexOf("Also accepted"),
+        iN = h.indexOf("Country"), iCap = h.indexOf("Capital(s)"), iLa = h.indexOf("Latitude(s)"), iLo = h.indexOf("Longitude(s)");
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i], n = -1;
+      if (r[iC] === word) n = 0;
+      else if ((n = (r[iK] || "").split("; ").indexOf(word)) < 0 && (r[iA] || "").split("; ").indexOf(word) >= 0) n = 0;
+      if (n >= 0) return { lat: parseFloat(r[iLa].split("; ")[n]), lon: parseFloat(r[iLo].split("; ")[n]),
+                           country: r[iN].replace(/\s*\(.*$/, ""), capital: r[iCap].split("; ")[n] };
+    }
+    return null;
+  }
+
+  Promise.all([
+    fetch("js/countries.json").then(function (r) { if (!r.ok) throw 0; return r.json(); }),
+    NAMES ? fetch("js/city-data.csv").then(function (r) { if (!r.ok) throw 0; return r.text(); }) : null
+  ]).then(function (res) {
+    if (NAMES) {
+      info = lookup(res[1], (qs.get("w") || "").toUpperCase());
+      if (!info && !usedDefault && qs.get("country") && qs.get("capital"))        // not in the list? use the names that came with the position
+        info = { lat: lat, lon: lon, country: qs.get("country"), capital: qs.get("capital") };
+      if (info) { lat = info.lat; lon = info.lon; usedDefault = false; document.getElementById("title").textContent = "ROLLACITY MAP"; }
+      else NAMES = false;                          // unknown word: behave like a plain clue
+    }
+    draw(res[0]);
+  }).catch(fail);
 
   function inRing(x, y, ring) {
     var c = false;
@@ -147,6 +196,61 @@
       icon: L.divIcon({ className: "pin", html: '<span class="pulse"></span><span class="dot"></span>', iconSize: [26, 26], iconAnchor: [13, 13] })
     }).addTo(map);
 
+    // ---- names mode: country names (largest part of each country) + the capital's name ----
+    var cands = [];
+    if (NAMES) {
+      countries.forEach(function (c, ci) {
+        var best = null, ba = -1;
+        c.p.forEach(function (poly) {
+          var r = poly[0], a = 0, cx = 0, cy = 0, mnx = 1e9, mxx = -1e9, mny = 1e9, mxy = -1e9;
+          for (var i = 0, j = r.length - 1; i < r.length; j = i++) {
+            var f = r[j][0] * r[i][1] - r[i][0] * r[j][1];
+            a += f; cx += (r[j][0] + r[i][0]) * f; cy += (r[j][1] + r[i][1]) * f;
+            mnx = Math.min(mnx, r[i][0]); mxx = Math.max(mxx, r[i][0]); mny = Math.min(mny, r[i][1]); mxy = Math.max(mxy, r[i][1]);
+          }
+          var area = Math.abs(a) / 2;
+          if (area > ba) { ba = area; best = { x: a ? cx / (3 * a) : (mnx + mxx) / 2, y: a ? cy / (3 * a) : (mny + mxy) / 2, w: mxx - mnx }; }
+        });
+        if (best) cands.push({ text: ci === hi && info ? info.country : c.n, x: best.x, y: best.y, w: best.w, target: ci === hi });
+      });
+      if (hi === null && info) cands.push({ text: info.country, x: lon, y: lat + 1.5, w: 0, target: true });   // tiny country: no outline to label
+      cands.sort(function (a, b) { return (b.target ? 1e6 : 0) + b.w - ((a.target ? 1e6 : 0) + a.w); });
+    }
+    var labelBox = document.getElementById("labels");
+    function placeLabels(w, h) {
+      labelBox.innerHTML = "";
+      if (!NAMES) return;
+      var placed = [];
+      function free(r) { return placed.every(function (q) { return r.r < q.l || r.l > q.r || r.b < q.t || r.t > q.b; }); }
+      function add(text, px, py, cls, mode, forced) {
+        var el = document.createElement("div");
+        el.className = "lab " + cls; el.textContent = text;
+        el.style.left = px + "px"; el.style.top = py + "px";
+        labelBox.appendChild(el);
+        var bw = el.offsetWidth, bh = el.offsetHeight;
+        var l = mode === "l" ? px - bw : mode === "r" ? px : px - bw / 2;
+        var rect = { l: l - 2, r: l + bw + 2, t: py - bh / 2 - 1, b: py + bh / 2 + 1 };
+        if (rect.l < 0 || rect.r > w || rect.t < 0 || rect.b > h || (!forced && !free(rect))) { labelBox.removeChild(el); return false; }
+        placed.push(rect); return true;
+      }
+      var pp = map.latLngToContainerPoint([lat, lon]);
+      var left = pp.x > w * 0.62;
+      if (info) add(info.capital, pp.x + (left ? -16 : 16), pp.y, left ? "capl" : "cap", left ? "l" : "r", true);
+      cands.forEach(function (c) {
+        [-360, 0, 360].forEach(function (off) {
+          var X = c.x + off;
+          if (X < west + 1 || X > east - 1) return;
+          var p = map.latLngToContainerPoint([c.y, X]);
+          if (!c.target && c.w * w / (ZONES * ZONE_W) < c.text.length * 4.6) return;     // too small to hold its name
+          if (!c.target) { add(c.text, p.x, p.y, "", "c", false); return; }
+          // the country's own name: keep it clear of the capital's name (small countries) by trying a few spots
+          var tries = [[0, 0], [0, -24], [0, 24], [0, -42], [0, 42]], ok = false;
+          for (var t = 0; t < tries.length && !ok; t++) ok = add(c.text, p.x + tries[t][0], p.y + tries[t][1], "t", "c", false);
+          if (!ok) add(c.text, p.x, p.y - 24, "t", "c", true);
+        });
+      });
+    }
+
     // ---- sizing: 60 degrees of longitude always fill the width; zoom and panning are locked ----
     var zoneBox = document.getElementById("zones");
     function fit() {
@@ -155,6 +259,7 @@
       var z = Math.log2(w / 256 * 360 / (ZONES * ZONE_W));
       map.setMinZoom(z); map.setMaxZoom(z);
       map.setView([lat, west + (ZONES * ZONE_W) / 2], z, { animate: false });
+      placeLabels(document.getElementById("map").clientWidth, document.getElementById("map").clientHeight);
       zoneBox.innerHTML = "";
       for (var k = z0; k < z0 + ZONES; k++) {
         var x = map.latLngToContainerPoint([lat, k * ZONE_W]).x;
@@ -172,7 +277,8 @@
     document.getElementById("caption").innerHTML =
       (highlighted ? span("k-country") + "Blue area: the country. " : "") + span("k-pin") + "Red pin: the capital city." +
       (!highlighted ? " (A tiny country: look for the pin.)" : "") +
-      (usedDefault ? " Example clue (no position was given): Washington, D.C." : "");
+      (usedDefault ? " Example clue (no position was given): Washington, D.C." : "") +
+      (NAMES && info ? " " + info.capital + ", " + info.country + "." : "");
   }
 })();
 </script>
