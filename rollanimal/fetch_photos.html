@@ -38,15 +38,17 @@
   <p>This page finds a free-to-use photo for every animal in <code>animal-data.csv</code>. It runs in your browser (Chrome, Edge, Firefox, Safari) and needs the internet. Nothing is uploaded anywhere.</p>
   <ol>
     <li>Choose your <code>animal-data.csv</code>.</li>
-    <li>Press <b>Start</b>. Try <b>5</b> animals first, then clear the box to do them all (about 10 minutes). Keep this tab open while it works.</li>
+    <li>Press <b>Start</b>. Try <b>5</b> animals first, or type a few names (such as <code>Lynx, Bison</code>) to fetch just those. Then clear both boxes to do them all (about 10 minutes). Keep this tab open while it works.</li>
     <li>Look at the photos. For one you do not like (or one that failed), paste a photo's file name from <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">commons.wikimedia.org</a> under it, such as <code>File:Plains_Zebra.jpg</code> (or the whole page address), and press <b>Use</b>. Check the photo's licence on its Commons page first.</li>
-    <li>Press the three <b>Download</b> buttons. Unzip the photos into your <code>rollanimal</code> folder (so you get <code>rollanimal/img/a001.jpg ...</code>), and replace <code>js/animal-data.csv</code> with the new CSV. Put <code>credits.html</code> in the <code>rollanimal</code> folder too.</li>
+    <li>Press the three <b>Download</b> buttons. Unzip the photos into your <code>rollanimal</code> folder (so you get <code>rollanimal/img/moth.jpg</code>, <code>rollanimal/img/polar-bear.jpg</code> ...), and replace <code>js/animal-data.csv</code> with the new CSV. Put <code>credits.html</code> in the <code>rollanimal</code> folder too.</li>
   </ol>
 
   <div class="row">
     <input type="file" id="file" accept=".csv,text/csv">
     <label>Only the first <input type="number" id="limit" min="1" value="5"> animals</label>
+    <label>or only these: <input type="text" id="only" placeholder="Lynx, Bison" size="22"></label>
     <label><input type="checkbox" id="sa"> also accept CC BY-SA photos</label>
+    <label><input type="checkbox" id="fresh"> start over (forget every photo already listed in the CSV)</label>
   </div>
   <div class="row">
     <button id="start" disabled>Start</button>
@@ -91,6 +93,9 @@
   var running = false, stopFlag = false;
 
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  function slug(name) {                            // "Polar Bear" -> "polar-bear", "Cabo Verde" -> "cabo-verde"
+    return name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "animal";
+  }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
   // ---------- CSV ----------
@@ -215,7 +220,7 @@
     try {
       var p = await getPhoto(r[iA], override, $("sa").checked);
       var mime = p.ext === ".jpg" ? "image/jpeg" : p.ext === ".png" ? "image/png" : "image/webp";
-      var file = "a" + String(n).padStart(3, "0") + p.ext;
+      var file = slug(r[iA]) + p.ext;                  // named after the animal: moth.jpg, polar-bear.jpg ...
       photos[n] = { name: file, bytes: p.bytes, mime: mime };
       r[iI] = "img/" + file; r[iC] = p.credit;
       paint(n, "ok", "");
@@ -236,7 +241,10 @@
   async function run() {
     running = true; stopFlag = false; $("start").disabled = true; $("stop").disabled = false;
     var limit = parseInt($("limit").value, 10) || 0, tried = 0;
+    var only = $("only").value.split(",").map(function (s) { return s.trim().toLowerCase(); }).filter(Boolean);
+    if (only.length) limit = 0;                       // a named list ignores the "first N" box
     for (var n = 1; n <= rows.length && !stopFlag; n++) {
+      if (only.length && only.indexOf(rows[n - 1][iA].toLowerCase()) < 0) continue;
       if (rows[n - 1][iI]) { if (!card(n).fig.className) paint(n, "had", ""); continue; }   // already has a photo
       if (limit && tried >= limit) break;
       tried++; paint(n, "wait", "Looking…"); summary();
@@ -295,20 +303,38 @@
   }
 
   // ---------- wiring ----------
+  var csvText = "";
+  function loadRows() {
+    var data = parseCSV(csvText.replace(/^\uFEFF/, ""));
+    head = data.shift().map(function (h) { return h.trim(); });
+    iA = head.indexOf("Animal"); iG = head.indexOf("Group"); iI = head.indexOf("Image"); iC = head.indexOf("Credit");
+    if (iA < 0 || iG < 0 || iI < 0 || iC < 0) { head = null; $("status").textContent = "That file needs the columns Animal, Group, Image and Credit."; return; }
+    rows = data.map(function (r) { while (r.length < head.length) r.push(""); return r; });
+
+    // A photo counts as "already done" only if its path follows the current naming (img/moth.jpg).
+    // Anything else (such as img/a001.jpg from an older run), or everything when "start over" is ticked, is forgotten.
+    var cleared = 0, fresh = $("fresh").checked;
+    rows.forEach(function (r) {
+      if (r[iI] && (fresh || r[iI] !== "img/" + slug(r[iA]) + r[iI].slice(r[iI].lastIndexOf(".")) || !/^\.(jpg|png|webp)$/.test(r[iI].slice(r[iI].lastIndexOf("."))))) {
+        r[iI] = ""; r[iC] = ""; cleared++;
+      }
+    });
+
+    photos = {}; cards = {}; $("grid").textContent = "";
+    rows.forEach(function (r, i) { paint(i + 1, r[iI] ? "had" : "wait", ""); card(i + 1).pic.textContent = r[iI] ? "saved in an earlier run" : "not fetched yet"; });
+    $("start").disabled = false; summary();
+    if (cleared) $("status").textContent += " (" + cleared + " earlier photo entries were cleared, so they will be fetched again.)";
+  }
   $("file").addEventListener("change", function () {
     var f = this.files[0]; if (!f) return;
     var rd = new FileReader();
-    rd.onload = function () {
-      var data = parseCSV(String(rd.result).replace(/^﻿/, ""));
-      head = data.shift().map(function (h) { return h.trim(); });
-      iA = head.indexOf("Animal"); iG = head.indexOf("Group"); iI = head.indexOf("Image"); iC = head.indexOf("Credit");
-      if (iA < 0 || iG < 0 || iI < 0 || iC < 0) { head = null; $("status").textContent = "That file needs the columns Animal, Group, Image and Credit."; return; }
-      rows = data.map(function (r) { while (r.length < head.length) r.push(""); return r; });
-      photos = {}; cards = {}; $("grid").textContent = "";
-      rows.forEach(function (r, i) { paint(i + 1, r[iI] ? "had" : "wait", r[iI] ? "" : ""); card(i + 1).pic.textContent = r[iI] ? "saved in an earlier run" : "not fetched yet"; });
-      $("start").disabled = false; summary();
-    };
+    rd.onload = function () { csvText = String(rd.result); loadRows(); };
     rd.readAsText(f, "UTF-8");
+  });
+  $("fresh").addEventListener("change", function () {
+    if (!csvText || running) return;
+    if (Object.keys(photos).length) { $("status").textContent = "Photos are already fetched in this session. Choose the CSV file again to start over."; this.checked = !this.checked; return; }
+    loadRows();
   });
   $("start").addEventListener("click", function () { if (head && !running) run(); });
   $("stop").addEventListener("click", function () { stopFlag = true; });
