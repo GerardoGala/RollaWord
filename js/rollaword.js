@@ -377,7 +377,7 @@ function startChallengeEngine() {
   // RollaSail, RollaCity and RollAnimal repeat every year, so their puzzles are keyed by month and day only (MMDD, e.g. "1030").
   const todayKey = (IS_SAIL || IS_CITY || IS_ANIMAL) ? `${month}${day}` : `${year}${month}${day}`;
 
-  fetch(IS_SAIL ? '/js/sailchallenge.json' : IS_CITY ? '/js/citychallenge.json' : IS_ANIMAL ? '/js/animalchallenge.json' : '/js/dailychallenge.json')
+  fetch(IS_SAIL ? 'js/sailchallenge.json' : IS_CITY ? 'js/citychallenge.json' : IS_ANIMAL ? 'js/animalchallenge.json' : 'js/dailychallenge.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load challenge file: ${response.status}`);
