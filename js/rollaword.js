@@ -13,6 +13,9 @@ const IS_SAIL = window.location.pathname.toLowerCase().includes('sail');
 // RollaCity (countries and capitals): same engine again, again driven by one flag.
 const IS_CITY = window.location.pathname.toLowerCase().includes('city');
 
+// RollAnimal (animal names): same engine again, again driven by one flag.
+const IS_ANIMAL = window.location.pathname.toLowerCase().includes('animal');
+
 const gameTitleElement = document.getElementById("game-title");
 // =========================================================================
 // PHASE 1 & 2: INSTANT GRID INITIALIZATION
@@ -336,6 +339,20 @@ function startGameEngine() {
     return;
   }
 
+  // RollAnimal downloads its word list (animal-data.csv) first, so wait for it before rolling the tray.
+  if (IS_ANIMAL) {
+    Promise.resolve(window.animalWordsReady).then(function () {
+      if (gameEnded) return;                       // the player pressed Done while the list was loading
+      renderDicePayload(window.generateAnimalPayload());
+      startCountdownTimer();
+    }).catch(function (err) {
+      console.error("RollAnimal could not start:", err);
+      const outputBox = document.getElementById("score-output-area");
+      if (outputBox) outputBox.textContent = "Could not load the word list. Please refresh the game and try again.";
+    });
+    return;
+  }
+
   const verifiedRollResult = IS_SAIL ? window.generateSailPayload() : window.generateLetterPayload();
   renderDicePayload(verifiedRollResult);
   startCountdownTimer();
@@ -357,10 +374,10 @@ function startChallengeEngine() {
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
-  // RollaSail and RollaCity repeat every year, so their puzzles are keyed by month and day only (MMDD, e.g. "1030").
-  const todayKey = (IS_SAIL || IS_CITY) ? `${month}${day}` : `${year}${month}${day}`;
+  // RollaSail, RollaCity and RollAnimal repeat every year, so their puzzles are keyed by month and day only (MMDD, e.g. "1030").
+  const todayKey = (IS_SAIL || IS_CITY || IS_ANIMAL) ? `${month}${day}` : `${year}${month}${day}`;
 
-  fetch(IS_SAIL ? '/js/sailchallenge.json' : IS_CITY ? '/js/citychallenge.json' : '/js/dailychallenge.json')
+  fetch(IS_SAIL ? '/js/sailchallenge.json' : IS_CITY ? '/js/citychallenge.json' : IS_ANIMAL ? '/js/animalchallenge.json' : '/js/dailychallenge.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load challenge file: ${response.status}`);
@@ -378,6 +395,14 @@ function startChallengeEngine() {
 
       renderDicePayload(dailyLetters);
       startCountdownTimer();
+
+      // RollAnimal: keep today's solution for solution.html (non-essential: the game plays without it)
+      if (IS_ANIMAL) {
+        fetch('/js/animalsolutions.json')
+          .then(r => r.ok ? r.json() : null)
+          .then(s => { if (s && s[todayKey] && window.saveAnimalSolution) window.saveAnimalSolution(s[todayKey]); })
+          .catch(() => {});
+      }
     })
     .catch(error => {
       console.error("Daily Challenge initialization exception error:", error);
