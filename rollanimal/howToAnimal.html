@@ -274,7 +274,12 @@
         shown++;
         var tr = document.createElement("tr");
 
-        var td1 = document.createElement("td"); td1.textContent = r.animal;
+        var td1 = document.createElement("td");
+        var nameLink = document.createElement("a");
+        nameLink.href = "/rollanimal/clue.html?names=1&w=" + encodeURIComponent(r.type);   // opens the animal's photo page
+        nameLink.textContent = r.animal;
+        nameLink.title = "Show the photo";
+        td1.appendChild(nameLink);
         if (r.note) { var n = document.createElement("span"); n.className = "wl-small"; n.textContent = r.note; td1.appendChild(n); }
         tr.appendChild(td1);
 

@@ -51,7 +51,8 @@
   // Close: inside the game's modal -> tell the game page; opened on its own -> go back to the game.
   document.getElementById("close-btn").addEventListener("click", function () {
     if (window.parent !== window) window.parent.postMessage("rollanimal-close-clue", "*");
-    else window.location.href = "index.html";
+    else if (NAMES) window.history.back();            // opened from the word list or the solution page: go back to it
+    else window.location.href = "/rollanimal/index.html";
   });
 
   var qs = new URLSearchParams(window.location.search);
