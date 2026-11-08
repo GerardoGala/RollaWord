@@ -51,7 +51,6 @@
     ? document.currentScript.src.replace(/[^\/]*$/, '')
     : '/rollaplant/js/';
   const DATA_URL = BASE + 'plant-data.csv';
-  window.PLANT_JS_BASE = BASE;       // the daily puzzle files live in this same folder (used by rollaword.js)
   const SINGLE_WORD_CHANCE = 0.15;   // 0 = never one 8-letter name alone, 1 = always
   const COLORS = ['red', 'blue'];
   const ROWS = 6, COLS = 8, TILES = 8;
