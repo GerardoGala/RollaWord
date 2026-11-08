@@ -16,6 +16,23 @@ const IS_CITY = window.location.pathname.toLowerCase().includes('city');
 // RollAnimal (animal names): same engine again, again driven by one flag.
 const IS_ANIMAL = window.location.pathname.toLowerCase().includes('animal');
 
+// RollaPlant (plant names): same engine once more, again driven by one flag.
+const IS_PLANT = window.location.pathname.toLowerCase().includes('plant');
+
+// Each app keeps its own daily puzzle files in its own folder: /rollacity/js/, /rollanimal/js/, /rollaplant/js/.
+// (RollaSail and the main RollaWord game sit at the top of the site, so their files are in /js/.)
+// This works out that folder from the page address, so it also works if the site sits inside a sub-folder.
+function appJsFolder(folder) {
+  const path = window.location.pathname;
+  const at = path.toLowerCase().indexOf('/' + folder);
+  return (at >= 0 ? path.slice(0, at) : '') + '/' + folder + '/js/';
+}
+const APP_JS = IS_SAIL ? '/js/'
+  : IS_CITY ? appJsFolder('rollacity')
+  : IS_ANIMAL ? appJsFolder('rollanimal')
+  : IS_PLANT ? appJsFolder('rollaplant')
+  : '/js/';
+
 const gameTitleElement = document.getElementById("game-title");
 // =========================================================================
 // PHASE 1 & 2: INSTANT GRID INITIALIZATION
@@ -353,6 +370,20 @@ function startGameEngine() {
     return;
   }
 
+  // RollaPlant also downloads its word list (plant-data.csv) first, so wait for it before rolling the tray.
+  if (IS_PLANT) {
+    Promise.resolve(window.plantWordsReady).then(function () {
+      if (gameEnded) return;                       // the player pressed Done while the list was loading
+      renderDicePayload(window.generatePlantPayload());
+      startCountdownTimer();
+    }).catch(function (err) {
+      console.error("RollaPlant could not start:", err);
+      const outputBox = document.getElementById("score-output-area");
+      if (outputBox) outputBox.textContent = "Could not load the word list. Please refresh the game and try again.";
+    });
+    return;
+  }
+
   const verifiedRollResult = IS_SAIL ? window.generateSailPayload() : window.generateLetterPayload();
   renderDicePayload(verifiedRollResult);
   startCountdownTimer();
@@ -375,9 +406,9 @@ function startChallengeEngine() {
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
   // RollaSail, RollaCity and RollAnimal repeat every year, so their puzzles are keyed by month and day only (MMDD, e.g. "1030").
-  const todayKey = (IS_SAIL || IS_CITY || IS_ANIMAL) ? `${month}${day}` : `${year}${month}${day}`;
+  const todayKey = (IS_SAIL || IS_CITY || IS_ANIMAL || IS_PLANT) ? `${month}${day}` : `${year}${month}${day}`;
 
-  fetch(IS_SAIL ? 'js/sailchallenge.json' : IS_CITY ? 'js/citychallenge.json' : IS_ANIMAL ? 'js/animalchallenge.json' : 'js/dailychallenge.json')
+  fetch(APP_JS + (IS_SAIL ? 'sailchallenge.json' : IS_CITY ? 'citychallenge.json' : IS_ANIMAL ? 'animalchallenge.json' : IS_PLANT ? 'plantchallenge.json' : 'dailychallenge.json'))
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load challenge file: ${response.status}`);
@@ -398,15 +429,23 @@ function startChallengeEngine() {
 
       // RollAnimal: keep today's solution for solution.html (non-essential: the game plays without it)
       if (IS_ANIMAL) {
-        fetch('/js/animalsolutions.json')
+        fetch(APP_JS + 'animalsolutions.json')
           .then(r => r.ok ? r.json() : null)
           .then(s => { if (s && s[todayKey] && window.saveAnimalSolution) window.saveAnimalSolution(s[todayKey]); })
+          .catch(() => {});
+      }
+
+      // RollaPlant: the same for its solution page
+      if (IS_PLANT) {
+        fetch(APP_JS + 'plantsolutions.json')
+          .then(r => r.ok ? r.json() : null)
+          .then(s => { if (s && s[todayKey] && window.savePlantSolution) window.savePlantSolution(s[todayKey]); })
           .catch(() => {});
       }
     })
     .catch(error => {
       console.error("Daily Challenge initialization exception error:", error);
-      alert("Could not load today's Daily Challenge tray setup. Please verify your data source path mapping.");
+      alert("Could not load today's Daily Challenge tray setup. Please verify your data source path mapping.\n\nDetails: " + (error && error.message ? error.message : error) + "\nFile: " + APP_JS);
       clearTimeoutEngine();
     });
 }

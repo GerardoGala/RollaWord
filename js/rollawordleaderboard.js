@@ -18,11 +18,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// RollaCity keeps its scores in its own collection, so they never mix with RollaWord's.
-// The page decides: any page whose address contains "city" (the RollaCity folder, including
-// its own copy of leaderboard.html) uses the RollaCity collection.
-const IS_CITY = window.location.pathname.toLowerCase().includes("city");
-const LEADERBOARD_COLLECTION = IS_CITY ? "rollacity_leaderboard" : "rollaword_leaderboard";
+// ONE daily leaderboard for every app (RollaWord, RollaSail, RollaCity, RollAnimal, RollaPlant).
+// The leaderboard date is always the full calendar date (YYYYMMDD), whatever way the app keys its puzzle.
+const LEADERBOARD_COLLECTION = "rollaword_leaderboard";
 
 // Core State Engine: Keeps track of the date currently active on the viewport timeline
 let activeNavDate = new Date();

@@ -48,6 +48,18 @@ async function loadLocalDictionary() {
       return;
     }
 
+    // RollaPlant (plant names): its words come from plant-data.csv, which plantgen.js reads.
+    if (window.location.pathname.toLowerCase().includes("plant")) {
+      await window.plantWordsReady;
+      if (!window.PLANT_WORDS || window.PLANT_WORDS.size === 0) {
+        throw new Error("Could not load the RollaPlant word list (plant-data.csv)");
+      }
+      LOCAL_DICTIONARY = window.PLANT_WORDS;
+      dictionaryReady = true;
+      console.log(`RollaPlant dictionary loaded: ${LOCAL_DICTIONARY.size} words.`);
+      return;
+    }
+
     // RollaSail (sail.html) uses its own, much smaller word list.
     const isSailPage = window.location.pathname.toLowerCase().includes("sail");
     const response = await fetch(
