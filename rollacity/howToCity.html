@@ -276,7 +276,15 @@
 
         var td1 = document.createElement("td"); td1.textContent = r.country; tr.appendChild(td1);
 
-        var td2 = document.createElement("td"); td2.textContent = r.capitals;
+        var td2 = document.createElement("td");
+        r.capitalNames.forEach(function (name, i) {      // each capital links to its map (clue.html in "names" mode)
+          if (i) td2.appendChild(document.createTextNode(" / "));
+          var link = document.createElement("a");
+          link.href = "/rollacity/clue.html?names=1&w=" + encodeURIComponent(r.typeCaps[i]);
+          link.textContent = name;
+          link.title = "Show the capital on the map";
+          td2.appendChild(link);
+        });
         if (r.note) { var n = document.createElement("span"); n.className = "wl-small"; n.textContent = r.note; td2.appendChild(n); }
         tr.appendChild(td2);
 
@@ -299,13 +307,13 @@
         var ix = function (name) { return head.indexOf(name); };
         data.forEach(function (c) {
           var r = {
-            country: c[ix("Country")], capitals: (c[ix("Capital(s)")] || "").split("; ").join(" / "),
+            country: c[ix("Country")], capitalNames: (c[ix("Capital(s)")] || "").split("; "),
             typeCountry: c[ix("Type for country")],
             typeCaps: (c[ix("Type for capital(s)")] || "").split("; ").filter(Boolean),
             also: (c[ix("Also accepted")] || "").split("; ").filter(Boolean).join(", "),
             note: c[ix("Note")] || ""
           };
-          r.search = plain([r.country, r.capitals, r.typeCountry, r.typeCaps.join(" "), r.also].join(" "));
+          r.search = plain([r.country, r.capitalNames.join(" "), r.typeCountry, r.typeCaps.join(" "), r.also].join(" "));
           rows.push(r);
         });
         render("");
