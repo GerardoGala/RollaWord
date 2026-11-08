@@ -106,8 +106,6 @@
     .wl-table td { vertical-align: top; padding: calc(var(--baseline) * 2); }
     .wl-type { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-weight: var(--font-weight-bold); font-size: .8rem; white-space: nowrap; }
     .wl-small { display: block; font-size: .8rem; }
-    .wl-name { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: var(--blue, #0b5cad); text-align: left; cursor: pointer; text-decoration: underline; }
-    .wl-name:hover, .wl-name:focus-visible { text-decoration: none; }
 
     /* Pop-up with the plant's photo */
     #pop { position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,.6); display: none; align-items: center; justify-content: center; padding: 12px; }
@@ -350,11 +348,12 @@
         var tr = document.createElement("tr");
 
         var td1 = document.createElement("td");
-        var nameBtn = document.createElement("button");
-        nameBtn.type = "button"; nameBtn.className = "wl-name"; nameBtn.textContent = r.plant;
-        nameBtn.title = "Show the photo";
-        nameBtn.addEventListener("click", function () { openPop(r, nameBtn); });
-        td1.appendChild(nameBtn);
+        var nameLink = document.createElement("a");          // a plain link, styled like the RollAnimal and RollaCity word lists
+        nameLink.href = "#";
+        nameLink.textContent = r.plant;
+        nameLink.title = "Show the photo";
+        nameLink.addEventListener("click", function (e) { e.preventDefault(); openPop(r, nameLink); });
+        td1.appendChild(nameLink);
         if (r.note) { var n = document.createElement("span"); n.className = "wl-small"; n.textContent = r.note; td1.appendChild(n); }
         tr.appendChild(td1);
 
