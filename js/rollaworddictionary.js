@@ -35,6 +35,19 @@ async function loadLocalDictionary() {
       return;
     }
 
+    // RollAnimal (animal names): its words come from animal-data.csv, which animalgen.js
+    // reads. Wait for that, then use the same list for checking words.
+    if (window.location.pathname.toLowerCase().includes("animal")) {
+      await window.animalWordsReady;
+      if (!window.ANIMAL_WORDS || window.ANIMAL_WORDS.size === 0) {
+        throw new Error("Could not load the RollAnimal word list (animal-data.csv)");
+      }
+      LOCAL_DICTIONARY = window.ANIMAL_WORDS;
+      dictionaryReady = true;
+      console.log(`RollAnimal dictionary loaded: ${LOCAL_DICTIONARY.size} words.`);
+      return;
+    }
+
     // RollaSail (sail.html) uses its own, much smaller word list.
     const isSailPage = window.location.pathname.toLowerCase().includes("sail");
     const response = await fetch(
