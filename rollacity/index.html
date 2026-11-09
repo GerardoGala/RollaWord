@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RollaCity - Online Geography Board Game</title>
+  <meta name="description" content="RollaCity is a free online word game of countries and capital cities. Roll 8 lettered tiles, build connected words on a 6x8 board before the timer runs out, and play Free Play or the Daily Challenge.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rollaword.css">
+</head>
+<body>
+
+  <!-- 1) Top Count-Down Timer -->
+  <!-- 1) Top Count-Down Timer (Unified Flex Row Layout) -->
+  <header style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: calc(var(--cell-size) * 8 + 2px); margin: calc(var(--baseline) * 4) auto 0 auto; box-sizing: border-box;">
+    <h1 id="game-title" class="h1" style="margin: 0; text-align: left; text-transform: uppercase;">ROLLACITY</h1>
+    <div id="timer-container" style="margin: 0; text-align: right;"><span id="timer-display">3:00</span></div>
+  </header>
+
+
+  <!-- 2) Playing board: 6 rows x 8 columns -->
+  <div id="game-board"></div>
+
+  <!-- White separation between board and dice tray -->
+  <div id="board-separator"></div>
+
+  <!-- Dice tray: 1 row x 8 columns -->
+  <div id="dice-tray"></div>
+
+<!-- 3) Unified Game Action Control Panels -->
+<div id="action-container" style="width: 100%; max-width: calc(var(--cell-size) * 8 + 2px); margin: 10px auto;">
+    
+    <!-- 🚀 Startup Selection Row (Both buttons side-by-side) -->
+    <div id="mode-selection-row" style="display: flex; gap: 8px; width: 100%; height: 45px;">
+        <button id="start-btn" class="btn" style="flex: 1; height: 100%;" 
+                onclick="window.isDailyChallengeMode = false; document.getElementById('game-title').textContent = 'FREE PLAY'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; loadGame().then(function(){ if(typeof startGameEngine === 'function') startGameEngine(); });">
+            FREE PLAY
+        </button>
+        <button id="challenge-start-btn" class="btn" style="flex: 1; height: 100%;" 
+                onclick="window.isDailyChallengeMode = true; document.getElementById('game-title').textContent = 'DAILY CHALLENGE'; document.getElementById('mode-selection-row').style.display='none'; document.getElementById('done-btn-container').style.display='block'; loadGame().then(function(){ if(typeof startChallengeEngine === 'function') startChallengeEngine(); });">
+            CHALLENGE
+        </button>
+    </div>
+
+    <!-- 🏁 Active Gameplay State Panel (Done Button) -->
+    <div id="done-btn-container" style="display: none; width: 100%; height: 45px;">
+        <button id="done-btn" class="btn" style="width: 100%; height: 100%;" 
+                onclick="document.getElementById('game-title').textContent = 'ROLLACITY'; document.getElementById('done-btn-container').style.display='none'; document.getElementById('mode-selection-row').style.display='flex'; if(typeof clearTimeoutEngine === 'function') clearTimeoutEngine();">
+            Done
+        </button>
+    </div>
+    <br>
+<!-- Main Row Container using traditional blocking -->
+<div id="help-share-row" style="width: 100%; height: 45px; display: flex; gap: 6px;">
+
+  <div style="flex: 1 1 0; min-width: 0; height: 100%;">
+    <button id="howTo-btn" class="btn" style="width: 100%; height: 100%; padding: 0 4px; text-align: center; white-space: nowrap;" onclick="window.location.href='howToCity.html';">
+      How To Play?
+    </button>
+  </div>
+
+  <div style="flex: 1 1 0; min-width: 0; height: 100%;">
+    <button id="clue-btn" class="btn" style="width: 100%; height: 100%; padding: 0 4px; text-align: center; white-space: nowrap;" onclick="openClue()" title="Show where on the map">
+      Clue?
+    </button>
+  </div>
+
+  <div style="flex: 1 1 0; min-width: 0; height: 100%;">
+    <button id="share-btn" class="" style="width: 100%; height: 100%; padding: 0 4px; text-align: center; white-space: nowrap;" onclick="shareToMessenger()" title="Share">
+      SHARE
+    </button>
+  </div>
+</div>
+
+<!-- Clue? modal: clue.html is shown in a full-screen overlay on top of the game -->
+<div id="clue-modal" role="dialog" aria-modal="true" aria-label="Clue map" style="display:none; position:fixed; inset:0; z-index:10000; background:rgba(0,0,0,.55); align-items:center; justify-content:center;">
+  <iframe id="clue-frame" title="Clue map" style="border:0; background:#fff; width:100%; max-width:480px; height:100%; max-height:760px;"></iframe>
+</div>
+
+<!-- Script Block for the Clue? button -->
+<script>
+// Clue? passes only a position (lat/lon) to clue.html, never a name, so the address cannot give the answer away.
+// No board yet (or no position found) = no parameters, and clue.html shows Washington, D.C.
+function clueCsv(text) {
+  var out = [], row = [], cell = "", q = false;
+  for (var i = 0; i < text.length; i++) {
+    var ch = text[i];
+    if (q) { if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += ch; }
+    else if (ch === '"') q = true;
+    else if (ch === ",") { row.push(cell); cell = ""; }
+    else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); cell = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = []; }
+    else cell += ch;
+  }
+  if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+  return out;
+}
+async function clueWord() {
+  var daily = (typeof isDailyChallengeMode !== 'undefined') && isDailyChallengeMode;
+  if (daily) {
+    var d = new Date();
+    var key = String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0');
+    var data = await (await fetch('/js/citysolutions.json')).json();
+    return (data[key] && data[key].term) || '';
+  }
+  return (window.lastCitySolution && window.lastCitySolution.term) || '';
+}
+async function cluePosition(word) {
+  if (!word) return null;
+  var rows = clueCsv(await (await fetch('js/city-data.csv')).text()), h = rows.shift();
+  var iC = h.indexOf('Type for country'), iK = h.indexOf('Type for capital(s)'), iA = h.indexOf('Also accepted'),
+      iLa = h.indexOf('Latitude(s)'), iLo = h.indexOf('Longitude(s)');
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i], n = -1;
+    if (r[iC] === word) n = 0;
+    else if ((n = (r[iK] || '').split('; ').indexOf(word)) < 0 && (r[iA] || '').split('; ').indexOf(word) >= 0) n = 0;
+    if (n >= 0) return { lat: r[iLa].split('; ')[n], lon: r[iLo].split('; ')[n] };
+  }
+  return null;
+}
+async function openClue() {
+  var qs = '';
+  try {
+    var pos = await cluePosition(await clueWord());
+    if (pos) qs = '?lat=' + encodeURIComponent(pos.lat) + '&lon=' + encodeURIComponent(pos.lon);
+  } catch (e) { qs = ''; }
+  document.getElementById('clue-frame').src = 'clue.html' + qs;
+  document.getElementById('clue-modal').style.display = 'flex';
+}
+function closeClue() {
+  document.getElementById('clue-modal').style.display = 'none';
+  document.getElementById('clue-frame').src = 'about:blank';
+}
+window.addEventListener('message', function (e) { if (e.origin === window.location.origin && e.data === 'rollacity-close-clue') closeClue(); });
+document.getElementById('clue-modal').addEventListener('click', function (e) { if (e.target === this) closeClue(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeClue(); });
+</script>
+
+<!-- Script Block for Sharing -->
+<script>
+// Opens the phone/browser share sheet; falls back to copying the link.
+async function shareToMessenger() {
+  const url = window.location.href;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: 'RollaCity', text: 'Come play RollaCity!', url: url });
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;   // player closed the share sheet
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(url);
+    alert('Link copied. Paste it into a message to share.');
+  } catch (e) {
+    window.prompt('Copy this link to share:', url);
+  }
+}
+</script>
+ 
+<!-- 4) Bottom Plain Text Formula Scoring Output Box -->
+<div id="score-output-area">
+Press 'FREE PLAY' or 'DAILY CHALLENGE' to play
+</div>
+<footer style="
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 8) auto calc(var(--baseline) * 6);
+  padding-top: calc(var(--baseline) * 4);
+  border-top: 1px solid var(--light);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+">
+  <nav style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
+    <a href="/toc.html" style="color: var(--color); text-decoration: none; font-weight: 500;">T&C</a>
+    <a href="/about.html" style="color: var(--color); text-decoration: none; font-weight: 500;">About</a>
+    <a href="/privacy.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Privacy</a>
+    <a href="/contact.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Contact</a>
+  </nav>
+  <div>© 2026 RollaCity</div>
+</footer>
+
+
+<!-- Game logic is loaded AFTER the page is painted (idle time), or immediately when the
+     player touches a button. FILES run in this exact order, same as before. -->
+<script>
+(function () {
+  var FILES = [
+    "/rollacity/js/citygen.js",
+    "/js/rollawordbonus.js",
+    "/js/rollawordisland.js",
+    "/js/rollaworddisplay.js",
+    "/js/rollawordscoring.js",
+    "/js/rollaworddictionary.js",
+    "/js/rollawordadult.js",
+    "/js/rollaword.js"
+  ];
+  var MODULE = "/js/rollawordleaderboard.js";   // Firestore leaderboard (ES module), loaded last
+  var promise = null;
+
+  window.loadGame = function () {
+    if (promise) return promise;
+
+    // The game files were written to run while the page loads. They may ask to be told when
+    // the page is ready ("DOMContentLoaded" / "load"). That moment has already passed, so
+    // while they load, call such handlers right away instead of never.
+    var realDocAdd = document.addEventListener;
+    var realWinAdd = window.addEventListener;
+    document.addEventListener = function (type, fn, opts) {
+      if (type === "DOMContentLoaded" && document.readyState !== "loading") {
+        setTimeout(function () { try { fn.call(document, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realDocAdd.call(document, type, fn, opts); }
+    };
+    window.addEventListener = function (type, fn, opts) {
+      if (type === "load" && document.readyState === "complete") {
+        setTimeout(function () { try { fn.call(window, new Event(type)); } catch (e) { console.error(e); } }, 0);
+      } else { realWinAdd.call(window, type, fn, opts); }
+    };
+    function restore() { document.addEventListener = realDocAdd; window.addEventListener = realWinAdd; }
+
+    // Download all files at the same time, but run them in order (async = false).
+    var loads = FILES.map(function (src) {
+      return new Promise(function (resolve, reject) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.async = false;
+        s.onload = resolve;
+        s.onerror = function () { reject(new Error("Could not load " + src)); };
+        document.head.appendChild(s);
+      });
+    });
+
+    promise = Promise.all(loads)
+      // The leaderboard needs the Firebase servers. If they cannot be reached, the game must still play.
+      .then(function () {
+        return import(new URL(MODULE, document.baseURI).href).catch(function (e) { console.error("Leaderboard failed to load:", e); });
+      })
+      .then(restore, function (e) { restore(); promise = null; console.error("Game failed to load:", e); throw e; });
+    return promise;
+  };
+
+  // Warm up: once the page has finished loading, fetch the game when the browser is idle.
+  window.addEventListener("load", function () {
+    (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { loadGame().catch(function () {}); });
+  });
+  // Or as soon as the player touches the controls.
+  ["pointerdown", "touchstart", "mouseover", "focusin"].forEach(function (ev) {
+    document.addEventListener(ev, function () { loadGame().catch(function () {}); }, { once: true, passive: true });
+  });
+})();
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747"
+     crossorigin="anonymous"></script>
+</body>
+</html>

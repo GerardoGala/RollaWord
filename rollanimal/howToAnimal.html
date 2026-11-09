@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RollAnimal - How to Play & Score</title>
+  <meta name="description" content="How to play and score RollAnimal: build connected words from the names of animals, with color multipliers, the 8-tile word bonus and the time jackpot. Learn the animals as you play.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .info-container {
+      width: 100%;
+      max-width: min(90vw, 42rem);
+      margin: calc(var(--baseline) * 6) auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .back-nav {
+      margin-top: calc(var(--baseline) * 6);
+      text-align: center;
+    }
+
+    /* Collapsible Wrapper Layout */
+    .collapsible-section {
+      background-color: var(--lighter);
+      border: 1px solid var(--light);
+      border-radius: calc(var(--border-radius) * 3);
+      margin-bottom: calc(var(--baseline) * 4);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .collapsible-section:focus-within {
+      border-color: var(--color);
+    }
+
+    /* Toggle Header Button */
+    .collapsible-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--headings-color);
+      font-family: var(--heading-font);
+      font-size: 1.25rem;
+      font-weight: var(--font-weight-bold);
+      text-align: left;
+      padding: calc(var(--baseline) * 5) calc(var(--baseline) * 6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .collapsible-trigger::after {
+      content: '＋';
+      font-size: 1.1rem;
+      color: var(--color);
+      transition: transform 0.25s ease;
+    }
+
+    /* Active expanded indicator states */
+    .collapsible-section.active .collapsible-trigger::after {
+      content: '－';
+    }
+
+    /* Hidden/Collapsing Content Block */
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+      background-color: var(--page-bg);
+    }
+
+    .collapsible-body {
+      padding: calc(var(--baseline) * 5) calc(var(--baseline) * 6);
+      font-family: var(--body-font);
+      line-height: var(--line-height);
+      color: var(--text-color);
+    }
+
+    .collapsible-body ul {
+      margin-top: calc(var(--baseline) * 2);
+      padding-left: 2ch;
+    }
+
+    .collapsible-body li {
+      list-style-type: disc;
+      margin-bottom: calc(var(--baseline) * 2);
+    }
+
+    .rule-highlight {
+      font-weight: var(--font-weight-bold);
+      color: var(--color);
+    }
+
+    /* Word list table (filled from js/animal-data.csv) */
+    .wl-search { width: 100%; margin-top: calc(var(--baseline) * 3); }
+    .wl-count { font-size: .85rem; margin-top: calc(var(--baseline) * 2); }
+    .wl-wrap { margin-top: calc(var(--baseline) * 3); max-height: 60vh; overflow: auto; border: 1px solid var(--light); }
+    .wl-table { display: table; table-layout: fixed; width: 100%; margin: 0; font-size: .85rem; }
+    .wl-table th:nth-child(1), .wl-table td:nth-child(1) { width: 38%; }
+    .wl-table th:nth-child(2), .wl-table td:nth-child(2) { width: 30%; }
+    .wl-table td { overflow-wrap: anywhere; }
+    .wl-table th { position: sticky; top: 0; background: var(--page-bg); text-align: left; padding: calc(var(--baseline) * 2); }
+    .wl-table td { vertical-align: top; padding: calc(var(--baseline) * 2); }
+    .wl-type { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-weight: var(--font-weight-bold); font-size: .8rem; white-space: nowrap; }
+    .wl-small { display: block; font-size: .8rem; }
+  </style>
+</head>
+<body>
+
+  <div class="info-container">
+    <header style="margin-bottom: calc(var(--baseline) * 8); text-align: center;">
+      <h1 class="h1" style="margin: 0; text-transform: uppercase;">RollAnimal Game Guide</h1>
+    </header>
+
+    <!-- 🧩 Section 1: How to Play -->
+    <div class="collapsible-section">
+      <button class="collapsible-trigger" aria-expanded="false">
+        How to Play
+      </button>
+      <div class="collapsible-content">
+        <div class="collapsible-body">
+          <p>Welcome to <span class="rule-highlight">RollAnimal</span>! Your objective is to form intersecting words on the matrix using your mixed tray of letters before the countdown timer hits zero. Every word is the name of an <span class="rule-highlight">animal</span>, so keep your eyes open for words like LION, ZEBRA or PENGUIN. Stuck? Press <span class="rule-highlight">Clue?</span> to see a photo of an animal from the list.</p>
+          <ul>
+            <li>Select <span class="rule-highlight">FREE PLAY</span> to roll a randomized hand, or choose <span class="rule-highlight">DAILY CHALLENGE</span> to play a globally synchronized daily board.</li>
+            <li>Drag and drop your character tiles directly from the bottom row tray up onto the 6x8 grid board cells.</li>
+            <li>Rearrange your letters at any point during active countdown play.</li>
+            <li>When you have linked all your paths successfully together, hit the <span class="rule-highlight">Done</span> button to freeze the layout and submit your entries for engine calculation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📊 Section 2: How to Score -->
+    <div class="collapsible-section">
+      <button class="collapsible-trigger" aria-expanded="false">
+        How to Score
+      </button>
+      <div class="collapsible-content">
+        <div class="collapsible-body">
+          <p>Points are computed based on standard Scrabble metrics, along with strict layout validation rules:</p>
+          <ul>
+            <li>Each single letter has an integrated point value shown on the lower-right corner of the tile face. Blank tiles (<span class="rule-highlight">*</span>) carry zero base points but automatically optimize into any target letter that yields the highest cumulative scoring hand.</li>
+            <li><span class="rule-highlight">Color Multipliers:</span> Form a complete valid word using tiles entirely of one matching color to trigger a bonus score overlay! Blue lines apply a <span class="rule-highlight">x2 multiplier</span>, while Red lines apply a <span class="rule-highlight">x3 multiplier</span>. These multipliers are clearly added to the individual word calculations.</li>
+            <li><span class="rule-highlight">The Word List:</span> Only the names of the animals on the list count. Every name is cut to its <span class="rule-highlight">first 8 letters</span> with spaces and punctuation removed, because the board is 8 columns wide. So Chimpanzee becomes <span class="rule-highlight">CHIMPANZ</span>, Polar Bear becomes <span class="rule-highlight">POLARBEA</span>, and Hippopotamus becomes <span class="rule-highlight">HIPPOPOT</span>. Names of 8 letters or fewer stay as they are, such as LION, ZEBRA and PENGUIN. The complete list, with exactly what to type for each name, is in the <span class="rule-highlight">Word List</span> section below.</li>
+            <li><span class="rule-highlight">The Moat Rule:</span> All tiles placed onto the playing matrix must form a single, interconnected island block. Separate standalone letter groups are invalid.</li>
+            <li><span class="rule-highlight">Invalid Contamination Cascading:</span> Ensure every single word on the board is an animal on the word list! If an invalid word is discovered, a black line is drawn across it and it scores 0 points. Furthermore, any valid word that intersects or shares a letter tile with that invalid word becomes contaminated and is instantly disqualified.</li>
+            <li><span class="rule-highlight">8-Tile Word Bonus:</span> Just like the real Scrabble rule, if you use all 8 tiles in one single valid word, you earn a flat <span class="rule-highlight">+50 point bonus</span>. It is added to your subtotal before the time multiplier is applied, and it is not multiplied by color bonuses.</li>
+            <li><span class="rule-highlight">Subtotal Output:</span> The engine instantly sums up the points scored across all valid, non-contaminated words (plus the 8-tile word bonus, if you earned it) to display a raw <span class="rule-highlight">SUBTOTAL</span> value before computing final jackpot bonuses.</li>
+            <li><span class="rule-highlight">8-Dice Jackpot Bonus:</span> Get all 8 tray dice onto the board inside completely valid, non-contaminated structures to trigger the ultimate scoring bonus:
+              <ul>
+                <li>If the remaining seconds left to play is greater than 1, your subtotal score gets multiplied by the <strong>exact number of remaining seconds</strong> left on the clock! This includes the 50-point bonus if you earned it.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🐾 Section 3: The Word List (single source of truth: js/animal-data.csv) -->
+    <div class="collapsible-section" id="word-list">
+      <button class="collapsible-trigger" aria-expanded="false">
+        The Word List
+      </button>
+      <div class="collapsible-content" data-auto-height>
+        <div class="collapsible-body">
+          <p>These are all the words that count in RollAnimal. The <span class="rule-highlight">Type</span> column shows each name the way the game spells it, cut to 8 letters with no spaces or punctuation. Some animals have more than one accepted name, and all of them count.</p>
+          <input type="text" id="wl-search" class="wl-search" placeholder="Search the list" aria-label="Search the word list" autocomplete="off">
+          <p class="wl-count" id="wl-count" aria-live="polite">Loading the list&hellip;</p>
+          <div class="wl-wrap">
+            <table class="wl-table">
+              <thead><tr><th>Animal</th><th>Group</th><th>Type</th></tr></thead>
+              <tbody id="wl-body"></tbody>
+            </table>
+          </div>
+          <noscript><p>The word list needs JavaScript to display.</p></noscript>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🧭 Bottom Navigation Anchor Row -->
+    <nav class="back-nav">
+      <a href="index.html" class="btn" style="margin-right: 8px;">&larr; RollAnimal</a>
+    </nav>
+  </div>
+<footer style="
+  max-width: calc(var(--cell-size) * 8 + 2px);
+  margin: calc(var(--baseline) * 8) auto calc(var(--baseline) * 6);
+  padding-top: calc(var(--baseline) * 4);
+  border-top: 1px solid var(--light);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+">
+  <nav style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
+    <a href="/about.html" style="color: var(--color); text-decoration: none; font-weight: 500;">About</a>
+    <a href="/privacy.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Privacy</a>
+    <a href="/contact.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Contact</a>
+  </nav>
+  <div>© 2026 RollAnimal</div>
+</footer>
+  <!-- ⚙️ Smooth Accordion Mechanics Controller -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".collapsible-section");
+
+      sections.forEach(section => {
+        const trigger = section.querySelector(".collapsible-trigger");
+        const content = section.querySelector(".collapsible-content");
+
+        trigger.addEventListener("click", () => {
+          const isOpen = section.classList.contains("active");
+
+          // Close all sections first (Accordion style behavior)
+          sections.forEach(s => {
+            s.classList.remove("active");
+            s.querySelector(".collapsible-content").style.maxHeight = null;
+            s.querySelector(".collapsible-trigger").setAttribute("aria-expanded", "false");
+          });
+
+          // If it wasn't open, open it now
+          if (!isOpen) {
+            section.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+            trigger.setAttribute("aria-expanded", "true");
+            // Sections whose content changes while open (the word list) must not stay capped
+            if (content.hasAttribute("data-auto-height")) {
+              setTimeout(function () {
+                if (section.classList.contains("active")) content.style.maxHeight = "none";
+              }, 350);
+            }
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- 📋 Word list: reads js/animal-data.csv, the single source of truth for the game's word list -->
+  <script>
+  (function () {
+    var body = document.getElementById("wl-body");
+    var count = document.getElementById("wl-count");
+    var search = document.getElementById("wl-search");
+    var rows = [];
+
+    function parseCSV(text) {                      // handles quoted fields and commas
+      var out = [], row = [], cell = "", q = false;
+      for (var i = 0; i < text.length; i++) {
+        var c = text[i];
+        if (q) {
+          if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; }
+          else cell += c;
+        } else if (c === '"') q = true;
+        else if (c === ",") { row.push(cell); cell = ""; }
+        else if (c === "\n" || c === "\r") {
+          if (c === "\r" && text[i + 1] === "\n") i++;
+          row.push(cell); cell = "";
+          if (row.length > 1 || row[0] !== "") out.push(row);
+          row = [];
+        } else cell += c;
+      }
+      if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+      return out;
+    }
+    function plain(s) { return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+
+    function render(filter) {
+      var f = plain(filter || "").trim(), shown = 0;
+      body.textContent = "";
+      rows.forEach(function (r) {
+        if (f && r.search.indexOf(f) < 0) return;
+        shown++;
+        var tr = document.createElement("tr");
+
+        var td1 = document.createElement("td");
+        var nameLink = document.createElement("a");
+        nameLink.href = "/rollanimal/clue.html?names=1&w=" + encodeURIComponent(r.type);   // opens the animal's photo page
+        nameLink.textContent = r.animal;
+        nameLink.title = "Show the photo";
+        td1.appendChild(nameLink);
+        if (r.note) { var n = document.createElement("span"); n.className = "wl-small"; n.textContent = r.note; td1.appendChild(n); }
+        tr.appendChild(td1);
+
+        var td2 = document.createElement("td"); td2.textContent = r.group; tr.appendChild(td2);
+
+        var td3 = document.createElement("td"); td3.className = "wl-type";
+        td3.appendChild(document.createTextNode(r.type));
+        if (r.also) { var a = document.createElement("span"); a.className = "wl-small"; a.style.fontWeight = "normal"; a.textContent = "also accepted: " + r.also; td3.appendChild(a); }
+        tr.appendChild(td3);
+
+        body.appendChild(tr);
+      });
+      count.textContent = f ? shown + " of " + rows.length + " animals match" : rows.length + " animals";
+      if (!shown) count.textContent = "Nothing matches that search.";
+    }
+
+    fetch("js/animal-data.csv", { cache: "no-cache" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (text) {
+        var data = parseCSV(text), head = data.shift();
+        var ix = function (name) { return head.indexOf(name); };
+        data.forEach(function (c) {
+          var r = {
+            animal: c[ix("Animal")], group: c[ix("Group")] || "",
+            type: c[ix("Type")],
+            also: (c[ix("Also accepted")] || "").split("; ").filter(Boolean).join(", "),
+            note: c[ix("Note")] || ""
+          };
+          r.search = plain([r.animal, r.group, r.type, r.also].join(" "));
+          rows.push(r);
+        });
+        render("");
+        search.addEventListener("input", function () { render(search.value); });
+      })
+      .catch(function (e) {
+        console.error("Word list failed to load:", e);
+        count.textContent = "The word list could not be loaded. Please try again later.";
+      });
+  })();
+  </script>
+</body>
+</html>

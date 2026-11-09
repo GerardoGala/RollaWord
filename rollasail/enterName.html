@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Name for the Leaderboard</title>
+    <style>
+        :root {
+            --baseline: 8px;
+            --gray: #666;
+            --primary: #0066cc;
+            --background: #ffffff;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            font-family: var(--font-stack);
+            margin: 0;
+            padding: calc(var(--baseline) * 3);
+            background-color: var(--background);
+            color: #333;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: calc(var(--baseline) * 2);
+            font-size: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: calc(var(--baseline) * 2);
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: 600;
+            margin-bottom: calc(var(--baseline) * 0.5);
+            font-size: 0.9rem;
+        }
+        input[type="text"] {
+            padding: var(--baseline);
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: calc(var(--baseline) * 1.5) calc(var(--baseline) * 3);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .sample-text {
+            margin-top: calc(var(--baseline) * 2);
+            font-size: 0.8rem;
+            color: var(--gray);
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Name for the Leaderboard</h2>
+
+    <form id="leaderboard-form">
+        <div class="form-group">
+            <label for="first-alias">First Alias Name:</label>
+            <input type="text" id="first-alias" placeholder="e.g. John" required>
+        </div>
+
+        <div class="form-group">
+            <label for="second-alias">Second Alias Name:</label>
+            <input type="text" id="second-alias" placeholder="e.g. CA" required>
+        </div>
+
+        <button type="submit">Submit to Leaderboard</button>
+    </form>
+
+    <div class="sample-text">
+        <strong>Sample Layouts:</strong> John CA, J Adams, J A, John 1, John USA
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("leaderboard-form");
+            
+            if (form) {
+                form.addEventListener("submit", (event) => {
+                    event.preventDefault();
+
+                    const firstAliasInput = document.getElementById("first-alias");
+                    const secondAliasInput = document.getElementById("second-alias");
+
+                    const firstAlias = firstAliasInput ? firstAliasInput.value.trim() : "";
+                    const secondAlias = secondAliasInput ? secondAliasInput.value.trim() : "";
+
+                    const combinedName = `${firstAlias} ${secondAlias}`.trim();
+
+                    if (combinedName === "") {
+                        alert("Please enter values in both fields.");
+                        return;
+                    }
+
+                    // Send name to parent window for validation checking
+                    window.opener.postMessage({
+                        type: "LEADERBOARD_NAME_SUBMITTED",
+                        name: combinedName
+                    }, window.location.origin);
+                });
+            }
+
+            // Listen for messages back from the parent window
+            window.addEventListener("message", (event) => {
+                if (event.data && event.data.type === "NAME_ALREADY_EXISTS") {
+                    alert("That name already exists in the leaderboard. If this is you, click on submit. If not, enter your name.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

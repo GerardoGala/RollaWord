@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Rollaword",
+    "description": "",
+    "home_page_url": "https://sail.rollaword.com",
+    "feed_url": "https://sail.rollaword.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Gerardo Gala"
+    },
+    "items": [
+    ]
+}
