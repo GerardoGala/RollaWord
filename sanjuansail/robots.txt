@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://sail.rollaword.com/sitemap.xml
