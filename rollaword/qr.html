@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>RollaWord - Scan to Play</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { margin: 0; }
+    .qr-page { width: 100%; max-width: 30rem; margin: 0 auto; }
+    .qr-header { text-align: center; padding: 0 12px; margin: calc(var(--baseline, 8px) * 6) 0 calc(var(--baseline, 8px) * 3); }
+    .qr-header .h1 { margin: 0; text-transform: uppercase; color: var(--color, #006abc); }
+    .qr-header p { margin: 8px 0 0; color: var(--gray, #555); }
+    /* The code has its own white border, so it can touch both screen edges. */
+    #qr { display: block; width: 100%; height: auto; background: #fff; }
+    .qr-url { text-align: center; font-weight: 700; letter-spacing: 0.03em; color: var(--color, #006abc); margin: 12px 0 0; }
+    .qr-actions { padding: 0 12px; margin-top: calc(var(--baseline, 8px) * 4); }
+    .qr-actions .btn { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 56px; box-sizing: border-box;
+      margin-bottom: 12px; text-decoration: none; font-size: 1.1rem; font-weight: 700; border: 0; border-radius: 4px; cursor: pointer;
+      background: var(--color, #006abc); color: #fff; font-family: inherit; }
+    .qr-hint { text-align: center; font-size: 0.9rem; color: var(--gray, #555); padding: 0 12px; margin: 8px 0 0; line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+  <main class="qr-page">
+    <header class="qr-header">
+      <h1 class="h1">Scan to Play</h1>
+      <p>Point a phone camera at the code below.</p>
+    </header>
+
+    <svg id="qr" role="img" aria-label="QR code that opens rollaword.com" shape-rendering="crispEdges"></svg>
+    <p class="qr-url">rollaword.com</p>
+
+    <div class="qr-actions">
+      <button class="btn" id="download-btn" type="button">Download QR Image</button>
+      <a class="btn" href="rollaWord.html">&larr; RollaWord</a>
+    </div>
+
+    <p class="qr-hint">
+      To show it to a friend, turn your screen brightness all the way up.<br>
+      If the download doesn't start, take a screenshot of the code instead.
+    </p>
+  </main>
+
+  <footer style="
+    max-width: calc(var(--cell-size, 45px) * 8 + 2px);
+    margin: calc(var(--baseline, 8px) * 8) auto calc(var(--baseline, 8px) * 6);
+    padding-top: calc(var(--baseline, 8px) * 4);
