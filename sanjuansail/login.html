@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login - San Juan Sail &amp; Paddle</title><meta name="description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://sail.rollaword.com/login.html"><link rel="alternate" type="application/atom+xml" href="https://sail.rollaword.com/feed.xml" title="San Juan Sail &amp; Paddle - RSS"><link rel="alternate" type="application/json" href="https://sail.rollaword.com/feed.json" title="San Juan Sail &amp; Paddle - JSON"><meta property="og:title" content="Login"><meta property="og:site_name" content="San Juan Sail &amp; Paddle"><meta property="og:description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta property="og:url" content="https://sail.rollaword.com/login.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://sail.rollaword.com/media/website/favicon-32x32.png" type="image/x-icon"><link rel="preload" href="https://sail.rollaword.com/assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://sail.rollaword.com/assets/css/style.css?v&#x3D;d6ad2e088600b87c6f3924073133c982"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sail.rollaword.com/login.html"},"headline":"Login","datePublished":"2026-10-13T06:33+08:00","dateModified":"2026-10-13T06:33+08:00","description":"Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas.","author":{"@type":"Person","name":"Gerardo Gala","url":"https://sail.rollaword.com/authors/gerardo-gala/"},"publisher":{"@type":"Organization","name":"Gerardo Gala"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template"><header class="top js-header"><a class="logo" href="https://sail.rollaword.com/">San Juan Sail &amp; Paddle</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://sail.rollaword.com/" target="_self">Home</a></li><li><a href="https://sail.rollaword.com/sailboats.html" target="_self">Sailboat Rentals</a></li><li><a href="https://sail.rollaword.com/rentals.html" target="_self">Kayak and SUP Rentals</a></li><li><a href="https://sail.rollaword.com/instructors.html" target="_self">Instructors</a></li><li class="has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Online Courses</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://sanjuansail.vercel.app/dinghySailing101/index.html" title="dinghySailing101" target="_self">Dinghy Sailing 101</a></li><li><a href="https://sanjuansail.vercel.app/dinghySailing201/index.html" target="_self">Dinghy Sailing 201</a></li><li><a href="https://sanjuansail.vercel.app/layline/index.html" title="layline" target="_self">Layline</a></li><li><a href="https://sanjuansail.vercel.app/landing/index.html" title="landing" target="_self">Landing</a></li></ul></li><li class="has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Forecast</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://sail.rollaword.com/tide-schedule.html" target="_self">Tide Schedule</a></li><li><a href="https://sail.rollaword.com/wind-prediction.html" target="_self">Wind Prediction</a></li></ul></li><li><a href="https://sail.rollaword.com/tags/blog/" title="Blog" target="_self">Blog</a></li><li><a href="https://sail.rollaword.com/about-us.html" target="_self">About Us</a></li></ul></nav></header><main class="page"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Login</h1></div></header></div><div class="entry-wrapper content__entry"><div id="sjsp-login"><div class="sjsp-login-card"><h1>Welcome Back</h1><p class="sjsp-login-intro">Log in to your San Juan Sail &amp; Paddle account.</p><form id="sjsp-login-form"><div class="sjsp-field"><label for="sjsp-email">Email Address</label> <input type="email" id="sjsp-email" name="email" autocomplete="username" placeholder="you@example.com" required=""></div><div class="sjsp-field"><label for="sjsp-password">Password</label> <input type="password" id="sjsp-password" name="password" autocomplete="current-password" placeholder="Enter your password" required=""></div><button id="sjsp-login-button" type="submit">Log In</button> <button id="sjsp-reset-button" type="button">Forgot Password?</button><p id="sjsp-message" role="status" aria-live="polite"></p></form></div></div><script type="module">import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+
+import {
+    getAuth,
+    signInWithEmailAndPassword,
+    sendPasswordResetEmail
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+
+/* ========================================
+   FIREBASE CONFIGURATION
+   Replace these placeholder values.
+======================================== */
+
+const firebaseConfig = {
+
+    apiKey: "AIzaSyCsVFxlWhfnogijECMRgsUBFDGPyi4LjVo",
+
+    authDomain: "san-juan-academy.firebaseapp.com",
+
+    projectId: "san-juan-academy",
+
+    appId: "1:579054522531:web:1b03832b8c43042e79af16"
+
+};
+
+
+/* Initialize Firebase */
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+
+/* Page elements */
+
+const form = document.getElementById("sjsp-login-form");
+
+const emailInput = document.getElementById("sjsp-email");
+
+const passwordInput = document.getElementById("sjsp-password");
+
+const loginButton = document.getElementById("sjsp-login-button");
+
+const resetButton = document.getElementById("sjsp-reset-button");
+
+const message = document.getElementById("sjsp-message");
+
+
+/* Display a message */
+
+function showMessage(text) {
+
+    message.textContent = text;
+
+}
+
+
+/* Translate common Firebase errors */
+
+function getErrorMessage(error) {
+
+    switch (error.code) {
+
+        case "auth/invalid-email":
+            return "Please enter a valid email address.";
+
+        case "auth/invalid-credential":
+        case "auth/wrong-password":
+        case "auth/user-not-found":
+            return "Incorrect email or password.";
+
+        case "auth/too-many-requests":
+            return "Too many attempts. Please try again later.";
+
+        case "auth/network-request-failed":
+            return "Network error. Please check your connection.";
+
+        default:
+            return "Unable to complete your request. Please try again.";
+
+    }
+
+}
+
+
+/* Log in */
+
+form.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    showMessage("");
+
+    loginButton.disabled = true;
+
+    loginButton.textContent = "Logging In...";
+
+    try {
+
+        const email = emailInput.value.trim();
+
+        const password = passwordInput.value;
+
+        await signInWithEmailAndPassword(
+            auth,
+            email,
+            password
+        );
+
+        showMessage("Login successful!");
+
+        /*
+         * We will add the destination page
+         * after deciding where members should go.
+         */
+
+    } catch (error) {
+
+        showMessage(getErrorMessage(error));
+
+    } finally {
+
+        loginButton.disabled = false;
+
+        loginButton.textContent = "Log In";
+
+    }
+
+});
+
+
+/* Reset password */
+
+resetButton.addEventListener("click", async function() {
+
+    showMessage("");
+
+    const email = emailInput.value.trim();
+
+    if (!email) {
+
+        showMessage("Please enter your email address first.");
+
+        emailInput.focus();
+
+        return;
+
+    }
+
+    resetButton.disabled = true;
+
+    resetButton.textContent = "Sending...";
+
+    try {
+
+        await sendPasswordResetEmail(auth, email);
+
+        showMessage(
+            "If an account exists for this email, " +
+            "a password-reset email will be sent."
+        );
+
+    } catch (error) {
+
+        showMessage(getErrorMessage(error));
+
+    } finally {
+
+        resetButton.disabled = false;
+
+        resetButton.textContent = "Forgot Password?";
+
+    }
+
+});</script></div></article><div class="banner banner--after-content"><div class="wrapper"><div class="google-review-cta" style="margin: 8px 0; padding: 10px; border: 1px solid #006ABC; border-radius: 0px; background-color: #ffffff; text-align: center;"><h5 style="margin-top: 0; color: #006ABC; font-size: .8rem; font-family: inherit;">Found this guide helpful?</h5><a href="https://g.page/r/CWkxEjqcMdcaEAE/review" target="_blank" rel="noopener noreferrer" class="google-review-btn">Write a Google Review <span class="review-stars">★★★★★</span></a><style>.google-review-btn {
+            display: inline-block; 
+            padding: 8px 16px; 
+            background-color: #006ABC !important; 
+            color: #ffffff !important; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 0px;
+            border: 2px solid #006ABC;
+            transition: all 0.2s ease-in-out;
+            font-family: inherit;
+        }
+        
+        /* Forces the stars to be solid white initially */
+        .google-review-btn .review-stars {
+            color: #ffffff !important;
+            margin-left: 4px;
+        }
+
+        .google-review-btn:hover {
+            background-color: #ffffff !important;
+            color: #006ABC !important;
+            border-color: #006ABC;
+        }
+        
+        /* Makes sure the stars flip to blue alongside the text on hover */
+        .google-review-btn:hover .review-stars {
+            color: #006ABC !important;
+        }</style></div></div></div></main><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p class="align-center">© 2026 San Juan Sail and Paddle. All rights reserved.</p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://sail.rollaword.com/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://sail.rollaword.com/assets/js/scripts.min.js?v&#x3D;dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>

@@ -2,12 +2,12 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "19df8a13c6f01f65c203fb9afd2926d0"
+        "md5": "7f97a10494bafdf8901f0f77fd410471"
     },
     {
         "path": "about.html",
         "type": "file",
-        "md5": "3e92b37204dbb6e78985964dc42ee73f"
+        "md5": "c81f3fa8b73bb0433cc9c3ef9acc302c"
     },
     {
         "path": "assets",
@@ -97,7 +97,7 @@
     {
         "path": "contact-us.html",
         "type": "file",
-        "md5": "cf022ce6d249c2a0f2e3e23ab7b1ff61"
+        "md5": "20f0104df1d791e49333605b9724df42"
     },
     {
         "path": "feed.json",
@@ -112,12 +112,12 @@
     {
         "path": "frequently-asked-questions.html",
         "type": "file",
-        "md5": "e5b417be14716827529fa8f384f0d6fe"
+        "md5": "ed434e0a5c6ad656b00f76fff1c36881"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "1eed7be483c46e4ef702425f633c6cf2"
+        "md5": "aec1f9bf3682644eae368ae2f08a2682"
     },
     {
         "path": "media",
@@ -197,7 +197,7 @@
     {
         "path": "privacy.html",
         "type": "file",
-        "md5": "1965d0c13c64efa09b15db23b2b643be"
+        "md5": "987893eabc86c0cb8eb06c7261d72ebc"
     },
     {
         "path": "robots.txt",
@@ -222,11 +222,11 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "38b36700721f91e151b2d5902628a7f8"
+        "md5": "1094e50957bc280484386aa7fb528e78"
     },
     {
         "path": "terms-and-conditions.html",
         "type": "file",
-        "md5": "fd9dd11c68afbbb5c98302bda975eb99"
+        "md5": "6a7ea6ee51ba54660899a415da8751b9"
     }
 ]

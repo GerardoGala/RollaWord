@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tide Schedule - San Juan Sail &amp; Paddle</title><meta name="description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://sail.rollaword.com/tide-schedule.html"><link rel="alternate" type="application/atom+xml" href="https://sail.rollaword.com/feed.xml" title="San Juan Sail &amp; Paddle - RSS"><link rel="alternate" type="application/json" href="https://sail.rollaword.com/feed.json" title="San Juan Sail &amp; Paddle - JSON"><meta property="og:title" content="Tide Schedule"><meta property="og:site_name" content="San Juan Sail &amp; Paddle"><meta property="og:description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta property="og:url" content="https://sail.rollaword.com/tide-schedule.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://sail.rollaword.com/media/website/favicon-32x32.png" type="image/x-icon"><link rel="preload" href="https://sail.rollaword.com/assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://sail.rollaword.com/assets/css/style.css?v&#x3D;d6ad2e088600b87c6f3924073133c982"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sail.rollaword.com/tide-schedule.html"},"headline":"Tide Schedule","datePublished":"2026-10-09T06:51+08:00","dateModified":"2026-10-09T12:08+08:00","description":"Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas.","author":{"@type":"Person","name":"Gerardo Gala","url":"https://sail.rollaword.com/authors/gerardo-gala/"},"publisher":{"@type":"Organization","name":"Gerardo Gala"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template"><header class="top js-header"><a class="logo" href="https://sail.rollaword.com/">San Juan Sail &amp; Paddle</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://sail.rollaword.com/" target="_self">Home</a></li><li><a href="https://sail.rollaword.com/sailboats.html" target="_self">Sailboat Rentals</a></li><li><a href="https://sail.rollaword.com/rentals.html" target="_self">Kayak and SUP Rentals</a></li><li><a href="https://sail.rollaword.com/instructors.html" target="_self">Instructors</a></li><li class="has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Online Courses</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://sanjuansail.vercel.app/dinghySailing101/index.html" title="dinghySailing101" target="_self">Dinghy Sailing 101</a></li><li><a href="https://sanjuansail.vercel.app/dinghySailing201/index.html" target="_self">Dinghy Sailing 201</a></li><li><a href="https://sanjuansail.vercel.app/layline/index.html" title="layline" target="_self">Layline</a></li><li><a href="https://sanjuansail.vercel.app/landing/index.html" title="landing" target="_self">Landing</a></li></ul></li><li class="active-parent has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Forecast</a><ul class="navbar__submenu level-2" aria-hidden="true"><li class="active"><a href="https://sail.rollaword.com/tide-schedule.html" target="_self">Tide Schedule</a></li><li><a href="https://sail.rollaword.com/wind-prediction.html" target="_self">Wind Prediction</a></li></ul></li><li><a href="https://sail.rollaword.com/tags/blog/" title="Blog" target="_self">Blog</a></li><li><a href="https://sail.rollaword.com/about-us.html" target="_self">About Us</a></li></ul></nav></header><main class="page"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Tide Schedule</h1></div></header></div><div class="entry-wrapper content__entry"><div class="tide-container" style="font-family: sans-serif; background: #1a365d; color: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; box-sizing: border-box;"><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 15px;"><div><h3 style="margin: 0; font-size: 1.1rem; color: #ffffff; font-weight: bold; line-height: 1.2;">San Juan, Batangas</h3><span id="tide-date" style="font-size: 0.85rem; color: #a0aec0;">Loading Date...</span></div><div style="display: flex; gap: 8px; min-width: 90px;"><button id="prev-date" style="background: #3182ce; color: #ffffff; border: none; width: 40px; height: 36px; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: center; user-select: none;">←</button> <button id="next-date" style="background: #3182ce; color: #ffffff; border: none; width: 40px; height: 36px; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: center; user-select: none;">→</button></div></div><svg id="tide-graph" viewbox="0 0 500 230" style="width: 100%; height: auto; background: #2b6cb0; border-radius: 4px; display: block;"></svg></div><p><script>document.addEventListener("DOMContentLoaded", () => {
+  // Required Location Coordinates Config
+  const LATITUDE = 13.669139947603488;
+  const LONGITUDE = 121.40446260873084;
+
+  const svg = document.getElementById("tide-graph");
+  const dateSpan = document.getElementById("tide-date");
+  const prevBtn = document.getElementById("prev-date");
+  const nextBtn = document.getElementById("next-date");
+  
+  let currentDate = new Date();
+  const todayTimestamp = new Date().toDateString();
+  let cachedApiData = null;
+
+  // Fetch using the dedicated, separate Open-Meteo Marine Subdomain API Address
+  async function fetchTideData() {
+    try {
+      // Formulated using absolute URL parameters to prevent browser parsing errors
+      const url = "https://marine-api.open-meteo.com/v1/marine?latitude=" + LATITUDE + "&longitude=" + LONGITUDE + "&hourly=sea_level_height_msl&timezone=Asia%2FManila";
+      
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP status code error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      if (data && data.hourly) {
+        cachedApiData = data.hourly;
+        updatePage();
+      }
+    } catch (error) {
+      console.error("Error fetching tide data:", error);
+      svg.innerHTML = `<text x="250" y="115" fill="#ffffff" text-anchor="middle">Failed to load live data</text>`;
+    }
+  }
+
+  function updatePage() {
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    let dateText = currentDate.toLocaleDateString('en-PH', options);
+    if (currentDate.toDateString() === todayTimestamp) {
+      dateText += " (Today)";
+    }
+    dateSpan.innerText = dateText;
+
+    if (!cachedApiData) return;
+
+    // Format local timezone date match string (YYYY-MM-DD format match)
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const targetDateStr = `${year}-${month}-${day}`;
+
+    const targetDayPoints = [];
+
+    for (let i = 0; i < cachedApiData.time.length; i++) {
+      if (cachedApiData.time[i].startsWith(targetDateStr)) {
+        const hour = parseInt(cachedApiData.time[i].substring(11, 13), 10);
+        // Convert API response metrics to imperial feet (1 meter ≈ 3.28084 feet)
+        const heightFeet = cachedApiData.sea_level_height_msl[i] * 3.28084;
+        targetDayPoints.push({ hour, heightFeet });
+      }
+    }
+
+    // Map time strings & heights into specific SVG coordinate alignments
+    const curvePoints = targetDayPoints.map(pt => {
+      const x = 40 + ((pt.hour / 24) * 440);
+      // Shift chart baseline upward by 3.5ft to offset natural negative values under MSL
+      const visualFeetOffset = pt.heightFeet + 3.5; 
+      const y = 190 - ((visualFeetOffset / 7) * 165); 
+      return [x, y];
+    });
+
+    if (curvePoints.length > 0) {
+      renderSVG(curvePoints);
+    } else {
+      svg.innerHTML = `<text x="250" y="115" fill="#ffffff" text-anchor="middle">No data found for this date</text>`;
+    }
+  }
+
+  function renderSVG(curvePoints) {
+    svg.innerHTML = "";
+    
+    // Horizontal Grid Lines (Scaled 0ft to 5ft grid bounds)
+    for (let i = 0; i <= 5; i++) {
+      const y = 190 - ((i / 7) * 165);
+      svg.innerHTML += `
+        <line x1="40" y1="${y}" x2="480" y2="${y}" stroke="#4299e1" stroke-dasharray="4" stroke-width="0.5"/>
+        <text x="15" y="${y + 4}" fill="#ffffff" stroke="none" font-size="10" font-weight="bold">${i} ft</text>
+      `;
+    }
+
+    // Five Vertical Dashed Time Grid Lines
+    const timeGridIntervals = [
+      { label: "0:00", hour: 0 },
+      { label: "6:00", hour: 6 },
+      { label: "12:00", hour: 12 },
+      { label: "18:00", hour: 18 },
+      { label: "24:00", hour: 24 }
+    ];
+
+    timeGridIntervals.forEach(interval => {
+      const xPos = 40 + ((interval.hour / 24) * 440);
+      svg.innerHTML += `
+        <line x1="${xPos}" y1="25" x2="${xPos}" y2="190" stroke="#4299e1" stroke-dasharray="3,3" stroke-width="0.75"/>
+        <text x="${xPos}" y="18" fill="#ffffff" stroke="none" font-size="9" font-weight="bold" text-anchor="middle">${interval.label}</text>
+      `;
+    });
+
+    // Spline curve explicit layout rendering path array strings calculation
+    let pathD = `M ${curvePoints[0][0]} ${curvePoints[0][1]}`;
+    for (let i = 0; i < curvePoints.length - 1; i++) {
+      const cpX1 = (curvePoints[i][0] + curvePoints[i+1][0]) / 2;
+      pathD += ` C ${cpX1} ${curvePoints[i][1]}, ${cpX1} ${curvePoints[i+1][1]}, ${curvePoints[i+1][0]} ${curvePoints[i+1][1]}`;
+    }
+
+    // Core wave area rendering
+    svg.innerHTML += `
+      <path d="${pathD} L 480 190 L 40 190 Z" fill="#1a365d" opacity="0.45"/>
+      <path d="${pathD}" fill="none" stroke="#63b3ed" stroke-width="3"/>
+    `;
+
+    // Real-Time Clock Vertical Indicator tracking bar
+    if (currentDate.toDateString() === todayTimestamp) {
+      const now = new Date();
+      const currentHour = now.getHours() + (now.getMinutes() / 60);
+      const indicatorX = 40 + ((currentHour / 24) * 440);
+      
+      if (indicatorX >= 40 && indicatorX <= 480) {
+        const segmentIndex = Math.min(Math.floor(currentHour), curvePoints.length - 1);
+        const indicatorY = curvePoints[segmentIndex] ? curvePoints[segmentIndex][1] : 100;
+        
+        svg.innerHTML += `
+          <line x1="${indicatorX}" y1="25" x2="${indicatorX}" y2="190" stroke="#f56565" stroke-width="1.5" stroke-dasharray="2"/>
+          <circle cx="${indicatorX}" cy="${indicatorY}" r="4" fill="#f56565"/>
+        `;
+      }
+    }
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentDate.setDate(currentDate.getDate() - 1);
+    updatePage();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentDate.setDate(currentDate.getDate() + 1);
+    updatePage();
+  });
+
+  // Initial trigger
+  fetchTideData();
+});</script></p></div></article><div class="banner banner--after-content"><div class="wrapper"><div class="google-review-cta" style="margin: 8px 0; padding: 10px; border: 1px solid #006ABC; border-radius: 0px; background-color: #ffffff; text-align: center;"><h5 style="margin-top: 0; color: #006ABC; font-size: .8rem; font-family: inherit;">Found this guide helpful?</h5><a href="https://g.page/r/CWkxEjqcMdcaEAE/review" target="_blank" rel="noopener noreferrer" class="google-review-btn">Write a Google Review <span class="review-stars">★★★★★</span></a><style>.google-review-btn {
+            display: inline-block; 
+            padding: 8px 16px; 
+            background-color: #006ABC !important; 
+            color: #ffffff !important; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 0px;
+            border: 2px solid #006ABC;
+            transition: all 0.2s ease-in-out;
+            font-family: inherit;
+        }
+        
+        /* Forces the stars to be solid white initially */
+        .google-review-btn .review-stars {
+            color: #ffffff !important;
+            margin-left: 4px;
+        }
+
+        .google-review-btn:hover {
+            background-color: #ffffff !important;
+            color: #006ABC !important;
+            border-color: #006ABC;
+        }
+        
+        /* Makes sure the stars flip to blue alongside the text on hover */
+        .google-review-btn:hover .review-stars {
+            color: #006ABC !important;
+        }</style></div></div></div></main><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p class="align-center">© 2026 San Juan Sail and Paddle. All rights reserved.</p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://sail.rollaword.com/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://sail.rollaword.com/assets/js/scripts.min.js?v&#x3D;dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
