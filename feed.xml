@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>San Juan Sail &amp; Paddle</title>
+    <link href="https://sail.rollaword.com/feed.xml" rel="self" />
+    <link href="https://sail.rollaword.com" />
+    <updated>2026-10-14T18:35:26+08:00</updated>
+    <author>
+        <name>Gerardo Gala</name>
+    </author>
+    <id>https://sail.rollaword.com</id>
+
+    <entry>
+        <title>Lake Tahoe Paradox</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/lake-tahoe-paradox.html"/>
+        <id>https://sail.rollaword.com/lake-tahoe-paradox.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-10-11T23:50:56+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    On any blue-sky summer afternoon, the glassy surface of Lake Tahoe plays host to two entirely different worlds. Close to the shorelines of Sand Harbor and Emerald Bay, a vibrant fleet of rental kayaks and paddleboards glides silently over the boulders. Further out, massive motorized&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <figure class="post__image post__image--center"><img loading="lazy"  src="https://sail.rollaword.com/media/posts/37/LakeTahoe.jpeg" alt="LakeTahoe" width="600" height="327" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-xs.jpeg 640w ,https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-sm.jpeg 768w ,https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-md.jpeg 1024w ,https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-lg.jpeg 1366w ,https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-xl.jpeg 1600w ,https://sail.rollaword.com/media/posts/37/responsive/LakeTahoe-2xl.jpeg 1920w"></figure>
+<article id="tahoe-article-body" style="max-width: 620px; margin: 0 auto 35px auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #212529;">
+<p style="font-size: 1.1rem; margin-bottom: 20px;">On any blue-sky summer afternoon, the glassy surface of Lake Tahoe plays host to two entirely different worlds. Close to the shorelines of Sand Harbor and Emerald Bay, a vibrant fleet of rental kayaks and paddleboards glides silently over the boulders. Further out, massive motorized cabin cruisers throw twin plumes of white wake against a backdrop of snow-capped Sierra peaks.</p>
+<p style="margin-bottom: 20px;">Yet beneath this picture-perfect postcard lies a startling safety and socioeconomic divide.</p>
+<p style="margin-bottom: 20px;">A sweeping national survey conducted by the U.S. Coast Guard reveals that while millions of us take to the water annually, our leisure hours are split by a deadly math. We instinctively view the open lake's heavy, high-speed powerboats as the primary threat to safety. The data tells a completely opposite story, exposing a massive mismatch between a vessel's perceived safety and its true operational risk.</p>
+<p style="margin-bottom: 20px;">This regional hazard is magnified by an educational and regulatory vacuum. Because local registration laws historically target motorized engines, millions of smaller, human-powered watercraft effortlessly slip through the regulatory net. The very demographic experiencing the sharpest spike in risk is entirely divorced from the financial ecosystem—and the safety education—meant to keep them alive on the water. They hit the water with zero formal safety training, frequently ignoring basic life jacket requirements until sudden, afternoon thermal winds sweep over the mountains and turn a placid lake into a survival situation.</p>
+<p style="margin-bottom: 25px;">Who is navigating this risk, and who is truly at the helm? The federal data thoroughly deconstructs our cultural stereotypes of the wealthy yacht club elite, painting a much more blue-collar picture of the American boater, while carving out distinct trends based on living situations, safety awareness, and family structures.</p>
+</article>
+<!-- 1. The Dynamic Visual Canvas (Middle Section) -->
+<div id="tahoe-dashboard-container" style="max-width: 100%; margin: 0 auto; padding: 15px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<div class="graph-display-window" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+<h4 style="margin: 0 0 15px 0; font-size: 1rem; color: #0a2342; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold;">Tahoe Fatality Risk Metrics</h4>
+<!-- Motorized Data Bar Set (Deep Alpine Blue) -->
+<div class="vessel-bar-group" style="margin-bottom: 20px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 5px; color: #495057;">Motorized Vessels<span id="label-motorized-rate" style="font-weight: bold; color: #0a2342;">5.0</span></div>
+<div style="background: #e9ecef; border-radius: 4px; height: 24px; width: 100%; overflow: hidden;">
+<div id="bar-motorized" style="background: #0A2342; height: 100%; width: 25%; transition: width 0.4s ease-out;"></div>
+</div>
+</div>
+<!-- Human-Powered Data Bar Set (Clear Tahoe Green) -->
+<div class="vessel-bar-group">
+<div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 5px; color: #495057;">Human-Powered / Sail Craft<span id="label-human-rate" style="font-weight: bold; color: #2e8b57;">13.0</span></div>
+<div style="background: #e9ecef; border-radius: 4px; height: 24px; width: 100%; overflow: hidden;">
+<div id="bar-human" style="background: #2E8B57; height: 100%; width: 65%; transition: width 0.4s ease-out;"></div>
+</div>
+</div>
+</div>
+<!-- 2. The Thumb-Zone Interactive Input Control Panel (Horizontal Track Grid System) -->
+<div class="control-panel-rows">
+<p style="font-size: 0.75rem; text-transform: uppercase; color: #6c757d; margin: 0 0 10px 0; font-weight: bold; letter-spacing: 0.03em;">Tap a demographic layer to pivot chart data:</p>
+<div class="control-grid" style="display: grid; grid-template-columns: 110px 1fr 1fr; grid-template-rows: repeat(4, auto); gap: 10px; align-items: center; background: #fff; border: 1px solid #dee2e6; border-radius: 6px; padding: 12px;"><!-- Row 1: Household Context --> <span style="font-size: 0.85rem; font-weight: 600; color: #495057; white-space: nowrap; padding-right: 5px; display: inline-flex; align-items: center; height: 48px !important; margin: 0; line-height: 1;">Household:</span> <!-- ACTIVE ON PAGE LOAD -->
+<div class="tahoe-btn active" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #0A2342; background: #0A2342; color: #fff; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="household" data-value="single_operator">Single Operator</div>
+<!-- INACTIVE -->
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="household" data-value="family_crew">Family Crew</div>
+<!-- Row 2: Safety Training Education --> <span style="font-size: 0.85rem; font-weight: 600; color: #495057; white-space: nowrap; padding-right: 5px; display: inline-flex; align-items: center; height: 48px !important; margin: 0; line-height: 1;">Education:</span>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="education" data-value="certified_safe">Certified Safe</div>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="education" data-value="no_safety_course">No Safety Course</div>
+<!-- Row 3: Diversity Matrix --> <span style="font-size: 0.85rem; font-weight: 600; color: #495057; white-space: nowrap; padding-right: 5px; display: inline-flex; align-items: center; height: 48px !important; margin: 0; line-height: 1;">Diversity:</span>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="diversity" data-value="predominant">Predominant</div>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="diversity" data-value="minority_owned">Minority Owned</div>
+<!-- Row 4: Economic Status --> <span style="font-size: 0.85rem; font-weight: 600; color: #495057; white-space: nowrap; padding-right: 5px; display: inline-flex; align-items: center; height: 48px !important; margin: 0; line-height: 1;">Status:</span>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="status" data-value="homeowner">Homeowner</div>
+<div class="tahoe-btn" style="width: 100%; height: 48px !important; padding: 6px; font-size: 0.75rem; font-weight: bold; border: 1px solid #ced4da; background: #fff; color: #495057; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; line-height: 1.2; user-select: none;" data-category="status" data-value="renter">Renter</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+ document.addEventListener("DOMContentLoaded", () => { 
+    const barMotorized = document.getElementById("bar-motorized"); 
+    const labelMotorized = document.getElementById("label-motorized-rate"); 
+    const buttons = document.querySelectorAll(".tahoe-btn"); 
+    
+    // Core baseline constants when NO filters are active in a row
+    const BASELINE_MOTORIZED = 3.5;
+    const BASELINE_HUMAN_POWERED = 9.0;
+
+    const tahoeData = { 
+        "demographics": { 
+            "household": { 
+                "single_operator": { "motorized": 5.0, "human_powered": 13.0 }, 
+                "family_crew": { "motorized": 3.2, "human_powered": 8.5 } 
+            }, 
+            "education": { 
+                "certified_safe": { "motorized": 1.5, "human_powered": 4.0 }, 
+                "no_safety_course": { "motorized": 7.8, "human_powered": 18.2 } 
+            }, 
+            "diversity": { 
+                "predominant": { "motorized": 4.8, "human_powered": 12.1 }, 
+                "minority_owned": { "motorized": 5.2, "human_powered": 14.3 } 
+            }, 
+            "status": { 
+                "homeowner": { "motorized": 4.1, "human_powered": 10.5 }, 
+                "renter": { "motorized": 6.3, "human_powered": 15.9 } 
+            } 
+        } 
+    }; 
+    
+    // Updates graph layout widths and numbers
+    function renderChart(motorRate, humanRate) {
+        labelMotorized.innerText = motorRate.toFixed(1); 
+        document.getElementById("label-human-rate").innerText = humanRate.toFixed(1); 
+        
+        const scaleFactor = 20; 
+        const motorWidth = Math.min((motorRate / scaleFactor) * 100, 100); 
+        const humanWidth = Math.min((humanRate / scaleFactor) * 100, 100); 
+        
+        barMotorized.style.width = `${motorWidth}%`; 
+        document.getElementById("bar-human").style.width = `${humanWidth}%`; 
+    }
+
+    // Dynamic Style Painters
+    function setElementOff(btn) {
+        btn.style.background = "#fff"; 
+        btn.style.color = "#495057"; 
+        btn.style.borderColor = "#ced4da"; 
+        btn.classList.remove("active");
+    }
+
+    function setElementOn(btn) {
+        btn.style.background = "#0A2342"; 
+        btn.style.color = "#fff"; 
+        btn.style.borderColor = "#0A2342"; 
+        btn.classList.add("active");
+    }
+
+    // Scans all active rows and averages their active data contributions together
+    function calculateActiveFiltersAndRefresh() {
+        let totalMotor = 0;
+        let totalHuman = 0;
+        let activeCount = 0;
+
+        // Check each category independently
+        const categories = ["household", "education", "diversity", "status"];
+        
+        categories.forEach(cat => {
+            const activeBtn = document.querySelector(`.tahoe-btn.active[data-category="${cat}"]`);
+            if (activeBtn) {
+                const val = activeBtn.getAttribute("data-value");
+                totalMotor += tahoeData.demographics[cat][val].motorized;
+                totalHuman += tahoeData.demographics[cat][val].human_powered;
+                activeCount++;
+            }
+        });
+
+        // If NO filters are enabled anywhere (0 buttons), load absolute baseline constants
+        if (activeCount === 0) {
+            renderChart(BASELINE_MOTORIZED, BASELINE_HUMAN_POWERED);
+        } else {
+            // Symmetrically combine the values of all active row selections
+            renderChart(totalMotor / activeCount, totalHuman / activeCount);
+        }
+    }
+    
+    function initializeInterfaceEngine() { 
+        buttons.forEach(button => { 
+            button.addEventListener("click", (e) => { 
+                const selectedButton = e.currentTarget; 
+                const targetCategory = selectedButton.getAttribute("data-category"); 
+                const isCurrentlyActive = selectedButton.classList.contains("active");
+                
+                // Find only the buttons belonging to THIS specific clicked row
+                const rowButtons = document.querySelectorAll(`.tahoe-btn[data-category="${targetCategory}"]`);
+                
+                // Clear the rest of the options in this row first (Rule: One or Less per row)
+                rowButtons.forEach(btn => setElementOff(btn));
+                
+                // Toggle state switch logic
+                if (!isCurrentlyActive) {
+                    setElementOn(selectedButton);
+                }
+                
+                // Evaluate all active rows together to update graph
+                calculateActiveFiltersAndRefresh();
+            }); 
+        }); 
+    } 
+    
+    initializeInterfaceEngine(); 
+    
+    // Page Load State initialization: Select "Single Operator" as default active choice
+    const defaultBtn = document.querySelector('.tahoe-btn[data-value="single_operator"]');
+    if (defaultBtn) {
+        setElementOn(defaultBtn);
+    }
+    calculateActiveFiltersAndRefresh(); 
+});
+
+    
+
+    </script>
+</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Kombi Quick Canoe Build</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/kombi-quick-canoe-build.html"/>
+        <id>https://sail.rollaword.com/kombi-quick-canoe-build.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-10-08T01:45:21+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Job Feranco from Melvar, Batangas build my Kombi Quick Canoe designed by Aussie designer Mik Storer living in the Philippines.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Job Feranco from Melvar, Batangas build my Kombi Quick Canoe designed by Aussie designer Mik Storer living in the Philippines.</p>
+<div class="gallery-wrapper gallery-wrapper--full"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="1">
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/042f51c1-24f4-4b04-b779-9f352585b4f8.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/042f51c1-24f4-4b04-b779-9f352585b4f8-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4d41890b-eb9f-454b-9bf4-8ce852d56593.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4d41890b-eb9f-454b-9bf4-8ce852d56593-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/34399f6a-0c67-44bb-8c92-6643bf4e8242.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/34399f6a-0c67-44bb-8c92-6643bf4e8242-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/04317df2-3c3c-40aa-996b-4bdcf912751e.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/04317df2-3c3c-40aa-996b-4bdcf912751e-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e7166684-435a-46d8-8ffa-20d1bf47f5e2-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e7166684-435a-46d8-8ffa-20d1bf47f5e2-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e7166684-435a-46d8-8ffa-20d1bf47f5e2.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e7166684-435a-46d8-8ffa-20d1bf47f5e2-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/507154de-ba70-404e-b732-7b880ede681c.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/507154de-ba70-404e-b732-7b880ede681c-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/231c6b53-e631-473f-afc2-9a8562cbcac1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/231c6b53-e631-473f-afc2-9a8562cbcac1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/67f557e8-6522-4013-b37c-134715c8b21c.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/67f557e8-6522-4013-b37c-134715c8b21c-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/cd2b654a-beca-4fd6-8e2b-5b1fb9aba8d9.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/cd2b654a-beca-4fd6-8e2b-5b1fb9aba8d9-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/df23934f-6bea-459a-b14c-e50e73003bfe.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/df23934f-6bea-459a-b14c-e50e73003bfe-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/20db4756-b05e-4f38-a2a2-eda2c9072fb7.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/20db4756-b05e-4f38-a2a2-eda2c9072fb7-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4925a513-47ef-4d2f-9d82-1c83d51348e9.jpg" data-size="1080x1920"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4925a513-47ef-4d2f-9d82-1c83d51348e9-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/d95f15ad-4403-485e-aa41-f6c82f1e61a2.jpg" data-size="1080x1920"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/d95f15ad-4403-485e-aa41-f6c82f1e61a2-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/70816e0d-8ddb-483e-8066-37a9efcfc5f7.jpg" data-size="1920x1080"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/70816e0d-8ddb-483e-8066-37a9efcfc5f7-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e9ad5fae-2f69-46b2-829e-925e53772337.jpg" data-size="1080x1920"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e9ad5fae-2f69-46b2-829e-925e53772337-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0f96fe87-2a70-47aa-a44b-613725434da6.jpg" data-size="1080x1920"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0f96fe87-2a70-47aa-a44b-613725434da6-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/333e3fba-9a1b-4a53-9994-87d0fd5a47b5.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/333e3fba-9a1b-4a53-9994-87d0fd5a47b5-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/436b5e3d-50c4-4ff7-847f-fdba0c5ca26f.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/436b5e3d-50c4-4ff7-847f-fdba0c5ca26f-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/123ea6ec-2e87-4b9e-82f3-ea6fe514271e.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/123ea6ec-2e87-4b9e-82f3-ea6fe514271e-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/c1eec33a-3efe-42b7-92c5-ee35d25b19b4.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/c1eec33a-3efe-42b7-92c5-ee35d25b19b4-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/a6ed93ca-2afe-4d90-8e43-303f8d2870b6.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/a6ed93ca-2afe-4d90-8e43-303f8d2870b6-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0f503a04-8a85-4bc2-a0b5-656cae90b8d5.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0f503a04-8a85-4bc2-a0b5-656cae90b8d5-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/3304e692-268d-4db2-a8cc-dfeaa271adde-1.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/3304e692-268d-4db2-a8cc-dfeaa271adde-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/3304e692-268d-4db2-a8cc-dfeaa271adde.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/3304e692-268d-4db2-a8cc-dfeaa271adde-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/a37d6962-f24b-4c97-8570-6801e85d4ac7.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/a37d6962-f24b-4c97-8570-6801e85d4ac7-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/6cfd04e5-96b5-417e-919a-d99b89039881-1.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/6cfd04e5-96b5-417e-919a-d99b89039881-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/6cfd04e5-96b5-417e-919a-d99b89039881.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/6cfd04e5-96b5-417e-919a-d99b89039881-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/5aa29096-1178-4363-8181-bd80593da749.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/5aa29096-1178-4363-8181-bd80593da749-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1638bbb1-e3e4-4483-bc04-793ec155c963.jpg" data-size="2048x1536"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1638bbb1-e3e4-4483-bc04-793ec155c963-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/07eb46f0-7668-4e22-b8f9-23f8d2821387.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/07eb46f0-7668-4e22-b8f9-23f8d2821387-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/3b5ba70e-db85-4821-b81f-81803523ad32.jpg" data-size="2048x1536"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/3b5ba70e-db85-4821-b81f-81803523ad32-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/944fe94a-254c-419f-83bf-53d5ecaffe76.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/944fe94a-254c-419f-83bf-53d5ecaffe76-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/004719bb-bfe6-453e-acd0-7d6389eccafd-1.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/004719bb-bfe6-453e-acd0-7d6389eccafd-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/004719bb-bfe6-453e-acd0-7d6389eccafd.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/004719bb-bfe6-453e-acd0-7d6389eccafd-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0858adc1-b05d-4dea-8c94-75de9025f8d9-1.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0858adc1-b05d-4dea-8c94-75de9025f8d9-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0858adc1-b05d-4dea-8c94-75de9025f8d9.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0858adc1-b05d-4dea-8c94-75de9025f8d9-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/ba2c9d53-4093-4f79-a5b0-21dddad7fa6d.jpg" data-size="960x720"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/ba2c9d53-4093-4f79-a5b0-21dddad7fa6d-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/826ab5e4-85bc-4890-8e5f-d0c0ccf85e8a.jpg" data-size="960x720"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/826ab5e4-85bc-4890-8e5f-d0c0ccf85e8a-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0a473060-a7a2-4be1-b759-96ced02d75ad.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0a473060-a7a2-4be1-b759-96ced02d75ad-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/369237bf-1db0-4758-8c27-767679cccf45.jpg" data-size="960x720"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/369237bf-1db0-4758-8c27-767679cccf45-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/9d5c6f04-84c9-4f0e-b21f-8e9b77787314-1.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/9d5c6f04-84c9-4f0e-b21f-8e9b77787314-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/9d5c6f04-84c9-4f0e-b21f-8e9b77787314.jpg" data-size="720x960"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/9d5c6f04-84c9-4f0e-b21f-8e9b77787314-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/cf36492d-94f1-4fb2-ad5f-eb7ff8c31b19.jpg" data-size="960x720"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/cf36492d-94f1-4fb2-ad5f-eb7ff8c31b19-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/405f35b2-bb80-4344-8881-ec3c647b1d45.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/405f35b2-bb80-4344-8881-ec3c647b1d45-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/2e632c0f-ce27-4649-b290-844c26cd742c-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/2e632c0f-ce27-4649-b290-844c26cd742c-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/2e632c0f-ce27-4649-b290-844c26cd742c.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/2e632c0f-ce27-4649-b290-844c26cd742c-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e60f4887-905f-4d00-bdb8-a426de95eec1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e60f4887-905f-4d00-bdb8-a426de95eec1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/27a614f0-49c2-4557-b59a-fa18e6e5df00-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/27a614f0-49c2-4557-b59a-fa18e6e5df00-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/27a614f0-49c2-4557-b59a-fa18e6e5df00.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/27a614f0-49c2-4557-b59a-fa18e6e5df00-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/d51aae18-4ea8-4072-9aa5-d2c8cc65f221-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/d51aae18-4ea8-4072-9aa5-d2c8cc65f221-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/d51aae18-4ea8-4072-9aa5-d2c8cc65f221.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/d51aae18-4ea8-4072-9aa5-d2c8cc65f221-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/a1dec50b-d3a6-42d0-89af-ad9c3b0c99ce.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/a1dec50b-d3a6-42d0-89af-ad9c3b0c99ce-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/ba9cd068-69c9-4937-8307-3d6ebc960887.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/ba9cd068-69c9-4937-8307-3d6ebc960887-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e7feeaa8-4dbb-42db-bc87-bbdae8b575c0.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e7feeaa8-4dbb-42db-bc87-bbdae8b575c0-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1d55272f-b3e9-40e6-abdf-5be70872c5e2-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1d55272f-b3e9-40e6-abdf-5be70872c5e2-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1d55272f-b3e9-40e6-abdf-5be70872c5e2.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1d55272f-b3e9-40e6-abdf-5be70872c5e2-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/dad03bc6-1870-4259-a952-23874fc8fe7b.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/dad03bc6-1870-4259-a952-23874fc8fe7b-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/eb02dce5-ccf3-493b-8a5e-2005dac289ba.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/eb02dce5-ccf3-493b-8a5e-2005dac289ba-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/b7f0121f-cc08-48aa-9746-12a26f49d428-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/b7f0121f-cc08-48aa-9746-12a26f49d428-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/b7f0121f-cc08-48aa-9746-12a26f49d428.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/b7f0121f-cc08-48aa-9746-12a26f49d428-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/978355ef-c64a-4c23-ae20-03e6df972c51.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/978355ef-c64a-4c23-ae20-03e6df972c51-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/28b6ae69-4eb6-448d-a6f9-98e88c917a2e.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/28b6ae69-4eb6-448d-a6f9-98e88c917a2e-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/7dff118b-2459-4ae6-94da-d3538d0e336d.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/7dff118b-2459-4ae6-94da-d3538d0e336d-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/dd1c2d44-b964-4274-8a10-7c295fc766a6.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/dd1c2d44-b964-4274-8a10-7c295fc766a6-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/49a7054a-d967-43a4-a5c2-8f15936517e5.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/49a7054a-d967-43a4-a5c2-8f15936517e5-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/f6321dd2-4143-428b-b3a2-8c1616a03c7b.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/f6321dd2-4143-428b-b3a2-8c1616a03c7b-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4ca19092-7306-43d5-a05f-3e91455e76fb.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4ca19092-7306-43d5-a05f-3e91455e76fb-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/72e4dab0-df36-409c-90f2-c6ff62e477d0.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/72e4dab0-df36-409c-90f2-c6ff62e477d0-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/bd206144-66c7-4b4f-9d74-4ad52a7d2982-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/bd206144-66c7-4b4f-9d74-4ad52a7d2982-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/bd206144-66c7-4b4f-9d74-4ad52a7d2982.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/bd206144-66c7-4b4f-9d74-4ad52a7d2982-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/92693089-3a19-4489-9476-f90999882b1e.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/92693089-3a19-4489-9476-f90999882b1e-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/b99b98c1-5966-48b7-890a-47e0eeb9a819.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/b99b98c1-5966-48b7-890a-47e0eeb9a819-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0f00046f-1e71-4c09-9b0b-e0e1aff23501-1.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0f00046f-1e71-4c09-9b0b-e0e1aff23501-1-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/0f00046f-1e71-4c09-9b0b-e0e1aff23501.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/0f00046f-1e71-4c09-9b0b-e0e1aff23501-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/9a79c687-6dda-4982-ab9a-47c3ae638840.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/9a79c687-6dda-4982-ab9a-47c3ae638840-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/60d82330-6480-4d1d-85f3-346bf0bbaf02.jpg" data-size="1920x956"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/60d82330-6480-4d1d-85f3-346bf0bbaf02-thumbnail.jpg" alt="" width="720" height="359"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/8a090d2b-eb86-40fd-a811-00a4417f5e92.jpg" data-size="1920x956"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/8a090d2b-eb86-40fd-a811-00a4417f5e92-thumbnail.jpg" alt="" width="720" height="359"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/f746bf6d-b34c-44e1-a0a2-0c4895a8bad4.jpg" data-size="1920x956"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/f746bf6d-b34c-44e1-a0a2-0c4895a8bad4-thumbnail.jpg" alt="" width="720" height="359"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1cf34619-3031-44f9-b58e-f6163798a68a.jpg" data-size="956x1920"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1cf34619-3031-44f9-b58e-f6163798a68a-thumbnail.jpg" alt="" width="720" height="1446"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1bc7b49a-2427-495e-911d-3204b1a33c67.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1bc7b49a-2427-495e-911d-3204b1a33c67-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/16e339b8-a0dc-4c3f-ab39-0a0f8d9bf58d.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/16e339b8-a0dc-4c3f-ab39-0a0f8d9bf58d-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e0d2f786-c6f3-47c8-8bf2-003786763234.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e0d2f786-c6f3-47c8-8bf2-003786763234-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/91b1018a-811b-47b8-a1ab-df8ca521c566.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/91b1018a-811b-47b8-a1ab-df8ca521c566-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/74919c44-57d6-4538-a651-818bea4f8ab5.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/74919c44-57d6-4538-a651-818bea4f8ab5-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/d6396335-b9c7-4c9d-88cf-7aa83e70327e.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/d6396335-b9c7-4c9d-88cf-7aa83e70327e-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e8f9882a-88ca-4584-ada1-16333d87362c.jpg" data-size="1920x956"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e8f9882a-88ca-4584-ada1-16333d87362c-thumbnail.jpg" alt="" width="720" height="359"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/6cd76d7b-5245-45fc-80fa-a9cd847e13ae.jpg" data-size="1920x956"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/6cd76d7b-5245-45fc-80fa-a9cd847e13ae-thumbnail.jpg" alt="" width="720" height="359"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/a7acdf46-0d77-4ade-ab13-5e745f4e9896.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/a7acdf46-0d77-4ade-ab13-5e745f4e9896-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/55feff61-f74d-428e-a2a4-d34e22250a49.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/55feff61-f74d-428e-a2a4-d34e22250a49-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/f4c7ddfd-bf53-4187-b4a5-4ab31edac751.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/f4c7ddfd-bf53-4187-b4a5-4ab31edac751-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/6c33b8b2-f0ad-4b01-b4f6-5244075c1bcc.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/6c33b8b2-f0ad-4b01-b4f6-5244075c1bcc-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/1fb3f38c-ee1e-4604-a624-0cfb2c08be44.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/1fb3f38c-ee1e-4604-a624-0cfb2c08be44-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/59643dc4-9680-4162-baa0-1ff22b6be847.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/59643dc4-9680-4162-baa0-1ff22b6be847-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/bd56d52b-7c83-477c-b6f8-59a4369297ba.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/bd56d52b-7c83-477c-b6f8-59a4369297ba-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/8865e212-3e0c-4f39-80c3-10a449c774e6.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/8865e212-3e0c-4f39-80c3-10a449c774e6-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/3dd90ef2-3022-4174-86c9-6f09086c6544.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/3dd90ef2-3022-4174-86c9-6f09086c6544-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/081f2b39-e67a-46b1-a6bc-881205e89684.jpg" data-size="2048x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/081f2b39-e67a-46b1-a6bc-881205e89684-thumbnail.jpg" alt="" width="720" height="720"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/fb1c5ac8-2b10-471d-a266-7835a99548d9.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/fb1c5ac8-2b10-471d-a266-7835a99548d9-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/83bd897a-36dd-4770-b659-095bc03a4984.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/83bd897a-36dd-4770-b659-095bc03a4984-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/7ccf3985-8a87-4813-afca-23d8b4ca21d0.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/7ccf3985-8a87-4813-afca-23d8b4ca21d0-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4e409202-0cab-470b-bd8f-66e6c20af97e-1.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4e409202-0cab-470b-bd8f-66e6c20af97e-1-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/ec14d857-5b1d-4aa4-8206-ed45d577c233.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/ec14d857-5b1d-4aa4-8206-ed45d577c233-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4e409202-0cab-470b-bd8f-66e6c20af97e.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4e409202-0cab-470b-bd8f-66e6c20af97e-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/4e355149-10fe-43c1-bb7d-208a7be7dec0.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/4e355149-10fe-43c1-bb7d-208a7be7dec0-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/33048d4c-5c75-4d9a-b021-d4b89c4e9a94.jpg" data-size="2048x1536"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/33048d4c-5c75-4d9a-b021-d4b89c4e9a94-thumbnail.jpg" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/52cba6c2-493b-4dde-b647-9fb0a44af98c.jpg" data-size="1536x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/52cba6c2-493b-4dde-b647-9fb0a44af98c-thumbnail.jpg" alt="" width="720" height="960"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/23697936-f36b-4133-a533-5c87f875d9ce.jpg" data-size="1152x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/23697936-f36b-4133-a533-5c87f875d9ce-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/9dcc28d5-b990-45b0-a861-6b61b83b252a.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/9dcc28d5-b990-45b0-a861-6b61b83b252a-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/487cd0e3-14cc-4df2-bfcf-f80a42818b6a.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/487cd0e3-14cc-4df2-bfcf-f80a42818b6a-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/e27d0a37-8dca-4ae6-a941-493032b701c3.jpg" data-size="1152x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/e27d0a37-8dca-4ae6-a941-493032b701c3-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/2a28d8eb-d103-41f7-96a1-ea2154da39f7.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/2a28d8eb-d103-41f7-96a1-ea2154da39f7-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/5b6f03f0-ddb8-4f4b-9480-98bc962b5254.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/5b6f03f0-ddb8-4f4b-9480-98bc962b5254-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/cec83e86-d3b6-4767-9ece-327c07d15d65.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/cec83e86-d3b6-4767-9ece-327c07d15d65-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/5e11152b-d144-4118-aa12-85d04f59d84a.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/5e11152b-d144-4118-aa12-85d04f59d84a-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/de169de9-20c4-4457-a11f-79cfeb896c9b.jpg" data-size="1152x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/de169de9-20c4-4457-a11f-79cfeb896c9b-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/efaf47ef-27ec-49a5-a564-68a9815b1cd3.jpg" data-size="2048x1152"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/efaf47ef-27ec-49a5-a564-68a9815b1cd3-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://sail.rollaword.com/media/posts/29/gallery/77b80d7f-8437-48ea-8f9e-4eb998a84be7.jpg" data-size="1152x2048"><img loading="lazy" src="https://sail.rollaword.com/media/posts/29/gallery/77b80d7f-8437-48ea-8f9e-4eb998a84be7-thumbnail.jpg" alt="" width="720" height="1280"></a></figure>
+</div></div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Windsurfing 101</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/5.html"/>
+        <id>https://sail.rollaword.com/5.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-10-01T16:08:45+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Intro to Windsurfing Windsurfing As expert windsurfers, we really have to think back to remember a time when we weren't familiar with every in and out of our favorite sport. But we get that not everyone is an expert. Many people are still learning about&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div align="center">
+<h1 class="component-header">Intro to Windsurfing</h1>
+</div>
+<figure class="post__image post__image--center"><img loading="lazy" src="https://sail.rollaword.com/media/posts/25/Tahe-Beach-185-md.webp" alt="Windsurf" width="600" height="654" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-xs.webp 640w ,https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-sm.webp 768w ,https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-md.webp 1024w ,https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-lg.webp 1366w ,https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-xl.webp 1600w ,https://sail.rollaword.com/media/posts/25/responsive/Tahe-Beach-185-md-2xl.webp 1920w">
+<figcaption>Windsurfing</figcaption>
+</figure>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td>
+<p dir="ltr">As expert windsurfers, we really have to think back to remember a time when we weren't familiar with every in and out of our favorite sport. But we get that not everyone is an expert. Many people are still learning about windsurfing, so we’ve created this handy guide to teach you the basics.</p>
+<h2 dir="ltr">What is Windsurfing?</h2>
+<p dir="ltr">Some people may think that traditional surfing and windsurfing are similar. They both happen on the water with a board, but that is where the similarities end. Think of windsurfing as riding your own mini sailboat! With regular surfing, you are using the speed of the wave to move you, but with windsurfing, you are using the wind in the sail — which gives you a lot more freedom.</p>
+<p dir="ltr">People also often confuse kiteboarding, or kitesurfing, and windsurfing. With windsurfing, the sail is attached to the board, whereas with kitesurfing the sail is a kite high above you.</p>
+<p dir="ltr">There are several different styles of windsurfing for all kinds of fun:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Racing: You cross a start line and see who is fastest around the buoys. Slalom racing is fast and exciting racing that takes place across the wind, or slightly downwind. Course racing is more tactical around the buoys racing and involves more different points of sail (direction of the board in relation to the wind direction).</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Freestyle: Tricks! Can be spinning tricks on the surface of the water or aerial maneuvers.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Wavesailing: More like surfing, but you are using the power of the wind to get out to the waves instead of paddling like you would on a surfboard.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Freeriding: What most windsurfers do. Blast around on your local bay or lake, maybe drag racing your friends.</p>
+</li>
+</ul>
+<h2 dir="ltr">Can anyone windsurf?</h2>
+<p dir="ltr">Windsurfing is a great sport for people of all ages. The only requirements are that you be comfortable in the water, able to get from a sitting or kneeling position to standing and that you want to learn to windsurf.</p>
+<p dir="ltr">Practice and patience are all that is really required. Windsurfing is a balance and technique sport much more than a strength sport. Being strong doesn’t hurt — but isn’t required!</p>
+<h2 dir="ltr">What are the best windsurfing conditions?</h2>
+<p dir="ltr">That all depends on what kind of windsurfing you are doing and what kind of equipment you have. You need some wind to make windsurfing happen, at least 5 mph or so. Beginners will want wind speeds of 5-10 mph, but more advanced windsurfers get excited when they see a weather forecast that includes "small craft warning".</p>
+<p dir="ltr">We will dive into the basic equipment in a future blog, so keep an eye out for that!</p>
+<h2 dir="ltr">Make windsurfing your new favorite sport</h2>
+<p dir="ltr">Windsurfing looks thrilling and intense. Don’t let the tricks scare you; let them motivate you! While beginners won’t be able to do a forward loop on their first ride, a good foundation will push you in the right direction to be able to do tricks or glide around the bay with ease. Windsurfing can have a reasonably high initial cost, so a good tip is to begin with lessons with included equipment. This way you can get a taste for what windsurfing offers — minus a big financial commitment. Whether in a group or one-on-one session, we will provide you with a strong foundation to have you windsurfing on your own by the end of your first lesson.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>#5</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The Allure of Dinghy Sailing</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/test.html"/>
+        <id>https://sail.rollaword.com/test.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-10-01T15:55:40+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    For newcomers, dinghy sailing offers an accessible and exciting introduction to the sport of sailing. Dinghies are smaller, single-masted sailboats that are normally built for two to four persons, as opposed to bigger sailboats. They are ideal for beginners due to their simple design, modest&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>For newcomers, dinghy sailing offers an accessible and exciting introduction to the sport of sailing. Dinghies are smaller, single-masted sailboats that are normally built for two to four persons, as opposed to bigger sailboats. They are ideal for beginners due to their simple design, modest size, and ease of movement. But what precisely is a dinghy, and why should novice sailors think about using one for their sailing expeditions?</p>
+<p>A sail dinghy, also known as a dinghy or little sailboat, is a sailboat that is between six and twenty feet long and has a shallow draught. These boats are used frequently for racing, recreational sailing, and even as training tools because they are lightweight and portable. This kind of sailboat has various benefits for beginners:</p>
+<p><strong>Stability:</strong> Dinghies are renowned for their steadiness, which aids novices in developing confidence while learning to sail.</p>
+<p><strong>Manoeuvrability:</strong> Dinghies are highly responsive to the helm, which makes them perfect for teaching people how to sail. You’ll quickly pick up on the nuances of steering and sail management as a beginner.</p>
+<p><strong>Affordability</strong>: Dinghies are more cost-effective than larger sailboats in terms of both initial purchase price and continuing upkeep.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>My Trip to Hugom</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/5th-post.html"/>
+        <id>https://sail.rollaword.com/5th-post.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-09-30T05:52:32+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    The Philippine Coastline Is Beautiful—Until a Filipino Shows Up I have lived in the Philippines for eight years. Only recently did I find a beach with remarkably clean water. Think about that for a moment. Eight years in an archipelago blessed with thousands of islands&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div dir="auto">The Philippine Coastline Is Beautiful—Until a Filipino Shows Up</div>
+<div dir="auto"> </div>
+<div dir="auto">I have lived in the Philippines for eight years. Only recently did I find a beach with remarkably clean water.</div>
+<div dir="auto"> </div>
+<div dir="auto">Think about that for a moment. Eight years in an archipelago blessed with thousands of islands and a coastline that should make the rest of the world envious—and finding a clean beach feels like a discovery worth celebrating.</div>
+<div dir="auto"> </div>
+<div dir="auto">Why?</div>
+<div dir="auto"> </div>
+<div dir="auto">The Philippines doesn't have an ugly coastline. It has a pollution problem.</div>
+<div dir="auto"> </div>
+<div dir="auto">Nature has done its part. The turquoise water, tropical islands, secluded coves, beautiful beaches and breathtaking sunsets were here long before people arrived. Nobody had to manufacture their beauty.</div>
+<div dir="auto"> </div>
+<div dir="auto">Yet people keep spoiling them.</div>
+<div dir="auto"> </div>
+<div dir="auto">Walk along a beautiful stretch of coast and look carefully. Plastic bottles. Food wrappers. Disposable packaging. Rubbish scattered across the sand or floating in the water.</div>
+<div dir="auto"> </div>
+<div dir="auto">Who put it there?</div>
+<div dir="auto"> </div>
+<div dir="auto">Trash doesn't materialize out of thin air. Someone discarded it. Someone decided that a beach, a roadside, a riverbank or the sea was an acceptable place to leave their rubbish. Someone assumed that cleaning up was somebody else's problem.</div>
+<div dir="auto"> </div>
+<div dir="auto">And that is precisely the problem.</div>
+<div dir="auto"> </div>
+<div dir="auto">Filipinos, look at your coastline. It is beautiful. Now look at what you are doing to it.</div>
+<div dir="auto"> </div>
+<div dir="auto">You cannot boast about the beauty of your islands while treating the places that make them beautiful as garbage dumps.</div>
+<div dir="auto"> </div>
+<div dir="auto">Stop littering.</div>
+<figure class="post__video"><a href="https://sail.rollaword.com/media/files/HugomVideo.mp4">Watch the Video here</a></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Tide Schedule</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/4th-post.html"/>
+        <id>https://sail.rollaword.com/4th-post.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-09-30T05:52:15+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    This post shows the relationship between the Tide Schedule from Tides app and the actual tide in Playa Laiya Village. Playa Laiya Beach Tide schedule from Android App named "Tides"
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p> </p>
+<p>This post shows the relationship between the Tide Schedule from Tides app and the actual tide in Playa Laiya Village.</p>
+<figure class="post__image post__image--center"><img loading="lazy" src="https://sail.rollaword.com/media/posts/18/1000015718-2.jpg" alt="Playa Laiya Beach" width="3264" height="2448" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-xs.jpg 640w ,https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-sm.jpg 768w ,https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-md.jpg 1024w ,https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-lg.jpg 1366w ,https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-xl.jpg 1600w ,https://sail.rollaword.com/media/posts/18/responsive/1000015718-2-2xl.jpg 1920w">
+<figcaption>Playa Laiya Beach</figcaption>
+</figure>
+<figure><figure class="post__image post__image--center"><img loading="lazy"  src="https://sail.rollaword.com/media/posts/18/1000015717.png" alt="" width="720" height="1640" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://sail.rollaword.com/media/posts/18/responsive/1000015717-xs.png 640w ,https://sail.rollaword.com/media/posts/18/responsive/1000015717-sm.png 768w ,https://sail.rollaword.com/media/posts/18/responsive/1000015717-md.png 1024w ,https://sail.rollaword.com/media/posts/18/responsive/1000015717-lg.png 1366w ,https://sail.rollaword.com/media/posts/18/responsive/1000015717-xl.png 1600w ,https://sail.rollaword.com/media/posts/18/responsive/1000015717-2xl.png 1920w"></figure>
+<figcaption>Tide schedule from Android App named "Tides"</figcaption>
+</figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Sailing Vocabulary</title>
+        <author>
+            <name>Gerardo Gala</name>
+        </author>
+        <link href="https://sail.rollaword.com/a-new-post.html"/>
+        <id>https://sail.rollaword.com/a-new-post.html</id>
+            <category term="Blog"/>
+
+        <updated>2026-09-28T02:59:06+08:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    These are the opposite terms in sailing: Direction / position Port – Starboard Aft – Fore Bow – Stern Windward – Leeward Upwind – Downwind Ahead – Astern Sail handling Sheet in – Sheet out Trim in – Ease out Luff – Fill Tight –&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div class="post-outer">
+<div class="post">
+<div id="post-body-3860103857769613503" class="post-body entry-content float-container">
+<p>These are the opposite terms in sailing:</p>
+<h3 dir="auto" data-start="170" data-end="194">Direction / position</h3>
+<ul data-start="196" data-end="371">
+<li data-start="196" data-end="218"><strong data-start="198" data-end="218">Port – Starboard</strong></li>
+<li data-start="219" data-end="235"><strong data-start="221" data-end="235">Aft – Fore</strong></li>
+<li data-start="236" data-end="253"><strong data-start="238" data-end="253">Bow – Stern</strong></li>
+<li data-start="254" data-end="278"><strong data-start="256" data-end="278">Windward – Leeward</strong></li>
+<li data-start="279" data-end="302"><strong data-start="281" data-end="302">Upwind – Downwind</strong></li>
+<li data-start="303" data-end="323"><strong data-start="305" data-end="323">Ahead – Astern</strong></li>
+</ul>
+<h3 dir="auto" data-start="373" data-end="390">Sail handling</h3>
+<ul data-start="392" data-end="541">
+<li data-start="392" data-end="418"><strong data-start="394" data-end="418">Sheet in – Sheet out</strong></li>
+<li data-start="419" data-end="443"><strong data-start="421" data-end="443">Trim in – Ease out</strong></li>
+<li data-start="444" data-end="461"><strong data-start="446" data-end="461">Luff – Fill</strong></li>
+<li data-start="462" data-end="481"><strong data-start="464" data-end="481">Tight – Loose</strong></li>
+<li data-start="482" data-end="541"><strong data-start="484" data-end="496">On – Off</strong> <em data-start="497" data-end="541">(for controls such as vang, outhaul, etc.)</em></li>
+</ul>
+<h3 dir="auto" data-start="543" data-end="564">Steering / course</h3>
+<ul data-start="566" data-end="677">
+<li data-start="566" data-end="591"><strong data-start="568" data-end="591">Head up – Bear away</strong></li>
+<li data-start="645" data-end="677"><strong data-start="647" data-end="677">Port tack – Starboard tack</strong></li>
+<li><strong data-start="1254" data-end="1274">Tacking – Gybing</strong></li>
+</ul>
+<h3 dir="auto" data-start="679" data-end="703">Boat / sail controls</h3>
+<ul data-start="705" data-end="889">
+<li data-start="705" data-end="744"><strong data-start="707" data-end="744">Daggerboard down – Daggerboard up</strong></li>
+<li data-start="745" data-end="774"><strong data-start="747" data-end="774">Rudder down – Rudder up</strong></li>
+<li data-start="775" data-end="848"><strong data-start="777" data-end="800">Boom down – Boom up</strong> <em data-start="801" data-end="848">(less commonly used as a paired sailing term)</em></li>
+<li data-start="849" data-end="889"><strong data-start="851" data-end="889">Heel to windward – Heel to leeward</strong></li>
+</ul>
+<h3 dir="auto" data-start="891" data-end="916">Launching and landing</h3>
+<ul data-start="1148" data-end="1274">
+<li data-start="968" data-end="1002"><strong data-start="970" data-end="1002">Onshore wind – Offshore wind</strong></li>
+<li data-start="1003" data-end="1022"><strong data-start="1005" data-end="1022">Launch – Land</strong></li>
+<li data-start="1046" data-end="1065"><strong data-start="1048" data-end="1065">Beach – Water</strong></li>
+</ul>
+</div>
+<div class="post-bottom">
+<div class="post-footer float-container">
+<div class="post-footer-line post-footer-line-3"> </div>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+</feed>

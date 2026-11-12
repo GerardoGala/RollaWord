@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wind Prediction - San Juan Sail &amp; Paddle</title><meta name="description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://sail.rollaword.com/wind-prediction.html"><link rel="alternate" type="application/atom+xml" href="https://sail.rollaword.com/feed.xml" title="San Juan Sail &amp; Paddle - RSS"><link rel="alternate" type="application/json" href="https://sail.rollaword.com/feed.json" title="San Juan Sail &amp; Paddle - JSON"><meta property="og:title" content="Wind Prediction"><meta property="og:site_name" content="San Juan Sail &amp; Paddle"><meta property="og:description" content="Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas."><meta property="og:url" content="https://sail.rollaword.com/wind-prediction.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://sail.rollaword.com/media/website/favicon-32x32.png" type="image/x-icon"><link rel="preload" href="https://sail.rollaword.com/assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://sail.rollaword.com/assets/css/style.css?v&#x3D;d6ad2e088600b87c6f3924073133c982"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sail.rollaword.com/wind-prediction.html"},"headline":"Wind Prediction","datePublished":"2026-10-09T16:33+08:00","dateModified":"2026-10-11T05:31+08:00","description":"Sailing lessons, sailboat rentals, SUP, kayak, windsurf in San Juan Batangas.","author":{"@type":"Person","name":"Gerardo Gala","url":"https://sail.rollaword.com/authors/gerardo-gala/"},"publisher":{"@type":"Organization","name":"Gerardo Gala"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5517653304280747" crossorigin="anonymous"></script></head><body class="page-template"><header class="top js-header"><a class="logo" href="https://sail.rollaword.com/">San Juan Sail &amp; Paddle</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://sail.rollaword.com/" target="_self">Home</a></li><li><a href="https://sail.rollaword.com/sailboats.html" target="_self">Sailboat Rentals</a></li><li><a href="https://sail.rollaword.com/rentals.html" target="_self">Kayak and SUP Rentals</a></li><li><a href="https://sail.rollaword.com/instructors.html" target="_self">Instructors</a></li><li class="has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Online Courses</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://sanjuansail.vercel.app/dinghySailing101/index.html" title="dinghySailing101" target="_self">Dinghy Sailing 101</a></li><li><a href="https://sanjuansail.vercel.app/dinghySailing201/index.html" target="_self">Dinghy Sailing 201</a></li><li><a href="https://sanjuansail.vercel.app/layline/index.html" title="layline" target="_self">Layline</a></li><li><a href="https://sanjuansail.vercel.app/landing/index.html" title="landing" target="_self">Landing</a></li></ul></li><li class="active-parent has-submenu"><a href="#" target="_self" aria-haspopup="true" aria-expanded="false">Forecast</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://sail.rollaword.com/tide-schedule.html" target="_self">Tide Schedule</a></li><li class="active"><a href="https://sail.rollaword.com/wind-prediction.html" target="_self">Wind Prediction</a></li></ul></li><li><a href="https://sail.rollaword.com/tags/blog/" title="Blog" target="_self">Blog</a></li><li><a href="https://sail.rollaword.com/about-us.html" target="_self">About Us</a></li></ul></nav></header><main class="page"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Wind Prediction</h1></div></header></div><div class="entry-wrapper content__entry"><h2>San Juan, Batangas</h2><div class="entry-wrapper content__entry"><div id="wind-forecast" style="font-family: sans-serif !important; background: #1a365d !important; color: #ffffff !important; padding: 20px !important; border-radius: 8px !important; max-width: 500px !important; margin: auto !important; box-sizing: border-box !important;"><div style="display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; align-items: center !important; gap: 12px !important; margin-bottom: 20px !important;"><div><span id="wind-date" style="font-size: 0.85rem !important; color: #ffffff !important;">Loading date...</span></div><div style="display: flex !important; gap: 8px !important;"><button id="wind-prev" style="background: #2b6cb0 !important; color: #ffffff !important; border: none !important; width: 40px !important; height: 36px !important; border-radius: 4px !important; cursor: pointer !important; font-size: 1rem !important; font-weight: bold !important;" type="button" aria-label="Previous day">←</button> <button id="wind-next" style="background: #2b6cb0 !important; color: #ffffff !important; border: none !important; width: 40px !important; height: 36px !important; border-radius: 4px !important; cursor: pointer !important; font-size: 1rem !important; font-weight: bold !important;" type="button" aria-label="Next day">→</button></div></div><div style="background: #2b6cb0 !important; border-radius: 6px !important; padding: 16px !important; margin-bottom: 16px !important;"><div style="font-size: 0.9rem !important; color: #ffffff !important;">WIND FORECAST</div><div style="display: flex !important; align-items: center !important; gap: 14px !important; margin-top: 8px !important;"><div id="wind-current-arrow" style="font-size: 2.5rem !important; line-height: 1 !important; color: #ffffff !important;">↑</div><div><div style="display: flex !important; align-items: baseline !important; gap: 6px !important;"><span id="wind-current-speed" style="font-size: 2.3rem !important; font-weight: bold !important; color: #ffffff !important;">-- </span><span style="font-size: 1rem !important; color: #ffffff !important;">kt</span></div><div id="wind-current-description" style="font-size: 0.9rem !important; color: #ffffff !important;">Loading forecast...</div></div></div><div style="margin-top: 16px !important; border-top: 1px solid #ffffff !important; padding-top: 12px !important; display: flex !important; justify-content: space-between !important; gap: 12px !important;"><div><div style="font-size: 0.8rem !important; color: #ffffff !important;">Max wind</div><div style="font-size: 1.1rem !important; font-weight: bold !important; color: #ffffff !important;"><span id="wind-max" style="color: #ffffff !important;">--</span> kt</div></div><div><div style="font-size: 0.8rem !important; color: #ffffff !important;">Max gust</div><div style="font-size: 1.1rem !important; font-weight: bold !important; color: #ffffff !important;"><span id="wind-gust" style="color: #ffffff !important;">--</span> kt</div></div><div><div style="font-size: 0.8rem !important; color: #ffffff !important;">Humidity</div><div style="font-size: 1.1rem !important; font-weight: bold !important; color: #ffffff !important;"><span id="wind-humidity" style="color: #ffffff !important;">--</span>%</div></div></div></div><h4 style="font-size: 1rem !important; font-weight: bold !important; color: #ffffff !important; margin: 0 0 10px !important;">Hourly forecast</h4><div id="wind-hourly-scroll" style="overflow-x: auto !important; background: #2b6cb0 !important; border-radius: 6px !important; -webkit-overflow-scrolling: touch !important;"><div id="wind-hourly" style="display: flex !important; min-width: max-content !important; padding: 12px 4px !important; gap: 0 !important; color: #ffffff !important;"><div style="padding: 12px !important; color: #ffffff !important;">Loading hourly forecast...</div></div></div><div style="font-size: 0.75rem !important; color: #ffffff !important; margin-top: 8px !important;">Swipe horizontally to see more hours. Wind speeds are in knots.</div><div id="wind-status" style="font-size: 0.85rem !important; color: #ffffff !important; margin-top: 12px !important;" role="status" aria-live="polite"></div><div style="font-size: 0.7rem !important; color: #ffffff !important; margin-top: 14px !important;">Forecast data: Open-Meteo</div></div><p><script>(function() {
+			"use strict";
+
+			const root = document.getElementById("wind-forecast");
+
+			if (!root || root.dataset.initialized === "true") {
+				return;
+			}
+
+			root.dataset.initialized = "true";
+
+			// San Juan, Batangas
+			const LATITUDE = 13.669139947603488;
+			const LONGITUDE = 121.40446260873084;
+
+			const dateLabel = document.getElementById("wind-date");
+			const hourlyContainer = document.getElementById("wind-hourly");
+			const hourlyScroll = document.getElementById("wind-hourly-scroll");
+			const status = document.getElementById("wind-status");
+
+			const currentSpeed = document.getElementById("wind-current-speed");
+			const currentArrow = document.getElementById("wind-current-arrow");
+			const currentDescription = document.getElementById("wind-current-description");
+
+			const maxWind = document.getElementById("wind-max");
+			const maxGust = document.getElementById("wind-gust");
+			const humidity = document.getElementById("wind-humidity");
+
+			const prevButton = document.getElementById("wind-prev");
+			const nextButton = document.getElementById("wind-next");
+
+			// Format a date as YYYY-MM-DD using the local calendar.
+			function localDateString(date) {
+				const year = date.getFullYear();
+				const month = String(date.getMonth() + 1).padStart(2, "0");
+				const day = String(date.getDate()).padStart(2, "0");
+
+				return year + "-" + month + "-" + day;
+			}
+
+			function parseLocalDate(value) {
+				const parts = value.split("-").map(Number);
+
+				return new Date(
+					parts[0],
+					parts[1] - 1,
+					parts[2]
+				);
+			}
+
+			// Initialize today's date in Philippine time.
+			let selectedDate = parseLocalDate(
+				new Intl.DateTimeFormat("en-CA", {
+					timeZone: "Asia/Manila",
+					year: "numeric",
+					month: "2-digit",
+					day: "2-digit"
+				}).format(new Date())
+			);
+
+			let forecast = null;
+			let requestId = 0;
+
+			function formatDate(date) {
+				return date.toLocaleDateString("en-PH", {
+					timeZone: "Asia/Manila",
+					year: "numeric",
+					month: "short",
+					day: "numeric"
+				});
+			}
+
+			function formatHour(time) {
+				const hour = Number(time.substring(11, 13));
+
+				if (hour === 0) return "12 AM";
+				if (hour < 12) return hour + " AM";
+				if (hour === 12) return "12 PM";
+
+				return (hour - 12) + " PM";
+			}
+
+			function knots(value) {
+				return value == null || !Number.isFinite(value) ?
+					"--" :
+					Math.round(value);
+			}
+
+			// Wind direction is the direction FROM which wind blows.
+			function arrowForDirection(degrees) {
+				if (degrees == null || !Number.isFinite(degrees)) {
+					return "↑";
+				}
+
+				return '<span style="display:inline-block;transform:rotate(' +
+					degrees +
+					'deg);color:#ffffff !important;">↑</span>';
+			}
+
+			function describeWind(speed) {
+				if (speed < 1) return "Calm";
+				if (speed < 4) return "Light air";
+				if (speed < 7) return "Light breeze";
+				if (speed < 11) return "Gentle breeze";
+				if (speed < 17) return "Moderate breeze";
+				if (speed < 22) return "Fresh breeze";
+
+				return "Strong wind";
+			}
+
+			function showError(message) {
+				status.textContent = message;
+				hourlyContainer.textContent = message;
+				hourlyContainer.style.setProperty("color", "#ffffff", "important");
+				hourlyContainer.style.setProperty("padding", "12px", "important");
+			}
+
+			async function fetchForecast() {
+				const thisRequest = ++requestId;
+
+				status.textContent = "Loading forecast...";
+				hourlyContainer.textContent = "Loading hourly forecast...";
+
+				const url =
+					"https://api.open-meteo.com/v1/forecast" +
+					"?latitude=" + LATITUDE +
+					"&longitude=" + LONGITUDE +
+					"&hourly=wind_speed_10m,wind_direction_10m,wind_gusts_10m,relative_humidity_2m" +
+					"&daily=wind_speed_10m_max,wind_gusts_10m_max" +
+					"&current=wind_speed_10m,wind_direction_10m,wind_gusts_10m,relative_humidity_2m" +
+					"&wind_speed_unit=kn" +
+					"&timezone=Asia%2FManila" +
+					"&forecast_days=7" +
+					"&past_days=1";
+
+				try {
+					const response = await fetch(url);
+
+					if (!response.ok) {
+						throw new Error("HTTP " + response.status);
+					}
+
+					const data = await response.json();
+
+					if (thisRequest !== requestId) return;
+
+					if (!data.hourly || !data.hourly.time) {
+						throw new Error("Hourly forecast is unavailable.");
+					}
+
+					forecast = data;
+					renderPage();
+
+				} catch (error) {
+					if (thisRequest !== requestId) return;
+
+					console.error("Wind forecast error:", error);
+
+					showError(
+						"Unable to load the wind forecast. Please try again later."
+					);
+				}
+			}
+
+			function renderPage() {
+				if (!forecast) return;
+
+				const targetDate = localDateString(selectedDate);
+
+				const today = localDateString(
+					parseLocalDate(
+						new Intl.DateTimeFormat("en-CA", {
+							timeZone: "Asia/Manila",
+							year: "numeric",
+							month: "2-digit",
+							day: "2-digit"
+						}).format(new Date())
+					)
+				);
+
+				dateLabel.textContent =
+					formatDate(selectedDate) +
+					(targetDate === today ? " (Today)" : "");
+
+				const hourly = forecast.hourly;
+				const daily = forecast.daily;
+
+				const indices = [];
+
+				for (let i = 0; i < hourly.time.length; i++) {
+					if (hourly.time[i].startsWith(targetDate)) {
+						indices.push(i);
+					}
+				}
+
+				if (indices.length === 0) {
+					currentSpeed.textContent = "--";
+					currentArrow.textContent = "↑";
+					currentDescription.textContent = "No forecast available";
+
+					maxWind.textContent = "--";
+					maxGust.textContent = "--";
+					humidity.textContent = "--";
+
+					showError(
+						"No forecast data is available for this date. " +
+						"Choose a date within the available forecast period."
+					);
+
+					return;
+				}
+
+				status.textContent = "";
+
+				const speeds = indices
+					.map(i => hourly.wind_speed_10m[i])
+					.filter(v => Number.isFinite(v));
+
+				const gusts = indices
+					.map(i => hourly.wind_gusts_10m[i])
+					.filter(v => Number.isFinite(v));
+
+				const dailyIndex = daily.time.indexOf(targetDate);
+
+				maxWind.textContent = dailyIndex >= 0 ?
+					knots(daily.wind_speed_10m_max[dailyIndex]) :
+					(speeds.length ? knots(Math.max(...speeds)) : "--");
+
+				maxGust.textContent = dailyIndex >= 0 ?
+					knots(daily.wind_gusts_10m_max[dailyIndex]) :
+					(gusts.length ? knots(Math.max(...gusts)) : "--");
+
+				let summaryIndex = indices[0];
+
+				if (targetDate === today && forecast.current) {
+					const currentTime = forecast.current.time;
+
+					for (const i of indices) {
+						if (hourly.time[i] <= currentTime) {
+							summaryIndex = i;
+						}
+					}
+
+					currentSpeed.textContent =
+						knots(forecast.current.wind_speed_10m);
+
+					currentArrow.innerHTML =
+						arrowForDirection(forecast.current.wind_direction_10m);
+
+					currentDescription.textContent =
+						describeWind(forecast.current.wind_speed_10m) +
+						" · Wind from " +
+						Math.round(forecast.current.wind_direction_10m) +
+						"°";
+
+					humidity.textContent =
+						knots(forecast.current.relative_humidity_2m);
+
+				} else {
+					currentSpeed.textContent =
+						knots(hourly.wind_speed_10m[summaryIndex]);
+
+					currentArrow.innerHTML =
+						arrowForDirection(hourly.wind_direction_10m[summaryIndex]);
+
+					currentDescription.textContent =
+						describeWind(hourly.wind_speed_10m[summaryIndex]) +
+						" · Wind from " +
+						Math.round(hourly.wind_direction_10m[summaryIndex]) +
+						"°";
+
+					humidity.textContent =
+						knots(hourly.relative_humidity_2m[summaryIndex]);
+				}
+
+				// Keep summary values #ffffff, regardless of the Publii theme.
+				currentSpeed.style.setProperty("color", "#ffffff", "important");
+				maxWind.style.setProperty("color", "#ffffff", "important");
+				maxGust.style.setProperty("color", "#ffffff", "important");
+				humidity.style.setProperty("color", "#ffffff", "important");
+
+				// Generate hourly forecast.
+				hourlyContainer.innerHTML = "";
+
+				hourlyContainer.style.cssText =
+					"display:flex !important;min-width:max-content !important;padding:12px 4px !important;" +
+					"gap:0 !important;color:#ffffff !important;";
+
+				indices.forEach(i => {
+					const speed = hourly.wind_speed_10m[i];
+					const direction = hourly.wind_direction_10m[i];
+					const gust = hourly.wind_gusts_10m[i];
+
+					const card = document.createElement("div");
+
+					card.style.cssText =
+						"flex:0 0 60px !important;width:60px !important;min-height:142px !important;" +
+						"padding:8px 2px !important;text-align:center !important;" +
+						"border-right:1px solid #ffffff !important;" +
+						"box-sizing:border-box !important;color:#ffffff !important;";
+
+					if (
+						targetDate === today &&
+						forecast.current &&
+						hourly.time[i].substring(11, 13) ===
+						forecast.current.time.substring(11, 13)
+					) {
+						card.style.setProperty("background", "#2b6cb0", "important");
+						card.style.setProperty("border-radius", "4px", "important");
+					}
+
+					// Hour label
+					const time = document.createElement("div");
+
+					time.textContent = formatHour(hourly.time[i]);
+
+					time.style.cssText =
+						"font-size:0.65rem !important;color:#ffffff !important;white-space:nowrap !important;";
+
+					// Direction arrow
+					const arrow = document.createElement("div");
+
+					arrow.innerHTML = arrowForDirection(direction);
+
+					arrow.style.cssText =
+						"font-size:1.2rem !important;line-height:2rem !important;color:#ffffff !important;";
+
+					arrow.setAttribute(
+						"aria-label",
+						"Wind from " + Math.round(direction) + " degrees"
+					);
+
+					// Wind speed
+					const speedElement = document.createElement("div");
+
+					speedElement.textContent = knots(speed) + " kt";
+
+					speedElement.style.cssText =
+						"font-size:0.75rem !important;font-weight:bold !important;" +
+						"color:#ffffff !important;white-space:nowrap !important;";
+
+					// Wind gust
+					const gustElement = document.createElement("div");
+
+					gustElement.textContent = "Gust " + knots(gust);
+
+					gustElement.style.cssText =
+						"margin-top:3px !important;font-size:0.6rem !important;color:#ffffff !important;";
+
+					card.appendChild(time);
+					card.appendChild(arrow);
+					card.appendChild(speedElement);
+					card.appendChild(gustElement);
+
+					hourlyContainer.appendChild(card);
+				});
+
+				// When displaying today, scroll to the current hour.
+				if (targetDate === today && forecast.current) {
+					const currentHour = forecast.current.time.substring(11, 13);
+
+					const currentCard = Array.from(
+						hourlyContainer.children
+					).find(card => {
+						const label = card.firstChild.textContent;
+						return label === formatHour(forecast.current.time);
+					});
+
+					if (currentCard) {
+						hourlyScroll.scrollLeft =
+							Math.max(0, currentCard.offsetLeft - 4);
+					}
+				} else {
+					hourlyScroll.scrollLeft = 0;
+				}
+			}
+
+			prevButton.addEventListener("click", function() {
+				selectedDate.setDate(selectedDate.getDate() - 1);
+				renderPage();
+			});
+
+			nextButton.addEventListener("click", function() {
+				selectedDate.setDate(selectedDate.getDate() + 1);
+				renderPage();
+			});
+
+			fetchForecast();
+
+		})();</script></p></div><div class="banner banner--after-content"><div class="wrapper"><div class="google-review-cta" style="margin: 8px 0; padding: 10px; border: 1px solid #006ABC; border-radius: 0px; background-color: #ffffff; text-align: center;"><h5 style="margin-top: 0; color: #006abc; font-size: .8rem; font-family: inherit;">Found this guide helpful?</h5><a href="https://g.page" target="_blank" rel="noopener noreferrer" class="google-review-btn">Write a Google Review <span class="review-stars">★★★★★</span></a></div></div></div><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p class="align-center">© 2026 San Juan Academy. All rights reserved.</p></div><button id="backToTop" class="footer__bttop" title="Back to top" aria-label="Back to top"><svg width="20" height="20"><use xlink:href="https://gerardogala.github.io/SJSP/assets/svg/svg-map.svg#toparrow"></use></svg></button></div></footer><p><script defer="defer" src="https://gerardogala.github.io/SJSP/assets/js/scripts.min.js?v=dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></p></div></article><div class="banner banner--after-content"><div class="wrapper"><div class="google-review-cta" style="margin: 8px 0; padding: 10px; border: 1px solid #006ABC; border-radius: 0px; background-color: #ffffff; text-align: center;"><h5 style="margin-top: 0; color: #006ABC; font-size: .8rem; font-family: inherit;">Found this guide helpful?</h5><a href="https://g.page/r/CWkxEjqcMdcaEAE/review" target="_blank" rel="noopener noreferrer" class="google-review-btn">Write a Google Review <span class="review-stars">★★★★★</span></a><style>.google-review-btn {
+            display: inline-block; 
+            padding: 8px 16px; 
+            background-color: #006ABC !important; 
+            color: #ffffff !important; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 0px;
+            border: 2px solid #006ABC;
+            transition: all 0.2s ease-in-out;
+            font-family: inherit;
+        }
+        
+        /* Forces the stars to be solid white initially */
+        .google-review-btn .review-stars {
+            color: #ffffff !important;
+            margin-left: 4px;
+        }
+
+        .google-review-btn:hover {
+            background-color: #ffffff !important;
+            color: #006ABC !important;
+            border-color: #006ABC;
+        }
+        
+        /* Makes sure the stars flip to blue alongside the text on hover */
+        .google-review-btn:hover .review-stars {
+            color: #006ABC !important;
+        }</style></div></div></div></main><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p class="align-center">© 2026 San Juan Sail and Paddle. All rights reserved.</p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://sail.rollaword.com/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://sail.rollaword.com/assets/js/scripts.min.js?v&#x3D;dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
