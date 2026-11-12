@@ -2,32 +2,32 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "e72c4a556409fd16ab8abd21a3e522a0"
+        "md5": "5d2a603a504b456ff02dce6082435d22"
     },
     {
         "path": "4th-post.html",
         "type": "file",
-        "md5": "fe47ac5146f92279519299ac47be5792"
+        "md5": "9280ab4da63ac95951edf233874678b6"
     },
     {
         "path": "5.html",
         "type": "file",
-        "md5": "0db9972eb3c0975dce63b124e185690a"
+        "md5": "14a8304a7c84ecfcb3e50bef194443a0"
     },
     {
         "path": "5th-post.html",
         "type": "file",
-        "md5": "b113fc4eae9372d212aae11ccdd6039e"
+        "md5": "ab8ef4972b9277986b6bf2ed74858a29"
     },
     {
         "path": "a-new-post.html",
         "type": "file",
-        "md5": "1c5401e67561250d3da3953f679aab3c"
+        "md5": "f4edce6bbf19bdfd6bd4e5b2fb68f086"
     },
     {
         "path": "about-us.html",
         "type": "file",
-        "md5": "03adf8c30d6dbcb82f0ccf43c4e0c855"
+        "md5": "ff76c88fb9475146d8684e6f2017ea24"
     },
     {
         "path": "assets",
@@ -52,7 +52,7 @@
     {
         "path": "/assets/css/style.css",
         "type": "file",
-        "md5": "d6ad2e088600b87c6f3924073133c982"
+        "md5": "be4559219ef6c992e578309106615a55"
     },
     {
         "path": "assets/dynamic",
@@ -122,7 +122,7 @@
     {
         "path": "/authors/gerardo-gala/index.html",
         "type": "file",
-        "md5": "c9ea36277128e3284c6314a91950121a"
+        "md5": "dbccc2c82d8a98b1289d856f0b265f5e"
     },
     {
         "path": "authors/gerardo-gala/page",
@@ -137,17 +137,17 @@
     {
         "path": "/authors/gerardo-gala/page/2/index.html",
         "type": "file",
-        "md5": "0ac59ee93dc2c1b68e47c008c8d852fa"
+        "md5": "41b57857e83645166f318bd245a35490"
     },
     {
         "path": "contact-us.html",
         "type": "file",
-        "md5": "3497b9c491a8d8a6851800298f22ec18"
+        "md5": "160c3ca52e5d2400a143f6afa06dea94"
     },
     {
         "path": "dinghy-sailing-101.html",
         "type": "file",
-        "md5": "2b3e54545c8c6acbd4e29639e3a4ac8b"
+        "md5": "896fd04acd3672d72c9e67facd04821e"
     },
     {
         "path": "feed.json",
@@ -162,37 +162,37 @@
     {
         "path": "frequently-asked-questions.html",
         "type": "file",
-        "md5": "870a20849ebd34f927e2022aab73925b"
+        "md5": "2b106ac80ef2e6bfc185063fd90329d5"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "7b5a6d2e8f0b071e07307f34ae785865"
+        "md5": "9956d9465c13c2f57d4e943b1573887c"
     },
     {
         "path": "instructors.html",
         "type": "file",
-        "md5": "2dd6a436864b2a81309360f79767e526"
+        "md5": "5e5895bba2f5191047e02a28a7ca493b"
     },
     {
         "path": "interactive-visual-thesaurus.html",
         "type": "file",
-        "md5": "f51e3716de62bdcbe4eb4ad7ea2844ea"
+        "md5": "2ef16eb754f2de0560d1318437bbe907"
     },
     {
         "path": "kombi-quick-canoe-build.html",
         "type": "file",
-        "md5": "9e0ddf98202e5bcc6e42a3696a94dc94"
+        "md5": "bdb508bc14482838c54197708b3adfeb"
     },
     {
         "path": "lake-tahoe-paradox.html",
         "type": "file",
-        "md5": "f56beea4b19f0e57788a99262fab7d02"
+        "md5": "fa60d9967fa0e928e2341307f51867c4"
     },
     {
         "path": "login.html",
         "type": "file",
-        "md5": "49d06da139c64945a620e177f0bf341b"
+        "md5": "4d964e8503bec3a5b072441859edb1b5"
     },
     {
         "path": "media",
@@ -2072,17 +2072,17 @@
     {
         "path": "online-courses-2.html",
         "type": "file",
-        "md5": "b9d4055f669c1d496dfc81dc12f6f7eb"
+        "md5": "0aa4a075774ff91344ae4fd8f9f8ad12"
     },
     {
         "path": "privacy.html",
         "type": "file",
-        "md5": "b9ba0879574053897352f97dcb12df8d"
+        "md5": "83f6a4378bfb73643f000300130e357e"
     },
     {
         "path": "rentals.html",
         "type": "file",
-        "md5": "82e3ca9b1c83c2c857687a35c60e1382"
+        "md5": "157a82f575358660601b2e52b1020009"
     },
     {
         "path": "robots.txt",
@@ -2092,12 +2092,12 @@
     {
         "path": "sailboats.html",
         "type": "file",
-        "md5": "21ab48e8d266fcc9a9b481ef7725ecb6"
+        "md5": "ce4f6710ad4e1b25eb561a8f2da8947f"
     },
     {
         "path": "sailing-concepts-2.html",
         "type": "file",
-        "md5": "4bc6d5c3c30b61514aec7f5c8169a507"
+        "md5": "7b25aab0f495bcdfc80fedbe3600fc2e"
     },
     {
         "path": "sitemap.xml",
@@ -2112,7 +2112,7 @@
     {
         "path": "student-report.html",
         "type": "file",
-        "md5": "cb957bf1af1bde0f1651522bb76bd75d"
+        "md5": "ce28493da3621181c97a07dbeab5a45f"
     },
     {
         "path": "tags",
@@ -2127,7 +2127,7 @@
     {
         "path": "/tags/blog/index.html",
         "type": "file",
-        "md5": "ff0894ab9d63daaa061c9144a8e17f61"
+        "md5": "f5776d746264854e3f9a4a68a6d6d64d"
     },
     {
         "path": "tags/blog/page",
@@ -2142,41 +2142,41 @@
     {
         "path": "/tags/blog/page/2/index.html",
         "type": "file",
-        "md5": "65f2c24c5e1f7d539d641a3ba1f20555"
+        "md5": "dad2d10d87c8a5c338473d2a3f4f95b1"
     },
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "cb5bf3565a8e0d2fc072f0c453b56e2b"
+        "md5": "d1b62d41aeda9e3c01db164a072f9424"
     },
     {
         "path": "teachers-upload.html",
         "type": "file",
-        "md5": "0cce16aa57eb7dd2775ad47da5f3433f"
+        "md5": "23b9c2d4e40d6362b0339f68b486b70d"
     },
     {
         "path": "terms-and-conditions.html",
         "type": "file",
-        "md5": "3761a351ad9fa0a8a4a33fd7b7b21bee"
+        "md5": "169565c061716d8678f55b3571c235af"
     },
     {
         "path": "test.html",
         "type": "file",
-        "md5": "3919ede42dedfd2da624f6e3ce4f3e0c"
+        "md5": "30e51f27b913bffa795625f0cf1f806a"
     },
     {
         "path": "thesaurus.html",
         "type": "file",
-        "md5": "744a442a43c3ff2b4f7a03703f77d282"
+        "md5": "fd0f68f76f78a85a813cd62bfe3c971e"
     },
     {
         "path": "tide-schedule.html",
         "type": "file",
-        "md5": "9caa499248821505ea8c064aaf9b8b79"
+        "md5": "8eb8eb7496148446eb9e8b5d4245cd12"
     },
     {
         "path": "wind-prediction.html",
         "type": "file",
-        "md5": "d51ed76e1f37ae04c2515d1270b8e4d3"
+        "md5": "7793e49dc05213ea9c75315ec3f8c646"
     }
 ]
