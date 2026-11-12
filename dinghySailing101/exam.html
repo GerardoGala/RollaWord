@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+
+        Final Examination
+
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<main class="container py-5">
+
+    <div class="mb-5">
+
+        <h1 class="display-5 fw-bold">
+
+            Final Examination
+
+        </h1>
+
+        <h2 class="text-primary">
+
+            Dinghy Sailing 101
+
+        </h2>
+
+        <p class="lead">
+
+            Successfully complete this examination to demonstrate your understanding
+            of the principles and skills taught in Dinghy Sailing 101.
+
+        </p>
+
+    </div>
+
+
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <h3>
+
+                Examination Instructions
+
+            </h3>
+
+            <ul>
+
+                <li>
+
+                    The examination consists of <strong>10 multiple-choice questions.</strong>
+
+                </li>
+
+                <li>
+
+                    One question is randomly selected from each module.
+
+                </li>
+
+                <li>
+
+                    Questions are presented in random order.
+
+                </li>
+
+                <li>
+
+                    A passing score is <strong>80%</strong> (8 correct answers).
+
+                </li>
+
+                <li>
+
+                    The examination ends immediately after
+                    <strong>3 incorrect answers.</strong>
+
+                </li>
+
+                <li>
+
+                    Students who pass may print a
+                    <strong>Certificate of Completion.</strong>
+
+                </li>
+
+                <li>
+
+                    You may retake the examination as many times as necessary.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Examination Engine -->
+
+    <div id="examContainer">
+
+        <div class="text-center py-5">
+
+            <div class="spinner-border text-primary"
+                 role="status">
+
+                <span class="visually-hidden">
+
+                    Loading...
+
+                </span>
+
+            </div>
+
+            <p class="mt-3">
+
+                Loading examination...
+
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+<div class="container text-center my-4">
+    <button id="certificateButton"
+            class="btn btn-primary btn-lg d-none">
+        Print Certificate
+    </button>
+</div>
+
+<footer class="container py-4 border-top">
+    <div class="text-center">
+        <a href="index.html" class="btn btn-outline-primary"> <i class="bi bi-house-fill"></i>
+            Course Home
+        </a>
+    </div>
+
+</footer>
+
+
+
+    <!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Examination Engine -->
+
+<script src="js/exam.js"></script>
+
+</body>
+
+</html>

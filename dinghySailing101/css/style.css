@@ -1,0 +1,221 @@
+/* ==========================================================================
+   DINGHY SAILING 101 - PUBLII COMPATIBILITY THEME OVERRIDE
+   ========================================================================== */
+
+/* 1. Global Reset & Base Setup */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent !important; /* Forces the iframe to inherit the main site's canvas color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #006abc; /* Update this hex to match your text color if using a dark theme */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Page Typography Integration */
+h1, h2, h3, h4, h5, h6 {
+    color: #006abc;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; border-bottom: 1px solid #006abc; padding-bottom: 0.3rem; }
+h3 { font-size: 1.35rem; }
+
+/* 3. Layout Restructuring (Simulating a Publii Content Container) */
+.course-container, main, #wrapper {
+    max-width: 800px; /* Publii's default text column standard for perfect readability */
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+}
+
+/* 4. Styled Component Elements */
+a {
+    color: #006abc; /* Switch to your primary theme brand blue/accent color */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Course Syllabus List Styles */
+ol, ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.btn,
+button,
+.start-button {
+    /* Layout & Alignment */
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    /* Structure & Sizing */
+    padding: 0.65rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* Shape & Borders: Sharp rectangular corners */
+    border-radius: 0;
+    border: 1px solid #006abc;
+
+    /* Core Branding Colors: Solid Blue with White Text */
+    background-color: #006abc;
+    color: #ffffff !important;
+
+    /* Transition Profile */
+    will-change: transform;
+    transition: all 0.24s ease-out;
+}
+
+/* Strict Color Inversion Hover, Active, and Focus States */
+.btn:hover,
+button:hover,
+.start-button:hover,
+.btn:active,
+button:active,
+.start-button:active,
+.btn:focus,
+button:focus,
+.start-button:focus {
+    /* Action: Blue becomes White, White becomes Blue */
+    background-color: #ffffff;
+    border-color: #006abc;
+    color: #006abc !important;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness Strategy */
+@media (max-width: 19.9375em) {
+    .btn,
+    button,
+    .start-button {
+        width: 100%;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   FORCE BLUE TEXT (beats card/element-level color rules)
+   ========================================================================== */
+
+body, p, li, span, div, strong, em, blockquote, label,
+.card, .card *,
+.text-muted, small, .small {
+    color: #006abc !important;
+}
+
+/* Keep button text white / inverted on hover (must come after the rule above) */
+.btn, button, .start-button {
+    color: #ffffff !important;
+}
+
+.btn:hover, button:hover, .start-button:hover,
+.btn:active, button:active, .start-button:active,
+.btn:focus, button:focus, .start-button:focus {
+    color: #006abc !important;
+}
+
+/* ==========================================================================
+   TABLES (replaces the Bootstrap table styles)
+   ========================================================================== */
+
+table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #006abc;
+    text-align: left;
+    vertical-align: top;
+}
+
+caption {
+    caption-side: top;
+    padding: 0.5rem 0;
+    text-align: left;
+    font-weight: 600;
+}
+
+th, td {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #006abc;
+}
+
+/* Header row: solid blue with white text, matching the buttons */
+th, thead td {
+    background-color: #006abc;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* Body cells: blue text, forced to beat any other color rule */
+td, tbody th {
+    color: #006abc !important;
+}
+
+/* Keep header cells inside tbody white on blue (e.g. first-column headers) */
+tbody th {
+    background-color: #006abc;
+    color: #ffffff !important;
+}
+
+/* Light blue stripes for readability */
+tbody tr:nth-child(even) td {
+    background-color: #e6f0f8;
+}
+
+/* Small screens: let wide tables scroll sideways instead of breaking the layout */
+@media (max-width: 37.4375em) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* ==========================================================================
+   FORCE UNIVERSAL GEOMETRIC SQUARED OVERRIDE
+   ========================================================================== */
+
+/* Target every element, pseudo-element, and structural layout wrap */
+*,
+*:before,
+*:after,
+html,
+body,
+div,
+span,
+main,
+section,
+article,
+img,
+a,
+button,
+.btn,
+.button,
+.start-button,
+input,
+select,
+textarea {
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+}

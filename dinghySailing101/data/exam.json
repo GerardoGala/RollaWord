@@ -1,0 +1,514 @@
+{
+  "passingScore": 80,
+  "modules": [
+    {
+      "module": "module01",
+      "title": "Introduction to Sailing",
+      "questions": [
+        {
+          "question": "What is the primary source of power for a sailboat?",
+          "choices": [
+            "Engine",
+            "Wind",
+            "Current",
+            "Waves"
+          ],
+          "answer": 1,
+          "explanation": "A sailboat is powered by the wind."
+        },
+        {
+          "question": "Which part of a sailboat helps prevent it from sliding sideways?",
+          "choices": [
+            "Boom",
+            "Centerboard",
+            "Mast",
+            "Tiller"
+          ],
+          "answer": 1,
+          "explanation": "The centerboard provides lateral resistance and allows the boat to sail efficiently upwind."
+        },
+        {
+          "question": "A sailor points the bow away from the wind and notices that the boat begins moving faster as the sail fills. What is primarily providing the force that moves the boat forward?",
+          "choices": [
+            "The water pushing the hull",
+            "The wind acting on the sail",
+            "The centerboard pulling the boat forward",
+            "The rudder generating engine-like thrust"
+          ],
+          "answer": 1,
+          "explanation": "The wind acting on the sail generates the aerodynamic force that propels the sailboat."
+        },
+        {
+          "question": "A sailor removes the centerboard while sailing upwind and notices that the boat makes much less progress toward the upwind destination. Why?",
+          "choices": [
+            "The centerboard provides lateral resistance against sideways movement",
+            "The centerboard provides the wind that fills the sail",
+            "The centerboard controls the boom angle",
+            "The centerboard increases the boat's weight"
+          ],
+          "answer": 0,
+          "explanation": "The centerboard resists sideways movement through the water, allowing the boat to convert sail force into useful forward progress."
+        }
+      ]
+    },
+
+    {
+      "module": "module02",
+      "title": "Points of Sail",
+      "questions": [
+        {
+          "question": "Can a sailboat sail directly into the wind?",
+          "choices": [
+            "Yes",
+            "No",
+            "Only in strong winds",
+            "Only while racing"
+          ],
+          "answer": 1,
+          "explanation": "A sailboat must tack to make progress upwind."
+        },
+        {
+          "question": "On which point of sail is a sailboat usually at its fastest?",
+          "choices": [
+            "Close Hauled",
+            "Beam Reach",
+            "In Irons",
+            "Head to Wind"
+          ],
+          "answer": 1,
+          "explanation": "Most dinghies achieve their greatest speed on a beam reach."
+        },
+        {
+          "question": "A sailor is sailing close hauled and bears away from the wind without changing tack. Which change in point of sail is most likely occurring?",
+          "choices": [
+            "The boat is moving toward a beam reach",
+            "The boat is moving directly into the wind",
+            "The boat is becoming in irons",
+            "The boat is immediately gybing"
+          ],
+          "answer": 0,
+          "explanation": "Bearing away increases the angle between the boat's course and the wind, moving from close hauled toward a reach."
+        },
+        {
+          "question": "A sailor wants to sail to a destination that lies directly upwind. What is the most appropriate strategy?",
+          "choices": [
+            "Point directly at the destination",
+            "Sail a series of tacks on either side of the wind",
+            "Sail directly downwind and wait for the wind to change",
+            "Stop the boat and wait for the current"
+          ],
+          "answer": 1,
+          "explanation": "Because a sailboat cannot sail directly into the wind, it must make progress upwind by sailing a series of tacks."
+        }
+      ]
+    },
+
+    {
+      "module": "module03",
+      "title": "Parts of a Dinghy",
+      "questions": [
+        {
+          "question": "Which part of a dinghy is primarily used for steering?",
+          "choices": [
+            "Centerboard",
+            "Boom",
+            "Rudder",
+            "Mast"
+          ],
+          "answer": 2,
+          "explanation": "The rudder steers the boat."
+        },
+        {
+          "question": "Which control changes the angle of the sail?",
+          "choices": [
+            "Painter",
+            "Mainsheet",
+            "Centerboard",
+            "Bowline"
+          ],
+          "answer": 1,
+          "explanation": "The mainsheet controls the position of the boom and sail."
+        },
+        {
+          "question": "A sailor wants to change the boat's direction while keeping the sail attached to the mast. Which control should normally be used?",
+          "choices": [
+            "Tiller and rudder",
+            "Mainsheet",
+            "Painter",
+            "Centerboard only"
+          ],
+          "answer": 0,
+          "explanation": "The tiller moves the rudder, which changes the direction of the boat."
+        },
+        {
+          "question": "While sailing, the sailor pulls the mainsheet and the boom moves toward the centerline of the boat. What has the sailor primarily changed?",
+          "choices": [
+            "The sail's trim",
+            "The rudder's depth",
+            "The mast's height",
+            "The centerboard's position"
+          ],
+          "answer": 0,
+          "explanation": "The mainsheet controls the boom and therefore changes the trim of the sail."
+        }
+      ]
+    },
+
+    {
+      "module": "module04",
+      "title": "Tacking",
+      "questions": [
+        {
+          "question": "During a tack, the boat turns its bow...",
+          "choices": [
+            "Through the wind",
+            "Away from the wind",
+            "Toward the dock",
+            "Around a buoy"
+          ],
+          "answer": 0,
+          "explanation": "A tack turns the bow through the wind."
+        },
+        {
+          "question": "What should you do as the boat passes head-to-wind during a tack?",
+          "choices": [
+            "Move smoothly to the new side",
+            "Let go of the tiller",
+            "Stand up",
+            "Pull the centerboard up"
+          ],
+          "answer": 0,
+          "explanation": "A smooth crew movement helps maintain balance during the tack."
+        },
+        {
+          "question": "During a tack, the sailor turns the boat toward the wind but releases the tiller too early. What is the most likely result?",
+          "choices": [
+            "The boat may fail to complete the tack",
+            "The boat will automatically accelerate",
+            "The sail will become permanently attached to the boom",
+            "The centerboard will automatically retract"
+          ],
+          "answer": 0,
+          "explanation": "Maintaining appropriate rudder control is necessary to carry the bow through the wind and complete the tack."
+        },
+        {
+          "question": "A sailor begins a tack while the boat has very little speed. Why is this more likely to cause difficulty?",
+          "choices": [
+            "The boat may lose momentum before completing the turn through the wind",
+            "The sail will automatically become larger",
+            "The rudder will stop existing below the water",
+            "The wind will always stop completely"
+          ],
+          "answer": 0,
+          "explanation": "A tack requires enough boat momentum to carry the bow through the wind. Starting the maneuver with very little speed can leave the boat stuck head-to-wind."
+        }
+      ]
+    },
+
+    {
+      "module": "module05",
+      "title": "Gybing",
+      "questions": [
+        {
+          "question": "During a gybe, the stern passes...",
+          "choices": [
+            "Through the wind",
+            "Into the wind",
+            "Across the dock",
+            "Over the centerboard"
+          ],
+          "answer": 0,
+          "explanation": "A gybe turns the stern through the wind."
+        },
+        {
+          "question": "Why is it recommended to pull the mainsheet in before a gybe?",
+          "choices": [
+            "To reduce the boom's travel",
+            "To stop the boat",
+            "To lower the mast",
+            "To raise the centerboard"
+          ],
+          "answer": 0,
+          "explanation": "Trimming the sail in makes the boom cross in a more controlled manner."
+        },
+        {
+          "question": "A sailor gybes while sailing quickly downwind without controlling the mainsheet. What is the main concern?",
+          "choices": [
+            "The boom may cross rapidly and unexpectedly",
+            "The boat will immediately sail into the wind",
+            "The centerboard will automatically rise",
+            "The mast will always fall into the water"
+          ],
+          "answer": 0,
+          "explanation": "An uncontrolled gybe can cause the boom to cross rapidly, creating a significant risk to the sailor and boat."
+        },
+        {
+          "question": "A sailor is preparing for a controlled gybe. Which sequence is most appropriate?",
+          "choices": [
+            "Control the mainsheet, initiate the turn, and move smoothly as the stern passes through the wind",
+            "Release the tiller, stand up, and wait for the boom to move",
+            "Pull the centerboard completely up before turning",
+            "Turn sharply into the wind and release the mainsheet"
+          ],
+          "answer": 0,
+          "explanation": "A controlled gybe requires coordination of the turn, mainsheet, and sailor's movement so the boom crosses in a predictable manner."
+        }
+      ]
+    },
+
+    {
+      "module": "module06",
+      "title": "Sail Trim",
+      "questions": [
+        {
+          "question": "Proper sail trim mainly helps improve...",
+          "choices": [
+            "Boat speed",
+            "Boat weight",
+            "Water depth",
+            "Hull length"
+          ],
+          "answer": 0,
+          "explanation": "Correct sail trim improves the boat's performance."
+        },
+        {
+          "question": "If the sail is luffing, you should usually...",
+          "choices": [
+            "Trim the sail in",
+            "Raise the rudder",
+            "Lower the mast",
+            "Move to the bow"
+          ],
+          "answer": 0,
+          "explanation": "A luffing sail often indicates that it should be trimmed in for the current point of sail."
+        },
+        {
+          "question": "A sailor bears away from close hauled toward a reach but leaves the sail trimmed tightly. What is the most likely adjustment needed?",
+          "choices": [
+            "Ease the mainsheet as the boat bears away",
+            "Pull the mainsheet in farther",
+            "Raise the rudder",
+            "Remove the centerboard"
+          ],
+          "answer": 0,
+          "explanation": "As the boat bears away, the sail generally needs to be eased to maintain an appropriate angle to the wind."
+        },
+        {
+          "question": "A sailor notices that the sail is repeatedly luffing while the boat is sailing on a reach. Which combination is most likely to solve the problem?",
+          "choices": [
+            "Trim the sail in or bear away slightly",
+            "Raise the rudder and turn directly into the wind",
+            "Pull the centerboard up completely",
+            "Release the mainsheet completely and head up"
+          ],
+          "answer": 0,
+          "explanation": "Luffing indicates that the sail is not receiving steady airflow. Trimming in or bearing away can restore proper sail shape and airflow."
+        }
+      ]
+    },
+
+    {
+      "module": "module07",
+      "title": "Safety",
+      "questions": [
+        {
+          "question": "What safety equipment should always be worn while sailing?",
+          "choices": [
+            "Helmet",
+            "Personal Flotation Device (PFD)",
+            "Harness",
+            "Wetsuit"
+          ],
+          "answer": 1,
+          "explanation": "A properly fitted PFD should always be worn."
+        },
+        {
+          "question": "Before launching, you should always...",
+          "choices": [
+            "Check the weather forecast",
+            "Polish the hull",
+            "Lower the rudder",
+            "Raise the sail ashore"
+          ],
+          "answer": 0,
+          "explanation": "Checking weather and wind conditions is an essential safety practice."
+        },
+        {
+          "question": "The wind has increased significantly since you last checked the conditions, and you are unsure whether they are suitable for your experience level. What is the safest decision?",
+          "choices": [
+            "Launch anyway and adjust once offshore",
+            "Reassess the conditions and postpone or change the plan if necessary",
+            "Remove the PFD because it restricts movement",
+            "Sail farther offshore to avoid obstacles"
+          ],
+          "answer": 1,
+          "explanation": "A sailor should assess changing conditions against their skill level and equipment before deciding whether to launch."
+        },
+        {
+          "question": "You notice that your PFD is loose and can easily move over your shoulders. What should you do before sailing?",
+          "choices": [
+            "Wear it anyway because any PFD is sufficient",
+            "Adjust or replace it so it fits properly",
+            "Remove it after leaving the beach",
+            "Tie it to the mainsheet"
+          ],
+          "answer": 1,
+          "explanation": "A PFD must fit properly to provide effective flotation and remain securely in position during an emergency."
+        }
+      ]
+    },
+
+    {
+      "module": "module08",
+      "title": "Capsize Recovery",
+      "questions": [
+        {
+          "question": "After capsizing, what should you do first?",
+          "choices": [
+            "Swim to shore",
+            "Stay with the boat",
+            "Lower the sail",
+            "Remove the rudder"
+          ],
+          "answer": 1,
+          "explanation": "Stay calm and remain with your boat."
+        },
+        {
+          "question": "What is usually used to right a capsized dinghy?",
+          "choices": [
+            "The centerboard",
+            "The boom",
+            "The rudder",
+            "The mast"
+          ],
+          "answer": 0,
+          "explanation": "Standing on the centerboard provides leverage to right the boat."
+        },
+        {
+          "question": "After a capsize, the sailor is separated from the boat by several meters but can easily swim back to it. What is generally the safest priority?",
+          "choices": [
+            "Stay with or return to the boat rather than swimming away toward shore",
+            "Immediately swim to shore regardless of distance",
+            "Remove the PFD to swim faster",
+            "Leave the boat and retrieve it later"
+          ],
+          "answer": 0,
+          "explanation": "The boat is a large, visible flotation object and is generally safer to remain with than to abandon in open water."
+        },
+        {
+          "question": "A dinghy is capsized and the centerboard is accessible. Why does using the centerboard help with recovery?",
+          "choices": [
+            "It provides leverage to help rotate the hull upright",
+            "It pumps water automatically from the hull",
+            "It creates wind power",
+            "It steers the boat while it is upside down"
+          ],
+          "answer": 0,
+          "explanation": "The centerboard provides a lever arm that allows the sailor to use their weight to help rotate the boat upright."
+        }
+      ]
+    },
+
+    {
+      "module": "module09",
+      "title": "Launching",
+      "questions": [
+        {
+          "question": "Before launching, what should you check first?",
+          "choices": [
+            "Wind direction",
+            "Hull color",
+            "Sail number",
+            "Compass heading"
+          ],
+          "answer": 0,
+          "explanation": "Always assess the wind before launching."
+        },
+        {
+          "question": "When launching from a beach, when should the rudder normally be lowered?",
+          "choices": [
+            "Only after the boat is in deeper water",
+            "Before reaching the water",
+            "Never",
+            "After returning ashore"
+          ],
+          "answer": 0,
+          "explanation": "Lower the rudder only when there is enough water to avoid damage."
+        },
+        {
+          "question": "You are launching from a beach and notice that waves are breaking across the launch area. What should you consider before entering the water?",
+          "choices": [
+            "Whether the conditions are safe for your skill level and whether there is a suitable launch window",
+            "Launching immediately because waves make the boat faster",
+            "Removing the PFD to make swimming easier",
+            "Lowering the rudder completely while still on the beach"
+          ],
+          "answer": 0,
+          "explanation": "Wave conditions should be assessed carefully before launching. The sailor must consider both the conditions and their ability to handle them safely."
+        },
+        {
+          "question": "While launching, the boat is in shallow water and the rudder begins touching the bottom. What is the best response?",
+          "choices": [
+            "Raise or protect the rudder until there is sufficient depth",
+            "Push the rudder harder into the bottom",
+            "Increase speed immediately",
+            "Continue because rudders are designed to drag on the bottom"
+          ],
+          "answer": 0,
+          "explanation": "The rudder should be protected from contact with the bottom to prevent damage. It should be lowered only when sufficient water depth is available."
+        }
+      ]
+    },
+
+    {
+      "module": "module10",
+      "title": "Landing",
+      "questions": [
+        {
+          "question": "As you approach shallow water, what should you do?",
+          "choices": [
+            "Trim the sail harder",
+            "Raise the centerboard and rudder",
+            "Increase speed",
+            "Move to the bow"
+          ],
+          "answer": 1,
+          "explanation": "Raise the centerboard and rudder before they strike the bottom."
+        },
+        {
+          "question": "What is a good practice when approaching the shore?",
+          "choices": [
+            "Approach under control at a slow speed",
+            "Sail as fast as possible",
+            "Jump overboard early",
+            "Pull the sail down while offshore"
+          ],
+          "answer": 0,
+          "explanation": "A slow, controlled approach makes landing safer and easier."
+        },
+        {
+          "question": "You are approaching shore and the water is becoming progressively shallower. What should you do before the centerboard or rudder contacts the bottom?",
+          "choices": [
+            "Reduce speed and raise the centerboard and rudder as appropriate",
+            "Increase speed to reach shore faster",
+            "Keep both fully lowered until the boat stops",
+            "Turn sharply toward deeper water at the last moment"
+          ],
+          "answer": 0,
+          "explanation": "A controlled reduction in speed and timely raising of underwater appendages helps prevent damage during landing."
+        },
+        {
+          "question": "A sailor approaches the beach too quickly and realizes the boat will reach shallow water before they are ready. What is the main advantage of slowing down early?",
+          "choices": [
+            "It gives the sailor more time to control the boat and prepare for shallow water",
+            "It guarantees the boat will stop immediately",
+            "It makes the centerboard deeper",
+            "It eliminates the need to watch the water depth"
+          ],
+          "answer": 0,
+          "explanation": "Reducing speed early gives the sailor more time to make controlled adjustments and avoid grounding or damaging the boat."
+        }
+      ]
+    }
+  ]
+}

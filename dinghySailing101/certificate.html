@@ -1,0 +1,210 @@
+<!-- Load html2pdf.js bundle via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+<style>
+
+    body {
+        background: #f5f5f5;
+        font-family: Inter, sans-serif;
+        text-align: center;
+    }
+
+    .button-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .certificate {
+        max-width: 900px;
+        margin: 10px auto;
+        background: white;
+        padding: 60px;
+        box-shadow: 0 0 20px rgba(0,0,0,.15);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: Cinzel, serif;
+        font-size: 3rem;
+        color: #8b6b00;
+    }
+
+    h2 {
+        font-family: Cinzel, serif;
+    }
+
+    .student {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #0d6efd;
+        margin: 40px 0;
+    }
+
+    .footer {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .signature {
+        border-top: 1px solid #444;
+        display: inline-block;
+        padding-top: 8px;
+        min-width: 250px;
+    }
+
+    @media (max-width: 768px) {
+
+        .certificate {
+            padding: 30px;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .student {
+            font-size: 1.5rem;
+        }
+
+    }
+
+</style>
+
+
+<div class="button-container">
+
+    <button onclick="generatePDF()">
+        Download Web Page as PDF
+    </button>
+
+</div>
+
+
+<!-- The HTML content area to be captured and printed into the PDF -->
+
+<div id="certificate-content" class="certificate">
+
+    <h2>
+        Misamis University
+    </h2>
+
+    <h5>
+        Laiya-Aplaya Extension
+    </h5>
+
+    <br>
+
+    <h1>
+        Certificate of Completion
+    </h1>
+
+    <br>
+
+    <p class="lead">
+        This certifies that
+    </p>
+
+    <div id="studentName" class="student">
+        Juan Dela Cruz
+    </div>
+
+    <p class="lead">
+        has successfully completed the course
+    </p>
+
+    <h2>
+        Dinghy Sailing 101
+    </h2>
+
+    <br>
+
+    <p>
+        Awarded this
+        <strong id="certificateDate">
+            10th day of August 2025
+        </strong>
+    </p>
+
+    <div class="row footer">
+
+        <div class="col">
+
+            <div class="signature">
+                Gerardo Gala
+            </div>
+
+            <p>
+                Instructor
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function generatePDF() {
+
+        // 1. Select the certificate
+        const element =
+            document.getElementById('certificate-content');
+
+
+        // 2. Configure PDF
+        const options = {
+
+            margin: 0.5,
+
+            filename: 'web-page-print.pdf',
+
+            image: {
+                type: 'jpeg',
+                quality: 0.98
+            },
+
+            html2canvas: {
+                scale: 2
+            },
+
+            jsPDF: {
+                unit: 'in',
+                format: 'letter',
+                orientation: 'portrait'
+            }
+
+        };
+
+
+        // 3. Generate PDF
+
+        html2pdf()
+            .set(options)
+            .from(element)
+            .save();
+
+    }
+</script>
+<script src="js/certificate.js"></script>
+</body>
+</html>
+

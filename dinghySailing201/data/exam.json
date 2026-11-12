@@ -1,0 +1,514 @@
+{
+  "passingScore": 80,
+  "modules": [
+    {
+      "module": "module01",
+      "title": "Intermediate Sailing",
+      "questions": [
+        {
+          "question": "What is an important goal of intermediate sailing?",
+          "choices": [
+            "Learning to ignore the wind",
+            "Developing better control of the boat and sail",
+            "Keeping the boat completely stationary",
+            "Avoiding all changes in sail trim"
+          ],
+          "answer": 1,
+          "explanation": "Intermediate sailing focuses on developing better boat handling, sail control, and decision-making in changing conditions."
+        },
+        {
+          "question": "When sailing faster, what should the sailor pay particular attention to?",
+          "choices": [
+            "Boat balance and sail trim",
+            "The color of the sail",
+            "The length of the painter",
+            "The shape of the rudder handle"
+          ],
+          "answer": 0,
+          "explanation": "As boat speed increases, maintaining balance and proper sail trim becomes increasingly important."
+        },
+        {
+          "question": "A sailor wants to improve boat speed without simply steering harder. What should the sailor examine first?",
+          "choices": [
+            "Sail trim and boat balance",
+            "The hull color",
+            "The mast height",
+            "The length of the tiller"
+          ],
+          "answer": 0,
+          "explanation": "Boat balance and sail trim have a major effect on how efficiently a dinghy moves through the water."
+        },
+        {
+          "question": "What is a useful intermediate sailing habit?",
+          "choices": [
+            "Make large control changes whenever possible",
+            "Observe the boat, wind, and sail and make small adjustments",
+            "Ignore changes in wind direction",
+            "Keep every control in the same position"
+          ],
+          "answer": 1,
+          "explanation": "Good sailing involves observing conditions and making controlled adjustments rather than making unnecessary large changes."
+        }
+      ]
+    },
+
+    {
+      "module": "module02",
+      "title": "Boat Balance",
+      "questions": [
+        {
+          "question": "Why is boat balance important when sailing a dinghy?",
+          "choices": [
+            "It helps the boat sail efficiently",
+            "It makes the mast taller",
+            "It increases the weight of the boat",
+            "It prevents the wind from changing"
+          ],
+          "answer": 0,
+          "explanation": "Keeping the boat balanced helps maintain efficient movement through the water and allows the sails to work effectively."
+        },
+        {
+          "question": "If a dinghy begins to heel excessively to one side, what should the sailor normally do?",
+          "choices": [
+            "Move to help balance the boat",
+            "Stand on the opposite side of the mast",
+            "Pull the tiller as hard as possible",
+            "Ignore the heel"
+          ],
+          "answer": 0,
+          "explanation": "The sailor can use body position and sail controls to help restore the boat to a balanced attitude."
+        },
+        {
+          "question": "What can happen when a dinghy is sailed with poor balance?",
+          "choices": [
+            "The boat may become less efficient and harder to control",
+            "The wind automatically becomes weaker",
+            "The daggerboard becomes longer",
+            "The sail becomes smaller"
+          ],
+          "answer": 0,
+          "explanation": "Poor balance can increase drag, reduce efficiency, and make the boat more difficult to control."
+        },
+        {
+          "question": "When the wind suddenly increases, why might the sailor need to adjust body position?",
+          "choices": [
+            "To help keep the boat balanced",
+            "To make the sail heavier",
+            "To increase the mast height",
+            "To stop the wind"
+          ],
+          "answer": 0,
+          "explanation": "A stronger wind can increase heeling force, so the sailor may need to change position to maintain balance."
+        }
+      ]
+    },
+
+    {
+      "module": "module03",
+      "title": "Boom Angle",
+      "questions": [
+        {
+          "question": "What primarily controls the boom angle on a dinghy?",
+          "choices": [
+            "Mainsheet",
+            "Daggerboard",
+            "Tiller extension",
+            "Painter"
+          ],
+          "answer": 0,
+          "explanation": "The mainsheet controls the boom and therefore controls the angle of the mainsail."
+        },
+        {
+          "question": "When sailing closer to the wind, what generally happens to the boom angle?",
+          "choices": [
+            "The boom is brought closer to the centerline",
+            "The boom is always released completely",
+            "The boom moves directly over the bow",
+            "The boom is removed from the boat"
+          ],
+          "answer": 0,
+          "explanation": "When sailing closer to the wind, the mainsail is generally trimmed in, bringing the boom closer to the centerline."
+        },
+        {
+          "question": "When bearing away from the wind, what should generally happen to the boom?",
+          "choices": [
+            "It should be eased outward",
+            "It should be pulled completely to the center",
+            "It should be disconnected",
+            "It should remain fixed regardless of the wind"
+          ],
+          "answer": 0,
+          "explanation": "As the boat bears away, the sail generally needs to be eased so the boom moves farther out."
+        },
+        {
+          "question": "Why is correct boom angle important?",
+          "choices": [
+            "It helps the sail produce useful aerodynamic force",
+            "It determines the boat's color",
+            "It controls the water depth",
+            "It prevents the rudder from turning"
+          ],
+          "answer": 0,
+          "explanation": "Correct boom angle helps position the sail appropriately relative to the wind."
+        }
+      ]
+    },
+
+    {
+      "module": "module04",
+      "title": "Outhaul",
+      "questions": [
+        {
+          "question": "What does the outhaul primarily control?",
+          "choices": [
+            "The tension along the foot of the mainsail",
+            "The direction of the rudder",
+            "The position of the daggerboard",
+            "The height of the mast"
+          ],
+          "answer": 0,
+          "explanation": "The outhaul controls tension along the foot of the mainsail and influences the sail's shape."
+        },
+        {
+          "question": "What generally happens to sail depth when the outhaul is tightened?",
+          "choices": [
+            "The sail becomes flatter",
+            "The sail becomes much deeper",
+            "The mast becomes shorter",
+            "The boom becomes longer"
+          ],
+          "answer": 0,
+          "explanation": "Tightening the outhaul stretches the sail along its foot and generally flattens the lower part of the sail."
+        },
+        {
+          "question": "Why might a sailor use a tighter outhaul in stronger wind?",
+          "choices": [
+            "To help flatten the sail",
+            "To increase the boat's weight",
+            "To raise the daggerboard",
+            "To stop the rudder from moving"
+          ],
+          "answer": 0,
+          "explanation": "Flattening the sail can help reduce excessive power and make the boat more manageable in stronger wind."
+        },
+        {
+          "question": "What is one reason to ease the outhaul?",
+          "choices": [
+            "To allow a fuller sail shape",
+            "To remove the mainsail",
+            "To shorten the mast",
+            "To raise the rudder"
+          ],
+          "answer": 0,
+          "explanation": "Easing the outhaul allows more depth in the sail, which can be useful when additional power is desired."
+        }
+      ]
+    },
+
+    {
+      "module": "module05",
+      "title": "Vang",
+      "questions": [
+        {
+          "question": "What does the vang primarily control?",
+          "choices": [
+            "The downward position of the boom",
+            "The direction of the boat",
+            "The depth of the daggerboard",
+            "The height of the sailor"
+          ],
+          "answer": 0,
+          "explanation": "The vang controls downward tension on the boom and influences mainsail leech tension."
+        },
+        {
+          "question": "Why can the vang be important when sailing downwind?",
+          "choices": [
+            "It helps control the boom and sail shape",
+            "It steers the boat automatically",
+            "It raises the daggerboard",
+            "It stops the wind"
+          ],
+          "answer": 0,
+          "explanation": "When the mainsheet is eased substantially, the vang can help maintain control of the boom and sail shape."
+        },
+        {
+          "question": "What generally happens when the vang is tightened?",
+          "choices": [
+            "Downward tension on the boom increases",
+            "The mast is removed",
+            "The daggerboard becomes deeper",
+            "The rudder becomes larger"
+          ],
+          "answer": 0,
+          "explanation": "Tightening the vang applies downward force to the boom and affects the shape and leech tension of the mainsail."
+        },
+        {
+          "question": "Why should a sailor understand the relationship between vang and mainsheet?",
+          "choices": [
+            "Both can affect mainsail shape and boom control",
+            "Both control the daggerboard",
+            "Both control the rudder",
+            "Both determine the wind direction"
+          ],
+          "answer": 0,
+          "explanation": "The vang and mainsheet work together to control the boom and influence mainsail shape."
+        }
+      ]
+    },
+
+    {
+      "module": "module06",
+      "title": "Downhaul",
+      "questions": [
+        {
+          "question": "What does the downhaul primarily control?",
+          "choices": [
+            "Tension near the luff of the sail",
+            "The direction of the rudder",
+            "The position of the daggerboard",
+            "The length of the tiller"
+          ],
+          "answer": 0,
+          "explanation": "The downhaul controls tension along the luff of the sail and can significantly affect sail shape."
+        },
+        {
+          "question": "What generally happens to the upper part of the sail when downhaul tension is increased?",
+          "choices": [
+            "The sail becomes flatter and the leech can open",
+            "The sail becomes completely detached",
+            "The mast becomes shorter",
+            "The daggerboard moves forward"
+          ],
+          "answer": 0,
+          "explanation": "Increasing downhaul tension can flatten the sail and open the upper leech, reducing power in stronger wind."
+        },
+        {
+          "question": "Why might a sailor increase downhaul tension in stronger wind?",
+          "choices": [
+            "To help depower and flatten the sail",
+            "To increase the boat's weight",
+            "To make the rudder deeper",
+            "To stop the boat from moving"
+          ],
+          "answer": 0,
+          "explanation": "More downhaul tension can flatten the sail and help control excessive power in stronger wind."
+        },
+        {
+          "question": "What is the main reason for adjusting the downhaul?",
+          "choices": [
+            "To adjust mainsail shape for the conditions",
+            "To change the boat's hull length",
+            "To control the water temperature",
+            "To change the wind direction"
+          ],
+          "answer": 0,
+          "explanation": "The downhaul is an important sail-control system used to adjust mainsail shape according to sailing conditions."
+        }
+      ]
+    },
+
+    {
+      "module": "module07",
+      "title": "Sailor Position",
+      "questions": [
+        {
+          "question": "Why is sailor position important in a dinghy?",
+          "choices": [
+            "It affects boat balance and performance",
+            "It changes the wind direction",
+            "It increases the mast height",
+            "It changes the hull color"
+          ],
+          "answer": 0,
+          "explanation": "The sailor's position has a direct effect on the boat's balance, trim, and performance."
+        },
+        {
+          "question": "When the boat heels too much to one side, what can the sailor do?",
+          "choices": [
+            "Move their body to help balance the boat",
+            "Ignore the heel completely",
+            "Pull the daggerboard out immediately",
+            "Release every control"
+          ],
+          "answer": 0,
+          "explanation": "Moving body weight can help counteract heeling and maintain a more balanced boat."
+        },
+        {
+          "question": "Why might a sailor move farther outboard in stronger wind?",
+          "choices": [
+            "To use body weight to counteract heeling",
+            "To make the sail larger",
+            "To make the daggerboard deeper",
+            "To increase the wind speed"
+          ],
+          "answer": 0,
+          "explanation": "Moving outboard allows the sailor to use their body weight as leverage against the force of the wind."
+        },
+        {
+          "question": "What is generally desirable when positioning yourself in a dinghy?",
+          "choices": [
+            "Maintain a position that keeps the boat balanced and responsive",
+            "Always sit in exactly the same location",
+            "Stand whenever the boat accelerates",
+            "Move randomly around the boat"
+          ],
+          "answer": 0,
+          "explanation": "Good sailor positioning keeps the boat balanced and allows the sailor to respond effectively to changes in wind and boat motion."
+        }
+      ]
+    },
+
+    {
+      "module": "module08",
+      "title": "Daggerboard",
+      "questions": [
+        {
+          "question": "What is the primary purpose of a daggerboard?",
+          "choices": [
+            "To provide lateral resistance",
+            "To control the mainsail",
+            "To steer the boat",
+            "To hold the mast upright"
+          ],
+          "answer": 0,
+          "explanation": "The daggerboard provides lateral resistance and helps the boat make useful progress, especially when sailing upwind."
+        },
+        {
+          "question": "What is generally appropriate for the daggerboard when sailing upwind?",
+          "choices": [
+            "Keep it sufficiently down to provide lateral resistance",
+            "Remove it completely",
+            "Place it on the bow",
+            "Tie it to the mainsheet"
+          ],
+          "answer": 0,
+          "explanation": "A sufficiently lowered daggerboard provides the lateral resistance needed when sailing upwind."
+        },
+        {
+          "question": "Why might a sailor raise the daggerboard when sailing in shallow water?",
+          "choices": [
+            "To prevent it from hitting the bottom",
+            "To increase mast height",
+            "To make the sail larger",
+            "To increase wind speed"
+          ],
+          "answer": 0,
+          "explanation": "Raising the daggerboard in shallow water helps prevent damage from contact with the bottom."
+        },
+        {
+          "question": "What may happen if too much daggerboard is used when sailing downwind?",
+          "choices": [
+            "It may create unnecessary resistance",
+            "The sail will disappear",
+            "The mast will automatically lower",
+            "The rudder will stop working"
+          ],
+          "answer": 0,
+          "explanation": "The daggerboard creates underwater resistance, so its position should be appropriate for the point of sail and conditions."
+        }
+      ]
+    },
+
+    {
+      "module": "module09",
+      "title": "Wind Conditions",
+      "questions": [
+        {
+          "question": "Why should a sailor pay attention to changes in wind conditions?",
+          "choices": [
+            "Wind changes affect boat handling and sail trim",
+            "Wind changes alter the hull color",
+            "Wind changes determine the water temperature",
+            "Wind changes make the daggerboard disappear"
+          ],
+          "answer": 0,
+          "explanation": "Changes in wind speed and direction directly affect sail power, boat balance, and the controls needed."
+        },
+        {
+          "question": "What should a sailor do when the wind suddenly becomes stronger?",
+          "choices": [
+            "Adjust sail trim and boat balance as necessary",
+            "Ignore the change",
+            "Always point directly into the wind",
+            "Remove the rudder"
+          ],
+          "answer": 0,
+          "explanation": "A sudden increase in wind may require adjustments to sail controls and sailor position to maintain control."
+        },
+        {
+          "question": "What is a wind shift?",
+          "choices": [
+            "A change in wind direction",
+            "A change in hull color",
+            "A change in water depth",
+            "A change in mast length"
+          ],
+          "answer": 0,
+          "explanation": "A wind shift occurs when the direction from which the wind is coming changes."
+        },
+        {
+          "question": "If wind conditions become too strong for the sailor's experience or equipment, what is the safest choice?",
+          "choices": [
+            "Reduce the risk by returning or postponing sailing",
+            "Continue farther offshore",
+            "Ignore the conditions",
+            "Increase speed as much as possible"
+          ],
+          "answer": 0,
+          "explanation": "Sailing conditions should always be matched to the sailor's skill level and equipment. If conditions become unsuitable, reducing exposure to the risk is the safer decision."
+        }
+      ]
+    },
+
+    {
+      "module": "module10",
+      "title": "Performance",
+      "questions": [
+        {
+          "question": "What is the main purpose of improving sailing performance?",
+          "choices": [
+            "To make the boat move more efficiently",
+            "To make the boat heavier",
+            "To eliminate the need for steering",
+            "To prevent the wind from changing"
+          ],
+          "answer": 0,
+          "explanation": "Improving performance means using the wind, sails, boat, and sailor position more efficiently."
+        },
+        {
+          "question": "Which combination is most important for good dinghy performance?",
+          "choices": [
+            "Boat balance, sail trim, and sailor position",
+            "Hull color, sail number, and painter length",
+            "Water temperature, mast color, and rudder shape",
+            "Boat weight, beach location, and sail number"
+          ],
+          "answer": 0,
+          "explanation": "Boat balance, sail trim, and sailor position work together to influence the boat's efficiency and speed."
+        },
+        {
+          "question": "A sailor notices the boat is slow even though the wind is steady. What should the sailor check?",
+          "choices": [
+            "Boat balance, sail trim, and control settings",
+            "The color of the hull",
+            "The sailor's clothing color",
+            "The number painted on the sail"
+          ],
+          "answer": 0,
+          "explanation": "When conditions are steady, checking balance and sail-control settings can help identify reasons for poor performance."
+        },
+        {
+          "question": "What is a useful way to improve sailing performance over time?",
+          "choices": [
+            "Observe the results of adjustments and practice consistently",
+            "Change every control at the same time",
+            "Never change sail trim",
+            "Ignore boat balance"
+          ],
+          "answer": 0,
+          "explanation": "Performance improves through observation, controlled adjustments, practice, and learning how the boat responds."
+        }
+      ]
+    }
+  ]
+}
