@@ -2,32 +2,32 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "a010b25274df705914ab832e3a2b40e6"
+        "md5": "1322692fa96d2c6922ef2deecfa3a511"
     },
     {
         "path": "4th-post.html",
         "type": "file",
-        "md5": "04edf3e17c251e1265c056da15e57fa1"
+        "md5": "4fc543ef9351d4d3619bfb6ecb3f54a3"
     },
     {
         "path": "5.html",
         "type": "file",
-        "md5": "0d6dea1fd130bc603a4f32532a21e1ac"
+        "md5": "84ec5a548fb532beba40a541c3fa8245"
     },
     {
         "path": "5th-post.html",
         "type": "file",
-        "md5": "2816f42f3980e5eabf8dc48883bd029f"
+        "md5": "6ff6fe0b61a29938775cb4d8700748cc"
     },
     {
         "path": "a-new-post.html",
         "type": "file",
-        "md5": "abd808ebc63a3c164852856c60f84790"
+        "md5": "1dafd47f97583f659fc69d961afb830e"
     },
     {
         "path": "about-us.html",
         "type": "file",
-        "md5": "89ec8269c5d15e49d1b20767ace991cc"
+        "md5": "235358729e8c423da4268aa533cf51e6"
     },
     {
         "path": "assets",
@@ -122,7 +122,7 @@
     {
         "path": "/authors/gerardo-gala/index.html",
         "type": "file",
-        "md5": "ec75f21b1367369f6516c54cb62991c8"
+        "md5": "fecbc01c791b7426dcd78eb3fdb0b916"
     },
     {
         "path": "authors/gerardo-gala/page",
@@ -137,12 +137,17 @@
     {
         "path": "/authors/gerardo-gala/page/2/index.html",
         "type": "file",
-        "md5": "ad44469cf8c75c40f256e6229011b264"
+        "md5": "4eb4163bf0cc76053e9fe04695814fc3"
+    },
+    {
+        "path": "contact-us.html",
+        "type": "file",
+        "md5": "6f8b569a2e7662010b4c423f5a533fd4"
     },
     {
         "path": "dinghy-sailing-101.html",
         "type": "file",
-        "md5": "34f92e0228b0006fe5fa04467d05e266"
+        "md5": "ed0f668dccc8d8e71792c772f6adc9f2"
     },
     {
         "path": "feed.json",
@@ -155,34 +160,39 @@
         "md5": "ec5142f3a71e0ee0569ebe93334388e5"
     },
     {
+        "path": "frequently-asked-questions.html",
+        "type": "file",
+        "md5": "0850e74d2b95aff205c79d9a0dba4a41"
+    },
+    {
         "path": "index.html",
         "type": "file",
-        "md5": "61277753c50b3952f313a5e60f654772"
+        "md5": "d9482787356ccbf496e904d5c72fc5eb"
     },
     {
         "path": "instructors.html",
         "type": "file",
-        "md5": "d115f6d6353e315f66d02ee232bf79eb"
+        "md5": "d11e19ec0fff41f04db21da93bd673c9"
     },
     {
         "path": "interactive-visual-thesaurus.html",
         "type": "file",
-        "md5": "22c30dbed1bf9d5c1847b61daa2f00c4"
+        "md5": "7a267dc1c183829ad4224d7d7240d904"
     },
     {
         "path": "kombi-quick-canoe-build.html",
         "type": "file",
-        "md5": "6e2b0389b00a99c10411d76d2579f0bc"
+        "md5": "928533b09cd066578cedc342a42e5acb"
     },
     {
         "path": "lake-tahoe-paradox.html",
         "type": "file",
-        "md5": "fbe63d30443d225e2a4f7184cbc6e8a1"
+        "md5": "9b864944c80b5a1f0de8151e56a87e5e"
     },
     {
         "path": "login.html",
         "type": "file",
-        "md5": "82a661a933e490fa4e5356c0ad9f7aa5"
+        "md5": "10a34ba374e3b01029e65e140efbfa77"
     },
     {
         "path": "media",
@@ -2062,12 +2072,17 @@
     {
         "path": "online-courses-2.html",
         "type": "file",
-        "md5": "814fe2c5c344c88ec67ab23c2420b03c"
+        "md5": "c05ff52ccc24ad2bf36ac2f6898f4557"
+    },
+    {
+        "path": "privacy.html",
+        "type": "file",
+        "md5": "b482c457948874790f5e21cf496ba55c"
     },
     {
         "path": "rentals.html",
         "type": "file",
-        "md5": "1058ca8119ccede40b34b715517f9b08"
+        "md5": "ff50b2330a97a06e223fb9e83f97e178"
     },
     {
         "path": "robots.txt",
@@ -2077,17 +2092,17 @@
     {
         "path": "sailboats.html",
         "type": "file",
-        "md5": "1d84801d13118944c794cbada743c343"
+        "md5": "5785a363198d20f479de6094bf3631e8"
     },
     {
         "path": "sailing-concepts-2.html",
         "type": "file",
-        "md5": "88fb7642c3720f9263578f52ad5585d6"
+        "md5": "84cc8824c1d6dbea5d4cb82ad665adfe"
     },
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "4c6d09e9a7aeae02ae8395a29787e3f5"
+        "md5": "f28414acd7da4e9a7c002c35ee01a383"
     },
     {
         "path": "sitemap.xsl",
@@ -2097,7 +2112,7 @@
     {
         "path": "student-report.html",
         "type": "file",
-        "md5": "3a826e5c89ec3dcca70af01ee47b3e2b"
+        "md5": "b259a52dcbd4f80f3ac9b4068e72c087"
     },
     {
         "path": "tags",
@@ -2112,7 +2127,7 @@
     {
         "path": "/tags/blog/index.html",
         "type": "file",
-        "md5": "7331ce70f45b96e9853845e9a8b717cf"
+        "md5": "ef2b552499ef63f0843d12bdd4ddd7b0"
     },
     {
         "path": "tags/blog/page",
@@ -2127,36 +2142,41 @@
     {
         "path": "/tags/blog/page/2/index.html",
         "type": "file",
-        "md5": "3993002a99816af42e3c0fe41f2e09a7"
+        "md5": "b5b5f256bb708a639f69996543362661"
     },
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "5196fff7dd42497ab74bc67565004fde"
+        "md5": "2e8fa62f5fdc9429d65fe8afafe2130d"
     },
     {
         "path": "teachers-upload.html",
         "type": "file",
-        "md5": "91d0b9d4c4819db244d40abc464b50a6"
+        "md5": "1f33d185cf186c1ef9555dd747b0fa8f"
+    },
+    {
+        "path": "terms-and-conditions.html",
+        "type": "file",
+        "md5": "8651c1ef70adc8cbb313a0b81f38266c"
     },
     {
         "path": "test.html",
         "type": "file",
-        "md5": "71744f668c60422066bab2641b29f23a"
+        "md5": "f51d4ad2eb0b7fcfc487b8f54d07ebbc"
     },
     {
         "path": "thesaurus.html",
         "type": "file",
-        "md5": "e75b6280884f220e8d95dea2d54e530d"
+        "md5": "4ed4dd6e54c38a7cbd3e16d7dafee979"
     },
     {
         "path": "tide-schedule.html",
         "type": "file",
-        "md5": "e23367d4cfae2cfc4a91076c2ba90826"
+        "md5": "0d33fc126b5f37a3b55b7b3537324ee3"
     },
     {
         "path": "wind-prediction.html",
         "type": "file",
-        "md5": "4edd1aabf574105037dac37962c956db"
+        "md5": "e870691a823a62529a675d5b895d1f73"
     }
 ]
