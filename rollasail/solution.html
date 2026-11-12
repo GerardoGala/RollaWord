@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RollaWord - Solution</title>
+  <title>RollaSail - Solution</title>
   <style>
     :root { --blue: #006abc; --ink: #1a1a1a; --line: #d9d9d9; }
     * { box-sizing: border-box; }
@@ -16,10 +16,9 @@
     .cell { aspect-ratio: 1; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
     .tile { width: 92%; height: 92%; border-radius: 4px; background: var(--blue); color: #fff;
             font-weight: 700; font-size: clamp(1.1rem, 6.5vw, 2rem); display: flex; align-items: center; justify-content: center; }
-    .tile.blank { background: #fff; color: var(--blue); border: 2px dashed var(--blue); }
+    .tile.hl { background: #004a85; box-shadow: 0 0 0 3px #f5b400; }
 
     #status { background: #f2f2f2; border-left: 6px solid var(--blue); padding: 12px 16px; line-height: 1.5; margin: 12px 0 0; }
-    .legend { color: #555; font-size: .9rem; margin: 10px 0 0; }
     h2 { font-size: 1.1rem; margin: 20px 0 8px; }
     #words { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
     #words li { margin: 0; }
@@ -27,18 +26,24 @@
                     border-radius: 16px; letter-spacing: .05em; cursor: pointer; }
     #words button.active { border-color: var(--blue); }
     .hint { color: #555; font-size: .9rem; margin: 0 0 8px; }
-    #definition { background: #f2f2f2; border-left: 6px solid var(--blue); padding: 12px 16px; margin-top: 12px; line-height: 1.5; }
-    #definition.problem { border-left-color: #dc3545; }
-    #definition strong { font-size: 1.15rem; color: var(--blue); letter-spacing: .05em; }
-    #definition p { margin: 6px 0 0; }
-    #definition p.source { font-size: .85rem; color: #555; }
-    #definition p.source a { color: var(--blue); }
-    .credit { color: #777; font-size: .8rem; margin: 20px 0 0; line-height: 1.4; }
-    .credit a { color: var(--blue); }
 
     #back { display: block; width: 100%; margin-top: 24px; padding: 16px; font-size: 1.2rem; font-weight: 700;
             color: #fff; background: var(--blue); border: 0; cursor: pointer; }
     #back:active { filter: brightness(.9); }
+
+    /* Pop-up with the word's meaning */
+    #pop { position: fixed; inset: 0; z-index: 10000; background: rgba(0,0,0,.6); display: none; align-items: center; justify-content: center; padding: 12px; }
+    #pop.open { display: flex; }
+    #pop .card { background: #fff; width: 100%; max-width: 480px; max-height: 100%; overflow: auto; position: relative; border-radius: 6px; }
+    #pop .info { padding: 12px 16px 16px; line-height: 1.45; }
+    #pop h3 { margin: 0; color: var(--blue); font-size: 1.4rem; }
+    #pop .group { color: #555; margin: 2px 0 8px; font-size: .95rem; }
+    #pop p { margin: 6px 0 0; }
+    #pop p.source { font-size: .8rem; color: #666; overflow-wrap: anywhere; }
+    #pop p.source a { color: var(--blue); }
+    #pop-close { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; font-size: 1.5rem; line-height: 1; color: #fff;
+                 background: rgba(0,0,0,.6); border: 0; border-radius: 50%; cursor: pointer; }
+    #pop-close:hover, #pop-close:focus-visible { background: var(--blue); }
   </style>
 </head>
 <body>
@@ -47,22 +52,16 @@
     <p class="sub">One possible way to play all 8 tiles.</p>
 
     <div id="solution-grid"></div>
-    <p class="legend" id="legend" hidden>Dashed tiles are blanks. They can stand for any letter.</p>
     <p id="status" hidden></p>
 
     <div id="word-section" hidden>
       <h2>Words in this solution</h2>
       <p class="hint">Tap a word to see what it means.</p>
       <ul id="words"></ul>
-      <div id="definition" hidden></div>
     </div>
 
-    <p class="credit" id="credit" hidden>
-      Definitions from <a href="https://en.wiktionary.org" target="_blank" rel="noopener">Wiktionary</a>
-      (CC BY-SA 4.0) via <a href="https://freedictionaryapi.com" target="_blank" rel="noopener">FreeDictionaryAPI.com</a>.
-    </p>
     <button id="back" type="button">Back to Game</button>
-  
+
   </main>
   <hr>
 <footer style="
@@ -80,10 +79,163 @@
     <a href="/privacy.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Privacy</a>
     <a href="/contact.html" style="color: var(--color); text-decoration: none; font-weight: 500;">Contact</a>
   </nav>
-  <div>© 2026 RollaWord</div>
+  <div>© 2026 RollaSail</div>
 </footer>
 
-  <!-- Put solution.js wherever your other scripts live and adjust this path. -->
-  <script src="/js/solution.js"></script>
+  <!-- The pop-up: opens when a word is tapped -->
+  <div id="pop" role="dialog" aria-modal="true" aria-labelledby="pop-name">
+    <div class="card">
+      <button id="pop-close" type="button" aria-label="Close">&times;</button>
+      <div class="info">
+        <h3 id="pop-name"></h3>
+        <p class="group" id="pop-group"></p>
+        <p id="pop-fact"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+
+    // The game saves the solution of the board it just dealt under this key (sailgen.js).
+    var STORE_KEY = "rollasail.solution";
+    var DATA_URL = "/rollasail/js/sail-data.csv";
+
+    var $ = function (id) { return document.getElementById(id); };
+    var solution = null, terms = {}, lastFocus = null;
+
+    // ---- the saved solution ----
+    function loadSolution() {
+      var raw = null;
+      try { raw = localStorage.getItem(STORE_KEY) || sessionStorage.getItem(STORE_KEY); } catch (e) { /* storage blocked */ }
+      if (!raw) return null;
+      try {
+        var s = JSON.parse(raw);
+        return s && Array.isArray(s.rows) && Array.isArray(s.words) ? s : null;
+      } catch (e) { return null; }
+    }
+
+    // ---- the board ----
+    function drawGrid() {
+      var grid = $("solution-grid");
+      grid.textContent = "";
+      var rows = solution.rows.filter(function (r) { return /[^.]/.test(r); });      // leave out rows with no tiles
+      var offset = solution.rows.findIndex(function (r) { return /[^.]/.test(r); });
+      rows.forEach(function (line, r) {
+        for (var c = 0; c < 8; c++) {
+          var cell = document.createElement("div");
+          cell.className = "cell";
+          cell.dataset.r = String(r + offset); cell.dataset.c = String(c);
+          var ch = line.charAt(c);
+          if (ch && ch !== ".") {
+            var t = document.createElement("div");
+            t.className = "tile"; t.textContent = ch;
+            cell.appendChild(t);
+          }
+          grid.appendChild(cell);
+        }
+      });
+    }
+    function highlight(w) {
+      document.querySelectorAll(".tile.hl").forEach(function (t) { t.classList.remove("hl"); });
+      if (!w) return;
+      for (var i = 0; i < w.word.length; i++) {
+        var r = w.row + (w.dir === "V" ? i : 0), c = w.col + (w.dir === "H" ? i : 0);
+        var cell = document.querySelector('.cell[data-r="' + r + '"][data-c="' + c + '"] .tile');
+        if (cell) cell.classList.add("hl");
+      }
+    }
+
+    // ---- the words ----
+    function drawWords() {
+      var list = $("words"), seen = {};
+      list.textContent = "";
+      solution.words.forEach(function (w) {
+        if (seen[w.word]) return; seen[w.word] = true;
+        var li = document.createElement("li"), b = document.createElement("button");
+        b.type = "button"; b.textContent = w.word;
+        b.addEventListener("click", function () {
+          list.querySelectorAll("button").forEach(function (x) { x.classList.remove("active"); });
+          b.classList.add("active");
+          highlight(w);
+          openPop(w.word, b);
+        });
+        li.appendChild(b); list.appendChild(li);
+      });
+      $("word-section").hidden = false;
+    }
+
+    // ---- the data file ----
+    function parseCSV(text) {
+      var out = [], row = [], cell = "", q = false;
+      for (var i = 0; i < text.length; i++) {
+        var ch = text[i];
+        if (q) { if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += ch; }
+        else if (ch === '"') q = true;
+        else if (ch === ",") { row.push(cell); cell = ""; }
+        else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); cell = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = []; }
+        else cell += ch;
+      }
+      if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+      return out;
+    }
+    function loadTerms() {
+      return fetch(DATA_URL).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (text) {
+        var rows = parseCSV(text.replace(/^\uFEFF/, "")), h = rows.shift();
+        var col = function (n) { var i = h.indexOf(n); if (i < 0) throw new Error("sail-data.csv has no \"" + n + "\" column (is it the latest version?)"); return i; };
+        var iA = col("Term"), iG = col("Group"), iT = col("Type"), iAlso = col("Also accepted"), iP = col("Part of speech"), iD = col("Definition");
+        rows.forEach(function (r) {
+          var a = { name: r[iA], group: r[iG] || "", pos: r[iP] || "", def: r[iD] || "" };
+          terms[r[iT]] = a;                                                         // the word as typed on the board
+          (r[iAlso] || "").split("; ").forEach(function (w) { if (w) terms[w] = a; });   // other accepted spellings
+        });
+      });
+    }
+
+    // ---- the pop-up ----
+    function openPop(word, opener) {
+      var a = terms[word];
+      lastFocus = opener || null;
+      if (!a) {
+        $("pop-name").textContent = word; $("pop-group").textContent = ""; $("pop-fact").textContent = "Sorry, this word could not be found in the list.";
+      } else {
+        $("pop-name").textContent = a.name;
+        $("pop-group").textContent = a.group + (a.pos ? " (" + a.pos + ")" : "");
+        $("pop-fact").textContent = a.def || (a.group === "Sailing term" ? "No definition has been written for this term yet." : "An ordinary word. It is a valid word in RollaSail, but it is not a sailing term.");
+      }
+      $("pop").classList.add("open");
+      $("pop-close").focus();
+    }
+    function closePop() {
+      $("pop").classList.remove("open");
+      if (lastFocus) lastFocus.focus();
+    }
+    $("pop-close").addEventListener("click", closePop);
+    $("pop").addEventListener("click", function (e) { if (e.target === this) closePop(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && $("pop").classList.contains("open")) closePop(); });
+
+    // ---- Back to Game ----
+    $("back").addEventListener("click", function () {
+      var sameSite = document.referrer && document.referrer.indexOf(location.origin) === 0;
+      if (sameSite && history.length > 1) history.back(); else location.href = "/rollasail/index.html";
+    });
+
+    // ---- start ----
+    solution = loadSolution();
+    if (!solution) {
+      $("status").hidden = false;
+      $("status").textContent = "There is no solution to show yet. Play a game, then press “Show me the Solution” when it ends.";
+    } else {
+      drawGrid();
+      loadTerms().then(drawWords).catch(function (e) {
+        console.error("RollaSail solution page:", e);
+        drawWords();                                      // the board and words still show; only the meanings are missing
+        $("status").hidden = false;
+        $("status").textContent = "The word meanings could not be loaded: " + ((e && e.message) || e);
+      });
+    }
+  })();
+  </script>
 </body>
 </html>

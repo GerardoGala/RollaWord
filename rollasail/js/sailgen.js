@@ -242,11 +242,17 @@
         const oldBtn = document.getElementById('show-solution-btn');   // a new game removes the old button
         if (oldBtn) oldBtn.remove();
       }
+      window.saveSailSolution(window.lastSailSolution);
       if (typeof saveSolutionForSolutionPage === 'function') saveSolutionForSolutionPage(window.lastSailSolution);
       return shuffle(letters).map(l => ({ l: l.toUpperCase(), c: pick(COLORS) }));
     }
     throw new Error('RollaSail: could not build a tray');
   }
+
+  // The solution page (sailSolution.html) reads the saved solution from this key.
+  window.saveSailSolution = function (solution) {
+    try { localStorage.setItem('rollasail.solution', JSON.stringify(solution)); } catch (e) { /* storage blocked: the solution page just shows a message */ }
+  };
 
   window.generateSailPayload = generateSailPayload;
 })();

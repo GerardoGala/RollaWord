@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>RollaSail Clue</title>
+<style>
+  :root { --blue: #006abc; --blue-dark: #004a85; --bg: #e9eef2; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 12px; border-bottom: 1px solid #ccc; }
+  header h1 { font-size: 1.1rem; margin: 0; letter-spacing: .04em; }
+  button { font: inherit; font-weight: 600; color: #fff; background: var(--blue); border: 0; border-radius: 0; padding: 8px 16px; cursor: pointer; }
+  button:hover, button:focus-visible { background: var(--blue-dark); }
+  #stage { flex: 1 1 auto; min-height: 220px; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; }
+  #label { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: #556; margin: 0 0 10px; }
+  #clue { font-size: 1.35rem; line-height: 1.4; margin: 0; max-width: 28rem; }
+  #term { font-size: 2rem; font-weight: 700; color: var(--blue); letter-spacing: .05em; margin: 0 0 6px; display: none; }
+  #meta { color: #555; margin: 0 0 12px; display: none; }
+  footer { padding: 8px 12px; font-size: .85rem; line-height: 1.35; border-top: 1px solid #ccc; color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">ROLLASAIL CLUE</h1>
+  <button id="close-btn" type="button">Close</button>
+</header>
+
+<div id="stage">
+  <p id="label">What sailing word is this?</p>
+  <p id="term"></p>
+  <p id="meta"></p>
+  <p id="clue"></p>
+</div>
+
+<footer id="caption"></footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // The page is given only a row number (?r=..), never a word, so the address cannot give the answer away.
+  // No (or invalid) row = the first sailing term in sail-data.csv.
+  var DATA_URL = "/rollasail/js/sail-data.csv";
+
+  // The page always shows a clue. This one is built in, so it appears even when the word list cannot be loaded
+  // (it is the first sailing term in sail-data.csv, "Aboard"). The note under it says why, if something went wrong.
+  var DEFAULT_CLUE = "(adverb, 6 letters) On or in a boat.";
+
+  var qs = new URLSearchParams(window.location.search);
+  var r = parseInt(qs.get("r"), 10);
+
+  // names mode (from the solution page, after the game): ?names=1&w=WORD  -> the word is shown with its meaning so the player can learn
+  var NAMES = qs.get("names") === "1";
+
+  // Close: inside the game's modal -> tell the game page; opened on its own -> go back.
+  document.getElementById("close-btn").addEventListener("click", function () {
+    if (window.parent !== window) window.parent.postMessage("rollasail-close-clue", "*");
+    else if (NAMES) window.history.back();
+    else window.location.href = "/rollasail/index.html";
+  });
+
+  function parseCSV(text) {
+    var out = [], row = [], cell = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var ch = text[i];
+      if (q) { if (ch === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += ch; }
+      else if (ch === '"') q = true;
+      else if (ch === ",") { row.push(cell); cell = ""; }
+      else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cell); cell = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = []; }
+      else cell += ch;
+    }
+    if (cell !== "" || row.length) { row.push(cell); out.push(row); }
+    return out;
+  }
+
+  function show(id, text) { var el = document.getElementById(id); el.textContent = text; el.style.display = "block"; }
+
+  fetch(DATA_URL).then(function (res) { if (!res.ok) throw new Error(DATA_URL + " (HTTP " + res.status + ")"); return res.text(); }).then(function (text) {
+    var rows = parseCSV(text.replace(/^﻿/, "")), h = rows.shift();
+    var col = function (n) { var i = h.indexOf(n); if (i < 0) throw new Error("sail-data.csv has no \"" + n + "\" column"); return i; };
+    var iTerm = col("Term"), iG = col("Group"), iT = col("Type"), iAlso = col("Also accepted"), iP = col("Part of speech"), iD = col("Definition"), iC = col("Clue");
+    var row = null, example = false;
+
+    if (NAMES) {                                    // look the word up by its spelling on the board
+      var w = (qs.get("w") || "").toUpperCase();
+      for (var i = 0; i < rows.length && !row; i++)
+        if (rows[i][iT] === w || (rows[i][iAlso] || "").split("; ").indexOf(w) >= 0) row = rows[i];
+      if (!row) NAMES = false;                      // unknown word: behave like a plain clue
+    }
+    if (!row && r >= 1 && r <= rows.length) row = rows[r - 1];
+    if (!row || (!NAMES && !row[iC])) {             // no (or invalid) row given, or a row with no clue: the first sailing term
+      row = rows.filter(function (x) { return x[iG] === "Sailing term"; })[0];
+      example = true;
+    }
+
+    if (NAMES) {
+      document.getElementById("title").textContent = "ROLLASAIL WORD";
+      document.getElementById("label").style.display = "none";
+      show("term", row[iTerm]);
+      show("meta", row[iG] + (row[iP] ? " (" + row[iP] + ")" : ""));
+      document.getElementById("clue").textContent = row[iD] || (row[iG] === "Sailing term" ? "No definition has been written for this term yet." : "An ordinary word. It is a valid word in RollaSail, but it is not a sailing term.");
+    } else {
+      document.getElementById("clue").textContent = row[iC];
+      if (example) document.getElementById("caption").textContent = "Example clue: no word was given.";
+    }
+  }).catch(function (e) {
+    console.error("RollaSail clue failed:", e);
+    document.getElementById("clue").textContent = DEFAULT_CLUE;
+    document.getElementById("caption").textContent = "Example clue. The word list could not be loaded: " + (e && e.message ? e.message : e);
+  });
+})();
+</script>
+</body>
+</html>
