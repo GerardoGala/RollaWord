@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Onshore Wind",
+        "description": "The wind is blowing toward the beach.",
+        "svg": "onshore.svg"
+    },
+    {
+        "title": "Offshore Wind",
+        "description": "The wind is blowing away from the beach.",
+        "svg": "offshore.svg"
+    },
+    {
+        "title": "Cross-shore Wind",
+        "description": "The wind is blowing across the beach.",
+        "svg": "crossshore.svg"
+    },
+    {
+        "title": "Danger Zone",
+        "description": "Conditions may be unsafe for launching or landing.",
+        "svg": "danger.svg"
+    }
+]

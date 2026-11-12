@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Launching & Landing | San Juan Academy</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  	<!-- 2. Your Personal Custom CSS Last (Overrides everything above safely) -->
+  	<link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
+</head>
+<body>
+    <section class="container py-1">
+    <!-- Replaced with .brand-card utility from your shared.css -->
+    <div class="brand-card" id="game-card">
+          
+          <div class="header-meta">
+              <h3 class="scenario-title" id="title-field">Challenge Mode</h3>
+              <span class="step-counter" id="step-field">1 / 3</span>
+          </div>
+
+          <div class="instructions" id="text-field">Deducing environmental conditions...</div>
+
+          <!-- Items Deck Bin -->
+          <div class="source-box" id="source-container">
+              <div class="item" draggable="true" id="ilca">⛵</div>
+              <div class="item" draggable="true" id="wind">💨</div>
+              <div class="item" draggable="true" id="sailor">🧍</div>
+          </div>
+
+          <!-- Placement Arena Grid -->
+          <div class="work-area" id="work-area">
+              <div class="slot" id="slot1">Slot 1</div>
+              <div class="slot" id="slot2">Slot 2</div>
+              <div class="slot" id="slot3">Slot 3</div>
+              <div class="beach-fixed" id="beach-element">🏖️</div>
+          </div>
+
+          <!-- Control Actions Rack (Updated function bindings for assessment logic) -->
+          <div class="action-bar">
+              <div id="result"></div>
+              <div class="btn-group gap-2">
+                  <button class="btn btn-outline-primary" id="btn-submit" onclick="submitChallengeAnswer()">Submit Answer</button>
+                  <button class="btn btn-outline-primary" id="btn-retry" style="display:none;" onclick="resetChallengeStage()">Try Again</button>
+                  <button class="btn btn-outline-primary" id="btn-next" style="display:none;" onclick="nextChallengeStage()">Continue Challenge →</button>
+              </div>
+          </div>
+    </div>
+    <hr>
+    <!-- Bottom Navigation Context -->
+    <div class="button-row-container">
+        <a href="index.html" class="btn btn-outline-primary">
+            Home
+        </a>
+        <a href="practice.html" class="btn btn-outline-primary">
+            Back to Practice
+        </a>
+    </div>
+    </section>
+    <!-- Script Orchestration Core -->
+    <script src="js/challenge.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

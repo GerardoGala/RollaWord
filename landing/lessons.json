@@ -1,0 +1,46 @@
+{
+"lessons": [
+{
+"wind": "Onshore Wind",
+"type": "Launching",
+"title": "Launching in an Onshore Wind",
+"video": "launch-onshore.mp4",
+"description": "This video describes the procedure for Launching in an Onshore Wind."
+},
+{
+"wind": "Onshore Wind",
+"type": "Landing",
+"title": "Landing in an Onshore Wind",
+"video": "land-onshore.mp4",
+"description": "This video describes the procedure for Landing in an Onshore Wind."
+},
+{
+"wind": "Offshore Wind",
+"type": "Launching",
+"title": "Launching in an Offshore Wind",
+"video": "launch-offshore.mp4",
+"description": "This video describes the procedure for Launching in an Offshore Wind."
+},
+{
+"wind": "Offshore Wind",
+"type": "Landing",
+"title": "Landing in an Offshore Wind",
+"video": "land-offshore.mp4",
+"description": "This video describes the procedure for Landing in an Offshore Wind."
+},
+{
+"wind": "Cross-shore Wind",
+"type": "Launching",
+"title": "Launching in a Cross-shore Wind",
+"video": "launch-cross-shore.mp4",
+"description": "This video describes the procedure for Launching in a Cross-shore Wind."
+},
+{
+"wind": "Cross-shore Wind",
+"type": "Landing",
+"title": "Landing in a Cross-shore Wind",
+"video": "land-cross-shore.mp4",
+"description": "This video describes the procedure for Landing in a Cross-shore Wind."
+}
+]
+}

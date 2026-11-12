@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layline | San Juan Academy</title>
+
+  <!-- 1. External Framework First (Loaded from fast global CDN servers) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- STEP 1: Load Core Map Engines & Global Variables First -->
+  <script src="js/globalSimulationData.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+ 
+  <!-- STEP 2: Load Your Core Simulator Engine Layouts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/ilcaHandleControls.js"></script>
+  <script type="module" src="js/ilcaMap.js"></script>
+
+  
+  <!-- 3. External Brand CSS Framework First -->
+  <link rel="stylesheet" href="https://gerardogala.github.io/SanJuanAcademy/css/brand.css">
+
+  <!-- 4. Your Personal Custom CSS Last (Overrides everything above safely) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no">
+</head>
+<body>
+
+  <section>
+    <div id="map"></div>
+    <div id="divStart" class="mt-5 d-flex flex-column align-items-center justify-content-start w-100">
+        <button id="startButton" class="btn btn-success btn-lg px-5 mb-3">Start</button>
+        <button id="tackButton" class="btn btn-primary btn-lg px-5 mb-3 d-none">Tack</button>
+    </div>
+  </section>
+
+  <div style="
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-40%, -50%); /* Centered vertically and horizontally */
+      pointer-events: none;
+      font-family: system-ui, -apple-system, sans-serif;
+      min-width: 250px;
+      text-align: center; /* 🎯 FIX: Centers the text inside the 250px box */
+  ">
+      <h2 style="
+          margin: 0;
+          padding: 0;
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #198754;
+      ">Practice (steady wind)</h2>
+  </div>
+
+  <!-- 🏆 The SPA Feedback Panel (Hidden by default using 'd-none') -->
+  <div id="feedbackOverlay" class="d-none position-fixed top-50 start-50 translate-middle bg-white p-5 rounded-4 shadow-lg text-center" style="z-index: 1050; min-width: 350px; border: 3px solid #dee2e6;">
+      <h2 id="feedbackTitle" class="fw-bold mb-3">Exam Result</h2>
+      <p id="feedbackMessage" class="fs-5 text-muted mb-4">Feedback text goes here...</p>
+      
+      <!-- Action buttons inside the SPA layout -->
+      <button id="retryButton" class="btn btn-success btn-lg px-5 mb-3">Try Again</button>
+      <button id="challengeButton" class="btn btn-success btn-lg px-4 d-none">Challenge</button>
+  </div>
+
+  <!-- 🛠️ BRIDGE MODULE: Safely plucks functions from app.js and mounts them to window without altering app.js source -->
+  <script type="module">
+    import { launchSimulation, stopSimulation } from './js/app.js';
+    window.launchSimulation = launchSimulation;
+    window.stopSimulation = stopSimulation;
+  </script>
+
+  <!-- 🎮 BUTTON EVENT HANDLERS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const startButton = document.getElementById("startButton");
+      const tackButton = document.getElementById("tackButton");
+
+      if (startButton) {
+        startButton.addEventListener("click", () => {
+          startButton.classList.add("d-none");    // Hide Start Button
+          tackButton.classList.remove("d-none"); // Show Tack Button
+          
+          // Clear any old feedback panel state if present
+          const existingPanel = document.getElementById("spaFeedbackPanel");
+          if (existingPanel) existingPanel.style.display = "none";
+
+          if (typeof window.launchSimulation === "function") {
+            window.launchSimulation(); 
+          } else {
+            console.error("launchSimulation is not available on the window scope yet.");
+          }
+        });
+      }
+
+      if (tackButton) {
+        tackButton.addEventListener("click", () => {
+          if (typeof window.stopSimulation === "function") {
+            window.stopSimulation(); 
+          }
+          tackButton.classList.add("d-none"); 
+
+          // Fires the grading engine found inside your practice.js file
+          if (typeof calculateSpaExamScore === "function") {
+            calculateSpaExamScore(); 
+          }
+        });
+      }
+    });
+  </script>
+
+
+  <script src="js/practice.js"></script>
+</body>
+</html>

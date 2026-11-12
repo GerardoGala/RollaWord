@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layline | San Juan Academy</title>
+
+  <!-- 1. External Framework First (Loaded from fast global CDN servers) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- STEP 1: Load Core Map Engines & Global Variables First -->
+  <script src="js/globalSimulationData.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+ 
+  <!-- STEP 2: Load Your Core Simulator Engine Layouts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/ilcaHandleControls.js"></script>
+  <script type="module" src="js/ilcaMap.js"></script>
+
+  <!-- 3. External Brand CSS Framework First -->
+  <link rel="stylesheet" href="https://gerardogala.github.io/SanJuanAcademy/css/brand.css">
+
+  <!-- 4. Your Personal Custom CSS Last (Overrides everything above safely) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no">
+</head>
+<body>
+
+  <section>
+    <div id="map"></div>
+    <div id="divStart" class="mt-3 d-flex flex-column align-items-center justify-content-start w-100">
+        <button id="startButton" class="btn btn-success btn-lg px-5 mb-3">Start</button>
+        <!-- Wrap the button inside a link to index.html -->
+        <a href="index.html" id="backButton" class="d-none">
+            <button type="button" class="btn btn-primary btn-lg px-5 mb-3 w-100">Back to Main Menu</button>
+        </a>
+    </div>
+  </section>
+
+  <!-- Floating Indicator Panel-->
+  <div style="
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* 🎯 Centered perfectly */
+      pointer-events: none;
+      font-family: system-ui, -apple-system, sans-serif;
+      min-width: 320px;
+      text-align: center;
+  ">
+      <h2 style="
+          margin: 0;
+          padding: 0;
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #0d6efd;
+      ">Learn: Observe how the sailboat approaches the layline.</h2>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 🟢 INSERTION POINT 1: THE FEEDBACK OVERLAY (Identical styling to practice.html) -->
+  <!-- ========================================================================= -->
+  <div id="feedbackOverlay" class="d-none position-fixed top-50 start-50 translate-middle bg-white p-5 rounded-4 shadow-lg text-center" style="z-index: 1050; min-width: 350px; border: 3px solid #0d6efd;">
+      <h2 id="feedbackTitle" class="fw-bold mb-3" style="color: #0d6efd;">Notice</h2>
+      <p id="feedbackMessage" class="fs-5 text-muted mb-4">Feedback text goes here...</p>
+      
+      <!-- Call to action stepping up to practice mode -->
+      <a href="practice.html" class="btn btn-primary btn-lg px-5 mb-3">Go to Practice Mode</a>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 🟢 INSERTION POINT 3: THE TRACKING LAYER MODULE (learn.js) -->
+  <!-- ========================================================================= -->
+  <script src="js/learn.js"></script>
+</body>
+</html>

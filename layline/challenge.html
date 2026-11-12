@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layline | San Juan Academy</title>
+
+  <!-- 1. External Framework First (Loaded from fast global CDN servers) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Examiner</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- STEP 1: Load Core Map Engines & Global Variables First -->
+  <script src="js/globalSimulationData.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+ 
+<!-- Shared CSS -->
+<link rel="stylesheet" href="https://gerardogala.github.io/Tutorial-Shared/shared.css">
+
+
+  <!-- STEP 2: Load Your Core Simulator Engine Layouts -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/ilcaHandleControls.js"></script>
+  <script type="module" src="js/ilcaMap.js"></script>
+  
+<!-- Shared CSS -->
+<link rel="stylesheet" href="https://gerardogala.github.io/Tutorial-Shared/shared.css">
+
+  <!-- 4. Your Personal Custom CSS Last (Overrides everything above safely) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no">
+</head>
+<body>
+    <div id="map" >
+    </div>
+    <div id="controlsDiv" style="flex: 3; display: flex; flex-direction: column; gap: 8px;">
+      <!-- 🛠️ FIXED WHEELHOUSE: Assigned correct maneuver tags and nested within controlsDiv -->
+      <div id="headingDiv" class="control-row" style="display: flex; flex: 1; align-items: stretch;">
+        <button class="control-button" onclick="window.globalSimulationData.ILCA.maneuver = 'bear-away'" style="flex: 1; height: 100%;">BEAR AWAY</button>
+        <button class="control-button" onclick="window.globalSimulationData.ILCA.maneuver = 'head-up'" style="flex: 1; height: 100%;">HEAD UP</button>
+      </div>
+    </div>
+    <div id="divStart" class="mt-5 d-flex flex-column align-items-center justify-content-start w-100">
+        <button id="startButton" class="btn btn-success btn-lg px-5 mb-3">Start</button>
+        <button id="tackButton" class="btn btn-primary btn-lg px-5 mb-3 d-none">Tack</button>
+    </div>
+  </section>
+
+  <div style="
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%); /* Centered vertically and horizontally */
+    pointer-events: none;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-width: 250px;
+    text-align: center; /* 🎯 FIX: Centers the text inside the 250px box */
+">
+    <h2 style="
+        margin: 0;
+        padding: 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #a55d00;
+    ">Challenge</h2>
+  </div>
+
+
+  <!-- 🏆 The SPA Feedback Panel (Hidden by default using 'd-none') -->
+  <div id="feedbackOverlay" class="d-none position-fixed top-50 start-50 translate-middle bg-white p-5 rounded-4 shadow-lg text-center" style="z-index: 1050; min-width: 350px; border: 3px solid #dee2e6;">
+      <h2 id="feedbackTitle" class="fw-bold mb-3">Result</h2>
+      <p id="feedbackMessage" class="fs-5 text-muted mb-4">Feedback text goes here...</p>
+      
+      <!-- Action buttons inside the SPA layout -->
+      <button id="retryButton" class="btn btn-warning btn-lg px-4 me-2">Try Again</button>
+      <button id="mainMenuButton" class="btn btn-success btn-lg px-4 d-none">Main Menu</button>
+  </div>
+  <script>
+    // Inside your main input/state loop processing button clicks:
+    const ANGLE_STEP = 1.5; // Smooth 1.5 degree changes per click for precise trim
+
+    function handleSheetIn() {
+      // Get the current angle from global scope before performing the math subtraction
+      const currentAngle = parseFloat(window.globalSimulationData.ILCA.boomAngle) || 0.0;
+      
+      // Pulls the boom closer to the boat center line (Min limit 0 degrees)
+      window.globalSimulationData.ILCA.boomAngle = Math.max(0.0, currentAngle - ANGLE_STEP);
+    }
+
+    function handleSheetOut() {
+      // Get the current angle from global scope before performing the math addition
+      const currentAngle = parseFloat(window.globalSimulationData.ILCA.boomAngle) || 0.0;
+      
+      // Lets the boom swing out wider (Max limit 90 degrees square)
+      window.globalSimulationData.ILCA.boomAngle = Math.min(90.0, currentAngle + ANGLE_STEP);
+    }
+  </script>
+  <script src="js/challenge.js"></script>
+</body>
+</html>
