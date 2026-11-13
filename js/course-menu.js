@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  var SITE_NAME = 'San Juan Coast Line';
+  var SITE_NAME = 'San Juan Coastline';
   var SITE_URL = 'https://rollaword.com/';
 
   var CSS =
