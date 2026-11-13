@@ -152,12 +152,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "b0334e80004da5780b9c3b5538cd44fc"
+        "md5": "4e82eaaedaa3928d75fb179c7da137ef"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "ec5142f3a71e0ee0569ebe93334388e5"
+        "md5": "18c62b3e4d537857239690ddcf1927e8"
     },
     {
         "path": "frequently-asked-questions.html",
@@ -192,7 +192,7 @@
     {
         "path": "lake-tahoe-paradox.html",
         "type": "file",
-        "md5": "73a407f95f13483a124497e7732317c0"
+        "md5": "7915bcdb6dcc87ea026572067ba0c631"
     },
     {
         "path": "login.html",
@@ -2105,9 +2105,14 @@
         "md5": "edda38c92e08fd12e32191fbaeb6294e"
     },
     {
+        "path": "san-juan-coast-line-news.html",
+        "type": "file",
+        "md5": "d0cf22a9195ac35a743c71afaf54b3dd"
+    },
+    {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "b1dac9b4c69e370a2c0dab0bd3221325"
+        "md5": "e92e9322c553b8b05e02863cff036a1c"
     },
     {
         "path": "sitemap.xsl",
