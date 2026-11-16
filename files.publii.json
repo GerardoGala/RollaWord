@@ -140,6 +140,11 @@
         "md5": "b6565e1e49b0ea48b7d26b535d9695e9"
     },
     {
+        "path": "balancing-paradise-and-progress.html",
+        "type": "file",
+        "md5": "4813a68bf8fd976cf69340d87ff45926"
+    },
+    {
         "path": "contact-us.html",
         "type": "file",
         "md5": "259b116edc33ff8c11df301c840572bb"
@@ -152,12 +157,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "f9ddd6524627a758b0a213b315536cec"
+        "md5": "2f67ecc30d6d30fd438b4c1f5eb977a5"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "6420d824ea3c7daef9c13c7daee5b804"
+        "md5": "82afca62707d7ebb564e601eacac2732"
     },
     {
         "path": "frequently-asked-questions.html",
@@ -2107,12 +2112,12 @@
     {
         "path": "san-juan-coast-line-news.html",
         "type": "file",
-        "md5": "7f692605aeb9028a0010d34aa0725431"
+        "md5": "da0e566f960f88206fd761915c5cd959"
     },
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "e6f881744c178057a4d88a84d6542931"
+        "md5": "90a106776d4470f83c1667d5da9dc3e3"
     },
     {
         "path": "sitemap.xsl",
@@ -2137,7 +2142,7 @@
     {
         "path": "/tags/blog/index.html",
         "type": "file",
-        "md5": "6fbc1373831d8ea0e3778c0ea0e8845b"
+        "md5": "bd8c066bea55a2a2a1b3adaed12cb905"
     },
     {
         "path": "tags/blog/page",
@@ -2152,12 +2157,12 @@
     {
         "path": "/tags/blog/page/2/index.html",
         "type": "file",
-        "md5": "bddafe9c7c4277e149e60fe99f1a4379"
+        "md5": "3d55b32a04d00621542ca515137f817a"
     },
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "0ecba5d25baae22c623f9b71d4efef45"
+        "md5": "ab638527e13751d389540682e530f362"
     },
     {
         "path": "teachers-upload.html",
