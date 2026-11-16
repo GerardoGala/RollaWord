@@ -1,0 +1,68 @@
+/*
+ * Blog-only styles.
+ * The intention is to inherit RollaWord's existing site-wide typography,
+ * colors and navigation once its real stylesheet path is confirmed.
+ */
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  line-height: 1.65;
+}
+
+header,
+main,
+footer {
+  box-sizing: border-box;
+  width: min(100% - 2rem, 900px);
+  margin-inline: auto;
+}
+
+header {
+  padding-block: 1.25rem;
+}
+
+main {
+  min-height: 60vh;
+  padding-block: 1rem 3rem;
+}
+
+footer {
+  padding-block: 1.5rem;
+  border-top: 1px solid currentColor;
+  opacity: 0.85;
+}
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+main h1 {
+  line-height: 1.2;
+}
+
+main table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+main th,
+main td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid currentColor;
+}
+
+@media (max-width: 600px) {
+  header,
+  main,
+  footer {
+    width: min(100% - 1.25rem, 900px);
+  }
+}
