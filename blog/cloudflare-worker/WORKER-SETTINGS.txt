@@ -1,0 +1,15 @@
+Cloudflare Worker TEXT VARIABLES:
+GOOGLE_CLIENT_ID
+GITHUB_OWNER
+GITHUB_REPO
+GITHUB_BRANCH
+BLOG_README_PATH
+BLOG_PAGES_PATH
+ALLOWED_ORIGIN
+ALLOWED_EMAILS
+
+Cloudflare Worker SECRET:
+GITHUB_TOKEN
+
+Put the three exact authorized Google email addresses in ALLOWED_EMAILS,
+comma-separated. Do not put them in public website files.

@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; }
+body { margin: 0; background: #f3f5f7; color: #202a34; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.shell { width: min(900px, calc(100% - 28px)); margin: 28px auto 56px; }
+.page-header { margin-bottom: 22px; }
+.eyebrow { margin: 0 0 5px; color: #527184; font-size: .78rem; font-weight: 700; letter-spacing: .13em; }
+h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.page-header > p:last-child { margin-top: 7px; color: #5b6872; }
+.panel { margin: 16px 0; padding: 22px; background: #fff; border: 1px solid #dce2e7; border-radius: 12px; box-shadow: 0 2px 8px #17212b0a; }
+.fields { display: grid; gap: 16px; }
+label { display: grid; gap: 6px; font-weight: 650; }
+input { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid #b9c4cc; border-radius: 7px; font: inherit; }
+small, .optional, .note { color: #687681; font-size: .86rem; font-weight: 400; }
+h2 { margin: 0; font-size: 1.2rem; }
+.editor-heading, .editor-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.status { color: #567064; font-size: .85rem; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0 8px; }
+button { min-height: 38px; padding: 7px 12px; border: 1px solid #bac5cd; border-radius: 7px; background: #fff; color: #263541; font: inherit; cursor: pointer; }
+button:hover { background: #eef3f6; }
+button:focus-visible, input:focus-visible, .editor:focus-visible { outline: 3px solid #83b8d3; outline-offset: 2px; }
+button.primary { border-color: #245d79; background: #245d79; color: white; font-weight: 650; }
+button.primary:hover { background: #19465d; }
+.editor { min-height: 340px; padding: 16px; border: 1px solid #b9c4cc; border-radius: 8px; background: #fff; line-height: 1.7; overflow-wrap: anywhere; }
+.editor:empty::before { content: attr(data-placeholder); color: #89949c; pointer-events: none; }
+.editor h2, .editor h3 { margin: 1em 0 .45em; }
+.editor-actions { justify-content: flex-end; margin-top: 14px; }
+.preview-panel[hidden] { display: none; }
+.preview { line-height: 1.75; overflow-wrap: anywhere; }
+.preview h1, .preview h2, .preview h3 { margin-top: 1.2em; }
+.preview img { max-width: 100%; }
+footer { margin-top: 24px; text-align: center; color: #687681; font-size: .9rem; }
+footer a { color: #245d79; }
+.note { max-width: 680px; margin: 8px auto; }
+@media (max-width: 560px) {
+  .shell { width: min(100% - 18px, 900px); margin-top: 16px; }
+  .panel { padding: 15px; }
+  .editor { min-height: 280px; }
+  .editor-actions button { flex: 1 1 100%; }
+}
