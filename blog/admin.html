@@ -12,18 +12,19 @@
     <header class="page-header">
       <p class="eyebrow">ROLLAWORD BLOG</p>
       <h1>Article Editor</h1>
-      <p>Write an article and export it as a Markdown file for the blog.</p>
+      <p>Write, preview, save, and publish your RollaWord Blog articles.</p>
     </header>
-<section class="panel" id="loginPanel">
-  <h2>Author Login</h2>
-  <p id="authStatus">Please sign in with your authorized Google account.</p>
-  <button type="button" id="googleSignInButton" class="primary">
-    Sign in with Google
-  </button>
-  <button type="button" id="signOutButton" hidden>
-    Sign out
-  </button>
-</section>
+
+    <section class="panel" id="loginPanel">
+      <h2>Author Login</h2>
+      <p id="authStatus">Please sign in with your authorized Google account.</p>
+      <button type="button" id="googleSignInButton" class="primary">
+        Sign in with Google
+      </button>
+      <button type="button" id="signOutButton" hidden>
+        Sign out
+      </button>
+    </section>
 
     <section class="panel">
       <div class="fields">
@@ -58,19 +59,24 @@
       <div id="articleBody" class="editor" contenteditable="true" role="textbox"
            aria-multiline="true" data-placeholder="Start writing your article here..."></div>
       <div class="editor-actions">
+        <button type="button" id="saveDraftButton">Save Draft</button>
         <button type="button" id="previewButton">Preview</button>
-        <button type="button" id="downloadButton" class="primary">Download Markdown (.md)</button>
+        <button type="button" id="publishButton" class="primary">Publish</button>
+        <button type="button" id="downloadButton">Download Markdown (.md)</button>
       </div>
     </section>
 
     <section id="previewPanel" class="panel preview-panel" hidden>
-      <div class="editor-heading"><h2>Article preview</h2><button id="closePreviewButton" type="button">Close</button></div>
+      <div class="editor-heading">
+        <h2>Article preview</h2>
+        <button id="closePreviewButton" type="button">Close</button>
+      </div>
       <article id="previewContent" class="preview"></article>
     </section>
 
     <footer>
       <p><a href="./">Return to the public RollaWord Blog</a></p>
-      <p class="note">This is the writing stage only. Google sign-in, Firestore author checks, and secure GitHub publishing will be connected in a later step.</p>
+      <p class="note">Save Draft stores your work, Preview displays your article, and Publish will make it available on the public blog once the publishing service is connected.</p>
     </footer>
   </main>
 </body>
