@@ -3,6 +3,8 @@ title: "Balancing Paradise and Progress"
 date: "2026-11-16T12:00:00Z"
 author: "Gerardo Gala"
 summary: "Balancing Paradise and Progress"
+image: "/blog/images/1795034072629-download.jpg"
+image_alt: "San Juan Coast Line"
 draft: false
 ---
 
