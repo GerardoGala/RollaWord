@@ -3,7 +3,9 @@ title: "Sustainable Aquaculture & Livelihoods"
 date: "2026-11-18T12:00:00Z"
 author: "Gerardo Gala"
 summary: "Modern Oyster Farming Rollout."
-draft: true
+image: "/blog/images/1795033559708-oystyerfarming.jpg"
+image_alt: "sustainable-aquaculture-livelihoods"
+draft: false
 ---
 
 Modern Oyster Farming Rollout. In November 2026, the Department of Science and Technology (DOST-CALABARZON) deployed ₱160,000 worth of floating oyster cultivation structures along the Bambang River in San Juan. The technology aims to improve oyster quality, minimize weather-related losses, and support local fisherfolk livelihoods.
