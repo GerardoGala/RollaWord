@@ -3,8 +3,7 @@
   'use strict';
 
   const CLIENT_ID = '45397375888-0c26f3h05fdqrq2o9sl3tnhl7hpnd5et.apps.googleusercontent.com';   // <-- EDIT
-  const ENDPOINT = 'rollaword-auth.gerardogala1959.workers.dev';   // <-- EDIT: your Cloudflare Worker address
-
+  const ENDPOINT = 'https://rollaword-auth.gerardogala1959.workers.dev';
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
