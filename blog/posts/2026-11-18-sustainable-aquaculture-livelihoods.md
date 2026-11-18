@@ -15,15 +15,3 @@ SAN JUAN, Batangas — The Department of Science and Technology (DOST) has intro
 Read more at: [https://tribune.net.ph/2026/11/17/dost-rolls-out-modern-oyster-farming-in-batangas](https://tribune.net.ph/2026/11/17/dost-rolls-out-modern-oyster-farming-in-batangas)
 
 Read more Daily Tribune stories at: [https://tribune.net.ph/](https://tribune.net.ph/)
-
-Follow us on our social media
-
-Facebook: @tribunephl
-
-Youtube: @dailytribuneph
-
-Twitter: @tribunephl
-
-Instagram: @dailytribuneph
-
-TikTok: @dailytribuneofficial
