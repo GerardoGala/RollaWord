@@ -5,11 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Blog Admin</title>
-<!-- Sveltia CMS reads its settings from config.yml in this same folder -->
-<link href="config.yml" type="application/yaml" rel="cms-config-url">
+<!-- No AdSense snippet here on purpose: this is a private editing page -->
+<link rel="stylesheet" href="/blog/admin.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/turndown@7.2.0/dist/turndown.js" defer></script>
+<script src="/blog/admin.js" defer></script>
 </head>
 <body>
-<!-- No AdSense snippet here on purpose: this is a private login/editing page -->
-<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+
+<header class="bar">
+  <strong>Blog Admin</strong>
+  <span class="grow"></span>
+  <span id="who"></span>
+  <button id="signout" class="linkbtn" type="button" hidden>Sign out</button>
+</header>
+
+<div id="relogin" class="banner" hidden>
+  Your sign-in timed out. Please sign in again and your work will continue.
+  <div id="gsi-button2"></div>
+</div>
+
+<main>
+
+  <section id="screen-login">
+    <h1>Sign in</h1>
+    <p>Use your Google account to write for the San Juan Coastline blog.</p>
+    <div id="gsi-button"></div>
+    <p id="login-msg" class="note"></p>
+  </section>
+
+  <section id="screen-list" hidden>
+    <div class="row-head">
+      <h1>Blog posts</h1>
+      <button id="new-post" type="button" class="primary">+ New post</button>
+    </div>
+    <div id="post-list">Loading&hellip;</div>
+  </section>
+
+  <section id="screen-edit" hidden>
+    <label>Title
+      <input id="f-title" type="text" maxlength="120" autocomplete="off">
+    </label>
+
+    <div class="two">
+      <label>Date
+        <input id="f-date" type="date">
+      </label>
+      <label>Author
+        <input id="f-author" type="text" maxlength="60" autocomplete="off">
+      </label>
+    </div>
+
+    <label>Short description <small>(shown on the blog list and on Google)</small>
+      <textarea id="f-summary" rows="3" maxlength="300"></textarea>
+      <small id="summary-count"></small>
+    </label>
+
+    <div class="cover">
+      <strong>Cover photo (optional)</strong>
+      <img id="cover-img" alt="" hidden>
+      <div class="btns">
+        <button id="cover-pick" type="button">Choose cover photo</button>
+        <button id="cover-remove" type="button" hidden>Remove</button>
+      </div>
+      <label id="cover-alt-wrap" hidden>Describe the cover photo in a few words
+        <input id="f-cover-alt" type="text" maxlength="150" autocomplete="off">
+      </label>
+    </div>
+
+    <label class="check">
+      <input id="f-draft" type="checkbox"> Draft &mdash; keep hidden from the public
+    </label>
+
+    <div class="field-label">Post</div>
+    <div id="toolbar" class="toolbar">
+      <button type="button" data-cmd="bold" aria-label="Bold"><b>B</b></button>
+      <button type="button" data-cmd="italic" aria-label="Italic"><i>I</i></button>
+      <button type="button" data-cmd="h2">Heading</button>
+      <button type="button" data-cmd="h3">Subheading</button>
+      <button type="button" data-cmd="ul">&bull; List</button>
+      <button type="button" data-cmd="ol">1. List</button>
+      <button type="button" data-cmd="quote">&ldquo; Quote</button>
+      <button type="button" data-cmd="link">Link</button>
+      <button type="button" data-cmd="photo">Photo</button>
+    </div>
+    <div id="editor" class="editor" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Post text"></div>
+
+    <div class="actions">
+      <button id="back" type="button">&larr; Back</button>
+      <button id="delete" type="button" class="danger" hidden>Delete</button>
+      <span class="grow"></span>
+      <button id="save" type="button" class="primary">Save</button>
+    </div>
+  </section>
+
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
 </body>
 </html>
