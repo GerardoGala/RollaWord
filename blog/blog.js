@@ -4,7 +4,7 @@
   'use strict';
 
   const BLOG = {
-    repo: 'repo: GerardoGala/RollaWord',   // <-- EDIT: same value as in config.yml
+    repo: 'GerardoGala/RollaWord',   // <-- EDIT: same value as in config.yml
     branch: 'main',                        // <-- EDIT if not "main"
     siteName: 'San Juan Coastline',
     siteUrl: 'https://rollaword.com',
