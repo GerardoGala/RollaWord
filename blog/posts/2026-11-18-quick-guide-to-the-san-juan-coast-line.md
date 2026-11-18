@@ -1,5 +1,5 @@
 ---
-title: "A Quick Guide to the San Juan Coastline"
+title: "A Quick Guide to the San Juan Coast Line"
 slug: "san-juan-coastline-guide"
 date: "2026-11-18"
 author: "Local Explorer"
