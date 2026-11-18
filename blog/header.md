@@ -1,3 +1,0 @@
-# RollaWord Blog
-
-[Home](./) · [RollaWord](../)

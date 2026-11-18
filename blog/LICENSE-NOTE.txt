@@ -1,9 +1,0 @@
-The markdown-pages.js source included in this starter is reproduced from:
-https://github.com/dandalpiaz/markdown-pages.js
-
-The upstream project is MIT-licensed. Before distributing or modifying the
-upstream library, include the complete upstream LICENSE file. This starter
-does not claim authorship of that library.
-
-Showdown is loaded from cdnjs at runtime by the upstream script. We can decide
-later whether to vendor the dependency locally.

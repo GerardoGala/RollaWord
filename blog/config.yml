@@ -1,0 +1,77 @@
+# Sveltia CMS settings for www.rollaword.com/blog/admin.html
+# Paths are relative to the REPOSITORY ROOT (the folder that holds your site).
+
+backend:
+  name: github
+  repo: GerardoGala/RollaWord   # <-- EDIT: e.g. johnsmith/rollaword
+  branch: main                        # <-- EDIT if your branch is not "main"
+
+site_url: https://rollaword.com
+display_url: https://rollaword.com/blog/index.html
+
+# Photos uploaded from the tablet go here
+media_folder: blog/images
+public_folder: /blog/images
+
+collections:
+  - name: posts
+    label: Blog Posts
+    label_singular: Blog Post
+    folder: blog/posts
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
+    editor:
+      preview: false          # keeps the screen uncluttered on a small tablet
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        hint: "Also used as the page title on Google. Keep it under 60 characters."
+
+      - label: Date
+        name: date
+        widget: datetime
+
+      - label: Author
+        name: author
+        widget: string
+
+      - label: Short description
+        name: summary
+        widget: text
+        hint: "One or two sentences. Shown on the blog list and on Google (about 150 characters)."
+        pattern: [".{20,300}", "Please write between 20 and 300 characters."]
+
+      - label: Cover photo
+        name: image
+        widget: image
+        required: false
+
+      - label: Cover photo description
+        name: image_alt
+        widget: string
+        required: false
+        hint: "Describe the photo in a few words, for visually impaired readers and Google."
+
+      - label: Draft (hide from the public)
+        name: draft
+        widget: boolean
+        default: false
+
+      - label: Post
+        name: body
+        widget: markdown
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        editor_components:
+          - image

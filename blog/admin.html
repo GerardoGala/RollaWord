@@ -1,83 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RollaWord Blog — Admin Editor</title>
-  <link rel="stylesheet" href="css/admin.css">
-  <script type="module" src="js/admin.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Blog Admin</title>
+<!-- Sveltia CMS reads its settings from config.yml in this same folder -->
+<link href="config.yml" type="application/yaml" rel="cms-config-url">
 </head>
 <body>
-  <main class="shell">
-    <header class="page-header">
-      <p class="eyebrow">ROLLAWORD BLOG</p>
-      <h1>Article Editor</h1>
-      <p>Write, preview, save, and publish your RollaWord Blog articles.</p>
-    </header>
-
-    <section class="panel" id="loginPanel">
-      <h2>Author Login</h2>
-      <p id="authStatus">Please sign in with your authorized Google account.</p>
-      <button type="button" id="googleSignInButton" class="primary">
-        Sign in with Google
-      </button>
-      <button type="button" id="signOutButton" hidden>
-        Sign out
-      </button>
-    </section>
-
-    <section class="panel">
-      <div class="fields">
-        <label>Article title
-          <input id="articleTitle" type="text" maxlength="140" placeholder="Enter the article title">
-        </label>
-        <label>Subtitle <span class="optional">(optional)</span>
-          <input id="articleSubtitle" type="text" maxlength="200" placeholder="A short description">
-        </label>
-        <label>Article slug
-          <input id="articleSlug" type="text" maxlength="100" placeholder="article-title">
-          <small>Used in the article URL. Lowercase letters, numbers and hyphens.</small>
-        </label>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="editor-heading">
-        <h2>Article body</h2>
-        <span id="saveStatus" class="status" aria-live="polite">Draft is stored in this browser.</span>
-      </div>
-      <div class="toolbar" role="toolbar" aria-label="Text formatting">
-        <button type="button" data-command="bold" title="Bold"><strong>B</strong></button>
-        <button type="button" data-command="italic" title="Italic"><em>I</em></button>
-        <button type="button" data-block="h2" title="Heading">H2</button>
-        <button type="button" data-block="blockquote" title="Quote">❝</button>
-        <button type="button" data-command="insertUnorderedList" title="Bulleted list">• List</button>
-        <button type="button" data-command="insertOrderedList" title="Numbered list">1. List</button>
-        <button type="button" id="linkButton" title="Insert link">Link</button>
-        <button type="button" id="clearFormatButton" title="Clear formatting">Clear</button>
-      </div>
-      <div id="articleBody" class="editor" contenteditable="true" role="textbox"
-           aria-multiline="true" data-placeholder="Start writing your article here..."></div>
-      <div class="editor-actions">
-        <button type="button" id="saveDraftButton">Save Draft</button>
-        <button type="button" id="previewButton">Preview</button>
-        <button type="button" id="publishButton" class="primary">Publish</button>
-        <button type="button" id="downloadButton">Download Markdown (.md)</button>
-      </div>
-    </section>
-
-    <section id="previewPanel" class="panel preview-panel" hidden>
-      <div class="editor-heading">
-        <h2>Article preview</h2>
-        <button id="closePreviewButton" type="button">Close</button>
-      </div>
-      <article id="previewContent" class="preview"></article>
-    </section>
-
-    <footer>
-      <p><a href="./">Return to the public RollaWord Blog</a></p>
-      <p class="note">Save Draft stores your work, Preview displays your article, and Publish will make it available on the public blog once the publishing service is connected.</p>
-    </footer>
-  </main>
+<!-- No AdSense snippet here on purpose: this is a private login/editing page -->
+<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 </body>
 </html>

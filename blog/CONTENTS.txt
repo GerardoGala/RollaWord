@@ -1,1 +1,0 @@
-RollaWord Blog Admin package\n\n- README-INDEX-MARKERS.txt\n- README-SETUP.txt\n- admin.html\n- cloudflare-worker/WORKER-SETTINGS.txt\n- cloudflare-worker/worker.js\n- css/admin.css\n- js/admin-config.js\n- js/admin.js\n\nRead README-SETUP.txt before deployment. Configuration is required.\n
