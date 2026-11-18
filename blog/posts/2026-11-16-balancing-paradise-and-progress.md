@@ -3,8 +3,9 @@ title: "Balancing Paradise and Progress"
 date: "2026-11-16T12:00:00Z"
 author: "Gerardo Gala"
 summary: "Balancing Paradise and Progress"
-draft: true
+draft: false
 ---
+
 # Balancing Paradise and Progress: What’s Happening Along the San Juan, Batangas Coastline
 
 Good day, coastal neighbors and travelers! If you’ve been keeping an eye on our beloved shores in San Juan, Batangas lately, you know that our coastline is buzzing with activity. From grassroots environmental clean-ups to major luxury resort developments, 2026 has proven to be a pivotal year for balancing nature preservation with booming tourism.
