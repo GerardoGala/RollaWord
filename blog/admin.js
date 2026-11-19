@@ -4,8 +4,8 @@
   'use strict';
 
   /* ===== EDIT THESE TWO LINES (copy them from your old admin.js) ===== */
-  const CLIENT_ID = '45397375888-0c26f3h05fdqrq2o9sl3tnhl7hpnd5et.apps.googleusercontent.com';   // <-- EDIT
-  const ENDPOINT = 'https://rollaword-auth.gerardogala1959.workers.dev';
+  const CLIENT_ID = 'PASTE-YOUR-GOOGLE-CLIENT-ID.apps.googleusercontent.com';
+  const ENDPOINT = 'https://PASTE-YOUR-WORKER-ADDRESS.workers.dev';
   /* ==================================================================== */
 
   // what a post is allowed to contain
@@ -369,11 +369,20 @@
     }
   });
 
-  // paste as plain text so messy formatting from other apps does not come along
+  // Paste as plain text so messy formatting from other apps does not come along.
+  // Exception: if the pasted text is HTML source (for example copied from an old
+  // post's code), turn it into a real formatted post instead of showing the tags.
+  const looksLikeHtml = (t) => /^\s*<(p|h[1-6]|div|ul|ol|blockquote|figure|img)\b[^>]*>/i.test(t) &&
+    /<\/(p|h[1-6]|div|ul|ol|blockquote|figure)>/i.test(t);
   $('editor').addEventListener('paste', (e) => {
     e.preventDefault();
     const text = (e.clipboardData || window.clipboardData).getData('text/plain');
-    document.execCommand('insertText', false, text);
+    if (looksLikeHtml(text)) {
+      document.execCommand('insertHTML', false, DOMPurify.sanitize(text, PURIFY));
+    } else {
+      document.execCommand('insertText', false, text);
+    }
+    markDirty();
   });
   $('editor').addEventListener('input', markDirty);
 

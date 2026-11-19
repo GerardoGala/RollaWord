@@ -89,3 +89,6 @@ button:disabled { opacity: .55; }
 }
 #toast.show { opacity: 1; }
 #toast.error { background: #a11d1d; }
+
+.owner { margin-top: 2.5rem; font-size: .85rem; color: #5b6673; }
+.owner button { min-height: 40px; font-size: .85rem; }
