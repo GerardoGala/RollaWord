@@ -1,9 +1,19 @@
-/* Blog admin: Google sign-in + a simple tablet-friendly editor. Plain browser JS. */
+/* Blog admin: Google sign-in + a simple tablet-friendly editor that edits and saves HTML.
+   Plain browser JavaScript. */
 (function () {
   'use strict';
 
-  const CLIENT_ID = '45397375888-0c26f3h05fdqrq2o9sl3tnhl7hpnd5et.apps.googleusercontent.com';   // <-- EDIT
-  const ENDPOINT = 'https://rollaword-auth.gerardogala1959.workers.dev';
+  /* ===== EDIT THESE TWO LINES (copy them from your old admin.js) ===== */
+  const CLIENT_ID = 'PASTE-YOUR-GOOGLE-CLIENT-ID.apps.googleusercontent.com';
+  const ENDPOINT = 'https://PASTE-YOUR-WORKER-ADDRESS.workers.dev';
+  /* ==================================================================== */
+
+  // what a post is allowed to contain
+  const PURIFY = {
+    ALLOWED_TAGS: ['p', 'br', 'div', 'h2', 'h3', 'h4', 'strong', 'b', 'em', 'i', 'u', 'ul', 'ol', 'li', 'blockquote', 'a', 'img', 'figure', 'figcaption', 'hr'],
+    ALLOWED_ATTR: ['href', 'src', 'alt', 'title', 'dir']
+  };
+
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -11,7 +21,7 @@
   let idToken = null;
   let user = null;
   let waitingForSignIn = null;   // function to call once a fresh sign-in arrives
-  let post = null;               // { slug, sha, cover, coverPreview }
+  let post = null;               // { slug, isNew, cover, coverPreview }
   let dirty = false;
   let savedRange = null;
   let inited = false;
@@ -29,7 +39,7 @@
     t.textContent = msg;
     t.className = 'show' + (isError ? ' error' : '');
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { t.className = ''; }, isError ? 6000 : 3500);
+    toastTimer = setTimeout(() => { t.className = ''; }, isError ? 7000 : 3500);
   }
 
   function jwtPayload(token) {
@@ -49,6 +59,11 @@
   const todayLocal = () => {
     const d = new Date();
     return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  };
+
+  const niceDate = (s) => {
+    const d = new Date(s + 'T12:00:00');
+    return isNaN(d) ? '' : d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   };
 
   const markDirty = () => { dirty = true; };
@@ -131,36 +146,18 @@
 
   /* ---------- post list ---------- */
 
-  function parseFrontMatter(text) {
-    const m = text.replace(/^﻿/, '').match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
-    let meta = {};
-    let body = text;
-    if (m) {
-      try { meta = jsyaml.load(m[1]) || {}; } catch (e) { meta = {}; }
-      body = m[2];
-    }
-    return { meta: meta, body: body };
-  }
-
   async function loadList() {
     show('list');
     const box = $('post-list');
     box.textContent = 'Loading…';
     try {
       const res = await api('list');
-      const rows = res.posts.map((p) => {
-        let m = {};
-        try { m = jsyaml.load(p.head) || {}; } catch (e) { m = {}; }
-        const d = m.date ? new Date(m.date) : null;
-        return { slug: p.slug, title: m.title || p.slug, date: d && !isNaN(d) ? d : null, draft: m.draft === true };
-      }).sort((a, b) => (b.date ? b.date.getTime() : 0) - (a.date ? a.date.getTime() : 0));
-
       box.textContent = '';
-      if (!rows.length) {
+      if (!res.posts.length) {
         box.textContent = 'No posts yet. Tap “+ New post” to write the first one.';
         return;
       }
-      rows.forEach((r) => {
+      res.posts.forEach((r) => {
         const row = document.createElement('div');
         row.className = 'post-row';
         const info = document.createElement('div');
@@ -170,7 +167,7 @@
         t.textContent = r.title;
         const m = document.createElement('div');
         m.className = 'm';
-        m.textContent = r.date ? r.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+        m.textContent = niceDate(r.date);
         if (r.draft) {
           const b = document.createElement('span');
           b.className = 'badge';
@@ -188,7 +185,7 @@
         if (!r.draft) {
           const a = document.createElement('a');
           a.className = 'view';
-          a.href = '/blog/post.html?post=' + encodeURIComponent(r.slug);
+          a.href = '/blog/posts/' + encodeURIComponent(r.slug) + '.html';
           a.target = '_blank';
           a.rel = 'noopener';
           a.textContent = 'View';
@@ -202,22 +199,6 @@
   }
 
   /* ---------- editor form ---------- */
-
-  const td = new TurndownService({
-    headingStyle: 'atx',
-    bulletListMarker: '-',
-    codeBlockStyle: 'fenced',
-    emDelimiter: '*'
-  });
-  // photos: use the real web path, not the temporary preview inside the editor
-  td.addRule('sjcImg', {
-    filter: 'img',
-    replacement: function (content, node) {
-      const src = node.getAttribute('data-path') || node.getAttribute('src') || '';
-      const alt = (node.getAttribute('alt') || '').replace(/[\[\]\n]/g, ' ').trim();
-      return '![' + alt + '](' + src + ')';
-    }
-  });
 
   function updateCover() {
     const has = !!post.coverPreview;
@@ -235,22 +216,21 @@
 
   function fillForm(meta, bodyHtml) {
     $('f-title').value = meta.title || '';
-    let d = meta.date ? new Date(meta.date) : null;
-    $('f-date').value = d && !isNaN(d) ? d.toISOString().slice(0, 10) : todayLocal();
+    $('f-date').value = meta.date || todayLocal();
     $('f-author').value = meta.author || localStorage.getItem('blogAuthor') || (user && user.name) || '';
     $('f-summary').value = meta.summary || '';
-    $('f-cover-alt').value = meta.image_alt || '';
+    $('f-cover-alt').value = meta.imageAlt || '';
     $('f-draft').checked = meta.draft === true;
     $('editor').innerHTML = bodyHtml || '<p><br></p>';
     updateSummaryCount();
     updateCover();
-    $('delete').hidden = !post.sha;
+    $('delete').hidden = post.isNew;
     dirty = false;
     show('edit');
   }
 
   function newPost() {
-    post = { slug: null, sha: null, cover: '', coverPreview: '' };
+    post = { slug: null, isNew: true, cover: '', coverPreview: '' };
     fillForm({}, '');
   }
 
@@ -258,10 +238,8 @@
     try {
       toast('Opening…');
       const res = await api('get', { slug: slug });
-      const fm = parseFrontMatter(res.content);
-      post = { slug: slug, sha: res.sha, cover: fm.meta.image || '', coverPreview: fm.meta.image || '' };
-      const html = DOMPurify.sanitize(marked.parse(fm.body));
-      fillForm(fm.meta, html);
+      post = { slug: slug, isNew: false, cover: res.meta.image || '', coverPreview: res.meta.image || '' };
+      fillForm(res.meta, DOMPurify.sanitize(res.body, PURIFY));
     } catch (e) {
       toast(e.message, true);
     }
@@ -284,8 +262,7 @@
   });
 
   function focusEditor() {
-    const ed = $('editor');
-    ed.focus();
+    $('editor').focus();
     if (savedRange) {
       const s = window.getSelection();
       s.removeAllRanges();
@@ -408,23 +385,22 @@
     markDirty();
   });
 
-  /* ---------- save, delete, back ---------- */
+  /* ---------- save, delete, rebuild, back ---------- */
 
-  function buildFile(f) {
-    const lines = [
-      '---',
-      'title: ' + JSON.stringify(f.title),
-      'date: ' + JSON.stringify(f.date + 'T12:00:00Z'),
-      'author: ' + JSON.stringify(f.author),
-      'summary: ' + JSON.stringify(f.summary)
-    ];
-    if (post.cover) {
-      lines.push('image: ' + JSON.stringify(post.cover));
-      lines.push('image_alt: ' + JSON.stringify(f.coverAlt));
-    }
-    lines.push('draft: ' + (f.draft ? 'true' : 'false'));
-    lines.push('---', '');
-    return lines.join('\n') + '\n' + f.body + '\n';
+  // the post text as clean HTML, with photos pointing at their real web address
+  function bodyForSave() {
+    const clone = $('editor').cloneNode(true);
+    clone.querySelectorAll('img').forEach((img) => {
+      const p = img.getAttribute('data-path');
+      if (p) { img.setAttribute('src', p); img.removeAttribute('data-path'); }
+      ['style', 'width', 'height'].forEach((a) => img.removeAttribute(a));
+    });
+    let html = DOMPurify.sanitize(clone.innerHTML, PURIFY);
+    html = html.replace(/&nbsp;/g, ' ')
+      .replace(/^(\s*<p>(\s|<br>)*<\/p>)+/i, '')
+      .replace(/(<p>(\s|<br>)*<\/p>\s*)+$/i, '')
+      .trim();
+    return html;
   }
 
   async function save() {
@@ -435,7 +411,7 @@
       summary: $('f-summary').value.replace(/\s+/g, ' ').trim(),
       coverAlt: $('f-cover-alt').value.trim(),
       draft: $('f-draft').checked,
-      body: td.turndown($('editor').innerHTML).trim()
+      body: bodyForSave()
     };
     if (!f.title) return toast('Please add a title.', true);
     if (!f.date) return toast('Please choose a date.', true);
@@ -444,14 +420,20 @@
       return toast('The short description needs 20 to 300 characters (now ' + f.summary.length + ').', true);
     }
     if (post.cover && !f.coverAlt) return toast('Please describe the cover photo in a few words.', true);
-    if (!f.body) return toast('The post is empty.', true);
+    if (!f.body || !f.body.replace(/<[^>]*>/g, '').trim() && f.body.indexOf('<img') < 0) return toast('The post is empty.', true);
+    if (/src\s*=\s*["']data:/i.test(f.body)) return toast('A photo has not finished uploading. Please wait a moment and try again.', true);
 
     const slug = post.slug || (f.date + '-' + slugify(f.title));
     $('save').disabled = true;
     try {
-      const res = await api('save', { slug: slug, content: buildFile(f), sha: post.sha || undefined });
+      await api('save', {
+        slug: slug,
+        isNew: post.isNew,
+        meta: { title: f.title, date: f.date, author: f.author, summary: f.summary, image: post.cover, imageAlt: f.coverAlt, draft: f.draft },
+        body: f.body
+      });
       post.slug = slug;
-      post.sha = res.sha;
+      post.isNew = false;
       dirty = false;
       $('delete').hidden = false;
       try { localStorage.setItem('blogAuthor', f.author); } catch (e) { /* ignore */ }
@@ -466,20 +448,40 @@
   }
 
   async function removePost() {
-    if (!post.sha || !post.slug) return;
-    if (!confirm('Delete this post for good? This cannot be undone from here.')) return;
+    if (post.isNew || !post.slug) return;
+    if (!confirm('Delete this post for good?')) return;
     try {
-      await api('delete', { slug: post.slug, sha: post.sha });
+      await api('delete', { slug: post.slug });
       dirty = false;
-      toast('Post deleted.');
+      toast('Post deleted. The blog will update in 1 to 2 minutes.');
       loadList();
     } catch (e) {
       toast(e.message, true);
     }
   }
 
+  async function rebuildAll() {
+    if (!confirm('Rebuild every blog page from blog/template.html? This takes a moment.')) return;
+    $('rebuild').disabled = true;
+    try {
+      let offset = 0;
+      for (let i = 0; i < 200; i++) {
+        toast('Rebuilding…');
+        const r = await api('rebuild', { offset: offset });
+        if (r.done) break;
+        offset = r.next;
+      }
+      toast('All pages rebuilt. They go live in 1 to 2 minutes.');
+    } catch (e) {
+      toast(e.message, true);
+    } finally {
+      $('rebuild').disabled = false;
+    }
+  }
+
   $('save').addEventListener('click', save);
   $('delete').addEventListener('click', removePost);
+  $('rebuild').addEventListener('click', rebuildAll);
   $('back').addEventListener('click', () => {
     if (dirty && !confirm('You have unsaved changes. Leave without saving?')) return;
     dirty = false;
