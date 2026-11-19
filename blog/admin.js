@@ -4,8 +4,8 @@
   'use strict';
 
   /* ===== EDIT THESE TWO LINES (copy them from your old admin.js) ===== */
-  const CLIENT_ID = 'PASTE-YOUR-GOOGLE-CLIENT-ID.apps.googleusercontent.com';
-  const ENDPOINT = 'https://PASTE-YOUR-WORKER-ADDRESS.workers.dev';
+  const CLIENT_ID = '45397375888-0c26f3h05fdqrq2o9sl3tnhl7hpnd5et.apps.googleusercontent.com';   // <-- EDIT
+  const ENDPOINT = 'https://rollaword-auth.gerardogala1959.workers.dev';
   /* ==================================================================== */
 
   // what a post is allowed to contain
