@@ -1,0 +1,15 @@
+{
+ "posts": [
+  {
+   "slug": "2026-11-19-blog-test",
+   "title": "Blog test",
+   "author": "Gerardo Gala",
+   "summary": "test only. test only. test only. test only. test only. test only. test only. test only.",
+   "date": "2026-11-19",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-19T14:41:44.392Z"
+  }
+ ]
+}
