@@ -12,17 +12,6 @@
    "modified": "2026-11-19T23:17:30.547Z"
   },
   {
-   "slug": "2026-11-20-windsurfing-101",
-   "title": "Windsurfing 101",
-   "author": "Gerardo Gala",
-   "summary": "As expert windsurfers, we really have to think back to remember a time when we weren't familiar with every in and out of our favorite sport. But we get that not everyone is an expert. Many people are still learning about windsurfing, so we’ve created this handy guide to teach you the basics.",
-   "date": "2026-10-20",
-   "image": "/blog/images/1795130577455-tahe-beach-185.jpg",
-   "imageAlt": "Tahe Windsurf",
-   "draft": false,
-   "modified": "2026-11-19T23:25:52.416Z"
-  },
-  {
    "slug": "2026-11-04-my-trip-to-hugom",
    "title": "My Trip to Hugom",
    "author": "Gerardo Gala",
@@ -54,6 +43,17 @@
    "imageAlt": "",
    "draft": false,
    "modified": "2026-11-19T23:34:47.914Z"
+  },
+  {
+   "slug": "2026-11-20-windsurfing-101",
+   "title": "Windsurfing 101",
+   "author": "Gerardo Gala",
+   "summary": "As expert windsurfers, we really have to think back to remember a time when we weren't familiar with every in and out of our favorite sport.",
+   "date": "2026-10-20",
+   "image": "/blog/images/1795130577455-tahe-beach-185.jpg",
+   "imageAlt": "Tahe Windsurf",
+   "draft": false,
+   "modified": "2026-11-19T23:42:12.238Z"
   }
  ]
 }
