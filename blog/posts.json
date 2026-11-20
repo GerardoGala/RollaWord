@@ -67,17 +67,6 @@
    "modified": "2026-11-20T00:54:34.639Z"
   },
   {
-   "slug": "2026-11-20-potluck-and-night-paddling",
-   "title": "Potluck and Night Paddling",
-   "author": "Gerardo Gala",
-   "summary": "The beach is more fun at night and when there's food.",
-   "date": "2026-11-20",
-   "image": "/blog/images/1795135689254-1000016491.jpg",
-   "imageAlt": "Portable Butane Stove",
-   "draft": false,
-   "modified": "2026-11-20T01:47:43.738Z"
-  },
-  {
    "slug": "2026-11-14-paddling-to-club-laiya",
    "title": "Paddling to Club Laiya",
    "author": "Gerardo Gala",
@@ -109,6 +98,17 @@
    "imageAlt": "Longboarding",
    "draft": false,
    "modified": "2026-11-20T07:46:06.471Z"
+  },
+  {
+   "slug": "2026-11-20-potluck-and-night-paddling",
+   "title": "Potluck and Night Paddling",
+   "author": "Gerardo Gala",
+   "summary": "The beach is more fun at night and when there's food.",
+   "date": "2026-11-19",
+   "image": "/blog/images/1795135689254-1000016491.jpg",
+   "imageAlt": "Portable Butane Stove",
+   "draft": false,
+   "modified": "2026-11-20T07:47:13.829Z"
   }
  ]
 }
