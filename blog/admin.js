@@ -146,18 +146,49 @@
 
   /* ---------- post list ---------- */
 
-  async function loadList() {
-    show('list');
+  let listPosts = [];
+  let listFilter = 'all';
+  const TAG_LABEL = { coastline: 'Coastline', farmland: 'Farmland' };
+
+  function showListFilter() {
+    document.querySelectorAll('#list-filter button').forEach((b) => {
+      const on = b.dataset.f === listFilter;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.style.background = on ? '#006ABC' : '#fff';
+      b.style.color = on ? '#fff' : '#006ABC';
+    });
+  }
+
+  document.querySelectorAll('#list-filter button').forEach((b) => {
+    b.addEventListener('click', () => {
+      // tap a section to show only its posts; tap it again to show everything
+      listFilter = listFilter === b.dataset.f ? 'all' : b.dataset.f;
+      showListFilter();
+      renderList();
+    });
+  });
+
+  function renderList() {
     const box = $('post-list');
-    box.textContent = 'Loading…';
-    try {
-      const res = await api('list');
-      box.textContent = '';
-      if (!res.posts.length) {
-        box.textContent = 'No posts yet. Tap “+ New post” to write the first one.';
-        return;
-      }
-      res.posts.forEach((r) => {
+    box.textContent = '';
+    if (!listPosts.length) {
+      box.textContent = 'No posts yet. Tap “+ New post” to write the first one.';
+      return;
+    }
+    const shown = listPosts.filter((r) =>
+      listFilter === 'all' || (r.tags && r.tags.length ? r.tags : ['coastline']).indexOf(listFilter) >= 0);
+    if (!shown.length) {
+      box.textContent = 'No posts in this section yet.';
+      return;
+    }
+    if (listFilter !== 'all') {
+      const note = document.createElement('p');
+      note.className = 'note';
+      note.textContent = 'Showing ' + shown.length + ' of ' + listPosts.length + ' posts. Tap the section again to see all.';
+      box.appendChild(note);
+    }
+    {
+      shown.forEach((r) => {
         const row = document.createElement('div');
         row.className = 'post-row';
         const info = document.createElement('div');
@@ -167,7 +198,8 @@
         t.textContent = r.title;
         const m = document.createElement('div');
         m.className = 'm';
-        m.textContent = niceDate(r.date);
+        m.textContent = niceDate(r.date) + ' · ' +
+          (r.tags && r.tags.length ? r.tags : ['coastline']).map((k) => TAG_LABEL[k]).join(' + ') + ' ';
         if (r.draft) {
           const b = document.createElement('span');
           b.className = 'badge';
@@ -193,6 +225,18 @@
         }
         box.appendChild(row);
       });
+    }
+  }
+
+  async function loadList() {
+    show('list');
+    const box = $('post-list');
+    box.textContent = 'Loading…';
+    try {
+      const res = await api('list');
+      listPosts = res.posts;
+      showListFilter();
+      renderList();
     } catch (e) {
       box.textContent = e.message;
     }

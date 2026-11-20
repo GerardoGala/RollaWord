@@ -336,23 +336,30 @@ function renderIndex(tpl, posts) {
   const css = '<style>.sjc-list{list-style:none;margin:0;padding:0}.sjc-item{display:flex;gap:1rem;padding:1.25rem 0;' +
     'border-bottom:1px solid rgba(0,0,0,.12)}.sjc-item img{width:140px;height:95px;object-fit:cover;border-radius:6px;flex:none}' +
     '.sjc-item h2{margin:0 0 .25rem;font-size:1.3rem}.sjc-meta{font-size:.9rem;opacity:.7;margin:0 0 .5rem}' +
-    '.sjc-filter{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 .5rem}' +
-    '.sjc-filter a{padding:.35rem 1rem;border:2px solid #006ABC;border-radius:999px;color:#006ABC;font-weight:bold;text-decoration:none}' +
-    '.sjc-filter a.on{background:#006ABC;color:#fff}' +
+    '.sjc-section{margin:0 0 1rem}.sjc-section-label{font-weight:bold;margin:0 0 .4rem}' +
+    '.sjc-filter{display:flex;gap:.6rem}' +
+    '.sjc-filter button{flex:1;padding:.8rem;font-size:1.05rem;font-weight:bold;font-family:inherit;border:2px solid #006ABC;' +
+    'border-radius:8px;background:#fff;color:#006ABC;cursor:pointer}' +
+    '.sjc-filter button.on{background:#006ABC;color:#fff}' +
     '@media(max-width:560px){.sjc-item{flex-direction:column}.sjc-item img{width:100%;height:auto;aspect-ratio:16/9}}</style>';
-  const filter = '<nav class="sjc-filter" aria-label="Filter posts">' +
-    '<a href="' + SITE + '/blog/index.html" data-f="all">All</a>' +
-    TAG_KEYS.map((k) => '<a href="' + SITE + '/blog/index.html?tag=' + k + '" data-f="' + k + '">' + TAG_NAMES[k] + '</a>').join('') +
-    '</nav>';
-  // Runs in the visitor's browser: shows only the posts for ?tag=coastline or ?tag=farmland.
-  const script = '<script>(function(){var t=new URLSearchParams(location.search).get("tag")||"all";' +
-    'if(t!=="coastline"&&t!=="farmland")t="all";' +
-    'var n=0;document.querySelectorAll(".sjc-item").forEach(function(li){' +
-    'var show=t==="all"||(" "+li.getAttribute("data-tags")+" ").indexOf(" "+t+" ")>=0;' +
+  // Same two big Section buttons as the editor. Tap one to show only that section; tap it again to show everything.
+  const filter = '<div class="sjc-section"><div class="sjc-section-label">Section</div><div class="sjc-filter">' +
+    TAG_KEYS.map((k) => '<button type="button" data-f="' + k + '">' + TAG_NAMES[k] + '</button>').join('') +
+    '</div></div>';
+  // Runs in the visitor's browser. Also understands ?tag=coastline / ?tag=farmland (the chips on each post link there).
+  const script = '<script>(function(){var cur=new URLSearchParams(location.search).get("tag");' +
+    'if(cur!=="coastline"&&cur!=="farmland")cur="all";' +
+    'var items=document.querySelectorAll(".sjc-item"),btns=document.querySelectorAll(".sjc-filter button");' +
+    'function apply(){var n=0;items.forEach(function(li){' +
+    'var show=cur==="all"||(" "+li.getAttribute("data-tags")+" ").indexOf(" "+cur+" ")>=0;' +
     'li.style.display=show?"":"none";if(show)n++;});' +
-    'document.querySelectorAll(".sjc-filter a").forEach(function(a){if(a.getAttribute("data-f")===t)a.className="on";});' +
+    'btns.forEach(function(b){var on=b.getAttribute("data-f")===cur;b.className=on?"on":"";b.setAttribute("aria-pressed",on?"true":"false");});' +
     'var c=document.getElementById("sjc-count");if(c)c.textContent="("+n+")";' +
-    'var e=document.getElementById("sjc-empty");if(e)e.style.display=n?"none":"";})();</script>';
+    'var e=document.getElementById("sjc-empty");if(e)e.style.display=n?"none":"";}' +
+    'btns.forEach(function(b){b.addEventListener("click",function(){var f=b.getAttribute("data-f");' +
+    'cur=cur===f?"all":f;' +
+    'try{history.replaceState(null,"",cur==="all"?location.pathname:location.pathname+"?tag="+cur);}catch(x){}' +
+    'apply();});});apply();})();</script>';
   const main = '<main class="post"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper">' +
     '<h1>Blog <sup id="sjc-count">(' + list.length + ')</sup></h1></div></header></div><div class="entry-wrapper content__entry">' + css + filter +
     (items ? '<ul class="sjc-list">' + items + '</ul>' : '') +
