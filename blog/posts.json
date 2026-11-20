@@ -128,21 +128,6 @@
    "modified": "2026-11-20T12:03:32.719Z"
   },
   {
-   "slug": "2026-11-20-police-encounter-with-npa",
-   "title": "Police Encounter with NPA",
-   "author": "Lucas Timothy",
-   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
-   "date": "2026-11-20",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "tags": [
-    "coastline",
-    "farmland"
-   ],
-   "modified": "2026-11-20T12:36:50.007Z"
-  },
-  {
    "slug": "2026-10-18-san-juan-sunset",
    "title": "San Juan Sunset",
    "author": "Lucas Timothy",
@@ -155,6 +140,21 @@
     "coastline"
    ],
    "modified": "2026-11-20T14:30:36.631Z"
+  },
+  {
+   "slug": "2026-11-20-police-encounter-with-npa",
+   "title": "Police Encounter with NPA",
+   "author": "Lucas Timothy",
+   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
+   "date": "2026-11-20",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "tags": [
+    "coastline",
+    "farmland"
+   ],
+   "modified": "2026-11-20T22:51:43.102Z"
   }
  ]
 }
