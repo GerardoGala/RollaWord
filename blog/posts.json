@@ -120,6 +120,20 @@
    "imageAlt": "",
    "draft": false,
    "modified": "2026-11-20T09:14:56.167Z"
+  },
+  {
+   "slug": "2026-10-08-jacob-and-the-goats",
+   "title": "Jacob and the Goats",
+   "author": "Gerardo Gala",
+   "summary": "Jacob playing with the goats.",
+   "date": "2026-10-08",
+   "image": "/blog/images/1795175498874-1000015872.jpg",
+   "imageAlt": "Jacob and the goats",
+   "draft": false,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-20T11:53:43.088Z"
   }
  ]
 }
