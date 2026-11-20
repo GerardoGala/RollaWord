@@ -100,17 +100,6 @@
    "modified": "2026-11-20T07:47:13.829Z"
   },
   {
-   "slug": "2026-11-20-police-encounter-with-npa",
-   "title": "Police Encounter with NPA",
-   "author": "Gerardo Gala",
-   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
-   "date": "2026-11-20",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "modified": "2026-11-20T08:20:20.619Z"
-  },
-  {
    "slug": "2026-10-07-saling-and-padling",
    "title": "Sailing and Paddling",
    "author": "Lucas Timothy",
@@ -120,6 +109,17 @@
    "imageAlt": "Sailing and paddling",
    "draft": false,
    "modified": "2026-11-20T09:06:18.235Z"
+  },
+  {
+   "slug": "2026-11-20-police-encounter-with-npa",
+   "title": "Police Encounter with NPA",
+   "author": "Lucas Timothy",
+   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
+   "date": "2026-11-20",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-20T09:08:27.961Z"
   }
  ]
 }
