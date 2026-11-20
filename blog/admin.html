@@ -39,6 +39,11 @@
       <h1>Blog posts</h1>
       <button id="new-post" type="button" class="primary">+ New post</button>
     </div>
+    <div id="list-filter" style="display:flex;gap:.5rem;margin:0 0 1rem">
+      <button type="button" data-f="all" aria-pressed="true" style="padding:.5rem 1.1rem;font-weight:bold;border:2px solid #006ABC;border-radius:999px;cursor:pointer">All</button>
+      <button type="button" data-f="coastline" aria-pressed="false" style="padding:.5rem 1.1rem;font-weight:bold;border:2px solid #006ABC;border-radius:999px;cursor:pointer">Coastline</button>
+      <button type="button" data-f="farmland" aria-pressed="false" style="padding:.5rem 1.1rem;font-weight:bold;border:2px solid #006ABC;border-radius:999px;cursor:pointer">Farmland</button>
+    </div>
     <div id="post-list">Loading&hellip;</div>
     <p class="owner">Site owner only:
       <button id="rebuild" type="button">Rebuild all pages</button>
