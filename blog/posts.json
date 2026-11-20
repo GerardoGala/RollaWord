@@ -67,17 +67,6 @@
    "modified": "2026-11-20T00:54:34.639Z"
   },
   {
-   "slug": "2026-11-14-paddling-to-club-laiya",
-   "title": "Paddling to Club Laiya",
-   "author": "Gerardo Gala",
-   "summary": "Paddling with Prav to Club Laiya at night so we can see the lights on the cocoons.",
-   "date": "2026-11-14",
-   "image": "/blog/images/1795140570000-1000016388.jpg",
-   "imageAlt": "Prav and Divine",
-   "draft": false,
-   "modified": "2026-11-20T02:10:05.941Z"
-  },
-  {
    "slug": "2026-11-20-longboarding-at-the-beach",
    "title": "Longboarding at the beach",
    "author": "Gerardo Gala",
@@ -120,6 +109,17 @@
    "imageAlt": "Portable Butane Stove",
    "draft": false,
    "modified": "2026-11-20T09:10:54.171Z"
+  },
+  {
+   "slug": "2026-11-14-paddling-to-club-laiya",
+   "title": "Paddling to Club Laiya",
+   "author": "Lucas Timothy",
+   "summary": "Paddling with Prav to Club Laiya at night so we can see the lights on the cocoons.",
+   "date": "2026-11-14",
+   "image": "/blog/images/1795140570000-1000016388.jpg",
+   "imageAlt": "Prav and Divine",
+   "draft": false,
+   "modified": "2026-11-20T09:11:15.774Z"
   }
  ]
 }
