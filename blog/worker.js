@@ -7,11 +7,17 @@
   - On Save, builds real HTML pages (using blog/template.html, copied from a Publii post):
       blog/posts/<name>.html   the post page
       the previous/next links on the neighbouring posts
-      blog/index.html          the blog listing, with the post count
+      blog/index.html          the blog listing, with the post count and Coastline / Farmland filter
       blog/sitemap.xml         the blog sitemap
       blog/posts.json          the list of posts (used by the editor)
     and saves all of them to GitHub in ONE commit, so Vercel deploys once.
   - Only writes inside the blog folder.
+
+  TAGS (new)
+  - There are exactly two tags: coastline and farmland. A post has one or both.
+  - A post with no tag saved yet counts as coastline.
+  - Press "Rebuild all pages" once after pasting this Worker: it writes the
+    coastline tag into blog/posts.json for every existing post and rebuilds all pages.
 
   Worker Variables and Secrets:
     GOOGLE_CLIENT_ID   your Google OAuth client ID
@@ -43,6 +49,10 @@ const MAX_BODY_CHARS = 300 * 1024;
 const MAX_IMAGE_B64 = 3 * 1024 * 1024;
 const REBUILD_BATCH = 25;
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+// the only two tags: key (stored in posts.json) and the name shown to readers
+const TAG_KEYS = ['coastline', 'farmland'];
+const TAG_NAMES = { coastline: 'Coastline', farmland: 'Farmland' };
 
 class Fail extends Error {
   constructor(status, message, conflict) {
@@ -99,6 +109,23 @@ const jsonForScript = (o) => JSON.stringify(o).replace(/</g, '\\u003c');
 // one pass only, so text inside values is never treated as a placeholder
 function fill(str, map) {
   return str.replace(/\{\{([A-Z_]+)\}\}/g, (m, k) => (Object.prototype.hasOwnProperty.call(map, k) ? map[k] : ''));
+}
+
+/* ---------- tags ---------- */
+
+// the post's tags, always valid, always in the same order; no tag saved yet = coastline
+function postTags(p) {
+  const have = Array.isArray(p && p.tags) ? p.tags : [];
+  const t = TAG_KEYS.filter((k) => have.indexOf(k) >= 0);
+  return t.length ? t : ['coastline'];
+}
+
+function tagChips(p) {
+  const chips = postTags(p).map((k) =>
+    '<a href="' + SITE + '/blog/index.html?tag=' + k + '" style="display:inline-block;margin:0 .4rem .4rem 0;padding:.2rem .7rem;' +
+    'border:2px solid #006ABC;border-radius:999px;color:#006ABC;font-size:.85rem;font-weight:bold;text-decoration:none">' +
+    TAG_NAMES[k] + '</a>').join('');
+  return '<div class="sjc-tags" style="margin:0 0 1rem">' + chips + '</div>';
 }
 
 /* ---------- Google sign-in ---------- */
@@ -287,7 +314,7 @@ function renderPost(tpl, p, bodyHtml, nb) {
     AUTHOR: esc(p.author),
     DATE_ISO: p.date + 'T12:00',
     DATE_HUMAN: humanDate(p.date),
-    COVER: cover,
+    COVER: tagChips(p) + cover,   // tag chips sit above the cover photo, so template.html needs no change
     BODY: bodyHtml,
     PREV: p.draft ? '' : navHtml('prev', nb.prev),
     NEXT: p.draft ? '' : navHtml('next', nb.next)
@@ -298,19 +325,38 @@ function renderIndex(tpl, posts) {
   const list = ordered(posts).reverse();   // newest first
   const items = list.map((p) => {
     const url = pageUrl(p.slug);
+    const tags = postTags(p);
     const img = p.image
       ? '<a href="' + url + '"><img src="' + esc(p.image) + '" alt="' + esc(p.imageAlt) + '" loading="lazy"></a>'
       : '';
-    return '<li class="sjc-item">' + img + '<div><h2><a href="' + url + '">' + esc(p.title) + '</a></h2>' +
-      '<p class="sjc-meta">' + esc(humanDate(p.date)) + ' &middot; ' + esc(p.author) + '</p><p>' + esc(p.summary) + '</p></div></li>';
+    const label = tags.map((k) => TAG_NAMES[k]).join(' &middot; ');
+    return '<li class="sjc-item" data-tags="' + tags.join(' ') + '">' + img + '<div><h2><a href="' + url + '">' + esc(p.title) + '</a></h2>' +
+      '<p class="sjc-meta">' + esc(humanDate(p.date)) + ' &middot; ' + esc(p.author) + ' &middot; ' + label + '</p><p>' + esc(p.summary) + '</p></div></li>';
   }).join('');
   const css = '<style>.sjc-list{list-style:none;margin:0;padding:0}.sjc-item{display:flex;gap:1rem;padding:1.25rem 0;' +
     'border-bottom:1px solid rgba(0,0,0,.12)}.sjc-item img{width:140px;height:95px;object-fit:cover;border-radius:6px;flex:none}' +
     '.sjc-item h2{margin:0 0 .25rem;font-size:1.3rem}.sjc-meta{font-size:.9rem;opacity:.7;margin:0 0 .5rem}' +
+    '.sjc-filter{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 .5rem}' +
+    '.sjc-filter a{padding:.35rem 1rem;border:2px solid #006ABC;border-radius:999px;color:#006ABC;font-weight:bold;text-decoration:none}' +
+    '.sjc-filter a.on{background:#006ABC;color:#fff}' +
     '@media(max-width:560px){.sjc-item{flex-direction:column}.sjc-item img{width:100%;height:auto;aspect-ratio:16/9}}</style>';
+  const filter = '<nav class="sjc-filter" aria-label="Filter posts">' +
+    '<a href="' + SITE + '/blog/index.html" data-f="all">All</a>' +
+    TAG_KEYS.map((k) => '<a href="' + SITE + '/blog/index.html?tag=' + k + '" data-f="' + k + '">' + TAG_NAMES[k] + '</a>').join('') +
+    '</nav>';
+  // Runs in the visitor's browser: shows only the posts for ?tag=coastline or ?tag=farmland.
+  const script = '<script>(function(){var t=new URLSearchParams(location.search).get("tag")||"all";' +
+    'if(t!=="coastline"&&t!=="farmland")t="all";' +
+    'var n=0;document.querySelectorAll(".sjc-item").forEach(function(li){' +
+    'var show=t==="all"||(" "+li.getAttribute("data-tags")+" ").indexOf(" "+t+" ")>=0;' +
+    'li.style.display=show?"":"none";if(show)n++;});' +
+    'document.querySelectorAll(".sjc-filter a").forEach(function(a){if(a.getAttribute("data-f")===t)a.className="on";});' +
+    'var c=document.getElementById("sjc-count");if(c)c.textContent="("+n+")";' +
+    'var e=document.getElementById("sjc-empty");if(e)e.style.display=n?"none":"";})();</script>';
   const main = '<main class="post"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper">' +
-    '<h1>Blog <sup>(' + list.length + ')</sup></h1></div></header></div><div class="entry-wrapper content__entry">' + css +
-    (items ? '<ul class="sjc-list">' + items + '</ul>' : '<p>No posts yet. Please check back soon.</p>') +
+    '<h1>Blog <sup id="sjc-count">(' + list.length + ')</sup></h1></div></header></div><div class="entry-wrapper content__entry">' + css + filter +
+    (items ? '<ul class="sjc-list">' + items + '</ul>' : '') +
+    '<p id="sjc-empty"' + (items ? ' style="display:none"' : '') + '>No posts here yet. Please check back soon.</p>' + script +
     '</div></article></main>';
 
   const a = tpl.indexOf(MAIN_START);
@@ -368,7 +414,16 @@ function checkMeta(m) {
   if (!d || isNaN(d.getTime()) || d.getUTCMonth() !== +dm[2] - 1 || d.getUTCDate() !== +dm[3]) throw new Fail(400, 'The date is not valid.');
   if (image && !/^\/blog\/images\/[A-Za-z0-9._-]{1,120}$/.test(image)) throw new Fail(400, 'The cover photo is not valid.');
   if (image && (!imageAlt || imageAlt.length > 150)) throw new Fail(400, 'Please describe the cover photo in a few words.');
-  return { title: title, author: author, summary: summary, date: date, image: image, imageAlt: image ? imageAlt : '', draft: m.draft === true };
+  const out = { title: title, author: author, summary: summary, date: date, image: image, imageAlt: image ? imageAlt : '', draft: m.draft === true };
+  // tags: if the editor sends them they must be Coastline, Farmland or both.
+  // If it sends none at all (older editor page), save() keeps the post's current tags.
+  if (m.tags !== undefined) {
+    const sent = Array.isArray(m.tags) ? m.tags : [];
+    const clean = TAG_KEYS.filter((k) => sent.indexOf(k) >= 0);
+    if (!clean.length) throw new Fail(400, 'Please choose Coastline, Farmland or both.');
+    out.tags = clean;
+  }
+  return out;
 }
 
 function checkBody(body) {
@@ -408,7 +463,7 @@ export default {
       if (action === 'list') {
         const repo = await openRepo(env);
         const m = await loadManifest(env, repo);
-        const posts = m.posts.map((p) => ({ slug: p.slug, title: p.title, date: p.date, draft: !!p.draft }))
+        const posts = m.posts.map((p) => ({ slug: p.slug, title: p.title, date: p.date, draft: !!p.draft, tags: postTags(p) }))
           .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
         return send(200, { posts: posts });
       }
@@ -423,7 +478,7 @@ export default {
         const b = html ? extractBody(html) : null;
         if (b === null) return send(404, { error: 'That post page was not found.' });
         return send(200, {
-          meta: { title: e.title, date: e.date, author: e.author, summary: e.summary, image: e.image || '', imageAlt: e.imageAlt || '', draft: !!e.draft },
+          meta: { title: e.title, date: e.date, author: e.author, summary: e.summary, image: e.image || '', imageAlt: e.imageAlt || '', draft: !!e.draft, tags: postTags(e) },
           body: b
         });
       }
@@ -438,11 +493,13 @@ export default {
         await withRepo(env, async (repo) => {
           const [manifest, tpl] = await Promise.all([loadManifest(env, repo), loadTemplate(env, repo)]);
           const old = manifest.posts;
-          const exists = old.some((p) => p.slug === slug);
+          const current = old.find((p) => p.slug === slug);
+          const exists = !!current;
           if (isNew && exists) throw new Fail(409, 'A post with this name already exists. Change the title or date and try again.');
           if (!isNew && !exists) throw new Fail(404, 'That post no longer exists.');
 
           const entry = Object.assign({ slug: slug }, meta, { modified: new Date().toISOString() });
+          entry.tags = meta.tags || (current ? postTags(current) : ['coastline']);
           const posts = old.filter((p) => p.slug !== slug).concat(entry);
           const before = exists ? neighbours(old, slug) : { prev: null, next: null };
           const after = neighbours(posts, slug);
@@ -482,17 +539,19 @@ export default {
 
       if (action === 'rebuild') {
         // Rebuilds every page from blog/template.html, a few posts at a time.
+        // The first batch also writes the tags into blog/posts.json (posts with none become coastline).
         const offset = Math.max(0, parseInt(body.offset, 10) || 0);
         let result = null;
         await withRepo(env, async (repo) => {
           const [manifest, tpl] = await Promise.all([loadManifest(env, repo), loadTemplate(env, repo)]);
-          const posts = manifest.posts;
+          const posts = manifest.posts.map((p) => Object.assign({}, p, { tags: postTags(p) }));
           const slugs = posts.map((p) => p.slug).sort();
           const batch = slugs.slice(offset, offset + REBUILD_BATCH);
           const files = await renderPosts(env, repo, tpl, posts, batch, null);
           if (offset === 0) {
             files.push({ path: INDEX_PATH, content: renderIndex(tpl, posts) });
             files.push({ path: SITEMAP_PATH, content: renderSitemap(posts) });
+            files.push({ path: MANIFEST, content: manifestText(posts) });
           }
           if (files.length) await commitChanges(env, repo, files, 'Blog: rebuild pages (by ' + who.email + ')');
           result = { done: offset + REBUILD_BATCH >= slugs.length, next: offset + REBUILD_BATCH, total: slugs.length };

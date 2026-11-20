@@ -214,7 +214,37 @@
     $('summary-count').textContent = n + ' characters (aim for 100 to 160)';
   }
 
+  /* ---------- tags: Coastline and Farmland ---------- */
+
+  let tags = ['coastline'];
+
+  function showTags() {
+    document.querySelectorAll('#tag-buttons button').forEach((b) => {
+      const on = tags.indexOf(b.dataset.tag) >= 0;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.style.background = on ? '#006ABC' : '#fff';
+      b.style.color = on ? '#fff' : '#006ABC';
+    });
+  }
+
+  function setTags(list) {
+    const clean = ['coastline', 'farmland'].filter((k) => (list || []).indexOf(k) >= 0);
+    tags = clean.length ? clean : ['coastline'];
+    showTags();
+  }
+
+  document.querySelectorAll('#tag-buttons button').forEach((b) => {
+    b.addEventListener('click', () => {
+      const k = b.dataset.tag;
+      const i = tags.indexOf(k);
+      if (i >= 0) tags.splice(i, 1); else tags.push(k);
+      showTags();
+      markDirty();
+    });
+  });
+
   function fillForm(meta, bodyHtml) {
+    setTags(meta.tags);
     $('f-title').value = meta.title || '';
     $('f-date').value = meta.date || todayLocal();
     $('f-author').value = meta.author || localStorage.getItem('blogAuthor') || (user && user.name) || '';
@@ -428,6 +458,7 @@
     if (f.summary.length < 20 || f.summary.length > 300) {
       return toast('The short description needs 20 to 300 characters (now ' + f.summary.length + ').', true);
     }
+    if (!tags.length) return toast('Please choose Coastline, Farmland or both.', true);
     if (post.cover && !f.coverAlt) return toast('Please describe the cover photo in a few words.', true);
     if (!f.body || !f.body.replace(/<[^>]*>/g, '').trim() && f.body.indexOf('<img') < 0) return toast('The post is empty.', true);
     if (/src\s*=\s*["']data:/i.test(f.body)) return toast('A photo has not finished uploading. Please wait a moment and try again.', true);
@@ -438,7 +469,7 @@
       await api('save', {
         slug: slug,
         isNew: post.isNew,
-        meta: { title: f.title, date: f.date, author: f.author, summary: f.summary, image: post.cover, imageAlt: f.coverAlt, draft: f.draft },
+        meta: { title: f.title, date: f.date, author: f.author, summary: f.summary, image: post.cover, imageAlt: f.coverAlt, draft: f.draft, tags: tags.slice() },
         body: f.body
       });
       post.slug = slug;
