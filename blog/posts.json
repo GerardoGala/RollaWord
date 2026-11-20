@@ -56,17 +56,6 @@
    "modified": "2026-11-19T23:42:12.238Z"
   },
   {
-   "slug": "2026-11-20-sailing-vocabulary",
-   "title": "Sailing Vocabulary",
-   "author": "Gerardo Gala",
-   "summary": "Sailors's jargon could be so confusing sometimes. Here is a vocabulary that could help.",
-   "date": "2026-11-20",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "modified": "2026-11-19T23:47:58.815Z"
-  },
-  {
    "slug": "2026-11-20-potluck-and-night-paddling",
    "title": "Potluck and Night Paddling",
    "author": "Gerardo Gala",
@@ -76,6 +65,17 @@
    "imageAlt": "Portable Butane Stove",
    "draft": false,
    "modified": "2026-11-20T00:53:58.721Z"
+  },
+  {
+   "slug": "2026-11-20-sailing-vocabulary",
+   "title": "Sailing Vocabulary",
+   "author": "Gerardo Gala",
+   "summary": "Sailors's jargon could be so confusing sometimes. Here is a vocabulary that could help.",
+   "date": "2026-11-07",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-20T00:54:34.639Z"
   }
  ]
 }
