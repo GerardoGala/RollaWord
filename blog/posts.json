@@ -9,7 +9,10 @@
    "image": "/blog/images/1795135689254-1000016491.jpg",
    "imageAlt": "Portable Butane Stove",
    "draft": false,
-   "modified": "2026-11-20T09:10:54.171Z"
+   "modified": "2026-11-20T09:10:54.171Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-14-paddling-to-club-laiya",
@@ -20,7 +23,10 @@
    "image": "/blog/images/1795140570000-1000016388.jpg",
    "imageAlt": "Prav and Divine",
    "draft": false,
-   "modified": "2026-11-20T09:11:15.774Z"
+   "modified": "2026-11-20T09:11:15.774Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-20-sailing-vocabulary",
@@ -31,7 +37,10 @@
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-20T09:12:12.799Z"
+   "modified": "2026-11-20T09:12:12.799Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-04-my-trip-to-hugom",
@@ -42,7 +51,10 @@
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-20T09:12:34.057Z"
+   "modified": "2026-11-20T09:12:34.057Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-10-27-the-allure-of-dinghy-sailing",
@@ -53,7 +65,10 @@
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-20T09:13:07.578Z"
+   "modified": "2026-11-20T09:13:07.578Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-20-windsurfing-101",
@@ -64,7 +79,10 @@
    "image": "/blog/images/1795130577455-tahe-beach-185.jpg",
    "imageAlt": "Tahe Windsurf",
    "draft": false,
-   "modified": "2026-11-20T09:13:36.784Z"
+   "modified": "2026-11-20T09:13:36.784Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-10-11-san-juan-coast-line",
@@ -75,7 +93,10 @@
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-20T09:13:58.418Z"
+   "modified": "2026-11-20T09:13:58.418Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-20-longboarding-at-the-beach",
@@ -86,7 +107,10 @@
    "image": "/blog/images/1795159352602-1000016089.jpg",
    "imageAlt": "Longboarding",
    "draft": false,
-   "modified": "2026-11-20T09:14:34.878Z"
+   "modified": "2026-11-20T09:14:34.878Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-11-19-blog-test",
@@ -97,7 +121,10 @@
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-20T09:14:56.167Z"
+   "modified": "2026-11-20T09:14:56.167Z",
+   "tags": [
+    "coastline"
+   ]
   },
   {
    "slug": "2026-10-08-jacob-and-the-goats",
@@ -128,21 +155,6 @@
    "modified": "2026-11-20T12:03:32.719Z"
   },
   {
-   "slug": "2026-11-20-police-encounter-with-npa",
-   "title": "Police Encounter with NPA",
-   "author": "Lucas Timothy",
-   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
-   "date": "2026-11-20",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "tags": [
-    "coastline",
-    "farmland"
-   ],
-   "modified": "2026-11-20T12:36:50.007Z"
-  },
-  {
    "slug": "2026-10-18-san-juan-sunset",
    "title": "San Juan Sunset",
    "author": "Lucas Timothy",
@@ -155,6 +167,21 @@
     "coastline"
    ],
    "modified": "2026-11-20T14:30:36.631Z"
+  },
+  {
+   "slug": "2026-11-20-police-encounter-with-npa",
+   "title": "Police Encounter with NPA",
+   "author": "Lucas Timothy",
+   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
+   "date": "2026-11-20",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "tags": [
+    "coastline",
+    "farmland"
+   ],
+   "modified": "2026-11-20T22:52:33.461Z"
   }
  ]
 }
