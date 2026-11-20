@@ -89,17 +89,6 @@
    "modified": "2026-11-20T07:46:06.471Z"
   },
   {
-   "slug": "2026-11-20-potluck-and-night-paddling",
-   "title": "Potluck and Night Paddling",
-   "author": "Gerardo Gala",
-   "summary": "The beach is more fun at night and when there's food.",
-   "date": "2026-11-19",
-   "image": "/blog/images/1795135689254-1000016491.jpg",
-   "imageAlt": "Portable Butane Stove",
-   "draft": false,
-   "modified": "2026-11-20T07:47:13.829Z"
-  },
-  {
    "slug": "2026-11-20-police-encounter-with-npa",
    "title": "Police Encounter with NPA",
    "author": "Lucas Timothy",
@@ -120,6 +109,17 @@
    "imageAlt": "Sailing and paddling",
    "draft": false,
    "modified": "2026-11-20T09:10:36.534Z"
+  },
+  {
+   "slug": "2026-11-20-potluck-and-night-paddling",
+   "title": "Potluck and Night Paddling",
+   "author": "Lucas Timothy",
+   "summary": "The beach is more fun at night and when there's food.",
+   "date": "2026-11-19",
+   "image": "/blog/images/1795135689254-1000016491.jpg",
+   "imageAlt": "Portable Butane Stove",
+   "draft": false,
+   "modified": "2026-11-20T09:10:54.171Z"
   }
  ]
 }
