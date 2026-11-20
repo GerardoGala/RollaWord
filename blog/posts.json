@@ -12,17 +12,6 @@
    "modified": "2026-11-19T23:17:30.547Z"
   },
   {
-   "slug": "2026-11-04-my-trip-to-hugom",
-   "title": "My Trip to Hugom",
-   "author": "Gerardo Gala",
-   "summary": "I have lived in the Philippines for eight years. Only recently did I find a beach with remarkably clean water.",
-   "date": "2026-11-04",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "modified": "2026-11-19T23:30:08.585Z"
-  },
-  {
    "slug": "2026-10-11-san-juan-coast-line",
    "title": "San Juan Coast Line",
    "author": "Gerardo Gala",
@@ -120,6 +109,17 @@
    "imageAlt": "",
    "draft": false,
    "modified": "2026-11-20T09:12:12.799Z"
+  },
+  {
+   "slug": "2026-11-04-my-trip-to-hugom",
+   "title": "My Trip to Hugom",
+   "author": "Lucas Timothy",
+   "summary": "I have lived in the Philippines for eight years. Only recently did I find a beach with remarkably clean water.",
+   "date": "2026-11-04",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-20T09:12:34.057Z"
   }
  ]
 }
