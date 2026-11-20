@@ -78,17 +78,6 @@
    "modified": "2026-11-20T02:10:05.941Z"
   },
   {
-   "slug": "2026-11-20-police-encounter-with-npa",
-   "title": "Police Encounter with NPA",
-   "author": "Gerardo Gala",
-   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves one dead.",
-   "date": "2026-11-20",
-   "image": "",
-   "imageAlt": "",
-   "draft": false,
-   "modified": "2026-11-20T03:27:40.268Z"
-  },
-  {
    "slug": "2026-11-20-longboarding-at-the-beach",
    "title": "Longboarding at the beach",
    "author": "Gerardo Gala",
@@ -109,6 +98,17 @@
    "imageAlt": "Portable Butane Stove",
    "draft": false,
    "modified": "2026-11-20T07:47:13.829Z"
+  },
+  {
+   "slug": "2026-11-20-police-encounter-with-npa",
+   "title": "Police Encounter with NPA",
+   "author": "Gerardo Gala",
+   "summary": "Deadly police encounter with NPA in San Juan, Batangas leaves two dead.",
+   "date": "2026-11-20",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-20T08:20:20.619Z"
   }
  ]
 }
