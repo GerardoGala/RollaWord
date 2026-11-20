@@ -2,14 +2,69 @@
  "posts": [
   {
    "slug": "2026-11-19-blog-test",
-   "title": "Blog test",
+   "title": "Balancing Paradise and Progress",
    "author": "Gerardo Gala",
-   "summary": "test only. test only. test only. test only. test only. test only. test only. test only.",
-   "date": "2026-11-19",
+   "summary": "What’s Happening Along the San Juan, Batangas Coastline",
+   "date": "2026-10-02",
    "image": "",
    "imageAlt": "",
    "draft": false,
-   "modified": "2026-11-19T14:41:44.392Z"
+   "modified": "2026-11-19T23:17:30.547Z"
+  },
+  {
+   "slug": "2026-11-04-my-trip-to-hugom",
+   "title": "My Trip to Hugom",
+   "author": "Gerardo Gala",
+   "summary": "I have lived in the Philippines for eight years. Only recently did I find a beach with remarkably clean water.",
+   "date": "2026-11-04",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-19T23:30:08.585Z"
+  },
+  {
+   "slug": "2026-10-11-san-juan-coast-line",
+   "title": "San Juan Coast Line",
+   "author": "Gerardo Gala",
+   "summary": "San Juan, Batangas remains one of Southern Luzon's premier beach destinations, known for its stretch of white-sand shores in Laiya and vibrant marine ecosystems.",
+   "date": "2026-10-11",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-19T23:32:31.152Z"
+  },
+  {
+   "slug": "2026-10-27-the-allure-of-dinghy-sailing",
+   "title": "The Allure of Dinghy Sailing",
+   "author": "Gerardo Gala",
+   "summary": "For newcomers, dinghy sailing offers an accessible and exciting introduction to the sport of sailing.",
+   "date": "2026-10-27",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-19T23:34:47.914Z"
+  },
+  {
+   "slug": "2026-11-20-windsurfing-101",
+   "title": "Windsurfing 101",
+   "author": "Gerardo Gala",
+   "summary": "As expert windsurfers, we really have to think back to remember a time when we weren't familiar with every in and out of our favorite sport.",
+   "date": "2026-10-20",
+   "image": "/blog/images/1795130577455-tahe-beach-185.jpg",
+   "imageAlt": "Tahe Windsurf",
+   "draft": false,
+   "modified": "2026-11-19T23:42:12.238Z"
+  },
+  {
+   "slug": "2026-11-20-sailing-vocabulary",
+   "title": "Sailing Vocabulary",
+   "author": "Gerardo Gala",
+   "summary": "Sailors's jargon could be so confusing sometimes. Here is a vocabulary that could help.",
+   "date": "2026-11-20",
+   "image": "",
+   "imageAlt": "",
+   "draft": false,
+   "modified": "2026-11-19T23:47:58.815Z"
   }
  ]
 }
