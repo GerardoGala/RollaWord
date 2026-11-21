@@ -155,20 +155,6 @@
    "modified": "2026-11-20T12:03:32.719Z"
   },
   {
-   "slug": "2026-10-18-san-juan-sunset",
-   "title": "San Juan Sunset",
-   "author": "Lucas Timothy",
-   "summary": "Mesmerizing San Juan sunset",
-   "date": "2026-10-18",
-   "image": "/blog/images/1795184781348-1000015996.jpg",
-   "imageAlt": "San Juan sunset",
-   "draft": true,
-   "tags": [
-    "coastline"
-   ],
-   "modified": "2026-11-20T14:30:36.631Z"
-  },
-  {
    "slug": "2026-11-20-police-encounter-with-npa",
    "title": "Police Encounter with NPA",
    "author": "Lucas Timothy",
@@ -182,6 +168,20 @@
     "farmland"
    ],
    "modified": "2026-11-20T22:52:33.461Z"
+  },
+  {
+   "slug": "2026-10-18-san-juan-sunset",
+   "title": "San Juan Sunset",
+   "author": "Lucas Timothy",
+   "summary": "Watch the sky burn orange and gold over the water, and discover why a San Juan sunset is worth slowing down for.",
+   "date": "2026-10-18",
+   "image": "/blog/images/1795184781348-1000015996.jpg",
+   "imageAlt": "San Juan sunset",
+   "draft": true,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-21T01:12:38.640Z"
   }
  ]
 }
