@@ -177,11 +177,11 @@
    "date": "2026-10-18",
    "image": "/blog/images/1795184781348-1000015996.jpg",
    "imageAlt": "San Juan sunset",
-   "draft": true,
+   "draft": false,
    "tags": [
     "coastline"
    ],
-   "modified": "2026-11-21T01:13:21.827Z"
+   "modified": "2026-11-21T01:15:49.925Z"
   }
  ]
 }
