@@ -1,0 +1,105 @@
+WORKER.JS README
+San Juan Coastline blog: the Cloudflare Worker behind blog/admin.html
+=====================================================================
+
+WHAT IT IS
+  worker.js is a small program that runs on Cloudflare (Worker name: rollaword-auth).
+  It is NOT stored in the GitHub repo. To change it: Cloudflare dashboard > the Worker >
+  Edit code > paste the new worker.js > Deploy.
+
+  The admin page (blog/admin.html + admin.js) never talks to GitHub. It only talks to this Worker.
+  (You can still change the repository yourself any time with GitHub Desktop. The Worker is how
+  the family's posts get in without them needing GitHub.)
+
+
+THE THREE THINGS IT DOES
+------------------------
+
+1. CHECKS WHO IS SIGNING IN
+   - Every request from the admin page carries the person's Google sign-in.
+   - The Worker asks Google to confirm it is genuine, then checks that the Gmail address is on the
+     approved list (ALLOWED_EMAILS).
+   - Anyone else is refused. Nothing is read or saved for them.
+
+2. SAVES THE FAMILY'S POSTS TO GITHUB FOR THEM
+   - The family (and the admin page) have no GitHub access at all. When they save a post, the
+     Worker writes it to the repository on their behalf.
+   - The Worker holds the GitHub token (GITHUB_PAT). The family's browsers never see it, so the
+     only ways into the repository are: you, with GitHub Desktop, and this Worker, which acts only
+     for people on the approved list.
+   - It only writes inside the blog folder.
+   - It saves everything for one action in ONE commit, so the site deploys once.
+   - If two people save at the same moment, it starts again from the newest version, so one
+     save can never overwrite a newer one.
+
+3. BUILDS THE PAGES
+   - When a post is saved, the Worker creates the finished HTML from blog/template.html:
+       blog/posts/<name>.html   the post page (with its Coastline / Farmland chip)
+       the Previous / Next links on the neighbouring posts
+       blog/index.html          the blog list, with the post count
+       blog/sitemap.xml         the blog sitemap
+       blog/posts.json          the list of posts (what the editor reads)
+   - It only writes the MARKUP (the page structure and text). It does NOT contain any styling
+     or filter script (see below).
+
+
+WHAT IT DOES NOT DO ANY MORE: LOOK AND FILTER
+---------------------------------------------
+   blog/blog.css    how the post list and the Coastline / Farmland chips look
+   blog/filter.js   how the Section filter on the index behaves
+
+   These are ordinary files in the repo. Edit them in VSCodium, preview with Live Server, commit
+   and push in GitHub Desktop. No Cloudflare change and no Rebuild is needed.
+   The Worker only adds two lines to the pages that link to them.
+
+
+WHAT THE ADMIN PAGE CAN ASK THE WORKER TO DO
+--------------------------------------------
+   list      the posts for the admin list (title, date, draft, sections)
+   get       one post, to open it in the editor
+   save      create or update a post (does job 3, in one commit)
+   delete    remove a post and rebuild the neighbours, index and sitemap
+   rebuild   rewrite every page from blog/template.html (25 posts at a time)
+   upload    store a photo in blog/images/
+
+
+SECTIONS (TAGS)
+---------------
+   - There are exactly two: coastline and farmland. A post has one or both.
+   - A post with no section saved yet counts as coastline.
+   - The editor will not save a post with neither selected.
+   - Sections are stored in blog/posts.json and shown as a chip on each post page and as a label
+     in the index list.
+
+
+SETTINGS ON CLOUDFLARE (Worker > Settings > Variables and Secrets)
+------------------------------------------------------------------
+   GOOGLE_CLIENT_ID   your Google OAuth client ID
+   ALLOWED_EMAILS     approved Gmail addresses, separated by commas or semicolons
+   GITHUB_PAT         (Secret) fine-grained token, this repo only, Contents: read and write
+   Only these addresses may use the Worker: https://rollaword.com and https://www.rollaword.com
+
+
+WHAT TO CHANGE, AND WHERE
+-------------------------
+   I want to change...                                Edit                      Then
+   -------------------------------------------------  ------------------------  ---------------------
+   how the chips / list look                          blog/blog.css             commit + push
+   how the Section filter behaves                     blog/filter.js            commit + push
+   the page frame (menu, header, footer, AdSense)     blog/template.html        commit + push, then
+                                                                                press Rebuild all pages
+   the editor screen                                  blog/admin.html,          commit + push
+                                                      admin.js, admin.css
+   what the pages contain / how they are built,       worker.js                 paste into Cloudflare,
+   the sign-in list rules, the sections               (on Cloudflare)           deploy, then press
+                                                                                Rebuild all pages
+   who may sign in                                    ALLOWED_EMAILS            save in Cloudflare
+
+
+GOOD TO KNOW
+------------
+   - Never edit blog/index.html, blog/posts.json or blog/sitemap.xml by hand: the Worker rewrites
+     them on every save and your change would be lost.
+   - GitHub Desktop often says "pull first". That is normal: the Worker makes a commit every time
+     a post is saved, so the server is usually ahead of your computer.
+   - A file only reaches the site after you save it in the editor, commit it, AND push it.
