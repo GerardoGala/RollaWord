@@ -243,16 +243,15 @@
    "slug": "2025-12-13-horseback-riding-at-the-coconut-farm",
    "title": "Horseback Riding at the Coconut Farm",
    "author": "Lucas Timothy",
-   "summary": "Horseback riding at the farm is a nice form of relaxation.",
+   "summary": "Horseback riding at the farm is a nice form of relaxation. The rhythm of the walk helps slow your thoughts.",
    "date": "2025-12-13",
    "image": "/blog/images/1795299450363-1000006341.jpg",
    "imageAlt": "Teacher Divine and David Riding Oreo and Selecta",
-   "draft": true,
+   "draft": false,
    "tags": [
-    "coastline",
     "farmland"
    ],
-   "modified": "2026-11-21T22:21:21.789Z"
+   "modified": "2026-11-21T23:42:27.032Z"
   }
  ]
 }
