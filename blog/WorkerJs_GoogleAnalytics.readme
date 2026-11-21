@@ -72,6 +72,67 @@ SECTIONS (TAGS)
      in the index list.
 
 
+GOOGLE ANALYTICS (TAG ID: GTM-5XJ53P8H)
+---------------------------------------
+   Added 2026-11-21.
+
+   WHAT IT IS
+     Google Analytics counts visitors, page views, countries, devices and where people came from.
+     The tag ID is GTM-5XJ53P8H. Google generated it for the Analytics data stream.
+     THE REPORT TO USE: the Analytics property named "rollaword" (property ID 565269591).
+     Do NOT use the property named "rollaword.com" (property ID 565324386). It was created by
+     accident, receives nothing, and can be ignored (or moved to the Trash Can some day under
+     Admin > Property settings).
+
+     URL of the live report (Realtime, rollaword property):
+       https://analytics.google.com/analytics/web/#/a183877144p565269591/realtime/pages
+     Bookmark it. If Analytics opens a different property, click the property name at the top
+     left and choose "rollaword" (not "rollaword.com").
+     For the full reports, use the left menu on the same page: Reports > Reports snapshot (they
+     take 24 to 48 hours to fill in).
+
+   THE SNIPPET
+     It goes inside <head>, straight after the AdSense line:
+
+       <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5XJ53P8H"></script>
+       <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());</script>
+
+   WHERE IT LIVES
+     blog/template.html   after the AdSense line in <head>. This covers every post. The Worker
+                          reads this file when it builds pages, so worker.js was NOT changed and
+                          nothing needs pasting into Cloudflare. After editing the template,
+                          press Rebuild all pages in blog/admin.html and the snippet reaches
+                          every existing post.
+     blog/index.html      built by the Worker. The snippet is in the copy that was added by hand.
+                          After a Rebuild, check View page source for GTM-5XJ53P8H. If it has
+                          disappeared, the index head built by worker.js needs the snippet too.
+     blog/post.html       a hand-written page (loads posts in the browser). The snippet was added
+                          by hand, after the AdSense line. Edit it in VSCodium, commit and push.
+     blog/admin.html      deliberately NOT tracked. It is a private editing page (noindex), and
+                          tracking it would count the family's editing as visitors.
+     The rest of rollaword.com (the Publii pages)
+                          Publii > Tools & Plugins > Custom HTML > Head. Publii adds it to every
+                          page it makes. Re-render and sync (or commit and push) to publish.
+
+   BACKFILLING OLD POSTS (only if Rebuild all pages does not do it)
+     add-analytics.html is a one-time browser tool. It adds the snippet after <head> in every
+     .html file in a folder you choose, and skips files that already have it.
+       - Run it on your own computer, after pulling the latest posts in GitHub Desktop.
+       - Do NOT run it through Live Server: Live Server reloads the page on the first file change
+         and stops the run part way. Open it from disk (double-click), or add
+         "liveServer.settings.ignoreFiles": ["blog/posts/**"] to the VSCodium settings.
+       - Do a dry run first, then untick Dry run and run it again.
+       - Keep the tool out of the project folder you push, so it does not end up on the live site.
+
+   HOW TO CHECK IT IS WORKING
+     1. Open a live page, choose View page source, and search for GTM-5XJ53P8H.
+     2. Keep the page open, then look at Analytics > Reports > Realtime. A visit shows up within
+        about a minute.
+     3. Ad blockers and privacy extensions stop the tag. Test in a private window or on a phone
+        using mobile data.
+     Visits from Live Server previews may also be counted.
+
+
 SETTINGS ON CLOUDFLARE (Worker > Settings > Variables and Secrets)
 ------------------------------------------------------------------
    GOOGLE_CLIENT_ID   your Google OAuth client ID
@@ -86,8 +147,9 @@ WHAT TO CHANGE, AND WHERE
    -------------------------------------------------  ------------------------  ---------------------
    how the chips / list look                          blog/blog.css             commit + push
    how the Section filter behaves                     blog/filter.js            commit + push
-   the page frame (menu, header, footer, AdSense)     blog/template.html        commit + push, then
-                                                                                press Rebuild all pages
+   the page frame (menu, header, footer, AdSense,     blog/template.html        commit + push, then
+   Google Analytics)                                                            press Rebuild all pages
+   Google Analytics on the single-post page           blog/post.html            commit + push
    the editor screen                                  blog/admin.html,          commit + push
                                                       admin.js, admin.css
    what the pages contain / how they are built,       worker.js                 paste into Cloudflare,
@@ -103,3 +165,5 @@ GOOD TO KNOW
    - GitHub Desktop often says "pull first". That is normal: the Worker makes a commit every time
      a post is saved, so the server is usually ahead of your computer.
    - A file only reaches the site after you save it in the editor, commit it, AND push it.
+   - The Google Analytics tag lives in blog/template.html. Do not remove it when editing the
+     template, or new and rebuilt posts stop being counted.
