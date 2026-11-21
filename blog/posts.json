@@ -156,20 +156,6 @@
    "modified": "2026-11-21T01:37:55.710Z"
   },
   {
-   "slug": "2026-01-22-selecta-nursing-magnolia",
-   "title": "Selecta Nursing Magnolia",
-   "author": "Lucas Timothy",
-   "summary": "Nursing their baby is second nature to animals. Selecta cares for her baby every day by letting it nurse. Mothers in the animal world do this naturally, without being taught.",
-   "date": "2026-01-22",
-   "image": "/blog/images/1795226782286-1000006572.jpg",
-   "imageAlt": "Selecta Nursing Magnolia",
-   "draft": false,
-   "tags": [
-    "farmland"
-   ],
-   "modified": "2026-11-21T02:22:53.365Z"
-  },
-  {
    "slug": "2026-10-08-jacob-and-the-goats",
    "title": "Jacob and the Goats",
    "author": "Gerardo Gala",
@@ -224,6 +210,20 @@
     "farmland"
    ],
    "modified": "2026-11-21T03:52:58.935Z"
+  },
+  {
+   "slug": "2026-01-22-selecta-nursing-magnolia",
+   "title": "Selecta Nursing Magnolia",
+   "author": "Lucas Timothy",
+   "summary": "Nursing their baby is second nature to animals. Selecta cares for her baby every day by letting it nurse. Mothers in the animal world do this naturally, without being taught.",
+   "date": "2026-01-22",
+   "image": "/blog/images/1795226782286-1000006572.jpg",
+   "imageAlt": "Selecta Nursing Magnolia",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:57:32.057Z"
   }
  ]
 }
