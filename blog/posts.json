@@ -127,20 +127,6 @@
    ]
   },
   {
-   "slug": "2026-10-08-jacob-and-the-goats",
-   "title": "Jacob and the Goats",
-   "author": "Gerardo Gala",
-   "summary": "Jacob playing with the goats.",
-   "date": "2026-10-08",
-   "image": "/blog/images/1795175498874-1000015872.jpg",
-   "imageAlt": "Jacob and the goats",
-   "draft": false,
-   "tags": [
-    "farmland"
-   ],
-   "modified": "2026-11-20T11:55:23.928Z"
-  },
-  {
    "slug": "2026-10-07-saling-and-padling",
    "title": "Things To Do On The Water",
    "author": "Lucas Timothy",
@@ -224,6 +210,20 @@
     "coastline"
    ],
    "modified": "2026-11-21T03:04:03.469Z"
+  },
+  {
+   "slug": "2026-10-08-jacob-and-the-goats",
+   "title": "Jacob and the Goats",
+   "author": "Gerardo Gala",
+   "summary": "Jacob playing with the goats.",
+   "date": "2026-10-08",
+   "image": "/blog/images/1795175498874-1000015872.jpg",
+   "imageAlt": "Jacob and the goats",
+   "draft": true,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:04:42.204Z"
   }
  ]
 }
