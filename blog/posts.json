@@ -219,11 +219,11 @@
    "date": "2026-10-08",
    "image": "/blog/images/1795175498874-1000015872.jpg",
    "imageAlt": "Jacob and the goats",
-   "draft": true,
+   "draft": false,
    "tags": [
     "farmland"
    ],
-   "modified": "2026-11-21T03:04:42.204Z"
+   "modified": "2026-11-21T03:04:57.338Z"
   }
  ]
 }
