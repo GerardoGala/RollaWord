@@ -184,20 +184,6 @@
    "modified": "2026-11-21T03:04:57.338Z"
   },
   {
-   "slug": "2026-11-17-feeding-the-goats-and-ducks",
-   "title": "Feeding The Goats And Ducks",
-   "author": "Lucas Timothy",
-   "summary": "Feeding time on the farm: goats and ducks eating together. See how a simple daily routine keeps our animals healthy and happy",
-   "date": "2026-11-17",
-   "image": "/blog/images/1795230161656-1000015592.jpg",
-   "imageAlt": "Feeding the Goats And Ducks",
-   "draft": false,
-   "tags": [
-    "farmland"
-   ],
-   "modified": "2026-11-21T03:10:42.355Z"
-  },
-  {
    "slug": "2026-10-07-saling-and-padling",
    "title": "Things To Do On The Water",
    "author": "Lucas Timothy",
@@ -224,6 +210,20 @@
     "coastline"
    ],
    "modified": "2026-11-21T03:49:38.903Z"
+  },
+  {
+   "slug": "2026-11-17-feeding-the-goats-and-ducks",
+   "title": "Feeding The Goats And Ducks",
+   "author": "Lucas Timothy",
+   "summary": "Feeding time on the farm: goats and ducks eating together. See how a simple daily routine keeps our animals healthy and happy",
+   "date": "2026-11-17",
+   "image": "/blog/images/1795230161656-1000015592.jpg",
+   "imageAlt": "Feeding the Goats And Ducks",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:52:44.619Z"
   }
  ]
 }
