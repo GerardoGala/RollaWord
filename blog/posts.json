@@ -219,11 +219,11 @@
    "date": "2026-11-17",
    "image": "/blog/images/1795230161656-1000015592.jpg",
    "imageAlt": "Feeding the Goats And Ducks",
-   "draft": false,
+   "draft": true,
    "tags": [
     "coastline"
    ],
-   "modified": "2026-11-21T03:03:57.304Z"
+   "modified": "2026-11-21T03:04:03.469Z"
   }
  ]
 }
