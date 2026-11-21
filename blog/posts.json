@@ -99,20 +99,6 @@
    ]
   },
   {
-   "slug": "2026-11-20-longboarding-at-the-beach",
-   "title": "Longboarding at the beach",
-   "author": "Lucas Timothy",
-   "summary": "Longboarding is a good alternative when you can't go sailing because the tide is too low.",
-   "date": "2026-10-04",
-   "image": "/blog/images/1795159352602-1000016089.jpg",
-   "imageAlt": "Longboarding",
-   "draft": false,
-   "modified": "2026-11-20T09:14:34.878Z",
-   "tags": [
-    "coastline"
-   ]
-  },
-  {
    "slug": "2026-11-19-blog-test",
    "title": "Balancing Paradise and Progress",
    "author": "Lucas Timothy",
@@ -125,34 +111,6 @@
    "tags": [
     "coastline"
    ]
-  },
-  {
-   "slug": "2026-10-08-jacob-and-the-goats",
-   "title": "Jacob and the Goats",
-   "author": "Gerardo Gala",
-   "summary": "Jacob playing with the goats.",
-   "date": "2026-10-08",
-   "image": "/blog/images/1795175498874-1000015872.jpg",
-   "imageAlt": "Jacob and the goats",
-   "draft": false,
-   "tags": [
-    "farmland"
-   ],
-   "modified": "2026-11-20T11:55:23.928Z"
-  },
-  {
-   "slug": "2026-10-07-saling-and-padling",
-   "title": "Things To Do On The Water",
-   "author": "Lucas Timothy",
-   "summary": "If you want a beach escape that's close to Manila but far from the crowds, head to San Juan, Batangas. The town stretches along the Tayabas Bay coast, and mornings here feel unhurried.",
-   "date": "2026-10-07",
-   "image": "/blog/images/1795164638962-1000015859.jpg",
-   "imageAlt": "Sailing and Paddling",
-   "draft": false,
-   "tags": [
-    "coastline"
-   ],
-   "modified": "2026-11-20T12:03:32.719Z"
   },
   {
    "slug": "2026-11-20-police-encounter-with-npa",
@@ -182,6 +140,90 @@
     "coastline"
    ],
    "modified": "2026-11-21T01:15:49.925Z"
+  },
+  {
+   "slug": "2026-08-14-tilapia-farming",
+   "title": "Tilapia Farming",
+   "author": "Lucas Timothy",
+   "summary": "Learn how to start small-scale tilapia farming: pond setup, stocking, feeding, and water care, with practical tips from a backyard pond.",
+   "date": "2026-08-14",
+   "image": "/blog/images/1795224751619-1000014624.jpg",
+   "imageAlt": "Tilapia Farming",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T01:37:55.710Z"
+  },
+  {
+   "slug": "2026-10-08-jacob-and-the-goats",
+   "title": "Jacob and the Goats",
+   "author": "Gerardo Gala",
+   "summary": "Jacob playing with the goats.",
+   "date": "2026-10-08",
+   "image": "/blog/images/1795175498874-1000015872.jpg",
+   "imageAlt": "Jacob and the goats",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:04:57.338Z"
+  },
+  {
+   "slug": "2026-10-07-saling-and-padling",
+   "title": "Things To Do On The Water",
+   "author": "Lucas Timothy",
+   "summary": "If you want a beach escape that's close to Manila but far from the crowds, head to San Juan, Batangas. The town stretches along the Tayabas Bay coast, and mornings here feel unhurried.",
+   "date": "2026-10-07",
+   "image": "/blog/images/1795164638962-1000015859.jpg",
+   "imageAlt": "Sailing and Paddling",
+   "draft": false,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-21T03:47:08.995Z"
+  },
+  {
+   "slug": "2026-11-20-longboarding-at-the-beach",
+   "title": "Longboarding at the beach",
+   "author": "Lucas Timothy",
+   "summary": "Longboarding is a good alternative when you can't go sailing because the tide is too low.",
+   "date": "2026-10-04",
+   "image": "/blog/images/1795159352602-1000016089.jpg",
+   "imageAlt": "Longboarding",
+   "draft": false,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-21T03:49:38.903Z"
+  },
+  {
+   "slug": "2026-11-17-feeding-the-goats-and-ducks",
+   "title": "Feeding The Goats And Ducks",
+   "author": "Lucas Timothy",
+   "summary": "Feeding time on the farm: goats and ducks eating together. See how a simple daily routine keeps our animals healthy and happy",
+   "date": "2026-11-17",
+   "image": "/blog/images/1795230161656-1000015592.jpg",
+   "imageAlt": "Feeding the Goats And Ducks",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:52:58.935Z"
+  },
+  {
+   "slug": "2026-01-22-selecta-nursing-magnolia",
+   "title": "Selecta Nursing Magnolia",
+   "author": "Lucas Timothy",
+   "summary": "Nursing their baby is second nature to animals. Selecta cares for her baby every day by letting it nurse. Mothers in the animal world do this naturally, without being taught.",
+   "date": "2026-01-22",
+   "image": "/blog/images/1795226782286-1000006572.jpg",
+   "imageAlt": "Selecta Nursing Magnolia",
+   "draft": false,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-21T03:57:32.057Z"
   }
  ]
 }
