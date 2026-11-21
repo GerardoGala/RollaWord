@@ -224,6 +224,20 @@
     "farmland"
    ],
    "modified": "2026-11-21T08:01:12.895Z"
+  },
+  {
+   "slug": "2026-11-21-growing",
+   "title": "Growing",
+   "author": "Lucas Timothy",
+   "summary": "Growing this jsjsjss",
+   "date": "2026-11-21",
+   "image": "/blog/images/1795248862532-1000014768.jpg",
+   "imageAlt": "Please edit claude",
+   "draft": true,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-21T08:15:02.374Z"
   }
  ]
 }
