@@ -127,20 +127,6 @@
    ]
   },
   {
-   "slug": "2026-10-07-saling-and-padling",
-   "title": "Things To Do On The Water",
-   "author": "Lucas Timothy",
-   "summary": "If you want a beach escape that's close to Manila but far from the crowds, head to San Juan, Batangas. The town stretches along the Tayabas Bay coast, and mornings here feel unhurried.",
-   "date": "2026-10-07",
-   "image": "/blog/images/1795164638962-1000015859.jpg",
-   "imageAlt": "Sailing and Paddling",
-   "draft": false,
-   "tags": [
-    "coastline"
-   ],
-   "modified": "2026-11-20T12:03:32.719Z"
-  },
-  {
    "slug": "2026-11-20-police-encounter-with-npa",
    "title": "Police Encounter with NPA",
    "author": "Lucas Timothy",
@@ -224,6 +210,20 @@
     "farmland"
    ],
    "modified": "2026-11-21T03:10:42.355Z"
+  },
+  {
+   "slug": "2026-10-07-saling-and-padling",
+   "title": "Things To Do On The Water",
+   "author": "Lucas Timothy",
+   "summary": "If you want a beach escape that's close to Manila but far from the crowds, head to San Juan, Batangas. The town stretches along the Tayabas Bay coast, and mornings here feel unhurried.",
+   "date": "2026-10-07",
+   "image": "/blog/images/1795164638962-1000015859.jpg",
+   "imageAlt": "Sailing and Paddling",
+   "draft": false,
+   "tags": [
+    "coastline"
+   ],
+   "modified": "2026-11-21T03:46:40.690Z"
   }
  ]
 }
