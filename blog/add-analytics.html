@@ -41,7 +41,17 @@
 <script>
 const $ = id => document.getElementById(id);
 const out = [];
-function log(m) { out.push(m); $('log').textContent = out.join('\n'); $('log').scrollTop = 1e9; }
+function log(m) {
+  out.push(m);
+  $('log').textContent = out.join('\n');
+  $('log').scrollTop = 1e9;
+  try { localStorage.setItem('aa-log', out.join('\n')); } catch (e) {}
+}
+// If Live Server reloaded this page mid-run, show the log from before the reload.
+try {
+  const saved = localStorage.getItem('aa-log');
+  if (saved) $('log').textContent = '[Log kept from before the page reloaded]\n' + saved;
+} catch (e) {}
 
 async function* walk(dir, path = '') {
   for await (const [name, h] of dir.entries()) {
