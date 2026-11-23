@@ -2,7 +2,7 @@
 
 *Last updated 2026-11-21*
 
-This document has two parts.
+This document has two parts, plus a short section on Google Analytics, which covers the whole site.
 
 - **Part 1: The games.** RollaWord, RollaSail, their leaderboard, and the leaderboard admin page (`firebaseadmin.html`).
 - **Part 2: The blog.** The San Juan Coastline blog, the Cloudflare Worker behind its editor, and Google Analytics.
@@ -10,6 +10,45 @@ This document has two parts.
 Both live on one website and in one GitHub repository, but they work differently, so each has its own section.
 
 **One rule for both:** a file you edit in VSCodium only reaches the live site after you commit and push it in GitHub Desktop. (Blog posts written in the blog editor are committed by the Worker instead; see Part 2.)
+
+---
+
+# Google Analytics (whole site)
+
+*Added 2026-11-21. **Confirmed working on 2026-11-21:** Realtime showed 4 active users while three people were playing the games on the live site.*
+
+**The report to use:** the Analytics property named **rollaword** (property ID 565269591).
+
+**Live report (Realtime). Bookmark this:**
+
+`https://analytics.google.com/analytics/web/#/a183877144p565269591/realtime/pages`
+
+If Analytics opens a different property, click the property name at the top left and choose **rollaword**.
+
+**Do not use** the property named **rollaword.com** (ID 565324386). It has no data streams, so it receives nothing. Do not click "Go to stream setup" there: that would create another stream and another tag ID.
+
+**The tag:** `GTM-5XJ53P8H`. It is one tag on every tracked page, and all of it reports into the **rollaword** property.
+
+**What is tracked**
+
+- The Publii pages: through Publii's Custom HTML > Head box.
+- The blog: through `blog/template.html` and two hand-edited pages (details in 2.6).
+- The games and the other hand-built pages: on 2026-11-21 `add-analytics.html` was run on the rollaword folder and updated 91 files.
+- Not tracked on purpose: `blog/admin.html`. The 91-file run had no skip list, so check whether `firebaseadmin.html` got the snippet. If you do not want your own admin visits counted, delete its two Google tag script blocks.
+
+**Reading the reports**
+
+- **Realtime is the live check.** A visit shows up within about a minute.
+- **Home and the Reports section lag 24 to 48 hours.** Zeros there on the first day are normal. On 2026-11-21 Home showed zeros while Realtime was showing 4 active users.
+- Later, Reports > Engagement > Pages and screens lists each page by its path (for example `/sail.html`), which tells you which games are played most.
+
+**If Realtime shows zero while people are on the site**
+
+1. View source on the **live** address (not 127.0.0.1) and search for `GTM-5XJ53P8H`. If it is missing, the changes have not been committed, pushed and deployed yet.
+2. Make sure the property open at the top left is **rollaword**.
+3. Test in a private window, or on a phone using mobile data. Ad blockers and privacy extensions stop the tag.
+
+**New pages:** a new hand-built page needs the snippet in its `<head>`, right after the AdSense line (the snippet is in 2.6). Running `add-analytics.html` on the folder does it for every page and skips pages that already have it.
 
 ---
 
@@ -152,6 +191,8 @@ These are ordinary files in the repo. Edit them in VSCodium, preview with Live S
 ## 2.6 Google Analytics (tag ID: GTM-5XJ53P8H)
 
 *Added 2026-11-21.*
+
+The site-wide summary (which report to use, and the confirmed live check) is in the Google Analytics section near the top of this document. This section covers how the blog is wired up.
 
 **What it is.** Google Analytics counts visitors, page views, countries, devices and where people came from. The tag ID is `GTM-5XJ53P8H`. Google generated it for the Analytics data stream.
 
