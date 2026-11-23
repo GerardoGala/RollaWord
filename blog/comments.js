@@ -26,6 +26,9 @@
     if (s) return s;
     var m = location.pathname.match(/\/blog\/posts\/([^\/]+?)(?:\.html)?$/);
     if (m) return decodeURIComponent(m[1]);
+    // a game page: rollaword.com/<folder>/ or /<folder>/index.html  ->  thread "game-<folder>"
+    var g = location.pathname.match(/^\/([A-Za-z0-9_-]+)\/(?:index\.html)?$/);
+    if (g) return 'game-' + g[1].toLowerCase();
     var q = new URLSearchParams(location.search);
     return q.get('slug') || q.get('post') || q.get('p') || '';
   }
@@ -56,6 +59,10 @@
   /* ---------- build the box ---------- */
   root.textContent = '';
   root.classList.add('sjc-cm');
+  // keystrokes typed in the comment box must never reach a game's own keyboard handlers
+  ['keydown', 'keypress', 'keyup'].forEach(function (t) {
+    root.addEventListener(t, function (e) { e.stopPropagation(); });
+  });
 
   var title = el('h2', 'sjc-cm-title', 'Comments');
   var list = el('div', 'sjc-cm-list');
