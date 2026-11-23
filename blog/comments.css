@@ -1,0 +1,38 @@
+/* comments.css: look of the reader comment box. It inherits the blog's own font and colours. */
+.sjc-cm { margin: 3rem 0 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(128, 128, 128, .35); }
+.sjc-cm [hidden] { display: none !important; }
+.sjc-cm-title { margin: 0 0 1rem; }
+.sjc-cm-sub { margin: 2rem 0 .75rem; }
+.sjc-cm-empty { opacity: .7; }
+
+.sjc-cm-item { padding: .9rem 1rem; margin: 0 0 .9rem; border: 1px solid rgba(128, 128, 128, .35); border-radius: 10px; }
+.sjc-cm-head { font-size: .9em; margin-bottom: .35rem; }
+.sjc-cm-date { opacity: .65; }
+.sjc-cm-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.sjc-cm-who { margin: 0 0 .75rem; font-size: .95em; }
+.sjc-cm-form label { display: block; margin: .8rem 0 .3rem; font-weight: 600; }
+.sjc-cm-form input[type="text"],
+.sjc-cm-form textarea {
+  width: 100%; box-sizing: border-box; font: inherit; padding: .65rem .75rem;
+  border: 1px solid rgba(128, 128, 128, .6); border-radius: 8px; background: transparent; color: inherit;
+}
+.sjc-cm-form textarea { resize: vertical; min-height: 7rem; }
+
+/* the hidden trap field for bots: off screen, never display:none (some bots skip those) */
+.sjc-cm-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.sjc-cm-turnstile { margin: .8rem 0 0; }
+.sjc-cm-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+.sjc-cm-send, .sjc-cm-google {
+  font: inherit; font-weight: 600; padding: .75rem 1.25rem; border-radius: 8px; cursor: pointer;
+  min-height: 44px;
+}
+.sjc-cm-send { border: 0; background: #1565c0; color: #fff; }
+.sjc-cm-send:disabled { opacity: .6; cursor: default; }
+.sjc-cm-google { border: 1px solid rgba(128, 128, 128, .7); background: transparent; color: inherit; }
+.sjc-cm-link { font: inherit; background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; cursor: pointer; }
+
+.sjc-cm-note { margin: .9rem 0 0; font-size: .9em; opacity: .75; }
+.sjc-cm-status { margin: .6rem 0 0; font-weight: 600; }
+.sjc-cm-bad { color: #c62828; }

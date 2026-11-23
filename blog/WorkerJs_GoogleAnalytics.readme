@@ -158,6 +158,79 @@ WHAT TO CHANGE, AND WHERE
    who may sign in                                    ALLOWED_EMAILS            save in Cloudflare
 
 
+BLOG COMMENTS (SUPABASE)
+------------------------
+   Added 2026-11-23. Work in progress: reader comments, every comment held for approval.
+
+   HOW IT WORKS
+     - Comments are stored in a free Supabase project (not on GitHub, not on Cloudflare).
+     - Every new comment starts as NOT approved. Only approved comments are shown to the public.
+     - The family approves or deletes comments on blog/blogApproval.html (a private page,
+       noindex, no AdSense, no Analytics). Sign in with the Google account.
+     - Only the three family Gmail addresses listed in blog-comments-setup.sql may approve or
+       delete. The database enforces this, not the page.
+     - Flat comments only (no replies). No notification email yet.
+
+   FILES
+     blog/blogApproval.html       the approval page (Waiting tab, Approved tab)
+     blog-comments-setup.sql      run ONCE in the Supabase SQL Editor. Keep it OUT of the folder
+                                  you push to the live site. It holds the family email list.
+
+   SUPABASE SETTINGS TO REMEMBER
+     Project ID             knuatcllwictmybubjys
+     Project URL            https://knuatcllwictmybubjys.supabase.co
+     Public (publishable) key is in blogApproval.html. It is meant to be public.
+     Google client          the SAME Google OAuth client as the blog editor (GOOGLE_CLIENT_ID in
+                            Cloudflare). Supabase also needs that client's SECRET, which is kept
+                            only inside Supabase and is NOT written in this file.
+     Never put the Supabase "service_role" / "secret" key in any page.
+
+   STILL TO DO
+     - Run blog-comments-setup.sql (with the three real Gmail addresses).
+     - Save the Google provider in Supabase (client ID + secret), then test the sign-in.
+     - Add the redirect URLs listed below under Supabase URL Configuration.
+     - Build the reader comment box on the posts (anonymous or Google/Microsoft sign-in,
+       Cloudflare Turnstile, length limit, daily cap).
+     - Later, when understood: delete the extra Google client secret (two exist for now).
+
+
+USEFUL LINKS
+------------
+   SUPABASE
+     Dashboard (this project)      https://supabase.com/dashboard/project/knuatcllwictmybubjys
+     SQL Editor                    https://supabase.com/dashboard/project/knuatcllwictmybubjys/sql/new
+     Google sign-in provider       https://supabase.com/dashboard/project/knuatcllwictmybubjys/auth/providers
+     Redirect URLs                 https://supabase.com/dashboard/project/knuatcllwictmybubjys/auth/url-configuration
+     Callback URL (give to Google) https://knuatcllwictmybubjys.supabase.co/auth/v1/callback
+     Website                       https://supabase.com
+     Docs                          https://supabase.com/docs
+     Docs: Auth                    https://supabase.com/docs/guides/auth
+     Docs: Row Level Security      https://supabase.com/docs/guides/database/postgres/row-level-security
+     Docs: JavaScript client       https://supabase.com/docs/reference/javascript
+
+   GOOGLE CLOUD (the OAuth client used for sign-in)
+     Credentials                   https://console.cloud.google.com/apis/credentials
+     Project holding the client    Laser-Sailing-Simulator
+     Client ID                     ends ...hpnd5et.apps.googleusercontent.com (starts 45397375888-)
+     Redirect URIs on that client  https://gerardogala1959.workers.dev/callback
+                                   https://knuatcllwictmybubjys.supabase.co/auth/v1/callback
+     (The Supabase callback goes under "Authorized redirect URIs", NOT under
+      "Authorized JavaScript origins", which rejects any URL with a path.)
+
+   CLOUDFLARE
+     Workers list (rollaword-auth) https://dash.cloudflare.com/4eea0a6c418521ffb07e8a9d5e77ea7b/workers-and-pages
+     Worker settings               open the Worker > Settings > Variables and Secrets
+
+   GOOGLE ANALYTICS
+     Live report (rollaword)       https://analytics.google.com/analytics/web/#/a183877144p565269591/realtime/pages
+
+   THE SITE
+     Public blog                   https://www.rollaword.com/blog/index.html
+     Blog editor                   https://www.rollaword.com/blog/admin.html
+     Comment approval (new)        https://www.rollaword.com/blog/blogApproval.html
+     Local preview (Live Server)   http://127.0.0.1:5500
+
+
 GOOD TO KNOW
 ------------
    - Never edit blog/index.html, blog/posts.json or blog/sitemap.xml by hand: the Worker rewrites
