@@ -79,7 +79,7 @@
   var trapWrap = el('div', 'sjc-cm-trap');
   trapWrap.setAttribute('aria-hidden', 'true');
   var trap = el('input');
-  trap.type = 'text'; trap.name = 'website'; trap.tabIndex = -1; trap.autocomplete = 'off';
+  trap.type = 'text'; trap.name = 'sjc_extra_note'; trap.tabIndex = -1; trap.autocomplete = 'off';
   trapWrap.appendChild(trap);
 
   var tsBox = el('div', 'sjc-cm-turnstile');
@@ -96,23 +96,45 @@
   var status = el('p', 'sjc-cm-status');
   status.setAttribute('role', 'status');
 
+  // shown in place of the form once a comment has been sent
+  var thanks = el('div', 'sjc-cm-thanks');
+  thanks.setAttribute('role', 'status');
+  thanks.hidden = true;
+
   form.appendChild(nameLabel); form.appendChild(name);
   form.appendChild(bodyLabel); form.appendChild(body);
   form.appendChild(trapWrap);
   form.appendChild(tsBox);
   form.appendChild(row);
-  form.appendChild(note);
   form.appendChild(status);
+  form.appendChild(note);
 
   root.appendChild(title);
   root.appendChild(list);
   root.appendChild(formTitle);
   root.appendChild(who);
   root.appendChild(form);
+  root.appendChild(thanks);
 
   function say(text, bad) {
     status.textContent = text || '';
     status.className = 'sjc-cm-status' + (bad ? ' sjc-cm-bad' : '');
+    if (text) { try { status.scrollIntoView({ block: 'nearest' }); } catch (e) { /* ignore */ } }
+  }
+
+  function showThanks() {
+    say('');
+    form.hidden = true;
+    thanks.textContent = '';
+    thanks.appendChild(el('strong', null, 'Thank you! Your comment has been received.'));
+    thanks.appendChild(el('span', null, ' It will appear here once it has been approved.'));
+    thanks.appendChild(document.createElement('br'));
+    var again = el('button', 'sjc-cm-link', 'Write another comment');
+    again.type = 'button';
+    again.addEventListener('click', function () { thanks.hidden = true; form.hidden = false; name.focus(); });
+    thanks.appendChild(again);
+    thanks.hidden = false;
+    try { thanks.scrollIntoView({ block: 'nearest' }); } catch (e) { /* ignore */ }
   }
 
   /* ---------- Supabase ---------- */
@@ -183,7 +205,7 @@
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     say('');
-    if (trap.value) { say('Thank you. Your comment is waiting for approval.'); return; }   // bots land here
+    if (trap.value) { showThanks(); return; }   // bots land here
 
     var n = name.value.replace(/\s+/g, ' ').trim();
     var b = body.value.trim();
@@ -201,7 +223,7 @@
       if (r.error) throw r.error;
       lsSet('sjc-cm-last', String(Date.now()));
       body.value = '';
-      say('Thank you! Your comment is waiting for approval.');
+      showThanks();
     } catch (err) {
       var msg = (err && err.message) || '';
       if (/limit/i.test(msg)) say('You have reached the daily comment limit. Please try again tomorrow.', true);
