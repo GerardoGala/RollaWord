@@ -55,6 +55,9 @@
   button.bad { background: var(--bad); }
   button.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.6); padding: 8px 14px; font-size: .9rem; }
 
+  a.ghost { display: inline-block; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,.6); border-radius: 10px; padding: 8px 14px; font-size: .9rem; font-weight: 600; margin-right: 6px; }
+  .meta a { color: var(--accent); word-break: break-all; }
+
   .center { text-align: center; padding: 40px 12px; }
   .center p { color: var(--muted); }
 
@@ -86,6 +89,7 @@
 <header>
   <h1>Comment Approval</h1>
   <div>
+    <a class="ghost" id="blogLink" href="https://rollaword.com/blog/index.html" target="_blank" rel="noopener">View blog</a>
     <span id="who"></span>
     <button class="ghost" id="btnOut" hidden>Sign out</button>
   </div>
@@ -200,7 +204,13 @@ function render(rows, isApproved) {
     who.textContent = c.author_name;           // textContent: comment text can never run as code
     meta.appendChild(who);
     meta.appendChild(document.createTextNode(
-      '  ·  ' + new Date(c.created_at).toLocaleString() + '  ·  post: ' + c.post_slug));
+      '  ·  ' + new Date(c.created_at).toLocaleString() + '  ·  '));
+    const link = document.createElement('a');
+    link.href = pageUrl(c.post_slug);
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'View: ' + c.post_slug;
+    meta.appendChild(link);
 
     const body = document.createElement('div');
     body.className = 'body';
@@ -218,6 +228,14 @@ function render(rows, isApproved) {
     card.append(meta, body, actions);
     list.appendChild(card);
   });
+}
+
+// Where a comment's page lives. Game threads are named game-<folder>; everything else is a blog post.
+// The web address is built from a fixed start plus the name, so an odd name can never make a harmful link.
+function pageUrl(slug) {
+  const base = 'https://rollaword.com';
+  if (/^game-[a-z0-9_-]+$/.test(slug)) return base + '/' + slug.slice(5) + '/index.html#comments';
+  return base + '/blog/posts/' + encodeURIComponent(slug) + '.html#comments';
 }
 
 function mkBtn(label, cls, fn) {
