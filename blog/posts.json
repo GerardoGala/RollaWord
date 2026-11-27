@@ -285,15 +285,15 @@
    "slug": "2026-11-26-my-first-guava-fruit",
    "title": "My First Guava Fruit",
    "author": "Lucas Timothy",
-   "summary": "My First Guava Fruit",
+   "summary": "Celebrating the first guava harvest from the farmland—freshly picked, sliced open, and enjoyed the classic way with a pinch of coarse salt.",
    "date": "2026-11-26",
    "image": "/blog/images/1795769497983-1000016685.jpg",
    "imageAlt": "My First Guava Fruit",
-   "draft": true,
+   "draft": false,
    "tags": [
     "farmland"
    ],
-   "modified": "2026-11-27T08:54:46.015Z"
+   "modified": "2026-11-27T09:09:41.385Z"
   }
  ]
 }
