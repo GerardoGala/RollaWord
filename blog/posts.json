@@ -294,6 +294,20 @@
     "farmland"
    ],
    "modified": "2026-11-27T09:09:41.385Z"
+  },
+  {
+   "slug": "2026-11-28-harvesting-banana",
+   "title": "Harvesting Banana",
+   "author": "Lucas Timothy",
+   "summary": "Testestestteststststst",
+   "date": "2026-11-28",
+   "image": "/blog/images/1795827711578-1000016725.jpg",
+   "imageAlt": "Testtesttes",
+   "draft": true,
+   "tags": [
+    "farmland"
+   ],
+   "modified": "2026-11-28T01:03:17.019Z"
   }
  ]
 }
