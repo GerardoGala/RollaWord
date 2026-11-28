@@ -303,11 +303,11 @@
    "date": "2026-11-28",
    "image": "/blog/images/1795827711578-1000016725.jpg",
    "imageAlt": "Harvesting Banana",
-   "draft": true,
+   "draft": false,
    "tags": [
     "farmland"
    ],
-   "modified": "2026-11-28T01:10:26.508Z"
+   "modified": "2026-11-28T04:10:50.508Z"
   }
  ]
 }
